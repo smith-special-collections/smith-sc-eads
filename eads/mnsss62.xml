@@ -1,843 +1,1192 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head"
-      langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss"
-         publicid="-//us::mnsss//TEXT us::mnsss::mnsss62.xml//EN">mnsss62</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+  <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="us-mnsss">mnsss62</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Mildred Louise (Boie) Saunders Papers, 1914-1997
-               (bulk 1928-1960) </titleproper>
+            <titleproper>Mildred Louise Boie Saunders papers <num>SSC.MS.00247</num>
+            </titleproper>
             <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Margaret Jessup.</author>
+            <author>Margaret Jessup</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal
-            2.0. Encoded by Brook Hopkins. <date>2003-06-06</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-02-19 16:00:16
+          -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard
+          Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss62 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
          </change>
+         <change>
+            <date>2017-07-26T17:48:23-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
       </revisiondesc>
-   </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College </publisher>
-         <titleproper encodinganalog="245$a">Mildred Louise (Boie) Saunders Papers, 1914-1997 (bulk
-            1928-1960) </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 247 </num>
-         <author encodinganalog="245$c">Margaret Jessup </author>
-         <date>1993 </date>
-
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-            Foundation.</sponsor>
-         <p>© 2003 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Saunders, Mildred Louise (Boie),
-               1907-</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Mildred Louise Boie Saunders
-            papers</unittitle>
-         <unitdate encodinganalog="245$f" type="inclusive">1914-1997</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk"> 1928-1960</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="mnsss">MS 247</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">4 boxes</extent>
-            <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
+  </eadheader>
+  <archdesc level="collection">
+      <did>
+      
+         <repository>
             <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Poet; editor; professor, English; and
-            Red Cross worker, World War II. Collection is primarily personal correspondence,
-            including a lifetime of letters to her twin sister, which read as a personal journal and
-            document her career, romances, family relations, experiences in psychoanalysis, and
-            world events. Other material includes photographs; writings; a travel diary from a trip
-            to Europe; and reports to the Red Cross from Italy and Egypt during World War II. </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
-         </langmaterial>
+         <unittitle>Mildred Louise Boie Saunders papers</unittitle>
+         <origination label="creator">
+            <persname source="lcnaf">Saunders, Mildred Louise (Boie), 1907-</persname>
+         </origination>
+         <unitid>SSC.MS.00247</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">4 boxes</extent>
+            <extent altrender="carrier">(1.5 linear feet)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1914/1997"
+                   type="inclusive">1914-1997</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1928/1960" type="bulk">1928-1960</unitdate>
+         <abstract id="aspace_00012ae0621dfa5568f3026b2e3b6c2d">Poet; editor; professor, English; and
+        Red Cross worker, World War II. Collection is primarily personal correspondence, including a
+        lifetime of letters to her twin sister, which read as a personal journal and document her
+        career, romances, family relations, experiences in psychoanalysis, and world events. Other
+        material includes photographs; writings; a travel diary from a trip to Europe; and reports
+        to the Red Cross from Italy and Egypt during World War II.</abstract>
+         <langmaterial id="aspace_e25603a5cba252d16e29e981bf562ec9">English.</langmaterial>
       </did>
-      <bioghist id="bioghist">
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
          <p>Mildred Louise Boie (called Louise) and her twin sister, Maurine Boie, were born in
-            Plainview, Minnesota on May 20, 1907. Louise attended Mankato Teachers College, then
-            earned her B.S. degree in Education from the University of Minnesota in 1927. From 1927
-            to 1929, she worked in the creative department for the Harrison-Guthrie Advertising
-            Agency in Minneapolis, and also edited a magazine for the C. &amp; C. Publishing
-            Company. In 1930 Louise went to England for a year, where she studied modern English
-            literature at Newnham College, University of Cambridge, and wrote articles for the
-            London Morning Post and the Spectator. When she returned to the United States she took a
-            position as instructor and head of extension classes in English at the University of
-            Minnesota until 1934, when she received her Masters degree in English from the
-            University. Her thesis is entitled Louisa May Alcott. Also in 1934, Louise was awarded
-            the M.P. Sears and F.Z. Gilbert Fellowship in creative work from Radcliffe College and
-            spent the next year studying there.</p>
-
-         <p>From 1935 to 1937, Louise served as assistant professor of English at Smith College. She
-            left Smith in 1937 to be associate editor of poetry for the Atlantic Monthly in Boston,
-            under editor Ted Weeks. She remained there until 1940 when she took a position as
-            publicity head for the American Unitarian Association and Service Committee, organizing
-            humanitarian work in Europe and America, and serving as editor for their publication,
-            the Christian Register. During this time Louise also edited books for Bacon Press.
-            Sometime in the late 1930s, while living in Boston, Louise began psychoanalysis with Dr.
-            Leslia Dalrymple.</p>
-         <p>Feeling that she needed something more stimulating and rewarding in her life, in 1943
-            Louise applied for overseas work with the American Red Cross and, until 1946, was
-            stationed at various United States Army bases in France, Italy, and Egypt, where she
-            assisted in civilian relief. She was awarded the Bronze Star by the United States Army
-            for her service. While overseas, Louise wrote several articles and short stories about
-            her experiences which were published in various journals, including Ladies Home Journal,
-            Glamour, and Radcliffe Quartery. In 1946, her book of poems, Better Than Laughter was
-            published by the University of Minnesota Press.</p>
-         <p>In 1948, Louise married Lt. Colonel William (Bill) Saunders and moved to Fort Bragg in
-            North Carolina, where Bill was chief engineer. After a series of health problems, Bill
-            received an honorable discharge and they moved off base into the city of Fayetteville,
-            where he found work as an architect.</p>
-         <p>Louise was active in numerous community services in Fayetteville. She did volunteer work
-            for the United Services Fund, the Red Cross, the Mental Health Association, and served
-            on the board of the County Guidance Center Advisory Council. During the 1970s and 80s
-            Louise was executive director of the Cumberland County Council on Older Adults. In 1991,
-            when the Sophia Smith Collection received her papers, Louise was living with Maurine and
-            Weston LaBarre at the Carol Woods Retirement Village in Chapel Hill, North Carolina.</p>
-         <p>Although both Louise and her twin, Maurine, were active career women and travelled
-            frequently, usually living in different cities, they always remained extremely close and
-            corresponded regularly, sometimes on a weekly basis. Maurine Boie received her Masters
-            in Social Work from Bryn Mawr in 1934, and thereafter she alternately taught and
-            practiced social work in New York, Pennsylvania, and North Carolina. During the late
-            1930s and early 40s, she was editor-in-chief of the The Family, journal of the Family
-            Welfare Association of America in New York City, and in 1943 she wrote the New York Baby
-            Book which was given to every new mother in the city.</p>
-         <p>In 1939, Maurine married Weston LaBarre and they eventually moved to Durham, North
-            Carolina. There she helped start the Durham Child Guidance Clinic and was founder of the
-            Durham School for Pregnant School Girls. In 1960, Maurine was appointed assistant
-            professor of Psychiatric Social Work at Duke University, where Weston LaBarre also
-            taught, and in 1971 she returned to psychiatric social work at the Duke University
-            Medical Center.</p>
-         <p>Louise's sister, Maurine Boie LeBarre, died on September 16, 1991 in Chapel Hill, North
-            Carolina. Louise Boie Saunders died on November 10, 1997 in Goldsboro, North
-            Carolina.</p>
+        Plainview, Minnesota on May 20, 1907. Louise attended Mankato Teachers College, then earned
+        her B.S. degree in Education from the University of Minnesota in 1927. From 1927 to 1929,
+        she worked in the creative department for the Harrison-Guthrie Advertising Agency in
+        Minneapolis, and also edited a magazine for the C. &amp; C. Publishing Company. In 1930
+        Louise went to England for a year, where she studied modern English literature at Newnham
+        College, University of Cambridge, and wrote articles for the London Morning Post and the
+        Spectator. When she returned to the United States she took a position as instructor and head
+        of extension classes in English at the University of Minnesota until 1934, when she received
+        her Masters degree in English from the University. Her thesis is entitled Louisa May Alcott.
+        Also in 1934, Louise was awarded the M.P. Sears and F.Z. Gilbert Fellowship in creative work
+        from Radcliffe College and spent the next year studying there.</p>
+         <p> From 1935 to 1937, Louise served as assistant professor of English at Smith College. She
+        left Smith in 1937 to be associate editor of poetry for the Atlantic Monthly in Boston,
+        under editor Ted Weeks. She remained there until 1940 when she took a position as publicity
+        head for the American Unitarian Association and Service Committee, organizing humanitarian
+        work in Europe and America, and serving as editor for their publication, the Christian
+        Register. During this time Louise also edited books for Bacon Press. Sometime in the late
+        1930s, while living in Boston, Louise began psychoanalysis with Dr. Leslia Dalrymple.</p>
+         <p> Feeling that she needed something more stimulating and rewarding in her life, in 1943
+        Louise applied for overseas work with the American Red Cross and, until 1946, was stationed
+        at various United States Army bases in France, Italy, and Egypt, where she assisted in
+        civilian relief. She was awarded the Bronze Star by the United States Army for her service.
+        While overseas, Louise wrote several articles and short stories about her experiences which
+        were published in various journals, including Ladies Home Journal, Glamour, and Radcliffe
+        Quartery. In 1946, her book of poems, Better Than Laughter was published by the University
+        of Minnesota Press.</p>
+         <p> In 1948, Louise married Lt. Colonel William (Bill) Saunders and moved to Fort Bragg in
+        North Carolina, where Bill was chief engineer. After a series of health problems, Bill
+        received an honorable discharge and they moved off base into the city of Fayetteville, where
+        he found work as an architect.</p>
+         <p> Louise was active in numerous community services in Fayetteville. She did volunteer work
+        for the United Services Fund, the Red Cross, the Mental Health Association, and served on
+        the board of the County Guidance Center Advisory Council. During the 1970s and 80s Louise
+        was executive director of the Cumberland County Council on Older Adults. In 1991, when the
+        Sophia Smith Collection received her papers, Louise was living with Maurine and Weston
+        LaBarre at the Carol Woods Retirement Village in Chapel Hill, North Carolina.</p>
+         <p> Although both Louise and her twin, Maurine, were active career women and travelled
+        frequently, usually living in different cities, they always remained extremely close and
+        corresponded regularly, sometimes on a weekly basis. Maurine Boie received her Masters in
+        Social Work from Bryn Mawr in 1934, and thereafter she alternately taught and practiced
+        social work in New York, Pennsylvania, and North Carolina. During the late 1930s and early
+        40s, she was editor-in-chief of the The Family, journal of the Family Welfare Association of
+        America in New York City, and in 1943 she wrote the New York Baby Book which was given to
+        every new mother in the city.</p>
+         <p> In 1939, Maurine married Weston LaBarre and they eventually moved to Durham, North
+        Carolina. There she helped start the Durham Child Guidance Clinic and was founder of the
+        Durham School for Pregnant School Girls. In 1960, Maurine was appointed assistant professor
+        of Psychiatric Social Work at Duke University, where Weston LaBarre also taught, and in 1971
+        she returned to psychiatric social work at the Duke University Medical Center.</p>
+         <p> Louise's sister, Maurine Boie LeBarre, died on September 16, 1991 in Chapel Hill, North
+        Carolina. Louise Boie Saunders died on November 10, 1997 in Goldsboro, North Carolina.</p>
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The Mildred Louise (Boie) Saunders Papers consist of 1.5 linear feet (four document
-            boxes) of correspondence, published writings, manuscripts, diaries, photographs, and
-            memorabilia, dating from 1914 to 1978. The bulk of the material dates from 1928 to
-            1960.</p>
-         <p>Half of the collection (two document boxes) contain Louise's letters to her twin sister,
-            Maurine, dating from 1928 to the 1960s. The letters serve as Louise's personal journal,
-            in which she shares with her sister intimate reflections on her life, including family
-            relationships, her romances, her experience in psychoanalysis, her observations of world
-            events (especially of World War II), thoughts about her career, her writing, and books
-            she's read. The letters offer an in-depth look at the daily life of a single, working
-            woman in the 1920s, 30s, and 40s, written by a talented and very thoughtful writer. The
-            rest of the correspondence (one document box) includes letters to and from other family
-            members, friends, and colleagues of both Louise and Maurine.</p>
-         <p>Louise's writings fill half a box and consist of published magazine and newspaper
-            articles, book reviews, and poems, including her book, Better Than Laughter. The
-            writings also include typescripts of articles, poems, and short stories, dating from
-            1926 to 1944. Some of these relate to her work with the Red Cross. Included with her
-            writings are a travel journal from a 1930 trip to Europe (including photographs) and a
-            few pages of journal entries describing her Red Cross work during World War II.</p>
-         <p>The remainder of the collection (half a document box) consists of biographical material
-            relating to Louise and Maurine, newspaper clippings, memorabilia, and photographs.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Mildred Louise (Boie) Saunders Papers consist of 1.5 linear feet (four document boxes)
+        of correspondence, published writings, manuscripts, diaries, photographs, and memorabilia,
+        dating from 1914 to 1978. The bulk of the material dates from 1928 to 1960.</p>
+         <p> Half of the collection (two document boxes) contain Louise's letters to her twin sister,
+        Maurine, dating from 1928 to the 1960s. The letters serve as Louise's personal journal, in
+        which she shares with her sister intimate reflections on her life, including family
+        relationships, her romances, her experience in psychoanalysis, her observations of world
+        events (especially of World War II), thoughts about her career, her writing, and books she's
+        read. The letters offer an in-depth look at the daily life of a single, working woman in the
+        1920s, 30s, and 40s, written by a talented and very thoughtful writer. The rest of the
+        correspondence (one document box) includes letters to and from other family members,
+        friends, and colleagues of both Louise and Maurine.</p>
+         <p> Louise's writings fill half a box and consist of published magazine and newspaper
+        articles, book reviews, and poems, including her book, Better Than Laughter. The writings
+        also include typescripts of articles, poems, and short stories, dating from 1926 to 1944.
+        Some of these relate to her work with the Red Cross. Included with her writings are a travel
+        journal from a 1930 trip to Europe (including photographs) and a few pages of journal
+        entries describing her Red Cross work during World War II.</p>
+         <p> The remainder of the collection (half a document box) consists of biographical material
+        relating to Louise and Maurine, newspaper clippings, memorabilia, and photographs.</p>
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>The papers are arranged in four series: </p>
-         <list>
-            <item> I. Biographical </item>
-            <item> II. Photographs </item>
-            <item> III. Writings (of Mildred Louise Boie) </item>
-            <item> IV. Correspondence </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>The papers are arranged in four series:</p>
+         <list type="ordered">
+            <item>I. Biographical</item>
+            <item>II. Photographs</item>
+            <item>III. Writings (of Mildred Louise Boie)</item>
+            <item>IV. Correspondence</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith
-                  Collection without any added restrictions. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The Sophia Smith Collection owns copyright to the papers of the Mildred Louise and
-                  Maurine Saunders. Copyright to materials created by others may be owned by those
-                  individuals or their heirs or assigns. It is the responsibility of the researcher
-                  to identify and satisfy the holders of all copyrights. Permission must be obtained
-                  from the Sophia Smith Collection to publish reproductions or quotations beyond
-                  "fair use." </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Mildred Louise (Boie) Saunders Papers, Sophia Smith Collection, Smith College,
-               Northampton, Mass.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Mildred Louise (Boie) Saunders' papers were donated to the Sophia Smith Collection
-                  in several installments, from 1991 to 1993, by her sister Maurine's husband,
-                  Weston LaBarre. </p>
-            </acqinfo>
-            <processinfo id="admin-process">
-               <p>Processed by Margaret Jessup, 1993.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-
-         <corpname encodinganalog="610" source="lcnaf">American Universalist
-            Society--History</corpname>
-         <persname encodinganalog="600" source="lcnaf">Saunders, Mildred Louise (Boie),
-            1907-</persname>
-         <subject encodinganalog="650" source="lcsh">Sisters--United States--History--20th
-            century--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Twins--United States--History--20th
-            century--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">World War, 1939-1945--War work--Red
-            Cross--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">World War, 1939-1945--Women--Personal
-            narratives, American</subject>
-         <persname encodinganalog="600" source="lcnaf">Bates, H.E. (Herbert Ernest),
-            1905-1974</persname>
-         <corpname encodinganalog="610" source="lcnaf">Atlantic Monthly--History</corpname>
-         <famname encodinganalog="600" source="lcnaf">Boie family</famname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Mildred Louise (Boie) Saunders Papers, Sophia Smith Collection, Smith College,
+        Northampton, Mass.</p>
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>The archives of the University of Minnesota in Minneapolis also has some of Louise's
+        published writings and copies of both Louise's and Maurine's masters theses. The archives at
+        Bryn Mawr College hold some of the papers of Maurine (Boie) LaBarre.</p>
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The papers are open to research according to the regulations of the Sophia Smith Collection
+        without any added restrictions.</p>
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>The Sophia Smith Collection owns copyright to the papers of the Mildred Louise and Maurine
+        Saunders. Copyright to materials created by others may be owned by those individuals or
+        their heirs or assigns. It is the responsibility of the researcher to identify and satisfy
+        the holders of all copyrights. Permission must be obtained from the Sophia Smith Collection
+        to publish reproductions or quotations beyond "fair use."</p>
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Mildred Louise (Boie) Saunders' papers were donated to the Sophia Smith Collection in
+        several installments, from 1991 to 1993, by her sister Maurine's husband, Weston
+        LaBarre.</p>
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Margaret Jessup, 1993.</p>
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Sisters--United States--History--20th century--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Twins--United States--History--20th century--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945--War work--Red Cross--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945--Women--Personal narratives, American</subject>
          <subject encodinganalog="650" source="lcsh">Women poets--20th century</subject>
-         <subject encodinganalog="650" source="lcsh">Women editors--United States--History--20th
-            century--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Women and psychoanalysis--United
-            States--History--20th century--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Women in the professions--United
-            States--History--20th century--Sources</subject>
-         <persname encodinganalog="700" source="lcnaf">LaBarre, Maurine Boie, 1907-</persname>
+         <subject encodinganalog="650" source="lcsh">Women editors--United States--History--20th century--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Women and psychoanalysis--United States--History--20th
+        century--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Women in the professions--United States--History--20th
+        century--Sources</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">LaBarre, Maurine Boie, 1907-</subject>
+         <genreform encodinganalog="655" authfilenumber="300026877" source="aat">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Writings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Manuscripts</genreform>
+         <genreform encodinganalog="655" authfilenumber="300027112" source="aat">diaries</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="aat">memorabilia</genreform>
+         <corpname encodinganalog="610" source="lcnaf">American Universalist Society</corpname>
+         <persname encodinganalog="600" source="lcnaf">Bates, H.E. (Herbert Ernest), 1905-1974</persname>
+         <corpname encodinganalog="610" source="lcnaf">Atlantic Monthly</corpname>
+         <famname encodinganalog="600" source="lcnaf">Boie family</famname>
+      
+         <persname encodinganalog="600"
+                   authfilenumber="people_926"
+                   source="local_inmagic-people">LaBarre, Weston</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1629"
+                   source="local_inmagic-people">LaBarre, Ann</persname>
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>The archives of the University of Minnesota in Minneapolis also has some of Louise's
-               published writings and copies of both Louise's and Maurine's masters theses. The
-               archives at Bryn Mawr College hold some of the papers of Maurine (Boie) LaBarre.</p>
-         </relatedmaterial>
-      </descgrp>
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I. Biographical</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_283f4222fe68bf81f1b55bc40c9c6cc8" level="file">
                <did>
                   <unittitle>Mildred Louise (Boie) Saunders</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_b36a3766c76eb5ad202b7ea57cf1a84d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Clippings re: M.L.B.S.,<unitdate> 1935-83, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Clippings re: M.L.B.S.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1935/1983"
+                               type="inclusive">1935-83</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_365ab67eb36285873d818d0823eba01b"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_adde77e7157fdfdd31319c778101f935"
+                                parent="aspace_365ab67eb36285873d818d0823eba01b"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_246ab729184a31e389ee0ad682412ed1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Documents: passport,<unitdate> 1942</unitdate>; will,
-                           <unitdate>1955</unitdate>
-                     </unittitle>
+                     <unittitle>Documents: passport, 1942; will</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                     <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                     <container id="aspace_9e612bafae4b3a14b0756a309a909b84"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_466c8ae774236b106281b0129120f948"
+                                parent="aspace_9e612bafae4b3a14b0756a309a909b84"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9c802388c271f202e4ae4b0db55ff499" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Boie-Stephan family genealogy, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Boie-Stephan family genealogy</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_3a3173374e9a91ebd84d8c1a5d2bde03"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_690c3e5c2a50b96c97a7164d5e15a108"
+                                parent="aspace_3a3173374e9a91ebd84d8c1a5d2bde03"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8ed88a45b95e48948cef1d1ac9fb9527" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Awards,<unitdate> 1963-78, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Awards</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1963/1978"
+                               type="inclusive">1963-78</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_f059e09753b7136e501d8f95e7780dbe"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_814b5ffa379547cac24042965bb73845"
+                                parent="aspace_f059e09753b7136e501d8f95e7780dbe"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0613c93a548139b2def146cd3a365b7e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Memorabilia,<unitdate> 1914-73, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Memorabilia</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1914/1973"
+                               type="inclusive">1914-73</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_f566cf743db9c6c69aeac94d5dc41b09"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_ba1dc571fa1c1c597a9430ff88b767c2"
+                                parent="aspace_f566cf743db9c6c69aeac94d5dc41b09"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5133e05efcc85fb9345dca438d3379d8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Red Cross activities: reports,<unitdate> 1944-45, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Red Cross activities: reports</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1944/1945"
+                               type="inclusive">1944-45</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_832e5860e21a3e6f3b7df638eeabadd4"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_712818395f2e307036b4e65922d07e4c"
+                                parent="aspace_832e5860e21a3e6f3b7df638eeabadd4"
+                                type="folder">6</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ba60a773e2f9089638435b6cd82b008e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Maurine (Boie) LaBarre: resume and memorabilia,<unitdate> 1929-76,
-                        undated</unitdate>
-                  </unittitle>
+                  <unittitle>Maurine (Boie) LaBarre: resume and memorabilia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1929/1976"
+                            type="inclusive">1929-76</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_314c210a98a3f2cbec189627f6fc1d45"
+                             label="mixed materials"
+                             type="box">1</container>
+                  <container id="aspace_e8a39ccab114e027de6696c46a7308c2"
+                             parent="aspace_314c210a98a3f2cbec189627f6fc1d45"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e5ef76c4b67d23f74e9b7239e0737236" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Miscellaneous clippings,<unitdate> 1939-60, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1960"
+                            type="inclusive">1939-60</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_099f025ba9c8469786ff79108001a38c"
+                             label="mixed materials"
+                             type="box">1</container>
+                  <container id="aspace_76e5524b41fa078c87e2e21a3d465e01"
+                             parent="aspace_099f025ba9c8469786ff79108001a38c"
+                             type="folder">8</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II. Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_4b1e0bbc3019552a46544d85535b7747" level="file">
                <did>
                   <unittitle>Mildred Louise (Boie) Saunders</unittitle>
                </did>
-               <note>
+               <odd id="aspace_73fe7a6e709de314393fc94ab5a0115e">
+                  <head>General</head>
                   <p>[See also Oversize.]</p>
-               </note>
-               <c03 level="file">
+               </odd>
+               <c03 id="aspace_9292ebeb2c5e80c440340e5db1ee68bb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>M.L.B.S. alone,<unitdate> 1942-58, undated</unitdate>
-                     </unittitle>
+                     <unittitle>M.L.B.S. alone</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1942/1958"
+                               type="inclusive">1942-58</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_6181a81f856a5a6ee225ab79bd9ac94d"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_f130ee154f770ad1d40ecfbf356c02db"
+                                parent="aspace_6181a81f856a5a6ee225ab79bd9ac94d"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_44274a0f3153d5740019cd34770bb58f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>M.L.B.S. with others,<unitdate> 1936-58, undated</unitdate>
-                     </unittitle>
+                     <unittitle>M.L.B.S. with others</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1936/1958"
+                               type="inclusive">1936-58</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_86c484c04f2835706342342e081b061f"
+                                label="mixed materials"
+                                type="box">1</container>
+                     <container id="aspace_fb512ed8b6713f6e61ecf1af65aab142"
+                                parent="aspace_86c484c04f2835706342342e081b061f"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e22098f63d32450f194a9d2690314dec" level="file">
                   <did>
-                     <unittitle>Red Cross activities, <unitdate>ca. 1940s</unitdate>
-                     </unittitle>
+                     <unittitle>Red Cross activities</unittitle>
+                     <unitdate calendar="gregorian"
+                               certainty="approximate"
+                               era="ce"
+                               normal="1940/1949"
+                               type="inclusive">1940s</unitdate>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_f7cc385bbebcd89464be5be26d8aa63b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">11</container>
                         <unittitle>Egypt</unittitle>
+                        <container id="aspace_6bc0664ca5d8daa6311942c4cc39db43"
+                                   label="mixed materials"
+                                   type="box">1</container>
+                        <container id="aspace_f7f191c7d98061ad6ec10613578f0056"
+                                   parent="aspace_6bc0664ca5d8daa6311942c4cc39db43"
+                                   type="folder">11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b7708fb2a07adec62408cbab9814bf25" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">12</container>
                         <unittitle>Italy</unittitle>
+                        <container id="aspace_494d9867d0b65eccdc7bbe4d1122108e"
+                                   label="mixed materials"
+                                   type="box">1</container>
+                        <container id="aspace_235b4f4a81a8eb8bc779a8e0c19aeb54"
+                                   parent="aspace_494d9867d0b65eccdc7bbe4d1122108e"
+                                   type="folder">12</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d3e79663654546286975e2ed2d249203" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">13</container>
                         <unittitle>General</unittitle>
+                        <container id="aspace_228080c31bb039070ae0a55b616eb228"
+                                   label="mixed materials"
+                                   type="box">1</container>
+                        <container id="aspace_a59a49c26e36aa0c107e23bf5911c28e"
+                                   parent="aspace_228080c31bb039070ae0a55b616eb228"
+                                   type="folder">13</container>
                      </did>
                   </c04>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9bc03453131a9fc1fb4f85e6d952fda2" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Family, friends, miscellaneous,<unitdate> 1949, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Family, friends, miscellaneous</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_32dfc5892ef17433514eee2378f04217"
+                             label="mixed materials"
+                             type="box">1</container>
+                  <container id="aspace_8ea564a5870e45c42e140883b976bf57"
+                             parent="aspace_32dfc5892ef17433514eee2378f04217"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2833a2b24a42d6d8a2784b37e9af2559" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Album of unidentified people in China, <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Album of unidentified people in China</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_7a16168613efcb973212aed63325aec6"
+                             label="mixed materials"
+                             type="box">1</container>
+                  <container id="aspace_7e4249a694aade160080f76726e160ae"
+                             parent="aspace_7a16168613efcb973212aed63325aec6"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_17cb382a5b9297e2377968f79ea0c8bd" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Postcards (blank), <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Postcards (blank)</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_328f8842f656d94d34cd9763d6bcad15"
+                             label="mixed materials"
+                             type="box">1</container>
+                  <container id="aspace_5345dfcf2527d03d160d69fd45f89ed8"
+                             parent="aspace_328f8842f656d94d34cd9763d6bcad15"
+                             type="folder">16</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III. Writings (Mildred Louise Boie)</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_27ef49bdf32ad4fe1f74aa7a4942070c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Travel journal (Europe) with photos,<unitdate> 1930</unitdate>
-                  </unittitle>
+                  <unittitle>Travel journal (Europe) with photos</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                  <container id="aspace_2f54aab927041b16c8b2ce10c94564c6"
+                             label="mixed materials"
+                             type="box">2</container>
+                  <container id="aspace_b40c61400d4e659406384fe2c357b2f2"
+                             parent="aspace_2f54aab927041b16c8b2ce10c94564c6"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_69d1235c9443285fa172b8416dc68c65" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Writings about Red Cross activities, <unitdate>ca. 1944</unitdate>
-                  </unittitle>
+                  <unittitle>Writings about Red Cross activities</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1944/1944">1944</unitdate>
+                  <container id="aspace_a8b2d9c1a46d9a8fea5cf87cd778212b"
+                             label="mixed materials"
+                             type="box">2</container>
+                  <container id="aspace_1e0f8072ac7a26f0097458c97e1a3706"
+                             parent="aspace_a8b2d9c1a46d9a8fea5cf87cd778212b"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8669aa1e46c9b8edbbee5b2b95240003" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Published articles, book reviews, and poems,<unitdate> 1926-1942,
-                        undated</unitdate>
-                  </unittitle>
+                  <unittitle>Published articles, book reviews, and poems</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926/1942"
+                            type="inclusive">1926-1942</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_36e5ba74220e54507b69b3338ccf2d16"
+                             label="mixed materials"
+                             type="box">2</container>
+                  <container id="aspace_0be0192544b900da8e49a09c6644409c"
+                             parent="aspace_36e5ba74220e54507b69b3338ccf2d16"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4c444d5d327ee8538a2710607f6ca23b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
                   <unittitle>
                      <title>Better Than Laughter</title>, poems by Mildred Louise Boie</unittitle>
+                  <container id="aspace_73fbd43b594321b45bcf1c015fc3914a"
+                             label="mixed materials"
+                             type="box">2</container>
+                  <container id="aspace_14894e61142b4178faa726b7b909d74e"
+                             parent="aspace_73fbd43b594321b45bcf1c015fc3914a"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4f39d43ea47a1e57597a2db90ed90477" level="file">
                <did>
                   <unittitle>Manuscripts</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_38cf1c806834448d9225b3c15c1dc4d6" level="file">
                   <did>
                      <unittitle>Articles and stories</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_c5730d78140fd62ff3edf4d71870ee99" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>"An American's Farewell to England," <unitdate>ca.
-                              1931</unitdate>
-                        </unittitle>
+                        <unittitle>"An American's Farewell to England,"</unittitle>
+                        <unitdate calendar="gregorian"
+                                  certainty="approximate"
+                                  era="ce"
+                                  normal="1931/1931">1931</unitdate>
+                        <container id="aspace_e149d1b946b8d486be3f13a1090307f2"
+                                   label="mixed materials"
+                                   type="box">2</container>
+                        <container id="aspace_d11c6d598de24b78befc19b2699a9dee"
+                                   parent="aspace_e149d1b946b8d486be3f13a1090307f2"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_1f22ce285660393eab1376cf8b35e916" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>"Do American Men Spoil Their Wives?" <unitdate>ca.
-                              1931</unitdate>
-                        </unittitle>
+                        <unittitle>"Do American Men Spoil Their Wives?"</unittitle>
+                        <unitdate calendar="gregorian"
+                                  certainty="approximate"
+                                  era="ce"
+                                  normal="1931/1931">1931</unitdate>
+                        <container id="aspace_1a779083a19f9b22f6dc11964debf272"
+                                   label="mixed materials"
+                                   type="box">2</container>
+                        <container id="aspace_7e6b03b87dc70b5b9e2ff8c65a1dc8cf"
+                                   parent="aspace_1a779083a19f9b22f6dc11964debf272"
+                                   type="folder">6</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_bc4c6192bb176e487eb6c12c7810d8ac" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>"We Keep House for You Boys,"<unitdate> 1944</unitdate>
-                        </unittitle>
+                        <unittitle>"We Keep House for You Boys,"</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                        <container id="aspace_f9b04352efdbbda0ba969981b9c26632"
+                                   label="mixed materials"
+                                   type="box">2</container>
+                        <container id="aspace_32d357784dd9dc16c068fe774a3a3f8e"
+                                   parent="aspace_f9b04352efdbbda0ba969981b9c26632"
+                                   type="folder">7</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_570f65bc1498829837af9e6ea7109e15" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>"Homesickness," <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>"Homesickness,"</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_0973772073331d01f546d2877b42b3fa"
+                                   label="mixed materials"
+                                   type="box">2</container>
+                        <container id="aspace_3459eeb80d0f1eb2e044b59da75bf5d4"
+                                   parent="aspace_0973772073331d01f546d2877b42b3fa"
+                                   type="folder">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_e10df86127c8010abbe8373bf4716641" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>"Please Communicate At Once," <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>"Please Communicate At Once,"</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_da55ded0d3bc808fc6a7bc356ae631b5"
+                                   label="mixed materials"
+                                   type="box">2</container>
+                        <container id="aspace_bffd2f6575127d946e29010eaf0d44e4"
+                                   parent="aspace_da55ded0d3bc808fc6a7bc356ae631b5"
+                                   type="folder">9</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0f05c640f1c627a3772a51a7df1823e8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">10-14</container>
-                     <unittitle>Reviews,<unitdate> 1937-40, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Reviews</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1937/1940"
+                               type="inclusive">1937-40</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_8b9965375a5eb96af40526aa701b51fa"
+                                label="mixed materials"
+                                type="box">2</container>
+                     <container id="aspace_e4c87cbda220309315c92719c7508b97"
+                                parent="aspace_8b9965375a5eb96af40526aa701b51fa"
+                                type="folder">10-14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5cba6d1d41ce576685087204bda952e8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Poems,<unitdate> 1934, 1941, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Poems</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                     <unitdate normal="1941/1941">1941</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_238d72cd61ecea75ce96840ddcc6ad6b"
+                                label="mixed materials"
+                                type="box">2</container>
+                     <container id="aspace_1f1310e435f10a97c5cf49a1025ac03e"
+                                parent="aspace_238d72cd61ecea75ce96840ddcc6ad6b"
+                                type="folder">15</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV. Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_381ecfb3a0020ba4cd5d1567aaf74ce0" level="file">
                <did>
                   <unittitle>Mildred Louise (Boie) Saunders to</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_ff21b4a29b1493efd710fb63f98c1df3" level="file">
                   <did>
                      <unittitle>Family</unittitle>
                   </did>
-                  <c04 id="list-toj.l." level="file">
+                  <c04 id="aspace_list-toj.l." level="file">
                      <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Maurine (Boie) LaBarre,<unitdate> 1928-1939</unitdate>
-                        </unittitle>
+                        <unittitle>Maurine (Boie) LaBarre</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1928/1939"
+                                  type="inclusive">1928-1939</unitdate>
+                        <container id="aspace_c7501a7efb933a48c8445e1f647607bb"
+                                   label="mixed materials"
+                                   type="box">3</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_40d9c6e6a7a44918ed7bdb49193f3ad2" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Maurine (Boie) LaBarre,<unitdate> 1940-1960s, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Maurine (Boie) LaBarre</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1940/1969"
+                                  type="inclusive">1940-1960s</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_4e1e96f1ab052f3f2f401acafec5b040"
+                                   label="mixed materials"
+                                   type="box">4</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_70157c7f9c6f518bc64bf6302ac11361" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Group letters to family,<unitdate> 1936, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Group letters to family</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_aa7f0770cc25697020de747b62a0a302"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_23150d2907969ee4fdff6e188c1b4c40"
+                                   parent="aspace_aa7f0770cc25697020de747b62a0a302"
+                                   type="folder">1</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b87cb4f58f5e19f114aa0668398b6a1b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Edith (Stephan) Boie,<unitdate> 1936-37, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Edith (Stephan) Boie</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1936/1937"
+                                  type="inclusive">1936-37</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_db4a07ce017b4a92d59faceeac836427"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_20307ed14bc9d6b7c86ddc04c06b6af5"
+                                   parent="aspace_db4a07ce017b4a92d59faceeac836427"
+                                   type="folder">2</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_5171ce07872112079ef0aab637284035" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Emil Boie,<unitdate> 1943</unitdate>
-                        </unittitle>
+                        <unittitle>Emil Boie</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                        <container id="aspace_7c3ea7d288e546a758b3b281e6bf2258"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_8cd4a63abb5faca1c1e76d5e4e359473"
+                                   parent="aspace_7c3ea7d288e546a758b3b281e6bf2258"
+                                   type="folder">3</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_0a152b34c64e2e60021d86dd3d91dac6" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Isabelle (Boie) Westby, <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>Isabelle (Boie) Westby</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_02ca42eee6918e4271109de673a28edf"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_bf9e2a97b2452cdfa9c47b47b7be6858"
+                                   parent="aspace_02ca42eee6918e4271109de673a28edf"
+                                   type="folder">4</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_be6d0dabac49abf8e2ea0e7c636106c4" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Luther Boie,<unitdate> 1939</unitdate>
-                        </unittitle>
+                        <unittitle>Luther Boie</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                        <container id="aspace_105bd084e7342ac995f42dd738374a04"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_d4431b01d36627c969ac486eca3b875d"
+                                   parent="aspace_105bd084e7342ac995f42dd738374a04"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d978c7c1784b2eaa1a155fc075b6f420" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>John LaBarre,<unitdate> 1946</unitdate>
-                        </unittitle>
+                        <unittitle>John LaBarre</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <container id="aspace_b868f86dccf03caa7bc4b01b37594233"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_77788f27731002d16742dbbd0332bac0"
+                                   parent="aspace_b868f86dccf03caa7bc4b01b37594233"
+                                   type="folder">6</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3bad2fbafc31fb1602e58a215288f58b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Weston LaBarre,<unitdate> 1939, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Weston LaBarre</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_a7fb3cfb7b36323a3a284b2fca3b7244"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_d295baf0104f0fcbe11b256921388374"
+                                   parent="aspace_a7fb3cfb7b36323a3a284b2fca3b7244"
+                                   type="folder">7</container>
                      </did>
-                     <note>
-                        <p> [See also letters to Maurine] </p>
-                     </note>
+                     <odd id="aspace_e4715176f58963cdcd983ea34dd09f65">
+                        <head>General</head>
+                        <p>[See also letters to Maurine]</p>
+                     </odd>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_187068e06d30451876f8e3ff0ecb8395" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Friends and associates,<unitdate> 1945-46</unitdate>
-                     </unittitle>
+                     <unittitle>Friends and associates</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1945/1946"
+                               type="inclusive">1945-46</unitdate>
+                     <container id="aspace_cef341c0f2640d053ad637a0b05e4fe4"
+                                label="mixed materials"
+                                type="box">5</container>
+                     <container id="aspace_103a7424c27dcfc8d5c8f06e2987cd65"
+                                parent="aspace_cef341c0f2640d053ad637a0b05e4fe4"
+                                type="folder">8</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_95c6c3361e5ba5072678407fe7565f96" level="file">
                <did>
                   <unittitle>To Louise (Boie) Saunders from</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_bb982d2128809c2160f104c20b3f1b9f" level="file">
                   <did>
                      <unittitle>Family</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_52b54691177341ac6255220338c166d5" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Edith (Stephan) Boie,<unitdate> 1925-47, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Edith (Stephan) Boie</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1925/1947"
+                                  type="inclusive">1925-47</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_643b023e9699edd73ba1b271591d94d3"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_d377f8737542935c8a4b4079015d5059"
+                                   parent="aspace_643b023e9699edd73ba1b271591d94d3"
+                                   type="folder">9</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3edf3650c037734b5960fabda36ce2ba" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>Isabelle (Boie) Westby,<unitdate> 1944-86, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Isabelle (Boie) Westby</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1944/1986"
+                                  type="inclusive">1944-86</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_4a2fecbd1b7eda56f4dd4624a2f89bff"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_b7e34e420f61fb5ca2ef20e57ec56f31"
+                                   parent="aspace_4a2fecbd1b7eda56f4dd4624a2f89bff"
+                                   type="folder">10</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_faf690d7c213fece2f344353e3e0dd7e" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>Luther ("Toby") and Ruth Boie,<unitdate> 1946, 1986,
-                              undated</unitdate>
-                        </unittitle>
+                        <unittitle>Luther ("Toby") and Ruth Boie</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <unitdate normal="1986/1986">1986</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_6812016d67483c8b795276113a706d26"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_027ddaaac6524d23249bd71b6d41458f"
+                                   parent="aspace_6812016d67483c8b795276113a706d26"
+                                   type="folder">11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_5212aebf40211e18b5eb30fe2fdeed1d" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>Maurine (Boie) LaBarre,<unitdate> 1954-86, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Maurine (Boie) LaBarre</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1954/1986"
+                                  type="inclusive">1954-86</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_042783fd26a6dfadba43a69251126206"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_52d76482bedd93f203af9793b6d3598c"
+                                   parent="aspace_042783fd26a6dfadba43a69251126206"
+                                   type="folder">12</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a09b43db8f78b3f00a0a710abf09ae00" level="file">
                   <did>
                      <unittitle>Friends and associates</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_d416145b6ed1e7347c5a90142b80a750" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">13-14</container>
-                        <unittitle>George Allen,<unitdate> 1936-38, undated</unitdate>
-                        </unittitle>
+                        <unittitle>George Allen</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1936/1938"
+                                  type="inclusive">1936-38</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_09e171b38a8e677701c5917e9064ca35"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_7f0c256b0378d033e58feaa7f99869da"
+                                   parent="aspace_09e171b38a8e677701c5917e9064ca35"
+                                   type="folder">13-14</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b221171679922211203fe6583c4a91e3" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">15-17</container>
-                        <unittitle>Richard (H.E.) Bates,<unitdate> 1938-39, undated </unitdate>[inc.
-                           "Every Bullet Has its Billet," mss. by H.E. Bates, <unitdate>ca.
-                              1938</unitdate>]</unittitle>
+                        <unittitle>Richard (H.E.) Bates, 1938-39, undated [inc. "Every Bullet Has its
+                  Billet," mss. by H.E. Bates, ca. 1938]</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1938/1939"
+                                  type="inclusive">1938-39</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <unitdate calendar="gregorian"
+                                  certainty="approximate"
+                                  era="ce"
+                                  normal="1938/1938">1938</unitdate>
+                        <container id="aspace_5d315947b2364db5a3f54d51f4f03f47"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_dd74a02a06634fd415256d4586ae645b"
+                                   parent="aspace_5d315947b2364db5a3f54d51f4f03f47"
+                                   type="folder">15-17</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_c537ee2eca2864aa5b70f3a679fb23d9" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>Harriet Beale,<unitdate> 1946, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Harriet Beale</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_02d9a55f1af4d2d8f138a3f107adb5be"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_7c5cea5dd03879225f888c7abededfa8"
+                                   parent="aspace_02d9a55f1af4d2d8f138a3f107adb5be"
+                                   type="folder">18</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_846a8ecf54080ab7e9a42c2ac1ec84d2" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>Other friends and associates,<unitdate> 1928-90,
-                              undated</unitdate>
-                        </unittitle>
+                        <unittitle>Other friends and associates</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1928/1990"
+                                  type="inclusive">1928-90</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_dda6609dddb6bb255b334530499bf5a9"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_a143c44c12b74a65748ff42986b0c455"
+                                   parent="aspace_dda6609dddb6bb255b334530499bf5a9"
+                                   type="folder">19</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b939d35ca5715a56cc2b0a417e280f73" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>Professional,<unitdate> 1927-67, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Professional</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1927/1967"
+                                  type="inclusive">1927-67</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_4f6a554d52d9ed5d11d79ecf27810522"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_ac6ee29b93ee2364e82bd3b82b4e49d2"
+                                   parent="aspace_4f6a554d52d9ed5d11d79ecf27810522"
+                                   type="folder">20</container>
                      </did>
                   </c04>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9dd1124f672f3f541998a4fee11e0a53" level="file">
                <did>
                   <unittitle>To Maurine (Boie) and Weston LaBarre from</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_39e0c563ba2468d22aaa0e4c7914c16c" level="file">
                   <did>
                      <unittitle>Family</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_8134b6a2c9439dabc625509b2d37eeea" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">21</container>
-                        <unittitle>Edith and Emil Boie,<unitdate> 1928-56, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Edith and Emil Boie</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1928/1956"
+                                  type="inclusive">1928-56</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_efb79795521860dc9ce2c6e867c36043"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_ec52927860c05143bb4a545d3bc2d23e"
+                                   parent="aspace_efb79795521860dc9ce2c6e867c36043"
+                                   type="folder">21</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_7fdb27c7cb68fbc0a7a70b7caac47fe5" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">22</container>
-                        <unittitle>Isabelle (Boie) Westby,<unitdate> 1932, 1936, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Isabelle (Boie) Westby</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                        <unitdate normal="1936/1936">1936</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_86fad03b33b4c39363540c20e31060b4"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_5910b7db262cf5d338487e34904be7cd"
+                                   parent="aspace_86fad03b33b4c39363540c20e31060b4"
+                                   type="folder">22</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_a404730e162a8ef9bf6fc779b063fef8" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">23</container>
-                        <unittitle>Luther ("Toby") Boie,<unitdate> 1935, 1944</unitdate>
-                        </unittitle>
+                        <unittitle>Luther ("Toby") Boie</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                        <unitdate normal="1944/1944">1944</unitdate>
+                        <container id="aspace_ed8f831a0d40bcda6559fa9bc3aa9d57"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_b8c2f607c5cc62f111cffa4a34fd48dc"
+                                   parent="aspace_ed8f831a0d40bcda6559fa9bc3aa9d57"
+                                   type="folder">23</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3fb017d85bb13c276e42245f3cf9783f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">24</container>
-                        <unittitle>Ruth Boie,<unitdate> 1955, 1957</unitdate>
-                        </unittitle>
+                        <unittitle>Ruth Boie</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                        <unitdate normal="1957/1957">1957</unitdate>
+                        <container id="aspace_c2559398040de461d137b27d2441f610"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_b2a74fc847d426f6e6adf24b5043dc48"
+                                   parent="aspace_c2559398040de461d137b27d2441f610"
+                                   type="folder">24</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_4372a5adb25d4faee8561a4dfb4b5628" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">25</container>
-                        <unittitle>Mrs. Artie LaBarre (Weston's mother),<unitdate> 1956</unitdate>
-                        </unittitle>
+                        <unittitle>Mrs. Artie LaBarre (Weston's mother)</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1956/1956">1956</unitdate>
+                        <container id="aspace_f23d9c270485703c75d24997d9f410f6"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_65365da2408a92d091035fe037378c4f"
+                                   parent="aspace_f23d9c270485703c75d24997d9f410f6"
+                                   type="folder">25</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_bc11ac5fb727a2e92c995feaaef7aea7" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">26</container>
-                        <unittitle>William Saunders,<unitdate> 1960</unitdate>
-                        </unittitle>
+                        <unittitle>William Saunders</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                        <container id="aspace_641afca5a591deee0f3721367d7994cd"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_9275bc999863f3e66b89cf7e284c7c64"
+                                   parent="aspace_641afca5a591deee0f3721367d7994cd"
+                                   type="folder">26</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_9c49ab5df4b5f391fe35eb83813bb7ea" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">27</container>
-                        <unittitle>Other family,<unitdate> 1926, 1946, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Other family</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                        <unitdate normal="1946/1946">1946</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_0f61956dfcaa19dbd6cb44747f809298"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_d9c966ae61e829857763d99a0732d4a5"
+                                   parent="aspace_0f61956dfcaa19dbd6cb44747f809298"
+                                   type="folder">27</container>
                      </did>
                   </c04>
                </c03>
             </c02>
-            <c02 id="list-tomaurine" level="file">
+            <c02 id="aspace_list-tomaurine" level="file">
                <did>
                   <unittitle>To Maurine (Boie) and Weston LaBarre from</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_360a0fb1e8a65c4ccc31dd37b3e8cea9" level="file">
                   <did>
                      <unittitle>Friends and associates</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_539cef447d0243f2653b4a0cc55b136b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">28</container>
-                        <unittitle>Harriet Beale,<unitdate> 1928-50, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Harriet Beale</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1928/1950"
+                                  type="inclusive">1928-50</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_3143e944fbff5aa466b3fc3ac585a96b"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_cebbd7e5bbff59248e299db3be9f488a"
+                                   parent="aspace_3143e944fbff5aa466b3fc3ac585a96b"
+                                   type="folder">28</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_24b30ae49c909218abadd0784ed10cdd" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">29</container>
-                        <unittitle>O. Spurgeon English,<unitdate> 1940-58</unitdate>
-                        </unittitle>
+                        <unittitle>O. Spurgeon English</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1940/1958"
+                                  type="inclusive">1940-58</unitdate>
+                        <container id="aspace_76c88542551b81ddfb7af58660d99e67"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_4a7a2bcdbdb058e02aa7a4c93e43f14f"
+                                   parent="aspace_76c88542551b81ddfb7af58660d99e67"
+                                   type="folder">29</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_16ebd1ecae0d4e829806db7e9f718abe" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">30</container>
-                        <unittitle>Chauncey Wu,<unitdate> 1932, 1936</unitdate>
-                        </unittitle>
+                        <unittitle>Chauncey Wu</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                        <unitdate normal="1936/1936">1936</unitdate>
+                        <container id="aspace_26411969bbb94b2cf3ae0627554c0764"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_aec60f35fe91679bea5dc94ded2a50a1"
+                                   parent="aspace_26411969bbb94b2cf3ae0627554c0764"
+                                   type="folder">30</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_389ba89b84e92400eb526539ce8db9e3" level="file">
                      <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">31-32</container>
-                        <unittitle>Other friends,<unitdate> 1926-60, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Other friends</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1926/1960"
+                                  type="inclusive">1926-60</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_3c42034d4d149cf8680ade0c74d7d794"
+                                   label="mixed materials"
+                                   type="box">5</container>
+                        <container id="aspace_f677dfce8201469e501019a41ec9df3e"
+                                   parent="aspace_3c42034d4d149cf8680ade0c74d7d794"
+                                   type="folder">31-32</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e08c1ae4edacf28e893f4c27c21bb38c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">33</container>
-                     <unittitle>Professional,<unitdate> 1937-43, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Professional</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1937/1943"
+                               type="inclusive">1937-43</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_8947c9ffadea5f87ac01b54af9c63ef1"
+                                label="mixed materials"
+                                type="box">5</container>
+                     <container id="aspace_5f1e687194c5ddffff3cfeab9c86a9c4"
+                                parent="aspace_8947c9ffadea5f87ac01b54af9c63ef1"
+                                type="folder">33</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0ecd3120cbdb7b8d1a17523266746fb6" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">34</container>
-                  <unittitle>To John LaBarre from family,<unitdate> 1946, undated</unitdate>
-                  </unittitle>
+                  <unittitle>To John LaBarre from family</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_e5844885e35218db2796992c06443d94"
+                             label="mixed materials"
+                             type="box">5</container>
+                  <container id="aspace_432c5883c90662e8b4def923aebcd914"
+                             parent="aspace_e5844885e35218db2796992c06443d94"
+                             type="folder">34</container>
                </did>
-               <note>
-                  <p> [See also Louise (Boie) Saunders to J.L.] </p>
-               </note>
+               <odd id="aspace_1e82a7c394a2778c963694218faffe13">
+                  <head>General</head>
+                  <p>[See also Louise (Boie) Saunders to J.L.]</p>
+               </odd>
             </c02>
          </c01>
-         <c01 id="list-serOV" level="series">
+         <c01 id="aspace_list-serOV" level="series">
             <did>
                <unittitle>Series V. Oversize Material</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_893702dd97c9c440e44e76fb133118a7" level="file">
                <did>
-                  <container type="map-case" label="mixed materials">Flat file drawer 35</container>
-                  <unittitle>Portrait of Mildred Louise (Boie) Saunders, watercolor on board
-                        <unitdate>undated</unitdate></unittitle>
+                  <unittitle>Portrait of Mildred Louise (Boie) Saunders, watercolor on board</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_10a19bd3bfc2227f8cdf1dda31ad61d9"
+                             label="mixed materials"
+                             type="map-case">Flat file drawer 35</container>
                </did>
             </c02>
          </c01>
       </dsc>
-   </archdesc>
+  </archdesc>
 </ead>
