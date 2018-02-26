@@ -4,4 +4,6 @@
 
  Seeded with EADs as imported into ArchivesSpace (post-cleanup), summer 2017.
 
- At this time, this repo is primarily for version control for subsequent changes using output from ArchivesSpace.
+ Being used for version control until implementation of ArchivesSpace Public User Interface, slated for early 2020.
+ 
+ Updated manually with EADs that have been output from ArchivesSpace, transformed, and successfully published to Asteria.
