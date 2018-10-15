@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
- <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head" langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511" scriptencoding="iso15924">
-   <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss511.xml//EN">mnsss511</eadid>
+<?xml version="1.0"?>
+<?xml-stylesheet href="print.xsl" type="text/xsl"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD)
+Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+ <eadheader langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601"
+repositoryencoding="iso15511" scriptencoding="iso15924" audience="internal" id="head"
+relatedencoding="MARC21">
+   <eadid publicid="-//us::mnsss//TEXT us::mnsss::mnsss511.xml//EN" countrycode="us" mainagencycode="mnsss">mnsss511</eadid>
 	<filedesc>
       <titlestmt>
         <titleproper encodinganalog="245$a">Joan E. Biren Papers, 1944-2011 (ongoing)</titleproper>
@@ -22,7 +27,9 @@
 Encoded by Margaret Jessup.
          <date normal="yyyy-mm-dd">November 14, 2011</date>
     </creation>
-    <langusage>Finding aid written in English.</langusage>
+    <langusage>Finding aid written in
+        <language encodinganalog="546" langcode="eng" scriptcode="latn">English.</language>
+      </langusage>
     </profiledesc>
   </eadheader>
   <archdesc level="collection" relatedencoding="MARC21">
@@ -31,14 +38,16 @@ Encoded by Margaret Jessup.
         <origination label="Creator:">
            <persname encodinganalog="100" source="lcnaf">Biren, Joan E.</persname>
        </origination>
-       <unittitle encodinganalog="245$a" label="Title:">Joan E. Biren papers</unittitle><unitdate label="Dates:" type="inclusive">1944-2011 (ongoing)</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 587</unitid>
+       <unittitle label="Title:" encodinganalog="245$a">Joan E. Biren Papers</unittitle><unitdate
+type="inclusive" label="Dates:">1944-2011 (ongoing)</unitdate>
+      <unitid label="Collection Number:" encodinganalog="099" countrycode="us"
+repositorycode="mnsss">MS 587</unitid>
 <physdesc label="Quantity:">
         <extent encodinganalog="300$a">145 boxes</extent>
         <extent encodinganalog="300$a">(circa 70 linear ft.) </extent>
 </physdesc>
 <!-- Encode additional languages with lang clip -->
-<langmaterial encodinganalog="546" label="Language of Material:">
+<langmaterial label="Language of Material:" encodinganalog="546">
      <language langcode="eng">English</language>
 </langmaterial>
         <repository label="Location:">
@@ -49,7 +58,7 @@ Encoded by Margaret Jessup.
             </address>
          </repository>
            <!-- MRJ Edit as needed-->
-           <abstract encodinganalog="520$a" label="Abstract:">
+           <abstract label="Abstract:" encodinganalog="520$a">
             Filmmaker; Photographer; Lesbian activist. Papers document Biren's professional and personal life.  Major topics include photography, film, lesbianism, Judaism, feminism, lesbian and gay rights, political movements, and anti-nuclear movements.  Biren was an avid collector of lesbian and social justice materials, and the Papers are rich in images, clippings, and other materials collected during events such as the 1993 March on Washington for  Lesbian, Gay and Bi Equal Rights and Justice.  Materials related to Biren's filmmaking include extensive raw footage, research materials, and transcripts of interviews, conference panels, and events.  Notable correspondents include Audre Lorde, Alison Bechdel, Tee Corrine, Barbara Smith, and John D'Emilio. 
         [NOTE: The contents list for this collection is not online yet but will be soon.  Check back again in a few weeks, or contact the Sophia Smith Collection if you would like a copy sent to you.]
          </abstract>
@@ -57,7 +66,7 @@ Encoded by Margaret Jessup.
 
  <!--  Add paragraph marks to text -->
 <bioghist id="bioghist">
-       
+       <head>Biographical Note</head>
      <p>Joan E. Biren (b.1944) grew up in the Washington, D.C. area, graduated from Mount Holyoke
 College in 1966, and pursued graduate training in political science at Oxford University and
 communications at American University. Biren joined the women's liberation movement in Washington
@@ -70,9 +79,9 @@ images of lesbians."  She is best known for her photographic portraits, some of 
 documents of late 20th-century lesbian life. Realizing the need for affirming images and self-
 expression outside of traditional patriarchal language, her work has appeared in off our backs, The
 Washington Blade, Gay Community News, and on countless LP album and book covers. Biren published
-two ground-breaking collections of her photography: "Eye to Eye: Portraits of Lesbians" (1979) and
+two ground-breaking collections of her photography: <i>Eye to Eye: Portraits of Lesbians</i> (1979) and
 "Making A Way: Lesbians Out Front" (1987). In the 1990s, Beginning in 1979 Biren toured the country
-presenting her slide show "Lesbian Images in Photography, 1850 to the present" to women's groups.
+presenting her slide show <i>Lesbian Images in Photography, 1850 to the present</i> to women's groups.
 Other shows followed and gradually Biren moved from still photography to filmmaking. She documented
 the 1987 and 1993 gay and lesbian marches on Washington in For Love and For Life and A Simple
 Matter of Justice and in 2003, an award-winning film on lesbian pioneers Del Martin and Phyllis
@@ -80,7 +89,7 @@ Lyon, "No Secret Anymore: The Times of Del Martin and Phyllis Lyon."</p>
 </bioghist>
  <!--  Add paragraph marks to text -->
 <scopecontent id="scope">
-      
+      <head>Scope and Contents of the Collection</head>
 <p>     The Joan E. Biren Papers document her professional and personal life.  They include
 correspondence, notes, photographs, press releases, reports, fliers and publicity materials,
 journal and newspaper articles, newsletters, audiovisual materials, transcripts of interviews, and
@@ -102,7 +111,7 @@ Lorde, Alison Bechdel, Tee Corrine, Barbara Smith, and John D'Emilio.</p>
  <!-- MRJ: Edit CR info as necessary -->
 
 <userestrict encodinganalog="540" id="admin-use">
-             <p>TJoan Biren retains copyright to her published and unpublished works. Copyright to works by others may be owned by them, their heirs or assigns.  It is the responsibility of the researcher to identify and satisfy the holders of all copyrights for permission to publish  reproductions or quotations beyond "fair use." Permission must also be obtained from the Sophia Smith Collection as owners of the physical property.</p>
+             <p>Joan Biren retains copyright to her published and unpublished works. Copyright to works by others may be owned by them, their heirs or assigns.  It is the responsibility of the researcher to identify and satisfy the holders of all copyrights for permission to publish  reproductions or quotations beyond "fair use." Permission must also be obtained from the Sophia Smith Collection as owners of the physical property.</p>
 </userestrict>
 <prefercite id="admin-cite">
         <head>Preferred Citation</head>
@@ -113,8 +122,6 @@ Lorde, Alison Bechdel, Tee Corrine, Barbara Smith, and John D'Emilio.</p>
      <head>Additional Formats</head>
 		<p>Some audiovisual recordings have been converted to digital format for research use.</p>
 		<p>A slideshow produced by Joan Biren entitled: "Look To the Women for Courage: Stories From the Seneca Encampment for Peace and Justice" is available to <extref href="http://media.smith.edu/departments/ssc/biren/biren-slideshow.html">view online</extref>.</p>
-
-		<p>Audio interviews with subjects of Joan Biren's book <title render="italic">Eye to Eye: Portraits of Lesbians</title> (1979) can be <extref href="http://media.smith.edu/departments/ssc/biren/biren-eye_playlist.html">heard online</extref>  (Smith campus access only).</p>
 </altformavail>
 <accruals encodinganalog="584" id="admin-accruals">
                <p>Periodic additions to collection are expected and may not be reflected in this record.</p>
