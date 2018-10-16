@@ -1,310 +1,501 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head" langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511" scriptencoding="iso15924">
-
-<!-- Enter EAD filename before exporting -->
-  <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss557.xml//EN">mnsss557</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper encodinganalog="245$a">Old Lesbian Oral Herstory Project, 1997-2014</titleproper>
-        <subtitle>Finding Aid</subtitle>
-     </titlestmt>
-     <publicationstmt>
-        <publisher encodinganalog="260$b">Sophia Smith Collection</publisher>
-        <address>
-          <addressline>Smith College</addressline>
-          <addressline>Northampton, MA</addressline>
-        </address>
-         <date encodinganalog="260$c" normal="2014">2014</date>
-         <p>Sophia Smith Collection. All rights reserved.</p>
-       </publicationstmt>
-     </filedesc>
-     <profiledesc>
-<creation encodinganalog="500">Finding aid exported into EAD from InMagic DB/Textworks 13.0.
-Encoded by Margaret Jessup.
-         <date normal="yyyy-mm-dd">April 21, 2014</date>
-    </creation>
-    <langusage>Finding aid written in English.</langusage>
-    </profiledesc>
-  </eadheader>
-  <archdesc level="collection" relatedencoding="MARC21">
-    <did id="main">
-       <head>Collection Overview</head>
-<!-- Edit Orig label:
-corpname  encodinganalog="110"
-famname encodinganalog="100 3"
-Del Orig for Subject Colls and OH colls  -->
-
-       <unittitle encodinganalog="245$a" label="Title:">Old Lesbian Oral Herstory Project records</unittitle><unitdate label="Dates:" type="inclusive">1997-2014 (ongoing)</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 669</unitid>
-<physdesc label="Quantity:">
-        <extent encodinganalog="300$a">14 boxes</extent>
-        <extent encodinganalog="300$a">(10.75 linear ft., and digital files) </extent>
-</physdesc>
-<!-- Encode additional languages with lang clip -->
-<langmaterial encodinganalog="546" label="Language of Material:">
-     <language langcode="eng">English</language>
-</langmaterial>
-        <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="us-mnsss">mnsss557</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Old Lesbian Oral Herstory Project records <num>SSC.MS.00669</num>
+            </titleproper>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-10-15 14:12:21 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:22-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2018-10-04</date>
+            <item>Updated legacy finding aid</item>
+         </change>
+         <change>
+            <date>2018-10-12</date>
+            <item>Removed link to online playlist</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
          </repository>
-           <!-- MRJ Edit as needed-->
-           <abstract encodinganalog="520$a" label="Abstract:">
-		The project, begun by Arden Eversmeyer in 1997, continues to collect the life stories of lesbians 70 and older from around the country. The collection includes full transcripts and audio recordings (tapes and digital files); plus related correspondence, releases, and photographs (primarily color photocopies). Some interviewee files contain additional biographical material, writings, speeches, and memorabilia.  
-         </abstract>
-        <!-- OR   [NOTE: There is no contents list for this finding aid.  Contact the Sophia Smith
-Collection for more information about this collection.] -->
-</did>
-
- <!--  Add paragraph marks to text -->
-<bioghist id="bioghist">
-       
-     <p>This oral history project began in 1997 when Arden Eversmeyer started working with women she knew who were ill and dying in her community of Houston, Texas.  Next, she began collecting stories from friends as she traveled. The project came to be called the Old Lesbian Oral Herstory Project and expanded to include the life stories of lesbians 70 and older (i.e., those who were born in the early years of the 20th century).   Twenty two of the interviews were published in the book <title render="italic">A Gift of Age: Old Lesbian Life Stories</title> by Arden Eversmeyer and Margaret Purcell (2009).</p>
-</bioghist>
- <!--  Add paragraph marks to text -->
-<scopecontent id="scope">
-      
-       <p>The Old Lesbian Oral Herstory Project includes interview transcripts and audio recordings (cassette tapes and digital files); plus related correspondence, releases, and photographs (primarily color photocopies).  Some interviewee files contain additional biographical material, writings, speeches, and memorabilia.</p>
-
-<p>Narrators include:</p>
-   <list>
-	<item>Allen, Ann</item>
-	<item>Atkins, Gail</item>
-	<item>Austin, Delores</item>
-	<item>Avery, Charlotte</item>
-	<item>Bailey, Karen</item>
-	<item>Bambeck, Kathy</item>
-	<item>Barfield, Beth</item>
-	<item>Barnes, Shaba</item>
-	<item>Bart, Pauline</item>
-	<item>Beers, Jinx</item>
-	<item>Berman, Ruth</item>
-	<item>Bissell, LeClair</item>
-	<item>BlueHeron, Hannah</item>
-	<item>Borders, Virginia (Ginny)</item>
-	<item>Bottini, Ivy </item>
-	<item>Boudreaux, Jean ("Shewolf")</item>
-	<item>Brand, Doreen</item>
-	<item>Breed, Deedy</item>
-	<item>Breeze, Nancy</item>
-	<item>Brindley, Mary Beth	</item>
-	<item>Bronson, Ricci (AKA Cortez, Ricci)</item>
-	<item>Brown, Janet</item>
-	<item>Brundage, Pauline (interview closed, permission required)</item>
-	<item>Campbell, Laurel</item>
-	<item>Carroll, Miriam</item>
-	<item>Cason, Louise</item>
-	<item>Cassingham, Barbee</item>
-	<item>Cathcart, Helen </item>
-	<item>Clegg, Roberta </item>
-	<item>Clifton, Mickie</item>
-	<item>Cohn, Sally</item>
-	<item>Coleman, Marion</item>
-	<item>Coleman, Pat (audio quality very poor, no transcript)</item>
-	<item>Cooper, Gerry</item>
-	<item>Cosgrave, Sandy</item>
-	<item>Daly, Edith (Edie)</item>
-	<item>Debra, Ruth</item>
-	<item>Deetz, Ann</item>
-	<item>deLeeuw, Care</item>
-	<item>Doclar, Charlotte</item>
-	<item>Doublex, Vashte</item>
-	<item>Downey, Phyllis</item>
-	<item>Dunnewald, Ann</item>
-	<item>Duplaix, Sally</item>
-	<item>Durham, Pat</item>
-	<item>Eaton, Fran</item>
-	<item>Eden, Jean</item>
-	<item>Eversmeyer, Arden</item>
-	<item>Fagan, Portia</item>
-	<item>Feingold, Marlene</item>
-	<item>Ficklen, Martha</item>
-	<item>Fine, Judith</item>
-	<item>Fitzgerald, Jessie</item>
-	<item>Flagg, Bonita</item>
-	<item>Fly, Alta</item>
-	<item>Foley, Mary</item>
-	<item>Ford, Tre</item>
-	<item>Fowler, Dorothy (Dotty)</item>
-	<item>Frey, Lucille</item>
-	<item>Gandy, Patricia</item>
-	<item>Gates, Jennie</item>
-	<item>Gerber, Barbara</item>
-	<item>Gieske, Mickie</item>
-	<item>Glass, Kathryn</item>
-	<item>Gobrecht, Elli</item>
-	<item>Gold, Laura</item>
-	<item>Goodrich, Ellen</item>
-	<item>Hathaway, Rosemary</item>
-	<item>Hayes, Ethyl (aka Kim) (Interview closed, permission required)</item>
-	<item>Healey, Shevy (audio quality very poor, no transcript)</item>
-	<item>Heindselman, Lois (Partial audio only)</item>
-	<item>Herrick, Lynn (interview closed, permission required)</item>
-	<item>Hickok, Beverly</item>
-	<item>Hiner, Jo</item>
-	<item>Hoffman, Dorothy</item>
-	<item>Howard, Bea</item>
-	<item>Ives, Janice</item>
-	<item>Johanson, Johanna</item>
-	<item>Jones, Barbara</item>
-	<item>Jones, Joann</item>
-	<item>Kalish, Barbara</item>
-	<item>Kalscits, Helen</item>
-	<item>Kate, Arden</item>
-	<item>Kelley, Cynthia</item>
-	<item>Kennedy, Barbara</item>
-	<item>Killough, Margaret</item>
-	<item>Knowles, Bobbie</item>
-	<item>Kostenbader, Margot</item>
-	<item>Kurtz, Connie</item>
-	<item>Lane, Sunlight</item>
-	<item>Larsen, Vivian</item>
-	<item>Lawler, Carmah</item>
-	<item>Levy, Janice</item>
-	<item>Lloyd, Jean</item>
-	<item>Majors, Nelda</item>
-	<item>Marevis, Ann</item>
-	<item>Mariano, Marie</item>
-	<item>Marks-Nelson, Harriet</item>
-	<item>Martin, Vera</item>
-	<item>Maser, Shirley</item>
-	<item>McConnell, Betsy</item>
-	<item>McGough, BJ</item>
-	<item>McVey, Jess</item>
-	<item>Meyers, Joan</item>
-	<item>Mirkin, Jackie</item>
-	<item>Morris, Bessie</item>
-	<item>Morton, Virginia</item>
-	<item>Mountaingrove, Jean</item>
-	<item>Murray, Ruth</item>
-	<item>Neal, Aminita</item>
-	<item>Nessler, Violet</item>
-	<item>Osborne, Nancy</item>
-	<item>Palmer, June</item>
-	<item>Parke, Avis</item>
-	<item>Parrish, Maxine</item>
-	<item>Pearce, Marie</item>
-	<item>Pepper, Adobe Jean (audio very poor, no transcript)</item>
-	<item>Perry, Ocie</item>
-	<item>Pierson, Joyce</item>
-	<item>Pontius, Leoma</item>
-	<item>Pratt, Sue</item>
-	<item>Quinn, Lucy</item>
-	<item>Rasmussen, Joan</item>
-	<item>Red, Ida</item>
-	<item>Reed, Suzanne</item>
-	<item>Reeves, Joy</item>
-	<item>Reynolds, Christine</item>
-	<item>Ridalls, Shirley (no transcript available)</item>
-	<item>Riddle, Katherine</item>
-	<item>Rivers, Diana</item>
-	<item>Roerdon, Chris</item>
-	<item>Rudnick, Betty</item>
-	<item>Russ, Joanna</item>
-	<item>Rust, Marjorie (interview closed, permission required)</item>
-	<item>Samuels, Eunice</item>
-	<item>Santikos, Kiki</item>
-	<item>Schafer, Eleanor ("Ellie")</item>
-	<item>Sciacca, Barbara (interview closed, permission required)</item>
-	<item>Scott, Emma Lou</item>
-	<item>Shoemaker, Betty</item>
-	<item>Siegle, Anne (interview closed, permission required)</item>
-	<item>Silver, Ruth</item>
-	<item>Sjogren, Elizabeth</item>
-	<item>Stancich, Gloria</item>
-	<item>Stewart, Annalee</item>
-	<item>Stoneking, Carole</item>
-	<item>Swofford, Leanne</item>
-	<item>Tate, Sandy</item>
-	<item>Taylor, Ruth</item>
-	<item>Thomas, Helen</item>
-	<item>Thompson, Joanna</item>
-	<item>Tignor, Sandra</item>
-	<item>Tippit, Mattie</item>
-	<item>Tobias, Jane</item>
-	<item>Todd, Beverly</item>
-	<item>Ullman, Kate</item>
-	<item>Van Cleave, Kay</item>
-	<item>VanDiggelen, Margaret</item>
-	<item>Voelkel, Donna</item>
-	<item>Walton, Jeanne</item>
-	<item>Wansley, Ann (Restricted access)</item>
-	<item>Warner, Nancy</item>
-	<item>Weber, Elaine</item>
-	<item>Weiss, Irene</item>
-	<item>Wheeler, Phoenix</item>
-	<item>Wilkins, Karen</item>
-	<item>Williams, Jayne</item>
-	<item>Williams, Sue Parker (Rainbow)</item>
-	<item>Wilson, Jean</item>
-	<item>Wilson, Pat</item>
-	<item>Yoder, Marilyn</item>
-	<item>Zarchin, Natalie</item>
-
-
-   </list>
- 	<p><extref href="http://www.smith.edu/libraries/libs/ssc/olohp_access.html">Audio interviews and transcripts are also 
- available online</extref> (Smith campus access only), unless otherwise noted above.</p>
+         <unittitle>Old Lesbian Oral Herstory Project records</unittitle>
+         <origination label="source">
+            <persname source="naf">Eversmeyer, Arden</persname>
+         </origination>
     
-        <!-- OR   [NOTE: There is no contents list for this finding aid.  Contact the Sophia Smith
-Collection for more information about this collection.] -->
-</scopecontent>
-  <!-- MRJ: Edit as necessary -->
-
- <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The papers are open to research according to the regulations of the Sophia Smith Collection with the following caveats:
-	       <list type="simple">
-                         <item>Researchers must sign an Access Agreement Form to protect the privacy of interviewees and other third party individuals named in the records</item>
-                         <item>Some interviews require permission to be used (see list)</item>
-                         <item>Access to audiovisual materials may first require production of research copies--digital files are available for most interviews</item>
-                     </list></p>
-</accessrestrict>
- <!-- MRJ: Edit CR info as necessary -->
-
- <userestrict encodinganalog="540" id="admin-use">
-             <p>The Sophia Smith Collection owns copyright to the oral histories, except where noted on individual release forms.  Copyright to other materials may be owned by the creators or their heirs or assigns. Permission must be obtained to publish reproductions or quotations beyond "fair use."  It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.</p>
-</userestrict>
-<prefercite id="admin-cite">
-        <head>Preferred Citation</head>
-          <p>Please use the following format when citing materials from this collection:</p>
-          <p>Old Lesbian Oral Herstory Project, Sophia Smith Collection, Smith College,
-Northampton, Mass.</p>
-</prefercite>
-<altformavail id="admin-altform">
-     <head>Additional Formats</head>
-		<p>Original audio tapes have been copied to digital files for research use. Transcripts are also available as digital files and <extref href="http://www.smith.edu/libraries/libs/ssc/olohp_access.html">Audio interviews and transcripts are also 
- available online</extref> (Smith campus access only), unless otherwise noted above.</p>
-
-</altformavail>
-<accruals encodinganalog="584" id="admin-accruals">
-               <p>Periodic additions to collection are expected and may not be reflected in this record.</p>
-</accruals>
-<!-- MRJ:  Edit donor info as necessary -->
-<acqinfo id="admin-acqinfo">
-          <p>The Old Lesbian Oral Herstory Project collection was donated to the Sophia Smith Collection beginning in 2011 by Arden Eversmeyer and Margaret Purcell.</p>
-</acqinfo>
-
-<!-- Encode Subject terms -->
-<controlaccess id="subj">
-	<subject encodinganalog="650" source="lcsh">Lesbianism -- United States -- History -- 20th century -- Sources</subject>
-<subject encodinganalog="650" source="lcsh">Lesbians -- United States -- Biography -- Sources</subject>
-<subject encodinganalog="650" source="lcsh">Aged women -- United States -- History -- Sources</subject>
-	<genreform encodinganalog="655" source="aat">Oral histories</genreform>
-	<corpname encodinganalog="610" source="lcsh">Old Lesbian Oral Herstory Project</corpname> 
-<!-- Encode with Added Entry clips -->
-         <persname encodinganalog="700" source="lcnaf">Eversmeyer, Arden</persname> 
-	<persname encodinganalog="700" source="lcnaf">Purcell, Margaret, 1951-  (Margaret Christine)</persname>
-	<title encodinganalog="730" render="italic"> Eversmeyer, Arden and Margaret Purcell. A Gift of Age: a collection of stories based on interview
-transcripts in the Old Lesbian Oral Herstory Project -- Sources</title> 
-</controlaccess>
-<relatedmaterial id="add-related">
-          <p>Associated materials can be found in the 
-          <extref href="http://asteria.fivecolleges.edu/findaids/sophiasmith/mnsss547_main.html">Old Lesbians Organizing for Change Records</extref></p>
+         <unitid>SSC.MS.00669</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">10.75 linear feet</extent>
+            <extent altrender="carrier">(14 boxes and digital files.)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1997/2018"
+                   type="inclusive">1997-2014 (ongoing)</unitdate>
+         <abstract id="aspace_f7cacea4a9a55b331084e8ef0b85726d">The project, begun by Arden Eversmeyer in 1997, continues to collect the life stories of lesbians 70 and older from around the country. The collection includes full transcripts and audio recordings (tapes and digital files); plus related correspondence, releases, and photographs (primarily color photocopies). Some interviewee files contain additional biographical material, writings, speeches, and memorabilia.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>This oral history project began in 1997 when Arden Eversmeyer started working with women she knew who were ill and dying in her community of Houston, Texas. Next, she began collecting stories from friends as she traveled. The project came to be called the Old Lesbian Oral Herstory Project and expanded to include the life stories of lesbians 70 and older (i.e., those who were born in the early years of the 20th century). Twenty two of the interviews were published in the book <title render="italic">A Gift of Age: Old Lesbian Life Stories</title> by Arden Eversmeyer and Margaret Purcell (2009).</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Old Lesbian Oral Herstory Project includes interview transcripts and audio recordings (cassette tapes and digital files); plus related correspondence, releases, and photographs (primarily color photocopies). Some interviewee files contain additional biographical material, writings, speeches, and memorabilia.</p>
+         <p> Narrators include:</p>    
+         <list type="ordered">
+            <item>Allen, Ann</item>
+            <item>Atkins, Gail</item>
+            <item>Austin, Delores</item>
+            <item>Avery, Charlotte</item>
+            <item>Bailey, Karen</item>
+            <item>Bambeck, Kathy</item>
+            <item>Barfield, Beth</item>
+            <item>Barnes, Shaba</item>
+            <item>Bart, Pauline</item>
+            <item>Beers, Jinx</item>
+            <item>Berman, Ruth</item>
+            <item>Bissell, LeClair</item>
+            <item>BlueHeron, Hannah</item>
+            <item>Borders, Virginia (Ginny)</item>
+            <item>Bottini, Ivy</item>
+            <item>Boudreaux, Jean ("Shewolf")</item>
+            <item>Brand, Doreen</item>
+            <item>Breed, Deedy</item>
+            <item>Breeze, Nancy</item>
+            <item>Brindley, Mary Beth</item>
+            <item>Bronson, Ricci (AKA Cortez, Ricci)</item>
+            <item>Brown, Janet</item>
+            <item>Brundage, Pauline (interview closed, permission required)</item>
+            <item>Campbell, Laurel</item>
+            <item>Carroll, Miriam</item>
+            <item>Cason, Louise</item>
+            <item>Cassingham, Barbee</item>
+            <item>Cathcart, Helen</item>
+            <item>Clegg, Roberta</item>
+            <item>Clifton, Mickie</item>
+            <item>Cohn, Sally</item>
+            <item>Coleman, Marion</item>
+            <item>Coleman, Pat (audio quality very poor, no transcript)</item>
+            <item>Cooper, Gerry</item>
+            <item>Cosgrave, Sandy</item>
+            <item>Daly, Edith (Edie)</item>
+            <item>Debra, Ruth</item>
+            <item>Deetz, Ann</item>
+            <item>deLeeuw, Care</item>
+            <item>Doclar, Charlotte</item>
+            <item>Doublex, Vashte</item>
+            <item>Downey, Phyllis</item>
+            <item>Dunnewald, Ann</item>
+            <item>Duplaix, Sally</item>
+            <item>Durham, Pat</item>
+            <item>Eaton, Fran</item>
+            <item>Eden, Jean</item>
+            <item>Eversmeyer, Arden</item>
+            <item>Fagan, Portia</item>
+            <item>Feingold, Marlene</item>
+            <item>Ficklen, Martha</item>
+            <item>Fine, Judith</item>
+            <item>Fitzgerald, Jessie</item>
+            <item>Flagg, Bonita</item>
+            <item>Fly, Alta</item>
+            <item>Foley, Mary</item>
+            <item>Ford, Tre</item>
+            <item>Fowler, Dorothy (Dotty)</item>
+            <item>Frey, Lucille</item>
+            <item>Gandy, Patricia</item>
+            <item>Gates, Jennie</item>
+            <item>Gerber, Barbara</item>
+            <item>Gieske, Mickie</item>
+            <item>Glass, Kathryn</item>
+            <item>Gobrecht, Elli</item>
+            <item>Gold, Laura</item>
+            <item>Goodrich, Ellen</item>
+            <item>Hathaway, Rosemary</item>
+            <item>Hayes, Ethyl (aka Kim) (Interview closed, permission required)</item>
+            <item>Healey, Shevy (audio quality very poor, no transcript)</item>
+            <item>Heindselman, Lois (Partial audio only)</item>
+            <item>Herrick, Lynn (interview closed, permission required)</item>
+            <item>Hickok, Beverly</item>
+            <item>Hiner, Jo</item>
+            <item>Hoffman, Dorothy</item>
+            <item>Howard, Bea</item>
+            <item>Ives, Janice</item>
+            <item>Johanson, Johanna</item>
+            <item>Jones, Barbara</item>
+            <item>Jones, Joann</item>
+            <item>Kalish, Barbara</item>
+            <item>Kalscits, Helen</item>
+            <item>Kate, Arden</item>
+            <item>Kelley, Cynthia</item>
+            <item>Kennedy, Barbara</item>
+            <item>Killough, Margaret</item>
+            <item>Knowles, Bobbie</item>
+            <item>Kostenbader, Margot</item>
+            <item>Kurtz, Connie</item>
+            <item>Lane, Sunlight</item>
+            <item>Larsen, Vivian</item>
+            <item>Lawler, Carmah</item>
+            <item>Levy, Janice</item>
+            <item>Lloyd, Jean</item>
+            <item>Majors, Nelda</item>
+            <item>Marevis, Ann</item>
+            <item>Mariano, Marie</item>
+            <item>Marks-Nelson, Harriet</item>
+            <item>Martin, Vera</item>
+            <item>Maser, Shirley</item>
+            <item>McConnell, Betsy</item>
+            <item>McGough, BJ</item>
+            <item>McVey, Jess</item>
+            <item>Meyers, Joan</item>
+            <item>Mirkin, Jackie</item>
+            <item>Morris, Bessie</item>
+            <item>Morton, Virginia</item>
+            <item>Mountaingrove, Jean</item>
+            <item>Murray, Ruth</item>
+            <item>Neal, Aminita</item>
+            <item>Nessler, Violet</item>
+            <item>Osborne, Nancy</item>
+            <item>Palmer, June</item>
+            <item>Parke, Avis</item>
+            <item>Parrish, Maxine</item>
+            <item>Pearce, Marie</item>
+            <item>Pepper, Adobe Jean (audio very poor, no transcript)</item>
+            <item>Perry, Ocie</item>
+            <item>Pierson, Joyce</item>
+            <item>Pontius, Leoma</item>
+            <item>Pratt, Sue</item>
+            <item>Quinn, Lucy</item>
+            <item>Rasmussen, Joan</item>
+            <item>Red, Ida</item>
+            <item>Reed, Suzanne</item>
+            <item>Reeves, Joy</item>
+            <item>Reynolds, Christine</item>
+            <item>Ridalls, Shirley (no transcript available)</item>
+            <item>Riddle, Katherine</item>
+            <item>Rivers, Diana</item>
+            <item>Roerdon, Chris</item>
+            <item>Rudnick, Betty</item>
+            <item>Russ, Joanna</item>
+            <item>Rust, Marjorie (interview closed, permission required)</item>
+            <item>Samuels, Eunice</item>
+            <item>Santikos, Kiki</item>
+            <item>Schafer, Eleanor ("Ellie")</item>
+            <item>Sciacca, Barbara (interview closed, permission required)</item>
+            <item>Scott, Emma Lou</item>
+            <item>Shoemaker, Betty</item>
+            <item>Siegle, Anne (interview closed, permission required)</item>
+            <item>Silver, Ruth</item>
+            <item>Sjogren, Elizabeth</item>
+            <item>Stancich, Gloria</item>
+            <item>Stewart, Annalee</item>
+            <item>Stoneking, Carole</item>
+            <item>Swofford, Leanne</item>
+            <item>Tate, Sandy</item>
+            <item>Taylor, Ruth</item>
+            <item>Thomas, Helen</item>
+            <item>Thompson, Joanna</item>
+            <item>Tignor, Sandra</item>
+            <item>Tippit, Mattie</item>
+            <item>Tobias, Jane</item>
+            <item>Todd, Beverly</item>
+            <item>Ullman, Kate</item>
+            <item>Van Cleave, Kay</item>
+            <item>VanDiggelen, Margaret</item>
+            <item>Voelkel, Donna</item>
+            <item>Walton, Jeanne</item>
+            <item>Wansley, Ann (Restricted access)</item>
+            <item>Warner, Nancy</item>
+            <item>Weber, Elaine</item>
+            <item>Weiss, Irene</item>
+            <item>Wheeler, Phoenix</item>
+            <item>Wilkins, Karen</item>
+            <item>Williams, Jayne</item>
+            <item>Williams, Sue Parker (Rainbow)</item>
+            <item>Wilson, Jean</item>
+            <item>Wilson, Pat</item>
+            <item>Yoder, Marilyn</item>
+            <item>Zarchin, Natalie</item>
+         </list>
+         <p>
+            <extref href="http://www.smith.edu/libraries/libs/ssc/olohp_access.html">Audio interviews and transcripts are also available online</extref> (Smith campus access only), unless otherwise noted above.</p>  
+      </scopecontent>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The papers are open to research according to the regulations of the Sophia Smith Collection with the following caveats:</p>    
+         <list type="ordered">
+            <item>Researchers must sign an Access Agreement Form to protect the privacy of interviewees and other third party individuals named in the records</item>
+            <item>Some interviews require permission to be used (see list)</item>
+            <item>Access to audiovisual materials may first require production of research copies--digital files are available for most interviews</item>
+         </list>
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>The Sophia Smith Collection owns copyright to the oral histories, except where noted on individual release forms. Copyright to other materials may be owned by the creators or their heirs or assigns. Permission must be obtained to publish reproductions or quotations beyond "fair use." It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.</p>  
+      </userestrict>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Old Lesbian Oral Herstory Project, Sophia Smith Collection, SSC-MS-00671, Smith College Special Collections, Northampton, Mass.</p>  
+      </prefercite>
+      <altformavail id="aspace_admin-altform">
+         <head>Additional Formats</head>
+         <p>Transcripts and Original audio tapes have been copied to digital files for research use.</p>  
+      </altformavail>
+      <accruals id="aspace_admin-accruals">
+         <head>Accruals</head>
+         <p>Periodic additions to collection are expected and may not be reflected in this record.</p>  
+      </accruals>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Old Lesbian Oral Herstory Project collection was donated to the Sophia Smith Collection beginning in 2011 by Arden Eversmeyer and Margaret Purcell.</p>  
+      </acqinfo>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <p>Associated materials can be found in the <extref href="http://asteria.fivecolleges.edu/findaids/sophiasmith/mnsss547_main.html">Old Lesbians Organizing for Change Records</extref>
+         </p>  
       </relatedmaterial>
-</archdesc>
+      <controlaccess>
+         <subject encodinganalog="650" authfilenumber="sh2008106910" source="lcsh">Lesbianism -- United States -- History -- 20th century -- Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Lesbians -- United States -- Biography -- Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Aged women -- United States -- History -- Sources</subject>
+         <genreform encodinganalog="655" source="aat">Oral histories</genreform>
+         <subject encodinganalog="650" source="local_inmagic-collection">Eversmeyer, Arden</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Purcell, Margaret, 1951-  (Margaret Christine)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Eversmeyer, Arden and Margaret Purcell. A Gift of Age: a collection of stories based on interview transcripts in the Old Lesbian Oral Herstory Project -- Sources</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Allen, Ann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Atkins, Gail</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Austin, Delores</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Avery, Charlotte</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bailey, Karen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bambeck, Kathy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Barfield, Beth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Barnes, Shaba</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bart, Pauline</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Beers, Jinx</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Berman, Ruth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bissell, LeClair</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">BlueHeron, Hannah</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Borders, Virginia (Ginny)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bottini, Ivy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Boudreaux, Jean ("Shewolf")</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Brand, Doreen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Breed, Deedy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Breeze, Nancy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Brindley, Mary Beth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Bronson, Ricci (AKA Cortez, Ricci)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Brown, Janet</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Brundage, Pauline</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Campbell, Laurel</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Carroll, Miriam</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cason, Louise</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cassingham, Barbee</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cathcart, Helen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Clegg, Roberta</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Clifton, Mickie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cohn, Sally</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Coleman, Marion</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Coleman, Pat</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cooper, Gerry</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Cosgrave, Sandy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Daly, Edith (Edie)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Debra, Ruth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Deetz, Ann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">deLeeuw, Care</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Doclar, Charlotte</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Doublex, Vashte</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Downey, Phyllis</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Dunnewald, Ann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Duplaix, Sally</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Durham, Pat</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Eaton, Fran</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Eden, Jean</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Fagan, Portia</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Feingold, Marlene</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Ficklen, Martha</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Fine, Judith</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Fitzgerald, Jessie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Flagg, Bonita</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Fly, Alta</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Foley, Mary</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Ford, Tre</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Fowler, Dorothy (Dotty)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Frey, Lucille</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gandy, Patricia</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gates, Jennie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gerber, Barbara</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gieske, Mickie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Glass, Kathryn</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gobrecht, Elli</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Gold, Laura</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Goodrich, Ellen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hathaway, Rosemary</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hayes, Ethyl (aka Kim)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Healey, Shevy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Heindselman, Lois</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Herrick, Lynn</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hickok, Beverly</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hiner, Jo</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hoffman, Dorothy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Howard, Bea</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Ives, Janice</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Johanson, Johanna</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Jones, Barbara</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Jones, Joann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kalish, Barbara</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kalscits, Helen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kate, Arden</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kelley, Cynthia</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kennedy, Barbara</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Killough, Margaret</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Knowles, Bobbie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kostenbader, Margot</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kurtz, Connie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Lane, Sunlight</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Larsen, Vivian</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Lawler, Carmah</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Levy, Janice</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Lloyd, Jean</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Majors, Nelda</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Marevis, Ann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Mariano, Marie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Marks-Nelson, Harriet</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Martin, Vera</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Maser, Shirley</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">McConnell, Betsy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">McGough, BJ</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">McVey, Jess</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Meyers, Joan</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Mirkin, Jackie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Morris, Bessie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Morton, Virginia</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Mountaingrove, Jean</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Murray, Ruth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Neal, Aminita</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Nessler, Violet</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Osborne, Nancy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Palmer, June</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Parke, Avis</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Parrish, Maxine</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Pearce, Marie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Pepper, Adobe Jean</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Perry, Ocie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Pierson, Joyce</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Pontius, Leoma</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Pratt, Sue</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Quinn, Lucy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Rasmussen, Joan</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Red, Ida</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Reed, Suzanne</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Reeves, Joy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Reynolds, Christine</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Ridalls, Shirley</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Riddle, Katherine</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Rivers, Diana</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Roerdon, Chris</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Rudnick, Betty</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Russ, Joanna</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Rust, Marjorie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Samuels, Eunice</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Santikos, Kiki</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Schafer, Eleanor ("Ellie")</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Sciacca, Barbara</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Scott, Emma Lou</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Shoemaker, Betty</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Siegle, Anne</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Silver, Ruth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Sjogren, Elizabeth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Stancich, Gloria</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Stewart, Annalee</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Stoneking, Carole</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Swofford, Leanne</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Tate, Sandy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Taylor, Ruth</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Thomas, Helen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Thompson, Joanna</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Tignor, Sandra</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Tippit, Mattie</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Tobias, Jane</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Todd, Beverly</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Ullman, Kate</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Van Cleave, Kay</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">VanDiggelen, Margaret</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Voelkel, Donna</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Walton, Jeanne</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wansley, Ann</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Warner, Nancy</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Weber, Elaine</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Weiss, Irene</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wheeler, Phoenix</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wilkins, Karen</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Williams, Jayne</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Williams, Sue Parker (Rainbow)</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wilson, Jean</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wilson, Pat</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Yoder, Marilyn</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Zarchin, Natalie</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Electronic mail</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Contracts</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Interviews</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Electronic records</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">DVD video discs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Transcripts</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Book</genreform>
+         <genreform encodinganalog="655" source="aat">Audiocassettes</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Computer media</genreform>
+         <corpname encodinganalog="610"
+                   authfilenumber="people_4872"
+                   source="local_inmagic-people">Old Lesbian Oral Herstory Project</corpname>
+    
+         <persname encodinganalog="600" role="fmo" source="naf">Purcell, Margaret, 1951- (Margaret Christine)</persname>
+  
+         <persname encodinganalog="600" source="naf">Purcell, Margaret, 1951- (Margaret Christine)</persname>
+      </controlaccess>
+      <dsc/>
+   </archdesc>
 </ead>
-<!-- END OF FILE -->
