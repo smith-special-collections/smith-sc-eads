@@ -1,383 +1,504 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca35.xml//EN">manosca35</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Smith College Staff Council Records, 1984-[ongoing] </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Karen Eberhart.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca35 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Smith College Staff Council Records, 1984-[ongoing] </titleproper>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="us-manosca">manosca35</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Smith College Staff Council Records, 1984-[ongoing] <num>CA.MS.00035</num>
+            </titleproper>
             <subtitle>Finding Aid</subtitle>
-            <num>RG 40 </num>
-            <author>Karen Eberhart </author>
-            <date>2001 </date>
-
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="110" source="lcnaf">Smith College. Staff Council.
-                </corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Smith College Staff Council
-                Records</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1984-[ongoing]</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 40 UUID:68a3284e-731f-42b6-935e-2ae5c5ee52a5</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">1 box</extent>
-                <extent encodinganalog="300$a">(.6 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">College organization. Contains,
-                agendas, meeting minutes, correspondence, and newsletters. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>The Smith College Staff Council was initiated in 1991 by administrative and support
-                staff concerned about the lack of communication among the staff and administration.
-                Several Staff Council Conventions were held during the later part of 1991 and early
-                1992 to work out the mission and duties of the Staff Council. The charter was
-                approved by the Board of Trustees at their May 2, 1992 meeting. </p>
-            <p>The mission of the Staff Council as stated in the charter is: "to give members of the
-                administrative, administrative support, and service staff a focused and direct
-                involvement in the governance of non-academic affairs and in the life of the Smith
-                College community." The Staff Council works to enhance communication between
-                employees and the College and examines policies that affect the workplace
-                environment making recommendations to the College. It accomplishes this task through
-                six standing committees: Steering, Nominations and Elections, Communication,
-                Personnel Policy, Staff Development and Finance and Budget. In addition to committee
-                work the Staff Council also publishes a newsletter, currently called The Council
-                Chronicle, as its vehicle to keep staff informed of issues and events. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Staff Council records occupy .6 linear feet and consist primarily of agendas,
-                meeting minutes of the Staff Council and its standing and ad-hoc committees and the
-                attendant correspondence. The materials range in date from 1984 to 2001 with the
-                bulk of the materials concentrated in the years 1993-1996. A complete set of the
-                newsletter, The Council Chronicle, is also available in this collection of
-                materials. </p>
-        </scopecontent>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The records are open for research without restriction subject to the
-                        regulations of the College Archives. </p>
-                </accessrestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Smith College Staff Council Records, Box #, Smith College Archives.</p>
-            </prefercite>
-            <accruals encodinganalog="584" id="admin-accruals">
-                <head>Additions to the Collection</head>
-                <p>Additions to these records arrive in the College Archives on a regular baisis.
-                    Please contact the College Archives for the most up-to-date information. </p>
-            </accruals>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The records of the Smith College Staff Council were delivered to the College
-                        Archives over several years by the various Chairs of the Staff Council. </p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Karen Eberhart.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <corpname encodinganalog="610" source="lcsh">Smith College. Staff Council.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Administration.</corpname>
-        </controlaccess>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Budget <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - At Large <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Communications <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Finance and Budget <unitdate>1992-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Nominations and Elections <unitdate>1992-93</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Nominations and Elections <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Nominations and Elections <unitdate>1994-95</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Personnel Policy <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Recreation <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Staff Development <unitdate>1992-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Committees - Steering <unitdate>1992-96</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1992-93</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1994-95</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1995-96</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1996-97</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Forums <unitdate>1992-95</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Labor Organization <unitdate>1993</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Meetings - Formation <unitdate>1991-92</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <unittitle>Meetings <unitdate>1992-93</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Meetings <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Meetings <unitdate>1994-95</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Meetings <unitdate>1995-96</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Meetings <unitdate>1996-97</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Meetings <unitdate>1997-98</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Newsletter Editorial Board <unitdate>1993</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Newsletter - <title>Staff Council Newsletter</title> vol. 1
-                            <unitdate>March 1993</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Newsletter - <title>Council Chronicle</title> vol. 2 <unitdate>May
-                            1993 - May 1997</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Newsletter - <title>Council Chronicle</title>
-                        <unitdate>Aug 1997 - Nov 1999</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Newsletter - <title>Council Chronicle</title>
-                        <unitdate>Jan 2000 - present</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Staff groups at other institutions <unitdate>1984-91,
-                            undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Staff/Student Relationships Policy <unitdate>1993-94</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <unittitle>Workshops <unitdate>1993</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+            <author>Karen Eberhart</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-10-17 14:06:40 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca35 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="recordgrp">
+      <did>
+    
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Smith College Staff Council Records</unittitle>
+         <unitid>CA.MS.00035</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">4 boxes</extent>
+         </physdesc>
+         <unitdate calendar="gregorian" certainty="inferred" era="ce">1984-[ongoing]</unitdate>
+         <abstract id="aspace_e359cac94004d122f53030c93e3d47de">College organization. Contains, agendas, meeting minutes, correspondence, and newsletters.</abstract>
+         <langmaterial id="aspace_a3324bd3a9824ddc55516959f999b96c">English.</langmaterial>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Smith College Staff Council was initiated in 1991 by administrative and support staff concerned about the lack of communication among the staff and administration. Several Staff Council Conventions were held during the later part of 1991 and early 1992 to work out the mission and duties of the Staff Council. The charter was approved by the Board of Trustees at their May 2, 1992 meeting. </p>
+         <p> The mission of the Staff Council as stated in the charter is: "to give members of the administrative, administrative support, and service staff a focused and direct involvement in the governance of non-academic affairs and in the life of the Smith College community." The Staff Council works to enhance communication between employees and the College and examines policies that affect the workplace environment making recommendations to the College. It accomplishes this task through six standing committees: Steering, Nominations and Elections, Communication, Personnel Policy, Staff Development and Finance and Budget. In addition to committee work the Staff Council also publishes a newsletter, currently called The Council Chronicle, as its vehicle to keep staff informed of issues and events.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Staff Council records occupy .6 linear feet and consist primarily of agendas, meeting minutes of the Staff Council and its standing and ad-hoc committees and the attendant correspondence. The materials range in date from 1984 to 2001 with the bulk of the materials concentrated in the years 1993-1996. A complete set of the newsletter, The Council Chronicle, is also available in this collection of materials.</p>  
+      </scopecontent>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Smith College Staff Council Records, Box #, Smith College Archives.</p>  
+      </prefercite>
+      <accruals id="aspace_admin-accruals">
+         <head>Additions to the Collection</head>
+         <p>Additions to these records arrive in the College Archives on a regular baisis. Please contact the College Archives for the most up-to-date information.</p>  
+      </accruals>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research without restriction subject to the regulations of the College Archives.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the Smith College Staff Council were delivered to the College Archives over several years by the various Chairs of the Staff Council.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Karen Eberhart.</p>  
+      </processinfo>
+      <controlaccess>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Staff Council.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Administration.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_d6d7a62b4ec5c6d0c62d0ed4bdab7d79" level="file">
+            <did>
+               <unittitle>Budget</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_9962e56cbde60811c09344de4deb3bbd"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8b1f42570312bfd61b10d62c038ecf66" level="file">
+            <did>
+               <unittitle>Committees - At Large</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_0968a90ea6ef6aee6450d3fe4ce378bc"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c075e6d7c7f0334528ab4ceb5ceaa4e2" level="file">
+            <did>
+               <unittitle>Committees - Communications</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_c9e4c74170b371851a91b5c388086c37"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3f3b0670dddd4c705ddbfd54fc38db39" level="file">
+            <did>
+               <unittitle>Committees - Finance and Budget</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1994"
+                         type="inclusive">1992-94</unitdate>
+               <container id="aspace_97b112fc83b3f447fc8ad7d670cd6c57"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_38a71b835228384cb336f194c0026874" level="file">
+            <did>
+               <unittitle>Committees - Nominations and Elections</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1993"
+                         type="inclusive">1992-93</unitdate>
+               <container id="aspace_bed2b8c95fc684dcfa0245133ca802ba"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_117146ea25a4e07d746d0f3db1af92d3" level="file">
+            <did>
+               <unittitle>Committees - Nominations and Elections</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_7f66cb1565a825558d61fb903d651683"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b39a0fdcb5a9cb62f48222005a9dc2d9" level="file">
+            <did>
+               <unittitle>Committees - Nominations and Elections</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-95</unitdate>
+               <container id="aspace_0e14aaadf724a5970769bde2dd86baa6"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9c2ec889606a6ad6a186b2ad87879bc5" level="file">
+            <did>
+               <unittitle>Committees - Personnel Policy</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_d5402010ab6d4eaf3b1da27dcaf30791"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cc609da43935668bec6da6620712fe1f" level="file">
+            <did>
+               <unittitle>Committees - Recreation</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_4de3767bca6b364d5e8dce9498d5dbe7"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dd23ab4c08f7e2a4739973f4861f003c" level="file">
+            <did>
+               <unittitle>Committees - Staff Development</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1994"
+                         type="inclusive">1992-94</unitdate>
+               <container id="aspace_8fbc3fe9ba36ddbd7b8a9fe72074c3f0"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_54e2ef73c493baf846015bfb4cc84837" level="file">
+            <did>
+               <unittitle>Committees - Steering</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1996"
+                         type="inclusive">1992-96</unitdate>
+               <container id="aspace_4b488c93279794c6c229f114152092b3"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ce7efa75b832916f26211c2bcc011ada" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1993"
+                         type="inclusive">1992-93</unitdate>
+               <container id="aspace_813aa4c0598e610b7ccf671cabc06f3a"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6bbfa32adcd94064183610e5703db051" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_0dcd4c67fc418f131f32d56e6770e68a"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_be8361b41026a883da3b57b79e7be4df" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-95</unitdate>
+               <container id="aspace_4030905602bfeefa2866803c258ccfb7"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f0d85030b74936556e07692b810a9644" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/1996"
+                         type="inclusive">1995-96</unitdate>
+               <container id="aspace_cd7fb85558e55412b9795e68e9e07fd7"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_db7821cecad257d1d5d6eb1e3f00a649" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1996/1997"
+                         type="inclusive">1996-97</unitdate>
+               <container id="aspace_272498a4f3cb6d051d74022c557287a6"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1c2fb041094284ea26e2e58ed69f5ccb" level="file">
+            <did>
+               <unittitle>Forums</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1995"
+                         type="inclusive">1992-95</unitdate>
+               <container id="aspace_0dfc28f052ee3259154326f011502516"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0a6a7998a4629799e7976026a1c6d7b5" level="file">
+            <did>
+               <unittitle>Labor Organization</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+               <container id="aspace_7a8d27ea3e2ea507c691e803769f8a84"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_485c75b3e2690623c0433ed1b1e097df" level="file">
+            <did>
+               <unittitle>Meetings - Formation</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1992"
+                         type="inclusive">1991-92</unitdate>
+               <container id="aspace_d61bed22a2aa6ffcee64ed3f69639def"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9be35306886c6ffdb54d31068c2b8ec4" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1993"
+                         type="inclusive">1992-93</unitdate>
+               <container id="aspace_e25ec204480b1149755eb46d5d10f84a"
+                          label="Mixed Materials"
+                          type="box">646.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3fed1860dfc35c4c2e620845b6b3ea22" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_cff3b385a784808ba397e69a79ce2194"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a7f68ce0a95fd41df455ae63b8521755" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-95</unitdate>
+               <container id="aspace_9add43b7b82f7c1cf60cf888a28c316a"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3073c50796bb218ce11d8b8ad1e6d02b" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/1996"
+                         type="inclusive">1995-96</unitdate>
+               <container id="aspace_6b7c43a3098d6bbd5f45ead007218636"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8cad6db9c342a3eac5d8cad5a40c9797" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1996/1997"
+                         type="inclusive">1996-97</unitdate>
+               <container id="aspace_331906f7659c856023b5cfb6b0f1481e"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0d79bff83362c8050d5caae969d42254" level="file">
+            <did>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1997/1998"
+                         type="inclusive">1997-98</unitdate>
+               <container id="aspace_4f688e3078f9e22a083bb87a1eff523e"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_de218337e61e6981269b2a372e902dbc" level="file">
+            <did>
+               <unittitle>Newsletter Editorial Board</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+               <container id="aspace_1c44835a069a5535fba201863e1ae4a9"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_345d2d62276ba50d68c7ee103199f9c3" level="file">
+            <did>
+               <unittitle>Newsletter - <title>Staff Council Newsletter</title> vol. 1</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1993-03/1993-03">March 1993</unitdate>
+               <container id="aspace_baef573d5e95bdf517a16140925c65a4"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9c78254ae3c1c809c6f956165ddd471f" level="file">
+            <did>
+               <unittitle>Newsletter - <title>Council Chronicle</title> vol. 2</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993-05/1997-05"
+                         type="inclusive">May 1993 - May 1997</unitdate>
+               <container id="aspace_a5697a0744f47ab81b73c30ce1db562b"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1007fec435af107922a211c853174733" level="file">
+            <did>
+               <unittitle>Newsletter - <title>Council Chronicle</title>
+               </unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1997-08/1999-11"
+                         type="inclusive">Aug 1997 - Nov 1999</unitdate>
+               <container id="aspace_9ca1e2fede0447c89f53f6afbc1c98a6"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_17b41372e7a935d5b90ee54815c43411" level="file">
+            <did>
+               <unittitle>Newsletter - <title>Council Chronicle</title>
+               </unittitle>
+               <unitdate calendar="gregorian" era="ce">Jan 2000 - present</unitdate>
+               <container id="aspace_b001715d113c82a82fe1dd79c3ec3c14"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f799af7aa6b15f4714033dc17231ea8f" level="file">
+            <did>
+               <unittitle>Staff groups at other institutions</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1984/1991"
+                         type="inclusive">1984-91</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_a525cb4fdd6b72ab9b7ffd48552c20d8"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_08bb7e901d44b85f8f93def7f5a09144" level="file">
+            <did>
+               <unittitle>Staff/Student Relationships Policy</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1994"
+                         type="inclusive">1993-94</unitdate>
+               <container id="aspace_5dda1d62893100446a10c481a10b65f9"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_49498ade39be5cab74de6e947264403b" level="file">
+            <did>
+               <unittitle>Workshops</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+               <container id="aspace_6e8eb5cddda0501bf0275fbec9ced0d0"
+                          label="Mixed Materials"
+                          type="box">647</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7fff0fe0a7e2ab69004bd2a143b8130c" level="file">
+            <did>
+               <unittitle>Staff Council's Staff Visions Committee records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/2006"
+                         type="inclusive">1993-2006</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_cc136e956caf8b554c6d2e16e70b74aa"
+                          label="Mixed Materials"
+                          type="box">647.1</container>
+               <container altrender="Legal document box"
+                          id="aspace_a31eb91bb363d5ab70796f77380bff89"
+                          label="Mixed Materials"
+                          type="box">647.2</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
