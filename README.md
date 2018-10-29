@@ -7,3 +7,5 @@
  Being used for version control until implementation of ArchivesSpace Public User Interface, slated for early 2020.
  
  Updated manually with EADs that have been output from ArchivesSpace, transformed, and successfully published to Asteria.
+ 
+ Folder structure mimics Asteria directory structure (10/29/2018)
