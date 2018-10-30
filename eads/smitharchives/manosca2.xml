@@ -1,1656 +1,2340 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca2.xml//EN">manosca2</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca2</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper>Northampton and Local History Collection, 1920-[ongoing] </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author>Finding aid prepared by Elizabeth Kates.</author>
+            <titleproper>Finding aid to the Northampton and Local History Collection <num>CA.MS.00002</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Kates and Daniel Michelson</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
             <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date>© 2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook
-            Hopkins. <date>2003-06-16</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-10-30 15:19:33 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>manosca2 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-10-30</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher>Smith College Archives </publisher>
-         <titleproper>Northampton and Local History Collection, 1920-[ongoing] </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>RG 00 </num>
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-            Foundation.</sponsor>
-         <p>© 2003 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="recordgrp" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <unittitle encodinganalog="245$a" label="Title:">Northampton and Local History
-            Collection</unittitle>
-         <unitdate encodinganalog="245$f" type="inclusive">1820-[ongoing]</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 00</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">15 boxes</extent>
-            <extent encodinganalog="300$a">(6.25 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-            </address>
-         </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">History of Northampton and its environs.
-            Contains correspondence, manuscripts, photographs, and publications. </abstract>
-         <langmaterial label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="recordgrp">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Northampton and Local History Collection</unittitle>
+         <origination label="creator">
+            <corpname source="local">Smith College Archives</corpname>
+         </origination>
+         <unitid>CA.MS.00002</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">7.5 linear feet</extent>
+            <extent altrender="carrier">(18 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   certainty="approximate"
+                   era="ce"
+                   normal="1820/1999"
+                   type="inclusive">1820-1999</unitdate>
+         <abstract id="aspace_ae8416545f7d071fb24a1ab50aee4f3a">History of Northampton and its environs. Contains correspondence, manuscripts, photographs, and publications.</abstract>
       </did>
-
-      <scopecontent id="scope">
-
-         <p>The collection was collected by the Smith College Archives over an extended period and
-            included in the subject files are correspondence, manuscripts, photographs, programs and
-            other primary source materials. The collection is arranged in alphabetical order by
-            subject. The collection is not complete, and materials are added to it on a regular
-            basis. For in-depth research pertaining to Northampton and other local history,
-            researchers should contact Historic Northampton, Inc. and the Forbes Library, as they
-            have a greater depth of local history collections.</p>
-         <p>The College Archives also has books relating to Northampton and surrounding towns.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection was collected by the Smith College Archives over an extended period and included in the subject files are correspondence, manuscripts, photographs, programs and other primary source materials. The collection is arranged in alphabetical order by subject. The collection is not complete, and materials are added to it on a regular basis. For in-depth research pertaining to Northampton and other local history, researchers should contact Historic Northampton, Inc. and the Forbes Library, as they have a greater depth of local history collections.</p>
+         <p> The College Archives also has books relating to Northampton and surrounding towns.</p>  
       </scopecontent>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The records are open for research according to the regulations of the Smith
-                  College Archives without any additional restrictions. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Single photocopies may be made for research purposes. Permission to publish
-                  material from the documents must be requested from the Smith College Archives.
-                  Smith College owns copyright to any published material relating to college events
-                  and activities. Provenance and copyright ownership of other materials is unknown
-                  and researchers are responsible for determining any question of copyright. </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Northampton and Local History Collection, Box #, Smith College Archives.</p>
-         </prefercite>
-
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Northampton and Local History Collection Records were donated over a period of
-                  time to the Smith College Archives from a variety of sources.</p>
-            </acqinfo>
-            <processinfo id="admin-process">
-               <p>Processed by Elizabeth Kates.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-
-         <geogname encodinganalog="651" source="lcsh">Northampton
-            (Mass.)--History--Sources.</geogname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Northampton and Local History Collection, Smith College Archives, CA-MS-00002, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Northampton and Local History Collection was donated over a period of time to the Smith College Archives from a variety of sources.</p>  
+      </acqinfo>
+      <bibliography id="aspace_add-biblio">
+         <head>Bibliography</head>
+         <p>Books about Northampton in the Smith College Archives</p>    
+         <bibref>Bliss, Arthur Ames. <title render="italic">Theodore Bliss, Publisher and Bookseller: A Study of Character and Life in the Middle Period of the XIX Century.</title> Northampton Historical Society, 1914</bibref>
+         <bibref>Brown, E. Francis. <title render="italic">Joseph Hawley: Colonial Radical.</title> New York: Columbia University Press, 1903</bibref>
+         <bibref>Clarke, Rev. Solomon. <title render="italic">Antiquities, Historicals and Graduates of Northampton.</title> Northampton: Gazette Printing, 1882</bibref>
+         <bibref>
+            <title render="italic">Early Northampton.</title> (pub. by the Betty Allen Chapter of the Daughters of the American Revolution) Springfield: F.A. Bassette Co. 1914</bibref>
+         <bibref>Edwards, William H. <title render="italic">Timothy and Rhoda Ogden Edwards of Stockbridge Mass, and their descendants; a genealogy.</title> Cincinatti: The Robert Clarke Co. 1903</bibref>
+         <bibref>Gere, Henry S. <title render="italic">Reminiscences of Old Northampton: sketches of the town as it appeared from 1840-1850.</title> [Northampton], 1902</bibref>
+         <bibref>Hawthorne, Hildegarde. <title render="italic">Rambles in Old College Towns.</title> New York: Dodd, Mead and Co. 1917</bibref>
+         <bibref>
+            <title render="italic">Historical Register and General Directory of Northampton.</title> Northampton: Gazette Printing Co. 1875-76</bibref>
+         <bibref>Johnson, Clifton. <title render="italic">Historic Hampshire in the Connecticut Valley; happenings in a charming old New England county from the time of the dinosaurs down to about 1900.</title> Springfield: Milton Bradley, 1932</bibref>
+         <bibref>Knab, Frederick. <title render="italic">1902-1903: Northampton of Today, depicted by pen and camera.</title> Northampton: Picturesque Publishing Company, 1902</bibref>
+         <bibref>
+            <title render="italic">The Meadow City's Quarter Millennial Book, a Memorial of the Celebration of the two-hundred and fiftieth anniversary of the Settlement of the town of Northampton, Massachusetts.</title> June 5-7, 1904</bibref>
+         <bibref>
+            <title render="italic">The Northampton Book: Chapters from three hundred years in the life of a New England Town, 1654-1954.</title> (pub. by the tercentenary committee) Brattleboro: Alan S. Browne, Inc. 1954</bibref>
+         <bibref>
+            <title render="italic">Northampton, The Meadow City.</title> Northampton: Kneeland and Bryant, 1894</bibref>
+         <bibref>
+            <title render="italic">Northampton and the Northampton Institute for Savings, 1842-1942.</title> Northampton: Metcalf Printing and Publishing Co. Inc. 1942</bibref>
+         <bibref>Trumble, James Russell. <title render="italic">History of Northampton, Mass. from its settlement in 1654.</title> Northampton: Press of Gazette Printing, 1902</bibref>
+         <bibref>Well, Daniel White and Ruben Field Wells. <title render="italic">A History of Hatfield, Mass. 1660-1910.</title> Springfield: F.C.H. Gibbons, 1910.</bibref>
+      </bibliography>
+      <controlaccess>
+         <geogname encodinganalog="651" source="lcsh">Northampton (Mass.)--History--Sources.</geogname>
       </controlaccess>
-      <descgrp id="addinfo">
-         <head>Additional Information</head>
-         <bibliography id="add-biblio">
-            <head>Bibliography</head>
-            <p>Books about Northampton in the Smith College Archives</p>
-
-            <list>
-               <item>Bliss, Arthur Ames. <title render="italic">Theodore Bliss, Publisher and
-                     Bookseller: A Study of Character and Life in the Middle Period of the XIX
-                     Century.</title> Northampton Historical Society, 1914 </item>
-               <item>Brown, E. Francis. <title render="italic">Joseph Hawley: Colonial
-                     Radical.</title> New York: Columbia University Press, 1903 </item>
-               <item>Clarke, Rev. Solomon. <title render="italic">Antiquities, Historicals and
-                     Graduates of Northampton.</title> Northampton: Gazette Printing, 1882 </item>
-               <item><title render="italic">Early Northampton.</title> (pub. by the Betty Allen
-                  Chapter of the Daughters of the American Revolution) Springfield: F.A. Bassette
-                  Co. 1914 </item>
-               <item>Edwards, William H. <title render="italic">Timothy and Rhoda Ogden Edwards of
-                     Stockbridge Mass, and their descendants; a genealogy.</title> Cincinatti: The
-                  Robert Clarke Co. 1903 </item>
-               <item>Gere, Henry S. <title render="italic">Reminiscences of Old Northampton:
-                     sketches of the town as it appeared from 1840-1850.</title> [Northampton], 1902 </item>
-               <item>Hawthorne, Hildegarde. <title render="italic">Rambles in Old College
-                     Towns.</title> New York: Dodd, Mead and Co. 1917 </item>
-               <item><title render="italic">Historical Register and General Directory of
-                     Northampton.</title> Northampton: Gazette Printing Co. 1875-76 </item>
-               <item>Johnson, Clifton. <title render="italic">Historic Hampshire in the Connecticut
-                     Valley; happenings in a charming old New England county from the time of the
-                     dinosaurs down to about 1900.</title> Springfield: Milton Bradley, 1932 </item>
-               <item>Knab, Frederick. <title render="italic">1902-1903: Northampton of Today,
-                     depicted by pen and camera.</title> Northampton: Picturesque Publishing
-                  Company, 1902 </item>
-               <item><title render="italic">The Meadow City's Quarter Millennial Book, a Memorial of
-                     the Celebration of the two-hundred and fiftieth anniversary of the Settlement
-                     of the town of Northampton, Massachusetts.</title> June 5-7, 1904 </item>
-               <item><title render="italic">The Northampton Book: Chapters from three hundred years
-                     in the life of a New England Town, 1654-1954.</title> (pub. by the tercentenary
-                  committee) Brattleboro: Alan S. Browne, Inc. 1954 </item>
-               <item><title render="italic">Northampton, The Meadow City.</title> Northampton:
-                  Kneeland and Bryant, 1894 </item>
-               <item><title render="italic">Northampton and the Northampton Institute for Savings,
-                     1842-1942.</title> Northampton: Metcalf Printing and Publishing Co. Inc. 1942 </item>
-               <item>Trumble, James Russell. <title render="italic">History of Northampton, Mass.
-                     from its settlement in 1654.</title> Northampton: Press of Gazette Printing,
-                  1902 </item>
-               <item>Well, Daniel White and Ruben Field Wells. <title render="italic">A History of
-                     Hatfield, Mass. 1660-1910.</title> Springfield: F.C.H. Gibbons, 1910. </item>
-            </list>
-         </bibliography>
-      </descgrp>
-      <dsc id="contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_a035993df3eac0db48b146630c7f498b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Anniversaries <unitdate>1904</unitdate>
-               </unittitle>
+               <unittitle>Anniversaries</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ab841e5cbd77b477aed42f3988258a18"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2749f0b216b723de98c485ba7e8a2c4b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Anniversaries <unitdate>1954</unitdate>
-               </unittitle>
+               <unittitle>Anniversaries</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8120db67db61c5993e0f4be7e28161b8"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0dd8c62f3869c9f8e98fb3e13d0bafdf" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Arcadia Wildlife Sanctuary <unitdate>1944 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Arcadia Wildlife Sanctuary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3b8f1cc1a172dd7609476880f8095431"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_92f01a8e3bff8f59cdda08a0e644fcff" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Banks <unitdate>1904 -</unitdate>
-               </unittitle>
+               <unittitle>Banks</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904 -</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0b7b2a7b8367057178c99120387e3e66"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6e3389d8d7daea122cf89f926fbe59d5" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Bart's Ice Cream <unitdate>1986 -</unitdate>
-               </unittitle>
+               <unittitle>Bart's Ice Cream</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986 -</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_861274d00501fe742dfef881d1c23ab7"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8fa119c98c4d658494b1c529d98ee499" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Charity <unitdate>1998</unitdate>
-               </unittitle>
+               <unittitle>Charity</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ad166f6fae43e061eb1e3dd99743c692"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_065acf2bafe95df0bb9b7fda5f551431" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Churches - general <unitdate>1882 -</unitdate>
-               </unittitle>
+               <unittitle>Churches - general</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1882/1882">1882 -</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_19a076c4eb4da07bcdf1f66a3aef9e61"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_a9ba6c6f7b98e9308448ce0de09a22b1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Baptist Church <unitdate>1902 -</unitdate>
-                  </unittitle>
+                  <unittitle>Baptist Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c7abea3ae3a0bce5317a51f83ef7a062"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bd8319568097ae214e447e13444e417e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Edwards Church <unitdate>1965, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Edwards Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c767fe3148e41b55c070175a4fc96450"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6c04e516eabfccc9a20321a1ba179d5e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>First Congregational Church <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>First Congregational Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d8e1548952c46335f68015f3de1d0f00"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d12807ee4b06e8180bc15d5c1b61e36" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>St. John's Episcopal Church <unitdate>1895 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>St. John's Episcopal Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2f6eab29d70df3114431ced132562297"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6bc24d8122aca1ced2419a6ebde31cb3" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>St. Mary's Catholic Church <unitdate>c1895 -</unitdate>
-                  </unittitle>
+                  <unittitle>St. Mary's Catholic Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1895/1895">c1895 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f185ca9d1dfc12be1517f8041b438b6d"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_490276855f62208b0c9b385cc4a35453" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Unitarian Society <unitdate>1982, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Unitarian Society</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c759b040c210f204d21480d5e31a7a79"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_783eec6597cd1ab12c82c2afe537aa78" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
                <unittitle>Cider Mill</unittitle>
-               <note>
-                  <p> See Mills </p>
-               </note>
+               <container altrender="Letter document box"
+                          id="aspace_4e91fa1e6d19e87401f071139d4d1025"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
+            <odd id="aspace_7bf32f72bce458f020485780f483b180">
+               <head>General</head>
+               <p>See Mills</p>
+            </odd>
          </c01>
-         <c01 id="city_hall" level="file">
+         <c01 id="aspace_city_hall" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>City Hall <unitdate>1888 - , undated</unitdate>
-               </unittitle>
+               <unittitle>City Hall</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e2c413f6d97fc0ac0600d1db4f7e7167"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d8ea46f4c61de33590e3fc9c849ab4a5" level="file">
             <did>
                <unittitle>Clubs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_b7ff048488c99bf7857ab5cb7762fccd" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Hampshire Choral Society <unitdate>1983</unitdate>
-                  </unittitle>
+                  <unittitle>Hampshire Choral Society</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1983/1983">1983</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_42aa4dce87010accc1a31c915483a321"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_679c23e39371d31dc687b39b0e37dc99" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Hampshire County Progressive Club <unitdate>1928 -</unitdate>
-                  </unittitle>
+                  <unittitle>Hampshire County Progressive Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f439d085206a644319bb2b1e09f029a3"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9b1d96a0382b90124330d948436cd600" level="file">
                <did>
                   <unittitle>Home Culture Club</unittitle>
-                  <note>
-                     <p> See Organizations: People's Institute </p>
-                  </note>
+               </did>
+               <odd id="aspace_9c3489bfb857f8245b73c5b2aa9d1166">
+                  <head>General</head>
+                  <p>See Organizations: People's Institute</p>
+               </odd>
+            </c02>
+            <c02 id="aspace_f00909843d149bf004ade7ed02ea86f2" level="file">
+               <did>
+                  <unittitle>Monday Afternoon Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2ee84cb262b3f61c3b864e994f719455"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ca5c2263711351b0c4200a0a9fa62095" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Monday Afternoon Club <unitdate>1941 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Musical Societies (misc.)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1873/1873">1873 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_70713d131a2fbcd46df5a099b67ac60a"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_57c74973c823d9986beb37ea3ea522bf" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Musical Societies (misc.) <unitdate>1873 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Northampton Choral Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d57286721872c04782085f69e5dfe73e"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ddc419de39c5cab4aca1173f9fb59279" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Northampton Choral Club <unitdate>1898 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Northampton Women's Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6ed93587b4caa1208759b24b7d93c558"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e33db78055f9d47f5541832b46dc08b1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Northampton Women's Club <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Northampton Social and Literary Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1925/1925">1925 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5420326f8864394c7a4f1a14a128ab53"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_45e1994804b82b6ebf0a1d71061ed8f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Northampton Social and Literary Club <unitdate>1925 -</unitdate>
-                  </unittitle>
+                  <unittitle>Round Hill Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9e9eea41a1f977ad3de34171f7eb8a22"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_16fb52704295be38955a3f852340cf39" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Round Hill Club <unitdate>1975</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Travelers' Club <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>Travelers' Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8c673d0b1deba6a9efd6dd53e9b717fe"
+                             label="Mixed Materials [310183630072600]"
+                             type="box">1</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dcb541b45facc1d72d81e4887be1eb62" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
                <unittitle>Cooley Dickinson Hospital</unittitle>
-               <note>
-                  <p> See Hospitals </p>
-               </note>
+               <container altrender="Letter document box"
+                          id="aspace_4abaa4c3a20b7e007e902da7096a6bf0"
+                          label="Mixed Materials [310183630072600]"
+                          type="box">1</container>
             </did>
+            <odd id="aspace_d523579d8cdcdf3e64eae29fcc2e7c59">
+               <head>General</head>
+               <p>See Hospitals</p>
+            </odd>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bc263dd7684e83404413ea5f2736d67f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
                <unittitle>Disasters</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_71ea2410488fc4d4e980e9c26a4556e6"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_35fc2c8f57ddf1a46316f11d831b5ef1" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Blizzards <unitdate>1888 -</unitdate>
-                  </unittitle>
+                  <unittitle>Blizzards</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ada70394dfd5ad6ce5827b4356f34d20"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f9a0b8baacc8bc558133afef42ff7cfe" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Floods <unitdate>1874</unitdate>
-                  </unittitle>
+                  <unittitle>Floods</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1874/1874">1874</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0c96a919dffc075704e75e9ccb4496a7"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f30c8043dd1be0c3b4a5a7c59c1bf6ee" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Floods <unitdate>1936</unitdate>
-                  </unittitle>
+                  <unittitle>Floods</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_da8a86821272f1c1aaf80a0670573f78"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_94b0f88afac89cb4d29edbc72fa6be51" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Hurricanes <unitdate>1938</unitdate>
-                  </unittitle>
+                  <unittitle>Hurricanes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6fdc447a078b9bc2a4c8a97ffd82e5be"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9c0e259b59a6713babf311a6ad016ac5" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Film Festivals <unitdate>1999</unitdate>
-               </unittitle>
+               <unittitle>Film Festivals</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1999/1999">1999</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4e156306684f5d68f72b5d633b077076"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5eff5782a8464b1b3c174b1f377b9d77" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Florence <unitdate>1976 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Florence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_88ee6b3c219c5890e4693b6bc236e5d3"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_702b2fa737ceedc1d06afda0039890a5" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Florence Sewing Machine Company <unitdate>1864, undated</unitdate>
-               </unittitle>
+               <unittitle>Florence Sewing Machine Company</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1864/1864">1864</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7661f430deab1f6eebf9fca75c22cb3a"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_21bc617dbecfa2a0f78b28194c2765e1" level="file">
             <did>
                <unittitle>General</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_133ea72b0dba709f937ae85574ecec4e" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Clippings <unitdate>1879 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1879/1879">1879 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a90d5b66a01ce8382431ee18dd7257d1"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b8fdb093a898f816ca91272c838127cc" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Photographs <unitdate>1882 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1882/1882">1882 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b7b6435610da94536217a47a385e8e20"
+                             label="Mixed Materials [310183630072667]"
+                             type="box">2</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_618cf6f81c97e2f4b18802477e51bd96" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hadley <unitdate>1942 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Hadley</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f4fac0f5bca6e486cb19e27f966ff458"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_478440db506422594956ea66e8368d6e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Haydenville <unitdate>1975 -</unitdate>
-               </unittitle>
+               <unittitle>Haydenville</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975 -</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0a740377d0137e1a044b008152492753"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b43f7988f53334b2afe9a3658d21a962" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Historical Pageant <unitdate>1911</unitdate>
-               </unittitle>
+               <unittitle>Historical Pageant</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_70c0f122ab064222251f8e75353e4858"
+                          label="Mixed Materials [310183630072667]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c6455b0803b8899ccb26788eb488903a" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hockanum Ferry <unitdate>1889 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Hockanum Ferry</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1889/1889">1889 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_80b77f89d414495039dc2340417a3e61"
+                          label="Mixed Materials [310183630072725]"
+                          type="box">2.1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_26a92f5cdf3510c2092b7847a9348e63" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Holyoke <unitdate>1906 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Holyoke</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cd21db7bcb3218649c7dc52198f219ab"
+                          label="Mixed Materials [310183630072725]"
+                          type="box">2.1</container>
             </did>
          </c01>
-         <c01 id="hospitals" level="file">
+         <c01 id="aspace_hospitals" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
                <unittitle>Hospitals</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_9db81a27c2c940234080a37aa8d771be"
+                          label="Mixed Materials [310183630072725]"
+                          type="box">2.1</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_ccaae233bc18a005ec65c5806db5b64c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Cooley Dickinson <unitdate>1906 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Cooley Dickinson</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2fc5ba2d38f7abef887c9b3cecf12922"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_54b3416c66bc619a18ec25c4555b6463" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>State Hospital <unitdate>1904 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>State Hospital</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7f36ae30b302ba4716795452605b3f63"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
          </c01>
-         <c01 id="hotels" level="file">
+         <c01 id="aspace_hotels" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hotels - General <unitdate>1893 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Hotels - General</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7bbbfedaa57b5eea38552e4d0f1cd979"
+                          label="Mixed Materials [310183630072725]"
+                          type="box">2.1</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_267a55fab0f7f90126a79981ae13185a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Hotel Northampton and Wiggins Tavern <unitdate>1940 - ,
-                        undated</unitdate>
-                  </unittitle>
+                  <unittitle>Hotel Northampton and Wiggins Tavern</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5e91049ab6ba47cef51bcb402c041507"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_058fb31c982b246b0994ee2cac82f7ea" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Plymouth Inn <unitdate>1990</unitdate>
-                  </unittitle>
+                  <unittitle>Plymouth Inn</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_062c98794ae5e8b56067a488c86e6581"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_04a7e3a2daee5907ae5cd96b4c253a9e" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Rose Tree Inn <unitdate>1914 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Rose Tree Inn</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7135256c96cc9b9930ba571f45643272"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0363c50b5aadfa2b9b165345b8ab3b48" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Round Hill Hotel <unitdate>1874 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Round Hill Hotel</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1874/1874">1874 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8d56175eaf057b493c9ed91e92d03ca7"
+                             label="Mixed Materials [310183630072725]"
+                             type="box">2.1</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c96a50846516bb4d7300501af355e03a" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Individuals -- General, A-Z <unitdate>1959, undated</unitdate>
-               </unittitle>
-               <note>
-                  <p> See also: Individual: George M. Roberts scrapbook 1878-1881 </p>
-               </note>
+               <unittitle>Individuals -- General, A-Z</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3a38bbae437f8cf0b5bac1b2cde4aa38"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
-            <c02 level="file">
+            <odd id="aspace_4cce7841edbf0b911c999355c297c4a0">
+               <head>General</head>
+               <p>See also: Individual: George M. Roberts scrapbook 1878-1881</p>
+            </odd>
+            <c02 id="aspace_e9bf0115cce06b8c91c11aca6f513de1" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Burleigh, Charles C. <unitdate>1962-</unitdate>
-                  </unittitle>
+                  <unittitle>Burleigh, Charles C.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962-</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_50f712ac836d008498dfeec91ea031d4"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f4ab45f61db225195145593a59c24fb5" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Clarke, Christopher <unitdate>1975</unitdate>
-                  </unittitle>
+                  <unittitle>Clarke, Christopher</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_79d38bb941dea63df74012ec0b997088"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bb547865cfde07a6f626bd17a3e51b2d" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Coolidge, Grace <unitdate>1989 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Coolidge, Grace</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1989/1989">1989 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0f70faa9a01563d281346582408b6367"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_268c9cad98eaeb67a89bef2f23004c78" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Copeland <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Copeland</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_237f367c5cd288ee14fc31ac60146c90"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_56f217b424202e95f79b0e9f84ddd220" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Dickinson, Emily <unitdate>1976 -</unitdate>
-                  </unittitle>
+                  <unittitle>Dickinson, Emily</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_999504aec65f286fc6decc282a064cc3"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6079645b65be60f286fc9404e267df97" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Edwards, Jonathon <unitdate>1937 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Edwards, Jonathon</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b2f7b3e77394804cee1490e871a5985f"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_897eb7bab69bc31dbd4ae22f719c5de8" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Graham, Dr. Sylvester P. <unitdate>1976</unitdate>
-                  </unittitle>
+                  <unittitle>Graham, Dr. Sylvester P.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a51371e7dedba0bdb8acfd17989fe797"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_93b81719420f5b7262dbd61414f4b5be" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Kneeland, Harriet J. <unitdate>1902 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Kneeland, Harriet J.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0a9592b1f4c45971c708efdea6d175bb"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_31cabb6e1c45b3b37d80740853eaa191" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Mather, Rev. Eleazer <unitdate>1898</unitdate>
-                  </unittitle>
+                  <unittitle>Mather, Rev. Eleazer</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_752bb7141315aac43c6c9ac8775f5468"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2d5a5bfc4770f0b57cd7039c4b26cd21" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Nute, May <unitdate>1907</unitdate>
-                  </unittitle>
+                  <unittitle>Nute, May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d5532217c6057c7bc36ff7e24c039eba"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6428e45481cea182294117a7b249f118" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Parsons Family <unitdate>1929 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Parsons Family</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f5daa302af068bafbf19f47b8fc565a1"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_377144427a2e7163662d647836df64f7" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Pratt, William F. <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>Pratt, William F.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b2ff2c5cbe2ef5402f5c0f7a09c9fe5d"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b17adaf88e51b2d19d628155a0eda647" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Seymour <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Seymour</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d87012e5fdd44ceb5680bbec66327092"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e8b32dc807c66394a1082955b4bed129" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Stoddard, Rev. Solomon <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Stoddard, Rev. Solomon</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f43bc74b289151b2529d8549fd056e91"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_66595676f6b7369efec62dc25bad1f0a" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Watson Family <unitdate>1995</unitdate>
-                  </unittitle>
+                  <unittitle>Watson Family</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1995/1995">1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fc0c46b489e2993a446825c167c559ed"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9ac787519cf9ae36516609fd5881d4ec" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Leeds <unitdate>1975 -</unitdate>
-               </unittitle>
+               <unittitle>Leeds</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975 -</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ad69b80482b92a84dcf4d19e157dfc59"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f1ac35a82e8dea18ed7e4ba18de3780b" level="file">
             <did>
                <unittitle>Libraries</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_7ae07af62c30843c59b9d4d7c6d4a01b" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
                   <unittitle>Clarke Library</unittitle>
-                  <note>
-                     <p> See Memorial Hall </p>
-                  </note>
+                  <container altrender="Letter document box"
+                             id="aspace_02804a666f8ef807861d09469141164d"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
+               <odd id="aspace_d116eb45f2a836c1943b0f6933e49807">
+                  <head>General</head>
+                  <p>See Memorial Hall</p>
+               </odd>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9244ba6364ed7445d7365155d3ce8fa4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
                   <unittitle>Forbes Library</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a9c989137d7c2e4d0c9b1bed8cd5a2c4"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_2647659039834af74c726482df4bfa97" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <unittitle>History <unitdate>1894 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>History</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1894/1894">1894 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_d4d2fc9c9b2245b685541b515525eabc"
+                                label="Mixed Materials [310183630234721]"
+                                type="box">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f51ba02d44b2437841088155923bb6d6" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <unittitle>Photographs <unitdate>1896 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_fccef63c724da099efa14627b3848169"
+                                label="Mixed Materials [310183630234721]"
+                                type="box">3</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4427d5a3c752b20abf7fd041629a8a99" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>The Manse <unitdate>1922 - , undated</unitdate>
-               </unittitle>
+               <unittitle>The Manse</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_00a95c7cbf6e9c812edc9057111c88d5"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_722eecce03b65c29c88632ff7c690d8c" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
                <unittitle>Maps</unittitle>
-               <note>
-                  <p> See Publications: Maps and Guides </p>
-               </note>
+               <container altrender="Letter document box"
+                          id="aspace_0695612592853a62d1333580e826294f"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
+            <odd id="aspace_6cd2fb7a6eb1e4c1de827cef464bdfa8">
+               <head>General</head>
+               <p>See Publications: Maps and Guides</p>
+            </odd>
          </c01>
-         <c01 id="memorial_hall" level="file">
+         <c01 id="aspace_memorial_hall" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Memorial Hall / Clarke Library <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Memorial Hall / Clarke Library</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ada62d4ee49830651861a855fff0ca4c"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 id="mills" level="file">
+         <c01 id="aspace_mills" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Mills <unitdate>1936 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Mills</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e29ea5cf68f223a95bc7f2e565c4ca1"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c11dfed955ab28bbf62a0f6607c5b870" level="file">
             <did>
                <unittitle>Mount Holyoke</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_792f4c752d88f3262362da7fe6701113" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Photographs <unitdate>c1890 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1890/1890">c1890 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bdd28d59af34dd269be2798b2e3e3dc5"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5f48d16dfb9e187b88e1d4dcc9e0d5f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Prospect House <unitdate>1863 - , undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Mount Nonotuck <unitdate>1890, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Mount Sugarloaf <unitdate>1899</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Mount Tom <unitdate>1893 - , undated</unitdate>
-               </unittitle>
-            </did>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Summit House <unitdate>1898 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Prospect House</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3a472a6995196143b54439da9d8575e4"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8b1ad896dbeb56bfac9ef23d96f220ab" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Ox Bow <unitdate>c1890 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Mount Nonotuck</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1890/1890">1890</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d1775bb5e5296ab2077363ba4fb15ad8"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 id="Roberts" level="file">
+         <c01 id="aspace_0042d8c3f352bfa5c63412f1b29fd49f" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Individual: George M. Roberts scrapbook <unitdate>1878-1881</unitdate>
-               </unittitle>
+               <unittitle>Mount Sugarloaf</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1899/1899">1899</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_85e27f2946213818b7694c32a339cb91"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_06abb88155ceae27dc57bbac7805cd30" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
+               <unittitle>Mount Tom</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9bc47a51e9cc11f9744ddc3fe5e15720"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
+            </did>
+            <c02 id="aspace_f2a30302ae1e852aa32f2123180d80d7" level="file">
+               <did>
+                  <unittitle>Summit House</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_78b3bd2cf2df4df76788921c2e75ac87"
+                             label="Mixed Materials [310183630234721]"
+                             type="box">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_26c4f4c3157fb88fec4c38038a530cb1" level="file">
+            <did>
+               <unittitle>Ox Bow</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1890/1890">c1890 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4b667a2d678ca1751cf26a06ecd5737c"
+                          label="Mixed Materials [310183630234721]"
+                          type="box">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_Roberts" level="file">
+            <did>
+               <unittitle>Individual: George M. Roberts scrapbook</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1878/1881"
+                         type="inclusive">1878-1881</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_a8ab8cd9ad00e4275697645981c83b58"
+                          label="Mixed Materials [310183630234549]"
+                          type="box">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_271bcc806d9c47c5c52586fd7e0d054e" level="file">
+            <did>
                <unittitle>Forbes Library</unittitle>
+               <container altrender="Legal document box"
+                          id="aspace_048d689685edfece9c342e637a349896"
+                          label="Mixed Materials [310183630234663]"
+                          type="box">5</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_c35d217b7f3dbc4f36d5f5c3a685a212" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Reports 1-20 <unitdate>1895-1914</unitdate>
-                  </unittitle>
+                  <unittitle>Reports 1-20</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1895/1914"
+                            type="inclusive">1895-1914</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_5e4c38845c4e3d70574557564cb9046a"
+                             label="Mixed Materials [310183630234663]"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_25b0b64fd7fe6e184c41e5941ef078c4" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
                   <unittitle>
                      <title render="italic">Forbes Library, The Half Century</title>
-                     <unitdate>1945</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_a9c564734e2c92030328556e344f4e2d"
+                             label="Mixed Materials [310183630234663]"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_434463e0060828107da79e40cb3d43b8" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Annual Reports <unitdate>1905; 1950-1966</unitdate>
-                  </unittitle>
+                  <unittitle>Annual Reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1905/1905">1905</unitdate>
+                  <unitdate normal="1950/1966" type="inclusive">1950-1966</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4e9bcf89f884d09afb180f0b737e4f41"
+                             label="Mixed Materials [310183630234663]"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2627cc66104a3cfe64dfcdfa75a7799a" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
                   <unittitle>
                      <title render="italic">A Guide to Fine Arts in the Forbes Library</title>
-                     <unitdate>1884-1994</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1884/1994"
+                            type="inclusive">1884-1994</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9c96a00942c8d6f8c163940219f0c101"
+                             label="Mixed Materials [310183630234663]"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b0f067fc144667435328860bfb506699" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Account Books <unitdate>1906-1911</unitdate>
-                  </unittitle>
+                  <unittitle>Account Books</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1906/1911"
+                            type="inclusive">1906-1911</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_7b0e61e3f342b7d9ed090ee91c860222"
+                             label="Mixed Materials [310183630234663]"
+                             type="box">5</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_905a879d436f5e91bf13aa18797db679" level="file">
             <did>
-               <container type="box" label="mixed materials">6</container>
                <unittitle>Organizations</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_73c577bbc3f0523a9ef4396d5e9208fb"
+                          label="Mixed Materials [310183630234481]"
+                          type="box">6</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_fa3bd67e5f5866b352c2aa5718500500" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Council of Social Agencies <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>Council of Social Agencies</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5e2196bac23121123aa7b7f8ea782751"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cfce3d49fc7066686ac36f517f6c5797" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Historic Northampton <unitdate>1940 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Historic Northampton</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b31bb309c2c82e8ec006060ca6f5c948"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_043a151bfdd95a734691650bb50a584f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Calendar and Newsletter <unitdate>1996 -</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Home Culture Club <unitdate>1887 - , undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Northampton Social and Literary Club <unitdate>undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 id="orgs_peoples_institute" level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>People's Institute - General <unitdate>1909 - , undated</unitdate>
-                  </unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Correspondence <unitdate>1927 - , undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Dramatics <unitdate>1923 - , undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Photographs <unitdate>1931 - , undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Individuals <unitdate>1896 -</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Smith College <unitdate>1910 - , undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>James House (Girl's City Club) <unitdate>1928, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Calendar and Newsletter</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996 -</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_dc658427cdffa52bce9aaf8356d74480"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0c6dca6941806e8f508f23f4c104c965" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>United Way <unitdate>1996, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Home Culture Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1887/1887">1887 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0e7248903e4122e4347764619201db59"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
                </did>
-               <c03 level="file">
+            </c02>
+            <c02 id="aspace_25091ab54c4121055f2495cade1fbb7c" level="file">
+               <did>
+                  <unittitle>Northampton Social and Literary Club</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5a20e37b09d0078f966fcf26f5806c08"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_orgs_peoples_institute" level="file">
+               <did>
+                  <unittitle>People's Institute - General</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_da5c65fd6778d6d205a71d80b59b95fb"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
+               </did>
+               <c03 id="aspace_b4e4bc6e7d170644f82d13325cb179db" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Smith Charities <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Correspondence</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_f713890be4e01cd373217f32eba2a1ee"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_79693d9804bc3a619c50ad89fbb8b5bf" level="file">
+                  <did>
+                     <unittitle>Dramatics</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1923/1923">1923 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_982a5d3ce4f60d02918625295910fc08"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_c23ef8ec69f22457b5f2cab44d3eee90" level="file">
+                  <did>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_ed46612d583bfd2597cd049ba6f6cedd"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_b810395417bacc68074ca2e6c229c784" level="file">
+                  <did>
+                     <unittitle>Individuals</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896 -</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_4090fb9851169532bf98b8eed89d50e6"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_1092d762c3dd26aa32791a3f0eebb408" level="file">
+                  <did>
+                     <unittitle>Smith College</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_487b4a35821467ca85e3965567970706"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_b6f3289ab143a72b2e04ddc3aee34aee" level="file">
+                  <did>
+                     <unittitle>James House (Girl's City Club)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_afc37aa9268a55037fdf2c940b3ade76"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_ac2b561606f58631bcd47880c07e5dc0" level="file">
+               <did>
+                  <unittitle>United Way</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_16ab599ec9baaca870c85e72dfb042b5"
+                             label="Mixed Materials [310183630234481]"
+                             type="box">6</container>
+               </did>
+               <c03 id="aspace_b4057ca8ed991ad5c9b6806f060a56bd" level="file">
+                  <did>
+                     <unittitle>Smith Charities</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_274c28d3c20928108244e9e39c1c3f99"
+                                label="Mixed Materials [310183630234481]"
+                                type="box">6</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ff3473336825a62de8ea683ef8c81385" level="file">
             <did>
-               <container type="box" label="mixed materials">7</container>
                <unittitle>Parks</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_1968467692c93b598f05225f6fc8fdf5"
+                          label="Mixed Materials [310183630234424]"
+                          type="box">7</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3970d2cd7900f6867295fa6599f9b8c5" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Child's Park <unitdate>1989, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Child's Park</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1989/1989">1989</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0fd85d04a5de1d026c3b57e010094901"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_26d907385361c2833820fcd7fda179a0" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Look Park <unitdate>1942-</unitdate>
-                  </unittitle>
+                  <unittitle>Look Park</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942-</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8374953d1126491f16e43c5058e0dee1"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b1c45e646ab4226c614e0a01ffb18d6f" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Pulaski Park <unitdate>1976</unitdate>
-                  </unittitle>
+                  <unittitle>Pulaski Park</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_40ea1bc9aa4ab1ff42f754ceb06f2eee"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3af430cd0bc755196d19861f87fb0c7a" level="file">
             <did>
-               <container type="box" label="mixed materials">7</container>
-               <unittitle>Parking, Smith College <unitdate>1998</unitdate>
-               </unittitle>
+               <unittitle>Parking, Smith College</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f35c67a5394cdca0047dd9f01a1d3ea1"
+                          label="Mixed Materials [310183630234424]"
+                          type="box">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f1d25d1262026e9fe712d0ba143df2ae" level="file">
             <did>
-               <container type="box" label="mixed materials">7</container>
-               <unittitle>Pass at Thermopylae <unitdate>1895, undated</unitdate>
-               </unittitle>
+               <unittitle>Pass at Thermopylae</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e765af448b245934c66dfe3ed55f257"
+                          label="Mixed Materials [310183630234424]"
+                          type="box">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f695ca6d64a895b116493d359acca7cc" level="file">
             <did>
                <unittitle>Publications</unittitle>
             </did>
-            <c02 id="pubs_maps_and_guides" level="file">
+            <c02 id="aspace_pubs_maps_and_guides" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Maps and Guides <unitdate>1900, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Maps and Guides</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1900/1900">1900</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_536cdba8a93a544a36d7f9239986295b"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dd8b4a3e2a374a8e64defde2d653f9cc" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Maps and Guides (Trolley) <unitdate>1903 -</unitdate>
-                  </unittitle>
+                  <unittitle>Maps and Guides (Trolley)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0012c460142878e1695961b4a76ee8ad"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9c441f20b69151549b9bc765eb44e41d" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Newspapers <unitdate>1936 -</unitdate>
-                  </unittitle>
+                  <unittitle>Newspapers</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9479a8319694efbc55541cff5491791f"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_02243d75678e2376fce29911d7ffdf97" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">The Northampton Book</title>
-                     <unitdate>undated</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1d32f0540797f340a7d33a9fc12872b2"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_865d3cc131e3714f1e2856d94847d808" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Northampton Poets</title>
-                     <unitdate>1948</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f08fcd67c436b912184b55128b79de00"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3deb55a26d1eaf0cd2b30f206b178813" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">This is Northampton</title>
-                     <unitdate>1974-1975</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1974/1975"
+                            type="inclusive">1974-1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6dcbfac25943a77b67016875a5dbfb34"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_080dd0c5c4d02c46e65c753fa5614a48" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">River Gods</title>
-                     <unitdate>1941</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_214c5aedb5388b675d698306a4e000c8"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1ce25480cc7b88dd5d84a075bc95132b" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Views of Northampton and Smith College</title>
-                     <unitdate>1904</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fd527b2e311a299954e41288c981bb1a"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8c67a98718e0f4efdae94ceb2e20713a" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Drives in Northampton and Vicinity</title>
-                     <unitdate>1888</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a69bb2888b5d6a9b8ffabc349d303641"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_32883556cb3b299acc7613fb8f270363" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Northampton Picturesque</title>
-                     <unitdate>c.1893</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1893/1893">1893</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1293dee36d90c12a3320ea12cf632447"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b5ae06800bd0dcef70efe1eb7000966a" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Northampton and Smith College</title>
-                     <unitdate>undated</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c85ad09a9059b7322d1700e364eb0ba2"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1bcc587fb34cb219ddb59a9aa1093cc2" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">College Shopper and Smacker</title>
-                     <unitdate>Spring, 1926</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce">Spring</unitdate>
+                  <unitdate normal="1926/1926">1926</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3e0a013712d98aea4c56ec8f741b9818"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_af56075f01d3f3940ba19c1abcd6cfe4" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Northampton, Mass.</title>
-                     <unitdate>undated</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a075e5928bdecbeb4cdd9f46cc34f1cc"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_abb6f77919520a53f4dedaf292e5ce86" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Western New England</title>
-                     <unitdate>Oct. 1911</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911-10/1911-10">Oct. 1911</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_589829d0bcb6cbc61bf042b037187573"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_81cbb3ea3dc9a557bd2f5a18ef38f95b" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>
                      <title render="italic">Northampton</title>
-                     <unitdate>c.1981</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1981/1981">1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5b1aa8076d3679b2105fba790ab147ee"
+                             label="Mixed Materials [310183630234424]"
+                             type="box">7</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_0d736c4863e90718d47f49b5ec00182c" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
                   <unittitle>
                      <title render="italic">Mount Tom; an All Outdoors Magazine</title>
                   </unittitle>
+                  <container altrender="Half letter document box"
+                             id="aspace_3cf9ed95d46d199a3fbcc78cb1eeee7d"
+                             label="Mixed Materials [310183630234366]"
+                             type="box">8</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_22cd091f0c38b4fcc4141df2799054f6" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Volumes 1-7 <unitdate>1905-1914</unitdate>
-                     </unittitle>
+                     <unittitle>Volumes 1-7</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1905/1914"
+                               type="inclusive">1905-1914</unitdate>
+                     <container altrender="Half letter document box"
+                                id="aspace_3c725dadae70d6a9f7fdad1816d58a77"
+                                label="Mixed Materials [310183630234366]"
+                                type="box">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9e5444b5f3549142028e80c0fe082c53" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Volume 10, nos. 1and 2 <unitdate>1917</unitdate>
-                     </unittitle>
+                     <unittitle>Volume 10, nos. 1and 2</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                     <container altrender="Half letter document box"
+                                id="aspace_667d24e251b8d88293b8cae7f588d560"
+                                label="Mixed Materials [310183630234366]"
+                                type="box">8</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e9eab15b2203d8331d3a5bc3665b2ddc" level="file">
             <did>
-               <container type="box" label="mixed materials">9</container>
-               <unittitle>Railroad Stations <unitdate>1886 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Railroad Stations</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1886/1886">1886 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7471db591d7c103e811bff6747e12e70"
+                          label="Mixed Materials [310183630234309]"
+                          type="box">9</container>
             </did>
          </c01>
-         <c01 id="restaurants" level="file">
+         <c01 id="aspace_restaurants" level="file">
             <did>
-               <container type="box" label="mixed materials">9</container>
-               <unittitle>Restaurants <unitdate>1976 - , undated</unitdate>
-               </unittitle>
-               <note>
-                  <p> See also: Hotels </p>
-               </note>
+               <unittitle>Restaurants</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b1e59c93ee0de45dfdea3eac6bf1dc34"
+                          label="Mixed Materials [310183630234309]"
+                          type="box">9</container>
             </did>
+            <odd id="aspace_55cab3f146f88670a75a545ab934d610">
+               <head>General</head>
+               <p>See also: Hotels</p>
+            </odd>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f04b335659d7e212419dee01096af6e5" level="file">
             <did>
                <unittitle>Rivers</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_7350e66f29ae52b0d5165795ac8e4af3" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>Connecticut River <unitdate>1901 -</unitdate>
-                  </unittitle>
+                  <unittitle>Connecticut River</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9201dc7745eeed08b30833c11c48bd36"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_12f24a8c426a8e96a204e43965003c6b" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>Mill River <unitdate>1897 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Mill River</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1897/1897">1897 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_19e301e0a55d0fab3f0a48d3de3760a3"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_798204f3fd21dc251b40837fad9316d0" level="file">
             <did>
-               <container type="box" label="mixed materials">9</container>
-               <unittitle>Salem, Ma. <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Salem, Ma.</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c4811e7ad8b57a63ec3dd09957b5e323"
+                          label="Mixed Materials [310183630234309]"
+                          type="box">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bd21b3305eecd6a37a5d09e9570c1cf6" level="file">
             <did>
-               <container type="box" label="mixed materials">9</container>
-               <unittitle>Sanitary Wagon <unitdate>1890 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Sanitary Wagon</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1890/1890">1890 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c7141859739df85e3998eaab9b00ab63"
+                          label="Mixed Materials [310183630234309]"
+                          type="box">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9bca0f37e17820cb741c55dece6f4ac4" level="file">
             <did>
                <unittitle>Schools</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_a9b9d8c6050b0d5802ea2ca2fbf07e0c" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>General <unitdate>1974 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7dd5c337afbee129b4a3f24e2802693b"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fb693b3227c879d59c05d72d8dd976dd" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>Mary A. Burnham School <unitdate>1877 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Mary A. Burnham School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1877/1877">1877 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_96868e61c177d2ce6e1c72a5c46cb82d"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_26f538fe349c5fb19d784a43af35184a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Photographs <unitdate>1879 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1879/1879">1879 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_a7653dc25586f10afbebbefaa830b428"
+                                label="Mixed Materials [310183630234309]"
+                                type="box">9</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fd0b0f2379ee7e7d6232423e37a06b85" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>Stoneleigh - Burnham School <unitdate>c1879 -</unitdate>
-                  </unittitle>
+                  <unittitle>Stoneleigh - Burnham School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1879/1879">c1879 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_db26ded70a5a42d1108f69a0de26990f"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0be4e3936f6ea8d27d1e604385c09914" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>Capen School - general <unitdate>1908 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Capen School - general</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c3d81f2e61a3a6ffe29d552e7f3ba5b"
+                             label="Mixed Materials [310183630234309]"
+                             type="box">9</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_6c051102c7b7c4163f81c298d235f94a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Photographs <unitdate>1889 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1889/1889">1889 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_5cfb332c7e9f5472d7c0395423dde280"
+                                label="Mixed Materials [310183630234309]"
+                                type="box">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f9757460315b4068feb7d93f3a8c8900" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Photograph Albums <unitdate>1913 - 1914, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photograph Albums</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1913/1914"
+                               type="inclusive">1913 - 1914</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_8358ea7637de057d57d20a2152063128"
+                                label="Mixed Materials [310183630234309]"
+                                type="box">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8ec08afba993f40edce14142670f8550" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Yearbooks <unitdate>1898</unitdate>
-                     </unittitle>
-                  </did>
-               </c03>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Clarke School <unitdate>1913 - , undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Hill School <unitdate>1991</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Northampton Commercial College <unitdate>undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Northampton High School <unitdate>1996</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Northampton Junior College <unitdate>1946 -</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Northampton School for Girls <unitdate>undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Round Hill School <unitdate>1891 - , undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Smith Academy <unitdate>1958</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Smith Vocational School <unitdate>1978</unitdate>
-                  </unittitle>
-               </did>
-               <c03 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>Auto-mechanics Course <unitdate>1971</unitdate>
-                     </unittitle>
+                     <unittitle>Yearbooks</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_0c022402a4a210b6f6d853a1c0add642"
+                                label="Mixed Materials [310183630234309]"
+                                type="box">9</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3a7198f806d9aaa9a91f0ad22ada06d3" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Sunnyside <unitdate>1998 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Clarke School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4be77e0e8b519e96be95b14f2ec45a61"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_584ce94f68bb87cadc08c0d78561b471" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Sheldon House <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Hill School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1991/1991">1991</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7286b680bca73c6b614b7f8d42e9242d"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8ceff78d7c17e60695271d8d168d1777" level="file">
+               <did>
+                  <unittitle>Northampton Commercial College</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f5e5131576d8f2eb018bdcd0e24169dd"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0bc9fd2763b5f19e44746cd1f4f2128b" level="file">
+               <did>
+                  <unittitle>Northampton High School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_06abccf6bb6fa64221ffa7b2afbcd5e2"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0b56e36f53b865cb57297b817ef68748" level="file">
+               <did>
+                  <unittitle>Northampton Junior College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_16e42b242a34f45090a83619d04a0a64"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0a0c9583e2f86ec232aec75577f842d0" level="file">
+               <did>
+                  <unittitle>Northampton School for Girls</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7d205c67a05211bfe428df52bcce3a70"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c9f1b5e48e75040636ee18a53cf6d3fd" level="file">
+               <did>
+                  <unittitle>Round Hill School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b70faf4138ff72f5d6c3ef34c38942b"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7627acd51362ef1e1b64c30910ad57fb" level="file">
+               <did>
+                  <unittitle>Smith Academy</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ab653d15b855157c90afe9ddf2777fde"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d1f64141c5685e119c57ee8871d8f5f5" level="file">
+               <did>
+                  <unittitle>Smith Vocational School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_959f7093a1db609b274a8774835b23ab"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+               <c03 id="aspace_6e84a54535afbe5e8850ca596ac182e0" level="file">
+                  <did>
+                     <unittitle>Auto-mechanics Course</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_d6673a3f7ee2fdb613c74410ee283334"
+                                label="Mixed Materials [310183630234242]"
+                                type="box">10</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_2ee4319eab0440d4855eea1fc1dae157" level="file">
+               <did>
+                  <unittitle>Sunnyside</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_54fcbfbb063344dbe32048b9a519badb"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e6b0773bfb1132c6c9c43326eea3850d" level="file">
+               <did>
+                  <unittitle>Sheldon House</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c10f24411380ed1e9f76b9feef94ee95"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_37219571125dff1d346f2373b66c3611" level="file">
             <did>
-               <container type="box" label="mixed materials">10</container>
-               <unittitle>Streets - general <unitdate>c1876 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Streets - general</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1876/1876">c1876 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cac452bc3c57d0fc8d58dd24c4e5fdd6"
+                          label="Mixed Materials [310183630234242]"
+                          type="box">10</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_82b23f0bc5adee07e289f1e6e22d32f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Barrett Place <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Barrett Place</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b38caf814f8b331bbf243f842c2dfca"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_74a20bbf6b5a20fa3920a26c72ae4f0f" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>College Lane <unitdate>c1891 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>College Lane</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">c1891 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_201e606aa20466b27985a71f2fcf2f79"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_979500e79b3189bd85d5387b169dad87" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Elm Street <unitdate>1993 -</unitdate>
-                  </unittitle>
+                  <unittitle>Elm Street</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993 -</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7e6d90b120a2afd1389bda1d3e6f91d3"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_63d4b4c7541f2804ef681a9abac5ba87" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>Photographs <unitdate>c1876 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1876/1876">c1876 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_d4bbf71dde5b52bde36b07fbe7585119"
+                                label="Mixed Materials [310183630234242]"
+                                type="box">10</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_931a7ff44b225646f5a846491fe3a0ba" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Green Street <unitdate>1893 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Green Street</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_89aa4d7fb2ce1b8349d0ff5b019dfe3a"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_878b283e7f8d1adae01c8b9306b1cc37" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>Main Street - general <unitdate>1975 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Main Street - general</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_89d7c5b1d49253ceb0ae958b63f4ee61"
+                             label="Mixed Materials [310183630234242]"
+                             type="box">10</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_e66ea9e53a1092a860f2358439f1227e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>Engravings <unitdate>1842 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Engravings</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1842/1842">1842 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_9622ad0ead6cd75448987e6592d17680"
+                                label="Mixed Materials [310183630234242]"
+                                type="box">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b226497ffffbbbd4e705d25c058fdfbe" level="file">
                   <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>Photographs <unitdate>1860 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1860/1860">1860 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half letter document box"
+                                id="aspace_e9df1bf8d29487413236e2fffb9fe0e7"
+                                label="Mixed Materials [310183630234184]"
+                                type="box">11</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0a767d7c7bacb48229b17f080ede483a" level="file">
                <did>
-                  <container type="box" label="mixed materials">11</container>
-                  <unittitle>Paradise Road <unitdate>1891 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Paradise Road</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_bce6871fc1ade15e76b629b09dd4f4c8"
+                             label="Mixed Materials [310183630234184]"
+                             type="box">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1f38e959412239b0efa03beb5cf888c9" level="file">
                <did>
-                  <container type="box" label="mixed materials">11</container>
-                  <unittitle>Prospect Street <unitdate>1887 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Prospect Street</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1887/1887">1887 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_66e961d281c62e1c1a56d6db09677736"
+                             label="Mixed Materials [310183630234184]"
+                             type="box">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2b4d7eb423500738e6cae0088fea8529" level="file">
                <did>
-                  <container type="box" label="mixed materials">11</container>
-                  <unittitle>Round Hill Road <unitdate>1820 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Round Hill Road</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1820/1820">1820 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_7ec31459c034bf5746cf983a3be79a80"
+                             label="Mixed Materials [310183630234184]"
+                             type="box">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fd818b850378ac899b46b973ae8fec89" level="file">
                <did>
-                  <container type="box" label="mixed materials">11</container>
-                  <unittitle>West Street <unitdate>1995 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>West Street</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1995/1995">1995 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_000444a48c0fab6d85539d6f5f54ddde"
+                             label="Mixed Materials [310183630234184]"
+                             type="box">11</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9f84aed8de1711ee161841f1259f3381" level="file">
             <did>
                <unittitle>Taste of Northampton</unittitle>
-               <note>
-                  <p> See Restaurants </p>
-               </note>
             </did>
+            <odd id="aspace_3e989f856c6002ee7414fc686cb1ceb0">
+               <head>General</head>
+               <p>See Restaurants</p>
+            </odd>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_84eb0130dff127d6c97cceed6cdc7007" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Titan's Pier <unitdate>1894 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Titan's Pier</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1894/1894">1894 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_cbfc6b1de32eb8b1d0258de993e40969"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_94e7972d961b125cd59b925d039e6fbb" level="file">
             <did>
                <unittitle>Town Hall</unittitle>
-               <note>
-                  <p> See City Hall </p>
-               </note>
+            </did>
+            <odd id="aspace_d363718b08ddbe6ca7a6c1e900053e39">
+               <head>General</head>
+               <p>See City Hall</p>
+            </odd>
+         </c01>
+         <c01 id="aspace_d3ae13c6d3155a5af405421e63347d71" level="file">
+            <did>
+               <unittitle>Underground Railroad</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_031ab52f9e34474cb04e66cd6b974bbf"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_784adf2f65643fd1c453bb1fe5914f71" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Underground Railroad <unitdate>1974</unitdate>
-               </unittitle>
+               <unittitle>Water Cure</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1848/1848">1848 -</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_0cb9acc5763df6c754631975389e1f18"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5f80b4ab3abc10f8518d70a9392d8ca3" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Water Cure <unitdate>1848 - , undated</unitdate>
-               </unittitle>
+               <unittitle>Whately Glen</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1892/1892">c1892</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_327750a31deb604726e5ac8f0731c423"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fecf33f9dfa31ba05831f21505093a47" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Whately Glen <unitdate>c1892</unitdate>
-               </unittitle>
+               <unittitle>Williamsburg</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_6bedc52960636e36a2f1ef1f81844fae"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b4514f7261dce6004f65f35ab80fede6" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Williamsburg <unitdate>1963</unitdate>
-               </unittitle>
+               <unittitle>Winter Festival</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_84a9fc1cc280cc5087b5b6155fb7d41f"
+                          label="Mixed Materials [310183630234184]"
+                          type="box">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a038fa3368de46dd15f76dbba22722dd" level="file">
             <did>
-               <container type="box" label="mixed materials">11</container>
-               <unittitle>Winter Festival <unitdate>1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">12</container>
                <unittitle>Theatres, A - Z</unittitle>
+               <container altrender="Half legal document box"
+                          id="aspace_c5a3a5b4067acba592370049a89eeaa0"
+                          label="Mixed Materials [310183630234606]"
+                          type="box">11.1</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_1b6c113075ab17cb04770be97c7e6c8e" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>The Calvin <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>The Calvin</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_bbb60d840a306855ff184b397c054f42"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5599ef7d7f14525f1cd16021204e9547" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>Circle Players <unitdate>1959</unitdate>
-                  </unittitle>
+                  <unittitle>Circle Players</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_6c8a91dd50a8a541f42c03a98e72242c"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dfe1764a7a7a4e18f4ef59bf25a65b67" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>City Hall <unitdate>1888</unitdate>
-                  </unittitle>
+                  <unittitle>City Hall</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_78e7bc8fd5cbfbca01d0512f89dd4c4d"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8afda299d555715b69fad865540ce6e7" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>History <unitdate>1891 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>History</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_1771489ff73ac0d39c5975053bc5b2ab"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8f6a7fce6456295fdfb9c8f71d2803b4" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>Little Theatre <unitdate>1915 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Little Theatre</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_3abeb15be59a204a830889171094c1ee"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_281906b174db68d548f0e9a6f5b608f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>Opera House <unitdate>1881 -</unitdate>
-                  </unittitle>
+                  <unittitle>Opera House</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1881/1881">1881 -</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_d98923e090f610e25a5d76793a507171"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e158ede730b54c06673b6f759e501909" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>Players - General <unitdate>1913 - , undated</unitdate>
-                  </unittitle>
+                  <unittitle>Players - General</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913 -</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_3a63d655ce2d603319af0ac6e4f20987"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_23ca4a256aabb4ac025e81dc0e37d0dc" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>"The Darling of the Gods" <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>"The Darling of the Gods"</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_a291d8332ce65028ba12c5aae9261a3c"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_11c0a678a09a8c8baa889b187f764717" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>"The Vanguard" <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>"The Vanguard"</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_1968eae17f190bca0f2feb2fee1bab0f"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_029668b0936fb61b6f71ccad7b24592d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>"When Beauty Pulled the Strings" <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>"When Beauty Pulled the Strings"</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_70d1b503fe42e2df7f690e759e1cfafc"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5e13c6c06cd981e2dcf4e0fafe901ed6" level="file">
                <did>
                   <unittitle>Players--Personnel</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_4cd816a141fd95d7515032f154c9acf9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Bunstelle, Judy <unitdate>1912 - 1919</unitdate>
-                     </unittitle>
+                     <unittitle>Bunstelle, Judy</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1912/1919"
+                               type="inclusive">1912 - 1919</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_84cfb0bc7882fc8094f13d4c2c3d450f"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_46a52c2d26ebb26b0aa0be9ee6d62982" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Burbank, Edith <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Burbank, Edith</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_c09bc555a2350f2ff7b5533ceb27c501"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_664c2c30b02a251ffcdac6290d5e9fe2" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Campbell, Stella Patrick <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Campbell, Stella Patrick</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_62975b988a1e086543252d3585e620f7"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3174216700e32d0039562cb946fd2323" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Mayo, Martha <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Mayo, Martha</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_3a939c67be587d9d7a81338be00373e1"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_55b179c0cd8da07d0ecc89c7bdde6604" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Murnane, Allan <unitdate>1915</unitdate>
-                     </unittitle>
+                     <unittitle>Murnane, Allan</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_f9731673adece3ed77e4d904697468a5"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1b0de498c08fbce3ae068804bb32ab20" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Rennie, James <unitdate>1915 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Rennie, James</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_c1b6332838a1f294f3397d20f7f2316d"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e8369db22971320f5eb0657ab98e38b9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>Taylor, Julia <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Taylor, Julia</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Half legal document box"
+                                id="aspace_83d010e9ecf078e9c46d416c3cc7a310"
+                                label="Mixed Materials [310183630234606]"
+                                type="box">11.1</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bddf6a8ddf11ee7ca0f0d2dc4f6ecdf2" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>Plaza <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Plaza</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_97cdb252f8baed74727d81859e0429f3"
+                             label="Mixed Materials [310183630234606]"
+                             type="box">11.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9045b98e25a65f42a211afedd53f8768" level="file">
                <did>
-                  <container type="box" label="mixed materials">13</container>
                   <unittitle>Academy of Music</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_40da3ea7eb22b2915e3589e359e5ce29"
+                             label="Mixed Materials [310183630072055]"
+                             type="box">11.2</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_1cdfdd222f99e726f421dca1a3c72651" level="file">
                   <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>Deed <unitdate>1892</unitdate>
-                     </unittitle>
+                     <unittitle>Deed</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1892/1892">1892</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_d4bc812fc7255d1ae0c511ff222b9bf6"
+                                label="Mixed Materials [310183630072055]"
+                                type="box">11.2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_dd7f46c123fc9259fa87450c32da6e25" level="file">
                   <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>General <unitdate>1990 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>General</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_2b17245cfd6adae853f31e0c7db47a2e"
+                                label="Mixed Materials [310183630072055]"
+                                type="box">11.2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_02dbf4b6e7503abd9c6286f19cb60222" level="file">
                   <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>Photographs <unitdate>1891 - , undated</unitdate>
-                     </unittitle>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891 -</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_047d007defb8b5095118f361f4ee4f43"
+                                label="Mixed Materials [310183630072055]"
+                                type="box">11.2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_879706b76223d02d5d4070163fb74914" level="file">
                   <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>Productions <unitdate>1891 - 1910</unitdate>
-                     </unittitle>
+                     <unittitle>Productions</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1891/1910"
+                               type="inclusive">1891 - 1910</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_f24fd26724b9c854a5860af004a92692"
+                                label="Mixed Materials [310183630072055]"
+                                type="box">11.2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b50c00bb20564ab7fcab8fbb83e3f3db" level="file">
                   <did>
-                     <container type="box" label="mixed materials">14</container>
-                     <unittitle>Productions <unitdate>1911-1920</unitdate>
-                     </unittitle>
+                     <unittitle>Productions</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1911/1920"
+                               type="inclusive">1911-1920</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_6533d95c81a209cc75a7920306343286"
+                                label="Mixed Materials [310183630072113]"
+                                type="box">11.3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4f26a704c3b25b830d6bc1c1a7e3e927" level="file">
                   <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>Productions <unitdate>1921 -</unitdate>
-                     </unittitle>
+                     <unittitle>Productions</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1921/1921">1921 -</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_4c8cb1304c42e232db0a09c0323d6dab"
+                                label="Mixed Materials [310183630072170]"
+                                type="box">11.4</container>
                   </did>
                </c03>
             </c02>
+         </c01>
+         <c01 id="aspace_557741560a34dbf157b1137c54b2f8cf" level="file">
+            <did>
+               <unittitle>Books</unittitle>
+               <container altrender="Record carton"
+                          id="aspace_1029bcfbb20104605cb5f515b0862024"
+                          label="Mixed Materials [310183630072238]"
+                          type="box">11.5</container>
+               <container altrender="Record carton"
+                          id="aspace_75db15015c77943f7639dc5eaeda0ecd"
+                          label="Mixed Materials [310183630072295]"
+                          type="box">11.6</container>
+            </did>
          </c01>
       </dsc>
    </archdesc>
