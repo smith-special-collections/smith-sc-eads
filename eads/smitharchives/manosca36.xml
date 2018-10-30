@@ -1,442 +1,518 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca36.xml//EN">manosca36</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca36</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Frederick Newton Arvin papers, 1900 - 1963 (bulk
-               1924 - 2001)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Gayla Spaulding (2001); Elizabeth
-               Carron (2015).</author>
-
+            <titleproper>Finding aid to the Frederick Newton Arvin papers <num>CA.MS.00036</num>
+            </titleproper>
+            <author>Finding aid prepared by Gayla Spaulding (2001), Elizabeth Carron (2015), and Daniel Michelson (2018).</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-06-19">2015-06-19</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-10-30 16:26:37 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-10-30</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Arvin, Newton, 1900 - 1963.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Frederick Newton Arvin papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1900 - 2001</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1924 - 1963</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">42 UUID:c98748f0-5948-4c55-b1d4-c4f19cce366d</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">( .6 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Faculty. Professor of English Language
-            and Literature from 1922 - 1960. Arrested on charges of moral turpitude in 1959 by the
-            City of Northampton, MA, he pled guilty to the charges and was retired from Smith
-            College by the Board of Trustees in 1960. </abstract>
+         <unittitle>Frederick Newton Arvin papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Arvin, Newton, 1900 - 1963.</persname>
+         </origination>
+         <unitid>CA.MS.00036</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1900/2001"
+                   type="inclusive">1900 - 2001</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1924/1963" type="bulk">1924 - 1963</unitdate>
+         <abstract id="aspace_7c315d2ebf3b2e4688148bc2e7e2208b">Faculty. Professor of English Language and Literature from 1922 - 1960. Arrested on charges of moral turpitude in 1959 by the City of Northampton, MA, he pled guilty to the charges and was retired from Smith College by the Board of Trustees in 1960.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> (Frederick) Newton Arvin was born on August 9, 1900 in Valparaiso, Indiana. After
-            graduating summa cum laude from Harvard University in 1921, he taught private school in
-            Detroit before joining the faculty at Smith College as an Instructor of English in 1922. </p>
-         <p>Over the next decade, his career soared. He was awarded a Guggenheim Fellowship in 1935
-            and was subsequently named a full professor at Smith College (1940). In 1939 he became a
-            trustee at Yaddo, a writer's colony in Saratoga Springs, New York. While visiting in
-            1946 he met and began a two-year affair with Truman Capote. Capote's 1948 novel Other
-            Voices, Other Rooms was dedicated to Arvin. Arvin went on to win the 1951 National Book
-            Award in non-fiction for his book Herman Melville (1950). </p>
-
-         <p>As Margot Cleary wrote in Hampshire Life (1991), "Newton Arvin's life was a Jekyll and
-            Hyde affair, a mixture of professional acclaim and personal scandal." Despite a brief
-            marriage to Mary Jordan Garrison (Class of 1931), Arvin was living as a closeted gay
-            man. The marriage ended in 1940 with both Garrison and Arvin suffering numerous
-            breakdowns as a result. </p>
-
-         <p>During Labor Day weekend in 1960, police raided Arvin's home and confiscated thousands
-            of pictures of male models that were considered pornographic. He was charged with
-            possession and distribution of pornographic materials and though he initially pleaded
-            innocence, he later accepted a finding of guilty. His arrest, and the confiscation of
-            his journals, led to the arrests of several other men in the community including two
-            colleagues at Smith College. The Board of Trustees voted to have Arvin 'retired' in 1960
-            to the vehement protest of prominent faculty, colleagues and alumnae. Arvin was admitted
-            to Northampton State Hospital for suicidal depression and remained confined for the
-            duration of the ordeal; diagnosed with pancreatic cancer, her died March 21, 1963.</p>
-
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>(Frederick) Newton Arvin was born on August 9, 1900 in Valparaiso, Indiana. After graduating summa cum laude from Harvard University in 1921, he taught private school in Detroit before joining the faculty at Smith College as an Instructor of English in 1922. </p>
+         <p> Over the next decade, his career soared. He was awarded a Guggenheim Fellowship in 1935 and was subsequently named a full professor at Smith College (1940). In 1939 he became a trustee at Yaddo, a writer's colony in Saratoga Springs, New York. While visiting in 1946 he met and began a two-year affair with Truman Capote. Capote's 1948 novel Other Voices, Other Rooms was dedicated to Arvin. Arvin went on to win the 1951 National Book Award in non-fiction for his book Herman Melville (1950). </p>
+         <p> As Margot Cleary wrote in Hampshire Life (1991), "Newton Arvin's life was a Jekyll and Hyde affair, a mixture of professional acclaim and personal scandal." Despite a brief marriage to Mary Jordan Garrison (Class of 1931), Arvin was living as a closeted gay man. The marriage ended in 1940 with both Garrison and Arvin suffering numerous breakdowns as a result. </p>
+         <p> During Labor Day weekend in 1960, police raided Arvin's home and confiscated thousands of pictures of male models that were considered pornographic. He was charged with possession and distribution of pornographic materials and though he initially pleaded innocence, he later accepted a finding of guilty. His arrest, and the confiscation of his journals, led to the arrests of several other men in the community including two colleagues at Smith College. The Board of Trustees voted to have Arvin 'retired' in 1960 to the vehement protest of prominent faculty, colleagues and alumnae. Arvin was admitted to Northampton State Hospital for suicidal depression and remained confined for the duration of the ordeal; diagnosed with pancreatic cancer, her died March 21, 1963.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The Newton Arvin papers contain biographic materials, clippings, correspondence,
-            photographs, reports and other administrative documents covering Arvin's career as a
-            faculty member at Smith College.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Newton Arvin papers contain biographic materials, clippings, correspondence, photographs, reports and other administrative documents covering Arvin's career as a faculty member at Smith College.</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into five series:</p>
-         <list>
-            <item> Series I: Biographical Material (1951 - 1960) </item>
-            <item> Series II: Publications (1924 - 1958) </item>
-            <item> Series III: Awards (1935 - 1984) </item>
-            <item> Series IV: Correspondence (1957) </item>
-            <item> Series V: Morals Case </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>Series I: Biographical Material</item>
+            <item>Series II: Publications</item>
+            <item>Series III: Awards</item>
+            <item>Series IV: Correspondence</item>
+            <item>Series V: Morals Case</item>
          </list>
       </arrangement>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives except where noted in the finding aid. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives except where noted in the finding aid.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Frederick Newton Arvin papers, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Frederick Newton Arvin papers, Smith College Archives, CA-MS-00036, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Frederick Newton Arvin papers were created over a period of time from a variety of
-            sources and donated to the College Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Frederick Newton Arvin papers were created over a period of time from a variety of sources and donated to the College Archives.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <persname encodinganalog="600" source="lcnaf">Arvin, Newton, 1900-1963.</persname>
-         <subject encodinganalog="650" source="lcsh">Homosexuality and education --
-            Massachusetts</subject>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- Faculty --
-            Biography</corpname>
-         <subject encodinganalog="650" source="lcsh">United States -- Social conditions --
-            1960-1980</subject>
-
-      </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>
-            <list>
-               <item>
-                  <extref href="http://www.smith.edu/libraries/libs/rarebook/collections/">Newton
-                     Arvin papers, 1865 - 1963 (bulk 1913 - 1963, Mortimer Rare Book Room, Smith
-                     College</extref>
-               </item>
-               <item>
-                  <extref href="http://www.library.upenn.edu/collections/rbm/mss/">Van Wyck Brooks
-                     Papers. University of Pennsylvania Library</extref>
-               </item>
-               <item>
-                  <extref href="http://www.iowacenterforthebook.org/awards/capote-awards">Truman
-                     Capote Award, University of Iowa</extref>
-               </item>
-            </list>
-         </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <list type="ordered">
+            <item>
+               <extref href="http://www.smith.edu/libraries/libs/rarebook/collections/">Newton Arvin papers, 1865 - 1963 (bulk 1913 - 1963, Mortimer Rare Book Room, Smith College</extref>
+            </item>
+            <item>
+               <extref href="http://www.library.upenn.edu/collections/rbm/mss/">Van Wyck Brooks Papers. University of Pennsylvania Library</extref>
+            </item>
+            <item>
+               <extref href="http://www.iowacenterforthebook.org/awards/capote-awards">Truman Capote Award, University of Iowa</extref>
+            </item>
+         </list>
       </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-      <dsc type="analyticover">
-
-         <c01 level="series">
-            <did>
-               <unittitle>Series I: Biographical Material <unitdate>1951 -
-                  1960</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>Contains information about the life of Frederick Newton Arvin, materials
-                  pertaining to his arrest and information supplied for his obituary. </p>
-            </scopecontent>
-         </c01>
-
-         <c01 level="series">
-            <did>
-               <unittitle>Series II: Publications <unitdate>1924 - 1958</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>Contains articles published by Arvin on topics such as religion, criticism and
-                  literary judgement. A copy of Stacey Sklar's undergraduate thesis regarding
-                  Arvin's arrest and conviction is also available.</p>
-            </scopecontent>
-         </c01>
-
-         <c01 level="series">
-            <did>
-               <unittitle>Series III: Awards <unitdate>1935 - 1984</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>Contains materials regarding his Guggenheim Fellowship, his award from the
-                  National Institute of Arts and Letters and the University of Iowa Truman Capote
-                  Award. </p>
-            </scopecontent>
-         </c01>
-
-         <c01 level="series">
-            <did>
-               <unittitle>Series IV: Correspondence <unitdate>1957 - 1998</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>Contains letters pertaining to Arvin's professional life. </p>
-
-            </scopecontent>
-         </c01>
-
-         <c01 level="series">
-            <did>
-               <unittitle>Series V: Morals Case <unitdate>1957 - 1963</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>[restricted pending request to College Archivist] Materials from the Office of the
-                  President regarding the Morals Case of 1960. Contains correspondence, reports,
-                  clippings, and legal records. </p>
-            </scopecontent>
-         </c01>
-      </dsc>
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Homosexuality and education -- Massachusetts</subject>
+         <subject encodinganalog="650" source="lcsh">United States -- Social conditions -- 1960-1980</subject>
+         <persname encodinganalog="600" source="naf">Arvin, Newton, 1900-1963.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- Faculty -- Biography</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Biographical Material</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1951/1960"
+                         type="inclusive">1951 - 1960</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_3f643beb8ecfd66ad862e1e792f0773d">
+               <head>Scope and Contents</head>
+               <p>Contains information about the life of Frederick Newton Arvin, materials pertaining to his arrest and information supplied for his obituary.</p>
+            </scopecontent>
+            <c02 id="aspace_a31318ab5850be16a18e5fe15d274e4a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>biographical information and obituaries <unitdate> 1951 -
-                        1961</unitdate>
-                  </unittitle>
+                  <unittitle>biographical information and obituaries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1961"
+                            type="inclusive">1951 - 1961</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_bf717ee7a941d189da95b7223dbeb102"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_20cf2180d76a2042be1f0e8cf1f9c4a1"
+                             parent="aspace_bf717ee7a941d189da95b7223dbeb102"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a3b678f2cf9dd45cc39b164b5b157cb8" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>articles and photographs <unitdate> 1932 - 1960</unitdate>
-                  </unittitle>
+                  <unittitle>articles and photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1960"
+                            type="inclusive">1932 - 1960</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_981686fbca79ade866ec1f4478c130ad"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_85d40e843ba0e48d2e9dea0e4f620f69"
+                             parent="aspace_981686fbca79ade866ec1f4478c130ad"
+                             type="folder">2</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Publications</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924/1958"
+                         type="inclusive">1924 - 1958</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_fd0574160493edeaf4de0837096f5eb1">
+               <head>Scope and Contents</head>
+               <p>Contains articles published by Arvin on topics such as religion, criticism and literary judgement. A copy of Stacey Sklar's undergraduate thesis regarding Arvin's arrest and conviction is also available.</p>
+            </scopecontent>
+            <c02 id="aspace_a3464b21909fcdd584af0fa495044358" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>publications <unitdate> 1924 - 1958</unitdate>
-                  </unittitle>
+                  <unittitle>publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924/1958"
+                            type="inclusive">1924 - 1958</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_92ea48f0ffeed5195e01e914fbcb9b80"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_d831bd28908c8a82e0b1b27850803503"
+                             parent="aspace_92ea48f0ffeed5195e01e914fbcb9b80"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4d43b717173565de0714abc8b11095b" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>"The Ground of Literary Judgement" <unitdate>1953</unitdate>
-                  </unittitle>
+                  <unittitle>"The Ground of Literary Judgement"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1953/1953">1953</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_8958c2dbaf882dd442b664c6f2b3a14e"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_332e1aaaae0a517decbf14764facd580"
+                             parent="aspace_8958c2dbaf882dd442b664c6f2b3a14e"
+                             type="folder">4</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Awards</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1935/1984"
+                         type="inclusive">1935 - 1984</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_a7b6f65eeae071a5ac3c27756742f9dd">
+               <head>Scope and Contents</head>
+               <p>Contains materials regarding his Guggenheim Fellowship, his award from the National Institute of Arts and Letters and the University of Iowa Truman Capote Award.</p>
+            </scopecontent>
+            <c02 id="aspace_a56e460fbdbf63f768658e04ff286590" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>awards and prizes <unitdate> 1935 - 1984</unitdate>
-                  </unittitle>
+                  <unittitle>awards and prizes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1984"
+                            type="inclusive">1935 - 1984</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_0ac76f220dd7a8e48071c5d0529ff10e"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_65395440b89d19d78fe47a350f779f4b"
+                             parent="aspace_0ac76f220dd7a8e48071c5d0529ff10e"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f03b56b379520dedcd818df462d3b309" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>acceptance speech, National Book Award <unitdate>1951</unitdate>
-                  </unittitle>
+                  <unittitle>acceptance speech, National Book Award</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_0a6188fbd8cc62dd243a84aaabcdfaba"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_b4b408c6a62fb889033e64b53a20fc39"
+                             parent="aspace_0a6188fbd8cc62dd243a84aaabcdfaba"
+                             type="folder">6</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1998"
+                         type="inclusive">1957 - 1998</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_5c03a9e6febba6994843a419f9dd7cbe">
+               <head>Scope and Contents</head>
+               <p>Contains letters pertaining to Arvin's professional life.</p>
+            </scopecontent>
+            <c02 id="aspace_08d79715fc3f855afa7d8ce6b7da7220" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>correspondence <unitdate>1957</unitdate>
-                  </unittitle>
+                  <unittitle>correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_9a54852586b2892d04745b7155c3662a"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_01f8fe8c44fc56c0c72955062c88b74e"
+                             parent="aspace_9a54852586b2892d04745b7155c3662a"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_03d3797649e159fd67703b4a59764bc1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>articles pertaining to his arrest <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>articles pertaining to his arrest</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_d3850e74f3fdcf21589158c3517f2136"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_26d821ec31e121ef60ec2a345917b690"
+                             parent="aspace_d3850e74f3fdcf21589158c3517f2136"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_34f50bcc5f80f2d4a701cf11713b27e5" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Stacey Sklar, B.A. thesis <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Stacey Sklar, B.A. thesis</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_c751eefa8c5cc515eebd935da04dfd6f"
+                             label="Mixed Materials [310183630234705]"
+                             type="box">664.1</container>
+                  <container id="aspace_2b92c9e9bd7f31360e7bd5b7df99ee3b"
+                             parent="aspace_c751eefa8c5cc515eebd935da04dfd6f"
+                             type="folder">9</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>Series V: Morals Case</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1963"
+                         type="inclusive">1957 - 1963</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_302510493bd86597e44403810743f00c">
+               <head>Scope and Contents</head>
+               <p>[restricted pending request to College Archivist] Materials from the Office of the President regarding the Morals Case of 1960. Contains correspondence, reports, clippings, and legal records.</p>
+            </scopecontent>
+            <c02 id="aspace_65babd3621c009893842236e32226042" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Faculty File <unitdate> various</unitdate>
-                  </unittitle>
+                  <unittitle>Faculty File</unittitle>
+                  <unitdate calendar="gregorian" era="ce">various</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_46a86fd94140b51486f22c9e467e3756"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_69c361e09b1a408655ec538e0ac7ec06"
+                             parent="aspace_46a86fd94140b51486f22c9e467e3756"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_16a91aceb35e5a929c4a78f514f0208a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Morals Case <unitdate>April 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Morals Case</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1961-04/1961-04">April 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_785079abfd7dfe7af1446a67baea90f9"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_0b3bb5a80bc3b5a66792725019a73dbe"
+                             parent="aspace_785079abfd7dfe7af1446a67baea90f9"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_367c51728529abc0b1d1f585fbed6dd3" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Pornography Case: General <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Pornography Case: General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bb70a785233004ac6497dbfe4e3508e0"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_a95f38d631882891b0467b37732cfcd1"
+                             parent="aspace_bb70a785233004ac6497dbfe4e3508e0"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e1c59f848ffd9978143c00ddaf34606f" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Edward Spofford <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Edward Spofford</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93a04883126fb6faef21a6a8869b71fe"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_86b7a885e992718feed8a10b0d3364c9"
+                             parent="aspace_93a04883126fb6faef21a6a8869b71fe"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_38ed8a0657c31861747a9eacc980b485" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Joel Dorius <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Joel Dorius</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2851b54f6ffe99dc66689426882e27ac"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_d5f3f7ad60e403dbccbd909e10c560a9"
+                             parent="aspace_2851b54f6ffe99dc66689426882e27ac"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0725aa90471d28e72f8d4014d139c7fb" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Alumnae Letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae Letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_29e11aa03ba65b9c3a6abbf4c7357795"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_d9251c66824b78576b21c0384fb2b60d"
+                             parent="aspace_29e11aa03ba65b9c3a6abbf4c7357795"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_76b25f58943125a64998a594d6c4c91e" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Faculty Letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Faculty Letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fad0c03bc8aa196140566e6536e66dfc"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_8954de04ff0b7af7be3460ea57692399"
+                             parent="aspace_fad0c03bc8aa196140566e6536e66dfc"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d15c91ff2ecb3a361d4086d5a511fccb" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Public Letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Public Letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b9f6a01335777d5f637566f8f86e890"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_41a30f3fda80a5aa80c9a36980bb4cee"
+                             parent="aspace_3b9f6a01335777d5f637566f8f86e890"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f779eadb9d04c71966078f50bb0228c0" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>non-Smith faculty letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>non-Smith faculty letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f03ee5c57ff8564c54362f409d945561"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_f6458dc28c908cab18b8286d84a96581"
+                             parent="aspace_f03ee5c57ff8564c54362f409d945561"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_abbb1b0cd3f76cf2157da6538bb85a70" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>parents letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>parents letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5b2779a6a5480345f0fb6007fcd5765d"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_76c63d7500d17f324877791cc7277e3d"
+                             parent="aspace_5b2779a6a5480345f0fb6007fcd5765d"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3825f9ba54d71d4998338a7b68bb4792" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>student letters <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>student letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_db4223e76bc795f4c96c094dc727b103"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_0fb6d6ecfb2ad38f156d670a3edff557"
+                             parent="aspace_db4223e76bc795f4c96c094dc727b103"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_88a1e33507b2a8bee4205ac6cb7dab8d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>news clippings <unitdate> 1960 - 1961</unitdate>
-                  </unittitle>
+                  <unittitle>news clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_250a27c32c113beea85f2dcea7b72354"
+                             label="Mixed Materials [310183630234119]"
+                             type="box">665</container>
+                  <container id="aspace_5e11bcb5fffe04631e2a6e23d5710a4a"
+                             parent="aspace_250a27c32c113beea85f2dcea7b72354"
+                             type="folder">21</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
