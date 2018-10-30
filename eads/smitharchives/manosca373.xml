@@ -1,193 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca373.xml//EN">manosca373</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca373</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Mary Pardee Allison Papers, 1898 -
-               1950</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Madison White, Class of
-               1916.</author>
-
+            <titleproper>Finding aid to the Mary Pardee Allison Papers <num>CA.MS.00373</num>
+            </titleproper>
+            <author>Finding aid prepared by Madison White (Class of 2016) and Daniel Michelson.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-10-28">2014-10-28</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-10-30 16:09:37 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-10-30</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Allison, Mary Pardee</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Mary Pardee Allison Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1898 - 1950</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:a3ff53ad-f1c9-4ba5-9848-c8f598e4b8fd</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(.4 linear feet)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains photograph albums, memorabilia
-            books, music programs, newspaper clippings, and correspondence related to student and
-            professional life of Mary Pardee Allison. </abstract>
+         <unittitle>Mary Pardee Allison Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Allison, Mary Pardee</persname>
+         </origination>
+         <unitid>CA.MS.00373</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1898/1950"
+                   type="inclusive">1898 - 1950</unitdate>
+         <abstract id="aspace_7bf1be107eb570d203df29e2e7524b67">Contains photograph albums, memorabilia books, music programs, newspaper clippings, and correspondence related to student and professional life of Mary Pardee Allison.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Mary Pardee Allison was born in Allentown, Pennsylvania, to Clara (Unger) Allison and H.
-            Willard Allison, the town's mayor during 1888 : 1890 and 1893 : 1896. She graduated from
-            Bishopthorpe School, South Bethlehem, Pa. Allison graduated from Smith in 1902, where
-            she had been a member of the Telescopium and the Class Supper Committee. After College,
-            Allison did clerical work for The Allentown Rolling Mills (1903 : 1914), before
-            returning to Smith to do secretarial work, for the Alumnae House (1915 : 1918), for the
-            Dean of Smith College (1924 : 1925), and finally as the Publications Secretary (1925 :
-            1950). She also served as assistant treasurer for the Smith College Four Million Dollar
-            Fund in 1920. Notably, she created six different endowment funds during her time as an
-            employee in memory or in honor of Smith colleagues and classmates. In 1950, Allison
-            retired and returned to Allentown. She died in 1978, leaving three million dollars to
-            charities throughout the country.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Mary Pardee Allison was born in Allentown, Pennsylvania, to Clara (Unger) Allison and H. Willard Allison, the town's mayor during 1888-1890 and 1893-1896. She graduated from Bishopthorpe School, South Bethlehem, Pa. Allison graduated from Smith in 1902, where she had been a member of the Telescopium and the Class Supper Committee. After College, Allison did clerical work for The Allentown Rolling Mills (1903-1914), before returning to Smith to do secretarial work, for the Alumnae House (1915-1918), for the Dean of Smith College (1924-1925), and finally as the Publications Secretary (1925-1950). She also served as assistant treasurer for the Smith College Four Million Dollar Fund in 1920. Notably, she created six different endowment funds during her time as an employee in memory or in honor of Smith colleagues and classmates. In 1950, Allison retired and returned to Allentown. She died in 1978, leaving three million dollars to charities throughout the country.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The collection contains material related both to Mary Pardee Allison's time as a student
-            and as Smith College staff through memorabilia books and photo albums, correspondence,
-            programs to events at Smith, and some written work. The collection also includes a
-            number of newspaper clippings about Allison's generous donation to local charities upon
-            her death.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains material related both to Mary Pardee Allison's time as a student and as Smith College staff through memorabilia books and photo albums, correspondence, programs to events at Smith, and some written work. The collection also includes a number of newspaper clippings about Allison's generous donation to local charities upon her death.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Mary Pardee Allison Papers, Box #662, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Mary Pardee Allison Papers, Smith College Archives, CA-MS-00373[MS number], Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <genreform encodinganalog="655" source="aat">programs (documents)</genreform>
+      <acqinfo id="aspace_32898fe214df698d7184cc75b15f04df">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <controlaccess>
+         <genreform encodinganalog="655" authfilenumber="300027240" source="aat">programs (documents)</genreform>
          <genreform encodinganalog="655" source="aat">photograph albums</genreform>
          <genreform encodinganalog="655" source="aat">scrapbooks</genreform>
          <genreform encodinganalog="655" source="aat">letters (correspondence)</genreform>
+         <subject encodinganalog="650" source="lcsh">Women college students--Massachusetts--Northampton.</subject>
+         <subject encodinganalog="650" source="lcsh">Women college administrators--Massachusetts--Northampton.</subject>
+         <subject encodinganalog="650" source="lcsh">Smith College--Fund raising</subject>
          <corpname encodinganalog="610" source="lcsh">Smith College - Employee.</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College--Students.</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College -- photographs</corpname>
-         <subject encodinganalog="650" source="lcsh">Women college
-            students--Massachusetts--Northampton.</subject>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Records and
-            correspondence.</corpname>
-         <subject encodinganalog="650" source="lcsh">Women college
-            administrators--Massachusetts--Northampton.</subject>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Records and correspondence.</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College--Alumni and alumnae.</corpname>
-         <subject encodinganalog="650" source="lcsh">Smith College--Fund raising</subject>
-
+         <persname encodinganalog="600" source="naf">Allison, Mary Pardee</persname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_530c58463acb051a46060f17f78fc6ce" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Memorabilia Book <unitdate>1900-1907</unitdate>
-               </unittitle>
+               <unittitle>Memorabilia Book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1907"
+                         type="inclusive">1900-1907</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_238ae9eb194cc349f4dfc0cbf255ee5d"
+                          label="Mixed Materials [310183630234291]"
+                          type="box">662</container>
+               <container id="aspace_eb77e1436f05edb0ceb3c217b9728c31"
+                          parent="aspace_238ae9eb194cc349f4dfc0cbf255ee5d"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_50c61d5cd8efd0387c11e194502e7e28" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Memorabilia Book <unitdate>1898-1900</unitdate>
-               </unittitle>
+               <unittitle>Memorabilia Book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898/1900"
+                         type="inclusive">1898-1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_96a591de91c201202086d4ad6c86e4a9"
+                          label="Mixed Materials [310183630234291]"
+                          type="box">662</container>
+               <container id="aspace_563292d689ad15b4a30208b69e67303d"
+                          parent="aspace_96a591de91c201202086d4ad6c86e4a9"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c869bc553b4410afec4df353dbb56288" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Photo Albums <unitdate>1899-1903</unitdate>
-               </unittitle>
+               <unittitle>Photo Albums</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1899/1903"
+                         type="inclusive">1899-1903</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b0c1cd13a5e94d3cbb999579a38e19a7"
+                          label="Mixed Materials [310183630234291]"
+                          type="box">662</container>
+               <container id="aspace_c29073a7f5c2bac8c76a0a7695bb12e5"
+                          parent="aspace_b0c1cd13a5e94d3cbb999579a38e19a7"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0845352880c9c9d761e07650f7740e67" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>General <unitdate>1911-1914</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1911/1914"
+                         type="inclusive">1911-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_85d64be0e536080b12648c96ee7dc29e"
+                          label="Mixed Materials [310183630234291]"
+                          type="box">662</container>
+               <container id="aspace_a60c7e8f90fa429218aaf8097cc68d4d"
+                          parent="aspace_85d64be0e536080b12648c96ee7dc29e"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_58aaaec5b86275b425b4c435242fa284" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Secretary to the Dean and Publications Secretary
-                     <unitdate>1924-1950</unitdate>
-               </unittitle>
+               <unittitle>Secretary to the Dean and Publications Secretary</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924/1950"
+                         type="inclusive">1924-1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_47f1f01ef013a3f2f534d8af8eb31d70"
+                          label="Mixed Materials [310183630234291]"
+                          type="box">662</container>
+               <container id="aspace_82e21f18e91327c6842317f335c86670"
+                          parent="aspace_47f1f01ef013a3f2f534d8af8eb31d70"
+                          type="folder">5</container>
             </did>
          </c01>
       </dsc>
-      <!-- End container list -->
-
    </archdesc>
 </ead>
