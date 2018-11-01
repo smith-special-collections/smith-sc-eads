@@ -1,437 +1,584 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca338.xml//EN">manosca338</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca338</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Gladys Eugenia Bryson Papers,
-               1897-1953</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Gladys Eugenia Bryson Papers <num>CA.MS.00338</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz and Daniel Michelson.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-20">2013-11-20</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-01 15:47:54 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-01</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Bryson, Gladys Eugenia,
-               1894-1952</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Gladys Eugenia Bryson Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1897-1953</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:bb280795-efd9-45fb-9541-654da1267ba4</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1.3 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor and chairman of the Sociology
-            Department. Contains correspondence, obituaries, clippings, class notes, exams,
-            articles, and photographs. </abstract>
+         <unittitle>Gladys Eugenia Bryson Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Bryson, Gladys Eugenia, 1894-1952</persname>
+         </origination>
+         <unitid>CA.MS.00338</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.333 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1897/1953"
+                   type="inclusive">1897-1953</unitdate>
+         <abstract id="aspace_4849e5cc93d9cb5d11438a6779c518d0">Professor and chairman of the Sociology Department. Collection contains correspondence, obituaries, clippings, class notes, exams, articles, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Gladys Eugenia Bryson was born in Carlisle, Kentucky on April 2, 1894. After receiving a
-            B.A. from Georgetown College in Kentucky, Bryson obtained her M.A. in 1927 and her Ph.D.
-            in 1930, both from the University of California at Berkeley. As the national secretary
-            of the Y.W.C.A.'s student council, one of its national boards, Bryson served the
-            organization from 1919-1925. For the next two years, she was a teaching fellow in the
-            Department of Sociology and Social Institutions at Berkeley, as well as an active member
-            of the Women's Faculty Club. In addition, Bryson was a Sterling Fellow at Yale
-            University from 1927-1928, and from 1930-1931 she was head of residence at Berkeley's
-            International House. In 1941, Bryson was a member of the U.S. Department's advisory
-            committee on the adjustment of foreign students in the United States. Joining the Smith
-            College faculty in 1931, Bryson served as both chairman of the Department of Sociology
-            (starting in 1945) and as chairman of the Division of Social Sciences from 1948 until
-            her death in 1952. During her employment at Smith, Bryson served on numerous committees
-            and was the faculty resident of Lawrence House for many years. At the time of her death
-            in 1952, Bryson was the Mary Huggins Gamble Professor of Sociology at Smith. Publishing
-            many essays and books, Bryson authored one of her more well known works in 1945, titled:
-               <title encodinganalog="730" render="italic">Man and Society: The Scottish Inquiry of
-               the 18th Century</title> . Upon the time of her death, she was working on a book
-            regarding the foundations of American sociology. In addition to her numerous essays and
-            books, Bryson contributed many articles to various encyclopedias and sociological
-            journals. An internationally recognized sociologist and an active member of many
-            sociological associations, Bryson was President of the Eastern Sociological Society from
-            1946 to 1947. Bryson died on December 18, 1952 in the college infirmary after a long
-            illness.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Gladys Eugenia Bryson was born in Carlisle, Kentucky on April 2, 1894. After receiving a B.A. from Georgetown College in Kentucky, Bryson obtained her M.A. in 1927 and her Ph.D. in 1930, both from the University of California at Berkeley. As the national secretary of the Y.W.C.A.'s student council, one of its national boards, Bryson served the organization from 1919-1925. For the next two years, she was a teaching fellow in the Department of Sociology and Social Institutions at Berkeley, as well as an active member of the Women's Faculty Club. In addition, Bryson was a Sterling Fellow at Yale University from 1927-1928, and from 1930-1931 she was head of residence at Berkeley's International House. In 1941, Bryson was a member of the U.S. Department's advisory committee on the adjustment of foreign students in the United States. Joining the Smith College faculty in 1931, Bryson served as both chairman of the Department of Sociology (starting in 1945) and as chairman of the Division of Social Sciences from 1948 until her death in 1952. During her employment at Smith, Bryson served on numerous committees and was the faculty resident of Lawrence House for many years. At the time of her death in 1952, Bryson was the Mary Huggins Gamble Professor of Sociology at Smith. Publishing many essays and books, Bryson authored one of her more well known works in 1945, titled: <title encodinganalog="730" render="italic">Man and Society: The Scottish Inquiry of the 18th Century</title> . Upon the time of her death, she was working on a book regarding the foundations of American sociology. In addition to her numerous essays and books, Bryson contributed many articles to various encyclopedias and sociological journals. An internationally recognized sociologist and an active member of many sociological associations, Bryson was President of the Eastern Sociological Society from 1946 to 1947. Bryson died on December 18, 1952 in the college infirmary after a long illness.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Collection comprised of biographical information, correspondence, class materials, books
-            and articles, including her 1927 article "The Comparable Interests of the Old Moral
-            Philosophy and the Modern Social Sciences," published works by other intellectuals,
-            including Edward Shils's 1948 book <title encodinganalog="730" render="italic">The
-               Present State of American Sociology</title> , and photographs.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection comprised of biographical information, correspondence, class materials, books and articles, including her 1927 article "The Comparable Interests of the Old Moral Philosophy and the Modern Social Sciences," published works by other intellectuals, including Edward Shils's 1948 book <title encodinganalog="730" render="italic">The Present State of American Sociology</title> , and photographs.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Gladys Eugenia Bryson Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Gladys Eugenia Bryson Papers, Smith College Archives, CA-MS-00338, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Gladys Eugenia Bryson papers were donated to the Smith College Archives from a
-            number of sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Gladys Eugenia Bryson papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Bryson, Gladys Eugenia, 1894-1952</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_e02cf7b2cbe8c73ce435d25c34d9a478" level="file">
             <did>
-               <container type="box" label="mixed materials">691.2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical Information <unitdate>ca. 1897-1953, undated</unitdate>
-               </unittitle>
+               <unittitle>Biographical Information</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1897/1953"
+                         type="inclusive">1897-1953</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f7db666ce12510580127dc12d34ab0d6"
+                          label="Mixed Materials [310183630234671]"
+                          type="box">690.1</container>
+               <container id="aspace_3ae020e8db09c1dfdb6e103bf0505f59"
+                          parent="aspace_f7db666ce12510580127dc12d34ab0d6"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1629723d8bacaec557d68967c9116530" level="file">
             <did>
-               <unittitle>
-                  <title render="bold">Writings and Research Material</title>
-                  <unitdate>1926-1953</unitdate>
-               </unittitle>
+               <unittitle>Writings and Research Material</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926/1953"
+                         type="inclusive">1926-1953</unitdate>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_76a2f96d592941d314169e1229c50f90" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Articles and book reviews <unitdate>1927-1952</unitdate>
-                  </unittitle>
+                  <unittitle>Articles and book reviews</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1927/1952"
+                            type="inclusive">1927-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0194ac0ad90ce6e89714d863002cfcab"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_f9bde9eceaf96f9bd727d0bbd62b001f"
+                             parent="aspace_0194ac0ad90ce6e89714d863002cfcab"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3d3bce2ab49c3ac41273e8e6236118ca" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Becker, Howard: correspondence <unitdate>1951-1952</unitdate>
-                  </unittitle>
+                  <unittitle>Becker, Howard: correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1952"
+                            type="inclusive">1951-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_98cc4621cdd3b26da8bdb2faae8e7557"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_20b2507ea781d2851b4b3fd7e254fd0a"
+                             parent="aspace_98cc4621cdd3b26da8bdb2faae8e7557"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cddab28a241210d2b1c82bdaf73f1fbf" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>"Conclusion" - various notes <unitdate>1948-1951</unitdate>
-                  </unittitle>
+                  <unittitle>"Conclusion" - various notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1951"
+                            type="inclusive">1948-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30b48b4a1606891f2d36f4ddd88c5bdc"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_b8c2acc6cde3e0c00f6e5ce256be771a"
+                             parent="aspace_30b48b4a1606891f2d36f4ddd88c5bdc"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d64454a92013cab36412913f5601466" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>"Continuation" - various notes <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Continuation" - various notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_491bbcd5a391dac77ff9cecdc43d62c0"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_aab01a744921dfbab2d8bdf4beb244fc"
+                             parent="aspace_491bbcd5a391dac77ff9cecdc43d62c0"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_32de415b8f57b76a74693a962f1a7349" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>"Frank Lester Ward" by Robert Raymond <unitdate>1951</unitdate>
-                  </unittitle>
+                  <unittitle>"Frank Lester Ward" by Robert Raymond</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_04e7ffc07d7df348613ee9ef4ef96010"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_2e9c42ec74a38b4eb6109d23fa792dee"
+                             parent="aspace_04e7ffc07d7df348613ee9ef4ef96010"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_705d9d76184d5a417df5e6baf3019b1f" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Journal articles <unitdate>1945-1952</unitdate>
-                  </unittitle>
+                  <unittitle>Journal articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1952"
+                            type="inclusive">1945-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_64572717bb0d668c5a31967c08d247ce"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_ce35f125a9a94d3fe6db36f9f9485156"
+                             parent="aspace_64572717bb0d668c5a31967c08d247ce"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fb6a1ac2778e15c843a24d967060f97f" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Methods bibliography <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Methods bibliography</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5c74da3c464aa51928b20454afd9bd42"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_10edd38c205a7ddb54c4feb889aafd57"
+                             parent="aspace_5c74da3c464aa51928b20454afd9bd42"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a205320f9ed2b2adaa02cc0ade1c736a" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Miscellaneous bibliography <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous bibliography</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c4324e0b5b4af2655fd4b65e5bc0d729"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_67873103cfdf0cb801205edecf812d50"
+                             parent="aspace_c4324e0b5b4af2655fd4b65e5bc0d729"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2c436546e980db3391d88b51c8c6502c" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Notes <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5ff17b90ba1c5e2687f0b455d9608289"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_4263c50ea10f47809800f6e40fc4f808"
+                             parent="aspace_5ff17b90ba1c5e2687f0b455d9608289"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a343856e62a56946748abd3b178f0ad1" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Printed material and other writings <unitdate>1927</unitdate>
-                  </unittitle>
+                  <unittitle>Printed material and other writings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_65fe4f3b590385d16e94747d1ac2f126"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_b409fe3bd3c9cf75036b05e6b5d85a52"
+                             parent="aspace_65fe4f3b590385d16e94747d1ac2f126"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ae8673a4956371ed0164556b4bf6c8d9" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Printed material and other writings <unitdate>1948, 1950</unitdate>
-                  </unittitle>
+                  <unittitle>Printed material and other writings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <unitdate normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bcf541140d856bef98d279901e43d5fe"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_bae89b6dd6fd2753e85c4b4b12c85502"
+                             parent="aspace_bcf541140d856bef98d279901e43d5fe"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5936a18995ae2641e50b66d411334760" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.2</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Ross, Edward Alsworth: notes <unitdate>1938-1951</unitdate>
-                  </unittitle>
+                  <unittitle>Ross, Edward Alsworth: notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1951"
+                            type="inclusive">1938-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1dcc0ca392da2dcbd80811f95d108b9"
+                             label="Mixed Materials [310183630234671]"
+                             type="box">690.1</container>
+                  <container id="aspace_57fd3999ac43f8e4749d82ef91be95de"
+                             parent="aspace_f1dcc0ca392da2dcbd80811f95d108b9"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c025b679719955e0d4b55622e03b2a33" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Tawney and Montagne <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Tawney and Montagne</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a8b7853008f4d2b355347db80ebb9ca3"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_e241cf0979a9b52f5020906227196a5b"
+                             parent="aspace_a8b7853008f4d2b355347db80ebb9ca3"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_381752d7e643286c82311606ef68c75d" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Writings <unitdate>1932-1939</unitdate>
-                  </unittitle>
+                  <unittitle>Writings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1939"
+                            type="inclusive">1932-1939</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f265ff723d03d97088f405b1e2d6ec2c"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_e419ddce63d233da320122141798427a"
+                             parent="aspace_f265ff723d03d97088f405b1e2d6ec2c"
+                             type="folder">2</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4fb00078c7d26c3965d82f1164ddecb6" level="file">
             <did>
-               <unittitle>
-                  <title render="bold">Course Material</title>
-                  <unitdate>1925-1950</unitdate>
-               </unittitle>
+               <unittitle>Course Material</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1950"
+                         type="inclusive">1925-1950</unitdate>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_64ac19e39ad9fc84e33bc066317b1cd2" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>101T, 101H <unitdate>1925-1926</unitdate>
-                  </unittitle>
+                  <unittitle>101T, 101H</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925/1926"
+                            type="inclusive">1925-1926</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fd92cab969573e9b087376e26fb86bc4"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_c652f3632f40844bb6a82910cbe3961d"
+                             parent="aspace_fd92cab969573e9b087376e26fb86bc4"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_25fa958ec671fd184b0df6f412d293b2" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Anthropology S185 <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Anthropology S185</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c2a0f96805f0648e1178f823301fb6d4"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_fb74a6984b9ab4410d680436c7329436"
+                             parent="aspace_c2a0f96805f0648e1178f823301fb6d4"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_93d7529b3866df82ebc2534da57b0d7d" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Geography <unitdate>1929</unitdate>
-                  </unittitle>
+                  <unittitle>Geography</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fc6b5f51da988645683f67876d4c8ecf"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_336000c9ab00e363f848a51693b9fcf7"
+                             parent="aspace_fc6b5f51da988645683f67876d4c8ecf"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3a1fc9060ddd9f4a3a2260783dfda2b1" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Honors unit: Anthropology <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>Honors unit: Anthropology</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c285c19b505ba1a7719a53841e6cb207"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_caf4ea16a32a8a11c87ef859b149aab2"
+                             parent="aspace_c285c19b505ba1a7719a53841e6cb207"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_82459279a7b0a89eb95e92fdac88d47c" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Morphopoulos 298a <unitdate>1928</unitdate>
-                  </unittitle>
+                  <unittitle>Morphopoulos 298a</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ce548768b8f0ad0eb2d9fda1d0836b23"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_0f9c4f3a6762f1db618de34f775acf0a"
+                             parent="aspace_ce548768b8f0ad0eb2d9fda1d0836b23"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9f69f19b71d6574029eacbf83a074efe" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Political Science 298 <unitdate>1926-1927</unitdate>
-                  </unittitle>
+                  <unittitle>Political Science 298</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926/1927"
+                            type="inclusive">1926-1927</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a122a38638d201123eccd249a3dd4e0f"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_8a0e8c5989bcb4d6bce41b829f407204"
+                             parent="aspace_a122a38638d201123eccd249a3dd4e0f"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4ef791a6d7fe87be0a324f98710f709e" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Ritualism <unitdate>1928</unitdate>
-                  </unittitle>
+                  <unittitle>Ritualism</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2ee33b7584c1f26f0da66e1c6892037f"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_843e9c3c88b5c4abbd2a4e74129c3779"
+                             parent="aspace_2ee33b7584c1f26f0da66e1c6892037f"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_eeedb1d6e8dc7eee559c6aa9e57338c5" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Seminar: Political Science 201, History of Political Thought
-                        <unitdate>1926-1927</unitdate>
-                  </unittitle>
+                  <unittitle>Seminar: Political Science 201, History of Political Thought</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926/1927"
+                            type="inclusive">1926-1927</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_35180d58dd3f34cf34ca01ce688185db"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_a2f2fac2bc963b6e137010945ed338a8"
+                             parent="aspace_35180d58dd3f34cf34ca01ce688185db"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e8e4f1446e3cf10f6d702edc404995be" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Seminar: Social Institutions <unitdate>1926</unitdate>
-                  </unittitle>
+                  <unittitle>Seminar: Social Institutions</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8fcea0391b8191fc0047b0508ff612ad"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_f20da3f89ce794ffe8d86c6c6781820e"
+                             parent="aspace_8fcea0391b8191fc0047b0508ff612ad"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fd41e28b4d3905fc44a37223b306101c" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Sociology 11b and 40b, includes bibliography
-                        <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Sociology 11b and 40b, includes bibliography</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fb83bd6ae982c589c70479e6a9523d36"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_3bda4a2add486682737ce57ae032e66f"
+                             parent="aspace_fb83bd6ae982c589c70479e6a9523d36"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a4627047f18fc960ff61a9fc9708758" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Sociology 34: Expansion of Western Culture, honors exam
-                        <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>Sociology 34: Expansion of Western Culture, honors exam</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5f1ed6f89123e124aad31afdea3d0e3e"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_dc3de3e27451a5c24529d4a468d4b86d"
+                             parent="aspace_5f1ed6f89123e124aad31afdea3d0e3e"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ea56fe6b017869d5881221b90511c5d2" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Sociology 201b: Social Institutions <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Sociology 201b: Social Institutions</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a748ff5ff761fd5f9796493408f61ba5"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_7c2b0c3291f6adf393cf2a769973d7a8"
+                             parent="aspace_a748ff5ff761fd5f9796493408f61ba5"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9f70fc571f092a97140a9e4c355dfc1e" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Sociology 322b <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Sociology 322b</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_464ce295cbdd6e3191249c6c19b3774d"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_20797e28d599c91afa9bec965a770f8f"
+                             parent="aspace_464ce295cbdd6e3191249c6c19b3774d"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_abeb66f2294a890951b61ada50e26cd1" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Social Evolution <unitdate>1927</unitdate>
-                  </unittitle>
+                  <unittitle>Social Evolution</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9577124e51ccf9aca3cf3e8b5288d9d4"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_71ce09ec46d9ba1cf0060d4396b179af"
+                             parent="aspace_9577124e51ccf9aca3cf3e8b5288d9d4"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5cd992e685207b2cf28af5ff6f065b44" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Social Psychology <unitdate>1926, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Social Psychology</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dca210cb22975b790d57922f6c09e371"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_28f7f6c41189b61e3f8b6f333805da73"
+                             parent="aspace_dca210cb22975b790d57922f6c09e371"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_259ef961cf74d61c16689c116864f037" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>Berkeley, Sociology 121b: Social Institutions
-                        <unitdate>1926-1927</unitdate>
-                  </unittitle>
+                  <unittitle>Berkeley, Sociology 121b: Social Institutions</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926/1927"
+                            type="inclusive">1926-1927</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d4e53c82e55ab41138d6b1d19cb32d87"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_16289e4617233965eeaa11c198159368"
+                             parent="aspace_d4e53c82e55ab41138d6b1d19cb32d87"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b4fb84d5aec9bdb13c68219957a783a7" level="file">
                <did>
-                  <container type="box" label="mixed materials">619.3</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>Course listings from other schools <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Course listings from other schools</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30092c00ebe9b00befb9db2e5d04bc05"
+                             label="Mixed Materials [310183630234614]"
+                             type="box">690.2</container>
+                  <container id="aspace_7e1c979efb0ba3b01aa8ed839468e495"
+                             parent="aspace_30092c00ebe9b00befb9db2e5d04bc05"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_23bf47633f790dfd1dcbc3921a6fd8e7" level="file">
                <did>
-                  <container type="box" label="mixed materials">691.4</container>
-                  <unittitle>Comprehensive bibliography and notes <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Comprehensive bibliography and notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_f02516e398a1cc527cf37021f6d5d2e9"
+                             label="Mixed Materials [310183630234556]"
+                             type="box">690.3</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
