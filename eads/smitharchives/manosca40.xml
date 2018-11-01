@@ -1,306 +1,387 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca40.xml//EN">manosca40</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Caroline Brown Bourland Papers, 1893-1949 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Gayla B. Spaulding.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca40 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Caroline Brown Bourland Papers, 1893-1949 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 42 </num>
-            <author>Gayla B. Spaulding </author>
-            <date>2001 </date>
-
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Bourland, Caroline Brown, 1871-
-                </persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Caroline Brown Bourland
-                Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1893-1949</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:ed0d4c85-4264-42d1-bb5a-95ab94c04d4d</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">1 box</extent>
-                <extent encodinganalog="300$a">(.45 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Professor of French and Spanish.
-                Contains biographical materials, correspondence, lecture notes, photographs, and
-                publications. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Caroline Brown Bourland was born in Peoria, Illinois on June 4th, 1871. She was an
-                1893 graduate of Smith College, and continued to study at Bryn Mawr and the
-                Sorbonne, earning her Ph. D. from Bryn Mawr in 1902. Between graduating from college
-                and studying for her doctorate, Caroline Brown Bourland accepted a position teaching
-                English Literature and General History at Pueblo High School in 1893-1894, and
-                another teaching French and Latin at Peoria High School in 1896-1897. </p>
-            <p>Bourland returned to Smith in 1902, as a professor of French and Spanish. She helped
-                to build the reputation of the Spanish Department, and was instrumental in
-                establishing it as a separate department. In 1913, Bourland switched to teaching
-                Spanish full time, and did so until her retirement in 1939. She hoped that her
-                American students would learn to love Spain as much as she did, and orchestrated an
-                exchange program between Smith and a school in Madrid. Bourland was at least
-                trilingual (not including Latin), and could comfortably read in at least five
-                languages. Caroline Brown Bourland died on February 28, 1956 in Wisconsin. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Caroline Brown Bourland Papers contain biographical materials, correspondence,
-                lecture notes, information on the Hispanic Society of America, article written for
-                the National Encyclopedia, photographs, poetry, publications, tributes and student
-                recommendations spanning her career as a faculty member at Smith College. </p>
-        </scopecontent>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Caroline Brown Bourland Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The Caroline Brown Bourland Papers were donated over a period of time to the
-                        Smith College Archives from a variety of sources. </p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Gayla B. Spaulding.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Bourland, Caroline Brown, 1871-</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-        </controlaccess>
-        <dsc id="contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Biographical Material <unitdate>1902 - 1940, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Correspondence: General <unitdate>1921 - 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Correspondence: William Allan Neilson <unitdate>1934 -
-                            1936</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Correspondence: Personal <unitdate>1904 - 1949, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Diary <unitdate>1916</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Grant - in - Aid <unitdate>1938</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Hispanic Society of America <unitdate>n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Lecture Notes <unitdate>1931, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>National Encyclopedia: Correspondence and Articles
-                            <unitdate>1935</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Tributes <unitdate>n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Photographs <unitdate>1893, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">12</container>
-                    <unittitle>Poetry <unitdate>1895, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">13</container>
-                    <unittitle>Publications List <unitdate>1928, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">14</container>
-                    <unittitle>Publications: <title render="italic">Boccaccio and the Decameron and
-                            Vida y Hazanas de Juan Belmonte</title>
-                        <unitdate>1905, 1939</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">15</container>
-                    <unittitle>Publication: <title render="italic">The Short Story in Spain in the
-                            Seventeenth Century</title>
-                        <unitdate>1927</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">16</container>
-                    <unittitle>Publications: Assorted <unitdate>1909 - 1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">17</container>
-                    <unittitle>Retirement <unitdate>1939</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">18</container>
-                    <unittitle>Poetry by Arthur Seelye <unitdate>1893, n. d.</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">687</container>
-                    <container type="folder" label="mixed materials">19</container>
-                    <unittitle>Student Recommendation <unitdate>1908, 1916</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca40</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Caroline Brown Bourland Papers <num>CA.MS.00040</num>
+            </titleproper>
+            <author>Gayla B. Spaulding and Daniel Michelson</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-01 15:11:03 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca40 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-01</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Caroline Brown Bourland Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Bourland, Caroline Brown, 1871-</persname>
+         </origination>
+         <unitid>CA.MS.00040</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1893/1951"
+                   type="inclusive">1893-1951</unitdate>
+         <abstract id="aspace_fa547fc36ffbc736b3454740de9d53bc">Professor of French and Spanish. Collection contains biographical materials, correspondence, lecture notes, photographs, and publications.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Caroline Brown Bourland was born in Peoria, Illinois on June 4th, 1871. She was an 1893 graduate of Smith College, and continued to study at Bryn Mawr and the Sorbonne, earning her Ph. D. from Bryn Mawr in 1902. Between graduating from college and studying for her doctorate, Caroline Brown Bourland accepted a position teaching English Literature and General History at Pueblo High School in 1893-1894, and another teaching French and Latin at Peoria High School in 1896-1897. </p>
+         <p> Bourland returned to Smith in 1902, as a professor of French and Spanish. She helped to build the reputation of the Spanish Department, and was instrumental in establishing it as a separate department. In 1913, Bourland switched to teaching Spanish full time, and did so until her retirement in 1939. She hoped that her American students would learn to love Spain as much as she did, and orchestrated an exchange program between Smith and a school in Madrid. Bourland was at least trilingual (not including Latin), and could comfortably read in at least five languages. Caroline Brown Bourland died on February 28, 1956 in Wisconsin.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Caroline Brown Bourland Papers contain biographical materials, correspondence, lecture notes, information on the Hispanic Society of America, article written for the National Encyclopedia, photographs, poetry, publications, tributes and student recommendations spanning her career as a faculty member at Smith College.</p>  
+      </scopecontent>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Caroline Brown Bourland Papers, Smith College Archives, CA-MS-00040, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Caroline Brown Bourland Papers were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Gayla B. Spaulding.</p>  
+      </processinfo>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Bourland, Caroline Brown, 1871-</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_913df5ef88af5fe411aa1ef39945fb93" level="file">
+            <did>
+               <unittitle>Biographical Material</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1902/1940"
+                         type="inclusive">1902 - 1940</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_df5e7360676f6b7dee793cdb7e81c60c"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_e41d9ed863b723fbd7f152475ef7f68f"
+                          parent="aspace_df5e7360676f6b7dee793cdb7e81c60c"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b01bc83d1ce7377200ae6506917bc7b8" level="file">
+            <did>
+               <unittitle>Correspondence: General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1921/1923"
+                         type="inclusive">1921 - 1923</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_df58501c78771e5ba812dc129f919e76"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_2e927ab22298bf4f0c645bd3755789aa"
+                          parent="aspace_df58501c78771e5ba812dc129f919e76"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f8e69c65290d2be745e8fa1744bc5348" level="file">
+            <did>
+               <unittitle>Correspondence: William Allan Neilson</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1934/1936"
+                         type="inclusive">1934 - 1936</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d3cf25690f75652c3f5211089205af4f"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_9ffa1736acc671fa7c5828c37abc91d9"
+                          parent="aspace_d3cf25690f75652c3f5211089205af4f"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6038e58e1183cebe54ad4d641d534628" level="file">
+            <did>
+               <unittitle>Correspondence: Personal</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1904/1949"
+                         type="inclusive">1904 - 1949</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9cc7878bc8c365f3f5b284c3e8bebd6a"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_3b4875f6553b21e4c443e8ce4d0f01ca"
+                          parent="aspace_9cc7878bc8c365f3f5b284c3e8bebd6a"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_df6d48b2a7d8be21fa140cce488f0980" level="file">
+            <did>
+               <unittitle>Diary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a5ce86468569de9e0c75e663f88c80a2"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_6cb33070b4ca4ecacdb52e398391a819"
+                          parent="aspace_a5ce86468569de9e0c75e663f88c80a2"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8df6e8648b082cb36c0b71a316f1e411" level="file">
+            <did>
+               <unittitle>Grant - in - Aid</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e9c2ae7dd54d2bc837018b7999f33fde"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_2ead93b184ccae913b5d5a8000debff2"
+                          parent="aspace_e9c2ae7dd54d2bc837018b7999f33fde"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_824308d45d5a5ca6cd35e04227fe1057" level="file">
+            <did>
+               <unittitle>Hispanic Society of America</unittitle>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_731cc3e9657aa5a3f975e82232431fb0"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_bb5f3ec8b6827a6bf6c4d05ca82f02b5"
+                          parent="aspace_731cc3e9657aa5a3f975e82232431fb0"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dc79431a0355d90061066f891c1fde62" level="file">
+            <did>
+               <unittitle>Lecture Notes</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dcd4e4fe142f60e1eb632de395f10724"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_2dc63ea3b7e124649007291ddaba9bd8"
+                          parent="aspace_dcd4e4fe142f60e1eb632de395f10724"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fa65288a56f6585541a5777319c0ab8e" level="file">
+            <did>
+               <unittitle>National Encyclopedia: Correspondence and Articles</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3f49f6b39fd02ab8007b7881e9fc231e"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_29f5028e10a21caa21629a231ed4194a"
+                          parent="aspace_3f49f6b39fd02ab8007b7881e9fc231e"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_210285d6cea2940a12ff3d074c22f79b" level="file">
+            <did>
+               <unittitle>Tributes</unittitle>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_674d4e6f407feddb4327058d9017053c"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_c2fdb26d31b349ed2fb10a49fa09a56c"
+                          parent="aspace_674d4e6f407feddb4327058d9017053c"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e3f2496cdadb7218d9541ad21b2ee770" level="file">
+            <did>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4c1b398bf96633b63674d8d6f98de351"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_6478b549ca987d25cbfd4b0278fa695b"
+                          parent="aspace_4c1b398bf96633b63674d8d6f98de351"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ef7498b1ea20ac64567e17c64e8fea16" level="file">
+            <did>
+               <unittitle>Poetry</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b2da8f8b6dd7a4b2d050353f719b7f93"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_4cab0a52a2f2b92e93b7197c0d40a718"
+                          parent="aspace_b2da8f8b6dd7a4b2d050353f719b7f93"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_45e80a2b10066d54f61bebbc4435bfe8" level="file">
+            <did>
+               <unittitle>Publications List</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_77b47837e9f9474dcd42ccd281b56d02"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_495551779d0f4f81f2970f4cd78e98fa"
+                          parent="aspace_77b47837e9f9474dcd42ccd281b56d02"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_95cc4c5b43472ef2211361efb92bbcad" level="file">
+            <did>
+               <unittitle>Publications: <title render="italic">Boccaccio and the Decameron and Vida y Hazanas de Juan Belmonte</title>
+               </unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1905/1905">1905</unitdate>
+               <unitdate normal="1939/1939">1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0309608d4f9e7f789d35f0d812648e09"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_1f15f7c323ffc0d20ed6acea5763a121"
+                          parent="aspace_0309608d4f9e7f789d35f0d812648e09"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6d611ba82e39c3ab9592e9ec9b2ec3ea" level="file">
+            <did>
+               <unittitle>Publication: <title render="italic">The Short Story in Spain in the Seventeenth Century</title>
+               </unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7f9227cafd2bdb2d482475ba591f2cf3"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_05dada81c731db6a8684e1590c7289a8"
+                          parent="aspace_7f9227cafd2bdb2d482475ba591f2cf3"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5581d328c7902c75111f47c8f5600070" level="file">
+            <did>
+               <unittitle>Publications: Assorted</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1909/1951"
+                         type="inclusive">1909 - 1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2367ffd546c40236bfa6a2f9f66e108c"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_e6896ee1cc92618812d61adf29cadc35"
+                          parent="aspace_2367ffd546c40236bfa6a2f9f66e108c"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_19234de9d9af71680ecc15a1ce46de7b" level="file">
+            <did>
+               <unittitle>Retirement</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a769c163e4d2dc67695d8a6f990b7026"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_873eb7a97e0352180d148f3608fd9c43"
+                          parent="aspace_a769c163e4d2dc67695d8a6f990b7026"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_54d8a1ef52546825d6aa44b3af86a7a3" level="file">
+            <did>
+               <unittitle>Poetry by Arthur Seelye</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893</unitdate>
+               <unitdate calendar="gregorian" era="ce">n. d.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_57847603c7f25359ebeeec0f89c9f986"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_0540025ff73a0df007c91ca2a56cc1b8"
+                          parent="aspace_57847603c7f25359ebeeec0f89c9f986"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_eaa2c16748198547d4a7a309d047590f" level="file">
+            <did>
+               <unittitle>Student Recommendation</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908</unitdate>
+               <unitdate normal="1916/1916">1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0be5d1f184efbe0647107a7c504ca792"
+                          label="Mixed Materials [310183630234325]"
+                          type="box">687</container>
+               <container id="aspace_9e6e2e32511ec562b4a679e920126578"
+                          parent="aspace_0be5d1f184efbe0647107a7c504ca792"
+                          type="folder">19</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
