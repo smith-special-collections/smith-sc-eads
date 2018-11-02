@@ -1,219 +1,203 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca385.xml//EN">manosca385</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca385</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Patricia Parks Butterfield Papers, 1901 - 1987 (bulk
-               1952 - 1987)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Madison White, Class of
-               2016.</author>
-
+            <titleproper>Finding aid to the Patricia Parks Butterfield Papers <num>CA.MS.00385</num>
+            </titleproper>
+            <author>Finding aid prepared by Madison White, Class of 2016.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-01-09">2015-01-09</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-02 15:37:59 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-02</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Butterfield, Patricia Parks, 1901 -
-               1987</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Patricia Parks Butterfield
-            Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1901 - 1987</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1952 - 1987</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">42 UUID:e2a7a411-c10c-4b0f-b892-e36408782591</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 half document box</extent>
-            <extent encodinganalog="300$a">(.25 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Alumna, Class of 1922. Contains news
-            releases and correspondence documenting the career and retired life of Patricia Parks
-            Butterfield. </abstract>
+         <unittitle>Patricia Parks Butterfield Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Butterfield, Patricia Parks, 1901 - 1987</persname>
+         </origination>
+         <unitid>CA.MS.00385</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1901/1987"
+                   type="inclusive">1901-1987</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1952/1987" type="bulk">1952 - 1987</unitdate>
+         <abstract id="aspace_4ed8de384e69cdf2c974cb572e3dbbfd">Alumna, Class of 1922. Contains news releases and correspondence documenting the career and retired life of Patricia Parks Butterfield.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Patricia Parks was born February 15, 1901. After graduating from Smith College with her
-            B.A. in 1922, she married Roger C. Butterfield. Their daughter, Patricia Butterfield,
-            later attended Smith College as a member of the Class of 1948. Upon her husband's death
-            in 1949, Butterfield took a position as the Head of Stafford Hall at Mount Holyoke
-            College. Three years later she returned to Smith College as the head of Jordan House.
-            After retiring in 1966, Butterfield returned to Tennessee to care for her mother. She
-            passed away in 1987 in Dickenson, Tennessee. </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Patricia Parks was born February 15, 1901. After graduating from Smith College with her B.A. in 1922, she married Roger C. Butterfield. Their daughter, Patricia Butterfield, later attended Smith College as a member of the Class of 1948. Upon her husband's death in 1949, Butterfield took a position as the Head of Stafford Hall at Mount Holyoke College. Three years later she returned to Smith College as the head of Jordan House. After retiring in 1966, Butterfield returned to Tennessee to care for her mother. She passed away in 1987 in Dickenson, Tennessee.</p>  
       </bioghist>
-
-
-      <scopecontent id="scope">
-
-         <p> The collection contains several news releases from Butterfield's career at Smith
-            College dating from 1952 to 1966 as well as letters from her retirement in Tennessee to
-            Marilyn Thunfors Bremser, Class of 1955, and to the Pilcher family. Topics discussed
-            include Butterfield's daily life, her interest in literature and politics, and her
-            relationships with other Smith College alumnae.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains several news releases from Butterfield's career at Smith College dating from 1952 to 1966 as well as letters from her retirement in Tennessee to Marilyn Thunfors Bremser, Class of 1955, and to the Pilcher family. Topics discussed include Butterfield's daily life, her interest in literature and politics, and her relationships with other Smith College alumnae.</p>  
       </scopecontent>
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Patricia Parks Butterfield, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Patricia Parks Butterfield Papers, Smith College Archives, CA-MS-00385, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Patricia Parks Butterfield Papers were created by Patricia Parks Butterfield and
-            donated to the College Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-
-         <corpname encodinganalog="710" source="lcnaf">Smith College--Class of 1922</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith College--Class of 1948</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith College - Class of 1955</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith College--Alumni and
-            alumnae--History-Sources</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith
-            College--Employees--History-Sources</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith College--Social life and
-            customs--History-Sources</corpname>
-         <corpname encodinganalog="710" source="lcnaf">Smith College--Students--Social life and
-            customs</corpname>
-
-      </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>
-            <list>
-               <item>
-                  <extref
-                     href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca104_main.html"
-                     >Buildings Records, 1875 - ongoing</extref>
-               </item>
-               <item>
-                  <extref
-                     href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca214_main.html"
-                     >Class of 1922 Records, 1918 - 1992</extref>
-               </item>
-               <item>
-                  <extref
-                     href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca247_main.html"
-                     >Class of 1955 Records, 1951 - ongoing</extref>
-               </item>
-            </list>
-
-         </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <list type="ordered">
+            <item>
+               <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca104_main.html">Buildings Records, 1875 - ongoing</extref>
+            </item>
+            <item>Class of 1922 Records</item>
+            <item>Class of 1955 Records</item>
+         </list>
       </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <corpname encodinganalog="610" source="naf">Smith College--Class of 1922</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College--Class of 1948</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College - Class of 1955</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College--Alumni and alumnae--History-Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College--Employees--History-Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College--Social life and customs--History-Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College--Students--Social life and customs</corpname>
+         <persname encodinganalog="600" source="naf">Butterfield, Patricia Parks, 1901 - 1987</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_5ffecc375ad23ee96b9fd62ea580de05" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General <unitdate>1952</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_1801779dbaa906ced4f858e93fba369c"
+                          label="Mixed Materials [310183630221371]"
+                          type="box">691</container>
+               <container id="aspace_40dbdba36ef531780941d488c5a83038"
+                          parent="aspace_1801779dbaa906ced4f858e93fba369c"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bebab898b22de0d44757c703277fa8cd" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence to Marilyn (Thunfors) Bremser
-                     <unitdate>1961-1972</unitdate>
-               </unittitle>
+               <unittitle>Correspondence to Marilyn (Thunfors) Bremser</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1972"
+                         type="inclusive">1961-1972</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_bd011bf449b1784c3fdbad35e9c4def4"
+                          label="Mixed Materials [310183630221371]"
+                          type="box">691</container>
+               <container id="aspace_f7fe62312e069ff26de89dd0ccd30ccd"
+                          parent="aspace_bd011bf449b1784c3fdbad35e9c4def4"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ad499bf21ba96356576b3b743f142e74" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence to Marilyn (Thunfors) Bremser
-                     <unitdate>1973-1977</unitdate>
-               </unittitle>
+               <unittitle>Correspondence to Marilyn (Thunfors) Bremser</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1973/1977"
+                         type="inclusive">1973-1977</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_2edb8a692d3273c0c724d50edadac382"
+                          label="Mixed Materials [310183630221371]"
+                          type="box">691</container>
+               <container id="aspace_a36633a2216316cfc327c832109967b8"
+                          parent="aspace_2edb8a692d3273c0c724d50edadac382"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f4b9f49aa5ef9f631328d1f4bed95b8b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence to Marilyn (Thunfors) Bremser <unitdate>1980-1987,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Correspondence to Marilyn (Thunfors) Bremser</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1980/1987"
+                         type="inclusive">1980-1987</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_d507b181814005a538f78ec2b88253d0"
+                          label="Mixed Materials [310183630221371]"
+                          type="box">691</container>
+               <container id="aspace_672e99b728d84d3eedacd09ff0e6a639"
+                          parent="aspace_d507b181814005a538f78ec2b88253d0"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5fae2ce0bfe3c13402ae2474f9308331" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence with Edward B. Pilcher <unitdate>1975-1986</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Edward B. Pilcher</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1986"
+                         type="inclusive">1975-1986</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_981707eab20ee1e88f6a6ff97537fde0"
+                          label="Mixed Materials [310183630221371]"
+                          type="box">691</container>
+               <container id="aspace_782b56d941737b85dcd4b95f96038f43"
+                          parent="aspace_981707eab20ee1e88f6a6ff97537fde0"
+                          type="folder">5</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

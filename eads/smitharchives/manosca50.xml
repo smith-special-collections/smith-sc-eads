@@ -1,212 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca50.xml//EN">manosca50</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Adelaide Crapsey Papers, 1913-1977 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Gayla B. Spaulding.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca50 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives</publisher>
-            <titleproper>Adelaide Crapsey Papers, 1913-1977 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 42</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca50</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Adelaide Crapsey Papers <num>CA.MS.00050</num>
+            </titleproper>
             <author>Gayla B. Spaulding</author>
-            <date>2001</date>
-
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Crapsey, Adelaide,
-                    1878-1914.</persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Adelaide Crapsey Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1913-1977</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:be238483-8f5e-4285-8933-65469d8ca1f7</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">1 box</extent>
-                <extent encodinganalog="300$a">(.5 linear in.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Instructor of English, poet. Contains
-                biographical material, correspondence, and publications. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Adelaide Crapsey was born on September 9, 1878 to Algernon Sidney and Adelaide
-                Trowbridge Crapsey in Rochester, NY. She attended the Kemper Hall preparatory school
-                in Kenosha, WI and graduated first in her class in 1897. Upon graduating, she
-                entered Vassar College and matriculated with the class of 1901. </p>
-            <p>In 1903, Crapsey returned to Kemper Hall as a teacher of history and literature. In
-                1905 she studied at the School of Archeology in Rome, and following her return to
-                the United States the next year, she became an instructor of history and literature
-                in Miss Lowe's Preparatory School in Stamford, CT. However, her health was suffering
-                from the effects of tuberculosis, and she was forced to stop teaching in 1908. She
-                spent much of this time in Italy and England, working on her book, <title
-                    render="italic">Analysis of English Metric</title>s, which she considered her
-                serious life work. Crapsey was also a talented poet, and invented her own metrical
-                form, the cinquain. In 1911, Crapsey accepted a position as Instructor of Poetics at
-                Smith College. In 1913 she became gravely ill and had to abandon her literary and
-                academic work. She retreated to Saranac Lake in New York, where she died on October
-                8, 1914. She was 36 years old. </p>
-            <p>A book of poetry, <title render="italic">Verse</title>, was published posthumously by
-                her parents in 1915 as well as the unfinished work <title render="italic">A Study in
-                    English Metrics</title>, in 1918. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Adelaide Crapsey Papers contain biographical materials, correspondence and
-                publications spanning the career of Crapsey as a member of the English Department as
-                Smith College. </p>
-        </scopecontent>
-        <arrangement encodinganalog="351$a" id="scope-org">
-
-            <p>This collection is organized into three series:</p>
-            <list>
-                <item> I. Biographical Materials </item>
-                <item> II. Correspondence </item>
-                <item> III. Publications </item>
-            </list>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The collection is open to research according to the regulations of the Smith
-                        College Archives. </p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Adelaide Crapsey Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <processinfo id="admin-process">
-                    <p>Processed by Gayla B. Spaulding.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Crapsey, Adelaide, 1878-1914.</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-        </controlaccess>
-        <dsc id="list-contlist" type="combined">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>Series I: Biographical Materials</unittitle>
-                </did>
-                <scopecontent>
-                    <p>This section contains information of Crapsey's career, book reviews from the
-                            <title render="italic">Irondequoit Press</title>, <title render="italic"
-                            >Henrietta Post</title> and the <title render="italic"
-                            >Brighton-Pittsford Post</title>, all in written in 1977. There are
-                        additional articles from the <title render="italic">Smith Monthly</title>
-                        (1915) and the <title render="italic">Smith Weekly</title> (1914).</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">731</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Biographical Materials <unitdate>1914-1977</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>Series II: Correspondence</unittitle>
-                </did>
-                <scopecontent>
-                    <p>This folder contains typed copies of correspondence to and from Esther
-                        Leventhal from 1913-14. The original letters are housed in the University of
-                        Rochester Library.</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">731</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Correspondence <unitdate>1913-14</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>Series III: Publications</unittitle>
-                </did>
-                <scopecontent>
-                    <p>This folder contains the following publications by Adelaide Crapsey:
-                            <title>Verse</title>, 1915; <title>Verse</title>, reprint, 1938; and
-                            <title>A Study in English Metrics</title>, 1918.</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">731</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Publications <unitdate>1915, 1918 and 1938</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-02 15:31:34 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca50 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-02</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Adelaide Crapsey Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Crapsey, Adelaide, 1878-1914.</persname>
+         </origination>
+         <unitid>CA.MS.00050</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1913/1977"
+                   type="inclusive">1913-1977</unitdate>
+         <abstract id="aspace_1e0218f4a1d93b0865cd18aaeaaa51dd">Instructor of English, poet. Contains biographical material, correspondence, and publications.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Adelaide Crapsey was born on September 9, 1878 to Algernon Sidney and Adelaide Trowbridge Crapsey in Rochester, NY. She attended the Kemper Hall preparatory school in Kenosha, WI and graduated first in her class in 1897. Upon graduating, she entered Vassar College and matriculated with the class of 1901. </p>
+         <p> In 1903, Crapsey returned to Kemper Hall as a teacher of history and literature. In 1905 she studied at the School of Archeology in Rome, and following her return to the United States the next year, she became an instructor of history and literature in Miss Lowe's Preparatory School in Stamford, CT. However, her health was suffering from the effects of tuberculosis, and she was forced to stop teaching in 1908. She spent much of this time in Italy and England, working on her book, <title render="italic">Analysis of English Metric</title>s, which she considered her serious life work. Crapsey was also a talented poet, and invented her own metrical form, the cinquain. In 1911, Crapsey accepted a position as Instructor of Poetics at Smith College. In 1913 she became gravely ill and had to abandon her literary and academic work. She retreated to Saranac Lake in New York, where she died on October 8, 1914. She was 36 years old. </p>
+         <p> A book of poetry, <title render="italic">Verse</title>, was published posthumously by her parents in 1915 as well as the unfinished work <title render="italic">A Study in English Metrics</title>, in 1918.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Adelaide Crapsey Papers contain biographical materials, correspondence and publications spanning the career of Crapsey as a member of the English Department as Smith College.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Materials</item>
+            <item>II. Correspondence</item>
+            <item>III. Publications</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Adelaide Crapsey Papers, Smith College Archives, CA-MS-00050, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Gayla B. Spaulding.</p>  
+      </processinfo>
+      <acqinfo id="aspace_62a0029e14eab4c80e38f5be57a1f67e">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Crapsey, Adelaide, 1878-1914.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>Series I: Biographical Materials</unittitle>
+            </did>
+            <scopecontent id="aspace_5705624f044b8d5f35a65f65272e9306">
+               <head>Scope and Contents</head>
+               <p>This section contains information of Crapsey's career, book reviews from the <title render="italic">Irondequoit Press</title>, <title render="italic">Henrietta Post</title> and the <title render="italic">Brighton-Pittsford Post</title>, all in written in 1977. There are additional articles from the <title render="italic">Smith Monthly</title> (1915) and the <title render="italic">Smith Weekly</title> (1914).</p>
+            </scopecontent>
+            <c02 id="aspace_65cb5baf689f46d6723ac6428e2c0afe" level="file">
+               <did>
+                  <unittitle>Biographical Materials</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1914/1977"
+                            type="inclusive">1914-1977</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_e30210415b70f9fa22ab0504ef12f3e5"
+                             label="Mixed Materials [310183630221439]"
+                             type="box">731</container>
+                  <container id="aspace_a88890f7ba1b888fd4a2ac9619047f7f"
+                             parent="aspace_e30210415b70f9fa22ab0504ef12f3e5"
+                             type="folder">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II: Correspondence</unittitle>
+            </did>
+            <scopecontent id="aspace_c3cbcbad44317fa29118886ce9e2a81e">
+               <head>Scope and Contents</head>
+               <p>This folder contains typed copies of correspondence to and from Esther Leventhal from 1913-14. The original letters are housed in the University of Rochester Library.</p>
+            </scopecontent>
+            <c02 id="aspace_dfc8df5640a974043a0de2cbbbef3d6a" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1913/1914"
+                            type="inclusive">1913-14</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_e641e8f43fd53909d1461df1349bcd4b"
+                             label="Mixed Materials [310183630221439]"
+                             type="box">731</container>
+                  <container id="aspace_68582e2bcd70848955e0b3a4b91f08f9"
+                             parent="aspace_e641e8f43fd53909d1461df1349bcd4b"
+                             type="folder">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III: Publications</unittitle>
+            </did>
+            <scopecontent id="aspace_56627269c18cbf68385ea58e76159d57">
+               <head>Scope and Contents</head>
+               <p>This folder contains the following publications by Adelaide Crapsey: <title>Verse</title>, 1915; <title>Verse</title>, reprint, 1938; and <title>A Study in English Metrics</title>, 1918.</p>
+            </scopecontent>
+            <c02 id="aspace_49b27a10781b8f528affc12dd36327e9" level="file">
+               <did>
+                  <unittitle>Publications</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                  <unitdate normal="1918/1918">1918</unitdate>
+                  <unitdate normal="1938/1938">1938</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_4336b6b879bef466bfec6b840241a613"
+                             label="Mixed Materials [310183630221439]"
+                             type="box">731</container>
+                  <container id="aspace_bc4c5721732cef50ebf8d6afaffe1967"
+                             parent="aspace_4336b6b879bef466bfec6b840241a613"
+                             type="folder">3</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
