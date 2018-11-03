@@ -1,611 +1,928 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca166.html"
-            >manosca166</eadid>
-
-        <filedesc>
-            <titlestmt>
-                <titleproper>Athletic Association Records, ca. 1900-[ongoing]</titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Tiffany Tawzer.</author>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2006</date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded in NoteTab Pro. Encoded by Deborah A. Richards.
-                    <date>2006-10-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-    </eadheader>
-
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives</publisher>
-            <titleproper>Athletic Association Records, ca. 1900-[ongoing]</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 80</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US"
+             mainagencycode="manosca"
+             url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca166.html">manosca166</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Athletic Association records <num>CA.MS.00166</num>
+            </titleproper>
             <author>Tiffany Tawzer</author>
-            <date>2004</date>
-
-            <p>© 2006 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-
-    <archdesc level="collection" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="110" source="lcnaf">Athletic Association</corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Athletic Association
-                Records</unittitle>
-            <unitdate label="Dates:">ca. 1900-[ongoing]</unitdate>
-
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 80 UUID:b627056a-5230-4564-b185-01fc87c0d5e8</unitid>
-
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">4 boxes</extent>
-                <extent encodinganalog="300$a">(1.7 linear ft.)</extent>
-            </physdesc>
-            <langmaterial encodinganalog="546" label="Language of Material:">
-                <language langcode="eng">English</language>
-            </langmaterial>
-
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:"> The collection contains materials
-                that document the history of the Athletic Association, including its constitutions
-                and bylaws, minutes, officer notes, and information on the events sponsored by the
-                organization. </abstract>
-        </did>
-
-
-
-        <bioghist id="bioghist">
-
-            <p>The organization was started in spring, 1893 as the Gymnasium and Field Association.
-                The name was changed in 1915 to the Athletic Association. It originally had
-                oversight of all inter-class sports, and later expanded to sanction inter-house and
-                intercollegiate events as well. The group has also overseen parts of such college
-                events as Father's Day, Field Day, Float Night, and Rally Day. </p>
-        </bioghist>
-
-        <scopecontent id="scope">
-
-            <p>The Athletic Association records contain materials describing the history and scope
-                of participation of the group in college events, as well as its organization,
-                associated groups, and the changes in athletic policy at Smith College. Types of
-                materials include student handbooks, the constitutions and bylaws, advertisements
-                for events, other announcements, officer records and notes, minutes, and
-                photographs. </p>
-        </scopecontent>
-
-
-
-        <descgrp id="admin">
-            <head>Information on Use</head>
-            <descgrp>
-                <head>Terms of Access and Use</head>
-                <accessrestrict id="admin-access">
-                    <p>The records are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions. </p>
-                </accessrestrict>
-                <userestrict id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Athletic Association Records, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp>
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The Athletic Association records were created by the Athletic Association and
-                        donated to the College Archives.</p>
-                </acqinfo>
-            </descgrp>
-        </descgrp>
-
-        <descgrp id="addinfo">
-            <head>Additional Information</head>
-            <relatedmaterial id="add-related">
-                <head>Related Material</head>
-                <p>
-                    <list>
-                        <head> Researchers should also view: </head>
-                        <item>52. Athletic Department Records</item>
-                        <item>52. Physical Education Department Records</item>
-                        <item>
-                            <extref
-                                href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca167_main.html"
-                                >80. Athletic Subject Files</extref>
-                        </item>
-                    </list>
-                </p>
-            </relatedmaterial>
-        </descgrp>
-
-
-
-
-
-
-
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <unittitle>General Files</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>General <unitdate>1899-c1970s</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Athletic Announcements and History <unitdate>1900-1980</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Book on Sports <unitdate>1917-1925</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Combined Athletic Announcements and History
-                                <unitdate>1980-present</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Pamphlets <unitdate>1949-1990's</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Photographs <unitdate>1929, 1987-1993</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Tickets and Notices <unitdate>1896-c1920s</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Anniversaries <unitdate>1943</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Awards: Notices, Invitations, etc <unitdate>1996</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Calendar: Schedule of Events <unitdate>1980-1990</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Conferences <unitdate>1955</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">12</container>
-                    <unittitle>Constitution and By-laws <unitdate>1911-present</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">13</container>
-                    <unittitle>Father's Day</unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">14</container>
-                    <unittitle>Friends of Smith Athletics <unitdate>2002</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340</container>
-                    <container type="folder" label="mixed materials">15</container>
-                    <unittitle>Handbooks, Students, and House reps. <unitdate>1921-1962</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1340.1</container>
-                    <unittitle>Intercollegiate, Combined Sports Announcements
-                            <unitdate>1900-1991</unitdate></unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1900-1978</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1981-1982</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1983-1984</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1984-1985</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1985-1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">21</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1986-1987</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">22</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1987-1988</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">23</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1988-1989</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">24</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1989-1990</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">25</container>
-                        <unittitle>Intercollegiate, Combined Sports Announcements
-                                <unitdate>1990-1991</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1340.1</container>
-                        <container type="folder" label="mixed materials">26</container>
-                        <unittitle>Intercollegiate Bulletins <unitdate>1980s</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Intercollegiate Newsletter, <title render="italic">The
-                            Unicorn</title>
-                        <unitdate>1982-1984</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Intercollegiate Schedules <unitdate>1974-1989</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Inter-house Tournaments <unitdate>1940-1949</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Inter-house Tournaments <unitdate>1949-1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Inter-house Tournaments <unitdate>1951-1963</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Inter-house Tournaments <unitdate>1959-1970</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Intramural Program <unitdate>1987-1988</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Letters and Emblems</unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Little Pioneer Club <unitdate>2000-2002</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Minutes <unitdate>1931-1936</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1341</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Minutes <unitdate>1935-1942</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>National Girls and Women in Sport Day <unitdate>1990</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>News Clippings <unitdate>1997</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Newsletter, <title render="italic">Alumnae</title>
-                        <unitdate>1974</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Newsletter, <title render="italic">Pioneer Sport</title>
-                        <unitdate>1992-1994</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Officers <unitdate>1916-1939</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Officers <unitdate>1941-1950</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Officers <unitdate>1950-1959</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Officers <unitdate>1960-1968</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Programs <unitdate>1952-1969</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Records, Board Member and Rep Lists <unitdate>1959-1974</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Records, Presidents <unitdate>1909-1920</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">12</container>
-                    <unittitle>Records, Presidents <unitdate>1960s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">13</container>
-                    <unittitle>Records, Presidents <unitdate>1960s (cont)</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">14</container>
-                    <unittitle>Records, Treasurer <unitdate>1959-1970</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1342</container>
-                    <container type="folder" label="mixed materials">15</container>
-                    <unittitle>Records, Vice President <unitdate>1952-1971</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-
-
-
-
-
-
-
-    </archdesc>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2006</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-03 14:15:59 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-10-29</date>
+            <item>Updated to conform to DACS</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Athletic Association records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Athletic Association</corpname>
+         </origination>
+         <unitid>CA.MS.00166</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.458 linear feet</extent>
+            <extent altrender="carrier">(4 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1900/2002"
+                   type="inclusive">1900-2002</unitdate>
+         <abstract id="aspace_9bf2b55796145f5258ce1d809a050837">The collection contains materials that document the history of the Athletic Association, including its constitutions and bylaws, minutes, officer notes, and information on the events sponsored by the organization.</abstract>
+      </did>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The organization was started in spring, 1893 as the Gymnasium and Field Association. The name was changed in 1915 to the Athletic Association. It originally had oversight of all inter-class sports, and later expanded to sanction inter-house and intercollegiate events as well. The group has also overseen parts of such college events as Father's Day, Field Day, Float Night, and Rally Day.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Athletic Association Records, Box #, Smith College Archives, CA-MS-00166, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <list type="ordered">
+            <head>Researchers should also view:</head>
+            <item>52. Athletic Department Records</item>
+            <item>52. Physical Education Department Records</item>
+            <item>
+               <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca167_main.html">80. Athletic Subject Files</extref>
+            </item>
+         </list>
+      </relatedmaterial>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Athletic Association records contain materials describing the history and scope of participation of the group in college events, as well as its organization, associated groups, and the changes in athletic policy at Smith College. Types of materials include student handbooks, the constitutions and bylaws, advertisements for events, other announcements, officer records and notes, minutes, and photographs.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Single photocopies may be made for research purposes. Permission to publish material from the documents must be requested from the Smith College Archives. Smith College owns copyright to any published material relating to college events and activities. Provenance and copyright ownership of other materials is unknown and researchers are responsible for determining any question of copyright.</p>  
+      </userestrict>
+      <controlaccess>
+         <corpname encodinganalog="610" source="naf">Athletic Association</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_3ad0d0dadb9c0c111b4345ba4c62af71" level="file">
+            <did>
+               <unittitle>General Files</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_6717acf76a52d801f658042b022e4191"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+            </did>
+            <c02 id="aspace_882877b07b7b206cbaeb093187cf0a7b" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1899-c1970s</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0a03d023ce33b45e7ab4a355afe241f1"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_9f69a61f19321e5939e18c1617f8e751"
+                             parent="aspace_0a03d023ce33b45e7ab4a355afe241f1"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_13276220a650422e9c2883096fb09ae8" level="file">
+               <did>
+                  <unittitle>Athletic Announcements and History</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1980"
+                            type="inclusive">1900-1980</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b36e35e1732dc23b18ba31ffbec21d9a"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_32132078490318be8fc388505bce043e"
+                             parent="aspace_b36e35e1732dc23b18ba31ffbec21d9a"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f9bea075f620c7564a9f5bdad7774231" level="file">
+               <did>
+                  <unittitle>Book on Sports</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1925"
+                            type="inclusive">1917-1925</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7d1926d58fde202d8097a17d1c89bdf8"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_536f871773b29a1c4b1a770b02987a56"
+                             parent="aspace_7d1926d58fde202d8097a17d1c89bdf8"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a8ac53e34a1fcfcfc0f3f18a113ac5f3" level="file">
+               <did>
+                  <unittitle>Combined Athletic Announcements and History</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1980-present</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0fcda69aa5b1a1cd4703378ca8b01fcf"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_5218d18c79bc18e45cb4dbf3a8f59873"
+                             parent="aspace_0fcda69aa5b1a1cd4703378ca8b01fcf"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_71bcd72de4be0ba880b419e3c21fb4bc" level="file">
+               <did>
+                  <unittitle>Pamphlets</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1999"
+                            type="inclusive">1949-1990's</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_146564a9ae33bad9db19b5d883971851"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_ebc8b96250d40a13eb9737a12e00a916"
+                             parent="aspace_146564a9ae33bad9db19b5d883971851"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_97756e005968c415701fa723192635e4" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929</unitdate>
+                  <unitdate normal="1987/1993" type="inclusive">1987-1993</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ea8a41d3dd7da887c2f6550de4bb2b50"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_1bcba4fdc5e146169360f16c3ef839a6"
+                             parent="aspace_ea8a41d3dd7da887c2f6550de4bb2b50"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f92a766c1b8ba981fadb108e45a3852f" level="file">
+               <did>
+                  <unittitle>Tickets and Notices</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1896-c1920s</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_94d37c46c6c5e790e936c4279ea76820"
+                             label="Mixed Materials [310183630022084]"
+                             type="box">1340</container>
+                  <container id="aspace_0e7e8b58382992f1309af33c91b7185f"
+                             parent="aspace_94d37c46c6c5e790e936c4279ea76820"
+                             type="folder">7</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_4402389ba651db041feeeb8255f041c6" level="file">
+            <did>
+               <unittitle>Anniversaries</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5308afd6887389c4f0c968b74edb33b7"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_9ae2997e6091877f117409cbe1780ad8"
+                          parent="aspace_5308afd6887389c4f0c968b74edb33b7"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_be11639d4350062f4d1b86107f319051" level="file">
+            <did>
+               <unittitle>Awards: Notices, Invitations, etc</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5c52ca2a32ec2768b2938a8141daa5b1"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_e911d2da17fd15da0887157fa23f3297"
+                          parent="aspace_5c52ca2a32ec2768b2938a8141daa5b1"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8a39fc2eecdba28437ce7a673b62b331" level="file">
+            <did>
+               <unittitle>Calendar: Schedule of Events</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1980/1990"
+                         type="inclusive">1980-1990</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2d0fc547bac622deea8895542de92a8c"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_4737bf467f87bc9d64fface30a98dcfc"
+                          parent="aspace_2d0fc547bac622deea8895542de92a8c"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7ab1e7c6a0cdd77c278a7b41ebd556e2" level="file">
+            <did>
+               <unittitle>Conferences</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e7781f5d3a6bd9e1fbfa4f3a3ed3e34"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_e6af5803acd9519d1ce674545d022756"
+                          parent="aspace_9e7781f5d3a6bd9e1fbfa4f3a3ed3e34"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c9899a609551bdb4fa8d19fbbc901062" level="file">
+            <did>
+               <unittitle>Constitution and By-laws</unittitle>
+               <unitdate calendar="gregorian" era="ce">1911-present</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e01f0f97aa392e8c80d86fe50dbd750b"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_b91edc7d64a3feb9b3d1618024fee4a3"
+                          parent="aspace_e01f0f97aa392e8c80d86fe50dbd750b"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_49d02fd270928905c861055939ded298" level="file">
+            <did>
+               <unittitle>Father's Day</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_292340764e8808e8b93b3501405786ee"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_a05ef0412ac5c597071a840a11cc204c"
+                          parent="aspace_292340764e8808e8b93b3501405786ee"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c680a9b3735bd51b63e03c8fdab6e900" level="file">
+            <did>
+               <unittitle>Friends of Smith Athletics</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2002/2002">2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_66a678c19bf2327f947647b22a0dca4c"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_528c1cadac6b2e039dfc38dc27b5d885"
+                          parent="aspace_66a678c19bf2327f947647b22a0dca4c"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d902c40a093fbddc30d362a4287d04b1" level="file">
+            <did>
+               <unittitle>Handbooks, Students, and House reps.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1921/1962"
+                         type="inclusive">1921-1962</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fb3942eeb1849136a69164141fa6db21"
+                          label="Mixed Materials [310183630022084]"
+                          type="box">1340</container>
+               <container id="aspace_66d6e4669666a39e21abf9145a3b1a15"
+                          parent="aspace_fb3942eeb1849136a69164141fa6db21"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_062ff56137e46537073c135de8216407" level="file">
+            <did>
+               <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1991"
+                         type="inclusive">1900-1991</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_263a14969b913fb3ffdc8971979d792e"
+                          label="Mixed Materials [310183630022092]"
+                          type="box">1340.1</container>
+            </did>
+            <c02 id="aspace_463d247bc9d70b95e1c6b425b77d39bc" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1978"
+                            type="inclusive">1900-1978</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_4b304399c0a1ae19481edcfa7b5b88d3"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_adbd09b9dfed1dd5bf9ea9565b4458e9"
+                             parent="aspace_4b304399c0a1ae19481edcfa7b5b88d3"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_237a6422b3263cd24751c5b8b0c5494d" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1981/1982"
+                            type="inclusive">1981-1982</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a59399eea9bd75edcfe4ab6b71a408bd"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_9fd513ffe258ac1d7dcc4a644ec69145"
+                             parent="aspace_a59399eea9bd75edcfe4ab6b71a408bd"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_70dc61322ae2ec4a258f6ea035d66c9b" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1983/1984"
+                            type="inclusive">1983-1984</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_e5f16a68d39e342e1953410441e748de"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_e6a6f72a50e87a6ba6a7696c6bb59b86"
+                             parent="aspace_e5f16a68d39e342e1953410441e748de"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_52c584068e4cc173e47638cdee4baa2a" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1984/1985"
+                            type="inclusive">1984-1985</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_f7e60f1c0e43b7a6881be4e611ffa4eb"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_8bea5d135a2812e223db03ca09a3252d"
+                             parent="aspace_f7e60f1c0e43b7a6881be4e611ffa4eb"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_362275596653ae557d94bb569aa77bdb" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1985/1986"
+                            type="inclusive">1985-1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_22cb2eabfcd35b0623aa1e8575b144e4"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_ac27a13a969c33da2ada39e277f0ee28"
+                             parent="aspace_22cb2eabfcd35b0623aa1e8575b144e4"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ef0a16df5072bbbf521655f464d2e0c4" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1986/1987"
+                            type="inclusive">1986-1987</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_7d0c3a2650056ac46b8c5940bac771c5"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_76327df5864c38a952d2de80a305a3d7"
+                             parent="aspace_7d0c3a2650056ac46b8c5940bac771c5"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_797323c37a830ceab39ef6bcb896b58e" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1987/1988"
+                            type="inclusive">1987-1988</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_8ba6c8f4aa35a2fbbff1b71a304eb0ba"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_406e05642ce84157f3ddefce3670d5e0"
+                             parent="aspace_8ba6c8f4aa35a2fbbff1b71a304eb0ba"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7ba8ac8d18144305affeccb17a06053d" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1988/1989"
+                            type="inclusive">1988-1989</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_eff536c72236fa0a6a2942949a6dfead"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_0a330ddce18035a5c79dbca5d0e97aff"
+                             parent="aspace_eff536c72236fa0a6a2942949a6dfead"
+                             type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a84a7819776996f94f2f5739d23bf58d" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1989/1990"
+                            type="inclusive">1989-1990</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a31797b3946fce397cd5bf6e8e6e5721"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_281b1d1362565581f84c036ca66d3b23"
+                             parent="aspace_a31797b3946fce397cd5bf6e8e6e5721"
+                             type="folder">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eba9806832df7624bbf436ee2326bea4" level="file">
+               <did>
+                  <unittitle>Intercollegiate, Combined Sports Announcements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/1991"
+                            type="inclusive">1990-1991</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_491c44d3f8e67125bc91ca4140039cb9"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_3e186869db8c4c7afc3ea7c13c66396d"
+                             parent="aspace_491c44d3f8e67125bc91ca4140039cb9"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_897a8c317ce8f7bc1f51719492a01f95" level="file">
+               <did>
+                  <unittitle>Intercollegiate Bulletins</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1989"
+                            type="inclusive">1980s</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_6fb327978c4ad844b18ca5c58ff1e624"
+                             label="Mixed Materials [310183630022092]"
+                             type="box">1340.1</container>
+                  <container id="aspace_de713e39632e11586173b018cd8bcbe4"
+                             parent="aspace_6fb327978c4ad844b18ca5c58ff1e624"
+                             type="folder">26</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_c621b0731b022ff1e2a498638d7e4363" level="file">
+            <did>
+               <unittitle>Intercollegiate Newsletter, <title render="italic">The Unicorn</title>
+               </unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1982/1984"
+                         type="inclusive">1982-1984</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e185fda42c2af1310301b9e768efaecc"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_d7f94af778404b0e248323a8d31d4393"
+                          parent="aspace_e185fda42c2af1310301b9e768efaecc"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bf1222d65994cc7b8fb90d880e24b50d" level="file">
+            <did>
+               <unittitle>Intercollegiate Schedules</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1974/1989"
+                         type="inclusive">1974-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_394cd4aed5b991070e6a67cc0db2470e"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_37ca6dcdfe01f57082a90a90fd40573d"
+                          parent="aspace_394cd4aed5b991070e6a67cc0db2470e"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_442bfd2de24b8bca99203601dbf890a9" level="file">
+            <did>
+               <unittitle>Inter-house Tournaments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1940/1949"
+                         type="inclusive">1940-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_de39810cc2a9c64955e61501d314d66d"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_0271bf699c20f3ae89d97cedc8cf9e76"
+                          parent="aspace_de39810cc2a9c64955e61501d314d66d"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9580266de4cd4c6e30f1c011d439f540" level="file">
+            <did>
+               <unittitle>Inter-house Tournaments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1949/1951"
+                         type="inclusive">1949-1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_98b45540117b4444bff4cec7fccc6543"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_3c59cf0abd9f83adc74b3eb8a469ddcd"
+                          parent="aspace_98b45540117b4444bff4cec7fccc6543"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c03edc7290b9c727dadfad97f2c7585d" level="file">
+            <did>
+               <unittitle>Inter-house Tournaments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1951/1963"
+                         type="inclusive">1951-1963</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_88e32af021e9676fdfd8fd4118918ee6"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_089ace3ad8f83ff00ca500bb5a1f6790"
+                          parent="aspace_88e32af021e9676fdfd8fd4118918ee6"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c69edbe129a70c8c9f2501f20f9ff0e5" level="file">
+            <did>
+               <unittitle>Inter-house Tournaments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1970"
+                         type="inclusive">1959-1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a68dc54308438c98cbeafc44b40ffab6"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_6f5fce6e0892c085791f0ab60c98e772"
+                          parent="aspace_a68dc54308438c98cbeafc44b40ffab6"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7acafc2aefa73ffc9f3ed16e94f87584" level="file">
+            <did>
+               <unittitle>Intramural Program</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1987/1988"
+                         type="inclusive">1987-1988</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_80090133f7cf5d7a4c2a4551a66c3291"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_0281f8f6cd238b09d758e1de70c67454"
+                          parent="aspace_80090133f7cf5d7a4c2a4551a66c3291"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_af76e0a6561a24a239b1840f0754eee2" level="file">
+            <did>
+               <unittitle>Letters and Emblems</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_969beb690bf4cf599de512d1412d4bc4"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_92985e65007e566b23bce91271bd9b9e"
+                          parent="aspace_969beb690bf4cf599de512d1412d4bc4"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ff9624f709b544c7954641be1c0c6f61" level="file">
+            <did>
+               <unittitle>Little Pioneer Club</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2000/2002"
+                         type="inclusive">2000-2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1869fe555ca189bbf41b564a27d0e0ab"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_28b7ebef6782ec00a65ca249fcf3ae1a"
+                          parent="aspace_1869fe555ca189bbf41b564a27d0e0ab"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_196343d2e38dcc597197750b624ce95b" level="file">
+            <did>
+               <unittitle>Minutes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1931/1936"
+                         type="inclusive">1931-1936</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5b027884971570ec8bb7249d6026b36a"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_e68213511f3fe3564d676035ea763c11"
+                          parent="aspace_5b027884971570ec8bb7249d6026b36a"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b620cfc213b6f99630ecd635aabc8329" level="file">
+            <did>
+               <unittitle>Minutes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1935/1942"
+                         type="inclusive">1935-1942</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d1136edd785ac7ee4f55f5fef2fc05cf"
+                          label="Mixed Materials [310183630022100]"
+                          type="box">1341</container>
+               <container id="aspace_d8a61e63ee91129bcf7f65f90a54757c"
+                          parent="aspace_d1136edd785ac7ee4f55f5fef2fc05cf"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_51707f8f389c0e2cc2d02470698fbdaf" level="file">
+            <did>
+               <unittitle>National Girls and Women in Sport Day</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_027963a7e626dcd3b485236ddbcd77e1"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_e0dafcfb4070e90fe1befd3ef41d8528"
+                          parent="aspace_027963a7e626dcd3b485236ddbcd77e1"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3cf9a2fb0f1cc5315f0e42fd44a13d1c" level="file">
+            <did>
+               <unittitle>News Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_57afe0d0bf90e65c0966ceaa2d3ee5b8"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_d0f3b2d0d78aa11924f7069bb5c0e0df"
+                          parent="aspace_57afe0d0bf90e65c0966ceaa2d3ee5b8"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_88284924055e233c729c19354a5d914d" level="file">
+            <did>
+               <unittitle>Newsletter, <title render="italic">Alumnae</title>
+               </unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_41fea13b361f20ae759b42843649d5b2"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_13bc5f29e2b3b5167f2d47d8d8c79af4"
+                          parent="aspace_41fea13b361f20ae759b42843649d5b2"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2e74198228c830a4ea7146e12ff2bd24" level="file">
+            <did>
+               <unittitle>Newsletter, <title render="italic">Pioneer Sport</title>
+               </unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1994"
+                         type="inclusive">1992-1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ee151e99cad86fdef26eb864cb771a8d"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_22c3159f568549bc2a82a9e6f63d8b31"
+                          parent="aspace_ee151e99cad86fdef26eb864cb771a8d"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ed9d7a3f65e83b202cf04a1307de2315" level="file">
+            <did>
+               <unittitle>Officers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1916/1939"
+                         type="inclusive">1916-1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4a2bba60850124a8eae3591758023434"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_38aec9b92dbba619f8edd5996e8c2a63"
+                          parent="aspace_4a2bba60850124a8eae3591758023434"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e2239003c28fb44c279fed0f4b95c900" level="file">
+            <did>
+               <unittitle>Officers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1941/1950"
+                         type="inclusive">1941-1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ac6f3b1aa8d695165f39599bb0df2604"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_373904b38cb2df45a7b06d882473979d"
+                          parent="aspace_ac6f3b1aa8d695165f39599bb0df2604"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e174a3272aae17adcec9b2d81064aef0" level="file">
+            <did>
+               <unittitle>Officers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1959"
+                         type="inclusive">1950-1959</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b61632418376d0dc0c8d9fd7ed5549c0"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_27ccbaf334518157ff57c3219d93e6ee"
+                          parent="aspace_b61632418376d0dc0c8d9fd7ed5549c0"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4867a66c0761c1ef47c9d2beefa0dce2" level="file">
+            <did>
+               <unittitle>Officers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1968"
+                         type="inclusive">1960-1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0de98f664aa2977ca320cdd032d2944a"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_d755ac83c7f5d118cd3a004e3e170a4e"
+                          parent="aspace_0de98f664aa2977ca320cdd032d2944a"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7fc842629263503912ed4ae5737ed531" level="file">
+            <did>
+               <unittitle>Programs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1969"
+                         type="inclusive">1952-1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_be40d80e8ba669f5d969f40b5563d558"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_0624944d857d98c26fc1f60ef41435ee"
+                          parent="aspace_be40d80e8ba669f5d969f40b5563d558"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0cbf975799bb2f0bed9e84fed7962fd7" level="file">
+            <did>
+               <unittitle>Records, Board Member and Rep Lists</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1974"
+                         type="inclusive">1959-1974</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e2a3223f7af1bc1c996f862bbb1b181d"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_bbd8fba184ba9611454aeb37f6a73d0e"
+                          parent="aspace_e2a3223f7af1bc1c996f862bbb1b181d"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_52401459d8ec680121cf5828677f2cb2" level="file">
+            <did>
+               <unittitle>Records, Presidents</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1909/1920"
+                         type="inclusive">1909-1920</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4cade3e713854118d43abcfe0c6e9ba9"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_3dc28e26b709485aebcd7b981c5ee59e"
+                          parent="aspace_4cade3e713854118d43abcfe0c6e9ba9"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2fdfc3ca43501e027d03c8bc67559369" level="file">
+            <did>
+               <unittitle>Records, Presidents</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1969"
+                         type="inclusive">1960s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0c1d1037658133755e48010b45e80265"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_685b4cbd8fd1df5cf3901912fecc9899"
+                          parent="aspace_0c1d1037658133755e48010b45e80265"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cdc8614e3de57234a90d4d93ec340571" level="file">
+            <did>
+               <unittitle>Records, Presidents</unittitle>
+               <unitdate calendar="gregorian" era="ce">1960s (cont)</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dad1db09d735f8375bcaac4c1888cff0"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_27258326d92b50af99c41ceb391ffaca"
+                          parent="aspace_dad1db09d735f8375bcaac4c1888cff0"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3288327031fb29430af424457672e637" level="file">
+            <did>
+               <unittitle>Records, Treasurer</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1970"
+                         type="inclusive">1959-1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9baedb0d789790edca7a0d17b00d7add"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_666cec8f1623b2deff38df54433c4d8f"
+                          parent="aspace_9baedb0d789790edca7a0d17b00d7add"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4691d03aeac307e7ec985c82273a4256" level="file">
+            <did>
+               <unittitle>Records, Vice President</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1971"
+                         type="inclusive">1952-1971</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5055a4c7791ed8bbf3a422334ed915b2"
+                          label="Mixed Materials [310183630022118]"
+                          type="box">1342</container>
+               <container id="aspace_0e0737693c68689b3faf0751768ce468"
+                          parent="aspace_5055a4c7791ed8bbf3a422334ed915b2"
+                          type="folder">15</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
