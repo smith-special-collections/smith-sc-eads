@@ -1,653 +1,855 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca4.xml//EN">manosca4</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca4</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Sophia Smith papers, 1796 - 1870 (bulk 1861 -
-               2001)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Nanci A. Young.</author>
-
+            <titleproper>Finding aid to the Sophia Smith papers. <num>CA.MS.00004</num>
+            </titleproper>
+            <author>Finding aid prepared by Nanci A. Young.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-04-08">2015-04-08</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-05 14:21:00 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-5</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Smith, Sophia, 1795 - 1870</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Sophia Smith papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1861 - 2001</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 10 UUID:4e9df5ee-67fd-4451-8225-710e48dd0c82</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">8 boxes</extent>
-            <extent encodinganalog="300$a">(3.2 linear feet)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Benefactor. Contains books,
-            correspondence, journals, photographs, and personal and property records. </abstract>
+         <unittitle>Sophia Smith papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Smith, Sophia, 1795 - 1870</persname>
+         </origination>
+         <unitid>CA.MS.00004</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">4.833 linear feet</extent>
+            <extent altrender="carrier">(12 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1861/2001"
+                   type="inclusive">1861 - 2001</unitdate>
+         <abstract id="aspace_c467cf60ccd146ca24590bc7f2c2e32c">Benefactor. Contains books, correspondence, journals, photographs, and personal and property records.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Sophia Smith, benefactor of Smith College, was born in Hatfield, MA on August 27, 1796.
-            S was the fourth of seven children of Joseph Smith, a prosperous farmer, and his wife,
-            Lois White Smith. Of the seven Smith offspring, three died young and only Joseph Jr.
-            married, producing no heirs. Sophia, her sister Harriet and brother Austin shared the
-            family homestead which still stands at 22 Main Street in Hatfield. </p>
-
-         <p>Harriet Smith's death in 1859, followed by Austin's in 1861, left Sophia a wealthy woman
-            attempting to make provisions for the Smith family fortune. Deeply religious, Sophia
-            turned to her pastor, John Morton Greene, as well as other advisers, to discuss her
-            options. Considered were bequests to Amherst College (Reverend Greene's alma mater) and
-            to the nearby Mount Holyoke Female Seminary.</p>
-
-         <p>Initially, Sophia settled on a variety of projects, including a school for the deaf, a
-            logical choice in light of her own struggles with impaired hearing. Thus, Smith College
-            may, at least in part, owe its very existence to the fact that John Clarke died before
-            she did, endowing a school for the deaf (the Clarke School in Northampton) and prompting
-            Sophia to abandon her plan. </p>
-
-         <p>Sophia Smith died on June 12, 1870. The "Last Will and Testament of Miss Sophia Smith"
-            was completed in March of 1870, nine years after her first meeting about the matter with
-            John Greene. This final version supported "the establishment and maintenance of an
-            institution for the higher education of young women, with the design to furnish for my
-            own sex means and facilities for education equal to those which are afforded now in our
-            Colleges to young men."</p>
-
-         <p>The will went on to state: "It is my opinion that by the education of women, what are
-            called their 'wrongs' will be redressed, their wages adjusted, their weight of influence
-            in reforming the evils of society will be greatly increased, as teachers, as writers, as
-            mothers, as members of society, their power for good will be incalculably enlarged...It
-            is my wish that the institution be so conducted, that during all coming time it shall do
-            the most good to the greatest number. I would have it a perennial blessing to the
-            country and the world."</p>
-
-         <p>[from Sophia Smith's vision: <extref href="http://clio.fivecolleges.edu/smith/sophia/"
-               >"A perennial blessing to the country and the world"</extref>] </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Sophia Smith, benefactor of Smith College, was born in Hatfield, MA on August 27, 1796. She was the fourth of seven children of Joseph Smith, a prosperous farmer, and his wife, Lois White Smith. Of the seven Smith offspring, three died young and only Joseph Jr. married, producing no heirs. Sophia, her sister Harriet and brother Austin shared the family homestead which still stands at 22 Main Street in Hatfield. </p>
+         <p> Harriet Smith's death in 1859, followed by Austin's in 1861, left Sophia a wealthy woman attempting to make provisions for the Smith family fortune. Deeply religious, Sophia turned to her pastor, John Morton Greene, as well as other advisers, to discuss her options. Considered were bequests to Amherst College (Reverend Greene's alma mater) and to the nearby Mount Holyoke Female Seminary.</p>
+         <p> Initially, Sophia settled on a variety of projects, including a school for the deaf, a logical choice in light of her own struggles with impaired hearing. Thus, Smith College may, at least in part, owe its very existence to the fact that John Clarke died before she did, endowing a school for the deaf (the Clarke School in Northampton) and prompting Sophia to abandon her plan. </p>
+         <p> Sophia Smith died on June 12, 1870. The "Last Will and Testament of Miss Sophia Smith" was completed in March of 1870, nine years after her first meeting about the matter with John Greene. This final version supported "the establishment and maintenance of an institution for the higher education of young women, with the design to furnish for my own sex means and facilities for education equal to those which are afforded now in our Colleges to young men."</p>
+         <p> The will went on to state: "It is my opinion that by the education of women, what are called their 'wrongs' will be redressed, their wages adjusted, their weight of influence in reforming the evils of society will be greatly increased, as teachers, as writers, as mothers, as members of society, their power for good will be incalculably enlarged...It is my wish that the institution be so conducted, that during all coming time it shall do the most good to the greatest number. I would have it a perennial blessing to the country and the world."</p>
+         <p> [from Sophia Smith's vision: <extref href="http://clio.fivecolleges.edu/smith/sophia/">"A perennial blessing to the country and the world"</extref>]</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The papers consist of her personal journal from 1861 to 1870, original correspondence to
-            Mary Lyon Bliss, family papers and memorabilia including deeds and pew rent information,
-            photographs, printed biographical and genealogical material, information about the Smith
-            homestead in Hatfield, MA and volumes from her home library.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The papers consist of her personal journal from 1861 to 1870, original correspondence to Mary Lyon Bliss, family papers and memorabilia including deeds and pew rent information, photographs, printed biographical and genealogical material, information about the Smith homestead in Hatfield, MA and volumes from her home library.</p>  
       </scopecontent>
-      <arrangement id="scope-arr">
-         <p>The Sophia Smith Papers are composed of seven (7) series: <list>
-               <item>I. Biographical Material</item>
-               <item>II. Correspondence</item>
-               <item>III. Journals</item>
-               <item>IV. Memorabilia</item>
-               <item>V. Photographs</item>
-               <item>VI. Publications about Hatfield</item>
-               <item>VII. Personal Library</item>
-            </list>
-         </p>
-
-         <p>Series I: Biographical Material contains newspaper clippings, publications, photographs,
-            copies of deeds, Smith Family genealogy, copies of Sophia Smith's will, and information
-            about the Smith Homestead in Hatfield, MA. The materials range in date from 19th century
-            to the present.</p>
-
-         <p>Series II: Correspondence contains a letter to Mary Lyon Bliss, dated April 4, 1866.</p>
-
-         <p>Series III: Journals (1861-1870) consist of journals documenting Sophia Smith's thoughts
-            and personal reflections, mostly of a religious nature, as she struggles with the second
-            half of her life.</p>
-         <p> Series IV: Memorabilia contains pamphlets, a copy of a sampler by Sophia Smith, and
-            other ephemera documenting Smith's role in establishing Smith College.</p>
-         <p> Series V: Photographs contains a small number of known images of Sophia Smith.</p>
-
-         <p>Series VI: Publications about Hatfield include the centennial history of the town and
-            documents the role of the Smith Family in the community.</p>
-
-         <p>Series VII: Personal Library contains a selection of volumes from the Smith family
-            household with publication dates ranging from 1810 until 1870.</p>
+      <arrangement id="aspace_scope-arr">
+         <head>Arrangement</head>
+         <p>The Sophia Smith Papers are composed of seven (7) series:</p>    
+         <list type="ordered">
+            <item>I.	Biographical Material</item>
+            <item>II. Correspondence</item>
+            <item>III.	Journals</item>
+            <item>IV.	Memorabilia</item>
+            <item>V.	Photographs</item>
+            <item>VI.	Publications about Hatfield</item>
+            <item>VII. Personal Library</item>
+         </list>
+         <p>Series I: Biographical Material contains newspaper clippings, publications, photographs, copies of deeds, Smith Family genealogy, copies of Sophia Smith's will, and information about the Smith Homestead in Hatfield, MA. The materials range in date from 19th century to the present.</p>
+         <p> Series II: Correspondence contains a letter to Mary Lyon Bliss, dated April 4, 1866.</p>
+         <p> Series III: Journals (1861-1870) consist of journals documenting Sophia Smith's thoughts and personal reflections, mostly of a religious nature, as she struggles with the second half of her life.</p>
+         <p>  Series IV: Memorabilia contains pamphlets, a copy of a sampler by Sophia Smith, and other ephemera documenting Smith's role in establishing Smith College.</p>
+         <p>  Series V: Photographs contains a small number of known images of Sophia Smith.</p>
+         <p> Series VI: Publications about Hatfield include the centennial history of the town and documents the role of the Smith Family in the community.</p>
+         <p> Series VII: Personal Library contains a selection of volumes from the Smith family household with publication dates ranging from 1810 until 1870.</p>  
       </arrangement>
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Smith College owns copyright to any published material relating to college events and
-            activities. Copyright to materials created by other individuals may be owned by those
-            individuals or their heirs or assigns. It is the responsibility of the researcher to
-            identify and satisfy the holders of all copyrights. Permission must be obtained from the
-            Smith College Archives to publish reproductions or quotations beyond "fair use." </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Sophia Smith papers, Box #, Smith College Archives </p>
+         <p>Sophia Smith papers, Smith College Archives, CA-MS-00004, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The materials in the Sophia Smith papers were donated by members of the John M. Green
-            family as well as by interested alumnae over time. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The materials in the Sophia Smith papers were donated by members of the John M. Green family as well as by interested alumnae over time.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Nanci A. Young</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Nanci A. Young</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <geogname encodinganalog="651" source="lcsh">Hatfield (Mass.) -- History --
-            Sources</geogname>
-         <persname encodinganalog="600" source="lcnaf"> Smith, Sophia, 1796-1870 -- Will</persname>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- History -- Sources </corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- endowments</corpname>
-
-
-      </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>For additional information about the founding of Smith College please consult: <list>
-               <item>RG 10. John M. Greene papers</item>
-               <item>RG 30. Laurenus Clark Seelye papers</item>
-               <item>
-                  <extref href=" http://clio.fivecolleges.edu/smith/">Smith History Digital
-                     Collections</extref></item>
-            </list>
-         </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <p>For additional information about the founding of Smith College please consult:</p>    
+         <list type="ordered">
+            <item>RG 10. John M. Greene papers</item>
+            <item>RG 30. Laurenus Clark Seelye papers</item>
+            <item>
+               <extref href=" http://clio.fivecolleges.edu/smith/">Smith History Digital Collections</extref>
+            </item>
+         </list>
       </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <controlaccess>
+         <geogname encodinganalog="651" source="lcsh">Hatfield (Mass.) -- History -- Sources</geogname>
+         <persname encodinganalog="600" source="naf">Smith, Sophia, 1796-1870 -- Will</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- History -- Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- endowments</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Biographical Material</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_5b3593433fe2b965bae5631d20a1b874" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
                   <unittitle>Collections Listing</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_49ec0d8a2bc38e5840d39265a2e15f9a"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_4e4c90884c4102de9671b255bab246d3"
+                             parent="aspace_49ec0d8a2bc38e5840d39265a2e15f9a"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_01e5fe10e654a528eec3354d2bca48c4" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
                   <unittitle>Albums with Sophia Smith signatures</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_7c9b2d0003c8ce65115e4a9a490edf06"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_989d62789efbd5d4950543fff9337e70"
+                             parent="aspace_7c9b2d0003c8ce65115e4a9a490edf06"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8a6006e198ac4505bb26df3b563cb00d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
                   <unittitle>Booklist (from Homestead)</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_a7786355d764e46eb874a5e41d2abaa1"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_e3aa8619d68a3ac33aaa9d4fa8f02f92"
+                             parent="aspace_a7786355d764e46eb874a5e41d2abaa1"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_df54a6f6a4c50b35ac0f1ca2e5ebf202" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
                   <unittitle>Centennial and other Anniversaries</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_2b9e7f37b8d497f81a78260e674da855"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_35610080dd27832fd06e38884f10af84"
+                             parent="aspace_2b9e7f37b8d497f81a78260e674da855"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_eecc01bc041f3d2bdbf943c4c1ff1cd6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
                   <unittitle>Centennial: Photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_98ea5417ca13a504051ca4ef68048b5e"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_b8b58eb886328a2d8513628b9ededd27"
+                             parent="aspace_98ea5417ca13a504051ca4ef68048b5e"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6a7ad9538c510aa7c38786dc2ea72b15" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
                   <unittitle>Centennial: Publications</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_91c2306502e3ea4d91ea7cd1403391f2"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_450f629d60c880522ffde2772a00034c"
+                             parent="aspace_91c2306502e3ea4d91ea7cd1403391f2"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1e68528cdb96cd7e86e744fd6a3f356f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
                   <unittitle>Deafness</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_818a907828f783ac056a5dfb38a0bfde"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_612e57a92c33339ed2692e3377a0e8b2"
+                             parent="aspace_818a907828f783ac056a5dfb38a0bfde"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a3b049b8a5bf3594dff85fda7b58fd57" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
                   <unittitle>Genealogy: general</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_f9c66988d88c30e029ab2bc548221c4b"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_7f4a73b1c4ae3c8fdd674a1181c4f7bc"
+                             parent="aspace_f9c66988d88c30e029ab2bc548221c4b"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9ca5fd28d3d3ec2f5c4e216d4c540b67" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
                   <unittitle>Genealogy: oversized</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_836ed0d59dd12c2de2bf632c6506dc0c"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_f3eb878350a46dd3961d324b37cc4a30"
+                             parent="aspace_836ed0d59dd12c2de2bf632c6506dc0c"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a987d0918e480a55332e05d65753a113" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
                   <unittitle>Genealogy: deeds and pew rents</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_9a631e20cb745721684498ea886cf864"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_b2e213f28623a8aa2faa20d4ffd24d96"
+                             parent="aspace_9a631e20cb745721684498ea886cf864"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b87108707621087385f069b01232fee5" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
                   <unittitle>Genealogy: pew rents</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_4d562752934e8a2b153a4345dbfc196a"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_e8c48069689412250dd82f5122f0ea51"
+                             parent="aspace_4d562752934e8a2b153a4345dbfc196a"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ea6e6f4c43bf4196d8e17bea0aeaff20" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">12</container>
                   <unittitle>Genealogy: photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_4acc05505f4a5bae424fd474765ac890"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_74b67a77671d9475edbd47f802e4041f"
+                             parent="aspace_4acc05505f4a5bae424fd474765ac890"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b71d09dc0e142d53162d8d24409d4952" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">13</container>
                   <unittitle>Genealogy: Smith, Austin</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_35b45b0bebc31c93f9e3b794627610d4"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_82dee80cc55ce247ab8d9ba00176b791"
+                             parent="aspace_35b45b0bebc31c93f9e3b794627610d4"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0274101fe0d8ec6502a6ddaead9e7161" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">14</container>
                   <unittitle>Genealogy: Smith, Joseph</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_d6f219e2a1af3f14468ceee90ad2d5db"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_4d3a64a7643c2643541dd4a9cbbb2e78"
+                             parent="aspace_d6f219e2a1af3f14468ceee90ad2d5db"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8c6706fd5f709c5828050c1d8cbc5950" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">15</container>
                   <unittitle>Genealogy: Smith, Oliver</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_f1ade1c96ad9da392a12f57ac106d239"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_bd0261832e0ab718abbe8dff3b1851c8"
+                             parent="aspace_f1ade1c96ad9da392a12f57ac106d239"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_086a974d5d8d6fc797ce450a097c4fd2" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">16</container>
                   <unittitle>Genealogy: publication Oliver Smith, Esquire</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_b1e10f926defc7514634f19a83fce528"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_4580a18f084486af9236408112d57273"
+                             parent="aspace_b1e10f926defc7514634f19a83fce528"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_37630f30ec4a6d74f959c32f77d0d17d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Genealogy: wills <unitdate>&lt;p&gt;</unitdate>
-                  </unittitle>
+                  <unittitle>Genealogy: wills</unittitle>
+                  <unitdate calendar="gregorian" era="ce"/>
+                  <container altrender="Legal document box"
+                             id="aspace_def91baf0a1028ca73ea05c5ca2a5ae0"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_6ee7df7a35d0943aa0d200319d4ba02f"
+                             parent="aspace_def91baf0a1028ca73ea05c5ca2a5ae0"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fe9a162e00b5ce53f091bc8f9e93d042" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">18</container>
                   <unittitle>Genealogy: Smith Charities, Inc.</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_0345fc95cbefe975e953281d01d3d183"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_fe920386792d1549834f5c5ea0d280fd"
+                             parent="aspace_0345fc95cbefe975e953281d01d3d183"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0823c16b43bc4abd14cd43a639e5591c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">19</container>
                   <unittitle>Hatfield, Massachusetts</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_e9469807c358067ba067b13f19393882"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_dd702259d551ebbe0415b7fab93afd0a"
+                             parent="aspace_e9469807c358067ba067b13f19393882"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4176b2bbb41bc8cfec3b342316325624" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">20</container>
                   <unittitle>Hatfield, MA: photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_5963d871e5f490f10380bc6f4abee624"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_335da06a86117508b9c9bb81d1fbd9a0"
+                             parent="aspace_5963d871e5f490f10380bc6f4abee624"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f1536f98608d93aae0394f94622c3ce0" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">21</container>
                   <unittitle>Sophia Smith Homestead</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1788bf8dd4654e16362153913a6c3491"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_c494a16ee9cc09d889189d4d38898703"
+                             parent="aspace_1788bf8dd4654e16362153913a6c3491"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1ce01522c3b9ea9bd5a7a740311c2248" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">22</container>
                   <unittitle>Sophia Smith Homestead: Chintz</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e375f7428325fba7cf5b7c658e99a552"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_e08e6f1b73e50afd678684f912c84aed"
+                             parent="aspace_e375f7428325fba7cf5b7c658e99a552"
+                             type="folder">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ae49dbb6c788ec43c01e7665c7912388" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">23</container>
                   <unittitle>Sophia Smith Homestead: Photographs</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_59ffacb4e942a42b61267f80a4b257dc"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_db965a9a56889ae8708b072c0011a40d"
+                             parent="aspace_59ffacb4e942a42b61267f80a4b257dc"
+                             type="folder">23</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f0f373b68e90fc44b7d6c17fd9642f48" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">24</container>
                   <unittitle>Sophia Smith Homestead: Sampler</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_06508c692b0766f8a4fb847ce681f5ef"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_d7d9c8dc0d727c5e9f531db86125bd2b"
+                             parent="aspace_06508c692b0766f8a4fb847ce681f5ef"
+                             type="folder">24</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2f16114861eb4d47cdc25e5441449001" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">25</container>
                   <unittitle>Sophia Smith Homestead: House built in 1865</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_58c30835ef127de0a858693f595f34ee"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_2b709f88be439a66258f6c648152c804"
+                             parent="aspace_58c30835ef127de0a858693f595f34ee"
+                             type="folder">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_56156b06732bea81f4a54075b5bfc442" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">26</container>
                   <unittitle>Printed Matter, general</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_81ee8ec13e4da41e7550438564e1434f"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_13b929f3ee01193fe39dbce4f6e54529"
+                             parent="aspace_81ee8ec13e4da41e7550438564e1434f"
+                             type="folder">26</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_91ab1fce04d408ff617a5e98b7f42bfb" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">27</container>
                   <unittitle>Ring</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_703161da0691fdcfb5bb48275a47dc27"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_7d28b4a42c3ec14f573740a7e1bf72fd"
+                             parent="aspace_703161da0691fdcfb5bb48275a47dc27"
+                             type="folder">27</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_76beef23d762bd1d7d4ee7a60aa885b7" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">28</container>
                   <unittitle>Wills</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_51f208c351baf41022532f150e5c0734"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_75c8eb56cee08198cd90441baed8ce31"
+                             parent="aspace_51f208c351baf41022532f150e5c0734"
+                             type="folder">28</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4101eb79372748d03d873f68f10e873f" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">29</container>
                   <unittitle>Sophia Smith Window</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_0d7183f2bd33828c7947b61567bc8f59"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_9ed1ed100818ab137784ecc2ae254c16"
+                             parent="aspace_0d7183f2bd33828c7947b61567bc8f59"
+                             type="folder">29</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_d7626153f57bc2f3c1fcb9792269f958" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">30</container>
-                  <unittitle>Mary Lyon Bliss <unitdate>04/04/1866</unitdate>
-                  </unittitle>
+                  <unittitle>Mary Lyon Bliss</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1866-04-04/1866-04-04">04/04/1866</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9382b32a913771f86876cbc136834168"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_e2fed05ce1f9aaf6b9949e24350a5647"
+                             parent="aspace_9382b32a913771f86876cbc136834168"
+                             type="folder">30</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Journals</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_48e42a4483571a4bb715da5b59c66bde" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Journals <unitdate>1861 - 1870</unitdate>
-                  </unittitle>
+                  <unittitle>Journals</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1861/1870"
+                            type="inclusive">1861 - 1870</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9e1592857f1402c85948554183e8b64a"
+                             label="Mixed Materials [310183630025905]"
+                             type="box">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_991980235beebbf6bca593a1ec182aa9" level="file">
+               <did>
+                  <unittitle>Typescript of Journal</unittitle>
+                  <container altrender="Half letter document box"
+                             id="aspace_5034d6191c8593230c749c457643aae3"
+                             label="Mixed Materials [310183630025939]"
+                             type="box">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1a1cf881d6ecb117611ae885c3cb7439" level="file">
+               <did>
+                  <unittitle>Transcript with annotations of Journal of Sophia Smith by John M. Greene</unittitle>
+                  <container altrender="Half letter document box"
+                             id="aspace_2be955183ade3c58f9b5c49a155bfba3"
+                             label="Mixed Materials [310183630025947]"
+                             type="box">29</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Memorabilia</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_772d3fd9550383c5fff19042ae8d5c3c" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">31</container>
                   <unittitle>General</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_08e13ba40f370880b996cf8850d740ee"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_f0ded89b3db2125c85e2d07baf45a3ee"
+                             parent="aspace_08e13ba40f370880b996cf8850d740ee"
+                             type="folder">31</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1820bc091eb494e9c4a3935c31d5a7da" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">32</container>
                   <unittitle>19th &amp; 20th century materials</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3cd140b04f80b774a15bd8d208d2f1c0"
+                             label="Mixed Materials [310183630025871]"
+                             type="box">25</container>
+                  <container id="aspace_ca8d2069004014800e4f738a76bfd749"
+                             parent="aspace_3cd140b04f80b774a15bd8d208d2f1c0"
+                             type="folder">32</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>Series V: Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_e50316cb9781d770b5467afb07ac2caf" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">33</container>
                   <unittitle>Photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_e0b24d72f9cb918e523cc8d4a55137f1"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_b19a476121d4b8b1ee55a3c5b3f7a5b2"
+                             parent="aspace_e0b24d72f9cb918e523cc8d4a55137f1"
+                             type="folder">33</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0e84b5529c064d6833cfce7582dde1ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">34</container>
                   <unittitle>Photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_bff69e3ad1a6bb4f5a6707df36c2113e"
+                             label="Mixed Materials [310183630025863]"
+                             type="box">24</container>
+                  <container id="aspace_264f0d85272664af01c21d316242b0d3"
+                             parent="aspace_bff69e3ad1a6bb4f5a6707df36c2113e"
+                             type="folder">34</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser6" level="series">
+         <c01 id="aspace_list-ser6" level="series">
             <did>
                <unittitle>Series VI: Publications about Hatfield</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_85d174a07123d80dd9b22c0a7a024730" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">35</container>
-                  <unittitle>Publications About Hatfield</unittitle>
+                  <unittitle>Publications About Hatfield (missing 10/30/18 - folder 35)</unittitle>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d69f07e8678a96aadbedb481b0d2a90" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">36</container>
-                  <unittitle>Publications About Hatfield</unittitle>
+                  <unittitle>Publications About Hatfield (missing 10/30/18 - folder 36)</unittitle>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser7" level="series">
+         <c01 id="aspace_list-ser7" level="series">
             <did>
                <unittitle>Series VII: Personal Library</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_cfcaeeaebaa55f7787d4130d25043bf1" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>A Comprehensive View of the Leading and Most Important Principles of
-                     Natural and Revealed Religion <unitdate>1815</unitdate>
-                  </unittitle>
+                  <unittitle>A Comprehensive View of the Leading and Most Important Principles of Natural and Revealed Religion</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1815/1815">1815</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_513207fc0a99fff57faa5bebd9ceee35"
+                             label="Mixed Materials [310183630025913]"
+                             type="box">29.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f4a806e962776468f8c1c9636089ee2a" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>A Compendium on the System of Divine Truth <unitdate>1824</unitdate>
-                  </unittitle>
+                  <unittitle>A Compendium on the System of Divine Truth</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1824/1824">1824</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ad406d3716e641ef78b066c91a71828"
+                             label="Mixed Materials [310183630025913]"
+                             type="box">29.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7c41ad336d77ef60dd4e0fac1fed3bfd" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Conversations on Chemistry <unitdate>1820</unitdate>
-                  </unittitle>
+                  <unittitle>Conversations on Chemistry</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1820/1820">1820</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_78f8880103096dccae4738f7c1ac3785"
+                             label="Mixed Materials [310183630025913]"
+                             type="box">29.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_857ed35d99809f66784a3b135de3adf7" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Thaddeus of Poland <unitdate>1817</unitdate>
-                  </unittitle>
+                  <unittitle>Thaddeus of Poland</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1817/1817">1817</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_256033d14820fbab45e6636bff82040a"
+                             label="Mixed Materials [310183630025913]"
+                             type="box">29.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c4cfcabb124562684e3561d6cae87ccc" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>A Compendium of Pysiology and Systematic Botany
-                        <unitdate>1820</unitdate>
-                  </unittitle>
+                  <unittitle>A Compendium of Pysiology and Systematic Botany</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1820/1820">1820</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_538bd30b7d86fa10ee8f7884219c9e1b"
+                             label="Mixed Materials [310183630025921]"
+                             type="box">29.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e8dfb0efad6296cbc7a8b17cb91d5f5e" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Sabbath Hymn Book <unitdate>1858</unitdate>
-                  </unittitle>
+                  <unittitle>Sabbath Hymn Book</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1858/1858">1858</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9635854f589d4e482181548b47dd448b"
+                             label="Mixed Materials [310183630025921]"
+                             type="box">29.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cfded83640f0c97ac2a61732ad682e23" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Barnes' Family Prayers <unitdate>1863</unitdate>
-                  </unittitle>
+                  <unittitle>Barnes' Family Prayers</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_71a4844195965f6bf92154c2016dba6c"
+                             label="Mixed Materials [310183630025921]"
+                             type="box">29.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b3a29bee56db1a2c6e92a7c6cda9d632" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Little Women <unitdate>1870</unitdate>
-                  </unittitle>
+                  <unittitle>Little Women</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1870/1870">1870</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9a1211c03ce296274958f701dc40fb98"
+                             label="Mixed Materials [310183630234507]"
+                             type="box">29.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f8b46fa21f2d78a22b6fc00496724c4b" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>The Plays of William Shakespeare, volume I <unitdate>1824</unitdate>
-                  </unittitle>
+                  <unittitle>The Plays of William Shakespeare, volume I</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1824/1824">1824</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e1c598cfc1be8b40a88204c56b7fc0e9"
+                             label="Mixed Materials [310183630234507]"
+                             type="box">29.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cff2f71c04dc77df98f8c744d1ab32d2" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Holy Bible <unitdate>1859</unitdate>
-                  </unittitle>
+                  <unittitle>Holy Bible</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1859/1859">1859</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fd01076350623fcfdfcc21f8cc65100d"
+                             label="Mixed Materials [310183630234507]"
+                             type="box">29.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_20635f39c21930327518a40de9a05ac8" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Kardoo, the Hindoo Girl <unitdate>1869</unitdate>
-                  </unittitle>
+                  <unittitle>Kardoo, the Hindoo Girl</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1869/1869">1869</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a280b25518f9d2cfdedbb4175f3daf01"
+                             label="Mixed Materials [310183630234564]"
+                             type="box">29.4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bea1c461ea1054e56cb7d7ffa4758baf" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>The Corner Stone <unitdate>1834</unitdate>
-                  </unittitle>
+                  <unittitle>The Corner Stone</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1834/1834">1834</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_58420ff8ccde71dbdc33c1b0a1b9e1eb"
+                             label="Mixed Materials [310183630234564]"
+                             type="box">29.4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5ce205c806dce0db7d5da373b1542875" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Thaddeus of Warsaw, volume III <unitdate>1817</unitdate>
-                  </unittitle>
+                  <unittitle>Thaddeus of Warsaw, volume III</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1817/1817">1817</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bc421a964964f22d39131237ae37417d"
+                             label="Mixed Materials [310183630234564]"
+                             type="box">29.4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_96c1b442452b2897861a25e3d4ad3c90" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Morrisons' Strangers' Guide and Etiquette for Washington City
-                        <unitdate>1864</unitdate>
-                  </unittitle>
+                  <unittitle>Morrisons' Strangers' Guide and Etiquette for Washington City</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1864/1864">1864</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_425025a07eaba291911b0a1407cefbea"
+                             label="Mixed Materials [310183630234564]"
+                             type="box">29.4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_28e31337b8867478099b84b4613b89af" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>The Plays of William Shakespeare, volume II <unitdate>1824</unitdate>
-                  </unittitle>
+                  <unittitle>The Plays of William Shakespeare, volume II</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1824/1824">1824</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e35b4bfed0a4610906b353f58a7adffe"
+                             label="Mixed Materials [310183630234564]"
+                             type="box">29.4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_222e26dab813a0590a1c7923d0ca2d42" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>The Happy Choice <unitdate>1847</unitdate>
-                  </unittitle>
+                  <unittitle>The Happy Choice</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1847/1847">1847</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b49e7a410c473551b8d5a41ad73b49ec"
+                             label="Mixed Materials [310183630234622]"
+                             type="box">29.5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_19e41812f2d5c4474906f77adf8bb550" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>The Still Hour <unitdate>1860</unitdate>
-                  </unittitle>
+                  <unittitle>The Still Hour</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1860/1860">1860</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_91eac58b7c52a3f675242387f83aaa66"
+                             label="Mixed Materials [310183630234622]"
+                             type="box">29.5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_06b7e1bb3c9e486fdbff93a44e4b0490" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>Adjutant Steams <unitdate>1862</unitdate>
-                  </unittitle>
+                  <unittitle>Adjutant Steams</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1862/1862">1862</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9f622a9b3c1b85429738b9674b05dd9a"
+                             label="Mixed Materials [310183630234622]"
+                             type="box">29.5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_92f75a703d860dca531daa260e462163" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>The Young Christian Directed <unitdate>1854</unitdate>
-                  </unittitle>
+                  <unittitle>The Young Christian Directed</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1854/1854">1854</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3230c01a3953e6f2f09fba6a014b3034"
+                             label="Mixed Materials [310183630234622]"
+                             type="box">29.5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_28e25d564fe3cad44b08021d3d1fd440" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>A Place in the Memory <unitdate>1851</unitdate>
-                  </unittitle>
+                  <unittitle>A Place in the Memory</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1851/1851">1851</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8c3376b2118be74e36f30e51d3d001d2"
+                             label="Mixed Materials [310183630234622]"
+                             type="box">29.5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_13468c85b4ce762aa7b337de941a38de" level="file">
+               <did>
+                  <unittitle>Atlantic Monthly (1864-1865)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1864/1865"
+                            type="inclusive">1864-1865</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_647f0e380d9a23213040a4cb8574b62b"
+                             label="Mixed Materials [310183630025889]"
+                             type="box">23a</container>
+               </did>
+            </c02>
+            <c02 id="aspace_de5446511953d39daaaf271569fb5f7b" level="file">
+               <did>
+                  <unittitle>Personal Copies</unittitle>
+                  <container altrender="Card file box (12d x 5h x 8w)"
+                             id="aspace_d75a717a8205f4de2ec52e721d3f5f6f"
+                             label="Mixed Materials [310183630025897]"
+                             type="box">23b</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
