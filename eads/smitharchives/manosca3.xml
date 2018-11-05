@@ -1,840 +1,1151 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-    langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-    scriptencoding="iso15924">
-
-    <eadid countrycode="us" mainagencycode="manosca"
-      publicid="-//us::manosca//TEXT us::manosca::manosca3.xml//EN">manosca3</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>Historical Postcard Collection, 1900-[ongoing] </titleproper>
-        <subtitle>Finding Aid</subtitle>
-        <author>Finding aid prepared by manosca.</author>
-        <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Smith College Archives</publisher>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-        <date>© 2003 </date>
-        <p>Smith College. All rights reserved.</p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook
-        Hopkins. <date>2003-06-16</date>
-      </creation>
-      <langusage>Finding aid written in English.</langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2005-09-23">2005-09-23</date>
-        <item>manosca3 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter id="front">
-    <titlepage>
-      <publisher>Smith College Archives </publisher>
-      <titleproper>Historical Postcard Collection, 1900-[ongoing] </titleproper>
-      <subtitle>Finding Aid</subtitle>
-      <num>RG 10 </num>
-
-      <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      <p>© 2003 Smith College. All rights reserved.</p>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="recordgrp" relatedencoding="MARC21">
-    <did id="main">
-      <head>Collection Overview</head>
-      <origination label="Creator:">
-        <corpname encodinganalog="100" source="lcnaf">Smith College.</corpname>
-      </origination>
-      <unittitle encodinganalog="245$a" label="Title:">Historical Postcard Collection</unittitle>
-      <unitdate encodinganalog="245$f" type="inclusive">1900-[ongoing]</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-        repositorycode="manosca">RG 10 UUID:53ff908c-2aa9-4c05-9c0f-76a6b70a1caf</unitid>
-      <physdesc label="Quantity:">
-        <extent encodinganalog="300$a">2 boxes</extent>
-        <extent encodinganalog="300$a">(.9 linear ft.)</extent>
-      </physdesc>
-      <repository label="Location:">
-        <corpname>Smith College Archives</corpname>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-      </repository>
-      <abstract encodinganalog="520$a" label="Abstract:">Postcards depicting various campus
-        buildings and grounds and local scenes. Images of the Grecourt gates, Paradise Pond, campus
-        houses and administrative and teaching buildings. </abstract>
-      <langmaterial label="Language of Material:">
-        <language langcode="eng">English.</language>
-      </langmaterial>
-    </did>
-    <bioghist id="bioghist">
-
-      <p> The materials in this collection have been accumulated over the years from various
-        sources.</p>
-    </bioghist>
-    <scopecontent id="scope">
-
-      <p>The Postcard Collection contains cancelled and unmarked postcards dating from the college's
-        early years to the present with the bulk of the collection falling between 1900 and 1950.
-        The postcards are black and white, monochrome and color; some of them contain written
-        messages. The postcards depict various campus and local scenes including most of the campus
-        buildings and landmarks; local landmarks, including private homes and public areas in the
-        pioneer valley; and various events, people and places important to the college. Included in
-        the collection are sets and a booklet of postcards picturing the campus and Northampton. Of
-        special interest are images of the WAVES, Grecourt gates (France) and President Calvin
-        Coolidge's house. One item of particular interest is a special issue postcard of Northampton
-        scenes, filed under "Northampton environs," that features an accordion style, pop-out
-        section. </p>
-    </scopecontent>
-    <arrangement id="scope-arr">
-
-      <p>The postcards are arranged alphabetically by subject. </p>
-    </arrangement>
-    <descgrp id="admin" type="admininfo">
-      <head>Information on Use</head>
-      <descgrp type="admininfo">
-        <head>Terms of Access and Use</head>
-        <accessrestrict encodinganalog="506" id="admin-access">
-          <p>The collection is open to research according to the regulations of the Smith College
-            Archives. </p>
-        </accessrestrict>
-        <userestrict encodinganalog="540" id="admin-use">
-          <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the collection must be requested from the College Archives. The Archives has no
-            information on the literary rights of the collection and researchers are responsible for
-            determining any question of copyright. </p>
-        </userestrict>
-      </descgrp>
-      <prefercite id="admin-cite">
-        <head>Preferred Citation</head>
-        <p>Please use the following format when citing materials from this collection:</p>
-        <p>Historical Postcard Collection, Box #, Smith College Archives.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca3</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Historical Postcard Collection. <num>CA.MS.00003</num>
+            </titleproper>
+            <author>Finding aid prepared by manosca.</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-05 13:54:11 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca3 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-5</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="recordgrp">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Historical Postcard Collection</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College.</corpname>
+         </origination>
+         <unitid>CA.MS.00003</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.0 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   certainty="inferred"
+                   era="ce"
+                   type="inclusive">1900-[ongoing]</unitdate>
+         <abstract id="aspace_78610b05e65d3042f855090e0a0601eb">Postcards depicting various campus buildings and grounds and local scenes. Images of the Grecourt gates, Paradise Pond, campus houses and administrative and teaching buildings.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The materials in this collection have been accumulated over the years from various sources.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Postcard Collection contains cancelled and unmarked postcards dating from the college's early years to the present with the bulk of the collection falling between 1900 and 1950. The postcards are black and white, monochrome and color; some of them contain written messages. The postcards depict various campus and local scenes including most of the campus buildings and landmarks; local landmarks, including private homes and public areas in the pioneer valley; and various events, people and places important to the college. Included in the collection are sets and a booklet of postcards picturing the campus and Northampton. Of special interest are images of the WAVES, Grecourt gates (France) and President Calvin Coolidge's house. One item of particular interest is a special issue postcard of Northampton scenes, filed under "Northampton environs," that features an accordion style, pop-out section.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-arr">
+         <head>Arrangement</head>
+         <p>The postcards are arranged alphabetically by subject.</p>  
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>Historical Postcard Collection, Smith College Archives, CA-MS-00003, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <altformavail encodinganalog="530" id="altform" type="digital">
-        <head>Additional Formats</head>
-        <p>Images from this collection are also available online as part of the <extref
-            href="http://clio.fivecolleges.edu/smith/postcards/">Five College Archives Digital
-            Access Project</extref>.</p>
+      <altformavail id="aspace_altform">
+         <head>Additional Formats</head>
+         <p>Images from this collection are also available online as part of the <extref href="http://clio.fivecolleges.edu/smith/postcards/">Five College Archives Digital Access Project</extref>.</p>  
       </altformavail>
-      <accruals encodinganalog="584" id="admin-accruals">
-        <head>Additions to the Collection</head>
-        <p>Additions to these records arrive in the College Archives on a regular basis. Please
-          contact the College Archives for the most up-to-date information. </p>
+      <accruals id="aspace_admin-accruals">
+         <head>Additions to the Collection</head>
+         <p>Additions to these records arrive in the College Archives on a regular basis. Please contact the College Archives for the most up-to-date information.</p>  
       </accruals>
-      <descgrp type="admininfo">
-        <head>History of the Collection</head>
-        <acqinfo id="admin-acqinfo">
-          <p>The materials in this collection have been accumulated over the years from various
-            sources. </p>
-        </acqinfo>
-      </descgrp>
-    </descgrp>
-    <controlaccess id="subj">
-      <head>Search Terms</head>
-
-      <corpname encodinganalog="610" source="lcsh">Smith College--Pictorial works.</corpname>
-      <geogname encodinganalog="651" source="lcsh">Northampton (Mass.)--Pictorial works.</geogname>
-      <corpname encodinganalog="710" source="lcnaf">Smith College.</corpname>
-    </controlaccess>
-    <descgrp id="addinfo" type="add">
-      <head>Additional Information</head>
-      <relatedmaterial id="add-related">
-        <head>Related Material</head>
-        <p>Additional materials may also be found in 80. Alumnae Files, Individual Scrapbooks, 22.
-          Buildings and Grounds, and on the web at http://clio.fivecolleges.edu/smith/. </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Additional materials may also be found in 80. Alumnae Files, Individual Scrapbooks, 22. Buildings and Grounds, and on the web at http://clio.fivecolleges.edu/smith/.</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc id="contlist" type="in-depth">
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Admissions</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Ainsworth Gymnasium</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Albright House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Allen Field</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Alumnae House - interior</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Alumnae House - exterior</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>"The Anchorage" - 103 South Street</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>12 Arnold Avenue</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Athletic Fields</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Baldwin House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Bedford Terrace No. 6</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Bedford Terrace No. 8</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 9</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 13</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 16</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 21</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 22</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Belmont Avenue No. 30</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Boat House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Botanic Gardens</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Burton Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Campus</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Capen House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Chapin House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Clark House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>College Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Comstock House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Calvin Coolidge's Home</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Cushing House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Davis Student Center</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Dawes House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Delta Sigma - 114 South Street</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Dewey House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Dickinson House</unittitle>
-        </did>
-      </c01>
-      <c01 id="duckett_house" level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Duckett House (formerly Southwick House)</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Ellen Emerson House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Elm Street Houses</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Faculty Center</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>The Field House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Franklin King House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gardiner House</unittitle>
-        </did>
-      </c01>
-      <c01 id="gateway_house" level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gateway House</unittitle>
-          <note>
-            <p> see also: President's House </p>
-          </note>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gates (old)</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gillett House</unittitle>
-          <note>
-            <p> see also Northrop House </p>
-          </note>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Grecourt Gates at Smith</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Grecourt, France</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Green Street No. 26</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Green Street No. 30</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Green Street No. 36</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gymnasium: Alumnae</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Gymnasium: Scott</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Hatfield House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Haven House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Chapel: Helen Hills Hills</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Hillyer Art Gallery</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Hockanum Ferry</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Hopkins House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Hubbard House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Infirmary: Elizabeth Mason</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Ivy Day</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Japenese Tea Hut and Garden</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>John M. Greene Hall - interior</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>John M. Greene Hall - exterior</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Jordan House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Juniper Lodge</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Lamont Bridge</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Lanning Fountain</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Laura Scales House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Lawrence House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Library: William Allen Neilson</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44</container>
-          <unittitle>Lilly Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Lyman Plant House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Martha Wilson</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Mendenhall Center for the Performing Arts</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Moliere Celebration</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Morris House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Morrow House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Museum of Art</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Northampton Environs</unittitle>
-        </did>
-      </c01>
-      <c01 id="northrop_house" level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Northrop House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Observatory</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Orchards</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Paradise Pond</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Paradise Road</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Park House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Parsons House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Pierce Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Plymouth Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Pomeroy House</unittitle>
-        </did>
-      </c01>
-      <c01 id="presidents_house" level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>President's House</unittitle>
-          <note>
-            <p> see also: Gateway House </p>
-          </note>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>The Quad</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Sage Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Seelye, President Laurenus Clark</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Seelye Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Sessions House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Sets</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Smith Seal</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Sophia Smith and Smith Homestead</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Southwick House</unittitle>
-          <note>
-            <p> See: Duckett House </p>
-          </note>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Stoddard Hall</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Students' Building</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Talbot House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Tenney House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Tryon Art Gallery</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Tyler House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Wallace House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Washburn House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>WAVES</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>West Street No. 75</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Wilder House</unittitle>
-        </did>
-      </c01>
-      <c01 level="file">
-        <did>
-          <container type="box" label="mixed materials">44.1</container>
-          <unittitle>Ziskind House</unittitle>
-        </did>
-      </c01>
-    </dsc>
-  </archdesc>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The collection is open to research according to the regulations of the Smith College Archives.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The materials in this collection have been accumulated over the years from various sources.</p>  
+      </acqinfo>
+      <controlaccess>
+         <geogname encodinganalog="651" source="lcsh">Northampton (Mass.)--Pictorial works.</geogname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Pictorial works.</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_ab12166e993111fcc2f1e14e4f9b03e1" level="file">
+            <did>
+               <unittitle>Admissions</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_75cf4b0932906fd8eed3049577586282"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_124926a400c1f1caa03cb28a6703bd47" level="file">
+            <did>
+               <unittitle>Ainsworth Gymnasium</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_cc8cc456b2989e785420bd22fd04b42f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_83ef68413eded77ab509f4398f0de661" level="file">
+            <did>
+               <unittitle>Albright House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_06f002d8015e01da16d3648f47547fb1"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4d2714da81381e68fc24ce3293366b40" level="file">
+            <did>
+               <unittitle>Allen Field</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7bc3da051f2c5b7d5fd287d4fb3def66"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f13110e349e4c80c7d77bbe01eb768f1" level="file">
+            <did>
+               <unittitle>Alumnae House - interior</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_1d3f11a3809fcaf2ae0eef2d28f62969"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cad4242b2f98eee3e1d517bb3b9d982b" level="file">
+            <did>
+               <unittitle>Alumnae House - exterior</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_de6da679a5963ba5b529ad03615aa135"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4ac437ac1d3dd0d54138d3acfe20e181" level="file">
+            <did>
+               <unittitle>"The Anchorage" - 103 South Street</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_71a65c9f8b42bb7daf6416a450bfa8ea"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c65b1eef2b6cee5a16c1df764a49458c" level="file">
+            <did>
+               <unittitle>12 Arnold Avenue</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_133ee7a636e25fe3168e49d287bea767"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1c15441355578c5807bac64e3ef35098" level="file">
+            <did>
+               <unittitle>Athletic Fields</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_3adafa31c76a881be65eb9d2ef948468"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cadf4e8d0d0b881b4de83959d95f90d3" level="file">
+            <did>
+               <unittitle>Baldwin House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f190eeb7d49c1df444134400e3d1641d"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bd175b4d2e0e600bd42be818140aed97" level="file">
+            <did>
+               <unittitle>Bedford Terrace No. 6</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_0811e2c1369a47c4c8846aeb62b8e0a8"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3069605d2128f35ff581783bbca84598" level="file">
+            <did>
+               <unittitle>Bedford Terrace No. 8</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_1491a44f74ff2da4869519a55b6b42c5"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_25779bbf01a970b509f755fa0d7ca46b" level="file">
+            <did>
+               <unittitle>Belmont Avenue</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_1fc600b6f8434828f59dd6c5e170d3fc"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e14885d68d3f847352c1c0dd82919e49" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 9</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d0c8bc261b4860572cc027253b1af469"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0d57368c683884e384385a3041b2337a" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 13</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_882343fe1104cbcfe9a949e3ca9605dc"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_85c0068b54436cbc8768da05145e14e3" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 16</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_a04c074a0e5fa180550b8f704daafb23"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_df824dcbdf33430afe0539a25fa208b5" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 21</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_a7d7ebf2547d7ead9ad7765115ce92a0"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_07d783c812a13e3f622fa198dc0fc8f5" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 22</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_5a55391024d4c9136478bf2899ae193f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c7382fb643e0e98f750f5698554473bf" level="file">
+            <did>
+               <unittitle>Belmont Avenue No. 30</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_719bf01d532c76ce3149daba26fc56a6"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bd7d8bea5c3f35bf2f56c525a3ff0429" level="file">
+            <did>
+               <unittitle>Boat House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_db7b837ffd9b45bdacad9d89fee9b0d4"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_98f63f30dc5fe665178bc978ba59b8fe" level="file">
+            <did>
+               <unittitle>Botanic Gardens</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_45185c2c32ff863c8456d04f14b9da99"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_30084a8b38dce5145a9ff2d52fbb9a86" level="file">
+            <did>
+               <unittitle>Burton Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_898600f9a3db01c92e2e414d4dd3648f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_15419179c86bf2726088536642561e98" level="file">
+            <did>
+               <unittitle>Campus</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_3e153a1e9c4df8e775add7a9de64ed59"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f9bd482575d750d6098b36eff581d75c" level="file">
+            <did>
+               <unittitle>Capen House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_06ad329962a119ae6c5f4f51e22cb69e"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cdc57676d47459630cac44e902630c05" level="file">
+            <did>
+               <unittitle>Chapin House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_efd6cd73befadc88bb357932c08a5423"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e09b59b4a2ec6825c37816b78d9b0dd7" level="file">
+            <did>
+               <unittitle>Clark House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_b29e2bab51950d2a67b89984df9fe8ee"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e565c08dc43a89977b6f3345264767e1" level="file">
+            <did>
+               <unittitle>College Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_88a13b3dc1c2d8e66a5388a730078956"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7f670ebb6c0ca2e18b7342e5d86ba6bf" level="file">
+            <did>
+               <unittitle>Comstock House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_c89697b707235bb79402b132ff230f3b"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4a9dee40bae07735d20e4ec4d348f2bd" level="file">
+            <did>
+               <unittitle>Calvin Coolidge's Home</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_4ea4350e8242acb109eeaa9076c9af05"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_18d1bca47694c3fa29c447f9743778d8" level="file">
+            <did>
+               <unittitle>Cushing House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_eb799bcda4c7004a7f62f6c31e53deb3"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_639af796dee7c8cef56a9becf7248068" level="file">
+            <did>
+               <unittitle>Davis Student Center</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_127bca1bf5b66cbbc3fec68722a62fa9"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_31eb5ff031b0b55cee02f802e9d86284" level="file">
+            <did>
+               <unittitle>Dawes House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_2dd8df02283f642c293960f7361664c9"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2367f774ec21c310d154d84c70dc4928" level="file">
+            <did>
+               <unittitle>Delta Sigma - 114 South Street</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_0e9b649def8edd9514cee96efd76db06"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e84edcd9d98e3d30730c7c5cd8392f08" level="file">
+            <did>
+               <unittitle>Dewey House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d054ac17ff494df01999be68a5e688c5"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_98590bfb39bb60b57b9d2f8efdf6bc64" level="file">
+            <did>
+               <unittitle>Dickinson House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d1e42d00f90d3e9e5fdc51850af064ec"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_duckett_house" level="file">
+            <did>
+               <unittitle>Duckett House (formerly Southwick House)</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_6906639c51d58ee19f0f45507b3d8207"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_64dc9319782a922c2e2abcdc93959df5" level="file">
+            <did>
+               <unittitle>Ellen Emerson House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d6741c9137518923840bc91eb05dac79"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_63f2c612dc3c692c8a811af8bb94d57d" level="file">
+            <did>
+               <unittitle>Elm Street Houses</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_dda85e185fb171c3a5dd898b7b68dae9"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_da89ebb088d34461654842096739839d" level="file">
+            <did>
+               <unittitle>Faculty Center</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_422fca65bd61042fce0762e4c118262a"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_744eb14b1cf7c99aa57596a8f12a279e" level="file">
+            <did>
+               <unittitle>The Field House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_85ee30c341da177c5ff536b93f14c0b9"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_571b1943681dad3cb5df508521b58dad" level="file">
+            <did>
+               <unittitle>Franklin King House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_69f051a980abb04d224dc9ad1e7f8314"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1ec757d485d7ad9ca6daadf6e7235c07" level="file">
+            <did>
+               <unittitle>Gardiner House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_980883d1f9196a562c9c35935c36a7cc"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_gateway_house" level="file">
+            <did>
+               <unittitle>Gateway House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f100fb78023af7e96b6fb8ff21c42b84"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+            <odd id="aspace_6d23741add7ea4ec5eb077699905ab27">
+               <head>General</head>
+               <p>see also: President's House</p>
+            </odd>
+         </c01>
+         <c01 id="aspace_cfcde379fd4159f9c1885f4f0669599c" level="file">
+            <did>
+               <unittitle>Gates (old)</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_21092c91f08aebb620dd821728bc9a9d"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_14af6c162149d69a2c2aa9b0d41015c1" level="file">
+            <did>
+               <unittitle>Gillett House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d754ac2912548f4dd22415e02a0c48cb"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+            <odd id="aspace_57a88ed99cbc6884a7026c07cf04a6a0">
+               <head>General</head>
+               <p>see also Northrop House</p>
+            </odd>
+         </c01>
+         <c01 id="aspace_b46a90ffd89046cf2e2d924a28217ae1" level="file">
+            <did>
+               <unittitle>Grecourt Gates at Smith</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_0aec86d0c61030ad3204d5f9f5992383"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c6a186540983517b172c773fdf92bb1b" level="file">
+            <did>
+               <unittitle>Grecourt, France</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7f907fdd725c19d0b417ff03eb806726"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_45dec152b1f3a0bb635a1d03ee88f265" level="file">
+            <did>
+               <unittitle>Green Street No. 26</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_55b9ef609c727ae18763c739ae550873"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d78708fc2278ebe8dfd1e0ec5cb9575d" level="file">
+            <did>
+               <unittitle>Green Street No. 30</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_2ae2640f46ae87ba9a7941c4f6891f3d"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_84ed6b835f7a507a0eee8d7b2db02612" level="file">
+            <did>
+               <unittitle>Green Street No. 36</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7158011651eb7a39f6751375f65536c6"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_25dcdbc5f46805e69b5ac816afa28f6c" level="file">
+            <did>
+               <unittitle>Gymnasium: Alumnae</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_5a4cd3756c9fd4189ea088a3e0a0de87"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_417c1a693119466b2d32af3ea3127a0f" level="file">
+            <did>
+               <unittitle>Gymnasium: Scott</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d1c5cd9aaef9925f0981d22625a90945"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f555fb6e6970ea25bbfde0a9cf199a3e" level="file">
+            <did>
+               <unittitle>Hatfield House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7e5001975ad6aa316abf745f633bf48f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_859073adc2748a7591f6a10f72163fe5" level="file">
+            <did>
+               <unittitle>Haven House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_ebd4d598344f9aa2d83fecebf7943136"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_05391518485102a230dbf8690aa7a16d" level="file">
+            <did>
+               <unittitle>Chapel: Helen Hills Hills</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_243d38b54a8c53bc6722f1fc1cdec6f1"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1c932cb4b841a8afc44a220ab609b220" level="file">
+            <did>
+               <unittitle>Hillyer Art Gallery</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_a3dcae59847fd3570e2318fed85bba86"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0f5193b9cfa424d4f0afcc8a24a75a1f" level="file">
+            <did>
+               <unittitle>Hockanum Ferry</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f81a49f21e96b8c9d2e306ea524eef7f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1da618466ef29eda8e16f61e77da59eb" level="file">
+            <did>
+               <unittitle>Hopkins House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_38c6e78fb89d694148cd20791bebe17e"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ddaef23c77308141a3e25a898ef093f8" level="file">
+            <did>
+               <unittitle>Hubbard House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_628274a35acc34293e2fe058f92beb1b"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b0065087c80f7b2cc804603ab606e8e8" level="file">
+            <did>
+               <unittitle>Infirmary: Elizabeth Mason</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_117e7f0e856f126e438954a24ffade1f"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b4e3ce34aa3fd15e9af0cb0f52aadfac" level="file">
+            <did>
+               <unittitle>Ivy Day</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_809d572bd58157b2ca3a1c01d13c4125"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c0853779139caacd1d21f2659ceae367" level="file">
+            <did>
+               <unittitle>Japenese Tea Hut and Garden</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_e3087050dd9819577b1b4c3d9ecff21a"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8ddd54d2a1d75863461bef74d7da6e69" level="file">
+            <did>
+               <unittitle>John M. Greene Hall - interior</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_230f84e3d347b3ebfc2d45b138e99fa6"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_515a2e6db6d08bbda31295f4125b97de" level="file">
+            <did>
+               <unittitle>John M. Greene Hall - exterior</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_0c938a270b81c28cb69d80cd6caf3e14"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_86f033189088835aebdf103015217893" level="file">
+            <did>
+               <unittitle>Jordan House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_bb08139e8bae3a77491e7fd0a069ab1d"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0adb790a50f06e315ad53b21afbf9152" level="file">
+            <did>
+               <unittitle>Juniper Lodge</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_9c597f60724079f8d66a90d8d0683c49"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f13d83389f453797387968f9c0b17b7a" level="file">
+            <did>
+               <unittitle>Lamont Bridge</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f2d53e19beace4a96b5f6c8881f9a719"
+                          label="Mixed Materials [310183630025954]"
+                          type="box">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a8d69d6ba75585e326cde8a005146970" level="file">
+            <did>
+               <unittitle>Lanning Fountain</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_6b07a8e39c77b10f97e24f609bd4ec44"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_967b245da9bb2d4982ae77fb2f47c6f3" level="file">
+            <did>
+               <unittitle>Laura Scales House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_78714072a8ce8637b718e3cd57545f57"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1df9754f90f5a143e509bcdb54b038a3" level="file">
+            <did>
+               <unittitle>Lawrence House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_a8e28d0f787de7d3a4f98637c2b948d7"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2b3392d21a6ca887403592e3b34ea443" level="file">
+            <did>
+               <unittitle>Library: William Allen Neilson</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d28a00262eed11e3e8338d4a8c3505ae"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_39d8d055d67657d7b11aa0763228452a" level="file">
+            <did>
+               <unittitle>Lilly Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_120bc9ee89d8bf275e786838863dcfb7"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9ed798072c1181f654927cdbf05aa4a4" level="file">
+            <did>
+               <unittitle>Lyman Plant House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_baa359b4954e2bba741a9868b00b3739"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4b664ab0b691173d88b10ad351256845" level="file">
+            <did>
+               <unittitle>Martha Wilson</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_3292facda9ae197e4aec8fb6ddc723a4"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a61b93891d0669dcdb1b733237abce0e" level="file">
+            <did>
+               <unittitle>Mendenhall Center for the Performing Arts</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_1a70de9abd0e05a83d08fdd2cc37be58"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8683563755f40d50e923960d1cd33e4a" level="file">
+            <did>
+               <unittitle>Moliere Celebration</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_b06cc2ba06bf57534b8e1cb74aad5790"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8b524026d23b5b5f6d6c373c25ebefb0" level="file">
+            <did>
+               <unittitle>Morris House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_c29c270dcd95df6d86557beb61160ab8"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1737f66208846e828c8064cae162142e" level="file">
+            <did>
+               <unittitle>Morrow House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_bb26db11eaff24b568e76a88b3b75c20"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ea946a7ddf3d7624d4452e9fbbf6c03b" level="file">
+            <did>
+               <unittitle>Museum of Art</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_6f276ca64d1083971fac9499e9e85c63"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c273fe7882a74ae05fce7b3034a35f56" level="file">
+            <did>
+               <unittitle>Northampton Environs</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_85f1cc82c5fd7d0f5f610a3b77bfad68"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_northrop_house" level="file">
+            <did>
+               <unittitle>Northrop House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_4103948718f52342fcfa0a5c61b0fb81"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_60c2defb8c25e5e25eb232916dafa10f" level="file">
+            <did>
+               <unittitle>Observatory</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_d7d9307956c460db4258ddfb0bc6880e"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_912c2fb6b395e5b318bad07b1951ef16" level="file">
+            <did>
+               <unittitle>Orchards</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_15a3844b6e73f0abb92a095c9432f749"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a5a25f3705e45b17c5196a3eb60f5f03" level="file">
+            <did>
+               <unittitle>Paradise Pond</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_48741e0e942e31d5c2d1fa61922e34ca"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_acba69778ea8eaf06b0cdf2ee4264c15" level="file">
+            <did>
+               <unittitle>Paradise Road</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_92b99e8b1ef9bc0b19bbf5a1d88eaa08"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_737e2948332a7e9541a2d5aad799860d" level="file">
+            <did>
+               <unittitle>Park House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_bed68cb7cd8ef456e672c392ff64aa1e"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4a32a2bd3209baabbea683b7868c5220" level="file">
+            <did>
+               <unittitle>Parsons House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_a0d943fe3fcd6c9b815b4b3e374fc060"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_13c72150b082b5a753fb4aa5916c744c" level="file">
+            <did>
+               <unittitle>Pierce Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_59f67899dc3687547b2378efaab55742"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f461bbab80956f3a6469101e268d809a" level="file">
+            <did>
+               <unittitle>Plymouth Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_90bcf4f857d2054b54f1c6dc90112b6a"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_62260839b4b0397fc5b47a8c88732eac" level="file">
+            <did>
+               <unittitle>Pomeroy House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_45553c3ce48bf0cabfab9b73f26282b9"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_presidents_house" level="file">
+            <did>
+               <unittitle>President's House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_2ee70e944b78bc157d220f61bbdc0491"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+            <odd id="aspace_d2ffb28e8ab1b4eea29fb8ef5316e138">
+               <head>General</head>
+               <p>see also: Gateway House</p>
+            </odd>
+         </c01>
+         <c01 id="aspace_2b3d7629e13a1f4d2ab303b4a894305c" level="file">
+            <did>
+               <unittitle>The Quad</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f8ec256083f11ef38a7209ed1afa7ad8"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a4b42a3b91c73ef0a540785136dcdac1" level="file">
+            <did>
+               <unittitle>Sage Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7da5418f2a255c1855e0c237202a2a81"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_63e0e0b240b6071f38af3ecbb509aa65" level="file">
+            <did>
+               <unittitle>Seelye, President Laurenus Clark</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7fb8c7dcc7f74e4f77f7cf710c2e3fbe"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_65f50d679e87581bf07d0e70e9378b7b" level="file">
+            <did>
+               <unittitle>Seelye Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_9e49fa6b58c1738855810bdf836e1e5c"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fa1564d02d8906c4a10d71ea68e094d0" level="file">
+            <did>
+               <unittitle>Sessions House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_3bd7a5ff08e3895497e8d778d40bd7c0"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_976c87019d6a3fb00c544fe18dd46068" level="file">
+            <did>
+               <unittitle>Sets</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_1d20b7e8361ec646ee631dbb88653991"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5d89ae4cd4ebf129236a94800d50d43b" level="file">
+            <did>
+               <unittitle>Smith Seal</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_7865d293d022821ae451a8513d8db742"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_95b84130f37b1f33bd932cb32d71cefd" level="file">
+            <did>
+               <unittitle>Sophia Smith and Smith Homestead</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_ce2cc93440ab436f8c7122353c0b071d"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_936aa5c448e41a238f4e9b3a73d98d07" level="file">
+            <did>
+               <unittitle>Southwick House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_3f9abfd90f661affcbb9534208fb11af"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+            <odd id="aspace_2ea3152ead9166bbd4f45f044d0df72c">
+               <head>General</head>
+               <p>See: Duckett House</p>
+            </odd>
+         </c01>
+         <c01 id="aspace_b4fcb4a2713da4e26b59d257da67b1d6" level="file">
+            <did>
+               <unittitle>Stoddard Hall</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_c5fd9588d7916f4aef0b43bd4605e4bc"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9ea21554ed4499b77b5b956060dd3087" level="file">
+            <did>
+               <unittitle>Students' Building</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_213a9c1092e10dee9ea4d075eeb51c93"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_139337f58a35d5274ed314b0d2f09a22" level="file">
+            <did>
+               <unittitle>Talbot House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_f43bffa64252ffa0b004da9e8c309872"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_229697bbe46591f04ba40e76e911576f" level="file">
+            <did>
+               <unittitle>Tenney House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_ebd9d1e8f36ecb9ceafcb3e0e34da733"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_41306e52f0611f40e2153ef5c43f0ec3" level="file">
+            <did>
+               <unittitle>Tryon Art Gallery</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_b0fec7a5ab6b9fdfe8f011663fba5806"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3e807bdc52b11e864f5dfde0e783a3e7" level="file">
+            <did>
+               <unittitle>Tyler House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_fbb284f307bab9c744f43a96f3c7f0d4"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6ec3f3a7dc4bf6aab7cebd1ef2b14b32" level="file">
+            <did>
+               <unittitle>Wallace House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_25efccae68e7dddc3b8654771c3296b9"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3b9a29dd875b2894e28c1c50d277bb51" level="file">
+            <did>
+               <unittitle>Washburn House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_de82fb478bd5c60a560a8614208e1703"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4517bd31450910845dc85c4f0b27567d" level="file">
+            <did>
+               <unittitle>WAVES</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_60dfd1227f24e918582721831569380f"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f6f5900f26ec0ac66a420bccb1c0ffdd" level="file">
+            <did>
+               <unittitle>West Street No. 75</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_b2f08b08830832f9d187e881c138fc55"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5cfcf79ef7cd98f1484e64ebab8eb6ef" level="file">
+            <did>
+               <unittitle>Wilder House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_dc1b11db57a8a4ab62498d8c54caa1b9"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_76a2a5829fc1931a929963310071fa71" level="file">
+            <did>
+               <unittitle>Ziskind House</unittitle>
+               <container altrender="Card file box (12d x 4h x 6w)"
+                          id="aspace_2e6914240d17feae8e04611bcd1e2cbd"
+                          label="Mixed Materials [310183630025962]"
+                          type="box">44.1</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
