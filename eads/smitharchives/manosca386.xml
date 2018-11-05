@@ -1,505 +1,591 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca386.xml//EN">manosca386</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca386</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Ely Chinoy papers, 1921 - 1975 (bulk 1953 -
-               1977)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Madison White; Elizabeth
-               Carron.</author>
-
+            <titleproper>Finding aid to the Ely Chinoy papers <num>CA.MS.00386</num>
+            </titleproper>
+            <author>Finding aid prepared by Madison White; Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-02-03">2015-02-03</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-02 14:06:32 -0400</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-02</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Chinoy, Ely, 1921 - 1975.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Ely Chinoy papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1921 - 1975</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1953 - 1977</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">42 UUID:f7105539-988b-48fd-b2fb-a21060312b8f</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1.25 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">Collection is primarily in
-               <language langcode="eng">English</language> with some materials in <language
-               langcode="spa">Spanish</language> and <language langcode="jpn"
-            >Japanese</language>.</langmaterial>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Faculty. Department of Sociology.
-            Contains various documents relating to the career of Ely Chinoy at Smith College
-            including correspondence, photographs, news clippings, published works, research, course
-            materials, and programs. </abstract>
+         <unittitle>Ely Chinoy papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Chinoy, Ely, 1921 - 1975.</persname>
+         </origination>
+         <unitid>CA.MS.00386</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.042 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1921/1977"
+                   type="inclusive">1921-1977</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1953/1977" type="bulk">1953 - 1977</unitdate>
+         <langmaterial id="aspace_5a3c04b87bac9bb6685daa5eb4cd901b">Collection is primarily in <language langcode="eng">English</language> with some materials in <language langcode="spa">Spanish</language> and <language langcode="jpn">Japanese</language>.</langmaterial>
+         <abstract id="aspace_99d856293f8d20e3151872b1088d76de">Faculty. Department of Sociology. Contains various documents relating to the career of Ely Chinoy at Smith College including correspondence, photographs, news clippings, published works, research, course materials, and programs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-
-
-         <p> Ely Chinoy was born on September 5, 1921 in Newark, New Jersey to Sam and Bella Chinoy.
-            He received his B.A. from the University of Newark (now Rutgers University) in 1942
-            summa cum laude. In the years following he held teaching positions at the Newark College
-            of Engineering, Washington Square College of New York University and at the University
-            of Toronto where he held the 1946 - 1947 Social Science Research Council Fellowship. In
-            1951 he became an instructor of Sociology at Smith College. Two years later he received
-            his Ph.D. from Columbia University.</p>
-
-         <p>Chinoy's first book, Automobile Workers and the American Dream, was published in 1955
-            and became a landmark study of the factory and, in particular, the description and
-            analysis of behavioral psychology of assembly line workers. Other books produced by
-            Chinoy include Sociological Perspective (1954), Society (1961) and The Urban Future
-            (1973). His texts have been translated into various languages including Portuguese,
-            Spanish, Italian, Serbo-Croatian and Japanese. </p>
-
-         <p>Professionally, Chinoy was incredibly active. From 1959 to 1960 he served as an
-            assistant editor of the American Sociological Review, becoming an associate editor from
-            1961 until 1964. In 1963 he travelled to England and served as a Fulbright professor at
-            the University of Leicester in addition to lecturing at Oxford, the London School of
-            Economics and at several research instituted associated with former Yugoslavic
-            universities. He was a member of the American Sociological Association, the Eastern
-            Sociological Association, the American Association of University Professors and the
-            American Civil Liberties Union. In 1971 he resumed his Fulbright activities and
-            travelled to the Philippines to lecture. Internally, Chinoy played an important role on
-            several committees, including serving as the President of the Smith College chapter of
-            the American Association of University Professors and the special committee on
-            co-education in 1970 - 1971, which recommended that Smith College remain a women's
-            college. </p>
-
-         <p>On April 21, 1975 Chinoy was killed returning home from a speaking engagement in Boston,
-            Massachusetts. His car veered off the road, struck the guardrail and overturned several
-            times. He was 53 years old.</p>
-
-         <p>Chinoy's wife, Helen Krich Chinoy (1922 - 2010) was an instructor of Theatre and Speech
-            at Smith College from 1952 until 1986. His son Michael was CNN's Beijing Bureau Chief
-            from 1987 to 1995 during which time he covered the 1989 events at Tiananmen Square. In
-            1995 he taught as a visiting professor at Smith College. Chinoy's daughter Claire
-            attended Radcliffe and later married David Jones, a flamenco artist known popularly as
-            'Gypsy Dave'.</p>
-
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Ely Chinoy was born on September 5, 1921 in Newark, New Jersey to Sam and Bella Chinoy. He received his B.A. from the University of Newark (now Rutgers University) in 1942 summa cum laude. In the years following he held teaching positions at the Newark College of Engineering, Washington Square College of New York University and at the University of Toronto where he held the 1946 - 1947 Social Science Research Council Fellowship. In 1951 he became an instructor of Sociology at Smith College. Two years later he received his Ph.D. from Columbia University.</p>
+         <p> Chinoy's first book, Automobile Workers and the American Dream, was published in 1955 and became a landmark study of the factory and, in particular, the description and analysis of behavioral psychology of assembly line workers. Other books produced by Chinoy include Sociological Perspective (1954), Society (1961) and The Urban Future (1973). His texts have been translated into various languages including Portuguese, Spanish, Italian, Serbo-Croatian and Japanese. </p>
+         <p> Professionally, Chinoy was incredibly active. From 1959 to 1960 he served as an assistant editor of the American Sociological Review, becoming an associate editor from 1961 until 1964. In 1963 he travelled to England and served as a Fulbright professor at the University of Leicester in addition to lecturing at Oxford, the London School of Economics and at several research instituted associated with former Yugoslavic universities. He was a member of the American Sociological Association, the Eastern Sociological Association, the American Association of University Professors and the American Civil Liberties Union. In 1971 he resumed his Fulbright activities and travelled to the Philippines to lecture. Internally, Chinoy played an important role on several committees, including serving as the President of the Smith College chapter of the American Association of University Professors and the special committee on co-education in 1970 - 1971, which recommended that Smith College remain a women's college. </p>
+         <p> On April 21, 1975 Chinoy was killed returning home from a speaking engagement in Boston, Massachusetts. His car veered off the road, struck the guardrail and overturned several times. He was 53 years old.</p>
+         <p> Chinoy's wife, Helen Krich Chinoy (1922 - 2010) was an instructor of Theatre and Speech at Smith College from 1952 until 1986. His son Michael was CNN's Beijing Bureau Chief from 1987 to 1995 during which time he covered the 1989 events at Tiananmen Square. In 1995 he taught as a visiting professor at Smith College. Chinoy's daughter Claire attended Radcliffe and later married David Jones, a flamenco artist known popularly as 'Gypsy Dave'.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The collection contains materials from Chinoy's work in the Sociology and Anthropology
-            departments at Smith College and includes course material, departmental correspondence
-            and photographs. There are also a number of obituaries. The bulk of the collection is
-            comprised of Chinoy's published works in English and in translation as well as .75
-            linear feet of research for "Coeducation at Smith College: A Report to the President and
-            the College Planning Committee".</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains materials from Chinoy's work in the Sociology and Anthropology departments at Smith College and includes course material, departmental correspondence and photographs. There are also a number of obituaries. The bulk of the collection is comprised of Chinoy's published works in English and in translation as well as .75 linear feet of research for "Coeducation at Smith College: A Report to the President and the College Planning Committee".</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into four series:</p>
-         <list>
-            <item> Biographical </item>
-            <item> Professional </item>
-            <item> Publications </item>
-            <item> Research </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>Biographical</item>
+            <item>Professional</item>
+            <item>Publications</item>
+            <item>Research</item>
          </list>
       </arrangement>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Ely Chinoy papers, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Ely Chinoy papers, Smith College Archives, CA-MS-00386, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Ely Chinoy papers were created by Ely Chinoy and donated to the College
-            Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Processed by Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <persname encodinganalog="600" source="lcnaf">Chinoy, Ely.</persname>
-         <subject encodinganalog="650" source="lcsh">Coeducation -- Massachusetts --
-            Northampton</subject>
-         <genreform encodinganalog="655" source="aat">correspondence</genreform>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <p>The following materials are available via the Five College Digital Access Project:</p>    
+         <list type="ordered">
+            <item>
+               <extref href="http://clio.fivecolleges.edu/smith/coed/">Faculty Planning Committee Records - Coeducation Materials, 1967 - 1971</extref>
+            </item>
+         </list>
+         <p>The following materials are available in the Smith College Archives:</p>    
+         <list type="ordered">
+            <item>Helen Krich Chinoy Papers, 1922 - 2010</item>
+            <item>Smith College. Department of Anthropology</item>
+            <item>Smith College. Department of Sociology</item>
+         </list>
+         <p>The following related materials are available at the Walter P. Reuther Library at Wayne State University:</p>    
+         <list type="ordered">
+            <item>Ely Chinoy Papers (bulk 1936 - 1983)</item>
+         </list>
+      </relatedmaterial>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Coeducation -- Massachusetts -- Northampton</subject>
+         <genreform encodinganalog="655" authfilenumber="300026877" source="aat">correspondence</genreform>
          <genreform encodinganalog="655" source="aat">manuscripts for publishing</genreform>
          <genreform encodinganalog="655" source="aat">research (document genres)</genreform>
+         <persname encodinganalog="600" source="naf">Chinoy, Ely.</persname>
          <corpname encodinganalog="610" source="lcsh">Smith College -- Administration</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College - Anthropology</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College. College Planning
-            Committee.</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College - Faculty - History -
-            Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College. College Planning Committee.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College - Faculty - History - Sources</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College -- Sociology</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>The following materials are available via the Five College Digital Access Project: <list>
-               <item>
-                  <extref href="http://clio.fivecolleges.edu/smith/coed/">Faculty Planning Committee
-                     Records - Coeducation Materials, 1967 - 1971</extref></item>
-            </list>
-         </p>
-
-         <p>The following materials are available in the Smith College Archives: <list>
-               <item> Helen Krich Chinoy Papers, 1922 - 2010</item>
-               <item> Smith College. Department of Anthropology</item>
-               <item> Smith College. Department of Sociology</item>
-            </list>
-         </p>
-
-         <p>The following related materials are available at the Walter P. Reuther Library at Wayne
-            State University: <list>
-               <item>Ely Chinoy Papers (bulk 1936 - 1983)</item>
-            </list>
-         </p>
-      </relatedmaterial>
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Biographical</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_fb434355703696c5c1b7440b87f18223" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>clippings regarding automobile accident <unitdate>1975 -
-                        1977</unitdate>
-                  </unittitle>
+                  <unittitle>clippings regarding automobile accident</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/1977"
+                            type="inclusive">1975 - 1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7d391fa31bbbbbfd7f3c9b2f7aafd264"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_f0233ea021023ea3a352ca29dbb77009"
+                             parent="aspace_7d391fa31bbbbbfd7f3c9b2f7aafd264"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b3f9ec3938b0dbea490285c302c46dd0" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>"Humanizing Work: A Symposium in Honor of Ely Chinoy"
-                        <unitdate>1977</unitdate>
-                  </unittitle>
+                  <unittitle>"Humanizing Work: A Symposium in Honor of Ely Chinoy"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d39d81de503f45bc8cafdc0943372f9f"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_e01770474aff923737b926cca2c0ea0b"
+                             parent="aspace_d39d81de503f45bc8cafdc0943372f9f"
+                             type="folder">2</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Professional</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_c21ff343d926fcb58615408020b9d707" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>correspondence <unitdate>1964 - 1965</unitdate>
-                  </unittitle>
+                  <unittitle>correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1964/1965"
+                            type="inclusive">1964 - 1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fbbf609ce006b5d0ab96291738ec9117"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_a912905f84d66dfbb40f98e44fe2ef4d"
+                             parent="aspace_fbbf609ce006b5d0ab96291738ec9117"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_44cdce577f7954f802b6d67b2646ab43" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>faculty file <unitdate>1963 - 1975</unitdate>
-                  </unittitle>
+                  <unittitle>faculty file</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1963/1975"
+                            type="inclusive">1963 - 1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c6c7018972f7ed2559ff04ac88d0a2fe"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_d7cc799f124c8157c4d4efc045ef9a7c"
+                             parent="aspace_c6c7018972f7ed2559ff04ac88d0a2fe"
+                             type="folder">4</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3414d098815362ed3ffe67534c85fc95" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Coeducation, Anyone? <unitdate>1971 </unitdate>
-                  </unittitle>
+                  <unittitle>Coeducation, Anyone?</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_abb3d5d8376d73a1420d652ab070d095"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_6b3f84f2fe96bf2ade338ac929d50320"
+                             parent="aspace_abb3d5d8376d73a1420d652ab070d095"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9dc0c47cc2eb1eeb1c8225af0f992835" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Knowledge and Action: The Role of Sociology <unitdate>1970</unitdate>
-                  </unittitle>
+                  <unittitle>Knowledge and Action: The Role of Sociology</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c1fba8bf3b0a89c8ef9c105e8b86e279"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_01e5753e7a4eb1fff562a7214c9e12a8"
+                             parent="aspace_c1fba8bf3b0a89c8ef9c105e8b86e279"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_531124e7d19d31e251e6f156b2377256" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>releases and reviews <unitdate>1952, 1955</unitdate>
-                  </unittitle>
+                  <unittitle>releases and reviews</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                  <unitdate normal="1955/1955">1955</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d1fac45582c64231fcc554b45a8e7f86"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
+                  <container id="aspace_626ff02ba687231631dd1d830297b4b2"
+                             parent="aspace_d1fac45582c64231fcc554b45a8e7f86"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7d9f3c4965fb3f55ef1a11685f292494" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Society: An introduction to Sociology, 2nd Edition
-                        <unitdate>1967</unitdate>
-                  </unittitle>
+                  <unittitle>Society: An introduction to Sociology, 2nd Edition</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_28819e907c4f0d588f62f03489976d07"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_61d36e2ff20a4260b3291d0cc8cd904c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Sociological Perspective, 2nd Edition <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Sociological Perspective, 2nd Edition</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3c8599e8fdbf6b3c7cba9d08df7a10ef"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0ec8a5241d6f356ba4b6d15584bc179f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Automobile Workers and the American Dream <unitdate>1965</unitdate>
-                  </unittitle>
+                  <unittitle>Automobile Workers and the American Dream</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a993a49022a827b901841b94baffd355"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ba0f98832b942508bac1bdb4c1dc89a1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Perspectiva Sociol&amp;#243;gica <unitdate>1967</unitdate>
-                  </unittitle>
+                  <unittitle>Perspectiva Sociologica</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7e17517ca1345a9bc6a604b933367079"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f906c5bf3c1b4a892a9f413c4451c76d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Sociological Perspective: Basic Concepts and Their Application
-                        <unitdate>1963</unitdate>
-                  </unittitle>
+                  <unittitle>Sociological Perspective: Basic Concepts and Their Application</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_381fd1b2a201a5a9ee5cc76109d6667b"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b39823f919b76d48cf8ff9dddcb1ddd3" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Introduccion a la Sociologia <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Introduccion a la Sociologia</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_abec2d96087dbb751c69d94daad0fb12"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_eb47a10940b89ccfd61ea1813e13461e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Sociedade: Uma Introdu&amp;#231;&amp;#227;o &amp;#224; Sociologia
-                        <unitdate>1967</unitdate>
-                  </unittitle>
+                  <unittitle>Sociedade: Uma Introduccian Sociologia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c5ba46e535bc82ad58db622840753bdb"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_af892382f59f4e577dc397bb8b914bf5" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>La Sociedad: Una Introducci&amp;#243;n a la Sociolog&amp;#237;a
-                        <unitdate>1967</unitdate>
-                  </unittitle>
+                  <unittitle>La Sociedad: Una Introduccian Sociologia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c8467f5f3a62ebe81f3505d18418be7f"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d7cb70ab130b738a3c78fb545854614" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Sociological Perspective (Japanese translation)
-                        <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Sociological Perspective (Japanese translation)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e8cd925ef7f32e3e9b6209280680678f"
+                             label="Mixed Materials [310183630221223]"
+                             type="box">705</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Research</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_a4f1417dab66ed8ddee265b7346dd31f" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Co-education at Smith <unitdate>1969</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at Smith</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_77faef15127bc10346bbd0a70ee6c790"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_af79960374a029ea710e04b9bcc2f9bd"
+                             parent="aspace_77faef15127bc10346bbd0a70ee6c790"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6326e042d70a941cd0220fa51d9db4d4" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Conference on the Undergraduate Education of Women, July 1969
-                        <unitdate>1968 - 1969</unitdate>
-                  </unittitle>
+                  <unittitle>Conference on the Undergraduate Education of Women, July 1969</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1968/1969"
+                            type="inclusive">1968 - 1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0821370ec9c79d417e3a8c076b57e023"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_fde682de12923559b6833c6026f542e8"
+                             parent="aspace_0821370ec9c79d417e3a8c076b57e023"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_db1748275312056b4394b69b633f2c11" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Faculty Views- Coeducation, May 1968 <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Faculty Views- Coeducation, May 1968</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae9ebbac029f1d7d5b7f20481c154304"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_24ab8893eb71520ed9ff12d8dc73c826"
+                             parent="aspace_ae9ebbac029f1d7d5b7f20481c154304"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e520a67055e385e0b530bf07c80439d3" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
                   <unittitle>Secondary School Questionnaire</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_9ba3f12d10df6460a7d7842509f4e2e7"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_c98c1b62874d638e9639889a73bc1cd4"
+                             parent="aspace_9ba3f12d10df6460a7d7842509f4e2e7"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1eb32648e0a637954b8f91f99ec62cf1" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Smith College and the Issue of Co-education <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Smith College and the Issue of Co-education</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b3453f80d0d670019c15ba0265e8f7b3"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_9e8c510b298a8ae503efa1ea8cb95054"
+                             parent="aspace_b3453f80d0d670019c15ba0265e8f7b3"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a24c3b528ccdcc764aa1743676abb7a4" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Student Survey on Co-education <unitdate>1968 - 1970</unitdate>
-                  </unittitle>
+                  <unittitle>Student Survey on Co-education</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1968/1970"
+                            type="inclusive">1968 - 1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c528440383ffc0753416aede159b2413"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_01ce2cdd348e36414fa2c7c0173fdc95"
+                             parent="aspace_c528440383ffc0753416aede159b2413"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cd54caafa66da3254d750a48e0f13499" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Faculty Planning Committee Reports <unitdate>1967 - 1971</unitdate>
-                  </unittitle>
+                  <unittitle>Faculty Planning Committee Reports</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1971"
+                            type="inclusive">1967 - 1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d1f27e2d796ce43e72e7908600362e2f"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_1b2028133c71f59adf1b0a21fae75059"
+                             parent="aspace_d1f27e2d796ce43e72e7908600362e2f"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ede818c53374a9106b8b8b5dc4fd5219" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Co-education at other Institutions- Bennington College
-                        <unitdate>1968</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at other Institutions- Bennington College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1efba802ee15554ec91ad70f4f2794bc"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_35b72f8dddfba2dc37d850acfec90f67"
+                             parent="aspace_1efba802ee15554ec91ad70f4f2794bc"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_29bc09a8c49cd264ce971f2465a4a907" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Co-education at other Institutions- Lafayette College
-                        <unitdate>1969</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at other Institutions- Lafayette College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fe5a2a9f242fcf9a284fd398be2ebe2d"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_e4a279c2a3df92feea44bfc73f997a3a"
+                             parent="aspace_fe5a2a9f242fcf9a284fd398be2ebe2d"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_112fdb9b10963656203029d4faf6c33a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Co-education at other Institutions- Princeton University <unitdate>1967
-                        - 1969</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at other Institutions- Princeton University</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1969"
+                            type="inclusive">1967 - 1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f5a2e9adfa1ee38293ae277bffa826c1"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_161b822d9fb342c94d6736c4db9635ba"
+                             parent="aspace_f5a2e9adfa1ee38293ae277bffa826c1"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cd40ce8a400f0b98959b55e0246b4726" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Co-education at other Institutions- Vassar College
-                        <unitdate>1967</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at other Institutions- Vassar College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae5c90be89da42816c4bb25f3f78b4ea"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_ec265f95f8f292acc2f76216967b7155"
+                             parent="aspace_ae5c90be89da42816c4bb25f3f78b4ea"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e721bd2503e747837a8c91a6dd4c0bbd" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Co-education at other Institutions- Wabash College
-                        <unitdate>1971</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education at other Institutions- Wabash College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3097ad335d549d914e5a86dd390a2276"
+                             label="Mixed Materials [310183630221165]"
+                             type="box">706</container>
+                  <container id="aspace_2d5889a57b124deab1142ed3f44b11ff"
+                             parent="aspace_3097ad335d549d914e5a86dd390a2276"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ca4f69290b2706753aeba586d740f52d" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Co-education Computer Data- Secondary School <unitdate>circa
-                        1970</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education Computer Data- Secondary School</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1970/1970">1970</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_9a2009a6fdd90e510c839327aaea96f5"
+                             label="Mixed Materials [310183630221108]"
+                             type="box">706.1</container>
+                  <container id="aspace_19a7ad1af7f264cf727e0c1497cdb232"
+                             parent="aspace_9a2009a6fdd90e510c839327aaea96f5"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0603a5ed2f7a8f5d316d5e721b73f315" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Co-education Computer Data- Secondary School <unitdate>circa
-                        1970</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education Computer Data- Secondary School</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1970/1970">1970</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_89154cc0e06c4b6a53f2a9c970156f0e"
+                             label="Mixed Materials [310183630221108]"
+                             type="box">706.1</container>
+                  <container id="aspace_e49e9c0c8bced9b83d99a822e61f3957"
+                             parent="aspace_89154cc0e06c4b6a53f2a9c970156f0e"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c74cd760f27c7a46aaed62c57f8b4a57" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Co-education Computer Data- Secondary School <unitdate>circa
-                        1970</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education Computer Data- Secondary School</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1970/1970">1970</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_563e2887b2c0cd23a6ce488cfaeb838a"
+                             label="Mixed Materials [310183630221108]"
+                             type="box">706.1</container>
+                  <container id="aspace_2ea47e3fcbc16b8595c8137bb6805c15"
+                             parent="aspace_563e2887b2c0cd23a6ce488cfaeb838a"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3a8628e16d9486f96f29ab364ac2dcb9" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Co-education Computer Data- Secondary School <unitdate>circa
-                        1970</unitdate>
-                  </unittitle>
+                  <unittitle>Co-education Computer Data- Secondary School</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1970/1970">1970</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_82ddedaa5a8b6f635d577c7338c632cd"
+                             label="Mixed Materials [310183630221108]"
+                             type="box">706.1</container>
+                  <container id="aspace_5d9e654735ae77f2af9fd6031845f045"
+                             parent="aspace_82ddedaa5a8b6f635d577c7338c632cd"
+                             type="folder">4</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

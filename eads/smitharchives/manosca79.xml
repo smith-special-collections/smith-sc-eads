@@ -1,783 +1,966 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca79.xml//EN">manosca79</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Alfred Vance Churchill Papers, 1828-1948 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Joel Tansey.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Laura Cutter. <date>2003-06-04</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca79 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Alfred Vance Churchill Papers, 1828-1948 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 42 </num>
-            <author>Joel Tansey </author>
-            <date>2000 </date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Churchill, Alfred Vance, 1864-1949.
-                </persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Alfred Vance Churchill
-                Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1828-1948</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:34aa77e7-464f-423f-9dc8-d3bcae1b8263</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">4 boxes</extent>
-                <extent encodinganalog="300$a">(2 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Professor of Fine Arts. Contains
-                biographical material, correspondence, material related to museum and art
-                collecting, publications, and teaching materials. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p> Alfred Vance Churchill was born on August 14, 1864 in Oberlin, Ohio. He was the son
-                of Charles Henry Churchill, a professor at Oberlin College and his second wife,
-                Henrietta Vance Churchill. Alfred was the second child of Henrietta Vance Churchill,
-                and was the sixth of Charles Henry Churchill's nine children. After studies at
-                Oberlin, Alfred studied art in Berlin, Leipzig, and Paris from 1887-1890. He married
-                Marie Marschall in 1890. Their son Louis Nelson Churchill was born in 1897. In 1892
-                Churchill directed the art department at Iowa College, Grinnell, Iowa. From
-                1893-1897, he taught art in the High and Normal Schools of St. Louis, Missouri. In
-                1897, he was made professor of art and Director of the Department of Fine Arts at
-                Teachers College, Columbia University. He received the degree of Master of Arts from
-                Oberlin College in 1898. Columbia University dismissed Churchill in 1904, but gave
-                him a grant to study and paint in Paris 1904-1906. Smith College hired him in 1905
-                as the first resident professor in the appreciation and history of art. During his
-                years at Smith, he expanded the Smith College Art Museum into one of the outstanding
-                collections in the United States. A noted art critic, lecturer as well as a teacher
-                and painter (whose work appeared in the Armory Show in Chicago in 1913), he
-                influenced the standards of art teaching, especially as vice-president of the
-                College Art Association. After 27 years of service to Smith, Churchill retired in
-                1932, staying in Northampton, Massachusetts, and devoting himself to painting and
-                writing. He died on December 29, 1949.</p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>There is copious correspondence with important art collectors and figures in the
-                history of Smith College, as well as other educational institutions such as Columbia
-                University. Researchers interested in Oberlin College, family history and the social
-                history of the Midwestern U.S. will find the manuscripts and typescripts of his
-                unpublished book <title render="italic">Midwestern</title> of interest. Genealogists
-                will find some mention and dating of family names coming out of New England such as
-                Franklin and Churchill. Art historians will be interested to note Churchill's
-                writings and lectures on the teaching of art, and his role in developing an American
-                taste for French Romantic painters.</p>
-        </scopecontent>
-        <arrangement encodinganalog="351$a" id="scope-org">
-
-            <p>This collection is organized into four series:</p>
-            <list>
-                <item> I. Biographical Materials </item>
-                <item> II. General and Professional Correspondence </item>
-                <item> III. Museum and Art Collecting </item>
-                <item> IV. Publications and Teaching Materials </item>
-            </list>
-        </arrangement>
-        <arrangement id="scope-arr">
-
-            <p>There is some overlap in categories, but in keeping with the "respect des fonds," it
-                was thought best to retain where possible the arrangement of certain folders which
-                Churchill himself devised. </p>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Alfred Vance Churchill Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>Alfred Vance Churchill donated letters, photographs, poems, etc. from his own
-                        papers in 1941. Later in the same year he donated more files for his
-                        biographical record. Two letters written to the Smith College Archivist in
-                        1941 or 1942 substantiate this as the year of donation, although nothing
-                        precludes the possibility of donations at an earlier date. On April 26,
-                        1966, Mrs. Bernard A. Churchill [daughter-in-law] donated on behalf of Mrs.
-                        A. V. Churchill, a "MS of Oberlin book-typescript and carbon," written by
-                        Alfred Vance Churchill, which corresponds to the folders titled <title
-                            render="italic">"Midwestern."</title></p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Joel Tansey</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Churchill, Alfred Vance,
-                1864-1949.</persname>
-            <persname encodinganalog="600" source="lcnaf">Churchill, Charles H. (Charles Henry),
-                1824-1904.</persname>
-            <famname encodinganalog="600" source="lcnaf">Churchill family.</famname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Smith College. Museum of Art.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Columbia University. Teachers
-                College--Faculty.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Oberlin
-                College--History--Sources.</corpname>
-            <subject encodinganalog="650" source="lcsh">Art--Study and
-                teaching--Massachusetts--Northampton.</subject>
-            <geogname encodinganalog="651" source="lcsh">Middle West--History.</geogname>
-            <persname encodinganalog="700" source="lcnaf">Binyon, Laurence, 1869-1943.</persname>
-            <persname encodinganalog="700" source="lcnaf">Burton, Marion Le Roy,
-                1874-1925.</persname>
-            <persname encodinganalog="700" source="lcnaf">Churchill, Charles H. (Charles Henry),
-                1824-1904.</persname>
-            <persname encodinganalog="700" source="lcnaf">Dewey, John, 1859-1952.</persname>
-            <persname encodinganalog="700" source="lcnaf">Freer, Charles Lang, 1856-1919.</persname>
-            <persname encodinganalog="700" source="lcnaf">Seelye, Laurenus Clark,
-                1837-1924.</persname>
-            <persname encodinganalog="700" source="lcnaf">Tryon, Dwight William,
-                1849-1925.</persname>
-            <persname encodinganalog="700" source="lcnaf">Walpole, Hugh, Sir, 1884-1941.</persname>
-            <persname encodinganalog="700" source="lcnaf">White, Henry Cooke, 1861-</persname>
-        </controlaccess>
-        <dsc id="list-contlist" type="combined">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>Series I. Biographical Material <unitdate>1828-1942</unitdate>
-                    </unittitle>
-                </did>
-                <scopecontent>
-                    <p>This series includes correspondence, news clippings, chronologies, obituary,
-                        and materials regarding retirement from Smith College and departure from
-                        Columbia University. This series also contains family history documents,
-                        including photographs, correspondence, and assorted other materials.</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters to Smith College Archives. <unitdate>1941-42</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Biographical materials and chronology. Includes
-                            obituary.</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">708</container>
-                            <unittitle>Retirement from Smith College. (Includes letters from Stephan
-                                Bourgeois, Gordon B. Washburn, J. B. Neumann, Frank Jewett Mather,
-                                Daniel Catton Rich, Walter Pach, W. R. Valentiner, Edward Alden
-                                Jewell) <unitdate>1931-35</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">708</container>
-                            <unittitle>Columbia Teachers College. (Includes letters from John Dewey
-                                and James E. Russell) <unitdate>1897-1939</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Photographs: Alfred Vance Churchill and family. (Includes Charles
-                            Henry Churchill and sister Lucretia Churchill in 1842, Henrietta Vance
-                            Churchill, Polly Franklin Churchill, Emilie von Zulich 1828, David
-                            Carroll Churchill) <unitdate>1828-1932, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Genealogy materials. (Includes letters from Mrs. William A.
-                            Whitney and Benjamin E. Franklin) <unitdate>1936, undated</unitdate>
-                        </unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">708</container>
-                            <unittitle>Genealogy book: <title>The Churchills of Oberlin</title>
-                                <unitdate>1965</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">708</container>
-                            <unittitle>Genealogical materials: Henrietta Beach Vance [grandmother].
-                                (Includes materials about and letters of Henrietta Beach Vance to
-                                Alfred and Marie Churchill, materials related to the Vance family in
-                                Lagrange County, and to Lewis Nelson Churchill)
-                                    <unitdate>1894-1936</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Will and account book of Henrietta Beach Vance [grandmother].
-                                <unitdate>1886-1901</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Obituaries of Henrietta Vance Churchill [mother].
-                                <unitdate>1898-99</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters and writings of Henrietta Vance Churchill [mother].
-                                <unitdate>1858, 1892-93</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters of Charles Henry Churchill [father] to Alfred and Marie
-                            Churchill <unitdate>1890-1904</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters to Charles Henry Churchill from family. (Includes
-                            photograph and postcard from Lyme, New Hampshire) <unitdate>1838-43,
-                                undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Materials on Charles Henry Churchill [father].
-                                <unitdate>1872-1936</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from brothers and sisters. <unitdate>1898-1941,
-                                undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters to family from Berlin. <unitdate>1888-90</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Family letter. <unitdate>1895</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Family letter about Edward [brother].
-                                <unitdate>1933-34</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>Series II. General and Professional Correspondence
-                            <unitdate>1889-1942</unitdate>
-                    </unittitle>
-                </did>
-                <scopecontent>
-                    <p>This series contains correspondence relating to Churchill's research and and
-                        career at Smith College.</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>General correspondence. <unitdate>1901-42</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from Laurence Binyon <unitdate>1914-34</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Correspondence with Marion LeRoy Burton
-                                <unitdate>1914-17</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from Charles Lang Freer <unitdate>1913-16</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters to Grace Gilfillan <unitdate>1901-04</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Correspondence with Laurenus Clark Seelye
-                                <unitdate>1905-15</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Correspondence with Dwight William Tryon
-                                <unitdate>1912-25</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from Alice B. Tryon <unitdate>1926, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from Hugh Walpole <unitdate>1922-26</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">708</container>
-                        <unittitle>Letters from Henry C. White <unitdate>1929</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>Series III. Museum and Art Collecting Materials
-                            <unitdate>1905-1941</unitdate>
-                    </unittitle>
-                </did>
-                <scopecontent>
-                    <p>This series includes materials related to museum exhibitions and art
-                        collecting, and Churchill's own art work.</p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Gericault exhibit: brochure and correspondence
-                                <unitdate>1929-36</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Booklet on art collecting: "Building a Collection" Full title:
-                                <title>Building a Collection: Notes on the Work of Alfred Vance
-                                Churchill.</title> Published by the American Association of
-                            University Women <unitdate>1937?</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Catalogues of the Smith College Museum of Art. One of the two
-                            copies is annotated by Churchill. <unitdate>1937</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Materials on Churchill's art and exhibits. Includes news
-                            clippings, brochure and correspondence. <unitdate>1905-50,
-                                undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Silhouettes of Smith College presidents. Includes correspondence.
-                                <unitdate>1938-39</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser4" level="series">
-                <did>
-                    <unittitle>Series IV. Publications and Teaching Materials
-                            <unitdate>1900-1948</unitdate>
-                    </unittitle>
-                </did>
-                <scopecontent>
-                    <p>This series includes professional publications, course syllabi, lecture
-                        notes, speeches on art education, and transcripts of Churchill's book <title
-                            render="italic">Midwestern.</title></p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Prints used for courses Art 13 &amp; 14
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Lecture notes and outlines for art history. Materials are
-                            printed, handwritten, or typed. <unitdate>1917-18, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Materials on teaching art. Includes syllabi, correspondence.
-                                <unitdate>1900-41</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Speeches and materials on art in education <unitdate>1902-30,
-                                undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Article: "The Meaning and Aim of Art in Education"
-                                <unitdate>1904</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Article: "Art in the College Course" <unitdate>1915</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Booklet: "One Hour Course in Art Interpretation"
-                                <unitdate>1907</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>List of publications <unitdate>1932</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Pamphlet: "Catalogue of Architects, Sculptors &amp; Painters"
-                                <unitdate>1907</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Pamphlet: "Italian Painters of the Renaissance"
-                                <unitdate>1914</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Article: "Picasso's Failure" <unitdate>1925</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Article: "On Cezanne" <unitdate>1932</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Typescript: translations of German songs
-                                <unitdate>1941-48</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Book: <title>Golden Songs</title>. Two copies, one annotated.
-                                <unitdate>1947</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Carbon typescript bound: "The Thirteenth Century"
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">709</container>
-                        <unittitle>Manuscript: poems <unitdate>1904, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>
-                            <title>Midwestern</title>
-                        </unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">709</container>
-                            <unittitle>Background materials for <title>Midwestern</title>
-                                <unitdate>1902-40</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">709</container>
-                            <unittitle>Correspondence regarding families of Oberlin,
-                                Ohio.</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">709</container>
-                            <unittitle>Background materials for <title>Midwestern</title>
-                                <unitdate>1935-38</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Background materials for <title>Midwestern</title>. This
-                                folder was also arranged by Churchill himself.
-                                    <unitdate>1935-38</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Manuscript of <title>Midwestern</title>, first folder
-                                    <unitdate>undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Manuscript of <title>Midwestern</title>, second folder
-                                    <unitdate>undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Manuscript of <title>Midwestern</title>, third folder
-                                    <unitdate>undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Manuscript of <title>Midwestern</title>, fourth folder
-                                    <unitdate>undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>
-                                <title>Midwestern</title> MS typed: Preface, Prelude, Chapters 1-7.
-                                Appears to be the latest and abridged version of the work. Includes
-                                table of contents and a photo of Mrs. Churchill. <unitdate>March
-                                    1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>
-                                <title>Midwestern</title> MS typed: Chapters 8-13 <unitdate>March
-                                    1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>
-                                <title>Midwestern</title> MS typed: Chapters 14-17 <unitdate>March
-                                    1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>
-                                <title>Midwestern</title> MS typed: Chapters 18-23 <unitdate>March
-                                    1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Typescript of <title render="italic">Midwestern</title>:
-                                Chapters 1-9 <unitdate>February 1941</unitdate>
-                            </unittitle>
-                        </did>
-                        <note>
-                            <p>[See Churchill's note in front about the different versions.]</p>
-                        </note>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Typescript of <title render="italic">Midwestern</title>:
-                                Chapters 10-13 <unitdate>February 1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Typescript of <title render="italic">Midwestern</title>:
-                                Chapters 14-21 <unitdate>February 1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">710</container>
-                            <unittitle>Typescript of <title render="italic">Midwestern</title>:
-                                Chapters 22-26 <unitdate>February 1941</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca79</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Alfred Vance Churchill Papers <num>CA.MS.00079</num>
+            </titleproper>
+            <author>Joel Tansey</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-02 14:12:56 -0400</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca79 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-02</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Alfred Vance Churchill Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Churchill, Alfred Vance, 1864-1949.</persname>
+         </origination>
+         <unitid>CA.MS.00079</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.667 linear feet</extent>
+            <extent altrender="carrier">(4 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1828/1965"
+                   type="inclusive">1828-1965</unitdate>
+         <abstract id="aspace_a3ad8779c2bce11d86ee000a3a2d583d">Professor of Fine Arts. Collection contains biographical material, correspondence, material related to museum and art collecting, publications, and teaching materials.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Alfred Vance Churchill was born on August 14, 1864 in Oberlin, Ohio. He was the son of Charles Henry Churchill, a professor at Oberlin College and his second wife, Henrietta Vance Churchill. Alfred was the second child of Henrietta Vance Churchill, and was the sixth of Charles Henry Churchill's nine children. After studies at Oberlin, Alfred studied art in Berlin, Leipzig, and Paris from 1887-1890. He married Marie Marschall in 1890. Their son Louis Nelson Churchill was born in 1897. In 1892 Churchill directed the art department at Iowa College, Grinnell, Iowa. From 1893-1897, he taught art in the High and Normal Schools of St. Louis, Missouri. In 1897, he was made professor of art and Director of the Department of Fine Arts at Teachers College, Columbia University. He received the degree of Master of Arts from Oberlin College in 1898. Columbia University dismissed Churchill in 1904, but gave him a grant to study and paint in Paris 1904-1906. Smith College hired him in 1905 as the first resident professor in the appreciation and history of art. During his years at Smith, he expanded the Smith College Art Museum into one of the outstanding collections in the United States. A noted art critic, lecturer as well as a teacher and painter (whose work appeared in the Armory Show in Chicago in 1913), he influenced the standards of art teaching, especially as vice-president of the College Art Association. After 27 years of service to Smith, Churchill retired in 1932, staying in Northampton, Massachusetts, and devoting himself to painting and writing. He died on December 29, 1949.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>There is copious correspondence with important art collectors and figures in the history of Smith College, as well as other educational institutions such as Columbia University. Researchers interested in Oberlin College, family history and the social history of the Midwestern U.S. will find the manuscripts and typescripts of his unpublished book <title render="italic">Midwestern</title> of interest. Genealogists will find some mention and dating of family names coming out of New England such as Franklin and Churchill. Art historians will be interested to note Churchill's writings and lectures on the teaching of art, and his role in developing an American taste for French Romantic painters.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Materials</item>
+            <item>II. General and Professional Correspondence</item>
+            <item>III. Museum and Art Collecting</item>
+            <item>IV. Publications and Teaching Materials</item>
+         </list>
+      </arrangement>
+      <arrangement id="aspace_scope-arr">
+         <head>Arrangement</head>
+         <p>There is some overlap in categories, but in keeping with the "respect des fonds," it was thought best to retain where possible the arrangement of certain folders which Churchill himself devised.</p>  
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Alfred Vance Churchill Papers, Smith College Archives, CA-MS-00079 Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Alfred Vance Churchill donated letters, photographs, poems, etc. from his own papers in 1941. Later in the same year he donated more files for his biographical record. Two letters written to the Smith College Archivist in 1941 or 1942 substantiate this as the year of donation, although nothing precludes the possibility of donations at an earlier date. On April 26, 1966, Mrs. Bernard A. Churchill [daughter-in-law] donated on behalf of Mrs. A. V. Churchill, a "MS of Oberlin book-typescript and carbon," written by Alfred Vance Churchill, which corresponds to the folders titled <title render="italic">"Midwestern."</title>
+         </p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Joel Tansey</p>  
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Art--Study and teaching--Massachusetts--Northampton.</subject>
+         <geogname encodinganalog="651" source="lcsh">Middle West--History.</geogname>
+         <persname encodinganalog="600" source="naf">Churchill, Alfred Vance, 1864-1949.</persname>
+         <persname encodinganalog="600" source="naf">Churchill, Charles H. (Charles Henry), 1824-1904.</persname>
+         <famname encodinganalog="600" source="naf">Churchill family.</famname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Museum of Art.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Columbia University. Teachers College--Faculty.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Oberlin College--History--Sources.</corpname>
+         <persname encodinganalog="600" source="naf">Binyon, Laurence, 1869-1943.</persname>
+         <persname encodinganalog="600" source="naf">Burton, Marion Le Roy, 1874-1925.</persname>
+    
+         <persname encodinganalog="600" source="naf">Dewey, John, 1859-1952.</persname>
+         <persname encodinganalog="600" source="naf">Freer, Charles Lang, 1856-1919.</persname>
+         <persname encodinganalog="600" source="naf">Seelye, Laurenus Clark, 1837-1924.</persname>
+         <persname encodinganalog="600" source="naf">Tryon, Dwight William, 1849-1925.</persname>
+         <persname encodinganalog="600" source="naf">Walpole, Hugh, Sir, 1884-1941.</persname>
+         <persname encodinganalog="600" source="naf">White, Henry Cooke, 1861-</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>Series I. Biographical Material</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1828/1942"
+                         type="inclusive">1828-1942</unitdate>
+            </did>
+            <scopecontent id="aspace_98d45770475ee137192c7f27d78f0b74">
+               <head>Scope and Contents</head>
+               <p>This series includes correspondence, news clippings, chronologies, obituary, and materials regarding retirement from Smith College and departure from Columbia University. This series also contains family history documents, including photographs, correspondence, and assorted other materials.</p>
+            </scopecontent>
+            <c02 id="aspace_28ef4c5f45240560cceffbbb6902a777" level="file">
+               <did>
+                  <unittitle>Letters to Smith College Archives.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1942"
+                            type="inclusive">1941-42</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dcee155848f777a1f30b87dfff406975"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c2ceb07714face69376c5af99d51012d" level="file">
+               <did>
+                  <unittitle>Biographical materials and chronology. Includes obituary.</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_777345cb2e2a416ab565775893583c04"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+               <c03 id="aspace_732aea81562f1dd3724a608126332fdb" level="file">
+                  <did>
+                     <unittitle>Retirement from Smith College. (Includes letters from Stephan Bourgeois, Gordon B. Washburn, J. B. Neumann, Frank Jewett Mather, Daniel Catton Rich, Walter Pach, W. R. Valentiner, Edward Alden Jewell)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1931/1935"
+                               type="inclusive">1931-35</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_c118d50d652acbfeac55e987f89dc9e1"
+                                label="Mixed Materials [310183630221751]"
+                                type="box">708</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_32c1bbe9097fa084f8b702f371a509dd" level="file">
+                  <did>
+                     <unittitle>Columbia Teachers College. (Includes letters from John Dewey and James E. Russell)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1897/1939"
+                               type="inclusive">1897-1939</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_260e73630359b79c098a510a0966aa88"
+                                label="Mixed Materials [310183630221751]"
+                                type="box">708</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_c75a67f6b0e32d73c82bb2af0c0e8725" level="file">
+               <did>
+                  <unittitle>Photographs: Alfred Vance Churchill and family. (Includes Charles Henry Churchill and sister Lucretia Churchill in 1842, Henrietta Vance Churchill, Polly Franklin Churchill, Emilie von Zulich 1828, David Carroll Churchill)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1828/1932"
+                            type="inclusive">1828-1932</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d9a144d550d853dd0f827045bb1c0b17"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6a7ef4fbaf89844c1dee6f21cdb62775" level="file">
+               <did>
+                  <unittitle>Genealogy materials. (Includes letters from Mrs. William A. Whitney and Benjamin E. Franklin)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_46004df3604e7f45685c1c5d6562168e"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+               <c03 id="aspace_05daeb24aa04f226992a4ef7126b65ab" level="file">
+                  <did>
+                     <unittitle>Genealogy book: <title>The Churchills of Oberlin</title>
+                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_be3906917377b8ce10ae41cb20ee7e0e"
+                                label="Mixed Materials [310183630221751]"
+                                type="box">708</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_77de277664b552aa9f25a5e9daf2a270" level="file">
+                  <did>
+                     <unittitle>Genealogical materials: Henrietta Beach Vance [grandmother]. (Includes materials about and letters of Henrietta Beach Vance to Alfred and Marie Churchill, materials related to the Vance family in Lagrange County, and to Lewis Nelson Churchill)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1894/1936"
+                               type="inclusive">1894-1936</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_db032ef159b8123bdedb703e229815d6"
+                                label="Mixed Materials [310183630221751]"
+                                type="box">708</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_3cdf5727e0c26296aaf91814f953edba" level="file">
+               <did>
+                  <unittitle>Will and account book of Henrietta Beach Vance [grandmother].</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1886/1901"
+                            type="inclusive">1886-1901</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bdc7206a31701e83355224bc8a19e1c2"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_778ba4aaac396ba5ddeba8c406344932" level="file">
+               <did>
+                  <unittitle>Obituaries of Henrietta Vance Churchill [mother].</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1898/1899"
+                            type="inclusive">1898-99</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_61d1d10bc2f2556c9cf480e573fa35c6"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7eb4793b4ae823aedec28b9d63eb2323" level="file">
+               <did>
+                  <unittitle>Letters and writings of Henrietta Vance Churchill [mother].</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1858/1858">1858</unitdate>
+                  <unitdate normal="1892/1893" type="inclusive">1892-93</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dcae722d74656e75900c100c19725242"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ed5692740ba0fa2c47daa742986cca05" level="file">
+               <did>
+                  <unittitle>Letters of Charles Henry Churchill [father] to Alfred and Marie Churchill</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1890/1904"
+                            type="inclusive">1890-1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5a566be9fc7014bf82887bec64bbcf2a"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c66b24a14a367c6de926025c067f779e" level="file">
+               <did>
+                  <unittitle>Letters to Charles Henry Churchill from family. (Includes photograph and postcard from Lyme, New Hampshire)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1838/1843"
+                            type="inclusive">1838-43</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d9e1603cccf145c960a6ca4c1c41da7d"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ecd1b8464defb1fd54e2328f25a565aa" level="file">
+               <did>
+                  <unittitle>Materials on Charles Henry Churchill [father].</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1872/1936"
+                            type="inclusive">1872-1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d81ae6e419a29ae73191e09fab723419"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7805ba2db8c980c9d0dbf14050b94930" level="file">
+               <did>
+                  <unittitle>Letters from brothers and sisters.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1898/1941"
+                            type="inclusive">1898-1941</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e679d3ecaaa3e0274542e2a58676d8ae"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ebde271c36a1e1bc932de2550ed52819" level="file">
+               <did>
+                  <unittitle>Letters to family from Berlin.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1888/1890"
+                            type="inclusive">1888-90</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e315ea7eaf779a88ad301a9e9ce6bbac"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f215ea128c055cbfa3d822c05dbd90f7" level="file">
+               <did>
+                  <unittitle>Family letter.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c90f93392164ba8aa01c2d48a5cd205b"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_88a83805718581d1ffd220ec26a29f86" level="file">
+               <did>
+                  <unittitle>Family letter about Edward [brother].</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1934"
+                            type="inclusive">1933-34</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4667ddc7060ddf126f829335ee6de737"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II. General and Professional Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1889/1942"
+                         type="inclusive">1889-1942</unitdate>
+            </did>
+            <scopecontent id="aspace_6e6f294d7b5def328dfd17a7e25d1c2b">
+               <head>Scope and Contents</head>
+               <p>This series contains correspondence relating to Churchill's research and and career at Smith College.</p>
+            </scopecontent>
+            <c02 id="aspace_10d00dfa9fe4180b1b9b3a5f413e4988" level="file">
+               <did>
+                  <unittitle>General correspondence.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1901/1942"
+                            type="inclusive">1901-42</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_28f7d4b604489931e28b4ec403644cb5"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_64a7d1fc60a623b73aa075485b4ecb68" level="file">
+               <did>
+                  <unittitle>Letters from Laurence Binyon</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1914/1934"
+                            type="inclusive">1914-34</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_46c8cf56cd4a0b4bc10ddf2dce8023ea"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ccaa56d2be782975858bce0dd122ebd8" level="file">
+               <did>
+                  <unittitle>Correspondence with Marion LeRoy Burton</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1914/1917"
+                            type="inclusive">1914-17</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5f55f7bba1c02304423feae98fc0716f"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c246081f9c5e66c927b74fc9f52a091c" level="file">
+               <did>
+                  <unittitle>Letters from Charles Lang Freer</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1913/1916"
+                            type="inclusive">1913-16</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9750bab16ce48a6bc08cf64b98b9c1c5"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c8e5f7dee8d78e412a8a946de7973f03" level="file">
+               <did>
+                  <unittitle>Letters to Grace Gilfillan</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1901-04</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8001bf71bde05ae1ede585dfee98ce25"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dad3fa8ed6eeca7393c4ef17fd4d1571" level="file">
+               <did>
+                  <unittitle>Correspondence with Laurenus Clark Seelye</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1905/1915"
+                            type="inclusive">1905-15</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_229074147314d3b43deea643810918ce"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6a8006097554a8cb027887e8a8f18cf7" level="file">
+               <did>
+                  <unittitle>Correspondence with Dwight William Tryon</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1912/1925"
+                            type="inclusive">1912-25</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dffe770275caa156cc45be027af2b57e"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d3d9c3ad8da95d729b8936edefce2e8f" level="file">
+               <did>
+                  <unittitle>Letters from Alice B. Tryon</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_330bb9ce7ad11736d72bfdccf12caccf"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e1afc178d2cef2e197f793ddb86c99d5" level="file">
+               <did>
+                  <unittitle>Letters from Hugh Walpole</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1926"
+                            type="inclusive">1922-26</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_53393de39e86637455647e9b7e76a4db"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a586e58cf3a32d32b515992164f789e0" level="file">
+               <did>
+                  <unittitle>Letters from Henry C. White</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_608833c7b5b8a0b6d8d389bb6541e00e"
+                             label="Mixed Materials [310183630221751]"
+                             type="box">708</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III. Museum and Art Collecting Materials</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1905/1941"
+                         type="inclusive">1905-1941</unitdate>
+            </did>
+            <scopecontent id="aspace_c6a9188d1369cebe98d8167bee32c73b">
+               <head>Scope and Contents</head>
+               <p>This series includes materials related to museum exhibitions and art collecting, and Churchill's own art work.</p>
+            </scopecontent>
+            <c02 id="aspace_806d68f34a0c0ecf821461a3ddbcd0fc" level="file">
+               <did>
+                  <unittitle>Gericault exhibit: brochure and correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1929/1936"
+                            type="inclusive">1929-36</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3d94b06d4d6ff6df998818fd038d97aa"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_66c7e2e051f259dcbfce3ea8830407f3" level="file">
+               <did>
+                  <unittitle>Booklet on art collecting: "Building a Collection" Full title: <title>Building a Collection: Notes on the Work of Alfred Vance Churchill.</title> Published by the American Association of University Women</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="questionable"
+                            era="ce"
+                            normal="1937/1937">1937?</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b91ba836104ddc923b611f3fc927938c"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ae4a5e7aecc99a772718d6239b0751b6" level="file">
+               <did>
+                  <unittitle>Catalogues of the Smith College Museum of Art. One of the two copies is annotated by Churchill.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c488b73c7f45b23f600a23d3b315ba87"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_92d1e725566b63c58d93473ddc0d799d" level="file">
+               <did>
+                  <unittitle>Materials on Churchill's art and exhibits. Includes news clippings, brochure and correspondence.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1905/1950"
+                            type="inclusive">1905-50</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c34a7705ea29df7adb6fe59c10099a99"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ac041ea27d6ab17c3b8ddca1848fad29" level="file">
+               <did>
+                  <unittitle>Silhouettes of Smith College presidents. Includes correspondence.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1939"
+                            type="inclusive">1938-39</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2c14211c72a9458c6470e115ecdb79b4"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>Series IV. Publications and Teaching Materials</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1948"
+                         type="inclusive">1900-1948</unitdate>
+            </did>
+            <scopecontent id="aspace_a447aacb083e5944fb9f7d004ce43b2c">
+               <head>Scope and Contents</head>
+               <p>This series includes professional publications, course syllabi, lecture notes, speeches on art education, and transcripts of Churchill's book <title render="italic">Midwestern.</title>
+               </p>
+            </scopecontent>
+            <c02 id="aspace_bf16bc24623aac5a7eed61002df45b6c" level="file">
+               <did>
+                  <unittitle>Prints used for courses Art 13 &amp; 14</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3e7e597208dbc0c15935f46235a8da3a"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c28fe994e8c9cd16fd4eee50e3fffef2" level="file">
+               <did>
+                  <unittitle>Lecture notes and outlines for art history. Materials are printed, handwritten, or typed.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1918"
+                            type="inclusive">1917-18</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bc8101350f4237353f362b8b0e2d6bf0"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_028ab978c0582d790c2b78455795710e" level="file">
+               <did>
+                  <unittitle>Materials on teaching art. Includes syllabi, correspondence.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1941"
+                            type="inclusive">1900-41</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_82bca6f2bb893de9d9e033be00bbe4b4"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7e90a62a90f5ac79d6a0bea308867f0e" level="file">
+               <did>
+                  <unittitle>Speeches and materials on art in education</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1902/1930"
+                            type="inclusive">1902-30</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3f12a571e072e4ffcb6d7326c62ea186"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b16c5764287484a85414171d5e164176" level="file">
+               <did>
+                  <unittitle>Article: "The Meaning and Aim of Art in Education"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ddd966ed1cb516337d94df60fe510b10"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_19a1bb5f6e1eeb862ec86a89912bf7db" level="file">
+               <did>
+                  <unittitle>Article: "Art in the College Course"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_42f143ef27b5045ccb68c5e74e5f612b"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e8ac72be50f70976fe0bd00efa60e5d5" level="file">
+               <did>
+                  <unittitle>Booklet: "One Hour Course in Art Interpretation"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c5aa9efba707e90733a825c5821ab6a2"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_47a14e2cffefcbb2911bc6abe97fb27f" level="file">
+               <did>
+                  <unittitle>List of publications</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_87722167e5ecd785785e51a034892350"
+                             label="Mixed Materials [310183630221637]"
+                             type="box">710</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3f1e755007ce6cda3551cd32daee1a69" level="file">
+               <did>
+                  <unittitle>Pamphlet: "Catalogue of Architects, Sculptors &amp; Painters"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9eeca6cabf79e0e49f45558fb1aeaeb1"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c34d892abbce9f42758cdb8e4c508136" level="file">
+               <did>
+                  <unittitle>Pamphlet: "Italian Painters of the Renaissance"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4cfc26824e748476693072c3952b04cd"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2d93d2d2275aa016721d714cc893b713" level="file">
+               <did>
+                  <unittitle>Article: "Picasso's Failure"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1925/1925">1925</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7cb7b5f0bdef01ad8009d2a1661cd1d9"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c122b6e2cd1ea4400aa07a04b6fac29f" level="file">
+               <did>
+                  <unittitle>Article: "On Cezanne"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_947fbd26f0461898e501ac4f792cdffa"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ef596f7246ea9be75fe5a5b0eba78aee" level="file">
+               <did>
+                  <unittitle>Typescript: translations of German songs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1948"
+                            type="inclusive">1941-48</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8918cdd60f427745e2b2cd0ee4edbdf1"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5ba6830941d6286a6715851e03817704" level="file">
+               <did>
+                  <unittitle>Book: <title>Golden Songs</title>. Two copies, one annotated.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a4fa49d7c060d5fb3440a5f790b28d31"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7973fba3761aa7c935444a72c39a041f" level="file">
+               <did>
+                  <unittitle>Carbon typescript bound: "The Thirteenth Century"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_db643a824fbbc445f0177eb727513f75"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9dcf46e186def6d6e75a59cffa88fdfd" level="file">
+               <did>
+                  <unittitle>Manuscript: poems</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a3bd28833acaefbf664082a1d34b6d03"
+                             label="Mixed Materials [310183630221694]"
+                             type="box">709</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6c35405043d18154a2697923e6c77d70" level="file">
+               <did>
+                  <unittitle>
+                     <title>Midwestern</title>
+                  </unittitle>
+               </did>
+               <c03 id="aspace_8e694f055516057cbb8fc1e78ffc54b3" level="file">
+                  <did>
+                     <unittitle>Background materials for <title>Midwestern</title>
+                     </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1902/1940"
+                               type="inclusive">1902-40</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_68a8256fd7b7e5232c6fe1e4f6eb1ebd"
+                                label="Mixed Materials [310183630221694]"
+                                type="box">709</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_04828f6925b756837ebecd75d6abf21f" level="file">
+                  <did>
+                     <unittitle>Correspondence regarding families of Oberlin, Ohio.</unittitle>
+                     <container altrender="Letter document box"
+                                id="aspace_2b5b694dd740020752f77ccb1e8bf32b"
+                                label="Mixed Materials [310183630221694]"
+                                type="box">709</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_4de90c5535074e49526b488ed21731b2" level="file">
+                  <did>
+                     <unittitle>Background materials for <title>Midwestern</title>
+                     </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1935/1938"
+                               type="inclusive">1935-38</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_031e04be79b1243cfc7daf14561e2a11"
+                                label="Mixed Materials [310183630221694]"
+                                type="box">709</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_50adb3b75993e47b367932991b7b2139" level="file">
+                  <did>
+                     <unittitle>Background materials for <title>Midwestern</title>. This folder was also arranged by Churchill himself.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1935/1938"
+                               type="inclusive">1935-38</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_c0662e8fab9ef34b9270dd92a60c6138"
+                                label="Mixed Materials [310183630221637]"
+                                type="box">710</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_e154c86b2d2c57273aec9c7aecb4187e" level="file">
+                  <did>
+                     <unittitle>Manuscript of <title>Midwestern</title>, first folder</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_98e6b043df5091a5a201ae3b984205f3"
+                                label="Mixed Materials [310183630221637]"
+                                type="box">710</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_732d73de703b27eecdeca38c4a51ac80" level="file">
+                  <did>
+                     <unittitle>Manuscript of <title>Midwestern</title>, second folder</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_5b2a2c2d494f69e45e9941f5e33cf7f1"
+                                label="Mixed Materials [310183630221637]"
+                                type="box">710</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_105a5480dddfa143e2a5c941a9f3e035" level="file">
+                  <did>
+                     <unittitle>Manuscript of <title>Midwestern</title>, third folder</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_8f7696e43e8a712dedc3677222bde517"
+                                label="Mixed Materials [310183630221637]"
+                                type="box">710</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_f85833968495891bb7d09c464fea16e8" level="file">
+                  <did>
+                     <unittitle>Manuscript of <title>Midwestern</title>, fourth folder</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_7cb4a6763b8ea9a53f31fb4c152c89be"
+                                label="Mixed Materials [310183630221637]"
+                                type="box">710</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_3c4eed21d3ae6169c1f8b314153407c8" level="file">
+                  <did>
+                     <unittitle>
+                        <title>Midwestern</title> MS typed: Preface, Prelude, Chapters 1-7. Appears to be the latest and abridged version of the work. Includes table of contents and a photo of Mrs. Churchill.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-03/1941-03">March 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_9de67cc4e2837cfa0f972f7dde075f4d"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_feedc4e65e77ccc6fa02c5ae852b2d3e" level="file">
+                  <did>
+                     <unittitle>
+                        <title>Midwestern</title> MS typed: Chapters 8-13</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-03/1941-03">March 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_a122972c13f9deba1ae190927ed3a5bc"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_310d9c21a388a2a9988b6d680a45ec48" level="file">
+                  <did>
+                     <unittitle>
+                        <title>Midwestern</title> MS typed: Chapters 14-17</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-03/1941-03">March 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_e3ce26728b0956b6bca4857548c10d97"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_06a7f909ce275f30c5c9253a180fbda6" level="file">
+                  <did>
+                     <unittitle>
+                        <title>Midwestern</title> MS typed: Chapters 18-23</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-03/1941-03">March 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_77f16928438d9b2befcc816c096e530b"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_40208de57be680e4b103fbcdd733d3aa" level="file">
+                  <did>
+                     <unittitle>Typescript of <title render="italic">Midwestern</title>: Chapters 1-9</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-02/1941-02">February 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_d2b1b9787b1aa8f29a151e5c634fd671"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+                  <odd id="aspace_97f3f383bf6fffdb72daf2a23937c907">
+                     <head>General</head>
+                     <p>[See Churchill's note in front about the different versions.]</p>
+                  </odd>
+               </c03>
+               <c03 id="aspace_24ebedbbc215f033f49eb943577a0f05" level="file">
+                  <did>
+                     <unittitle>Typescript of <title render="italic">Midwestern</title>: Chapters 10-13</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-02/1941-02">February 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_2b5575f28bbe8b1f9e663678803570d8"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_912b92ccc8696e59647657b8a6207d6a" level="file">
+                  <did>
+                     <unittitle>Typescript of <title render="italic">Midwestern</title>: Chapters 14-21</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-02/1941-02">February 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_bc29d4662ac0c29c523af80e81a5a696"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_dedce9827a994367bc70bd7bf50757a6" level="file">
+                  <did>
+                     <unittitle>Typescript of <title render="italic">Midwestern</title>: Chapters 22-26</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1941-02/1941-02">February 1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_f7d6f80f55c09e825821e9c3709fff66"
+                                label="Mixed Materials [310183630221579]"
+                                type="box">711</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
