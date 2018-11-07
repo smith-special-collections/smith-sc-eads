@@ -1,1290 +1,1879 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca60.xml//EN">manosca60</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Frank Hamilton Hankins Papers, 1922-1968 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Katrina Cokeng.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-04</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca60 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Frank Hamilton Hankins Papers, 1922-1968 </titleproper>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca60</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Frank Hamilton Hankins Papers <num>CA.MS.00060</num>
+            </titleproper>
             <subtitle>Finding Aid</subtitle>
-            <num>RG 42 </num>
-            <author>Katrina Cokeng, 2002, CDO Archival Intern </author>
-            <date>1999 </date>
-
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Hankins, Frank Hamilton,
-                    1877-</persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Frank Hamilton Hankins
-                Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1922-1968</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:a0058a25-c098-4114-b020-1c1dae74278d</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">9 boxes</extent>
-                <extent encodinganalog="300$a">(3.75 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Professor of Sociology, demographer,
-                author and lecturer. Contains articles, correspondence, written speeches,
-                photographs, minutes from meetings, and publications. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Frank Hamilton Hankins was born on September 27, 1877 in Wilkshire, Ohio. He grew up
-                in Kansas, where he received an A.B. from Baker University in 1901. He served as
-                superintendent of schools in Waverly, Kansas for two years before entering Columbia
-                University. As a graduate student and fellow in statistics, Hankins was strongly
-                influenced by the philosophy and logic of John Stuart Mill, the sociology of
-                Giddings, Spencer, and Ward, and the quantitative work of Quetelet, Galton, and
-                Pearson. His doctoral dissertation, "Adolphe Quetelet as Statitician" (1908), was an
-                important contribution to the development of empirical sociology. </p>
-            <p>Hankins served as a member of the Clark University faculty for sixteen years
-                (1906-22), and head of the Department of Political and Social Science beginning in
-                1908. Clark, at the time, was under the leadership of the influential psychologist
-                G. Stanley Hall, and was visited by famous psychoanalysts such as Sigmund Freud and
-                Havelock Ellis. Thus, it was a center of research, graduate study, and stimulating
-                scholarly controversy. Hankins contributed numerous articles to scholarly journals,
-                lectured frequently at other universities, studied social conditions in Europe
-                before and after World War I, and taught at the Ecole Libre des Sciences Politique
-                in Paris in 1921. </p>
-            <p>Hankins joined the Smith College faculty in 1922 as Professor of Sociology, and for
-                many years he served as department chairman, until he left Smith in 1946. Under the
-                presidency of William Allan Neilson, Smith was an exciting and non-cloistered
-                campus. Hankins, in his years at Smith, built up an excellent group of sociologists
-                on campus, which included people such as Harry Elmer Barnes, Ray Billington, G.A.
-                Borgese, Merle Curti, and Harold Faulkner, among others. Hankins was very active on
-                many different boards and organizations on population and individual rights. In
-                1930, Hankins was elected the first President of the American Sociological Society,
-                and in 1945 President of the American Population Association. He also taught and
-                lectured widely, serving on the faculties of Amherst College, Columbia, Berkeley,
-                the Army Center at Biarritz, and, following his retirement from Smith, the
-                University of Pennsylvania. In 1936, he studied, on the scene, social conditions in
-                Nazi Germany. </p>
-            <p>Hankins contributed widely to scholarly journals, anthologies, and the <title
-                    render="italic">Encyclopedia of the Social Sciences</title>. His ground-breaking
-                study, <title render="italic">The Racial Basis of Civilization: A Critique of the
-                    Nordic Doctrine</title>, was published in 1926. In 1928, he published <title
-                    render="italic">An Introduction to the Study of Society</title>, a textual
-                treatise presenting his principal theoretical and substantive concerns and
-                convictions. Hankins' writings reveal a keen interest in the role of biological
-                factors in social life and history and, conversely, in the role of such selective
-                processes as urbanization, education, persecution, and war in the determination of
-                population quantity and quality. He argued in favor of birth control, more for the
-                lower classes and less for the privileged. He condemned authoritarian institutions
-                and practices and supported the maximization of opportunity for all. He also
-                denounced racist policies and believed that racially mixed populations were
-                physically and socially beneficial. </p>
-            <p>Hankins died of a heart attack at the age of 92 on January 24, 1970 in Franklin
-                Lakes, New Jersey. At the time of his death, he was an eminent sociologist and
-                demographer, distinguished author and lecturer, provocative and influential teacher,
-                an ardent proponent of a strictly scientific sociology, and a concerned humanist.
+            <author>Katrina Cokeng, 2002, CDO Archival Intern</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
             </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Frank Hamilton Hankins Papers span a period from 1922 to 1968, and much of the
-                material is composed of his numerous publications. The collection also covers his
-                involvement in various societies and organizations. The folders are arranged
-                alphabetically, and the hefty folders full of letters and notes regarding Hankins'
-                various organizations point to his involvement in the sociological world. Overall,
-                the Frank Hamilton Hankins Papers are composed of articles, correspondence, written
-                speeches, photographs, minutes from meetings, publications, and information from
-                Hankins' time at different universities, such as Columbia and Clark.</p>
-            <p>In addition to some chronologies of Hankins' history, the biographical materials also
-                contain some articles and press releases at the time of his death. Much of the
-                information is repetitious, but they are a good source of factual insight. </p>
-            <p>The correspondence and subject files include the many letters Hankins wrote to his
-                peers over the years, on general subjects as well as specific ones. In addition to
-                general correspondence, there is one box of material devoted specifically to the
-                correspondence between Hankins and his colleague Harry Elmer Barnes. This series
-                also contains several subject files of a variety of topics. </p>
-            <p>Copies of Hankins' publications comprise the largest part of this collection. There
-                is some information on debates Hankins was involved with and lectures he gave. Also,
-                there are some materials on Hankins' contributions to <title render="italic">The New
-                    Humanist</title>, a journal that aims to cover unrestricted and liberal
-                viewpoints. Hankins' collaboration with Farrar &amp; Rinehart Publishers is also
-                well documented. This file includes correspondence, notes, monetary agreements, and
-                memorandums. Apparently, Hankins was editing several textbooks on sociology. There
-                also seems to be a paper on Hankins' thoughts on American Development. </p>
-        </scopecontent>
-        <arrangement encodinganalog="351$a" id="scope-org">
-
-            <p>This collection is organized into four series:</p>
-            <list>
-                <item> I. Biographical Materials </item>
-                <item> II. Correspondence </item>
-                <item> III. Subject Files/Organizations </item>
-                <item> IV. Speeches/Publications </item>
-            </list>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions. </p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Frank Hamilton Hankins Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <processinfo id="admin-process">
-                    <p>The Frank Hamilton Hankins Papers were processed by Katrina Cokeng, 2002, CDO
-                        Archival Intern in 1999-2000.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Hankins, Frank Hamilton, 1877-</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Clark University (Worcester,
-                Mass.)--Faculty.</corpname>
-            <persname encodinganalog="700" source="lcnaf">Barnes, Harry Elmer, 1889-1968.</persname>
-            <persname encodinganalog="700" source="lcnaf">Bryson, Gladys, 1894-1952.</persname>
-            <persname encodinganalog="700" source="lcnaf">Marsh, Margaret S., 1945-</persname>
-            <persname encodinganalog="700" source="lcnaf">Phelps, Harold Augustus, 1898-</persname>
-            <persname encodinganalog="700" source="lcnaf">Faris, Ellsworth, 1874-</persname>
-        </controlaccess>
-        <dsc id="contlist" type="combined">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>Series I. Biographical Materials</unittitle>
-                </did>
-                <scopecontent>
-                    <p>The first series, Biographical Materials, contains several summaries of
-                        Hankins' life. Several newspapers, such as the <title render="italic">Boston
-                            Globe</title> and the <title render="italic">Daily Hampshire
-                            Gazette</title>, carried articles on Hankins' death. There are also some
-                        of what appear to be press releases from the Smith College Office of
-                        Publicity regarding Hankins and his activities in the community. One folder
-                        also contains several photographs of Hankins and his wife, as well as
-                        Hankins instructing a student. </p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>BIOGRAPHICAL DATA</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>Series II. Subject Files and Organizations</unittitle>
-                </did>
-                <scopecontent>
-                    <p>There are approximately two and a half boxes devoted to the second series,
-                        Correspondence. Hankins wrote to many people, especially his colleague Harry
-                        Elmer Barnes. The correspondence between Hankins and Barnes covers a period
-                        from the early 1920's to the late 1960's. Both men often helped each other
-                        in their work and exchanged opinions. The other letters cover a range of
-                        subjects, from Hankins' academic work to more personal notes. The
-                        correspondence is especially rich in the 1930s. A vast majority of the
-                        correspondence is typed and reflect Hankins' involvement in a large variety
-                        of organizations. There are also several folders of congratulatory letters
-                        and cards wishing Hankins a happy 70th, 90th, and 91st birthday. </p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>AMERICAN COMMITTEE FOR DEMOCRACY AND INTELLECTUAL
-                            FREEDOM</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>AMERICAN DEVELOPMENT</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>AMERICAN EUGENICS SOCIETY <unitdate>1937-38</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>AMERICAN EUGENICS SOCIETY <unitdate>1939-48</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>AMERICAN EUGENICS SOCIETY - TEXTBOOK</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>AMERICAN SOCIOLOGICAL SOCIETY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>CLARK UNIVERSITY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>CLARK UNIVERSITY - DEGREES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>CLARK UNIVERSITY - SCHOLARSHIP</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>COLUMBIA UNIVERSITY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>CORNELL UNIVERSITY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>CORRESPONDENCE <unitdate>1922-67</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>CORRESPONDENCE - BIRTHDAY <unitdate>1947</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>CORRESPONDENCE - BIRTHDAY <unitdate>1967</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>CORRESPONDENCE - BIRTHDAY <unitdate>1968</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>CORRESPONDENCE - BARNES, HARRY ELMER</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>CORRESPONDENCE - BRYSON, GLADYS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>CORRESPONDENCE - MARSH, MARGARET</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>CORRESPONDENCE - TEAGLE, ALICE <unitdate>1904</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>CORRESPONDENCE <unitdate>1945</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>DEBATES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>FARRAR &amp; RINEHART</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>FELLOWSHIPS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>GENERAL</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>HUMANIST MANIFESTO</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>LECTURES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>MACMILLAN COMPANY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>NORTHAMPTON - TERCENTENARY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>ORAL HISTORY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>OREGON UNIVERSITY</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>PHOTOGRAPHS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>PLANNED PARENTHOOD - BIRTH CONTROL RESEARCH</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>PLANNED PARENTHOOD - SANGER</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>POPULATION ASSOCIATION OF AMERICA</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>POPULATION REFERENCE BUREAU <unitdate>1935-49</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>POPULATION REFERENCE BUREARU <unitdate>1946</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>POPULATION REFERENCE BUREAU <unitdate>1950-52</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>POPULATION REFERENCE BUREAU <unitdate>1953-54</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>QUESTIONNAIRE</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>RETIREMENT</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>SHANGHAI, CHINA</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>SOCIOLOGY DEPARTMENT <unitdate>1939-42</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>SMITH COLLEGE SCHOOL FOR SOCIAL WORK</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>SOCIAL FORCES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>SOCIOLOGY DEPARTMENT - LECTURES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>SOCIOLOGY DEPARTMENT - SURVEY SOCIAL SCIENCE</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>SOCIOLOGY DEPARTMENT - MAJORS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>SPEECHES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>SPEECHES - GET TOGETHER CLUB</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>TECHNICAL AID DILEMMA</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>Series III. Correspondence</unittitle>
-                </did>
-                <arrangement>
-                    <p>Arranged alphabetically.</p>
-                </arrangement>
-                <scopecontent>
-                    <p>Subject Files and Organizations covers a broad range of topics, from Hankins'
-                        involvement in the American Eugenics Society to the development of the
-                        Sociology department. There are also several folders on the various
-                        universities Hankins taught at, such as Clark University, Columbia
-                        University, and Cornell University. Descriptions of scholarships and
-                        fellowships are also included. Looking through these various subject files,
-                        it is easy to get a general idea of Hankins. He was obviously interested in
-                        such topics as eugenics and population control. His participation in the
-                        American Committee for Democracy and Intellectual Freedom, the American
-                        Eugenics Society, and the American Sociological Society is extensively
-                        covered. These folders are largely composed of correspondence, but also
-                        include essays and a scrapbook. </p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>CORRESPONDENCE <unitdate>1936</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>CORRESPONDENCE <unitdate>Jan-May 1937</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>CORREPONDENCE <unitdate>June-Dec 1937</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>CORRESPONDENCE - Phelps, Harold A. <unitdate>1936</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>CORRESPONDENCE - Fairchild, Henry Platt <unitdate>1936</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>CORRESPONDENCE - Faris, Ellsworth <unitdate>1937</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>CORRESPONDENCE - Phelps, Harold A. <unitdate>1937</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>CORRESPONDENCE - Foreign Correspondence</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>FINANCES</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>ORGANIZATION - VOL. 1, NO. 1</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>REVIEWS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>CORRESPONDENCE - Barnes, Harry Elmer <unitdate>1925-49</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>CORRESPONDENCE - Barnes, Harry Elmer <unitdate>1950-61</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>CORRESPONDENCE - Barnes, Harry Elmer <unitdate>1962-</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>CORRESPONDENCE - Barnes, Harry Elmer, Testimonial Volume -
-                            Jorelamon, Dorothy</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>CORRESPONDENCE - Barnes, Harry Elmer, Testimonial Volume -
-                            Religious Ideas</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser4" level="series">
-                <did>
-                    <unittitle>Series IV. Publications and Speeches</unittitle>
-                </did>
-                <scopecontent>
-                    <p>Hankins was a very prolific writer, and the Publications and Speeches series
-                        contains almost all of his work. He published many pamphlets on a variety of
-                        topics, such as issues of race, population control, and poverty. These are
-                        themes that keep recurring through his work. Many of his articles have been
-                        published in various newspapers, and these are included as well. It is
-                        apparent that Hankins was a progressive thinker who enjoyed challenging
-                        existing beliefs. </p>
-                </scopecontent>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>PUBLICATIONS</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>PUB - Adolph Quetelet as Statistician</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>PUB - The Approach to Responsibility</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>PUB - Are Nordics Superior?</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>PUB - Barnes, Harry Elmer, International Encyclopedia of the
-                            Social Sciences</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>PUB - Biology and Society: Modern Social Organization</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>PUB - Civilization and Fertility</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>PUB - The Conflict of Civilization and Parenthood</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>PUB - The Contributions of Science to Social Work</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>PUB - The Declining Birth Rate</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>PUB - Dictionary of Sociology</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>PUB - Does Advancing Civilization
-                            Involve...Fertility?</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>PUB - Editorials</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>PUB - El Libre Albedrio Y El Determinismo</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>PUB - Eugenic Hypothesis</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>PUB - Eugenics and the Culture Drift</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>PUB - Facts and the Nordic Doctrine</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>Forty-Year Perspective</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>PUB - Franklin Henry Giddings, 1855-1931</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>PUB - Franklin Henry Giddings</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">21</container>
-                        <unittitle>PUB - Freedom of Speech and Freedom of Teaching</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">22</container>
-                        <unittitle>PUB - Further Suggestions Concerning the Content of an Elementary
-                            Course</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>PUB - German Policies for Increasing Births</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>PUB - Giddings, Franklin Henry</unittitle>
-                    </did>
-                    <note>
-                        <p>See Franklin Henry Giddings</p>
-                    </note>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>PUB - Granville, Stanley Hall <unitdate>1846-1924</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Hampshire History</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Heredity and Environment</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>PUB - The Historian Must Be Free</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>PUB - How About the Jews?</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>PUB - Humanism and World Consciousness</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>PUB - Humanism and the Culture Stream</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>PUB - Humanitarianism in the Light of Biology</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>PUB - Individual Differences and Democratic Theory</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>PUB - Individual Differences and Their Significance for Social
-                            Theory</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>PUB - Individual Differences: The Galton-Pearson
-                            Approach</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>PUB - Individual Freedom with Some Sociological Implications of
-                            Determinism</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>PUB - Introduction to Sociology</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>PUB - Introduction to the Study of Society, 1st ed.
-                                <unitdate>1928</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>PUB - Introduction to the Study of Society, Rev. ed.
-                                <unitdate>1935</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>PUB - Is Our Innate National Intelligence Declining?</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>PUB - Is the Differential Fertility of the Social Class
-                            Selective?</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>PUB - Latest in the Philosophy of History </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>PUB - Meaning of Race and Race Superiority</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>PUB - Migrant Asia by R. Mukerjee</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>PUB - Modern Social Organizations</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>PUB - Morals and Religion</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>PUB - Morgan's La Prehistorie Orientale</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>PUB - New Books on God, Immortality, and Religious
-                            Origins</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>PUB - Organic Plasticity Versus Organic Response</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>PUB - Our Load of Defective Genes</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>PUB - Poverty and Birth Control</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>PUB - Patriotism and Peace</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>PUB - Pressure of Population as a Cause of War</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>PUB - Questions for Sociology: An Informal Round
-                            Table</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>PUB - Quetelet's Average Man in Modern Scientific
-                            Research</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>PUB - Racial Differences and Industrial Welfare</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>PUB - The Rationality of Birth Control</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>PUB - Reason Versus Authority as a Guide to Living </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>PUB - The Reparations Problem and the Dawes Report</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>PUB - Reviews</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>PUB - Rising Tide of Racial Tension</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>PUB - Social Biology</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">21</container>
-                        <unittitle>PUB - Social Science and Social Action</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">22</container>
-                        <unittitle>PUB - Sociology</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">23</container>
-                        <unittitle>PUB - Sociology and Social Guidance Discussion</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">24</container>
-                        <unittitle>PUB - Students' Ratings of Instruction</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">25</container>
-                        <unittitle>PUB - Sumner Centenary Volume</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">26</container>
-                        <unittitle>PUB - Tillich, Paul</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">27</container>
-                        <unittitle>PUB - Transformations Politiques Recentes Aux
-                            Etats-Unis</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">28</container>
-                        <unittitle>PUB - Under-Developed Areas with Special Reference to Population
-                            Reforms</unittitle>
-                    </did>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-06 15:28:39 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca60 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-06</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Frank Hamilton Hankins Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Hankins, Frank Hamilton, 1877-</persname>
+         </origination>
+         <unitid>CA.MS.00060</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.75 linear feet</extent>
+            <extent altrender="carrier">(9 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1846/1968"
+                   type="inclusive">1846-1968</unitdate>
+         <abstract id="aspace_980775307423b6e0c32e6579aef22349">Professor of Sociology, demographer, author and lecturer. Collection contains articles, correspondence, written speeches, photographs, minutes from meetings, and publications.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Frank Hamilton Hankins was born on September 27, 1877 in Wilkshire, Ohio. He grew up in Kansas, where he received an A.B. from Baker University in 1901. He served as superintendent of schools in Waverly, Kansas for two years before entering Columbia University. As a graduate student and fellow in statistics, Hankins was strongly influenced by the philosophy and logic of John Stuart Mill, the sociology of Giddings, Spencer, and Ward, and the quantitative work of Quetelet, Galton, and Pearson. His doctoral dissertation, "Adolphe Quetelet as Statitician" (1908), was an important contribution to the development of empirical sociology. </p>
+         <p> Hankins served as a member of the Clark University faculty for sixteen years (1906-22), and head of the Department of Political and Social Science beginning in 1908. He contributed numerous articles to scholarly journals, lectured frequently at other universities, studied social conditions in Europe before and after World War I, and taught at the Ecole Libre des Sciences Politique in Paris in 1921. </p>
+         <p> Hankins joined the Smith College faculty in 1922 as Professor of Sociology, and for many years he served as department chairman, until he left Smith in 1946. He built up a group of sociologists on campus, including Harry Elmer Barnes, Ray Billington, G.A. Borgese, Merle Curti, and Harold Faulkner. Hankins was very active on many different boards and organizations on population and individual rights. In 1930, Hankins was elected the first President of the American Sociological Society, and in 1945 President of the American Population Association. He also taught and lectured widely, serving on the faculties of Amherst College, Columbia, Berkeley, the Army Center at Biarritz, and, following his retirement from Smith, the University of Pennsylvania. In 1936, he studied, on the scene, social conditions in Nazi Germany. </p>
+         <p> Hankins contributed widely to scholarly journals, anthologies, and the <title render="italic">Encyclopedia of the Social Sciences</title>. His ground-breaking study, <title render="italic">The Racial Basis of Civilization: A Critique of the Nordic Doctrine</title>, was published in 1926. In 1928, he published <title render="italic">An Introduction to the Study of Society</title>, a textual treatise presenting his principal theoretical and substantive concerns and convictions. Hankins' writings reveal an interest in the role of biological factors in social life and history and, conversely, in the role of such selective processes as urbanization, education, persecution, and war in the determination of population quantity and quality. He argued in favor of birth control, more for the lower classes and less for the privileged. He condemned authoritarian institutions and practices and supported the maximization of opportunity for all. He also denounced racist policies and believed that racially mixed populations were physically and socially beneficial. </p>
+         <p> Hankins died of a heart attack at the age of 92 on January 24, 1970 in Franklin Lakes, New Jersey.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Frank Hamilton Hankins Papers include his numerous publications and cover his involvement in various societies and organizations. Files include articles, correspondence, speeches, photographs, minutes from meetings, publications, and information from Hankins' time at different universities, such as Columbia and Clark.</p>
+         <p> In addition to some chronologies of Hankins' history, the biographical materials also contain some articles and press releases at the time of his death. </p>
+         <p> Copies of Hankins' publications comprise the largest part of this collection. There is some information on debates Hankins was involved with and lectures he gave. Also, there are some materials on Hankins' contributions to <title render="italic">The New Humanist</title>. Hankins' collaboration with Farrar &amp; Rinehart Publishers is also well documented.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Materials</item>
+            <item>II. Correspondence</item>
+            <item>III. Subject Files/Organizations</item>
+            <item>IV. Speeches/Publications</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Frank Hamilton Hankins Papers, Smith College Archives, CA-MS-00060, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>The Frank Hamilton Hankins Papers were processed by Katrina Cokeng, 2002, CDO Archival Intern in 1999-2000.</p>  
+      </processinfo>
+      <acqinfo id="aspace_c24f22f802d96f1f1f56c060b4a31203">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Hankins, Frank Hamilton, 1877-</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Clark University (Worcester, Mass.)--Faculty.</corpname>
+         <persname encodinganalog="600" source="naf">Barnes, Harry Elmer, 1889-1968.</persname>
+         <persname encodinganalog="600" source="naf">Bryson, Gladys, 1894-1952.</persname>
+         <persname encodinganalog="600" source="naf">Marsh, Margaret S., 1945-</persname>
+         <persname encodinganalog="600" source="naf">Phelps, Harold Augustus, 1898-</persname>
+         <persname encodinganalog="600" source="naf">Faris, Ellsworth, 1874-</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>Series I. Biographical Materials</unittitle>
+            </did>
+            <scopecontent id="aspace_112b483e903231c3b9d46781413a1c5b">
+               <head>Scope and Contents</head>
+               <p>The first series, Biographical Materials, contains several summaries of Hankins' life. Several newspapers, such as the <title render="italic">Boston Globe</title> and the <title render="italic">Daily Hampshire Gazette</title>, carried articles on Hankins' death. There are also press releases from the Smith College Office of Publicity regarding Hankins and his activities in the community. One folder also contains several photographs of Hankins and his wife, as well as Hankins instructing a student.</p>
+            </scopecontent>
+            <c02 id="aspace_afa431ec8f0535b64fa9cbc80da14bbd" level="file">
+               <did>
+                  <unittitle>BIOGRAPHICAL DATA</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d91031f895bb6fe430e8864f48fbf41c"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_9f5395eb27029ebf5cd2f9eb8b5c31d9"
+                             parent="aspace_d91031f895bb6fe430e8864f48fbf41c"
+                             type="folder">1</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II. Subject Files and Organizations</unittitle>
+            </did>
+            <scopecontent id="aspace_611f587006193afe1a952bfa1563970f">
+               <head>Scope and Contents</head>
+               <p>Subject Files and Organizations covers a broad range of topics, including Hankins' involvement in the American Eugenics Society, American Committee for Democracy and Intellectual Freedom, and the American Sociological Society. These folders are largely composed of correspondence, but also include essays and a scrapbook.</p>
+            </scopecontent>
+            <c02 id="aspace_4e784412338fc124515c152af1a0b358" level="file">
+               <did>
+                  <unittitle>AMERICAN COMMITTEE FOR DEMOCRACY AND INTELLECTUAL FREEDOM</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6ddbf9f7b6e2d26ec854cd1f713c142e"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_6957b61a1585818217c4014415b59be6"
+                             parent="aspace_6ddbf9f7b6e2d26ec854cd1f713c142e"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0ec88ac512ec7e34c3545644f4004533" level="file">
+               <did>
+                  <unittitle>AMERICAN DEVELOPMENT</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d88c20ab2ff80b0dcb9b81e7d4c6948a"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_3e8d8c0e44962d21ebad2a0e9b781372"
+                             parent="aspace_d88c20ab2ff80b0dcb9b81e7d4c6948a"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2f07fcd4b584ad529fb95584bb89949e" level="file">
+               <did>
+                  <unittitle>AMERICAN EUGENICS SOCIETY</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1938"
+                            type="inclusive">1937-38</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_365624b432ea6b9816d4f8ce80ef9d64"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_e03b1169753ed12c67b6906b5ad4fc8f"
+                             parent="aspace_365624b432ea6b9816d4f8ce80ef9d64"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fe3d17fa555cb2b0248d41df9f7d771b" level="file">
+               <did>
+                  <unittitle>AMERICAN EUGENICS SOCIETY</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1948"
+                            type="inclusive">1939-48</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b99479335cd8d3fcaac561514d8a6aa6"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_c27828dd59db5aa46038a46d70589016"
+                             parent="aspace_b99479335cd8d3fcaac561514d8a6aa6"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_095050b5924b98ed4f8347fcddc16006" level="file">
+               <did>
+                  <unittitle>AMERICAN EUGENICS SOCIETY - TEXTBOOK</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1d2d657a983b54b23344ba0348484bf7"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_5d58bbab7b323d9dc3c3719747a5dae3"
+                             parent="aspace_1d2d657a983b54b23344ba0348484bf7"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_16582f207ca0ba3b0b372494dbe318e1" level="file">
+               <did>
+                  <unittitle>AMERICAN SOCIOLOGICAL SOCIETY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_41d7e7b3ce5e10f27f7abd51f0b51e51"
+                             label="Mixed Materials [310183630222668]"
+                             type="box">842</container>
+                  <container id="aspace_e3afc4ec476cb6e69f7db76580248c24"
+                             parent="aspace_41d7e7b3ce5e10f27f7abd51f0b51e51"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_07613c05ea08116be2472b7fbcddd2b5" level="file">
+               <did>
+                  <unittitle>CLARK UNIVERSITY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f86301cd67fafa6a2d8354227e0e2003"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_42863fe53df6ece66f121881dde4cd15"
+                             parent="aspace_f86301cd67fafa6a2d8354227e0e2003"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_373f40794e95807d71ac729345d25a5c" level="file">
+               <did>
+                  <unittitle>CLARK UNIVERSITY - DEGREES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a333615e2b6e34cc0b4da544be7aa065"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_fa2355c5ebf61521bd06f192e4cdae15"
+                             parent="aspace_a333615e2b6e34cc0b4da544be7aa065"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b54d0a3880e3ff3d1e84a83c99a477bc" level="file">
+               <did>
+                  <unittitle>CLARK UNIVERSITY - SCHOLARSHIP</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d19a0cc528ef6bd17efa29d3772c5e9c"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_868389f8b306db437a09152ae046d92a"
+                             parent="aspace_d19a0cc528ef6bd17efa29d3772c5e9c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5fe1a000ad5e1fe5101ab162bbe687e4" level="file">
+               <did>
+                  <unittitle>COLUMBIA UNIVERSITY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_64a58d81975f922c98b918c276873661"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_dda52ba7992fbf51e4a81381045f3a6b"
+                             parent="aspace_64a58d81975f922c98b918c276873661"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ea829fa67973849f34ff6a93f944d573" level="file">
+               <did>
+                  <unittitle>CORNELL UNIVERSITY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_b71bf7ec857ca2769188531ca71d1029"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_f38efff98cbf5f4b423f31e582166c3e"
+                             parent="aspace_b71bf7ec857ca2769188531ca71d1029"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8c8a28f4b2f40798edafe3cc23721090" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1967"
+                            type="inclusive">1922-67</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_076cfb3e738903c6193216eb501a5992"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_5dd8744675f5e8cdffe209db22a4aee5"
+                             parent="aspace_076cfb3e738903c6193216eb501a5992"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_39d1c6592606827182b98f4df28878ae" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - BIRTHDAY</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d39883f82d9501a1e9e46ff7e5717dcd"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_b0f139a74d7f40453856315fa9d8fee9"
+                             parent="aspace_d39883f82d9501a1e9e46ff7e5717dcd"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4244dcef0fd5d3416157905d89af049e" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - BIRTHDAY</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_15c2814d40491cf2be02496c3586676f"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_50edf4dfd0ebe7d5146e9564e5da679f"
+                             parent="aspace_15c2814d40491cf2be02496c3586676f"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b92cff4fa73f687b684fd1d2abf067cd" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - BIRTHDAY</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a8b9cdbe913c3f90df37a37dd6027e03"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_725dd06d0bf7c18a91aaef815898cd33"
+                             parent="aspace_a8b9cdbe913c3f90df37a37dd6027e03"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_420b5ea5fa10c13459ded03a31211dc3" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - BARNES, HARRY ELMER</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6a390131171d3582c380b5ff6210c509"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_00e86184b8957ec3897a2bb2eea31f3f"
+                             parent="aspace_6a390131171d3582c380b5ff6210c509"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fbb48006ddd9a9adb5d76ffb845e3f24" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - BRYSON, GLADYS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_76d8a23d867a65021dfd049e92ba195d"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_edea9b627207384768263811ad810f40"
+                             parent="aspace_76d8a23d867a65021dfd049e92ba195d"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c55280d0463015d3cd8df9b78e693f48" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - MARSH, MARGARET</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_5babf52600cda96ae46020187c89785c"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_a4a65d5a5bf30b98f53a841b6687e9d5"
+                             parent="aspace_5babf52600cda96ae46020187c89785c"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bf191b2c65061b9781100073fd5dd361" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - TEAGLE, ALICE</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4e9310dd8d3d6b35c9df4cdb397fee13"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_57c7081504f16d572cce8a9aec4eca0b"
+                             parent="aspace_4e9310dd8d3d6b35c9df4cdb397fee13"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_446dd5d9ede4a4e0d9692477919de884" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_db6600c82949a47ce0b56db28cc09eb4"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_c48bb07c4cdb420d10487ccf12cf137c"
+                             parent="aspace_db6600c82949a47ce0b56db28cc09eb4"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fbe9697f4ceaea1a4541e2fe45e7fa5a" level="file">
+               <did>
+                  <unittitle>DEBATES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_59bb0a54a01175b22f01c5320d269841"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_023d0a43322ffca573905d773aa7dbe7"
+                             parent="aspace_59bb0a54a01175b22f01c5320d269841"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_338d543e73fee014383ea82ee5b0db96" level="file">
+               <did>
+                  <unittitle>FARRAR &amp; RINEHART</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3758849e1245cbb731305717ba6bf453"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_a477c5e6a072579b4505ee355ca820cb"
+                             parent="aspace_3758849e1245cbb731305717ba6bf453"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4c1202ea00d4723b68405a58bb693dab" level="file">
+               <did>
+                  <unittitle>FELLOWSHIPS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8133a4156677ea91b728cec89925e16e"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_9815826529457f150d67b458b6c72829"
+                             parent="aspace_8133a4156677ea91b728cec89925e16e"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b6db6df77d138aa2d9c30bae8d2f38e0" level="file">
+               <did>
+                  <unittitle>GENERAL</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d653ff281ce7a5ecbd74403475a737d9"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_0bb01827e5b91ec774b865d09b95a94e"
+                             parent="aspace_d653ff281ce7a5ecbd74403475a737d9"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7ce60d0ee7907e19f85617a7b6905c3e" level="file">
+               <did>
+                  <unittitle>HUMANIST MANIFESTO</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_451f359a6d41e62a4e8b38cc704b078e"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_b1cb6953abc28d4bd1144b38be1b1aa4"
+                             parent="aspace_451f359a6d41e62a4e8b38cc704b078e"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d83b473d0fca8744fa03757bfb22d7c6" level="file">
+               <did>
+                  <unittitle>LECTURES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_bf90ff00d2122f883dac2a1064efc8f3"
+                             label="Mixed Materials [310183630222601]"
+                             type="box">843</container>
+                  <container id="aspace_7e065498268b44ff63a74684ca70a7a6"
+                             parent="aspace_bf90ff00d2122f883dac2a1064efc8f3"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_185f41a3474b5630dbf03bab84f20aa0" level="file">
+               <did>
+                  <unittitle>MACMILLAN COMPANY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_7c38d3052e68ab87a3b9f0088dadd0c5"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_090301c2e50eb4593b9329ec193173c2"
+                             parent="aspace_7c38d3052e68ab87a3b9f0088dadd0c5"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c747cf6d2caa1ca931cfce193ad57b17" level="file">
+               <did>
+                  <unittitle>NORTHAMPTON - TERCENTENARY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c2269637848c6ad61bdfba35b5e599d8"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_3d245455ce0b0ce7cc91e5d96f82e170"
+                             parent="aspace_c2269637848c6ad61bdfba35b5e599d8"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a7c58fb4801971d0f61be8d1df154b15" level="file">
+               <did>
+                  <unittitle>ORAL HISTORY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_0f6701b30b99289a4f384d4cd79d9d4b"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_fdfa284bb8925ef38a4cbe647f15044e"
+                             parent="aspace_0f6701b30b99289a4f384d4cd79d9d4b"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2d9fe6508aab0dfdc71bb167e95ff8ad" level="file">
+               <did>
+                  <unittitle>OREGON UNIVERSITY</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c2ef9c94d7296fa1a995846fa4b9478c"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_e55d81244f862d0fb46b8edc186a85b7"
+                             parent="aspace_c2ef9c94d7296fa1a995846fa4b9478c"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2b026493e2d0641b21921064bf0e7eaa" level="file">
+               <did>
+                  <unittitle>PHOTOGRAPHS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c23a6b74b2527665e42b6b6a588c96a6"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_6c1fa4eaf6a5c5646adc9299c4c0e8c0"
+                             parent="aspace_c23a6b74b2527665e42b6b6a588c96a6"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6a0d1cba55c61db17d5435e60fa5ba30" level="file">
+               <did>
+                  <unittitle>PLANNED PARENTHOOD - BIRTH CONTROL RESEARCH</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_246f9375f332765b5e96f701fb236164"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_e04cf7cea6f1bcf4860d3ab16608418a"
+                             parent="aspace_246f9375f332765b5e96f701fb236164"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1b8c9779c68006936d89405fa04bebd3" level="file">
+               <did>
+                  <unittitle>PLANNED PARENTHOOD - SANGER</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8afbd89fc2387b305572de9240c1c9f4"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_a717f78c2fa256d192aa0b0f0c5a4443"
+                             parent="aspace_8afbd89fc2387b305572de9240c1c9f4"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d1578cab7e18352f4319586e7098f2d8" level="file">
+               <did>
+                  <unittitle>POPULATION ASSOCIATION OF AMERICA</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d702464750c5e24459a4a336403e244f"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_90f2674b64e6e2a6d8a5de8328c237c8"
+                             parent="aspace_d702464750c5e24459a4a336403e244f"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a77ba651dcb305445b786d2721275460" level="file">
+               <did>
+                  <unittitle>POPULATION REFERENCE BUREAU</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1949"
+                            type="inclusive">1935-49</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b92c1061fe45c2d6f480174583cca802"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_877acb816fa61ea989deb086ac1321f2"
+                             parent="aspace_b92c1061fe45c2d6f480174583cca802"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c67a0f51f8f59395693129d6037dd3fc" level="file">
+               <did>
+                  <unittitle>POPULATION REFERENCE BUREARU</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_17754068207a2629f2ed991a2a0c28c1"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_493027d93374e338fae1ca48aa84b6fe"
+                             parent="aspace_17754068207a2629f2ed991a2a0c28c1"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_04db9c08c7257f01f6302caa27af56fa" level="file">
+               <did>
+                  <unittitle>POPULATION REFERENCE BUREAU</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1952"
+                            type="inclusive">1950-52</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1d33cc081b9a722b7baf3f6e8b37db91"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_2f9c5e7e648108c1f641c80308175954"
+                             parent="aspace_1d33cc081b9a722b7baf3f6e8b37db91"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_57cf42a2284fb92a63fa3779ad13017b" level="file">
+               <did>
+                  <unittitle>POPULATION REFERENCE BUREAU</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1954"
+                            type="inclusive">1953-54</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_65e9fbfae1b46c51f174b22379019032"
+                             label="Mixed Materials [310183630222544]"
+                             type="box">844</container>
+                  <container id="aspace_48e7982d4e68e03f328812e57f2aa1bf"
+                             parent="aspace_65e9fbfae1b46c51f174b22379019032"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_31b1d72f363aef7b75a02792c87031bf" level="file">
+               <did>
+                  <unittitle>QUESTIONNAIRE</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_bef7ae0ee1daada6914a27b5508fb97c"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_c40757008165216715a6fbfb06ec56b1"
+                             parent="aspace_bef7ae0ee1daada6914a27b5508fb97c"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6b3473aa3ff56264a144560824f89352" level="file">
+               <did>
+                  <unittitle>RETIREMENT</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_0e22c49edc67d19c92d4227de18b34bd"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_033d51af2851dc43c1ddda736e555c24"
+                             parent="aspace_0e22c49edc67d19c92d4227de18b34bd"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8c36d6a9cdf3728aed22e7cd555c698" level="file">
+               <did>
+                  <unittitle>SHANGHAI, CHINA</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1bd1107235bc64f38bb49024fd3e5db2"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_49c1521ff01174d05e639a2449814d52"
+                             parent="aspace_1bd1107235bc64f38bb49024fd3e5db2"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c0cc08ad3dcada08defad33bc7323da0" level="file">
+               <did>
+                  <unittitle>SOCIOLOGY DEPARTMENT</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1942"
+                            type="inclusive">1939-42</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7b95e609763d7993d506a5632bb6a20b"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_a249710abad8620db8ee9dee400b72d2"
+                             parent="aspace_7b95e609763d7993d506a5632bb6a20b"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_84c7ba74adc1a9fa154e8443b7cdb63e" level="file">
+               <did>
+                  <unittitle>SMITH COLLEGE SCHOOL FOR SOCIAL WORK</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_650c1a4a7c26f40b820d69d211a7acac"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_c20781ae2aa334ce9d6def35fccedd59"
+                             parent="aspace_650c1a4a7c26f40b820d69d211a7acac"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_85c042d014065b4e84c63da637e7633c" level="file">
+               <did>
+                  <unittitle>SOCIAL FORCES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1013a1b790142501f614567f7f6864ab"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_a4d2892243ffa0aa3c2f72e1da59f771"
+                             parent="aspace_1013a1b790142501f614567f7f6864ab"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_54b176e00e3a7f94b1e69042171034f4" level="file">
+               <did>
+                  <unittitle>SOCIOLOGY DEPARTMENT - LECTURES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_2724bf178d7743fc808d3f6f721a84ba"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_1cad7735e41be0042600b57dd1e28469"
+                             parent="aspace_2724bf178d7743fc808d3f6f721a84ba"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a1601394cea4929f6686972b86b0249b" level="file">
+               <did>
+                  <unittitle>SOCIOLOGY DEPARTMENT - SURVEY SOCIAL SCIENCE</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f4a1ce75633df778eeaef88312c42184"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_f1210e6ea345083f8225761a0cee3de2"
+                             parent="aspace_f4a1ce75633df778eeaef88312c42184"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c4acaf4d65b2834495eb7c529d5b4f9f" level="file">
+               <did>
+                  <unittitle>SOCIOLOGY DEPARTMENT - MAJORS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_2523bb597e3231d980f595003b604207"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_85a81a6ba37c821beaf2c50f82018190"
+                             parent="aspace_2523bb597e3231d980f595003b604207"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b4d6a392f2e1eafa77edbfc6434baad6" level="file">
+               <did>
+                  <unittitle>SPEECHES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_de43334b266ea2f4134b745cc7522f9f"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_d13e5395abf1cd6db61a54c87736695c"
+                             parent="aspace_de43334b266ea2f4134b745cc7522f9f"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_014b754ff720ac4441c68524a4bd71fb" level="file">
+               <did>
+                  <unittitle>SPEECHES - GET TOGETHER CLUB</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6515c6803c655d36cf687fc826226cf0"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_71807b0422df30ab1a91462f97622d21"
+                             parent="aspace_6515c6803c655d36cf687fc826226cf0"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7cbf7b20142b07cbe16746856e2f28b1" level="file">
+               <did>
+                  <unittitle>TECHNICAL AID DILEMMA</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_2b118d39e8ab0283d69c477b4f8afe40"
+                             label="Mixed Materials [310183630223195]"
+                             type="box">844.1</container>
+                  <container id="aspace_623f5c46174078889829177d8b5596ef"
+                             parent="aspace_2b118d39e8ab0283d69c477b4f8afe40"
+                             type="folder">12</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III. Correspondence</unittitle>
+            </did>
+            <c02 id="aspace_ca43dc489a57f7a69ffe24dd98fc7a6e" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_057750240bf34d974b76b407ce6e56fa"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_c453c36f9a0bbd85e2f1ea356a39b951"
+                             parent="aspace_057750240bf34d974b76b407ce6e56fa"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1c5bedbb5c9d1d68cc45a139502db4d3" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937-01/1937-05"
+                            type="inclusive">Jan-May 1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a27964a9a0b7ae8b692af5d56de0b4f6"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_5a0c9b56f80525791fe28f69af49d0c5"
+                             parent="aspace_a27964a9a0b7ae8b692af5d56de0b4f6"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ad1879996a88bad0a6d66675f8f7dc91" level="file">
+               <did>
+                  <unittitle>CORREPONDENCE</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1937-06/1937-12"
+                            type="inclusive">June-Dec 1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c4809c1e3cf48e69a79896f1b29ca970"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_86577e7be4f3b105d23eda635887d904"
+                             parent="aspace_c4809c1e3cf48e69a79896f1b29ca970"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a733c592d84ecdf97560c2f1b7b45483" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Phelps, Harold A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_08554e3d415e8bb2190266beb569fce0"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_9e0321ebcf171d093f7f29a208f293c8"
+                             parent="aspace_08554e3d415e8bb2190266beb569fce0"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_702bf39519a1146592e861bff055bfd7" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Fairchild, Henry Platt</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a33c61789fea0e419b0c7bf4ecdc913d"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_12b1d353ab8076ba0055a331e279ebf0"
+                             parent="aspace_a33c61789fea0e419b0c7bf4ecdc913d"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4d02070a4f38ab32f58bdf05566e26ca" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Faris, Ellsworth</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_66a06aee4d021ced41855c8acae77cec"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_8c46f79685717233b8eb93ab951a2f5d"
+                             parent="aspace_66a06aee4d021ced41855c8acae77cec"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3ba5bc76d0099961c597d768b8678c01" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Phelps, Harold A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e56e4d804692a5101860d97740733059"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_401883daccc2de075a71cd71f06f3479"
+                             parent="aspace_e56e4d804692a5101860d97740733059"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_01cbe0c02b545bc99289c1b33a150743" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Foreign Correspondence</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_31a6a801ed6c5fb59ef214587cb353fa"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_ddd73b74f81e54925f228f8221669c57"
+                             parent="aspace_31a6a801ed6c5fb59ef214587cb353fa"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_92498addf0922a2ede98f24add24d6c7" level="file">
+               <did>
+                  <unittitle>FINANCES</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e00124e9966613621d3dcc13773ee203"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_3a63cb17f6ccfe3092f9ea9eabecadb4"
+                             parent="aspace_e00124e9966613621d3dcc13773ee203"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ec921c98ac60f63f14ac3e10a913d680" level="file">
+               <did>
+                  <unittitle>ORGANIZATION - VOL. 1, NO. 1</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_30eb2ecb8bf9fa3dce994e469ee36f94"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_15f046a88ea09b9699efab69316889ac"
+                             parent="aspace_30eb2ecb8bf9fa3dce994e469ee36f94"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f9838bb640b27b79a9f2470271c75691" level="file">
+               <did>
+                  <unittitle>REVIEWS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_272e8d9c4331a3db188811b7fa387204"
+                             label="Mixed Materials [310183630223138]"
+                             type="box">845</container>
+                  <container id="aspace_feeb6bc5c72fce7bea9e9b4316824127"
+                             parent="aspace_272e8d9c4331a3db188811b7fa387204"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eed404ac164e85fde1071924684bff44" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Barnes, Harry Elmer</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925/1949"
+                            type="inclusive">1925-49</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3986414641c4ef48baba9242b8cabbaa"
+                             label="Mixed Materials [310183630223070]"
+                             type="box">846</container>
+                  <container id="aspace_7232fe90613000b8811603768baa199e"
+                             parent="aspace_3986414641c4ef48baba9242b8cabbaa"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_596d2c71e9724c4666a25f6a249c3f8f" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Barnes, Harry Elmer</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1961"
+                            type="inclusive">1950-61</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a520dfe4571159a278ae4f994e5a1e36"
+                             label="Mixed Materials [310183630223070]"
+                             type="box">846</container>
+                  <container id="aspace_8413a5930e2ae1d78946a46dcc012813"
+                             parent="aspace_a520dfe4571159a278ae4f994e5a1e36"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_47503e67b418c98aecd2f11ac1204f57" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Barnes, Harry Elmer</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962-</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0c996ca1895be2c99464db546256efd3"
+                             label="Mixed Materials [310183630223070]"
+                             type="box">846</container>
+                  <container id="aspace_326571ed9c6c66e0179253d6d37b57ae"
+                             parent="aspace_0c996ca1895be2c99464db546256efd3"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_61f81c007a6a4f238535c3a342a12eb5" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Barnes, Harry Elmer, Testimonial Volume - Jorelamon, Dorothy</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_ea606c896abb4a8f00aeb6186e088940"
+                             label="Mixed Materials [310183630223070]"
+                             type="box">846</container>
+                  <container id="aspace_039d41df914419643a9269f08eb8aa70"
+                             parent="aspace_ea606c896abb4a8f00aeb6186e088940"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d6472b394199a632c9b805a347dff3f8" level="file">
+               <did>
+                  <unittitle>CORRESPONDENCE - Barnes, Harry Elmer, Testimonial Volume - Religious Ideas</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_65f933f268aacb7f51e0cf320582f49a"
+                             label="Mixed Materials [310183630223070]"
+                             type="box">846</container>
+                  <container id="aspace_bc8ed6a8da45b5784e54c843624d84d6"
+                             parent="aspace_65f933f268aacb7f51e0cf320582f49a"
+                             type="folder">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>Series IV. Publications and Speeches</unittitle>
+            </did>
+            <scopecontent id="aspace_bb358d689ef8d753638ca28b230cc585">
+               <head>Scope and Contents</head>
+               <p>The Publications and Speeches series contains almost all of Hankins' published work. Topics include race, population control, and poverty.</p>
+            </scopecontent>
+            <c02 id="aspace_146f7b03eebf35d62ae916dc273004d4" level="file">
+               <did>
+                  <unittitle>PUBLICATIONS</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1d31022aabcea8e3ed8ee8f2f06b0a6c"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_eb710dd861b656f9a19c6e3917b180f8"
+                             parent="aspace_1d31022aabcea8e3ed8ee8f2f06b0a6c"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d4cb2e0541dabe665296ecb861178eab" level="file">
+               <did>
+                  <unittitle>PUB - Adolph Quetelet as Statistician</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_102f4326427213ec8136b5be708bb3f5"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_7dea171cb439fdb2f70131ebc32c9e2b"
+                             parent="aspace_102f4326427213ec8136b5be708bb3f5"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bafd50d1549773f3dcfff7b202aa6abe" level="file">
+               <did>
+                  <unittitle>PUB - The Approach to Responsibility</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_ce24e8e93e7316c0a176233c9b2c6a0d"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_7ca93928dfa802c1560c44b47963558e"
+                             parent="aspace_ce24e8e93e7316c0a176233c9b2c6a0d"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_50d3d126caae69e186c60fea2b4f5b2b" level="file">
+               <did>
+                  <unittitle>PUB - Are Nordics Superior?</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_b80bdcfd306fad858ccb9311c23e25fd"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_96c851a4f651681f20a49a8ed9c5b7cd"
+                             parent="aspace_b80bdcfd306fad858ccb9311c23e25fd"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4f336280b5c428ba47b30ad9a904233f" level="file">
+               <did>
+                  <unittitle>PUB - Barnes, Harry Elmer, International Encyclopedia of the Social Sciences</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_888a70c42cfa29b1aa279c0988a20b2e"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_46cfc63df601cc9cf9a4a558fbd53b4b"
+                             parent="aspace_888a70c42cfa29b1aa279c0988a20b2e"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4ab709edd8fc53fb788009fa6ecdc6bd" level="file">
+               <did>
+                  <unittitle>PUB - Biology and Society: Modern Social Organization</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_7eaf32c4f5185bbaf4eb36819ceac294"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_734166bbaf619c6c8a3f8086e06a9c31"
+                             parent="aspace_7eaf32c4f5185bbaf4eb36819ceac294"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bd11705a450254eb5b1c9bf08bad94e8" level="file">
+               <did>
+                  <unittitle>PUB - Civilization and Fertility</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_4f209b4f67f39827979b91bc8c25f69f"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_79d283778673e62c3625b545eb907fe6"
+                             parent="aspace_4f209b4f67f39827979b91bc8c25f69f"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f92cede7e475884944e12bd432be146b" level="file">
+               <did>
+                  <unittitle>PUB - The Conflict of Civilization and Parenthood</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c35727e444557f5c540464f865cf05ad"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_5aaabea635ef9149be2643b8dacb5793"
+                             parent="aspace_c35727e444557f5c540464f865cf05ad"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d5ec0cf5ef05301138306dd3a1cf5330" level="file">
+               <did>
+                  <unittitle>PUB - The Contributions of Science to Social Work</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_9cd135237662698861ced82d474cc180"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_dd29a04ec6497eb55e27a7968630bb85"
+                             parent="aspace_9cd135237662698861ced82d474cc180"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0739bcca8bed79b5e68f26e19b500847" level="file">
+               <did>
+                  <unittitle>PUB - The Declining Birth Rate</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6898b1cf7189d6d33257b95d24e144d8"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_8718a8f5ebb0d2b0b5a7cf7853cc9370"
+                             parent="aspace_6898b1cf7189d6d33257b95d24e144d8"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_59783c1166c0792e7acea7151a2870ff" level="file">
+               <did>
+                  <unittitle>PUB - Dictionary of Sociology</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e523300fd5b6d78772832c82a1d4c70d"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_f2d4d358c047503f3455d008538040c1"
+                             parent="aspace_e523300fd5b6d78772832c82a1d4c70d"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9a926cf26f4fc7d4401973ecbb63b367" level="file">
+               <did>
+                  <unittitle>PUB - Does Advancing Civilization Involve...Fertility?</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_492fc7eb6bde61e33d661947f419ea80"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_5af83ba9e4f229437c1f2af8e19098de"
+                             parent="aspace_492fc7eb6bde61e33d661947f419ea80"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8851ec568283bac3067751f9657a23a9" level="file">
+               <did>
+                  <unittitle>PUB - Editorials</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3a2c24e223f0e8acb53c3e8eca93dbfb"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_a30c94f2234e83cf7d6d5ae210a48487"
+                             parent="aspace_3a2c24e223f0e8acb53c3e8eca93dbfb"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1f531d575152dfa3c024f8c81e8a6fcf" level="file">
+               <did>
+                  <unittitle>PUB - El Libre Albedrio Y El Determinismo</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e0ad7f7e112eed941f2ab85a50fc0ddc"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_86282584f941616a252903aedb4150aa"
+                             parent="aspace_e0ad7f7e112eed941f2ab85a50fc0ddc"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ed128d74cfd3e8e8716ebea8ea2be7d9" level="file">
+               <did>
+                  <unittitle>PUB - Eugenic Hypothesis</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_88ec35c7346fc8c18f57852c6270f339"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_26b45ae961a1e68a85085c409d55959b"
+                             parent="aspace_88ec35c7346fc8c18f57852c6270f339"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_402ff1709bc00c98350a39d559a5d8fc" level="file">
+               <did>
+                  <unittitle>PUB - Eugenics and the Culture Drift</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f1137d4e20b54a9117658010bc23f95c"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_431786f82620e272fb6e730babb3d2ba"
+                             parent="aspace_f1137d4e20b54a9117658010bc23f95c"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b27f1cc6bae73c851c4ef30df1c12b24" level="file">
+               <did>
+                  <unittitle>PUB - Facts and the Nordic Doctrine</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_36981293d87609f248182bd063c39dde"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_dd440a909f586460da0e199ecafa977d"
+                             parent="aspace_36981293d87609f248182bd063c39dde"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0e41f6236acb85da8fe523789097d298" level="file">
+               <did>
+                  <unittitle>Forty-Year Perspective</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_9f4c5dd1d7af842ac410bfc16aea7df3"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_469e4c055d54283ddb624f0a4f96e29a"
+                             parent="aspace_9f4c5dd1d7af842ac410bfc16aea7df3"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6f95415cb6be089f5d21e7eb3c62e0c2" level="file">
+               <did>
+                  <unittitle>PUB - Franklin Henry Giddings, 1855-1931</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_0029a5a49b2d2879daa5206d2e4df0b8"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_e2950743e12e9fe91a22d1a5a9283a1b"
+                             parent="aspace_0029a5a49b2d2879daa5206d2e4df0b8"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8b73691dc53a61eb13d4f1e5a3add157" level="file">
+               <did>
+                  <unittitle>PUB - Franklin Henry Giddings</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a5e41de990260f42097dbd995d09e86c"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_d5f71d43dd1c88ba434a037df3d6f880"
+                             parent="aspace_a5e41de990260f42097dbd995d09e86c"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f0fde6fa27d7658eade254d94398a00b" level="file">
+               <did>
+                  <unittitle>PUB - Freedom of Speech and Freedom of Teaching</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e061bb1da9120502dacde2293987fcec"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_c1df8eefcd634265848882b7d25d1113"
+                             parent="aspace_e061bb1da9120502dacde2293987fcec"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_60625a790b3cff1e34da1b61f8047666" level="file">
+               <did>
+                  <unittitle>PUB - Further Suggestions Concerning the Content of an Elementary Course</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_540d24d75e6959ccd9c37aee9aebd2af"
+                             label="Mixed Materials [310183630223013]"
+                             type="box">847</container>
+                  <container id="aspace_40acb9bebebe3f9add7158d5b23a517e"
+                             parent="aspace_540d24d75e6959ccd9c37aee9aebd2af"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1f5223675b2e51c61a3fa84e9f25b18b" level="file">
+               <did>
+                  <unittitle>PUB - German Policies for Increasing Births</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_43a2ac01ff7d2472c7e277bf35838b05"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_4a651c657c5671f82f9d434b9c091699"
+                             parent="aspace_43a2ac01ff7d2472c7e277bf35838b05"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ced65046114c0e9078be072b7c98096c" level="file">
+               <did>
+                  <unittitle>PUB - Giddings, Franklin Henry</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_dcabfd09b752c5c0c37c869b6c0e70d6"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_f2eed3ec19a28fef2321cf1a8b2fcf52"
+                             parent="aspace_dcabfd09b752c5c0c37c869b6c0e70d6"
+                             type="folder">2</container>
+               </did>
+               <odd id="aspace_87e2aa175025364d71302849c0bb8abe">
+                  <head>General</head>
+                  <p>See Franklin Henry Giddings</p>
+               </odd>
+            </c02>
+            <c02 id="aspace_844457f9857ac48a9330d33d95d372f6" level="file">
+               <did>
+                  <unittitle>PUB - Granville, Stanley Hall</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1846/1924"
+                            type="inclusive">1846-1924</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f04c39de8911730967eb126e0310b832"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_96636c0492d9e74d47071400e08c7be0"
+                             parent="aspace_f04c39de8911730967eb126e0310b832"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_03f647b669ac1b96ac710217310d611c" level="file">
+               <did>
+                  <unittitle>Hampshire History</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_ff054314ef501ba93bbb733894dc5b6b"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_0fd82de2d20c3929d1046a4c2f2c5505"
+                             parent="aspace_ff054314ef501ba93bbb733894dc5b6b"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3239ea46bb50ef2cf218c9f96a6b3254" level="file">
+               <did>
+                  <unittitle>Heredity and Environment</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f87a31a61b88ed21909ec77d7d6a713d"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_3d0bf897aec2b676d493a172b8ee9c26"
+                             parent="aspace_f87a31a61b88ed21909ec77d7d6a713d"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_043c4fd9b8eebf9c0eeeb577df1b8ec9" level="file">
+               <did>
+                  <unittitle>PUB - The Historian Must Be Free</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_4d1ab2abb47b57817a8cea3b7a577f7e"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_2eb0b692442e3ff17c2a8d100ee8097a"
+                             parent="aspace_4d1ab2abb47b57817a8cea3b7a577f7e"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_76cbf946ea7781c7c00938ca764771d4" level="file">
+               <did>
+                  <unittitle>PUB - How About the Jews?</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d8c001d23885b7b63de65e94e15d634b"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_0284287e6ab71668200e264ed5f03004"
+                             parent="aspace_d8c001d23885b7b63de65e94e15d634b"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b96c6d03b652780c28f38e960ab9e294" level="file">
+               <did>
+                  <unittitle>PUB - Humanism and World Consciousness</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d5d25617dcd932788c5306425d4e8490"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_348195dec7b282398d8462c0668e11fa"
+                             parent="aspace_d5d25617dcd932788c5306425d4e8490"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_78626f67afa5b4ef125e57c219bf5004" level="file">
+               <did>
+                  <unittitle>PUB - Humanism and the Culture Stream</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a2037699f7e519f443292be87e37da5b"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_0150eaf0b4964f268d874aeb8176ce3a"
+                             parent="aspace_a2037699f7e519f443292be87e37da5b"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8c2eed188b0e091eb185c5862b48c368" level="file">
+               <did>
+                  <unittitle>PUB - Humanitarianism in the Light of Biology</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_142aa34c7260f8a43dda3d9b14c9114d"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_81c4ad40959c7d3a71c6efc65495302c"
+                             parent="aspace_142aa34c7260f8a43dda3d9b14c9114d"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_75b67ba29ec55c2a2fdb19616ce526c6" level="file">
+               <did>
+                  <unittitle>PUB - Individual Differences and Democratic Theory</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_bacf410a702ba97d75a521b2fcfe9a7a"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_044a5e145a0018ca0577c42eff17a397"
+                             parent="aspace_bacf410a702ba97d75a521b2fcfe9a7a"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b4aa408e703ed5609560526060f94af3" level="file">
+               <did>
+                  <unittitle>PUB - Individual Differences and Their Significance for Social Theory</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_beb332f06207da574ed5b47ca4a6b8c7"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_79fb75fe45a7e0ca5c6f91f663cd1d61"
+                             parent="aspace_beb332f06207da574ed5b47ca4a6b8c7"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2994368856ff31a1f811df7a002294c2" level="file">
+               <did>
+                  <unittitle>PUB - Individual Differences: The Galton-Pearson Approach</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8e8e88dcb2c204c103934ab9e2608403"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_2501d43738bed9680b85e66cdb8647ce"
+                             parent="aspace_8e8e88dcb2c204c103934ab9e2608403"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8ac572f4734cce4807849a86312c3624" level="file">
+               <did>
+                  <unittitle>PUB - Individual Freedom with Some Sociological Implications of Determinism</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_59863305d2c4206f5eab9f1bd0b65e63"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_fc294be9f991a6eb04273eecc4764fed"
+                             parent="aspace_59863305d2c4206f5eab9f1bd0b65e63"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7c12136bc74bfb208e2ba3d71df1736f" level="file">
+               <did>
+                  <unittitle>PUB - Introduction to Sociology</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1899dc75d2724e36f431f8a515f32d81"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_86d3167d11678463e4f3004645db9d8f"
+                             parent="aspace_1899dc75d2724e36f431f8a515f32d81"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_476d16117be76cd9ab428f2e1e621bd7" level="file">
+               <did>
+                  <unittitle>PUB - Introduction to the Study of Society, 1st ed.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2f8a146ff68e86e944f42450d94e45b1"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_021080787b264aa9412c023e91e993cf"
+                             parent="aspace_2f8a146ff68e86e944f42450d94e45b1"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b0ebfdd47d5bce8385593243f8383344" level="file">
+               <did>
+                  <unittitle>PUB - Introduction to the Study of Society, Rev. ed.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_aeb3011ce6095150ffa37b71ff0c6ac7"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_13549ef5ef5a0bda69e1638df46e3ddd"
+                             parent="aspace_aeb3011ce6095150ffa37b71ff0c6ac7"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cffe451949919450142ba7fa97e4ad6c" level="file">
+               <did>
+                  <unittitle>PUB - Is Our Innate National Intelligence Declining?</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_cba7a8b50eddbdbb85f607fe52d6f71e"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_383f2e73d5cb43177a0b9280c8864c98"
+                             parent="aspace_cba7a8b50eddbdbb85f607fe52d6f71e"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e684ebea60930037bd87fb64c10b5135" level="file">
+               <did>
+                  <unittitle>PUB - Is the Differential Fertility of the Social Class Selective?</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_82ff3948a3487dfaaaabcf7b8d1e66c3"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_3b4cd2f796d8ad4796c96364aa5c8658"
+                             parent="aspace_82ff3948a3487dfaaaabcf7b8d1e66c3"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_65f71a1a4cc7915f56a30ad7f28af869" level="file">
+               <did>
+                  <unittitle>PUB - Latest in the Philosophy of History</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_afac3578f2085c1edd70929a9c9bf7a2"
+                             label="Mixed Materials [310183630222957]"
+                             type="box">848</container>
+                  <container id="aspace_ecc833abf9e7bbfced5465b31cc1af8c"
+                             parent="aspace_afac3578f2085c1edd70929a9c9bf7a2"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e6bbb11b6a9558b4c0d4e9d3695fe594" level="file">
+               <did>
+                  <unittitle>PUB - Meaning of Race and Race Superiority</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c810cf565e49137f59c6bb250b95df2a"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_bed60834ba945a72e8f08b6b0f1306ea"
+                             parent="aspace_c810cf565e49137f59c6bb250b95df2a"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1dd07b44556bf9c517f7e0e06f68027e" level="file">
+               <did>
+                  <unittitle>PUB - Migrant Asia by R. Mukerjee</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_61783c97abf62f9c63f4d10154278761"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_45bf3281c98eab7c58efa10a69e19055"
+                             parent="aspace_61783c97abf62f9c63f4d10154278761"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_070576bc4efa8cceda092d1817f23c5e" level="file">
+               <did>
+                  <unittitle>PUB - Modern Social Organizations</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3fe0c4adf256548dfd93f97631ccafe1"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_60e8d79186d77d757147dab9b78c5d60"
+                             parent="aspace_3fe0c4adf256548dfd93f97631ccafe1"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b3ff065d9acd67dbc79c1b2a3671e0f4" level="file">
+               <did>
+                  <unittitle>PUB - Morals and Religion</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6cd0ac2eb9b41e569cb4c47e500b9678"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_83d23709a2e6e5cd2a52086e91a730b5"
+                             parent="aspace_6cd0ac2eb9b41e569cb4c47e500b9678"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a656d62eff19746a2df2bb0530d9a458" level="file">
+               <did>
+                  <unittitle>PUB - Morgan's La Prehistorie Orientale</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_9f660fd1f113d299910b324e3e5bad2e"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_29d3e9a1714ac29f8c722d21b031a1a6"
+                             parent="aspace_9f660fd1f113d299910b324e3e5bad2e"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f789d77b764c6bc8a7d99417b478a019" level="file">
+               <did>
+                  <unittitle>PUB - New Books on God, Immortality, and Religious Origins</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_db390d83235f46ad646985bb0c8ce04f"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_841694302805e5f32a6fc5d56d0fa398"
+                             parent="aspace_db390d83235f46ad646985bb0c8ce04f"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5dac8ac1975c794ae311c15b830f2d5c" level="file">
+               <did>
+                  <unittitle>PUB - Organic Plasticity Versus Organic Response</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_841e2a60de631356442781308aa5f509"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_a316397c2f840e35d2a04c82567387ab"
+                             parent="aspace_841e2a60de631356442781308aa5f509"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1474dd9ac5c316512afaf71b201416d5" level="file">
+               <did>
+                  <unittitle>PUB - Our Load of Defective Genes</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a9af5c10739255577b45553421be8bab"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_36b2b0495a6c73f945fdf255576b22c8"
+                             parent="aspace_a9af5c10739255577b45553421be8bab"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c0e02758c954bd54a2abb042fb507ca1" level="file">
+               <did>
+                  <unittitle>PUB - Poverty and Birth Control</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c35c7fc18d206a55da50d49cf56740a5"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_55325af784cf82a9279db44af22cbfb6"
+                             parent="aspace_c35c7fc18d206a55da50d49cf56740a5"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3d99679080664fe4e78675c03194f4a6" level="file">
+               <did>
+                  <unittitle>PUB - Patriotism and Peace</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c5ab872101264e682c52257cd25c540a"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_bb29997317f2c35016685a3f0d816c46"
+                             parent="aspace_c5ab872101264e682c52257cd25c540a"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bf02c9aab4b67fa6f08b96c9d771b296" level="file">
+               <did>
+                  <unittitle>PUB - Pressure of Population as a Cause of War</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_b0e2120e220175982bb9d02c41c1c06d"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_1e2a108458efdd74724b2ac9efa12abb"
+                             parent="aspace_b0e2120e220175982bb9d02c41c1c06d"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bd6c6e7c2de47c64d091042762e22713" level="file">
+               <did>
+                  <unittitle>PUB - Questions for Sociology: An Informal Round Table</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e08eb4e78a2e751c44719c7063f69e77"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_e634f89f50bdd858f745805dd7205b26"
+                             parent="aspace_e08eb4e78a2e751c44719c7063f69e77"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_472d84b708e681651aa6dad8600c6847" level="file">
+               <did>
+                  <unittitle>PUB - Quetelet's Average Man in Modern Scientific Research</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_7b5b61d8b554b811b97c80d12cd7303b"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_ad3d202bed48348fe2d397fcea4e7996"
+                             parent="aspace_7b5b61d8b554b811b97c80d12cd7303b"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_28abb59ceb58094662734763c351007a" level="file">
+               <did>
+                  <unittitle>PUB - Racial Differences and Industrial Welfare</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c1eca60bdba154e07d12913397fbbe1a"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_457f3e3567613b8bca3fa7dcfb9e0fcc"
+                             parent="aspace_c1eca60bdba154e07d12913397fbbe1a"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_04b0233dbdd6dcef2de08136c3c38a83" level="file">
+               <did>
+                  <unittitle>PUB - The Rationality of Birth Control</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_7b423f1892f2a1f23b91ffa80e8ec78a"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_9edcf701f2560ab2df1b34e94fc5492c"
+                             parent="aspace_7b423f1892f2a1f23b91ffa80e8ec78a"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c554c207cb9e1e6ad790d53c9fe71095" level="file">
+               <did>
+                  <unittitle>PUB - Reason Versus Authority as a Guide to Living</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d7b2322f5b8a91964df4f916d578f7f3"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_cee9143162bdfbd04155debe77829e41"
+                             parent="aspace_d7b2322f5b8a91964df4f916d578f7f3"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dc29c687f10797f014e049af6fc84e64" level="file">
+               <did>
+                  <unittitle>PUB - The Reparations Problem and the Dawes Report</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_5c5b212fc021a84ce2adc2acef5c7d34"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_7fb617472d838f8f435579f1782a5f71"
+                             parent="aspace_5c5b212fc021a84ce2adc2acef5c7d34"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_15c517b1e4ff6fa6cc29f6bab3ed3a28" level="file">
+               <did>
+                  <unittitle>PUB - Reviews</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_67fa94b284dcc0408ad5d6ddf0213526"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_f53bf74455f024c57535572d4c5a4bb0"
+                             parent="aspace_67fa94b284dcc0408ad5d6ddf0213526"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b7aa3b7be51888830314fe27ae8d3bd1" level="file">
+               <did>
+                  <unittitle>PUB - Rising Tide of Racial Tension</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_c45e2d23330cc0f813891e2d9671dc0c"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_4638a9e83bf1e67f79cf0cf9769f4423"
+                             parent="aspace_c45e2d23330cc0f813891e2d9671dc0c"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_95ad5eb6c5e61f5d7066b4d8bf5fb488" level="file">
+               <did>
+                  <unittitle>PUB - Social Biology</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f00632942997c8c23ad64eb35322bd84"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_dc2d64216c280a439a1900108048f045"
+                             parent="aspace_f00632942997c8c23ad64eb35322bd84"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d4a4a9629c155deba31c9f3c85370371" level="file">
+               <did>
+                  <unittitle>PUB - Social Science and Social Action</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1f0efa30050ade83c3c941ca7a69a874"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_95abd12baa8be9ed923faac11dee71c5"
+                             parent="aspace_1f0efa30050ade83c3c941ca7a69a874"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5dbdc7b452ae8fdf15ec0e55d435a588" level="file">
+               <did>
+                  <unittitle>PUB - Sociology</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_b469cb5211d4663142063b4899f8e8e4"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_8f916ec4f8c16a1d74b7a8605d857da9"
+                             parent="aspace_b469cb5211d4663142063b4899f8e8e4"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_33e337c3a1eaf66d8175204a2e55abce" level="file">
+               <did>
+                  <unittitle>PUB - Sociology and Social Guidance Discussion</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_beacb7e5efa28e440f79a12345e3f39d"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_af9494c9f0d2a8940615fd73d694b7d3"
+                             parent="aspace_beacb7e5efa28e440f79a12345e3f39d"
+                             type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b0ebd6adf2e6fc21e016845ebe849c53" level="file">
+               <did>
+                  <unittitle>PUB - Students' Ratings of Instruction</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_321d415358f3d9c93304d4ff8cbb3699"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_1a4c153dbddaf7355562ac32fe83a6f1"
+                             parent="aspace_321d415358f3d9c93304d4ff8cbb3699"
+                             type="folder">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eb7876da20e06dfcacb2195dd470b17f" level="file">
+               <did>
+                  <unittitle>PUB - Sumner Centenary Volume</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_ae30445e223bdeea6cb265b28ca1754e"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_5091a9fa3ba5d75755e153744b4c12cc"
+                             parent="aspace_ae30445e223bdeea6cb265b28ca1754e"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4c847a4853188b9556ca08bdab5da210" level="file">
+               <did>
+                  <unittitle>PUB - Tillich, Paul</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_87afc8cc231d728e15f6bc4c4faab35d"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_b71b7366244ede0ca0687bbdfbda3b0e"
+                             parent="aspace_87afc8cc231d728e15f6bc4c4faab35d"
+                             type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fe4a8e60003a29865c5586e6b2b0ea80" level="file">
+               <did>
+                  <unittitle>PUB - Transformations Politiques Recentes Aux Etats-Unis</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_246056462ae5249e24557d6db257f421"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_c30f11346551f27db85f0ec689e55a9f"
+                             parent="aspace_246056462ae5249e24557d6db257f421"
+                             type="folder">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_41a8ed066ce5e4e4291ffb2c36100fe9" level="file">
+               <did>
+                  <unittitle>PUB - Under-Developed Areas with Special Reference to Population Reforms</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f608c25c2b0e1c8f08a2245105b745f1"
+                             label="Mixed Materials [310183630222890]"
+                             type="box">849</container>
+                  <container id="aspace_acf5a9412797358b04234ab9d5bf8fbd"
+                             parent="aspace_f608c25c2b0e1c8f08a2245105b745f1"
+                             type="folder">28</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
