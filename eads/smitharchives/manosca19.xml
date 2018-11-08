@@ -1,468 +1,701 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca19.xml//EN">manosca19</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Elizabeth Stephens Papers, 1921-1926 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Bridget Byrne and Tamara J. Weiner.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca19 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca19</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Elizabeth Stephens papers <num>CA.MS.00019</num>
+            </titleproper>
+            <author>Bridget Byrne and Tamara J. Weiner</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
             <publisher>Smith College Archives</publisher>
-            <titleproper>Elizabeth Stephens Papers, 1921-1926 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 80. Class of 1924.</num>
-            <author>Bridget Byrne and Tamara J. Weiner </author>
-            <date>1999 </date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Stephens, Elizabeth, 1902-</persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Elizabeth Stephens Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1921-1926</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 80. Class of 1924.</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">5 boxes</extent>
-                <extent encodinganalog="300$a">(1.35 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Smith graduate. Contains
-                correspondence, class notes, photgraphs, and academic work. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Elizabeth Stephens was born on March 10, 1902 in Montclair, New Jersey to Thomas
-                Wilcox Stephens, a manufacturer, and Elizabeth (Henderson) Stephens. Prior to her
-                enrollment at Smith College in 1920, Stephens attended The Shipley School (Bryn
-                Mawr, PA), Miss Walker's School (Simsbury, Connecticut), and Milton Academy (Milton,
-                Massachusetts). Stephens graduated from Smith College on June 19, 1924 with an AB
-                and married Ogden Bigelow in 1926. Ogden Junior was born in 1928 and their daughter,
-                Ann (AB '51), in 1929. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Elizabeth Stephens Papers are primarily related to her years spent at Smith
-                College, dating from 1921 to 1926. Types of material include correspondence; class
-                notes; photographs; and academic work. </p>
-            <p>The majority of this collection is comprised of correspondence. Included are
-                exchanges with Stephens' future husband, Ogden Bigelow and letters from both the
-                Stephens and the Bigelow families pertaining to the wedding. </p>
-        </scopecontent>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Elizabeth Stevens Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>Ann B. Hamilton donated the letters of Elizabeth Stephens to the College
-                        Archives in April 1999. Other papers were donated to the College Archives
-                        over a period of years. </p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p> Processed by Bridget Byrne '99 and Tamara J. Weiner '00. </p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Stephens, Elizabeth, 1902-</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Students.</corpname>
-        </controlaccess>
-        <descgrp id="addinfo" type="add">
-            <head>Additional Information</head>
-            <relatedmaterial id="add-related">
-                <head>Related Material</head>
-                <list>
-                    <item>80. Class of 1924 Records</item>
-                </list>
-            </relatedmaterial>
-        </descgrp>
-        <dsc id="contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>1921</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Correspondence <unitdate>1922</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Correspondence <unitdate>JAN-FEB 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Correspondence <unitdate>MAR-APR 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Correspondence <unitdate>MAY 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Correspondence <unitdate>JUN-JUL 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Correspondence <unitdate>AUG 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Correspondence <unitdate>SEP 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Correspondence <unitdate>OCT 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Correspondence <unitdate>NOV 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Correspondence <unitdate>DEC 1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>JAN 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Correspondence <unitdate>FEB 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Correspondence <unitdate>MAR 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Correspondence <unitdate>APR 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Correspondence <unitdate>MAY 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Correspondence <unitdate>JUN 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">2</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Correspondence <unitdate>JUL 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>AUG 1-AUG 17, 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Correspondence <unitdate>AUG 18-AUG 29, 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Correspondence <unitdate>SEP-DEC 1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Correspondence <unitdate>JAN-JUN, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Correspondence <unitdate>JUL 1-JUL 23, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Correspondence <unitdate>AUG 1-AUG 7, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">4</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Correspondence <unitdate>AUG 8-AUG 14, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">4</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Correspondence <unitdate>AUG 15-AUG 22, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">4</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Correspondence <unitdate>AUG 24-AUG 31, 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">4</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Correspondence <unitdate>SEP-DEC 1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">4</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Correspondence <unitdate>JAN 30-AUG 30, 1926</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Class Notes Art 22: Introduction to the History of Art
-                            <unitdate>1922-23</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Class Notes Art 22: General History of Art
-                            <unitdate>1922-23</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Class Notes Art 310: The Development of House Furniture
-                            <unitdate>1923-24</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Class Notes Geology II: General Geology <unitdate>1922-23</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Class Notes Sociology 37a: Population and Vital Statistics
-                            <unitdate>1923-24</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Newspaper Clippings (c/o Ogden Bigelow)
-                            <unitdate>1922-1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Paper "The Essence of Confucianism as Taught by its Founder"
-                            <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Paper "The Place of Italy in the Development of Painting"
-                            <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Diary "A Line a Day" <unitdate>1921-1924</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">5</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Photographs <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-08 14:00:59 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca19 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Elizabeth Stephens papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Stephens, Elizabeth, 1902-</persname>
+         </origination>
+         <unitid>CA.MS.00019</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.875 linear feet</extent>
+            <extent altrender="carrier">(5 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1921/1926"
+                   type="inclusive">1921-1926</unitdate>
+         <abstract id="aspace_64972acf0f69fe2fb7e539836ba8bc3f">Smith graduate. Contains correspondence, class notes, photgraphs, and academic work.</abstract>
+      </did>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Ann B. Hamilton donated the letters of Elizabeth Stephens to the College Archives in April 1999. Other papers were donated to the College Archives over a period of years.</p>  
+      </acqinfo>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Elizabeth Stephens was born on March 10, 1902 in Montclair, New Jersey to Thomas Wilcox Stephens, a manufacturer, and Elizabeth (Henderson) Stephens. Prior to her enrollment at Smith College in 1920, Stephens attended The Shipley School (Bryn Mawr, PA), Miss Walker's School (Simsbury, Connecticut), and Milton Academy (Milton, Massachusetts). Stephens graduated from Smith College on June 19, 1924 with an AB and married Ogden Bigelow in 1926. Ogden Junior was born in 1928 and their daughter, Ann (AB '51), in 1929.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Elizabeth Stevens Papers, Box #, Smith College Archives, CA-MS-00019, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Bridget Byrne '99 and Tamara J. Weiner '00.</p>  
+      </processinfo>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <list type="ordered">
+            <item>80. Class of 1924 Records</item>
+         </list>
+      </relatedmaterial>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Elizabeth Stephens Papers are primarily related to her years spent at Smith College, dating from 1921 to 1926. Types of material include correspondence; class notes; photographs; and academic work. </p>
+         <p> The majority of this collection is comprised of correspondence. Included are exchanges with Stephens' future husband, Ogden Bigelow and letters from both the Stephens and the Bigelow families pertaining to the wedding.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Stephens, Elizabeth, 1902-</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_b69c30592e21c8c09e1f35826ba0656a" level="series">
+            <did>
+               <unittitle>Correspondence</unittitle>
+            </did>
+            <c02 id="aspace_521eef3af1386942b168cb1fffc79fcb" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1921/1921">1921</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_94536336181ef93598971536b3c361e2"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_bfccfb287a16fde416a586086c7d3cff"
+                             parent="aspace_94536336181ef93598971536b3c361e2"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f0e55dfa57181b4f188f55bf3c873ea1" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_b23fc5c97d17f815a32ca54218d01606"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_14a9db4f97fb9f0f2685d91ec991bfda"
+                             parent="aspace_b23fc5c97d17f815a32ca54218d01606"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e69170658e1f368c51d79084fc3bae39" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1923-01/1923-02"
+                            type="inclusive">1923-01-1923-02</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1cd3c7357c7a1dd5a58ac04ba1632d5c"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_e29bc11718dcf036f464bb0c17c483a9"
+                             parent="aspace_1cd3c7357c7a1dd5a58ac04ba1632d5c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f55defa1f83c6bb6b572d248b1d3fd02" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1923-03/1923-04"
+                            type="inclusive">1923-03-1923-04</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4e9415c07d68df8126b21146c6703e07"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_2f0a7c28f0130483fe6bc3d68f4ef206"
+                             parent="aspace_4e9415c07d68df8126b21146c6703e07"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5f638d1d3b5ba0a1dcf1a43ee8021763" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923-05/1923-05">1923-05</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4cacfd500258b4d0dafd29d9a3043f9a"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_cfe0d682c6736e9b897fbca2c80c19e9"
+                             parent="aspace_4cacfd500258b4d0dafd29d9a3043f9a"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a5697d2db76832adb621b4544997ede5" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1923-06/1923-07"
+                            type="inclusive">1923-06-1923-07</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_b1db40e9b5427395e658e0a3740e60d1"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_5b28d5d9762d4316eb111160129e16c2"
+                             parent="aspace_b1db40e9b5427395e658e0a3740e60d1"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9ff5a52144d5b038682da852598a5421" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923-08/1923-08">1923-08</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_431b498e1f475cb959154a7c82d4197f"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_3e16e152164b5a5963bf092f24a8a5b6"
+                             parent="aspace_431b498e1f475cb959154a7c82d4197f"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6b211ef31c4937f1c80b77165998664c" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923-09/1923-09">1923-09</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1622d7c3f6ab074b705729fa876f34d0"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_f6b3d05ba297532fb80331f82f5aa454"
+                             parent="aspace_1622d7c3f6ab074b705729fa876f34d0"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fd446bc6bef3e493a5455b637ede7481" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923-10/1923-10">1923-10</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_a55eef80eb7bfa907909c5d65ab36777"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_cc6adad201ecabd8c95844cac4ca800f"
+                             parent="aspace_a55eef80eb7bfa907909c5d65ab36777"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_944052ffb37b80bd2600325c5f619d2f" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923-11/1923-11">1923-11</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2a0fe9e1ec35af290e634c13a06e7102"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_fa662ef9425b77b0c89edb9ec3c6343c"
+                             parent="aspace_2a0fe9e1ec35af290e634c13a06e7102"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a64017fd3f34f8d33ce9e12592d30d2d" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1923-12/1923-12">1923-12</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d3c9048d179d849be773d1cfcf5d63f3"
+                             label="Mixed Materials [310183630238367]"
+                             type="box">1971.1</container>
+                  <container id="aspace_d88995ef8d3914707f43857538e86cd8"
+                             parent="aspace_d3c9048d179d849be773d1cfcf5d63f3"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ba465405caf3cdcd70457bab33fe743b" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-01/1924-01">1924-01</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1f106c926d580682d794fc14e96beb82"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_a249ef79f4fc5f504c8e4dd1da60a1c5"
+                             parent="aspace_1f106c926d580682d794fc14e96beb82"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c6f2b3dffdad6b4cb6a38de204a9eb09" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-02/1924-02">1924-02</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_dd3695f572bc191978c0bb45d7cad35c"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_a6311ee5379393583bcc8f149b7ae5ab"
+                             parent="aspace_dd3695f572bc191978c0bb45d7cad35c"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_07d2fbfd636307e8a98a683ba1db8a13" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-03/1924-03">1924-03</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2b7c73f109ad53cf3cc42a88fed3b09c"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_aa7b0b54ada3cf93892a80c0ca4f5951"
+                             parent="aspace_2b7c73f109ad53cf3cc42a88fed3b09c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3c29981d41dbb7baf51ab88c1fb2241c" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-04/1924-04">1924-04</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2254d189aa88ab30724b1f4db6631c57"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_82680eacc66d7cffcddf1c8e73fc23b6"
+                             parent="aspace_2254d189aa88ab30724b1f4db6631c57"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_717eb65ca05ae6d5c01f7e11562df546" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-05/1924-05">1924-05</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c42dd978ad72193243c8a9c9ff9275d9"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_1d3111fd650678481cfa180b94033d7c"
+                             parent="aspace_c42dd978ad72193243c8a9c9ff9275d9"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b3151e861991966fdeda66f254322f42" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-06/1924-06">1924-06</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9a448fe49d85ab09518e45ccb310f61d"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_183f0671f61da084c505c5322082c6b6"
+                             parent="aspace_9a448fe49d85ab09518e45ccb310f61d"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_92e220d766ae69b3495e25b89fe93a3f" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924-07/1924-07">1924-07</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_886c68573253fa27b8405917058ec2b3"
+                             label="Mixed Materials [310183630238375]"
+                             type="box">1971.2</container>
+                  <container id="aspace_14155bb068f04c9b2f9e8c189a304d61"
+                             parent="aspace_886c68573253fa27b8405917058ec2b3"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_07c30796e6f8cf694cc6c63f35d7eaf7" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924-08-01/1924-08-17"
+                            type="inclusive">1924-08-01-1924-08-17</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_012e6a0f486f977214f4d6c8254c5211"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_74b99101e0337045e6046f8d8efa402f"
+                             parent="aspace_012e6a0f486f977214f4d6c8254c5211"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a2d44174ba4878df183b30d1d5e6c301" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924-08-18/1924-08-29"
+                            type="inclusive">1924-08-18-1924-08-29</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_eb978d6e400a5b28ddc9f6e7999ff017"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_726079399360695fd8d630c1a9852f99"
+                             parent="aspace_eb978d6e400a5b28ddc9f6e7999ff017"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_23e18af903777ce9bf6bfc5f7e3c8b9b" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1924-09/1924-12"
+                            type="inclusive">1924-09-1924-12</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_be348b18370e88ab964c7ec7ce9b16d9"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_91e3d45d3404376d70aadf3d178fae83"
+                             parent="aspace_be348b18370e88ab964c7ec7ce9b16d9"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fd227d91286ca66af82daacacfef2782" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-01/1925-06"
+                            type="inclusive">1925-01-1925-06</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9e22a837da3c03dc50a871de603f432d"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_327aa646690af7637492a67ab1ff2907"
+                             parent="aspace_9e22a837da3c03dc50a871de603f432d"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_13cd1b33be6c94cb9bf22a737ee75ba8" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-07-01/1925-07-23"
+                            type="inclusive">1925-07-01-1925-07-23</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1d8133625e82f99fa0e8dd9e30481e9c"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_99c8875793ca4271e64fc7a2c4e0a454"
+                             parent="aspace_1d8133625e82f99fa0e8dd9e30481e9c"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c368de4698f98d14388a1ba60e3a6c43" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-08-01/1925-08-07"
+                            type="inclusive">1925-08-01-1925-08-07</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_64842b0963c3a3a589cd34a699c36dd8"
+                             label="Mixed Materials [310183630238383]"
+                             type="box">1971.3</container>
+                  <container id="aspace_b07066b9f158ddf84fc1ee009c999f6b"
+                             parent="aspace_64842b0963c3a3a589cd34a699c36dd8"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_23d3a0b3148dc676d02bc06012cb6af3" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-08-08/1925-08-14"
+                            type="inclusive">1925-08-08-1925-08-14</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_e16f6e72d32030042a2fac5e05482b0a"
+                             label="Mixed Materials [310183630238391]"
+                             type="box">1971.4</container>
+                  <container id="aspace_9a1ab7b17761e9c336307eca9cf0bee3"
+                             parent="aspace_e16f6e72d32030042a2fac5e05482b0a"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_17faa0a12f3a3fd47011c9aaef5e8524" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-08-15/1925-08-22"
+                            type="inclusive">1925-08-15-1925-08-22</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_30b5cb2f01dbb9e39eb236c421a8edbe"
+                             label="Mixed Materials [310183630238391]"
+                             type="box">1971.4</container>
+                  <container id="aspace_24509ecb9383adebe6d34b5f76b886bc"
+                             parent="aspace_30b5cb2f01dbb9e39eb236c421a8edbe"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_98d63980fa93d3ef753b80d3ae73fd4c" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925-08-24/1925-08-31"
+                            type="inclusive">1925-08-24-1925-08-31</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_ec69b0f2b200b4c3fc2359447f2758e5"
+                             label="Mixed Materials [310183630238391]"
+                             type="box">1971.4</container>
+                  <container id="aspace_09ceb6f6109f3df4d6ce6f8dd190304b"
+                             parent="aspace_ec69b0f2b200b4c3fc2359447f2758e5"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d187b369c9e9ed449647c6065959455c" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1925-09/1925-12"
+                            type="inclusive">1925-09-1925-12</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_ea4e07f4becd440de203deb284a2ebb0"
+                             label="Mixed Materials [310183630238391]"
+                             type="box">1971.4</container>
+                  <container id="aspace_18a9b157ad589d93e4d176abac2da94f"
+                             parent="aspace_ea4e07f4becd440de203deb284a2ebb0"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_48974cc9458e4fe54f73a4e5b1061c8d" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926-01-30/1926-08-30"
+                            type="inclusive">1926-01-30-1926-08-30</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_276d841a47989da90a752ac2d9ea2687"
+                             label="Mixed Materials [310183630238391]"
+                             type="box">1971.4</container>
+                  <container id="aspace_def6df1c7588bf1f432dab4151447ed6"
+                             parent="aspace_276d841a47989da90a752ac2d9ea2687"
+                             type="folder">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_44f3106bd4e09a57fb2dd4d6afbf5ebd" level="file">
+            <did>
+               <unittitle>Class Notes Art 22: Introduction to the History of Art</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1922/1923"
+                         type="inclusive">1922-23</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_00b010bcdbdcb0ad57dd5045db7cb61e"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_b262f3be0e9d260ee1d03276b4c9dc04"
+                          parent="aspace_00b010bcdbdcb0ad57dd5045db7cb61e"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0776c16a19e079e653774e9761645290" level="file">
+            <did>
+               <unittitle>Class Notes Art 22: General History of Art</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1922/1923"
+                         type="inclusive">1922-23</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_1653a65b5448bb9c1e6f87752516b4e6"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_10569a8003da1e9930983b52cd288107"
+                          parent="aspace_1653a65b5448bb9c1e6f87752516b4e6"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_deb5ed4d77f567fdd305521f2253ca26" level="file">
+            <did>
+               <unittitle>Class Notes Art 310: The Development of House Furniture</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1923/1924"
+                         type="inclusive">1923-24</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_95552cd732a9fb08869a978c6339f743"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_33dcf1b0a880c9e169e48dbde51453d8"
+                          parent="aspace_95552cd732a9fb08869a978c6339f743"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c27f61992bd72eaebb95e854430f3c5a" level="file">
+            <did>
+               <unittitle>Class Notes Geology II: General Geology</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1922/1923"
+                         type="inclusive">1922-23</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_1810fee3797c59700d6bf03bbe9a00ac"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_79c47700a9afb3117905aba95827a99b"
+                          parent="aspace_1810fee3797c59700d6bf03bbe9a00ac"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fae77536984e0afa5b0fc8f0b434fe7f" level="file">
+            <did>
+               <unittitle>Class Notes Sociology 37a: Population and Vital Statistics</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1923/1924"
+                         type="inclusive">1923-24</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_67d8b44a3600250ab6ef260005991d91"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_d4f93cd055ef37562ac469e8bf93e464"
+                          parent="aspace_67d8b44a3600250ab6ef260005991d91"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0316f861120b0c5e406ae18d66234ecb" level="file">
+            <did>
+               <unittitle>Newspaper Clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1922/1923"
+                         type="inclusive">1922-1923</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_c21ea50fdcf999681004ef9d7f537d73"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_b38444b9778f78f994c633bbf4893e46"
+                          parent="aspace_c21ea50fdcf999681004ef9d7f537d73"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9b877f884982fe213d74a925a8541c44" level="file">
+            <did>
+               <unittitle>Paper "The Essence of Confucianism as Taught by its Founder"</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_63a7a8e0e04f9167b0c52c92cd4c0bb6"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_04f80f7052b7f7df80e389ebf56d5d0c"
+                          parent="aspace_63a7a8e0e04f9167b0c52c92cd4c0bb6"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0c722cf057919cc61685d131b514a187" level="file">
+            <did>
+               <unittitle>Paper "The Place of Italy in the Development of Painting"</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_2180760ceca58e6c35e70f440e6997eb"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_10a03ce53fdfc2c5d7f974c537c55de7"
+                          parent="aspace_2180760ceca58e6c35e70f440e6997eb"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_903b1ba2198df73c2c8ea2d6539b8f2c" level="file">
+            <did>
+               <unittitle>Line-A-Day Diary</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1921/1924"
+                         type="inclusive">1921-1924</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_dd344f73e82150ea83bbf6522238134d"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_1950706381df671cd42a0e38d5244e18"
+                          parent="aspace_dd344f73e82150ea83bbf6522238134d"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0ad77af7c8eebb1a2842f11064db8ee0" level="file">
+            <did>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_2a4d92c90eedeeac394a9bb7fd753e2a"
+                          label="Mixed Materials [310183630238409]"
+                          type="box">1971.5</container>
+               <container id="aspace_916ab0cc36679ff52172bab8481aefc3"
+                          parent="aspace_2a4d92c90eedeeac394a9bb7fd753e2a"
+                          type="folder">10</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
