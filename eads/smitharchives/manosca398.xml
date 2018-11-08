@@ -1,319 +1,411 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca398.xml//EN">manosca398</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca398</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Marjory Gane, Class of 1901 papers, 1896 -
-               1901</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Carron.</author>
-
+            <titleproper>Finding aid to the Marjory Gane, Class of 1901 papers <num>CA.MS.00398</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-04-28">2015-04-28</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-08 11:11:25 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Harkness, Marjory Gane, 1880 -
-               1974</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Marjory Gane, Class of 1901
-            papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1896 - 1901</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:e8611fa5-f5d4-41ea-bbf1-afca0687559b</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">( 1 linear foot)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Alumna. Contains about 140 letters to
-            and from Gane's family and a memorabilia book created during Gane's undergraduate career
-            at Smith College. </abstract>
+         <unittitle>Marjory Gane, Class of 1901 papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Harkness, Marjory Gane, 1880 - 1974</persname>
+         </origination>
+         <unitid>CA.MS.00398</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1896/1990"
+                   type="inclusive">1896-1990</unitdate>
+         <abstract id="aspace_6b9abc130531326f45539d155b03359e">Alumna. Contains about 140 letters to and from Gane's family and a memorabilia book created during Gane's undergraduate career at Smith College.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> Marjory Gane (1880 - 1974) was born in Yonkers, New York on March 8, 1880 to Sarah
-            Jones and Thomas Gane, a book binder. The family later moved to Chicago, where Marjory
-            attended Kirkland School before entering Smith College in 1897. Her sister Gertrude had
-            attended Smith and graduated in 1894. </p>
-         <p>She married Frank Harkness in 1918 and the couple lived in Wonalancet, New Hampshire.
-            After her husband's death in 1934, she opened and operated a real estate business and
-            traveled until her death in 1974. A devoted alumna, Gane commissioned artist Henry Salem
-            Hubbell to paint the portrait of L. Clark Seelye which hangs today in Alumnae House. She
-            continued to contribute to many periodicals and published several books including <title
-               render="italic">A Brook of Our Own</title>, <title render="italic">The Fishbasket
-               Papers</title> and <title render="italic">The Tamworth Narrative.</title>
-         </p>
-
-      </bioghist>
-      <scopecontent id="scope">
-
-         <p> The collection contains correspondence and a memorabilia book describing the student
-            life and perspective from Marjory Gane, Class of 1901. Topics range broadly from exams
-            to professors, college and community social events, basketball and dramatics,
-            cross-college events at Amherst College and Mount Holyoke, home life and trips to large
-            cities such as New York City and Boston. </p>
-
-
-      </scopecontent>
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Smith College owns copyright to any published material relating to college events and
-            activities. Copyright to materials created by other individuals may be owned by those
-            individuals or their heirs or assigns. It is the responsibility of the researcher to
-            identify and satisfy the holders of all copyrights. Permission must be obtained from the
-            Smith College Archives to publish reproductions or quotations beyond "fair use."</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Marjory Gane, Class of 1901 papers, Box #, Smith College Archives</p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Marjory Gane, Class of 1901 papers were created by Marjory Gane Harkness and donated
-            to the College Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Elizabeth Carron</p>
-      </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <persname encodinganalog="700" source="lcnaf"> Harkness, Marjory Gane, 1880 -
-            1974</persname>
-         <corpname encodinganalog="610" source="lcsh">Smith
-            College--Students-Correspondence</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith
-            College--Students--History-Sources</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and
-            customs</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Alumni and alumnae.</corpname>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Marjory Gane (1880 - 1974) was born in Yonkers, New York on March 8, 1880 to Sarah Jones and Thomas Gane, a book binder. The family later moved to Chicago, where Marjory attended Kirkland School before entering Smith College in 1897. Her sister Gertrude had attended Smith and graduated in 1894. </p>
+         <p> She married Frank Harkness in 1918 and the couple lived in Wonalancet, New Hampshire. After her husband's death in 1934, she opened and operated a real estate business and traveled until her death in 1974. A devoted alumna, Gane commissioned artist Henry Salem Hubbell to paint the portrait of L. Clark Seelye which hangs today in Alumnae House. She continued to contribute to many periodicals and published several books including <title render="italic">A Brook of Our Own</title>, <title render="italic">The Fishbasket Papers</title> and <title render="italic">The Tamworth Narrative.</title>
+         </p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>Marjory Gane, Class of 1901 papers, Box #, Smith College Archives, CA-MS-00398, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains correspondence and a memorabilia book describing the student life and perspective from Marjory Gane, Class of 1901. Topics range broadly from exams to professors, college and community social events, basketball and dramatics, cross-college events at Amherst College and Mount Holyoke, home life and trips to large cities such as New York City and Boston.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
          <genreform encodinganalog="655" source="aat">personal correspondence</genreform>
          <genreform encodinganalog="655" source="aat">scrapbooks</genreform>
+         <persname encodinganalog="600" source="naf">Harkness, Marjory Gane, 1880 - 1974</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students-Correspondence</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students--History-Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and customs</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Alumni and alumnae.</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_8225418d8385971ad49229238bbb1aab" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>summaries of letters <unitdate>circa 1990</unitdate>
-               </unittitle>
+               <unittitle>summaries of letters</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1990/1990">1990</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_52460568d29f050d6b283a726226c0ff"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_d0459cad1e200b560c8cb23546257e50"
+                          parent="aspace_52460568d29f050d6b283a726226c0ff"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bf2ae211b4e3082cf4e44455ba1bf780" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>correspondence <unitdate>09/03/1897 - 10/06/1897</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897-09-03/1897-10-06"
+                         type="inclusive">1897-09-03-1897-10-06</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_125878a9d38ea7d932b234866a041583"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_14899fa223855094ab103a80575e862f"
+                          parent="aspace_125878a9d38ea7d932b234866a041583"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_218b1caa78003436c86bdea023ac664e" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>correspondence <unitdate>10/10/1897 - 11/11/1897</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897-10-10/1897-11-11"
+                         type="inclusive">1897-10-10-1897-11-11</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7a56c57592b9755e68da83f9ce26422d"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_a8363c7a3322c63888f5575982fafe0c"
+                          parent="aspace_7a56c57592b9755e68da83f9ce26422d"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_30f434cde5ebedcc04c4b7ad6630313c" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>correspondence <unitdate>11/14/1897 - 01/15/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897-11-14/1898-01-15"
+                         type="inclusive">1897-11-14-1898-01-15</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fd800a2228932d9f540b05ccef0b4b63"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_6202c19aa9ef72ce4a5c34fa08be0a05"
+                          parent="aspace_fd800a2228932d9f540b05ccef0b4b63"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5a968bad7374e424bbdebba6fb94c495" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>correspondence <unitdate>01/19/1898 - 02/06/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-01-19/1898-02-06"
+                         type="inclusive">1898-01-19-1898-02-06</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8b59546e636f02b3da6c32197e2b549e"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_5d48e865a5e77c70808002820c7cceb7"
+                          parent="aspace_8b59546e636f02b3da6c32197e2b549e"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6c1540b31a9ff55e0d4fa5f62343bc7a" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>correspondence <unitdate>02/13/1898 - 03/13/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-02-13/1898-03-13"
+                         type="inclusive">1898-02-13-1898-03-13</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6190762a98a8437ee0949cedf196c2e8"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_55da5095c52591cd983c77a962f48866"
+                          parent="aspace_6190762a98a8437ee0949cedf196c2e8"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_31740a116fa75892b96356ebb02c91ee" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>correspondence <unitdate>03/24/1898 - 04/24/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-03-24/1898-04-24"
+                         type="inclusive">1898-03-24-1898-04-24</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7a28ebee688e00962b2490e7ac9a938b"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_3157f5c10145854de7a7791703fc98cb"
+                          parent="aspace_7a28ebee688e00962b2490e7ac9a938b"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e1e38f993efc5c6524c842137c9c970d" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>correspondence <unitdate>05/01/1898 - 05/25/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-05-01/1898-05-25"
+                         type="inclusive">1898-05-01-1898-05-25</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_669f3f1b63b07e13510bc867e8006f1c"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_0a5bc79708f4e35bc880c76ac492e94b"
+                          parent="aspace_669f3f1b63b07e13510bc867e8006f1c"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_15b00f8fa6f67c1178d02ef3dd942562" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>correspondence <unitdate>09/24/1898 - 11/20/1898</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-09-24/1898-11-20"
+                         type="inclusive">1898-09-24-1898-11-20</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cddb556d3efd0b3b7936e269b1cfcddd"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_452ea3b6b1afcdd25297de7339671121"
+                          parent="aspace_cddb556d3efd0b3b7936e269b1cfcddd"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_472bacc5887367b9b42894cde0108842" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>correspondence <unitdate>11/30/1898 - 01/15/1899</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898-11-30/1899-01-15"
+                         type="inclusive">1898-11-30-1899-01-15</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2fd5854ac564b55214a043bd20bbc577"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_3d8162f8fb333b0b44802e0b2ff4ae82"
+                          parent="aspace_2fd5854ac564b55214a043bd20bbc577"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8bc8762d8dedda56228fcf0af0ecf33f" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>correspondence <unitdate>01/24/1899 - 02/24/1899</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1899-01-24/1899-02-24"
+                         type="inclusive">1899-01-24-1899-02-24</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_63483ef4891bf3576dfdced8b71c20ed"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_5ff06ca1fb79793479aec9c3ccba1eaf"
+                          parent="aspace_63483ef4891bf3576dfdced8b71c20ed"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_20f8e269577729727e48bf4fb78fc411" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>correspondence <unitdate>02/26/1899 - 04/27/1899</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1899-02-26/1899-03-27"
+                         type="inclusive">1899-02-26-1899-03-27</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e496b03d88ffbae8ed77b76f13428fe2"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_1150e4918749a466a3d270d5855437de"
+                          parent="aspace_e496b03d88ffbae8ed77b76f13428fe2"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c4a59ce472af8f48e14539beedf88dbe" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>correspondence <unitdate>04/30/1899 - 06/05/1899</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">04/30/1899 - 06/05/1899</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a4357f0d7384c3846c3028738630e11c"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_ed1183a611b2f2eda25f3daa051d17d4"
+                          parent="aspace_a4357f0d7384c3846c3028738630e11c"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c9a91cc2557f081669b2e22291bc89fa" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>correspondence <unitdate>11/25/1899 - 01/28/1900</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">11/25/1899 - 01/28/1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e0b46b878b057f87c317432222082d59"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_2e9bbd4ce88a1386515e4b62d2d47907"
+                          parent="aspace_e0b46b878b057f87c317432222082d59"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d61eb616cd835e541f04486951246da0" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>correspondence <unitdate>02/26/1900 - 05/03/1900</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">02/26/1900 - 05/03/1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_88443d46c555651982e3f0079a187821"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_270651c683539748376fc26d8e32b8ba"
+                          parent="aspace_88443d46c555651982e3f0079a187821"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5db9f6832e77811af20cfac918c54fcb" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>correspondence <unitdate>05/06/1900 - 06/01/1900</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">05/06/1900 - 06/01/1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_62b534d5a6694aa256ae566b50593ea7"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_a2063c2616f32ee2a4861d5d0916ec43"
+                          parent="aspace_62b534d5a6694aa256ae566b50593ea7"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_943a728fcd0d0eba15a4b3050f0aa528" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>correspondence <unitdate>09/23/1900 - 12/16/1900</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">09/23/1900 - 12/16/1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dc06b8e031bbb573cad8211624f64739"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_5097cd23c8d07b02db0043b7114493fd"
+                          parent="aspace_dc06b8e031bbb573cad8211624f64739"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_26f30a8e8c5f11efa040d8563987f098" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>correspondence <unitdate>01/06/1901 - 02/24/1901</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">01/06/1901 - 02/24/1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a21d2d85d56cdf881ac26d2417b46667"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_f75c4355fe1b346a95ce75da8e894ef2"
+                          parent="aspace_a21d2d85d56cdf881ac26d2417b46667"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9122246d659da674f4af0b890b0bba5f" level="file">
             <did>
-               <container type="box" label="mixed materials">1608</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>correspondence <unitdate>03/07/1901 - 06/10/1901</unitdate>
-               </unittitle>
+               <unittitle>correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">03/07/1901 - 06/10/1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_13217da475e02003a740dedf269f62d4"
+                          label="Mixed Materials [310183630238151]"
+                          type="box">1608</container>
+               <container id="aspace_7f589a0a936e80e584691b60ef4dbf3d"
+                          parent="aspace_13217da475e02003a740dedf269f62d4"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d00ed3f48613887a27d4a7bd489b09a4" level="file">
             <did>
-               <container type="box" label="mixed materials">1609</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>memorabilia book <unitdate>circa 1900</unitdate>
-               </unittitle>
+               <unittitle>memorabilia book</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1900">1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0343b14f2f5e40a3cfa59695e5dc1265"
+                          label="Mixed Materials [310183630238169]"
+                          type="box">1609</container>
+               <container id="aspace_688ec7a3d9621da29d47e11a6edd43dc"
+                          parent="aspace_0343b14f2f5e40a3cfa59695e5dc1265"
+                          type="folder">20</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
