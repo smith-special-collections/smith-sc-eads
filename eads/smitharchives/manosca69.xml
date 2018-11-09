@@ -1,567 +1,755 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca69.xml//EN">manosca69</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Laurie Worcester (Lucy Lawrence Chauncey) Papers, 1943-1995 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Jill Boncek.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-04</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca69 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Laurie Worcester (Lucy Lawrence Chauncey) Papers, 1943-1995 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 80. Class of 1952.</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca69</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Laurie Worcester papers <num>CA.MS.00069</num>
+            </titleproper>
             <author>Jill Boncek</author>
-            <date>2001</date>
-
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Worcester, Laurie (Lucy Lawrence
-                    Chauncey). </persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Laurie Worcester (Lucy Lawrence
-                Chauncey) Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1943-1995</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 80. Class of 1952.</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">5 boxes</extent>
-                <extent encodinganalog="300$a">(2.5 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Smith graduate. Contains articles,
-                photographs, newspaper clippings, correspondence, and lecture notes. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Laurie Worcester came to Smith in 1948. She had previously attended the Brearly
-                School, a prestigious girls school in Manhattan. She was elected president of
-                Student Council and served as class president from 1952-1957. She wrote and edited
-                the Tenth Reunion Yearbook. Laurie was elected director of the Alumnae Association,
-                and served on a committee formed to revise sections of the association's bylaws as
-                well as the editorial board of the Smith Alumnae Quarterly. </p>
-            <p>After graduating from Smith, Laurie was on the editorial staff of <title
-                    render="italic">Time, Inc.</title>, and later taught history at Miss Fine's
-                School in Princeton. In 1954 she married Henry Chauncey, president of Educational
-                Testing Service. They had four daughters: Susan, Caroline, Deborah, and Sarah. </p>
-            <p>From 1955-1970, Laurie and Henry Chauncy lived in an 18th century farmhouse on
-                Rosedale Road in Princeton, New Jersey. The house was later converted into a Guest
-                House and became part of the Henry Chauncey Conference Center in 1973. On May 3,
-                1976, the house was renamed Laurie House in honor of Laurie Worcester Chauncy. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The Laurie Worcester Papers consist of approximately two and one half linear feet.
-                The collection includes such biographical material as articles, photographs, and
-                newspaper clippings. The bulk of the collection consists of a series of letters
-                Laurie wrote to her family during her years at Smith, as well as notebooks and exams
-                from her time at Smith. The collection of letters consists of 167 documents written
-                between the years 1948-1952. These include 92 letters, 59 postcards, 9 telegrams, 6
-                newspaper clippings, and 1 commencement publication. A description of the content of
-                these letters, written by Henry Chauncey, is included in the Series Description. In
-                addition to the letters from Laurie, there is a bound book of letters received after
-                her death. </p>
-            <p>The class notebooks span four years and represent a diverse selection of classes,
-                including: Art, Art History, Ancient Drama, English, French, Geology, Government,
-                History, Historiography, Religion, and Sociology. The notebooks are organized by
-                subject matter and then by date. In addition, there is a collection of notes from
-                Laurie's time at Brearly School, prior to her matriculation at Smith. </p>
-            <p>The Smith College Archives houses other items related to Laurie Worcester that are
-                not kept among the Laurie Worcester Papers. Laurie Worcester is in a photograph
-                taken with members of the Student Council, located in that file. In addition,
-                reference to Lauire can be found in Alumnae Trust Nominees for 1965. </p>
-            <p>The following is an introduction to the collection written by Laurie Worcester's
-                husband, Henry Chauncy: </p>
-            <p>"Laurie wrote home quite regularly throughout her four years at Smith-certainly more
-                than most students then or now. The letters, being to her family, report very
-                personally and in considerable detail on what she had been doing and what lay ahead.
-                They provide a picture of an active person of wide-ranging interests who had an
-                extremely full and rewarding college life. The letters give a picture of what
-                college was like in the post-World War II period and they give some insight into a
-                remarkable person. Laurie was energetic and enthusiastic, interested in other
-                people, with a lively sense of humor and a quick wit. She was greatly concerned with
-                the life of the College in all its aspects: academic, extracurricular, and even
-                athletic-though no star. She used to comment that she was the last person to make
-                the lacrosse team at the very end of her senior year. </p>
-            <p>In other areas she was more successful. She was elected to Phi Beta Kappa in her
-                junior year and was President of the Student Council in her senior year. </p>
-            <p>Fortunately, Laurie's mother kept her letters-in a large box which I was given after
-                her death. Since in most cases the letters were not in their original envelopes and
-                were not in any order, and since Laurie ordinarily dated her letters only by the day
-                of the week, it has been difficult to arrange them in chronological order. Some
-                letters, on closer scrutiny, may be found out of place. Order, in any case, does not
-                seem to be of highest importance. Each letter speaks for itself and gives a vignette
-                of like at Smith and a snapshot of the author." </p>
-            <p>The collection consists of 167 documents written between the years 1948-1952. These
-                include 92 letters, 59 postcards, 9 telegrams, 6 newspaper clippings, and 1
-                commencement publication. Because many of the letters were dated only by the day of
-                the week, each piece has been reviewed carefully for evidence of chronology. The use
-                of the perpetual calendar has helped place the collection in chronological order.
-                However, the researcher must be aware that the order is not definitive. </p>
-            <p>"Letters from Smith" are arranged in 12 folders. Each folder contains documents for a
-                three-month period. Correspondence from Laurie's freshman year are in folders 1-3,
-                her sophomore year in folders 4-6, her junior year in folders 7-9, and her senior
-                year in folders 10-12. A newspaper clipping from the fall of 1952, featuring
-                Laurie's return to Smith College, will be found in folder 12." </p>
-        </scopecontent>
-        <arrangement encodinganalog="351$a" id="scope-org">
-
-            <p>This collection is organized into three series:</p>
-            <list>
-                <item> I. Biography </item>
-                <item> II. Personal Correspondence </item>
-                <item> III. Lecture Notes. </item>
-            </list>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Laurie Worcester (Lucy Lawrence Chauncey) Papers, Box #, Smith College
-                    Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The materials in the Laurie Worcester collection were given to the College
-                        Archives in 1978 by her husband, Henry Chauncey.</p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Jill Boncek.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Worcester, Laurie.</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Students.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Brearley School--Students.</corpname>
-        </controlaccess>
-        <descgrp id="addinfo" type="add">
-            <head>Additional Information</head>
-            <relatedmaterial id="add-related">
-                <head>Related Material</head>
-                <list>
-                    <item>80. Class of 1952 Records</item>
-                    <item>80. Student Council - Photographs</item>
-                    <item>90. Alumnae Trust Nominees 1965</item>
-                </list>
-            </relatedmaterial>
-        </descgrp>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>SERIES I. BIOGRAPHY</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>General File 1 <unitdate>1947-1995</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>General File 2 <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>SERIES II. PERSONAL CORRESPONDENCE</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>"Letters from Smith" inventory</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Letters freshman year <unitdate>1948, Sept. - Dec.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Letters freshman year <unitdate>1949, Jan. - Mar.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Letters freshman year <unitdate>1949, Apr. - Jun.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Letters sophomore year <unitdate>1949, Sept. - Dec.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Letters sophomore year <unitdate>1950, Jan. - Mar.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Letters sophomore year <unitdate>1950, Apr. - May</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>Letters junior year <unitdate>1950, Sept. - Dec.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>Letters junior year <unitdate>1951, Jan. - Mar.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>Letters junior year <unitdate>1951, Apr. - Jun.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>Letters senior year <unitdate>1951, Sept. - Dec.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>Letters senior year <unitdate>1952, Jan. - Mar.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>Letters senior year <unitdate>1952, Apr. - Jun, Sept.</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>SERIES III. LECTURE NOTES</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Art 11 (1) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Art 11 (2) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Art History (1) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Art History (2) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Brearly School (1) <unitdate>1943-1948</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <unittitle>Lecture Notes - Brearly School (2) <unitdate>1943-1948</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - Brearly School (3) <unitdate>1943-1948</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - Ancient Drama <unitdate>1950-1951 </unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - English 21 <unitdate>1948-1949</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - English 39b, 4176 <unitdate>1949-1952</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - French <unitdate>1948-1949</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - Geology <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Lecture Notes - Government <unitdate>1951-1952</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History 11 (1) <unitdate>1948-1949 </unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History 11 (2) <unitdate>1948-1949</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - Hist. Ancnt Nr Estrn Hist.
-                                <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History 411b <unitdate>1950-1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History French Revolution
-                                <unitdate>1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History 322a, 38b <unitdate>1951-1952</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - History 45a, 46b <unitdate>1951-1952</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - Hist. Tudor Stewart Ren.
-                                <unitdate>1950-1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Lecture Notes - Hist. Medieval History
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Historiography <unitdate>1950-1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Historiography Comp. Exam
-                                <unitdate>1950-1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Maps <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Religion 11 <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Religion 32b <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Sociology (1) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Sociology (2) <unitdate>1949-1950</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">5</container>
-                        <unittitle>Lecture Notes - Outlines for Comprehensives
-                                <unitdate>1951</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-09 12:20:30 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca69 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Laurie Worcester papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Worcester, Laurie (Lucy Lawrence Chauncey).</persname>
+         </origination>
+         <unitid>CA.MS.00069</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.083 linear feet</extent>
+            <extent altrender="carrier">(5 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1943/1995"
+                   type="inclusive">1943-1995</unitdate>
+         <abstract id="aspace_2a2a691378d532fba2dd2633564cfa5f">Smith graduate. Contains articles, photographs, newspaper clippings, correspondence, and lecture notes.</abstract>
+      </did>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The materials in the Laurie Worcester collection were given to the College Archives in 1978 by her husband, Henry Chauncey.</p>  
+      </acqinfo>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>I. Biography</item>
+            <item>II. Personal Correspondence</item>
+            <item>III. Lecture Notes.</item>
+         </list>
+      </arrangement>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Lucy Lawrence "Laurie" Worcester came to Smith in 1948. She had previously attended the Brearly School, a prestigious girls school in Manhattan. She was elected president of Student Council and served as class president from 1952-1957. She wrote and edited the Tenth Reunion Yearbook. Laurie was elected director of the Alumnae Association, and served on a committee formed to revise sections of the association's bylaws as well as the editorial board of the Smith Alumnae Quarterly. </p>
+         <p> After graduating from Smith, Laurie was on the editorial staff of <title render="italic">Time, Inc.</title>, and later taught history at Miss Fine's School in Princeton. In 1954 she married Henry Chauncey, president of Educational Testing Service. They had four daughters: Susan, Caroline, Deborah, and Sarah. </p>
+         <p> From 1955-1970, Laurie and Henry Chauncy lived in an 18th century farmhouse on Rosedale Road in Princeton, New Jersey. The house was later converted into a Guest House and became part of the Henry Chauncey Conference Center in 1973. On May 3, 1976, the house was renamed Laurie House in honor of Laurie Worcester Chauncy.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Laurie Worcester papers, Box #, Smith College Archives, CA-MS-00069, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Jill Boncek.</p>  
+      </processinfo>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <list type="ordered">
+            <item>80. Class of 1952 Records</item>
+            <item>80. Student Council - Photographs</item>
+            <item>90. Alumnae Trust Nominees 1965</item>
+         </list>
+      </relatedmaterial>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Laurie Worcester papers consist of approximately two and one half linear feet. The collection includes such biographical material as articles, photographs, and newspaper clippings. The bulk of the collection consists of a series of letters Laurie wrote to her family during her years at Smith, as well as notebooks and exams from her time at Smith. The collection of letters consists of 167 documents written between the years 1948-1952. These include 92 letters, 59 postcards, 9 telegrams, 6 newspaper clippings, and 1 commencement publication. A description of the content of these letters, written by Henry Chauncey, is included in the Series Description. In addition to the letters from Laurie, there is a bound book of letters received after her death. </p>
+         <p> The class notebooks span four years and represent a diverse selection of classes, including: Art, Art History, Ancient Drama, English, French, Geology, Government, History, Historiography, Religion, and Sociology. The notebooks are organized by subject matter and then by date. In addition, there is a collection of notes from Laurie's time at Brearly School, prior to her matriculation at Smith. </p>
+         <p> The following is an introduction to the collection written by Laurie Worcester's husband, Henry Chauncy: </p>
+         <p> "Laurie wrote home quite regularly throughout her four years at Smith-certainly more than most students then or now. The letters, being to her family, report very personally and in considerable detail on what she had been doing and what lay ahead. They provide a picture of an active person of wide-ranging interests who had an extremely full and rewarding college life. The letters give a picture of what college was like in the post-World War II period and they give some insight into a remarkable person. Laurie was energetic and enthusiastic, interested in other people, with a lively sense of humor and a quick wit. She was greatly concerned with the life of the College in all its aspects: academic, extracurricular, and even athletic-though no star. She used to comment that she was the last person to make the lacrosse team at the very end of her senior year. </p>
+         <p> In other areas she was more successful. She was elected to Phi Beta Kappa in her junior year and was President of the Student Council in her senior year.
+ 
+ Fortunately, Laurie's mother kept her letters-in a large box which I was given after her death. Since in most cases the letters were not in their original envelopes and were not in any order, and since Laurie ordinarily dated her letters only by the day of the week, it has been difficult to arrange them in chronological order. Some letters, on closer scrutiny, may be found out of place. Order, in any case, does not seem to be of highest importance. Each letter speaks for itself and gives a vignette of like at Smith and a snapshot of the author." </p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Worcester, Laurie.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Brearley School--Students.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>Series I. Biography</unittitle>
+            </did>
+            <c02 id="aspace_37603ee28eeae55db6786a0dff4b13e4" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1947/1995"
+                            type="inclusive">1947-1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_624a1e986b2af9d3bec38beaa400cf89"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_3372095fa83637579bc11177865cc8a0"
+                             parent="aspace_624a1e986b2af9d3bec38beaa400cf89"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a5cd1e4e6e8cd8faff4608f287a459b7" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_582989e9e3d089919fc763162caa1007"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_3d046f19fbcb08b971a0a8c83b4acd23"
+                             parent="aspace_582989e9e3d089919fc763162caa1007"
+                             type="folder">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II. Personal Correspondence</unittitle>
+            </did>
+            <c02 id="aspace_aea07419f97bb46daa08af1ebaa2ea56" level="file">
+               <did>
+                  <unittitle>"Letters from Smith" inventory</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_77140bbe93b4d58e42c8f4cf441c25c8"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_81e3de34c5995b9c668ef04e0a495123"
+                             parent="aspace_77140bbe93b4d58e42c8f4cf441c25c8"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2a39b0276e1fc99dc0f06526d1ce3d3a" level="file">
+               <did>
+                  <unittitle>Letters freshman year</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1948/1948">1948</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Sept. - Dec.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_621c7bd78895dd86faceb0bb6e3d7479"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_99b3207fb44c4c0daf467744c12d1873"
+                             parent="aspace_621c7bd78895dd86faceb0bb6e3d7479"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7fbb487c29ab959f19b68b8f08187135" level="file">
+               <did>
+                  <unittitle>Letters freshman year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Jan. - Mar.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_512afde4f49ee93d51af266612d41873"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_55c5d34793b593302b18d5002a69a17b"
+                             parent="aspace_512afde4f49ee93d51af266612d41873"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e83525f72998ab0501733b50e8893769" level="file">
+               <did>
+                  <unittitle>Letters freshman year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Apr. - Jun.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e0b174c3ad64fb92ca486c11b41f28f0"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_a6b23cbfd0c716173d8877fc06dffd98"
+                             parent="aspace_e0b174c3ad64fb92ca486c11b41f28f0"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_056891100597dbbe7a6b0528c975633a" level="file">
+               <did>
+                  <unittitle>Letters sophomore year</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1949">1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Sept. - Dec.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0e95646f1f9353444fc177aa42bc7fd3"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_ecd92b1ff66bf92cc5bf3dfee5adb10a"
+                             parent="aspace_0e95646f1f9353444fc177aa42bc7fd3"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_87d8c6255a8a5c0e021acd873ff6703e" level="file">
+               <did>
+                  <unittitle>Letters sophomore year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Jan. - Mar.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_398d014e5e6478aaa67c28badd86e444"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_8ca617ce76fe85b2338deee5dab45bc5"
+                             parent="aspace_398d014e5e6478aaa67c28badd86e444"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2eed861e721d2b84fa37e40e54673d51" level="file">
+               <did>
+                  <unittitle>Letters sophomore year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Apr. - May</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4dfb3e794a3fa53916d2b2331ce2ab6d"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_26bfb511cae6498a5d345d2b2aa9361d"
+                             parent="aspace_4dfb3e794a3fa53916d2b2331ce2ab6d"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_121a53c38453720428ca7247b478aa9e" level="file">
+               <did>
+                  <unittitle>Letters junior year</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1950/1950">1950</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Sept. - Dec.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eda11bde2f28c610bbff481e3cd84768"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_563210f27ec548f236e97f3548a1ffca"
+                             parent="aspace_eda11bde2f28c610bbff481e3cd84768"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4a3ef8c1605d547bd87c87ce9bf58410" level="file">
+               <did>
+                  <unittitle>Letters junior year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Jan. - Mar.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1c8e2ed464eb24fcfb69ca16aacac4b"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_a37ab2e09f204aee1a48892a0755e48a"
+                             parent="aspace_f1c8e2ed464eb24fcfb69ca16aacac4b"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_00fe9e4a5791dc2f4a91be47ee672ff5" level="file">
+               <did>
+                  <unittitle>Letters junior year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Apr. - Jun.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8dd13e48cc79f4d73a00df101865161e"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_3cb1575ab41315f3469e709c54d9c17f"
+                             parent="aspace_8dd13e48cc79f4d73a00df101865161e"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a15a27468bee3b1b7c6a4743f99153ad" level="file">
+               <did>
+                  <unittitle>Letters senior year</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1951/1951">1951</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Sept. - Dec.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e94a28cee6e495a86b319f010011a48a"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_38822866055797e9cfbc1b29f857e713"
+                             parent="aspace_e94a28cee6e495a86b319f010011a48a"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_93a3f09e41541412ab363a2583e888a8" level="file">
+               <did>
+                  <unittitle>Letters senior year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Jan. - Mar.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f53683ab8cdc13629a0b32619a7f1d6a"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_1ab1bf4f8d5e6c21624a156b05eed2c0"
+                             parent="aspace_f53683ab8cdc13629a0b32619a7f1d6a"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a484cecfe3649df8ef8500496cebe795" level="file">
+               <did>
+                  <unittitle>Letters senior year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Apr. - Jun</unitdate>
+                  <unitdate calendar="gregorian" era="ce">Sept.</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dc0efa04601a7d0e07d098fd9c21b567"
+                             label="Mixed Materials [310183630238425]"
+                             type="box">2183</container>
+                  <container id="aspace_a9cfec1a72fd93af894466cd7265930d"
+                             parent="aspace_dc0efa04601a7d0e07d098fd9c21b567"
+                             type="folder">15</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III. Lecture Notes</unittitle>
+            </did>
+            <c02 id="aspace_0b492e79016ea5db4461307e92529bed" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Art 11 (1)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0ec8c6866eb80efc433343c60447fb61"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8ea204b4cf7a79c9966ea46b30fee023" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Art 11 (2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_02369017f8e4a936c87f2479a95eed00"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_80021fa3f555043d560915fb602eb606" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Art History (1)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8cc4459cfd0aed2448d9bb68486e9be8"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_308980234467b3175ca233a0344f3fed" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Art History (2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_716186b46fdcda16a0761b8786a1d79a"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9558be1b783b3885ecbc1845e8a5154d" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Brearly School (1)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1948"
+                            type="inclusive">1943-1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c68976d8e4c65b0d91c7b2b244cba92e"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8526093ff7beae36e1704634a038555f" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Brearly School (2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1948"
+                            type="inclusive">1943-1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0f92a3f319bfd9b540fe139fc528aae7"
+                             label="Mixed Materials [310183630238433]"
+                             type="box">2184</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b2e7d5df6911c252a4b6bc9bc20b5517" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Brearly School (3)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1948"
+                            type="inclusive">1943-1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_84412d301c0b46346a80174b9a7fe0ee"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_40af751a7f6f06ea2330dcb2b4ee59e4" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Ancient Drama</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_284ed1e94356bc51774015cc7fe81009"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_424d4cdfdec163d81ccabc290c0283fb" level="file">
+               <did>
+                  <unittitle>Lecture Notes - English 21</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1949"
+                            type="inclusive">1948-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3d4343ec70206a6f7c35edc7580fb937"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3796c7d34dc88ac7673de82037e49df3" level="file">
+               <did>
+                  <unittitle>Lecture Notes - English 39b, 4176</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1952"
+                            type="inclusive">1949-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_525ebb46f12cccf1e60634bad4e2e73c"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8cc32c5a3f23a1838fae08f31ace2e60" level="file">
+               <did>
+                  <unittitle>Lecture Notes - French</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1949"
+                            type="inclusive">1948-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_472711bcd04cb15731b22ec6ead84ba6"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8008c2376a018c953aa1d1d25891ad9e" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Geology</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0cd4a6a3c90445b698fb230b363994f6"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_262d53cea46cf0647b6dcd83319dab7b" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Government</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1952"
+                            type="inclusive">1951-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2de23b83c26efb87edbfbf3a4c33d8a2"
+                             label="Mixed Materials [310183630238441]"
+                             type="box">2185</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0ea48a5731a8b22eead451ca4b469db3" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History 11 (1)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1949"
+                            type="inclusive">1948-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d1565e40b0a317a49abe8b8cab1b1e0f"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4c4555dbfec1fc67ba9cb91d18afb95d" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History 11 (2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1949"
+                            type="inclusive">1948-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_39894cf607c409304c6e5b1547087292"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eedf060a85a9e5d07a3c56084db9cb06" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Hist. Ancnt Nr Estrn Hist.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_761248a1f65ec28ee8fe10c78bab046a"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7225d6853fa90e2d0772b114bc43a672" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History 411b</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c1b5a68c81d1dc7c54e5b88777ca2cf0"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a6fe959fb5bffbe82b1dd0848028f85f" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History French Revolution</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bed11ff7d7d9b78219a89164091fdf79"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1bc4b883156ef65b4d4e511cb33cf6fe" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History 322a, 38b</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1952"
+                            type="inclusive">1951-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3fa30ecdbebb9cf6ab32819d26d9b5af"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7d5bdb79daf8960be013d1bfab4b2f54" level="file">
+               <did>
+                  <unittitle>Lecture Notes - History 45a, 46b</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1952"
+                            type="inclusive">1951-1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fc7d79fa943d165ba643118478b0dd46"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6a29ac5c326dbd7dd24b79c97fd3535c" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Hist. Tudor Stewart Ren.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_419de9b9d109b1e8116d6227a52805da"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0254c5aefdec8f70b383ea7f36ba55d6" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Hist. Medieval History</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_54b36c2613d5d03048a537ab029f474f"
+                             label="Mixed Materials [310183630238458]"
+                             type="box">2186</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c984529195c9edec1d04387feec2faa1" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Historiography</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ce9d86a2cfb7b929028601e5c0b5237b"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_07efd3c2dd317729f8ea247ec31b98f7" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Historiography Comp. Exam</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0ae01b55956c4be6a3543d7da0a09338"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c6947bef9e494839cf2e1e52dd49bdea" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Maps</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ca20b51174bfbd59e1b992df0669a64"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1683ed80b28ad3fcf473607251615a61" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Religion 11</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_54d7559ec10a8e2327be309f73da68fe"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e23aa556424fcde3bb07e5aa74545870" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Religion 32b</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2d2b58fe3518ce66259943271164f6d2"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8c02b3805f73970435782d0df735d035" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Sociology (1)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5517f2b4dc42c1b7d97ac2776057d807"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a75060dd9193a2b31a1472eb699d75f9" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Sociology (2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0019581e0a85bd5fa4318866e142a2b9"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5ece96f916be74d945bc4d050cdd080a" level="file">
+               <did>
+                  <unittitle>Lecture Notes - Outlines for Comprehensives</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5a5d5cff9e6a262ebd36ca95c515047b"
+                             label="Mixed Materials [310183630238466]"
+                             type="box">2187</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>

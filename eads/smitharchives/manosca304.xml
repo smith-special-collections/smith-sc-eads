@@ -1,854 +1,1203 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca304.xml//EN">manosca304</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca304</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Gloria W. Heath Papers, 1941-2012</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jeanne Lowrey.</author>
-
+            <titleproper>Finding aid to Gloria W. Heath Papers, 1941-2012 <num>CA.MS.00304</num>
+            </titleproper>
+            <author>Finding aid prepared by Jeanne Lowrey.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah A.
-            Richards. <date normal="2013-10-23">2013-10-23</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-08 15:20:34 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated container and location profiles.</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Heath, Gloria W.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Gloria W. Heath Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1941-2012</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 12 UUID:350ca256-4dec-4f15-a165-51fbd00bba8b</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">6 boxes</extent>
-            <extent encodinganalog="300$a">(2.75 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains biographical information,
-            correspondence, professional files, and publications of Gloria W. Heath, Class of 1943.
-         </abstract>
+         <unittitle>Gloria W. Heath Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Heath, Gloria W.</persname>
+         </origination>
+         <unitid>CA.MS.00304</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.5 linear feet</extent>
+            <extent altrender="carrier">(7 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1941/2012"
+                   type="inclusive">1941-2012</unitdate>
+         <abstract id="aspace_cb1a297e4e4785fe4aaaf6976aa7a735">Contains biographical information, correspondence, professional files, and publications of Gloria W. Heath, Class of 1943.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Gloria Whitton Heath graduated from Smith College in 1943, majoring in Education. During
-            the spring of 1941, Heath fell in love with flying, motivating her along with 14 other
-            students to pool their money together to buy a plane, christened the "Bird of Paradise"
-            and painted with the four class colors. The group took lessons and Heath obtained her
-            private pilot's license. During World War II, Heath flew with the Women Airforce Service
-            Pilots (WASPs), the first group of American women to fly military aircraft, earning the
-            rank of second lieutenant. After the war, Heath became an expert in the field of search
-            and rescue. She worked in the insurance field, founded the Flight Safety Foundation, and
-            consulted with NASA.</p>
-
-         <p>Heath has earned several awards. She was given the Laura Tabor Barbour Air Safety Award
-            in 1965 and received the Smith College Medal in 1971. In 2009, was among the 300 women
-            WASPs to receive the Congressional Gold Medal, the highest civilian award given by
-            Congress, by President Barack Obama and the United States Congress.</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Gloria Whitton Heath graduated from Smith College in 1943, majoring in Education. During the spring of 1941, Heath fell in love with flying, motivating her along with 14 other students to pool their money together to buy a plane, christened the "Bird of Paradise" and painted with the four class colors. The group took lessons and Heath obtained her private pilot's license. During World War II, Heath flew with the Women Airforce Service Pilots (WASPs), the first group of American women to fly military aircraft, earning the rank of second lieutenant. After the war, Heath became an expert in the field of search and rescue. She worked in the insurance field, founded the Flight Safety Foundation, and consulted with NASA.</p>
+         <p> Heath has earned several awards. She was given the Laura Tabor Barbour Air Safety Award in 1965 and received the Smith College Medal in 1971. In 2009, was among the 300 women WASPs to receive the Congressional Gold Medal, the highest civilian award given by Congress, by President Barack Obama and the United States Congress.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Materials document Heath's career in aerospace, her work as a WASP during World War II,
-            and her connection to Smith College.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Materials document Heath's career in aerospace, her work as a WASP during World War II, and her connection to Smith College.</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into six series:</p>
-         <list>
-            <item> Series I: Biographical Material </item>
-            <item> Series II: Correspondence </item>
-            <item> Series III: Professional Employment </item>
-            <item> Series IV: Professional Societies </item>
-            <item> Series V: Awards </item>
-            <item> Series VI: Publications </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into six series:</p>    
+         <list type="ordered">
+            <item>Series I: Biographical Material</item>
+            <item>Series II: Correspondence</item>
+            <item>Series III: Professional Employment</item>
+            <item>Series IV: Professional Societies</item>
+            <item>Series V: Awards</item>
+            <item>Series VI: Publications</item>
          </list>
       </arrangement>
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that she owns copyright, Gloria W. Heath has assigned the copyright in her works to Smith College; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Gloria W. Heath, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Gloria W. Heath Papers, Box #, Smith College Archives.</p>
+         <p>Gloria W. Heath papers, College Archives, CA-MS-00304, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The papers were donated to the Smith College Archives by Gloria W. Heath.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The papers were donated to the Smith College Archives by Gloria W. Heath.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Biographical Material</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_55f737ab5ae996ddbf4b8407c479f12a" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Index and Description of Consultant Activities
-                        <unitdate>1965-1973</unitdate>
-                  </unittitle>
+                  <unittitle>Index and Description of Consultant Activities</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1973"
+                            type="inclusive">1965-1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_58695fe3f4fdb2970d3330ff54ab542e"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7fd71e87d2934ee6d7fbeb2953fb105c" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Biographical Material <unitdate>1941-1982, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Biographical Material</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1982"
+                            type="inclusive">1941-1982</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c8115ace6cafa07e10d068b5dac452a9"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a724029df9b0c8fe23b7e1600a4b657f" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
                   <unittitle>
-                     <extref
-                        href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca24_main.html"
-                        >Smith College Flying Club</extref>
-                     <unitdate>1941-1943</unitdate>
+                     <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca24_main.html">Smith College Flying Club</extref>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1943"
+                            type="inclusive">1941-1943</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4263a3267d42ed130ad24b753f1f5b27"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d3acfb4bf3bf28bee66ba671922a5b59" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Miscellaneous <unitdate>1961-2009, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/2009"
+                            type="inclusive">1961-2009</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7522d4d8177cfc940e4b13649b26e2d6"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_468c30d7870f0d77c576ee6a3b290d51" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Photographs <unitdate>1963, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_55e3fec803c05f773cc0059b6569e24a"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a15500120335bc34b2472cbf25a528aa" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Photographs - Smith College Flying Club <unitdate>1941-1942,
-                        undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs - Smith College Flying Club</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1942"
+                            type="inclusive">1941-1942</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_544a480cf33b5cc3b3a2c91cccff7cb7"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_08b44055d59f90d214ebd598df23b104" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>General <unitdate>1965-1983, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1983"
+                            type="inclusive">1965-1983</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e975c02982f770dc76c27f1e96d0a5ce"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_60b74c95a87217dd83549afb44c54fe9" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Barbour, Clifford E. <unitdate>1971-1972 </unitdate>
-                  </unittitle>
+                  <unittitle>Barbour, Clifford E.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1971/1972"
+                            type="inclusive">1971-1972</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7ec49dbb9e7e0dd381dc1ccb5f0b897f"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d984f24603832a8607fd5c12b4b7e22e" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Boeing Aerospace Company <unitdate>1982</unitdate>
-                  </unittitle>
+                  <unittitle>Boeing Aerospace Company</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_db53944fbdb4b4f609fb638cb9bc02bf"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d48c4888fb89910551ad17ff14f3ba32" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Campbell, Paul A. <unitdate>1969-1977</unitdate>
-                  </unittitle>
+                  <unittitle>Campbell, Paul A.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1977"
+                            type="inclusive">1969-1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bf5dab87603403c6b76296a167bb9a03"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_05648ece866eaba3327cd269979d7c27" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Diederiks-Verschoor <unitdate>1976-1979</unitdate>
-                  </unittitle>
+                  <unittitle>Diederiks-Verschoor</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1976/1979"
+                            type="inclusive">1976-1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5a7d5e2c725b7bf83d98fc17b0752f46"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2dbd074a2da4ed85b96b9cb0f0e2ccc2" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Draper, C. Stark <unitdate>1975-1982</unitdate>
-                  </unittitle>
+                  <unittitle>Draper, C. Stark</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/1982"
+                            type="inclusive">1975-1982</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_40095156cde85e1dbef95580037f93e2"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ae07765bc42136dbb1627c44f8a59734" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Enders, John H. <unitdate>1978, 1982, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Enders, John H.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+                  <unitdate normal="1982/1982">1982</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a3e026044d62041d7641eb41154d3f03"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1b0f116d7bd88a09cf2abbb5c2232047" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Fuchs, Heinz S. <unitdate>1979, 1981</unitdate>
-                  </unittitle>
+                  <unittitle>Fuchs, Heinz S.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1979/1979">1979</unitdate>
+                  <unitdate normal="1981/1981">1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9b5361407ec63fa79a91f2c8c14165a7"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bd0e871ecd558b1955636eeaf170be7b" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Gazenko, Oleg <unitdate>1969-1983</unitdate>
-                  </unittitle>
+                  <unittitle>Gazenko, Oleg</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1983"
+                            type="inclusive">1969-1983</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3268aaa241d6ecc89565c017762faac9"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_68e26f919047d9acde815de430b16791" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Hinton, Carmelita <unitdate>1974, 1983, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Hinton, Carmelita</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+                  <unitdate normal="1983/1983">1983</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2f5d9bb2a27367e583e4bb86aa8bc1d2"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_90648879a81f6cf6c63fc668a2b0ba4d" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Houze, Robert A. <unitdate>1973, 1980</unitdate>
-                  </unittitle>
+                  <unittitle>Houze, Robert A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
+                  <unitdate normal="1980/1980">1980</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fac1c2fa7494fa460d07e18389ec2345"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_890370f5082cfb27af64371ec64a71a8" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>McCauley, Jack C. <unitdate>1969</unitdate>
-                  </unittitle>
+                  <unittitle>McCauley, Jack C.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6d5597bca5f71b6d8420e8c239a33570"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dfa42913046540165f9df20e05bca828" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Morrison, W. S. <unitdate>1982</unitdate>
-                  </unittitle>
+                  <unittitle>Morrison, W. S.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b012d9b81208560d9763ca1ef5582671"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6b2c059fd7c173ed11a864b69343c887" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Murdock, Mary-Elizabeth <unitdate>1972-1983, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Murdock, Mary-Elizabeth</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1972/1983"
+                            type="inclusive">1972-1983</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_49185cf66f881a7d81b0fcef5060d564"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6c493afc38e667603aa4255c5fa288a8" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Perry, Geoff <unitdate>1975</unitdate>
-                  </unittitle>
+                  <unittitle>Perry, Geoff</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_72fb361256af71d99255d87f95751388"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e58ad3cf00dedd83b0c56f590d99096b" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Prince of the Netherlands <unitdate>1969</unitdate>
-                  </unittitle>
+                  <unittitle>Prince of the Netherlands</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_67c4534ef0ae0bb620ba4c09a8d6484e"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7af6d4cdbe862e669631eea5384d31af" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Reed, John H. <unitdate>1973, 1975</unitdate>
-                  </unittitle>
+                  <unittitle>Reed, John H.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
+                  <unitdate normal="1975/1975">1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_17c8fd7e576152be0a32cf0977f93aba"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_37b916678a6054c4b1d0dd7ef9e308ae" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Saiki, Hisashi <unitdate>1980</unitdate>
-                  </unittitle>
+                  <unittitle>Saiki, Hisashi</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1980/1980">1980</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2e46abb6a9956a5d44745baf4eb0782e"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_835122e4940355b70398ced2861197aa" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Space Rescue and Safety Studies Committee
-                        <unitdate>1979-1983</unitdate>
-                  </unittitle>
+                  <unittitle>Space Rescue and Safety Studies Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1979/1983"
+                            type="inclusive">1979-1983</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca218a91879ca5aeed7c9232af4df94d"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_129f2ed6d264af894b01ee2a32890818" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Stapp, John P. <unitdate>1974-1975</unitdate>
-                  </unittitle>
+                  <unittitle>Stapp, John P.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1974/1975"
+                            type="inclusive">1974-1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fd2b72842d9b8ecca297b6d3f605f319"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bb27bb1a4b92a5d4ab072752748d7ffb" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Stuhlinger, Ernst <unitdate>1973- 1979</unitdate>
-                  </unittitle>
+                  <unittitle>Stuhlinger, Ernst</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1973/1979"
+                            type="inclusive">1973- 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9c85de9b96a164b592202e798fa8f119"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f424a7d9b1af9c329ce3a35458d183d6" level="file">
                <did>
-                  <container type="box" label="mixed materials">112</container>
-                  <unittitle>Publications <unitdate>1969-1970, 1973</unitdate>
-                  </unittitle>
+                  <unittitle>Publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1970"
+                            type="inclusive">1969-1970</unitdate>
+                  <unitdate normal="1973/1973">1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1880b18387c7180dc5f9f8b9fb72eaf6"
+                             label="Mixed Materials [310183630026333]"
+                             type="box">112</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Professional Employment</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_56a3f05a44e3f01ba60fd52b9991f1d3" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>Daniel and Florence Guggenheim Aviation Safety Center at Cornell
-                     University <unitdate>1953-1973, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Daniel and Florence Guggenheim Aviation Safety Center at Cornell University</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1973"
+                            type="inclusive">1953-1973</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_44bf9a0fdbee235bfc31f19bfb360fc3"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fcf19cbc8b88a9b490102782cfc0945b" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>Flight Safety Foundation <unitdate>1955-1970</unitdate>
-                  </unittitle>
+                  <unittitle>Flight Safety Foundation</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1970"
+                            type="inclusive">1955-1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7e06a5f09519f47e996e25e73001c34b"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_46a48c2cf18ee68635a2302b59f1cb41" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>Flight Safety Foundation <unitdate>1970-1983, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Flight Safety Foundation</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1983"
+                            type="inclusive">1970-1983</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f733b7da011d3ab0e057a6103fafda33"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_878228e43d02ded7108dadc3ef961104" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>Notes for Course Taught at Connecticut College <unitdate>c.
-                        1945</unitdate>
-                  </unittitle>
+                  <unittitle>Notes for Course Taught at Connecticut College</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4667a9d9836ca361ce02e233589c4fb5"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_231f741a27c34c5c975edc5ac57ad1aa" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>NSTA-NASA Space Shuttle Student Involvement Project
-                        <unitdate>1983</unitdate>
-                  </unittitle>
+                  <unittitle>NSTA-NASA Space Shuttle Student Involvement Project</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1983/1983">1983</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_58a9d881acc4b1a2a4ea921c3046ab39"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9f189cfd9149a38e5a7b52b530079241" level="file">
                <did>
-                  <container type="box" label="mixed materials">113</container>
-                  <unittitle>SAR-ASSIST, Inc. - General <unitdate>1962-1968</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1962/1968"
+                            type="inclusive">1962-1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_af196c726ae73e30f3857bfa1574444f"
+                             label="Mixed Materials [310183630026408]"
+                             type="box">113</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d58e712490cad70cada09725686293a9" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - General <unitdate>1970-1977</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1977"
+                            type="inclusive">1970-1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_851c3f89ca32c4268201562b401adf98"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0d5ac8e236af7f0859530d59ef2f8de0" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - Atlantic International Air and Surface Search and
-                     Rescue Seminar <unitdate>1975</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - Atlantic International Air and Surface Search and Rescue Seminar</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_53f4bf7d28532a51838415b2fdc88d52"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_79bc7dbf11987049008c12fd8ee4213c" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - CD-10 Proposal <unitdate>1973-1978</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - CD-10 Proposal</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1973/1978"
+                            type="inclusive">1973-1978</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb236fab35123e365a0fb313319d9019"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_07728ecb869d837a84f3e0fc477f0474" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - Harvard Seminar in Aviation and Health Safety,
-                     related materials <unitdate>1968-1973</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - Harvard Seminar in Aviation and Health Safety, related materials</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1968/1973"
+                            type="inclusive">1968-1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb58d01708828203c94b1fe93a1d6116"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0a5d95016aedce0fa0b73321ff676d16" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - International Air Safety Seminar
-                        <unitdate>1972</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - International Air Safety Seminar</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_41f6829eb690db12979c03f848e6b817"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4fce2cfaa1924af1302ce90adf23f552" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - Mine Safety <unitdate>1969-1970</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - Mine Safety</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1970"
+                            type="inclusive">1969-1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca9f4df4018c2678c6bdfefd6a6082ba"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d036380a4d57db40aeb2f2caab516489" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - Space Rescue and Response System
-                        <unitdate>1969-1976</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - Space Rescue and Response System</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1976"
+                            type="inclusive">1969-1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_59ed8531c9fc2e9e40e8aaeeeaa7ad24"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_54ff7c7ba8a77f8640d76b68bd6e7a4b" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>SAR-ASSIST, Inc. - Assist Texas Instruments Study
-                        <unitdate>1969-1970</unitdate>
-                  </unittitle>
+                  <unittitle>SAR-ASSIST, Inc. - Assist Texas Instruments Study</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1970"
+                            type="inclusive">1969-1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1e41acc9b32b8c524a960f3cb7f73a75"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fbc59e6c193286a62345d40bb6ed700a" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>Second World Congress on Emergency and Disaster Medicine
-                        <unitdate>1981</unitdate>
-                  </unittitle>
+                  <unittitle>Second World Congress on Emergency and Disaster Medicine</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1981/1981">1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5d6cfdd733243c037964f29e2082a7a0"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7d7c80bb8781cea9080c2f89f5a63e8c" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>United Nations Outer Space Conference (UNISPACE 82) <unitdate>1979-1982
-                     </unitdate>
-                  </unittitle>
+                  <unittitle>United Nations Outer Space Conference (UNISPACE 82)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1979/1982"
+                            type="inclusive">1979-1982</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f2186b4cafdb40412d265c5b723b3a09"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_be0161d7f3b3ccadac19ba8371aea019" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>WASPS <unitdate>1944-1977</unitdate>
-                  </unittitle>
+                  <unittitle>WASPS</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1977"
+                            type="inclusive">1944-1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1845edc7be4439c78aa79f0ab3805f3f"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2dfed7ea42bab722d614fbb6593472da" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>World Safety Research Institute <unitdate>1966-1967, undated</unitdate>
-                  </unittitle>
+                  <unittitle>World Safety Research Institute</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1966/1967"
+                            type="inclusive">1966-1967</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_06bc3d6822ac17d9bbbadd53eb9f1edd"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Professional Societies</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_4d10e7e1a9b6f09d5c7487a064455c3b" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>American Astronautical Society <unitdate>1969-1976</unitdate>
-                  </unittitle>
+                  <unittitle>American Astronautical Society</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1976"
+                            type="inclusive">1969-1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_91609fadaf586fda320aafca95ea0ea7"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_72aed352d244cca7855f21d2791d4664" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>American Institute of Aeronautics and Astronautics Meeting and Related
-                     Materials <unitdate>May 1977</unitdate>
-                  </unittitle>
+                  <unittitle>American Institute of Aeronautics and Astronautics Meeting and Related Materials</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1977-05/1977-05">May 1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d24714fc3ebd5ada417e375af4456cc4"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4c521d9adf3c4a3ecb1d5ba5f32ebf0e" level="file">
                <did>
-                  <container type="box" label="mixed materials">114</container>
-                  <unittitle>International Academy of Astronautics - General <unitdate>1968-1980,
-                        undated</unitdate>
-                  </unittitle>
+                  <unittitle>International Academy of Astronautics - General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1968/1980"
+                            type="inclusive">1968-1980</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7fc469bcf404ddbf4f1babefe906a7f1"
+                             label="Mixed Materials [310183630026390]"
+                             type="box">114</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_12377810a2e3186007511d8031cf946d" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Wings Club <unitdate>1972-1976</unitdate>
-                  </unittitle>
+                  <unittitle>Wings Club</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1972/1976"
+                            type="inclusive">1972-1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5e938c0443138593429040d3740dc83c"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2ebb137746ba4aef646ef8945b7ea64e" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Women's Advisory Committee on Aviation <unitdate>1972</unitdate>
-                  </unittitle>
+                  <unittitle>Women's Advisory Committee on Aviation</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3471201f5eb515473e2477363d0199e7"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_aca871d8d5898f2f2371114f7a48053f" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Zonta Club Lecture Materials <unitdate>1981</unitdate>
-                  </unittitle>
+                  <unittitle>Zonta Club Lecture Materials</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1981/1981">1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8cea998f3d7456d8636d6fd909d1f563"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>Series V: Awards</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_30219af0b309dfe0a076baac4308e50e" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Amelia Earhart Medal <unitdate>1957</unitdate>
-                  </unittitle>
+                  <unittitle>Amelia Earhart Medal</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f17af4d70e3c53022cf3359ccfe71cf0"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_42d0976545be0d82689b83c3568000a0" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>AVCO-AWA: Helicopter Heroism Award <unitdate>1966, undated</unitdate>
-                  </unittitle>
+                  <unittitle>AVCO-AWA: Helicopter Heroism Award</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dacbef88061fb68e2b5d6fbea2d66f09"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2a8f4a26162fa5ade72e94c7dc4e0aaa" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Congressional Gold Medal <unitdate>2010-2012</unitdate>
-                  </unittitle>
+                  <unittitle>Congressional Gold Medal</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2010/2012"
+                            type="inclusive">2010-2012</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a67946ba1cb9c127c28c2f98fc5e4c52"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c2162cec3df327b0861860bf3fd8982d" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Lady Grace Hay Drummond Memorial Trophy <unitdate>1955</unitdate>
-                  </unittitle>
+                  <unittitle>Lady Grace Hay Drummond Memorial Trophy</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_697a1e9da3f58fd7876922dbf7fb74ad"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_795ea060e05e20542ade72c5be782d27" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Laura Taber Barbour Air Safety Award <unitdate>1964-1981</unitdate>
-                  </unittitle>
+                  <unittitle>Laura Taber Barbour Air Safety Award</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1964/1981"
+                            type="inclusive">1964-1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a90798a76d1a812b44ff8e18f2d4affa"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f2e30d1cbdf8fcd0be8ef2cbdb2b6d4c" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Smith College Medal <unitdate>1969-1971 </unitdate>
-                  </unittitle>
+                  <unittitle>Smith College Medal</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1971"
+                            type="inclusive">1969-1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_27514fd5987f219aa19553038eb53885"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8ae31791afb4500afbb8df9d0ef6a524" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Wives' Wings <unitdate>1962</unitdate>
-                  </unittitle>
+                  <unittitle>Wives' Wings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3e087c1867ad63697d9f026929c925e6"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b4ea4e4c5ca200a20a80c9217f07d981" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>Miscellaneous-Awards <unitdate>1967, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous-Awards</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2fbbbaa181c4f3f557a339cd16f38989"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser6" level="series">
+         <c01 id="aspace_list-ser6" level="series">
             <did>
                <unittitle>Series VI: Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_e72c6046c5667c7ad7763c4286490207" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Aircraft Fluids Fire
-                        Hazard Symposium</title> [symposium coordinated by Heath]
-                        <unitdate>1966</unitdate>
-                  </unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">Aircraft Fluids Fire Hazard Symposium</title> [symposium coordinated by Heath]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3a4474595769a084fcc242e5f87488f0"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b96575d12ac9410314e82f119fe0181b" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Air Show" <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"Air Show"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2686a8e42f0fb34e127e658e0a50e82d"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e2a42fa3981eb009cafa810fd9bfab2e" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Challenge of Air Safety: Is it Safe to Fly?" <unitdate>1957</unitdate>
-                  </unittitle>
+                  <unittitle>"Challenge of Air Safety: Is it Safe to Fly?"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_48af9e46c907bf1fe581cf6762b6b4bc"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a260cc4de8fc4f8a9f2e3568e99d7d03" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Critical Review of
-                        the State of Foreign Space Technology</title>
-                     <unitdate>1978</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">Critical Review of the State of Foreign Space Technology</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f8d2a8cce133593989e682ef4667d97c"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8895aa7506795172e9518f94322df2ff" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Education for Life: The Importance of Safety Education in the Air Age"
-                        <unitdate>1946</unitdate>
-                  </unittitle>
+                  <unittitle>"Education for Life: The Importance of Safety Education in the Air Age"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_feb95519b34a2aea4ecaa1b7870ff1f9"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5b3682a1aeb1d03d880f94a82dee84a9" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Enciclopedia Practica
-                        Jackson</title>
-                     <unitdate>1952-1953</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">Enciclopedia Practica Jackson</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1952/1953"
+                            type="inclusive">1952-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_89c075855d2779b12ad3f477e2bfb400"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8724d117fb49d37219e2ba0a217c2b6b" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Flying Club Commandments" <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>"Flying Club Commandments"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1485e800aba139059b7ca40147657e06"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_87b5e4b5ea9978c7e745d23f447ca8f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Flying's Check Pilot, De Haviland and Beaver"
-                        <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"Flying's Check Pilot, De Haviland and Beaver"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_530063ef75ddf25d4f8fe97ed5d278f7"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_13e57b254e1d86c31aa8216c8d6c33ae" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Flying's Check Pilot Piper Tri-Pacer" <unitdate>1951</unitdate>
-                  </unittitle>
+                  <unittitle>"Flying's Check Pilot Piper Tri-Pacer"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9d10c6fb3362660b7fc851921fea418c"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6927f4e7ebdc5cb082bca234a8143bbd" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>'Go West, Young Man', Fly North, Young Lady <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>'Go West, Young Man', Fly North, Young Lady</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f330507b85dd4f24bf105ad0a18a4544"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ecc766d251fc1518201ce6fd89f9c262" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Helio Courier" <unitdate>1955</unitdate>
-                  </unittitle>
+                  <unittitle>"Helio Courier"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_393feea6f102caaf0029cd6b0a0f707d"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e1fd29b6a1d68e1e66f5e9c6a4464437" level="file">
                <did>
-                  <container type="box" label="mixed materials">115</container>
-                  <unittitle>"Homemade Racers" <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"Homemade Racers"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_73634eb6209d0a88b5b4156748141345"
+                             label="Mixed Materials [310183630026465]"
+                             type="box">115</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5ee0d69b5b727f49990f2baec31e60ae" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">International Space
-                        Rescue Symposium, First</title>
-                     <unitdate>1968-1969</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">International Space Rescue Symposium, First</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1968/1969"
+                            type="inclusive">1968-1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_26efae7b4c59093347dcb91fafa9f756"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_158099a1dd7bfe976c7d58df44f62a63" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">International Space
-                        Rescue Symposium, Second</title>
-                     <unitdate>1969-1971</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">International Space Rescue Symposium, Second</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1971"
+                            type="inclusive">1969-1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_144d2338d94e2d3c263c31130763f7ff"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b81ebc7f4c2a9e31a1d3d3a84e1d8ebf" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">International Space
-                        Rescue Symposium, Third</title>
-                     <unitdate>1970-1971</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">International Space Rescue Symposium, Third</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1971"
+                            type="inclusive">1970-1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_254a843e60cca996437dba4ba3b187b4"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_062bb84cb66f3872612316cc96f9eae0" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">International Space
-                        Rescue Symposium, Fourth</title>
-                     <unitdate>1971-1972</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">International Space Rescue Symposium, Fourth</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1971/1972"
+                            type="inclusive">1971-1972</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d6305a4e996e4378bfac7f906d09736f"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_60bfca5ea42b8dee7cc77580897f2ac2" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">International Space
-                        Rescue Symposium, Fifth</title>
-                     <unitdate>1972-1973</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">International Space Rescue Symposium, Fifth</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1972/1973"
+                            type="inclusive">1972-1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ed9373db4f14177f7f81d28572ec402"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_495795291ffed432fa52896069ce79fd" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">National Conference
-                        on Aircraft Locator Beacon Implementation</title>
-                     <unitdate>1968</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">National Conference on Aircraft Locator Beacon Implementation</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9f6169482e1c3e5c6d1c48002d94f888"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b8def1475f4e73e52311f7f89fe19949" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
-                  <unittitle>"Ninety-Niner's Air Meet" <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"Ninety-Niner's Air Meet"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e17e54665b897244be7a40219717cfdb"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a7a16d335871cb6e1bee39dbfecc5bf" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
-                  <unittitle>Pilots, Brush Up Those Landings <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>Pilots, Brush Up Those Landings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_33db292f10ba1719c1591cc6472c9250"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_631a14c85263fc5c3c6a52e882961d5a" level="file">
                <did>
-                  <container type="box" label="mixed materials">116</container>
-                  <unittitle>"Pilot's Report… <title encodinganalog="630" render="italic"
-                        source="lcsh">Piper Pacer</title> " <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>"Pilot's Report…	<title encodinganalog="630" render="italic" source="lcsh">Piper Pacer</title> "</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_16693e8a07d3a535ff758ed4f0e57fe1"
+                             label="Mixed Materials [310183630026457]"
+                             type="box">116</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9e62fbc282a18c9ebe4cebb84e5ab36d" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
-                  <unittitle>"Space Rescue" <unitdate>1969, 1971</unitdate>
-                  </unittitle>
+                  <unittitle>"Space Rescue"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <unitdate normal="1971/1971">1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a4b6abcf0509bd906f1e396229ccde51"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9e61c5879ddda7fbb961ce7e60a15ea7" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Space Safety and
-                        Rescue</title>
-                     <unitdate>1979-81</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">Space Safety and Rescue</title>
                   </unittitle>
-                  <note>
-                     <p>[West St.]</p>
-                  </note>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1979/1981"
+                            type="inclusive">1979-81</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_73189bb58d8ff0a4a97ad007404b8999"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
+               <odd id="aspace_fd2ac61a10ab9a501c7358d13f5f8472">
+                  <head>General</head>
+                  <p>[West St.]</p>
+               </odd>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1c6727fdde762e2586b3863a6825b820" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">WASP: "In Their Own
-                        Words", An Illustrated History</title>
-                     <unitdate>2010</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">WASP: "In Their Own Words", An Illustrated History</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2010/2010">2010</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_da005f517d5b13304550e2a186a89e85"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3a1c52997d346522d8ec0e35255251a5" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
-                  <unittitle>WASP: "In Their Own Words", An Illustrated History
-                        <unitdate>2010</unitdate>
-                  </unittitle>
+                  <unittitle>WASP: "In Their Own Words", An Illustrated History</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2010/2010">2010</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a1f4441cf9363a5c825b337b842a90cd"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8a7d7948a875d3cf5939c430a979506f" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
-                  <unittitle>"Wintertime is Snowtime" <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"Wintertime is Snowtime"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9a970c26d2da6e8090987443fae403f9"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dae63e05012bf78b62a085767ce5a069" level="file">
                <did>
-                  <container type="box" label="mixed materials">117</container>
-                  <unittitle>Miscellaneous Publications <unitdate>1970-1981</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous Publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1981"
+                            type="inclusive">1970-1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a1ae497301f03aa60ea861264306f407"
+                             label="Mixed Materials [310183630026382]"
+                             type="box">117</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_aaa729a94b2bbac0fb5564311780feae" level="file">
                <did>
-                  <container type="box" label="mixed materials">OV</container>
-                  <unittitle>Congressional Medal <unitdate>2010</unitdate>
-                  </unittitle>
+                  <unittitle>Congressional Medal</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2010/2010">2010</unitdate>
+                  <container id="aspace_f6f93ec1320f1d04b2ca1d742c58dd47"
+                             label="Mixed Materials"
+                             type="box">OV</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

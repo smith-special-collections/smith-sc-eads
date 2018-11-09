@@ -1,227 +1,239 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca399.xml//EN">manosca399</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca399</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Hart - Lester Harris, Class of 1913 papers, 1891 -
-               1984 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Carron.</author>
-
+            <titleproper>Finding aid to the Hart-Lester Harris papers <num>CA.MS.00399</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-04-28">2015-04-28</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-08 15:53:49 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Allen, Hart - Lester Harris</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Hart - Lester Harris, Class of 1913
-            papers, 1891 - 1984 </unittitle>
-         <unitdate label="Dates:" type="inclusive">1891 - 1984</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1909 - 1913</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:32ab20d7-e053-4b61-9001-6a272fe9e1b5</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">( 1 linear foot)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Alumna. Contains diaries,
-            correspondence to and from Harris' family, news clippings, two (2) photographic albums
-            and one (1) memorabilia book created during Harris' undergraduate career at Smith
-            College. </abstract>
+         <unittitle>Hart-Lester Harris papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Allen, Hart - Lester Harris</persname>
+         </origination>
+         <unitid>CA.MS.00399</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.208 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1910/1925"
+                   type="inclusive">1910-1925</unitdate>
+         <abstract id="aspace_995424fcf64c4f2347fc48d9ec60dd46">Alumna. Contains diaries, correspondence to and from Harris' family, news clippings, two photographic albums and one memorabilia book created during Harris' undergraduate career at Smith College.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> Hart - Lester Harris (1891 - 1984) was born in Springfield, Massachusetts on November
-            7, 1891 to Henrietta (Harris, Class of 1888) and William Harris. She attended Miss
-            Porter's School in Springfield before enrolling at Smith College in 1909. Attending
-            Smith College had become a family tradition as her mother and sisters Ambia (Class of
-            1919) and Harriet attended. </p>
-
-         <p>Hart married Joseph Allen and moved to Holyoke. A son, Covington, was born in 1927.
-            Following her husband's death her son Covington caught ill while travelling and
-            subsequently died. Soon after Harris moved to Florida to enjoy the sun and warmth. She
-            continued to be active in the Alumnae Association until her death in 1984.</p>
-
-      </bioghist>
-
-
-      <scopecontent id="scope">
-
-         <p> The collection contains correspondence, diaries, news clippings, memorabilia and
-            photographs describing the student life and perspective from Hart - Lester Harris, Class
-            of 1913. Topics range broadly from exams to professors, college and community social
-            events, basketball and dramatics, cross-college events at Amherst College and Mount
-            Holyoke, home life and trips to large cities such as New York City and Boston. </p>
-      </scopecontent>
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Smith College owns copyright to any published material relating to college events and
-            activities. Copyright to materials created by other individuals may be owned by those
-            individuals or their heirs or assigns. It is the responsibility of the researcher to
-            identify and satisfy the holders of all copyrights. Permission must be obtained from the
-            Smith College Archives to publish reproductions or quotations beyond "fair use."</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p> Hart - Lester Harris, Class of 1913 papers, Box #, Smith College Archives </p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Hart - Lester Harris, Class of 1913 papers were created by Hart - Lester Harris
-            Allen and donated to the College Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Elizabeth Carron</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Hart-Lester Harris (1891 - 1984) was born in Springfield, Massachusetts on November 7, 1891 to Henrietta (Harris, Class of 1888) and William Harris. She attended Miss Porter's School in Springfield before enrolling at Smith College in 1909. Attending Smith College had become a family tradition as her mother and sisters Ambia (Class of 1919) and Harriet attended. </p>
+         <p> Hart married Joseph Allen and moved to Holyoke. A son, Covington, was born in 1927. Following her husband's death her son Covington caught ill while travelling and subsequently died. Soon after Harris moved to Florida to enjoy the sun and warmth. She continued to be active in the Alumnae Association until her death in 1984.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>  Hart-Lester Harris, Class of 1913 papers, Box #, Smith College Archives, CA-MS-00399, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Collection was processed by Elizabeth Carron.</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <corpname encodinganalog="610" source="lcsh">Smith
-            College--Students-Correspondence</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith
-            College--Students--History-Sources</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and
-            customs</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Alumni and alumnae</corpname>
-         <genreform encodinganalog="655" source="aat">diaries</genreform>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains correspondence, diaries, news clippings, memorabilia and photographs describing the student life and perspective from Hart-Lester Harris, Class of 1913. Topics range broadly from exams to professors, college and community social events, basketball and dramatics, cross-college events at Amherst College and Mount Holyoke, home life and trips to large cities such as New York City and Boston.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <genreform encodinganalog="655" authfilenumber="300027112" source="aat">diaries</genreform>
          <genreform encodinganalog="655" source="aat">personal correspondence</genreform>
          <genreform encodinganalog="655" source="aat">scrapbooks</genreform>
-
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students-Correspondence</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students--History-Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and customs</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Alumni and alumnae</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_aedb6317dc6b464b2fdaaf1dade38299" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>diary <unitdate>1910</unitdate>
-               </unittitle>
+               <unittitle>diary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_0022f76111df26086f0149f821ed984e"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_87bc873e1b5d58446a7610356e572a64"
+                          parent="aspace_0022f76111df26086f0149f821ed984e"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a992a50b062ac5a67f2eafe173719c57" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>diary <unitdate>1911</unitdate>
-               </unittitle>
+               <unittitle>diary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_248a78530e023a78487d813f6405a1cd"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_538ae36f13c3d4996dace7823d6bb437"
+                          parent="aspace_248a78530e023a78487d813f6405a1cd"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_45a1ba9bfabd00492a8aa62b1c481458" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>diary <unitdate>1912</unitdate>
-               </unittitle>
+               <unittitle>diary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1912/1912">1912</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_06ea769f5162a1de9d7eb7aec814e464"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_b4e233f2b65860f484bc52ac4a28fc29"
+                          parent="aspace_06ea769f5162a1de9d7eb7aec814e464"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_be9173a5647156e7ac35573580f6e8e1" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>diary <unitdate>1913</unitdate>
-               </unittitle>
+               <unittitle>diary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_3085dfed7ef9c9ec6bfea553e9703a36"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_3ff9c23e31037ca1de4429fac7c3c98e"
+                          parent="aspace_3085dfed7ef9c9ec6bfea553e9703a36"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9fc6f5e31fd5c2df4ff95e271c8f8907" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>general <unitdate>circa 1913 - 1925</unitdate>
-               </unittitle>
+               <unittitle>general</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1913/1925"
+                         type="inclusive">1913 - 1925</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_39c54b2174288560e403b01474f72ace"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_14b1b7bb6e2045eab27b87094cc10968"
+                          parent="aspace_39c54b2174288560e403b01474f72ace"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b9300b0e6c7dd4af527ba80c5c964d79" level="file">
             <did>
-               <container type="box" label="mixed materials">1835</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>photographs <unitdate>circa 1914</unitdate>
-               </unittitle>
+               <unittitle>photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1914/1914">1914</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_1db9cdb20ef22c67358ddd9013678da7"
+                          label="Mixed Materials [310183630238490]"
+                          type="box">1835</container>
+               <container id="aspace_38279190af6e83debdab385c9fb8e9cc"
+                          parent="aspace_1db9cdb20ef22c67358ddd9013678da7"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_92483d42181207e492f56871997d1ab4" level="file">
             <did>
-               <container type="box" label="mixed materials">oversize</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>photograph album <unitdate>1910 - 1911</unitdate>
-               </unittitle>
+               <unittitle>photograph album</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1910/1911"
+                         type="inclusive">1910 - 1911</unitdate>
+               <container altrender="Flat box (15d x 3h x 12w)"
+                          id="aspace_361a66304029a08ae92523c4d2c46407"
+                          label="Mixed Materials [310183630238508]"
+                          type="box">1835.1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_975c49050e0484b8b25f49ea91a6e773" level="file">
             <did>
-               <container type="box" label="mixed materials">oversize</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>memorabilia book <unitdate>1912 - 1913</unitdate>
-               </unittitle>
+               <unittitle>memorabilia book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1912/1913"
+                         type="inclusive">1912 - 1913</unitdate>
+               <container altrender="Flat box (15d x 3h x 12w)"
+                          id="aspace_7aa6902f1a659e21b74371f7a1164f38"
+                          label="Mixed Materials [310183630238508]"
+                          type="box">1835.1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6819cde766898e6c853870c92e5221f1" level="file">
             <did>
-               <container type="box" label="mixed materials">oversize</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>memorabilia book <unitdate>1910 - 1911</unitdate>
-               </unittitle>
+               <unittitle>memorabilia book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1910/1911"
+                         type="inclusive">1910 - 1911</unitdate>
+               <container altrender="Flat box (15d x 3h x 12w)"
+                          id="aspace_8d48fbc5bb2c48002455e09ae7050ca0"
+                          label="Mixed Materials [310183630238516]"
+                          type="box">1835.2</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

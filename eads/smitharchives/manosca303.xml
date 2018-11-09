@@ -1,264 +1,321 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca303.xml//EN">manosca303</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca303</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Laura Lilian Brandt Papers, 1925 -
-               1926</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jeanne Lowrey.</author>
-
+            <titleproper>Finding aid to the Laura Lilian Brandt papers <num>CA.MS.00303</num>
+            </titleproper>
+            <author>Finding aid prepared by Jeanne Lowrey.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-04-23">2013-04-23</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-08 16:39:43 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-08</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Brandt, Laura Lilian,
-               1906-1989</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Laura Lilian Brandt Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1925-1926</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:a3da87bf-4bfb-45e6-a838-72a3d5e73702</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(0.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:"><language langcode="eng"
-               >English</language> , <language langcode="fre">French</language>
-         </langmaterial>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains correspondence, memorabilia,
-            and photographs documenting the Junior Year Abroad of Laura Lilian Brandt, Class of
-            1927, to Paris, France. </abstract>
+         <unittitle>Laura Lilian Brandt papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Brandt, Laura Lilian, 1906-1989</persname>
+         </origination>
+         <unitid>CA.MS.00303</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1925/1939"
+                   type="inclusive">1925-1939</unitdate>
+         <abstract id="aspace_b4d0bc22933b0af376c58638755feee8">Contains correspondence, memorabilia, and photographs documenting the Junior Year Abroad of Laura Lilian Brandt, Class of 1927, to Paris, France.</abstract>
+         <langmaterial id="aspace_29cdfdfa5b2ec590823d7cdd20f7d697">The collection was written in <language langcode="eng">English</language> and <language langcode="fre">French</language>.</langmaterial>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Laura Lilian Brandt, Class of 1927, was born January 23, 1906 to Carl and Stella Shuman
-            Brandt in Jamaica Plains, Massachusetts. Her father was the owner of the Brandt Leather
-            Company. </p>
-
-         <p>Brandt attended Miss May's School in Boston, Massachusetts prior to enrollment at
-            Radcliffe College. She transferred to Smith College after her first year at Radcliffe.
-            She was a part of the first group from Smith to spend her junior year abroad in Paris,
-            France, which she considered "one of the best and happiest years of [her] life". While
-            at Smith she was a member of the French Club, served as a Student Adviser, and majored
-            in French. She graduated in 1927.</p>
-
-         <p>After leaving Smith, Brandt, worked at Alfred A. Knopf, Inc., W.W. Norton, and Macy's as
-            an editor in New York. She married George Stevens in 1930 and had two daughters, one of
-            whom attended Smith (Carol Stevens Kner, Class of 1958). In the 1950s, she worked at
-            Princeton University. She served as the volunteer director of Recording for the Blind
-            and was a founder of the Princeton Community Homemaker Services. In 1972 she helped to
-            organize the Meals on Wheels program, where she volunteered for ten years. She died
-            February 14, 1989 in Doylestown, PA.</p>
-
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Contains correspondence, memorabilia, and photographs documenting the Junior Year Abroad
-            of Laura Lilian Brandt, Class of 1927, to Paris, France.</p>
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p> The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>
-            <title encodinganalog="630" render="italic" source="lcsh">Laura Lilian Brandt Papers,
-               Box #, Smith College Archives.</title>
-         </p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Laura Lilian Brandt papers were donated to the College Archives. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Processed by and Finding Aid written by Jeanne Lowrey, 2012.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Laura Lilian Brandt, Class of 1927, was born January 23, 1906 to Carl and Stella Shuman Brandt in Jamaica Plains, Massachusetts. Her father was the owner of the Brandt Leather Company. </p>
+         <p> Brandt attended Miss May's School in Boston, Massachusetts prior to enrollment at Radcliffe College. She transferred to Smith College after her first year at Radcliffe. She was a part of the first group from Smith to spend her junior year abroad in Paris, France, which she considered "one of the best and happiest years of [her] life". While at Smith she was a member of the French Club, served as a Student Adviser, and majored in French. She graduated in 1927.</p>
+         <p> After leaving Smith, Brandt, worked at Alfred A. Knopf, Inc., W.W. Norton, and Macy's as an editor in New York. She married George Stevens in 1930 and had two daughters, one of whom attended Smith (Carol Stevens Kner, Class of 1958). In the 1950s, she worked at Princeton University. She served as the volunteer director of Recording for the Blind and was a founder of the Princeton Community Homemaker Services. In 1972 she helped to organize the Meals on Wheels program, where she volunteered for ten years. She died February 14, 1989 in Doylestown, PA.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>Laura Lilian Brandt Papers, Box #, Smith College Archives, CA-MS-00303, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by and Finding Aid written by Jeanne Lowrey, 2012.</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Contains correspondence, memorabilia, and photographs documenting the Junior Year Abroad of Laura Lilian Brandt, Class of 1927, to Paris, France.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <dsc>
+         <c01 id="aspace_0c968b3e7eeb6b7cdc8352cb67a0019e" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Correspondence from father <unitdate>Sept. 1925 to June 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from father</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-09/1926-06"
+                         type="inclusive">Sept. 1925-June 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e81d08c31a609c25f2643b60b4fd0894"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_1cff821b46cf0a62b6c69166fc71acc8"
+                          parent="aspace_e81d08c31a609c25f2643b60b4fd0894"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_765272bdf29b4998d774441b04e8a32a" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence from mother <unitdate>Sept. &amp; Oct. 1925</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-09/1925-10"
+                         type="inclusive">1925-09-1925-10</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0944f49a5e6fd2d408d82ca3f00975b6"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_2cc1e2ee936eff74bc80aa62d99df022"
+                          parent="aspace_0944f49a5e6fd2d408d82ca3f00975b6"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8cd75cc7f6007a3eedc92a90e9b95ffe" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence from mother <unitdate>November 1925</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1925-11/1925-11">November 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_46e70b7266ff8fee7f633d04a91f8966"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_f3553d59b54fec0ce55906bd77869ee7"
+                          parent="aspace_46e70b7266ff8fee7f633d04a91f8966"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b5164a7b06ea40551d006154bc82857e" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence from mother <unitdate>Dec. 1925</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1925-12/1925-12">Dec. 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_92a1171abd1b954d383d1eeaf0af9f6c"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_6c5b1c36c3f5ff3ea55b0389d1eeed70"
+                          parent="aspace_92a1171abd1b954d383d1eeaf0af9f6c"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1e231efe8a4b1afc70aecdc089254a80" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence from mother <unitdate>Jan 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-01/1926-01">Jan 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_959c2b5ece00b4e44e1498946a33de99"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_c7deb826b9b975c5c728c4f95bc3b9e4"
+                          parent="aspace_959c2b5ece00b4e44e1498946a33de99"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9ad1ba720b032a3666cfb0bb91a514eb" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence from mother <unitdate>Feb. &amp; March 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926-02/1926-03"
+                         type="inclusive">Feb. &amp;amp March 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_29717d6fe0317082b084bce3bb0482f4"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_a82d8ba03301c53ae44c95497534d096"
+                          parent="aspace_29717d6fe0317082b084bce3bb0482f4"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3d92d4e191f45de531a02e38504bb175" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Correspondence from mother <unitdate>April, May, June &amp; July
-                     1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence from mother</unittitle>
+               <unitdate calendar="gregorian" era="ce">April</unitdate>
+               <unitdate calendar="gregorian" era="ce">May</unitdate>
+               <unitdate calendar="gregorian" era="ce">June &amp;amp</unitdate>
+               <unitdate normal="1926-07/1926-07">July 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ce242a0b673d550b72e0d140d77b1a43"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_3f6ddd56bc3e17c5e421a91d2cf21dcc"
+                          parent="aspace_ce242a0b673d550b72e0d140d77b1a43"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ee6df2de870357650fb13398c1e8ea20" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Correspondence to family <unitdate>Dec. 1925 to Aug. 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence to family</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1925-12/1926-08"
+                         type="inclusive">Dec. 1925 to Aug. 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4ca05bafe0c3098f01275e366df823d3"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_e01f0b50291a0b16a33aa96d504eec79"
+                          parent="aspace_4ca05bafe0c3098f01275e366df823d3"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_930bd32a55f3347b3be9adbfb493ab30" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>French Group Association correspondence <unitdate>1927-1928</unitdate>
-               </unittitle>
+               <unittitle>French Group Association correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1927/1928"
+                         type="inclusive">1927-1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1b17b61555d0584f24ecc2d46261ee1e"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_3a0112840ecb9ceb5b3bfd65afcfadec"
+                          parent="aspace_1b17b61555d0584f24ecc2d46261ee1e"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5fa1b8885fdf16511697fd73800cb6aa" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Correspondence - miscellaneous <unitdate>Oct. 1925 to July 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence - miscellaneous</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-10/1926-07"
+                         type="inclusive">Oct. 1925 to July 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f98bcd64fff480f1016d1f2207c56dea"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_c0d8bb607476fd9c007d076313ca8c2a"
+                          parent="aspace_f98bcd64fff480f1016d1f2207c56dea"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0d5327a562cf817816a25caf2ccc8d54" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Memorabilia, photos, etc. (from France) <unitdate>1925-1926</unitdate>
-               </unittitle>
+               <unittitle>Memorabilia, photos, etc. (from France)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1926"
+                         type="inclusive">1925-1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_67cf49c25d920a9dbcd675f3504bd7ff"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_2e39737aa663cb85ecf5642b29535d05"
+                          parent="aspace_67cf49c25d920a9dbcd675f3504bd7ff"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1a35d2cf7b015fc424f22bc06d63299c" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Miscellaneous: articles, clippings, short stories <unitdate>1926, 1927,
-                     1929</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous: articles, clippings, short stories</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+               <unitdate normal="1927/1927">1927</unitdate>
+               <unitdate normal="1929/1929">1929</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bc528d3ba5a85654eb80e88fed27e224"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_358f75b738f2e18a3589fe2583ea2798"
+                          parent="aspace_bc528d3ba5a85654eb80e88fed27e224"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a63604875b18f159930043bf8669cd76" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Miscellaneous: List of Juniors (1939) Address Book
-                     <unitdate>1939</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous: List of Juniors (1939) Address Book</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c979603237477febe73a1b17b284301c"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_3cf09d5d9f114e7fd7c1b33a16cb9739"
+                          parent="aspace_c979603237477febe73a1b17b284301c"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8b4861b967ec74f9ea76a5263d3680ea" level="file">
             <did>
-               <container type="box" label="mixed materials">1991</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Theater Programs from France <unitdate>1925-1926</unitdate>
-               </unittitle>
+               <unittitle>Theater Programs from France</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1926"
+                         type="inclusive">1925-1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_18268bbd8c84c0d68808a74d9f30022a"
+                          label="Mixed Materials [310183630238219]"
+                          type="box">1991</container>
+               <container id="aspace_36ab29149643c9fcc4ff8ce2db901ab0"
+                          parent="aspace_18268bbd8c84c0d68808a74d9f30022a"
+                          type="folder">14</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
