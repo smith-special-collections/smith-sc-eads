@@ -1,653 +1,762 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca305.xml//EN">manosca305</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca305</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Elizabeth Morrow Personal Papers,
-               1892-1947</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Grace Martin.</author>
-
+            <titleproper>Finding aid to Elizabeth Morrow Personal Papers, 1892-1947 <num>CA.MS.00305</num>
+            </titleproper>
+            <author>Finding aid prepared by Grace Martin, Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah A.
-            Richards. <date normal="2013-10-23">2013-10-23</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 10:52:03 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>11/12/18</date>
+            <item>Finding aid updated</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Morrow, Elizabeth, 1873-1955.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Elizabeth Morrow Personal
-            Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1892-1947</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 32 UUID:3ccef6af-899e-4ce3-90da-88d69caea8ce</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">5 boxes</extent>
-            <extent encodinganalog="300$a">(1.9 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English</language>
-         </langmaterial>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The Elizabeth Morrow personal papers
-            contain biographical material, correspondence, memorials, photographs, publications, and
-            speeches, as well as an unpublished book of verse produced as a tribute for Morrow.
-         </abstract>
+         <unittitle>Elizabeth Morrow Personal Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Morrow, Elizabeth, 1873-1955.</persname>
+         </origination>
+         <unitid>CA.MS.00305</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1892/1947"
+                   type="inclusive">1892-1947</unitdate>
+         <langmaterial id="aspace_cd6ce063e0fd5932be5c1e9bc0fc28ee">English</langmaterial>
+         <abstract id="aspace_7f07fd86257fec860b9b98b9710f2f0b">The Elizabeth Morrow personal papers contain biographical material, correspondence, memorials, photographs, publications, and speeches, as well as an unpublished book of verse produced as a tribute for Morrow.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Elizabeth Reeve Cutter Morrow has been called Smith's most outstanding alumna. Born in
-            Cleveland, Ohio in 1873, Elizabeth Cutter was the daughter of Charles Long Cutter and
-            Annie E. (Spencer) Cutter. Her father was Secretary General of L. and Wheeling Railroad.
-            Having received her early education at Miss Mittleberger's School in Cleveland, she was
-            later granted a B. L. degree from Smith College in the Class of 1896. She studied at the
-            Sorbonne in Paris, France from 1896 to 1897 as well as in Florence, Italy.</p>
-
-         <p>In 1903 she married Dwight Whitney Morrow. Dwight Morrow, born in Huntington, West
-            Virginia in 1873, graduated from Amherst College in 1896. He served as the United States
-            Ambassador to Mexico from 1927-1930, during the Hoover administration, and served in the
-            United States Senate between 1930 until his death on October 5, 1931. They had four
-            children: Elizabeth Reeve Morrow (Class of 1923), Anne Spencer Morrow (Class of 1928),
-            Dwight Whitney Morrow Jr., and Constance Cutter Morrow (Class of 1935). Elizabeth Cutter
-            Morrow was the grandmother of twelve, including Charles Augustus Lindbergh, Jr. the
-            famous Lindbergh baby, son of Anne Spencer Morrow and her husband Col. Charles A.
-            Lindbergh.</p>
-
-         <p>Elizabeth Cutter Morrow was the recipient of honorary degrees from six leading colleges
-            and universities including: Amherst College, 1933; New Jersey College for Women, 1935;
-            Smith College, 1937; New York University, 1940; Lafayette College, 1940; and Princeton,
-            1940. Described by Dr. <extref
-               href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca13_main.html"
-               >William Allen Neilson</extref> in conferring the degree of Doctor of Humane letters
-            upon her in 1937, "President of the Alumnae Association, and for sixteen years Trustee
-            of Smith College, author of distinction in prose and verse, the multitude of whose
-            services to her college and her country - far greater than the world knows - makes it
-            impossible to describe adequately the alumna who has earned in most abundant measure our
-            love, our honor, and our gratitude."</p>
-
-         <p>Taking an active role in the life and well-being of her alma mater, Elizabeth Cutter
-            Morrow was president of the Smith College Alumnae Association from 1917-1920. She was a
-            member of the War Services Board which directed Smith College relief units overseas.
-            Between 1920-1926 she was the Alumnae representative to the <extref
-               href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca146_main.html"
-               >Board of Trustees</extref>, and later, in 1926, was elected a Trustee by the Board.
-            Her largest contribution, however, was her role as acting president for the interim
-            year, 1939-1940, after the resignation of William A. Neilson as president in 1939.</p>
-
-         <p>Elizabeth Cutter Morrow was not a professional woman whose "field" can be easily
-            described. She certainly achieved eminence in education, philanthropy, finance, and
-            literature. She was a teacher of English, History, and French in private schools before
-            her marriage to Dwight Whitney Morrow in 1903. During her marriage she published prose
-            and verse in many popular magazines, as well as publishing multiple children's books, of
-            which some are <title encodinganalog="730" render="italic">The Painted Pig</title> ,
-               <title encodinganalog="730" render="italic">Quatrains for My Daughter</title> ,
-               <title encodinganalog="730" render="italic">The Rabbit's Nest</title> , <title
-               encodinganalog="730" render="italic">Shannon, A Pint of Judgment</title> , and <title
-               encodinganalog="730" render="italic">Casa Manana</title> which was chosen as one of
-            150 of the most beautiful books between 1931 and 1933.</p>
-
-         <p>Her volunteer work had no limits. Elizabeth Cutter Morrow was unstintingly active in
-            local as well as national and international affairs. She was chairman of the Community
-            Chest when it was first organized in Englewood, New Jersey, the town she called home.
-            She was also involved in her local church, Women's Club, Memorial House (civic center)
-            and was even chairman of the Board of The Little School in Englewood, founded by her
-            daughter Elizabeth. She was a member of the Executive Committee of the New York National
-            War Fund Committee. She was one of the founders for Food for Freedom Inc.. She was the
-            first woman to serve on the Board of the Union Theological Seminary. In New York she was
-            a member of the National Board of the Y. W. C. A., and she took a leading role in many
-            of its campaigns for funds. Elizabeth Cutter Morrow played an important role in issues
-            abroad. During her husband's time as Ambassador to Mexico, 1927-30, she supported him in
-            his resolve to bring about the strengthening of friendly relations between Mexico and
-            the United States. As well, she was an honorary vice-president of the American
-            Association for the United Nations, Inc.</p>
-
-         <p>On January 23, 1955 she died at the age of eighty-two. In an address at the Smith
-            College memorial service <extref
-               href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca15_main.html">Ada
-               Comstock Notestein</extref>, member of the Class of 1897, former Dean and Trustee of
-            Smith College, as well as former president of Radcliffe College, said: "…She was one of
-            those rare beings for whose courage nothing is too great, and for whose imagination
-            nothing is too small….She was a benefactor and philanthropist without any apparent
-            consciousness of doing more than anyone would have done in her place."</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Elizabeth Reeve Cutter Morrow has been called Smith's most outstanding alumna. Born in Cleveland, Ohio in 1873, Elizabeth Cutter was the daughter of Charles Long Cutter and Annie E. (Spencer) Cutter. Her father was Secretary General of L. and Wheeling Railroad. Having received her early education at Miss Mittleberger's School in Cleveland, she was later granted a B. L. degree from Smith College in the Class of 1896. She studied at the Sorbonne in Paris, France from 1896 to 1897 as well as in Florence, Italy.</p>
+         <p> In 1903 she married Dwight Whitney Morrow. Dwight Morrow, born in Huntington, West Virginia in 1873, graduated from Amherst College in 1896. He served as the United States Ambassador to Mexico from 1927-1930, during the Hoover administration, and served in the United States Senate between 1930 until his death on October 5, 1931. They had four children: Elizabeth Reeve Morrow (Class of 1923), Anne Spencer Morrow (Class of 1928), Dwight Whitney Morrow Jr., and Constance Cutter Morrow (Class of 1935). Elizabeth Cutter Morrow was the grandmother of twelve, including Charles Augustus Lindbergh, Jr. the famous Lindbergh baby, son of Anne Spencer Morrow and her husband Col. Charles A. Lindbergh.</p>
+         <p> Elizabeth Cutter Morrow was the recipient of honorary degrees from six leading colleges and universities including: Amherst College, 1933; New Jersey College for Women, 1935; Smith College, 1937; New York University, 1940; Lafayette College, 1940; and Princeton, 1940. Described by Dr. <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca13_main.html">William Allen Neilson</extref> in conferring the degree of Doctor of Humane letters upon her in 1937, "President of the Alumnae Association, and for sixteen years Trustee of Smith College, author of distinction in prose and verse, the multitude of whose services to her college and her country - far greater than the world knows - makes it impossible to describe adequately the alumna who has earned in most abundant measure our love, our honor, and our gratitude."</p>
+         <p> Taking an active role in the life and well-being of her alma mater, Elizabeth Cutter Morrow was president of the Smith College Alumnae Association from 1917-1920. She was a member of the War Services Board which directed Smith College relief units overseas. Between 1920-1926 she was the Alumnae representative to the <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca146_main.html">Board of Trustees</extref>, and later, in 1926, was elected a Trustee by the Board. Her largest contribution, however, was her role as acting president for the interim year, 1939-1940, after the resignation of William A. Neilson as president in 1939.</p>
+         <p> Elizabeth Cutter Morrow was not a professional woman whose "field" can be easily described. She certainly achieved eminence in education, philanthropy, finance, and literature. She was a teacher of English, History, and French in private schools before her marriage to Dwight Whitney Morrow in 1903. During her marriage she published prose and verse in many popular magazines, as well as publishing multiple children's books, of which some are <title encodinganalog="730" render="italic">The Painted Pig</title> , <title encodinganalog="730" render="italic">Quatrains for My Daughter</title> , <title encodinganalog="730" render="italic">The Rabbit's Nest</title> , <title encodinganalog="730" render="italic">Shannon, A Pint of Judgment</title> , and <title encodinganalog="730" render="italic">Casa Manana</title> which was chosen as one of 150 of the most beautiful books between 1931 and 1933.</p>
+         <p> Her volunteer work had no limits. Elizabeth Cutter Morrow was unstintingly active in local as well as national and international affairs. She was chairman of the Community Chest when it was first organized in Englewood, New Jersey, the town she called home. She was also involved in her local church, Women's Club, Memorial House (civic center) and was even chairman of the Board of The Little School in Englewood, founded by her daughter Elizabeth. She was a member of the Executive Committee of the New York National War Fund Committee. She was one of the founders for Food for Freedom Inc.. She was the first woman to serve on the Board of the Union Theological Seminary. In New York she was a member of the National Board of the Y. W. C. A., and she took a leading role in many of its campaigns for funds. Elizabeth Cutter Morrow played an important role in issues abroad. During her husband's time as Ambassador to Mexico, 1927-30, she supported him in his resolve to bring about the strengthening of friendly relations between Mexico and the United States. As well, she was an honorary vice-president of the American Association for the United Nations, Inc.</p>
+         <p> On January 23, 1955 she died at the age of eighty-two. In an address at the Smith College memorial service <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca15_main.html">Ada Comstock Notestein</extref>, member of the Class of 1897, former Dean and Trustee of Smith College, as well as former president of Radcliffe College, said: "…She was one of those rare beings for whose courage nothing is too great, and for whose imagination nothing is too small….She was a benefactor and philanthropist without any apparent consciousness of doing more than anyone would have done in her place."</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Elizabeth Morrow papers document Morrow's life outside of her presidency at Smith.
-            Types of material include biographical material, newspaper clippings, correspondence,
-            memorials, photographs, publications, and speeches. The bulk of the collection consists
-            of photographs and publications.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Elizabeth Morrow papers document Morrow's life outside of her presidency at Smith. Types of material include biographical material, newspaper clippings, correspondence, memorials, photographs, publications, and speeches. The bulk of the collection consists of photographs and publications.</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into four series:</p>
-         <list>
-            <item> Series I. Biographical Materials </item>
-            <item> Series II. Photographs </item>
-            <item> Series III. Publications </item>
-            <item> Series IV. Speeches </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>Series I. Biographical Materials</item>
+            <item>Series II. Photographs</item>
+            <item>Series III. Publications</item>
+            <item>Series IV. Speeches</item>
          </list>
       </arrangement>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Single photocopies may be made for research purposes. Permission to publish material from the documents must be requested from the Smith College Archives. Smith College owns copyright to any published material relating to college events and activities. Provenance and copyright ownership of other materials is unknown and researchers are responsible for determining any question of copyright.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Elizabeth Morrow Personal Papers, Box #, Smith College Archives.</p>
+         <p> Elizabeth Morrow Personal Papers, Box #, Smith College Archives.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Elizabeth Morrow papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Elizabeth Morrow papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
          <p>
-            <extref
-               href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca12_main.html"
-               >Office of the Acting President Elizabeth Morrow Files, 1939-1940</extref>
-         </p>
+            <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca12_main.html">Office of the Acting President Elizabeth Morrow Files, 1939-1940</extref>
+         </p>  
       </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <controlaccess>
+         <geogname encodinganalog="651" source="local">Smith College -- presidents</geogname>
+         <persname encodinganalog="600" source="naf">Morrow, Elizabeth Reeve Cutter, 1873-1955</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I. Biographical Materials</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3a396a154781dd2326ff2d587bdf2887" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>General <unitdate>1948-1956, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1956"
+                            type="inclusive">1948-1956</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3656d673705e04ceca40306ecdc60a42"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e127b6910ac98e5ea522f503b0064457" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Clippings <unitdate>1930-1949, 1982, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1949"
+                            type="inclusive">1930-1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca99237fc54466ccb401c73791724667"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9533dbd2e6cfc157443f863bc6d2e09d" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Citations <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>Citations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1b7ca54b9edac637d87de788d17b690"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7372a6aa927cd7b12cd69ddfaa5a42ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Correspondence <unitdate>1939, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4e121d129fd435a526c50aaf6a32e7a9"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f3245ead526615a50606582f271e95f8" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Cutter, Annie Spencer <unitdate>1957</unitdate>
-                  </unittitle>
+                  <unittitle>Cutter, Annie Spencer</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d561d30c1326115a573a86e4c1ba34ee"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5abc6e7b99f4ebed71fe79897db08808" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Honorary degrees <unitdate>1933-1940</unitdate>
-                  </unittitle>
+                  <unittitle>Honorary degrees</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1940"
+                            type="inclusive">1933-1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8e4892c22fbfdfa9c99067ac41ebfd79"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d972901d37883f21f01583f777af1a89" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>General <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_01b71203031af4549719733d2e538593"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_edf71ebd701e95f8539d34ecaa94436d" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Memorial services and obituary <unitdate>1955</unitdate>
-                  </unittitle>
+                  <unittitle>Memorial services and obituary</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae69140f82bd776d96328b2e23e70f61"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_634af6a6cf36cb462a17b2e441c06558" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Memorials and tributes <unitdate>1955-1958, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Memorials and tributes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1958"
+                            type="inclusive">1955-1958</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_933e899f2c46c860c43599e480a3efb6"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ab18368b51a02a5fd6c4011a29c63355" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Morrow, Dwight Whitney <unitdate>1922-1951, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Morrow, Dwight Whitney</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1951"
+                            type="inclusive">1922-1951</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fea62d8ca69f066a53d69f6cbc5e66f2"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d04ab3932b6dbcff4449a9056dc4ba11" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Phi Beta Kappa <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Phi Beta Kappa</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_982e0529a8dd8582c539489384226be3"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II. Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_c51c3149f74da44ef34e8416af735318" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">12</container>
                   <unittitle>Undergraduate</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8227cfa68050978d96215f5b5a3b8138"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_451a0cfd84424301c92fb3f76b1dbb5a" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">13</container>
                   <unittitle>Undergraduate: individual and with Kate Williams</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_0c1de55103da04551b5c62ae70500e1a"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2a3ed7c586f0f669a06d79a4b4b7c337" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">14</container>
                   <unittitle>Undergraduate: room in Hubbard House</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_ab8efe883b29e7e49ca4cca93487b2fa"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_620d5dab583db2bf45273e97c50db844" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Undergraduate: with friends <unitdate>ca. 1896</unitdate>
-                  </unittitle>
+                  <unittitle>Undergraduate: with friends</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1896/1896">1896</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4f65e4ab6bbb875c072de34589b845d2"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_929a0eb9b64161ebdc5b12bf7935fe4d" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Personal and family <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Personal and family</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cdd387d1d7b154db45754fd546cbf5ea"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_39721d5e538c460cd96b58c218aa409c" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>High school graduation <unitdate>1892</unitdate>
-                  </unittitle>
+                  <unittitle>High school graduation</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1892/1892">1892</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_adbebdab58f59a09a3f5559a41b95e69"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_548fb577d667779e29a46a85132085cf" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>Amherst Junior Prom <unitdate>1895</unitdate>
-                  </unittitle>
+                  <unittitle>Amherst Junior Prom</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fdea5908114306538b482c69c576f675"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_64bd521678f1e491ddcdbccddd588b72" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>Alumnae parade <unitdate>1931</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae parade</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_22eb06846e1ccadd22928475374f6a0e"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b217cbddd0ead298226b8767f850a425" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Mexico <unitdate>1934</unitdate>
-                  </unittitle>
+                  <unittitle>Mexico</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_712c6cd4c4a73e6d2fab1473791a5d6c"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_49f88609781f0e4008dea3854d48f813" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Honorary degrees <unitdate>1937, 1948</unitdate>
-                  </unittitle>
+                  <unittitle>Honorary degrees</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0a65d506ec8878eef736b8b408b8695c"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a94140f56cce792f010113ef0e14143" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">22</container>
                   <unittitle>
-                     <extref
-                        href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca12_main.html"
-                        >Acting President of Smith College</extref>
-                     <unitdate>1940</unitdate>
+                     <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca12_main.html">Acting President of Smith College</extref>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_945ee70333213b9b0066375f6f4fb9d6"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1b34b6e1629b7fa7cfe919cf32db7d32" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>Bust <unitdate>1940</unitdate>
-                  </unittitle>
+                  <unittitle>Bust</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c26c0792a5bbd8cc501974ec533935d"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a3fb99a35c8828dd755e695cdc97d3cb" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">24</container>
-                  <unittitle>Sitting on bench <unitdate>1940</unitdate>
-                  </unittitle>
+                  <unittitle>Sitting on bench</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cf7de25de144c4809af482857e2ac908"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ebf2eefcd0a50882cc647e4609ad0ca7" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>Inaugural of the Women's Division of Fight for Freedom <unitdate>1941,
-                        1944</unitdate>
-                  </unittitle>
+                  <unittitle>Inaugural of the Women's Division of Fight for Freedom</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1ab323f256ac630a6cd8ac415055e8ea"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_63f116600a0c1e2708eff3c8d8029880" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>75th Anniversary Fund <unitdate>1949-1950</unitdate>
-                  </unittitle>
+                  <unittitle>75th Anniversary Fund</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1950"
+                            type="inclusive">1949-1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0efcb70a69fd826ba9fd3bcd4030c27a"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2c56f9f646fe47540a26aaf8037f9db7" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">27</container>
-                  <unittitle>Cleveland <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>Cleveland</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fa9abb0c6ac43705eb8d9843ae4ffad4"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5c47bef41322e684156b6d9f37e4c1e0" level="file">
                <did>
-                  <container type="box" label="mixed materials">445</container>
-                  <container type="folder" label="mixed materials">28</container>
-                  <unittitle>Portraits <unitdate>1941-1953, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Portraits</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1953"
+                            type="inclusive">1941-1953</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a15a680ead0e7a4548e1d3259893c631"
+                             label="Mixed Materials [310183630218021]"
+                             type="box">445</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III. Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_cb2f577d8f4c2843604b59397041d681" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Publications <unitdate>1940-1947, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1940/1947"
+                            type="inclusive">1940-1947</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_be949d2f24ff19fad96be172cd8ab3f5"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_26b84013f5592e849a0294f46d14892e"
+                             parent="aspace_be949d2f24ff19fad96be172cd8ab3f5"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4f391000374354f6c71720d28dce270c" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>"A Defense of College Women" <unitdate>1933</unitdate>
-                  </unittitle>
+                  <unittitle>"A Defense of College Women"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_96eac2135cf08f8d15a380df4e0c216b"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_537950f13627ec2799c871d6449bc715"
+                             parent="aspace_96eac2135cf08f8d15a380df4e0c216b"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1ef2821aee42f30776f351f2554e080a" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">3</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">A Pint of
-                        Judgment</title>
-                     <unitdate>1939</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">A Pint of Judgment</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cc6b43fcc9f1890c39b0d248dd4ef315"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_2bf9ae3be72858e2dcd6126d0e419d20"
+                             parent="aspace_cc6b43fcc9f1890c39b0d248dd4ef315"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_eaa313c2daecacd7f70e768c04d87aa0" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>"An Old Map" <unitdate>1951</unitdate>
-                  </unittitle>
+                  <unittitle>"An Old Map"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5cbf8f8eda38749c8b4754ed7a44338a"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_29a5831463ed195fda1b1b431d5a8b2f"
+                             parent="aspace_5cbf8f8eda38749c8b4754ed7a44338a"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6c33018a7d77dfb2e59db33bd9c8855b" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>"Our Street in Cuernavaca" <unitdate>1931</unitdate>
-                  </unittitle>
+                  <unittitle>"Our Street in Cuernavaca"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_890602e6d4fb2f7fce20ffa851bbfe32"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_c47cc108e07d86ee83e6124f95ccd20d"
+                             parent="aspace_890602e6d4fb2f7fce20ffa851bbfe32"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c13d8489fb1addf88483fecac8ba2c29" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">6</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Quatrains for My
-                        Daughter</title>
-                     <unitdate>1928</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">Quatrains for My Daughter</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_20cd4fd6d24ac41b3c0543393b9945a0"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_1046fef49571617a478ba4862d2f94b0"
+                             parent="aspace_20cd4fd6d24ac41b3c0543393b9945a0"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7fc8d82864b8cf4473e5602ae65c5ec0" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">7</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">The Rabbit's
-                        Nest</title>
-                     <unitdate>1940</unitdate>
+                     <title encodinganalog="630" render="italic" source="lcsh">The Rabbit's Nest</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e2b440c5f31f0f0b820cbd83e4385c02"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_d17c824b1d25fb19043d7d2b899ecf1a"
+                             parent="aspace_e2b440c5f31f0f0b820cbd83e4385c02"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_564ce2df26aecf213771980c3f13f37a" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">8</container>
                   <unittitle>
                      <title encodinganalog="630" render="italic" source="lcsh">Shannon</title>
-                     <unitdate>1941</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1a1f2ecdbb88388df16a091435a01345"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_f96bdf7cec5c4a103d361a8b31e36115"
+                             parent="aspace_1a1f2ecdbb88388df16a091435a01345"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b37d035c4da19a8ef0b867e701e4709f" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">9</container>
                   <unittitle>
                      <title encodinganalog="630" render="italic" source="lcsh">Sonnet</title>
-                     <unitdate>1937</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2df196454309069058f21e5e819dffb2"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_f25ae4280d5e560a249a33fe37f297ca"
+                             parent="aspace_2df196454309069058f21e5e819dffb2"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_05418316079eb44e331796976593bcaa" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>William Allen Neilson blueprint for biography <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>William Allen Neilson blueprint for biography</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_095af4731f7a27b8599caf881bad5c15"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_34affa48938f8e07d4f5b08938a96ec3"
+                             parent="aspace_095af4731f7a27b8599caf881bad5c15"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0df34ccfbaea919598ede8bda3db5da1" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">11</container>
                   <unittitle>
-                     <title encodinganalog="630" render="italic" source="lcsh">Youth Replies, I
-                        Can</title> (Foreword) <unitdate>1945</unitdate>
-                  </unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">Youth Replies, I Can</title> (Foreword)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bcf90d4b00dfa237f0ea356c3ec42f22"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_c655b0fd5013d5f2ef93346a10fe89cc"
+                             parent="aspace_bcf90d4b00dfa237f0ea356c3ec42f22"
+                             type="folder">11</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV. Speeches</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_b9c76a57d597c4d6c80cb5fe2620050f" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Speeches <unitdate>1939-1947, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Speeches</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1947"
+                            type="inclusive">1939-1947</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a1c41ac276ad0eeaf9969e9351651365"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_bebfa695a230b4581fdcd4ec704bbaf2"
+                             parent="aspace_a1c41ac276ad0eeaf9969e9351651365"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3bf63e730f0aabaaa5988ae6a4aa69a6" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Alumnae Association <unitdate>1920-1940</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae Association</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1920/1940"
+                            type="inclusive">1920-1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1bed9da37b3dd0950ea1e73ce9e5600"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_bcd84e2a3a4c379a6e58d9bad48ba696"
+                             parent="aspace_f1bed9da37b3dd0950ea1e73ce9e5600"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fbb792bf77bebe58d476d3dd75c4f169" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Alumnae Council <unitdate>1940</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae Council</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_63ad48e0af10a42fb5c36c5008fa1229"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_92510f84acc25546587d14d43a0076bb"
+                             parent="aspace_63ad48e0af10a42fb5c36c5008fa1229"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c89cf398705e667a5aef4e1b11483187" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Assembly <unitdate>1932-1946, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Assembly</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1946"
+                            type="inclusive">1932-1946</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1f5871b29d3f7c4e9045196cf70eae74"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_012ac064fc1beba3ca445da9fbfd4dd7"
+                             parent="aspace_1f5871b29d3f7c4e9045196cf70eae74"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_935fb247f3d594632e23069cb6d0fa96" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Chapel talks <unitdate>1939-1940</unitdate>
-                  </unittitle>
+                  <unittitle>Chapel talks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1940"
+                            type="inclusive">1939-1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cdf1e9569a8764f0d8980f08c0cdae4d"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_349cf1e15cea0c7b85738925f9c542bf"
+                             parent="aspace_cdf1e9569a8764f0d8980f08c0cdae4d"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9430f99fa22f57e54cba6d0200b91c53" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>"College Women and the New Leisure" <unitdate>1934, undated</unitdate>
-                  </unittitle>
+                  <unittitle>"College Women and the New Leisure"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e5306ccb8dec158af429c1a41d24adac"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_3675e849111d5d4d170a4fd2a1213122"
+                             parent="aspace_e5306ccb8dec158af429c1a41d24adac"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7c5459732a6db299b523ea4824074299" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>"Does America Deserve a Miracle" <unitdate>1940</unitdate>
-                  </unittitle>
+                  <unittitle>"Does America Deserve a Miracle"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bfb9fe5ce3a2f4c621ec41d87c0303de"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_c5588feaafd1fadd482fbbe26eb8ed61"
+                             parent="aspace_bfb9fe5ce3a2f4c621ec41d87c0303de"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_437fcfc14241893fc174a4709d2bd249" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>Inauguration of President <extref
-                        href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca14_main.html"
-                        >Benjamin F. Wright</extref>
-                     <unitdate>undated</unitdate>
+                  <unittitle>Inauguration of President <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca14_main.html">Benjamin F. Wright</extref>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4b21d83428e909449cdd4fe507ded80f"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_7621f4ac1541428fd794a76945dafb62"
+                             parent="aspace_4b21d83428e909449cdd4fe507ded80f"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c1710f661b0d3b53691196fd350a6ae1" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Seven colleges <unitdate>1931</unitdate>
-                  </unittitle>
+                  <unittitle>Seven colleges</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_318802557b42cc5979b842f9f421fd78"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_0ead9fbf19545e9ec50d7949cd662b6e"
+                             parent="aspace_318802557b42cc5979b842f9f421fd78"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_be3b43c6ed5551a36dfe9f0d5aa7d2ec" level="file">
                <did>
-                  <container type="box" label="mixed materials">446</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Tributes: handmade book of verse <unitdate>1940</unitdate>
-                  </unittitle>
+                  <unittitle>Tributes: handmade book of verse</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e45dba03d75c100fad9cb288c1753518"
+                             label="Mixed Materials [310183630218039]"
+                             type="box">446</container>
+                  <container id="aspace_f00d73e4f6a0adc3ae188611bfd3edeb"
+                             parent="aspace_e45dba03d75c100fad9cb288c1753518"
+                             type="folder">21</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
