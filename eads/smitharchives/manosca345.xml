@@ -1,382 +1,610 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca345.xml//EN">manosca345</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca345</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Phoebe C. Mulford Papers, 1915-1934</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Phoebe C. Mulford Papers <num>CA.MS.00345</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-04">2013-12-04</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 10:46:37 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Mulford, Phoebe C.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Phoebe C. Mulford Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1915-1934</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:c0d31e95-3eb5-424c-ac2a-6be67941088b</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1.3 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Head of Hubbard House. Contains
-            correspondence, clippings, and flyers. </abstract>
+         <unittitle>Phoebe C. Mulford Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Mulford, Phoebe C.</persname>
+         </origination>
+         <unitid>CA.MS.00345</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.042 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1915/1934"
+                   type="inclusive">1915-1934</unitdate>
+         <abstract id="aspace_f99ab2e7ee8da0f9db512da053b6dc1b">Head of Hubbard House. Contains correspondence, clippings, and flyers.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Phoebe C. Mulford was head of Hubbard House between the years of 1916 and 1929. Later,
-            Mulford owned and operated Northampton's Arnold Inn, which offered affordable rooms to
-            graduate students, faculty, and college guests. Her son, William Mulford, attended the
-            preparatory school Exeter, and then graduated from Harvard University as a member of the
-            class of 1928. The extensive correspondence between the two establish the closeness of
-            their relationship. Phoebe C. Mulford passed away December 31, 1966.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Phoebe C. Mulford was head of Hubbard House between the years of 1916 and 1929. Later, Mulford owned and operated Northampton's Arnold Inn, which offered affordable rooms to graduate students, faculty, and college guests. Her son, William Mulford, attended the preparatory school Exeter, and then graduated from Harvard University as a member of the class of 1928. The extensive correspondence between the two establish the closeness of their relationship. Phoebe C. Mulford passed away December 31, 1966.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Collection consists of correspondence between Mulford and her son William Mulford,
-            starting from when he was a young boy, through his studies at Harvard University, and
-            immediately after his 1928 graduation. Also in the collection are various newspaper and
-            magazine clippings, flyers, mementos between mother and son, William's high school
-            report card, and sketches of Smith College campus drawn by her son in 1933 and 1934.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection consists of correspondence between Mulford and her son William Mulford, starting from when he was a young boy, through his studies at Harvard University, and immediately after his 1928 graduation. Also in the collection are various newspaper and magazine clippings, flyers, mementos between mother and son, William's high school report card, and sketches of Smith College campus drawn by her son in 1933 and 1934.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Phoebe C. Mulford Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Phoebe C. Mulford Papers, Smith College Archives, CA-MS-00345, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Phoebe C. Mulford papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Phoebe C. Mulford papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Mulford, Phoebe C.</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_4086316f383cdf49e87a737927a53c75" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1917-April 1917</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917-01/1917-04"
+                         type="inclusive">Jan. 1917-April 1917</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6518cf26fcbaad6da97c94af51e9f25a"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_ed154641368b35aa229693850e1c277d"
+                          parent="aspace_6518cf26fcbaad6da97c94af51e9f25a"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_044f14fd760eb7f60703b4bc19850a8b" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Letters to her son William <unitdate>May 1917-Dec. 1917</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1917-05/1917-12"
+                         type="inclusive">May 1917-Dec. 1917</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fdabb0cc742ef9b889ae36df742d642f"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_3d301c9ededd24b62edda36902719a37"
+                          parent="aspace_fdabb0cc742ef9b889ae36df742d642f"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c9b2d7a35d4e1c591c659ae3df190007" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1918-Sept. 1918</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1918-01/1918-09"
+                         type="inclusive">Jan. 1918-Sept. 1918</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_db32261e50b8d2b2fb6bcd14c13fc4a8"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_331c289368abae73606850f2f75958cf"
+                          parent="aspace_db32261e50b8d2b2fb6bcd14c13fc4a8"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ce5ecaea841bea9c69bce570c3e07551" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Letters to her son William <unitdate>Oct. 1918-Dec. 1918</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1918-10/1918-12"
+                         type="inclusive">Oct. 1918-Dec. 1918</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f90002dc525c6a7207e2c55697b3e25f"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_8f233edd641eaf4cb64ab040630940d5"
+                          parent="aspace_f90002dc525c6a7207e2c55697b3e25f"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_278d0c83ccdc262c41a90d7c07d267a8" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1919-May 1919</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1919-01/1919-05"
+                         type="inclusive">Jan. 1919-May 1919</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_76bb619abe545776ab69b8fc6cd3f198"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_39830ebb3432ac5d7f4aac9bbc081eb9"
+                          parent="aspace_76bb619abe545776ab69b8fc6cd3f198"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_132909a9c6bc7d3257aab8a7de895033" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Letters to her son William <unitdate>Sept. 1919-Dec. 1919</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1919-09/1919-12"
+                         type="inclusive">Sept. 1919-Dec. 1919</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_77077a4a231c3e93931b2490f7e38010"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_06feecb65c57dd37e77e3345e1e68586"
+                          parent="aspace_77077a4a231c3e93931b2490f7e38010"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dd4532125c876042abc35abd874f590a" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1920-Dec. 1920</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1920-01/1920-12"
+                         type="inclusive">Jan. 1920-Dec. 1920</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_013e0abc4709375b56873a62bb394435"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_8da5e424cfcbf9b404089cca601eee65"
+                          parent="aspace_013e0abc4709375b56873a62bb394435"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_48223d269eef31e7059a199f655967af" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1921-Dec. 1921</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1921-01/1921-12"
+                         type="inclusive">Jan. 1921-Dec. 1921</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b91c354724e403f68bdcded0504501b9"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_0f9d88a9050e4793b02808e90021cc76"
+                          parent="aspace_b91c354724e403f68bdcded0504501b9"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4ba59380b9e0013740677c99e32bd647" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1922-Dec. 1922</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1922-01/1922-12"
+                         type="inclusive">Jan. 1922-Dec. 1922</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6dae4f4c5766902a7a1593b79ffbeed8"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_8e18af60ea7d513547f3b1cbea1aaf92"
+                          parent="aspace_6dae4f4c5766902a7a1593b79ffbeed8"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7316b8f661178b6e282c139eba320c49" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1923-Dec. 1923</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1923-01/1923-12"
+                         type="inclusive">Jan. 1923-Dec. 1923</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8c58ed86cc32aaeaefbd5ee28eb7fb10"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_c72aa4659c939c3856e179d694094b22"
+                          parent="aspace_8c58ed86cc32aaeaefbd5ee28eb7fb10"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ab6194198e01d4411825d2e0b35fe6f8" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1924-June 1924</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924-01/1924-06"
+                         type="inclusive">Jan. 1924-June 1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f8e52f3cc7dc97ce515b2a907e8eb2f0"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_6ba1be601d26996f600e5419421e6c21"
+                          parent="aspace_f8e52f3cc7dc97ce515b2a907e8eb2f0"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_51552c3916daba8f4f6cbca29aeb8eb0" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Letters to her son William <unitdate>Sept. 1924-Dec. 1924</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1924-09/1924-12"
+                         type="inclusive">Sept. 1924-Dec. 1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bf946331275044bc63105da749c48265"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_0722740a159b50d2a8faa2945667efd7"
+                          parent="aspace_bf946331275044bc63105da749c48265"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fcfed468b8baed699bf85158e69f7323" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1925-June 1925</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-01/1925-06"
+                         type="inclusive">Jan. 1925-June 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_af23b17f1630b081f5b29df7543e7302"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_3d8c6f7021e212b96687dd2eb16885a8"
+                          parent="aspace_af23b17f1630b081f5b29df7543e7302"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_716cfe76ca397ee3c49a31d17601c994" level="file">
             <did>
-               <container type="box" label="mixed materials">947</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Letters to her son William <unitdate>Sept. 1925-Dec. 1925</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1925-09/1925-12"
+                         type="inclusive">Sept. 1925-Dec. 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_17a221ccb77df812b72ba2c0d127d699"
+                          label="Mixed Materials [310183630223476]"
+                          type="box">947</container>
+               <container id="aspace_485f639b20a7928213694212b694880d"
+                          parent="aspace_17a221ccb77df812b72ba2c0d127d699"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_55d43b048770504d4ac5a22f868c32bc" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1926-June 1926</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926-01/1926-06"
+                         type="inclusive">Jan. 1926-June 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_aec332609086c87889aef6f3bce25bf4"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_35c18a56f6991e14a8ea2b64dd417c58"
+                          parent="aspace_aec332609086c87889aef6f3bce25bf4"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c42aed779f1f2f929a3d89b697d019c4" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Letters to her son William <unitdate>Oct. 1926-Dec. 1926</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1926-10/1926-12"
+                         type="inclusive">Oct. 1926-Dec. 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cd0e4182015d65eb6f0efcd2c7219ce1"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_134770d988d719a245996ce7ce0cf541"
+                          parent="aspace_cd0e4182015d65eb6f0efcd2c7219ce1"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_415da3880b673d4e8a2d2d2317b47d4f" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1927-May 1927</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1927-01/1927-05"
+                         type="inclusive">Jan. 1927-May 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e6e63b2f499c01d09c3d4565c9b6cbb"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_9f834c87a274db34640fe6faeb604f9d"
+                          parent="aspace_9e6e63b2f499c01d09c3d4565c9b6cbb"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5773f51b4a937f9324006536dca2fa2f" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Letters to her son William <unitdate>Sept. 1927-Dec. 1927</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1927-09/1927-12"
+                         type="inclusive">Sept. 1927-Dec. 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_02491c1076c541f08e5410c07fe90b40"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_9b65a1eaa0e31928260dc1e68e39acc1"
+                          parent="aspace_02491c1076c541f08e5410c07fe90b40"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_931c2b20bac54973bb41f60b52aecae5" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1928-May 1928</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-01/1928-05"
+                         type="inclusive">Jan. 1928-May 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f1320b0e8c4fc1808ec2469ad00b540c"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_4f8946f309dea649063a0dbdaff6cfc4"
+                          parent="aspace_f1320b0e8c4fc1808ec2469ad00b540c"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bb9e63585f14895bcfb2a9f9368437f2" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Letters to her son William <unitdate>Sept. 1928-Nov. 1928</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-09/1928-11"
+                         type="inclusive">Sept. 1928-Nov. 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e9e76118c8cdbd73ee054e62c7c43093"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_5e72c393f8df514b548a30897b21b376"
+                          parent="aspace_e9e76118c8cdbd73ee054e62c7c43093"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_01fa9d927e47a59eecc29fff28db01a8" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Letters to her son William <unitdate>Jan. 1929-Nov. 1929</unitdate>
-               </unittitle>
+               <unittitle>Letters to her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929-01/1929-11"
+                         type="inclusive">Jan. 1929-Nov. 1929</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0b40eae30063836a43037fc201af880a"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_013e5fad964e8c19cb75ab02b44bb616"
+                          parent="aspace_0b40eae30063836a43037fc201af880a"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5843b8320e843705c3fba575d53810ff" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Letters from her son William <unitdate>Sept. 1924-Dec. 1924</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1924-09/1924-12"
+                         type="inclusive">Sept. 1924-Dec. 1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7076903921333bf30034b9f462d08d50"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_9c0b2450588dbc63599a50f33c4f7a66"
+                          parent="aspace_7076903921333bf30034b9f462d08d50"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_95a2d98132204b9f883b2701e974ae64" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Letters from her son William <unitdate>Dec. 1925</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1925-12/1925-12">Dec. 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7073810a4e607dc648a37ebbfaa52fb4"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_eb662bc17e760be0b97e230f791dfb9d"
+                          parent="aspace_7073810a4e607dc648a37ebbfaa52fb4"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b45bf89e6e4f5f9d3a61e9f80e206bf3" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Letters from her son William <unitdate>Jan. 1926-June 1926</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926-01/1926-06"
+                         type="inclusive">Jan. 1926-June 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_38514f04dd3bcc782da7bba94626ea48"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_91e08edfe99b33f690bec87179922992"
+                          parent="aspace_38514f04dd3bcc782da7bba94626ea48"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ee7b75e39280bf6e933639e68489fb5b" level="file">
             <did>
-               <container type="box" label="mixed materials">948</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Letters from her son William <unitdate>Sept. 1927-Dec. 1927</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1927-09/1927-12"
+                         type="inclusive">Sept. 1927-Dec. 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_794ef11227c7dfbed5c2aa7a907d5a10"
+                          label="Mixed Materials [310183630223419]"
+                          type="box">948</container>
+               <container id="aspace_a775ba0a33db7be8ecb3f524c0aed6aa"
+                          parent="aspace_794ef11227c7dfbed5c2aa7a907d5a10"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e78a2cf7cf4302de1f92c9516be6b340" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Letters from her son William <unitdate>Jan. 1928-June 1928</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-01/1928-06"
+                         type="inclusive">Jan. 1928-June 1928</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_594313a640d091b06eb1f633e9941782"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_c7a8b0d498e6a1b7310abfc257b2e140"
+                          parent="aspace_594313a640d091b06eb1f633e9941782"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7f3c5b7ad60dc96c7d73679aeeca9da0" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Letters from her son William <unitdate>Sept. 1928-Nov. 1928</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-09/1928-11"
+                         type="inclusive">Sept. 1928-Nov. 1928</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_5e5f34ff749b4a91930e6c0aea8f53d8"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_a3e9549521132f40b3b57ac18106e833"
+                          parent="aspace_5e5f34ff749b4a91930e6c0aea8f53d8"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_43b8522545609b85ce4ee1f9c4bd5288" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Letters from her son William <unitdate>Jan. 1929-Aug. 1929</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929-01/1929-08"
+                         type="inclusive">Jan. 1929-Aug. 1929</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_84bf14ea7e8896e98d58a439f557c545"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_7f40ce1a22886402032d8440b2010ebb"
+                          parent="aspace_84bf14ea7e8896e98d58a439f557c545"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b5be8d8bd7d2d3fc1137dd68f7f995b9" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Letters from her son William <unitdate>Oct. 1931-April 1934</unitdate>
-               </unittitle>
+               <unittitle>Letters from her son William</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1931-10/1934-04"
+                         type="inclusive">Oct. 1931-April 1934</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_34e9bcfaaf78f8c77c93260b1b2f7565"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_393ef8eaf91b50348f007a72033e9a83"
+                          parent="aspace_34e9bcfaaf78f8c77c93260b1b2f7565"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ee0757f9cd7303f7c4e050ea1e3448c8" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Sketches of Smith College done by William Mulford
-                     <unitdate>1933-1934</unitdate>
-               </unittitle>
+               <unittitle>Sketches of Smith College done by William Mulford</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1933/1934"
+                         type="inclusive">1933-1934</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_2ce7d29f054745a82c0ced0a296678b5"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_8cbac246825a91e3241746c9bf000584"
+                          parent="aspace_2ce7d29f054745a82c0ced0a296678b5"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_df91fdab360b2cb4c18d8abffaa0a9bc" level="file">
             <did>
-               <container type="box" label="mixed materials">949</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Miscellaneous <unitdate>c.a. 1916-1928, undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">a. 1916-1928</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_bb85f7fc159b00267d97295b8aacc2d3"
+                          label="Mixed Materials [310183630223351]"
+                          type="box">949</container>
+               <container id="aspace_449e1b8a58b10df290d276ff4a3636ca"
+                          parent="aspace_bb85f7fc159b00267d97295b8aacc2d3"
+                          type="folder">6</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
