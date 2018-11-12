@@ -1,690 +1,258 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca74.xml//EN">manosca74</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Ronald Perera Papers, 1966-2002 </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Gayla Spaulding.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Laura Cutter. <date>2003-06-04</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca74 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Ronald Perera Papers, 1966-2002 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 42 </num>
-            <author>Gayla Spaulding </author>
-            <date>2002 </date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100" source="lcnaf">Perera, Ronald.</persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Ronald Perera Papers</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1941-[ongoing] </unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:a68d13c9-7e79-4e15-987d-4cfd6cf6c127</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">5 boxes</extent>
-                <extent encodinganalog="300$a">(4 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Papers include a small amount of
-                biographical material on Perera, such as his career summary and resume, reviews,
-                flyers and programs, photographs and newspaper articles. The majority of the
-                materials are musical manuscripts of works by Perera. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p> Ronald Perera was born in Boston, Massachusetts on December 25, 1941. He received
-                both his B.A. and M.A. from Harvard, where he studied composition with Leon
-                Kirchner. From 1963 to 1965 he served as Operations Officer on an ocean mine
-                sweeper, and was honorably discharged with the rank of Lieutenant, USNR. In 1967,
-                while on a John Knowles Paine Traveling Fellowship in Music from Harvard, Perera
-                studied electronic music and computer composition with Gottfried Michael Koenig at
-                the University of Utrecht, Netherlands. He also worked independently with Randall
-                Thompson in choral music and with Mario Davidovsky in electronic music.</p>
-            <p> Perera's teaching experience includes two years at Syracuse University, where he
-                taught music theory and held a research associateship in electronic music
-                (1968-1970), a year as Acting Director of the Dartmouth College Electronic Music
-                Studio (1970-71) and thirty-one years at Smith College (1971-2002) where he has
-                taught music theory, composition and electronic music, and where he has held the
-                Elsie Irwin Sweeney Chair in Music since 1983.</p>
-            <p> Ronald Perera's compositions include operas, song cycles, chamber, choral, and
-                orchestral works, and several works for instruments or voices with electronic
-                sounds. He is perhaps best known for his settings of texts by authors as diverse as
-                Dickinson, Joyce, Grass, Sappho, Cummings, Shakespeare, Francis of Assisi, Melville,
-                Ferlinghetti, Updike and Henry Beston. Seven major pieces are represented on
-                recently released compact discs.</p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p> The Ronald Perera Papers contain materials spanning Parera's career. The size of the
-                collection is 4 linear feet. The papers contain a small amount of general
-                information on Perera, such as his career summary and resume, reviews, flyers and
-                programs, photographs and newspaper articles. The majority of the materials are
-                musical manuscripts of works by Perera.</p>
-        </scopecontent>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>Records are open to research according to the regulations of the Smith
-                        College Archives. </p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Permission to publish or perform original scores must be obtained from Mr.
-                        Perera, who still owns copyright to the music. Single photocopies may be
-                        made for research purposes only. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Ronald Perera Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The materials in the Ronald Perera Papers, which form part of 42. Faculty
-                        Biographical Files, were donated by Perera in 1996 and 2002.</p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Gayla Spaulding</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <persname encodinganalog="600" source="lcnaf">Perera, Ronald.</persname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-            <subject encodinganalog="650" source="lcsh">Composers--United States--20th
-                century.</subject>
-            <subject encodinganalog="650" source="lcsh">Music--Instruction and
-                study--Massachusetts--Northampton.</subject>
-        </controlaccess>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <unittitle>General</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Career summary and resume <unitdate>1986, 2002</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Price listing: scores and recordings <unitdate>1987</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Reviews <unitdate>1973-1994</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Newspaper articles <unitdate>1988-1996</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Flyers and programs: <title>The Outermost House</title> and
-                                <title>The Yellow Wallpaper</title>
-                            <unitdate>1989-1992</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Photographs</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>Six of performance of <title>The Yellow Wallpaper</title>
-                                <unitdate>1989</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <unittitle>Two of Ronald Perera and students in the electronic music
-                                studio <unitdate>1973, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <unittitle>Four of Ronald Perera in studio
-                                    <unitdate>1988-1991</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <unittitle>Musical Manuscripts</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>
-                            <title>The Yellow Wallpaper</title>
-                            <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>
-                            <title>The Araboolies of Liberty Street</title>
-                            <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>
-                            <title>Three Love Lyrics</title>
-                            <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>
-                            <title>The Golden Door</title>: for mixed chorus and chamber ensemble,
-                            full score <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>
-                            <title>Triptych</title>: for organ <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>
-                            <title>The Golden Hymn</title>: original manuscript
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>
-                            <title>Piano Suite</title>: pencil original <unitdate>1966</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>
-                            <title>Did You Hear the Angels Sing?</title>: adapted from the poem,
-                            "Christmas Carol" by Samuel H. Miller, pencil originals
-                                <unitdate>undated </unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>
-                            <title>Summer Songs</title>: Five songs on poems of Emily Dickinson for
-                            medium voice and piano pencil originals <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>
-                            <title>Apollo Circling</title>: Four lyric songs for medium voice and
-                            piano on a poem by James Dickey <unitdate>1971</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>
-                            <title>Reflex</title>: for viola and tape, pencil originals
-                                <unitdate>1973</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>
-                            <title>Three Night Pieces</title>: for soprano, alto solo, women's
-                            chorus, solo cello, piano and percussion (one player)
-                                <unitdate>1975</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>
-                            <title>Fantasy Variations</title>: for electronically prepared piano
-                                <unitdate>1975</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>
-                            <title>Crossing the Meridian</title>: pencil originals
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>
-                            <title>The White Whale</title>: theater music for baritone and
-                            orchestra; correspondence regarding score notes on suggested orchestra
-                            arrangement <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>
-                            <title>The Canticle of the Sun</title>: for narrator, mixed chorus and
-                            digitally synthesized instruments (electronic tape)
-                                <unitdate>1984</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>
-                            <title>Sleep Now</title>: songs for high voice and piano on poems of
-                            James Joyce <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>
-                            <title>Shakespeare Songs</title>: for high voice and piano
-                                <unitdate>1987</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>
-                            <title>Five Meditations on Wondrous Love</title>: for organ
-                                <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>
-                            <title>Sun's Rising</title>: for organ <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>
-                            <title>Three Waltzes for Four Hands</title>
-                            <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>
-                            <title>Sonatina for Viola and Piano</title>
-                            <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>
-                            <title>Fanfare</title>: for viola and piano <unitdate>1986</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>
-                            <title>Augmented Forces</title>: to Ken Fearn and John van Buskirk
-                                <unitdate>1987</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>
-                            <title>Out of Shadow</title>: for piano <unitdate>1988</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>
-                            <title>Music for Flute and Orchestra</title>: sketch scene
-                                <unitdate>1990</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>
-                            <title>The Saints</title>: three pieces for orchestra with audience
-                            participation pencil originals of sketch scene and full score
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>
-                            <title>The Outermost House</title>: four choruses of mixed voices with
-                            narrator, soprano solo and chamber orchestra <unitdate>1991</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>
-                            <title>Five Summer Songs</title>: on poems of Emily Dickinson
-                                <unitdate>1991</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>
-                            <title>A Fondness of Music</title>: for women's chorus and piano
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>
-                            <title>The Writer</title>: for soprano and five instruments from Visions
-                            for two sopranos and chamber ensemble <unitdate>1993</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>
-                            <title>Mass</title>
-                            <unitdate>1973</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>
-                            <title>Visions</title>: sketches and full score
-                                <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">2-3</container>
-                        <unittitle>
-                            <title>The Outermost House</title>: original full score; four choruses
-                            of mixed voices with narrator, soprano solo and chamber orchestra
-                                <unitdate>1991</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>
-                            <title>S.</title>: Original conception and artistic collaboration by
-                            Mark Harrison. Adapted from the novel, S., by John Updike
-                                <unitdate>1988</unitdate>
-                        </unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">4</container>
-                            <container type="folder" label="mixed materials">4</container>
-                            <unittitle>sheets 1-75</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">4</container>
-                            <container type="folder" label="mixed materials">5</container>
-                            <unittitle>sheets 76-149</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">4</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>sheets 150-224</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">4</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>sheets 225-305</unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>
-                            <title>S.: An Opera in Two Acts</title>: Score - Orchestra Version.
-                            Based on the novel by John Updike. <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Act I</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">1</container>
-                                <unittitle>sheets 1-90</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">2</container>
-                                <unittitle>sheets 91-180</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">3</container>
-                                <unittitle>sheets 181-270</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">4</container>
-                                <unittitle>sheets 271-360</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Act II</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">5</container>
-                                <unittitle>sheets 361-431</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">6</container>
-                                <unittitle>sheets 432-501</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">7</container>
-                                <unittitle>sheets 502-571</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">5</container>
-                                <container type="folder" label="mixed materials">8</container>
-                                <unittitle>sheets 572-642</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca74</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Ronald Perera Papers <num>CA.MS.00074</num>
+            </titleproper>
+            <author>Gayla Spaulding</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 15:06:51 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca74 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Ronald Perera Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Perera, Ronald.</persname>
+         </origination>
+    
+         <unitid>CA.MS.00074</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">10.25 linear feet</extent>
+            <extent altrender="carrier">(12 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   certainty="approximate"
+                   era="ce"
+                   normal="1941/2002"
+                   type="inclusive">1941-2002</unitdate>
+         <abstract id="aspace_204a04a129eb0839336c36b11d023ef7">Papers include a small amount of biographical material on Perera, such as his career summary and resume, reviews, flyers and programs, photographs and newspaper articles. The majority of the materials are musical manuscripts of works by Perera.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Ronald Perera was born in Boston, Massachusetts on December 25, 1941. He received both his B.A. and M.A. from Harvard, where he studied composition with Leon Kirchner. From 1963 to 1965 he served as Operations Officer on an ocean mine sweeper, and was honorably discharged with the rank of Lieutenant, USNR. In 1967, while on a John Knowles Paine Traveling Fellowship in Music from Harvard, Perera studied electronic music and computer composition with Gottfried Michael Koenig at the University of Utrecht, Netherlands. He also worked independently with Randall Thompson in choral music and with Mario Davidovsky in electronic music.</p>
+         <p>  Perera's teaching experience includes two years at Syracuse University, where he taught music theory and held a research associateship in electronic music (1968-1970), a year as Acting Director of the Dartmouth College Electronic Music Studio (1970-71) and thirty-one years at Smith College (1971-2002) where he has taught music theory, composition and electronic music, and where he has held the Elsie Irwin Sweeney Chair in Music since 1983.</p>
+         <p>  Ronald Perera's compositions include operas, song cycles, chamber, choral, and orchestral works, and several works for instruments or voices with electronic sounds. He is perhaps best known for his settings of texts by authors as diverse as Dickinson, Joyce, Grass, Sappho, Cummings, Shakespeare, Francis of Assisi, Melville, Ferlinghetti, Updike and Henry Beston. Seven major pieces are represented on recently released compact discs.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Ronald Perera Papers contain materials spanning Parera's career. The papers contain a small amount of general information on Perera, such as his career summary and resume, reviews, flyers and programs, photographs and newspaper articles. The majority of the materials are musical manuscripts of works by Perera.</p>  
+      </scopecontent>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Ronald Perera Papers, Smith College Archives, CA-MS-00074, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The materials in the Ronald Perera Papers were donated by Perera in 1996 and 2002.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Gayla Spaulding</p>  
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Composers--United States--20th century.</subject>
+         <subject encodinganalog="650" source="lcsh">Music--Instruction and study--Massachusetts--Northampton.</subject>
+         <persname encodinganalog="600" source="naf">Perera, Ronald.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+    
+  
+         <persname encodinganalog="600" source="naf">Perera, Ronald.</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_21accbae4d14b6ef31093bcb06dc838a" level="file">
+            <did>
+               <unittitle>General</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_d4062c0b486f0ba727f46e4f2814c372"
+                          label="Mixed Materials [310183630224151]"
+                          type="box">989.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ea75b700af1a14108ba01bbeea4af65d" level="file">
+            <did>
+               <unittitle>Courses taken at Harvard University</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_a9ccb462a1d2ddea5f7933b14eac4d51"
+                          label="Mixed Materials [310183630224151]"
+                          type="box">989.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_243289d86092d4b7cb5f09497f3eeb4a" level="file">
+            <did>
+               <unittitle>Courses taught at Syracuse University</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_eb4c9b45a0d7dcb69e1df19c2855e1e3"
+                          label="Mixed Materials [310183630224151]"
+                          type="box">989.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7e394cf5480921d4271afebc6f56eea8" level="file">
+            <did>
+               <unittitle>Courses taught at Smith: Music 101</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_aba2cd1bc01354f03c896147cb7db245"
+                          label="Mixed Materials [310183630224151]"
+                          type="box">989.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5e89fa4aad6b823ea2d67475ac5137e0" level="file">
+            <did>
+               <unittitle>Courses taught at Smith: Music 102-Music 212</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_14ea6cc7e20660f5c7b9421fea809cc0"
+                          label="Mixed Materials [310183630224094]"
+                          type="box">989.2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ff55573b65c5388e80facb86093a13ec" level="file">
+            <did>
+               <unittitle>Courses taught at Smith: Music 221-Music 331</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_8c74e0896badc32fa97645a15979269c"
+                          label="Mixed Materials [310183630224037]"
+                          type="box">989.3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_be435e04c304e05660632cb52c5feb8c" level="file">
+            <did>
+               <unittitle>Courses taught at Smith: Music 341-Music 345</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_574c8752f685bde631c03f3514ffefed"
+                          label="Mixed Materials [310183630223971]"
+                          type="box">989.4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_325be0090147a64bb1741d676b34bffa" level="file">
+            <did>
+               <unittitle>Smith College Electronic Music Studio</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_c55b0841bc7bc33fd3f6a859d606cff4"
+                          label="Mixed Materials [310183630223971]"
+                          type="box">989.4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3ba9f0bd44bf52c7e70cffa0932ec366" level="file">
+            <did>
+               <unittitle>Visiting composers</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_0b1090fe9621b95dd45dfc44068c1ff2"
+                          label="Mixed Materials [310183630223971]"
+                          type="box">989.4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_be4de93bb34228c36f15507061d5e3eb" level="file">
+            <did>
+               <unittitle>Music Department</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_2708c93d931beb11c768396b9a4bd8f6"
+                          label="Mixed Materials [310183630223971]"
+                          type="box">989.4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_79c2c19789f2db6a73f3e6c34be6ce64" level="file">
+            <did>
+               <unittitle>Miscellaneous files</unittitle>
+               <container altrender="Half letter document box"
+                          id="aspace_d8280dedbf1a176ab092526b8abf8dfb"
+                          label="Mixed Materials [310183630224623]"
+                          type="box">989.5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9a1eb1174f0a940001464f52312064d1" level="file">
+            <did>
+               <unittitle>Musical manuscripts</unittitle>
+               <container altrender="Half letter document box"
+                          id="aspace_a7d0ecf3fbcfcaf53ad798fa5618a86c"
+                          label="Mixed Materials [310183630224623]"
+                          type="box">989.5</container>
+               <container altrender="Flat box (16d x 3h x 12w)"
+                          id="aspace_146c8710053c19e82439b0e8ea7d89dc"
+                          label="Mixed Materials [310183630224565]"
+                          type="box">989.9</container>
+               <container altrender="Flat box (16d x 3h x 12w)"
+                          id="aspace_612d0c240ee2b053929c55c67aced7d9"
+                          label="Mixed Materials [310183630224508]"
+                          type="box">989.10</container>
+               <container altrender="Flat box (16d x 3h x 12w)"
+                          id="aspace_f735a87adb4f7f7dc18458ca8729e14c"
+                          label="Mixed Materials [310183630224441]"
+                          type="box">989.11</container>
+               <container altrender="Flat box (16d x 3h x 12w)"
+                          id="aspace_408a0cc4013efa981d7fcb17999c2d05"
+                          label="Mixed Materials [310183630224383]"
+                          type="box">989.12</container>
+               <container altrender="Flat Box (12d x 3h x 17.5w)"
+                          id="aspace_874431a0de57f1adec89654f1b08cea6"
+                          label="Mixed Materials [310183630224326]"
+                          type="box">989.13</container>
+               <container altrender="Flat Box (12d x 3h x 17.5w)"
+                          id="aspace_1c4b52d087891ef9340334c49310a521"
+                          label="Mixed Materials [310183630224268]"
+                          type="box">989.14</container>
+               <container altrender="Flat Box (12d x 3h x 17.5w)"
+                          id="aspace_e42822747d34ef11e37414db794a5684"
+                          label="Mixed Materials [310183630224201]"
+                          type="box">989.15</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>

@@ -1,600 +1,1063 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca340.xml//EN">manosca340</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca340</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Arthur Henry Pierce Papers, 1900-1914</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Karen Eberhart.</author>
-
+            <titleproper>Finding aid to the Arthur Henry Pierce Papers <num>CA.MS.00340</num>
+            </titleproper>
+            <author>Finding aid prepared by Karen Eberhart.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-25">2013-11-25</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 14:31:13 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Pierce, Arthur Henry,
-               1867-1914</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Arthur Henry Pierce Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1900-1914</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:ae9b325d-34d0-4373-be5a-33bd67519c51</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">5 boxes</extent>
-            <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of psychology. Contains
-            research, lecture notes, and photographs. </abstract>
+         <unittitle>Arthur Henry Pierce Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Pierce, Arthur Henry, 1867-1914</persname>
+         </origination>
+         <unitid>CA.MS.00340</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.083 linear feet</extent>
+            <extent altrender="carrier">(5 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1900/1914"
+                   type="inclusive">1900-1914</unitdate>
+         <abstract id="aspace_2bf950ec79051a168dbcafe60025a593">Professor of psychology. Contains research, lecture notes, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Arthur Henry Pierce was born July 30, 1867. He received his undergraduate degree from
-            Amherst College in 1888 and then left for Europe on a fellowship for seven years.
-            Harvard awarded him a doctorate in 1899 and he joined the faculty of Smith College in
-            1900 as a Professor of Psychology. His research focused on perception and the senses,
-            which was the topic of his book <title render="italic">Studies in Space
-               Perception</title> published in 1901 by Longmans, Green and Co. Arthur Pierce was
-            also an avid outdoorsman, often going on trips into the woods via canoe, motor or on
-            foot. He died unmarried in Northampton, MA on February 20, 1914 of pneumonia.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Arthur Henry Pierce was born July 30, 1867. He received his undergraduate degree from Amherst College in 1888 and then left for Europe on a fellowship for seven years. Harvard awarded him a doctorate in 1899 and he joined the faculty of Smith College in 1900 as a Professor of Psychology. His research focused on perception and the senses, which was the topic of his book <title render="italic">Studies in Space Perception</title> published in 1901 by Longmans, Green and Co. Arthur Pierce was also an avid outdoorsman, often going on trips into the woods via canoe, motor or on foot. He died  in Northampton, MA on February 20, 1914 of pneumonia.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection consists primarily of the research and lecture notes created by Arthur
-            Henry Pierce during his tenure as a professor of Psychology at Smith College. The
-            collection contains very little biographical or personal information. There are five
-            photographs that show him standing on the Smith College campus, wearing rain gear and
-            holding oars in preparation for an excursion and in formal portraits.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection consists primarily of the research and lecture notes created by Arthur Henry Pierce during his tenure as a professor of Psychology at Smith College. The collection contains very little biographical or personal information. There are five photographs that show him standing on the Smith College campus, wearing rain gear and holding oars in preparation for an excursion and in formal portraits.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Arthur Henry Pierce Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Arthur Henry Pierce Papers, Smith College Archives, CA-MS-00340, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Arthur Henry Pierce papers were donated to the College Archives from a number of
-            sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Arthur Henry Pierce papers were donated to the College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Pierce, Arthur Henry, 1867-1914</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_5d27f53f52a87a0473183387004fcbb8" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_97c7b708d6918b0441a82d25fb2e5d10"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_f8f3176f3754a76459a29e3ed832b29b"
+                          parent="aspace_97c7b708d6918b0441a82d25fb2e5d10"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f55268efc7422bc15277d42d257c839c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Notes <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Notes</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a785bec198ac7e3d7bcb12c428795d4e"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_ceb43b0616746e0cc9cd4c5e16d117ad"
+                          parent="aspace_a785bec198ac7e3d7bcb12c428795d4e"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f801f410c46449471cd9acbc8849a9d1" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Publications - "An Appeal from the Prevailing Doctrine of a Detached
-                  Subconsciousness" reprinted from the <title render="italic">Studies in Philosophy
-                     and Psychology</title>, commemorative volume dedicated to Prof. Charles E.
-                  Garman of Amherst College, Houghton Mifflin Co. <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Publications - "An Appeal from the Prevailing Doctrine of a Detached Subconsciousness" reprinted from the <title render="italic">Studies in Philosophy and Psychology</title>, commemorative volume dedicated to Prof. Charles E. Garman of Amherst College, Houghton Mifflin Co.</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_626fd1550244de3768891718625ffe83"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_d76b45b10925844711cc2b70b34395b7"
+                          parent="aspace_626fd1550244de3768891718625ffe83"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6da47a4da97ae49de8a16ebd96a0dd5c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Publications - <title render="italic">Studies in Perception</title>, New
-                  York: Longmans, Green and Co. <unitdate>1901</unitdate>
-               </unittitle>
+               <unittitle>Publications - <title render="italic">Studies in Perception</title>, New York: Longmans, Green and Co.</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_96148c996e12efaa8bcf124b1fc93ca0"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_b0a9f9070a408c1834a8a2efa882e377"
+                          parent="aspace_96148c996e12efaa8bcf124b1fc93ca0"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2a82fb9dd2e0ba2376ffefc4d2d7d5c6" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Notes on Geometrical Illusions Vol. 1-3 <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Notes on Geometrical Illusions Vol. 1-3</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c2c34bc52b2b30f70cfcb21deb26364b"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_97b1532938c034ae190822305e8fb9b1"
+                          parent="aspace_c2c34bc52b2b30f70cfcb21deb26364b"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f1da094130a778f4163d403441f147d2" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Notes on Laboratory Techniques Vol. 4 <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Notes on Laboratory Techniques Vol. 4</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8926ace5513537666225899b614472b0"
+                          label="Mixed Materials [310183630223393]"
+                          type="box">970</container>
+               <container id="aspace_dd86a8e8772b10c8b2bd3db3541253dc"
+                          parent="aspace_8926ace5513537666225899b614472b0"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7888d8740c03bf4b92b99495bb7900dd" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Lecture Notes - Advertisements <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Advertisements</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e403b9a28c5bc5debf9d8aaee569c217"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_710760759f3b6de32d28b8c7e7aac7bd"
+                          parent="aspace_e403b9a28c5bc5debf9d8aaee569c217"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5939aaa4347000b908b31fc25cdb86a4" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Lecture Notes - Affective states <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Affective states</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1f4645fccd0c8c3bfef31af9efd0e987"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_4e99b41d0b88ab67c7742526495d7686"
+                          parent="aspace_1f4645fccd0c8c3bfef31af9efd0e987"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ab28c11b8449f74603157ad99f70f01b" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Lecture Notes - Aphasia <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Aphasia</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fbbb80e13d65d98f873cba782e071b33"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_500cb09366f7aa0f1016e431fbbc34ad"
+                          parent="aspace_fbbb80e13d65d98f873cba782e071b33"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_eb90c22cb1abbb2a015379fb01e425e2" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Lecture Notes - Apperception <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Apperception</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_03bc4b318e60608f7ba9c7db8a952062"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_bec91afd54a2e6bbe8668cd8ab3387ee"
+                          parent="aspace_03bc4b318e60608f7ba9c7db8a952062"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f6ef09ef8989a27347bd438985098601" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Lecture Notes - Association <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Association</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_84c6e12ce6ed49890b1398b40205564d"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_0db2dfbee8d18b1cd2debfe85086fd9f"
+                          parent="aspace_84c6e12ce6ed49890b1398b40205564d"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b9d581efbe33f9ac784480156e56e9ab" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lecture Notes - Association of Diagnosis <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Association of Diagnosis</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0b4818bc4fbc26170d865a631d7c3ab2"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_5ef1876d86063bf3795c4cf554852481"
+                          parent="aspace_0b4818bc4fbc26170d865a631d7c3ab2"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a6128461ee5cbd7441042bd2ca9336fe" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lecture Notes - Attention <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Attention</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ad6192c775a3f045c559dd2424f26311"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_fb4800aa3ec7e8a592245986a9a707d1"
+                          parent="aspace_ad6192c775a3f045c559dd2424f26311"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_97b9c65cc57f8415799a859b1513d492" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Lecture Notes - Auditory Space Perception <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Auditory Space Perception</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8c1202c713d47e33153abdc87bb752b3"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_4c0bd302d8ddd1b922cf63cf8d931edb"
+                          parent="aspace_8c1202c713d47e33153abdc87bb752b3"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1ef0968c157d0c3047147711024895da" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Lecture Notes - The Blind <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - The Blind</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bcc5fc7072aec43e45e21d9ab9d69f40"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_3b64277935c90df05318d06ecfe0aa72"
+                          parent="aspace_bcc5fc7072aec43e45e21d9ab9d69f40"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3b942bc2352121f53351c2aa59bb6e63" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Lecture Notes - Color Blindness <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Color Blindness</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5c7fe042f6fa323236bfa914ca190b84"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_cf99334a8cc607fb2c044530affc9f1f"
+                          parent="aspace_5c7fe042f6fa323236bfa914ca190b84"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4fbf16591db1d3091cb9dae3b8262c58" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Lecture Notes - Complication Experiments <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Complication Experiments</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9bcc209f8e7b1865a76eb805d6cdea79"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_b68f0890eda85b9fc18527da204345c4"
+                          parent="aspace_9bcc209f8e7b1865a76eb805d6cdea79"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d9d2943d18e5b73ac0da5e725f8fffd7" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Lecture Notes - Criminal Psychology <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Criminal Psychology</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dba95d9ef9b061eecccbe2a59b3d7954"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_87f39867ec35a4fb0c2011435b658755"
+                          parent="aspace_dba95d9ef9b061eecccbe2a59b3d7954"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ad0a753a70609f16ef59de8779526f8c" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Lecture Notes - Drugs and Alcohol <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Drugs and Alcohol</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6c9c9ecf64eb3c08aa59c8bc729df58a"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_39070e438686f740dadb4be8bd5895d8"
+                          parent="aspace_6c9c9ecf64eb3c08aa59c8bc729df58a"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f6fd96dfe06582f73511807099ec7ad3" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Lecture Notes - Emotions <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Emotions</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ce03371c6d6ef85009880c406b1961bc"
+                          label="Mixed Materials [310183630223336]"
+                          type="box">971</container>
+               <container id="aspace_67a5fd8d604d1ede503b2af090c6b322"
+                          parent="aspace_ce03371c6d6ef85009880c406b1961bc"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_18a9cf2d87dded52a7c3bf9a74ec6052" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Lecture Notes - Fatigue <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Fatigue</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_390ead0a58ef06bd93ffff0846ce5e86"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_a9fdd504749029d0f06f5dd20efb6b4c"
+                          parent="aspace_390ead0a58ef06bd93ffff0846ce5e86"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0b54e94d6a1dc50904e2917313a208c0" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Lecture Notes - Fusion <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Fusion</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_11cad47888920dff3a7aea8c9e8e7aaa"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_f8845bdb4cb4015e423ac2601e093cdb"
+                          parent="aspace_11cad47888920dff3a7aea8c9e8e7aaa"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f82d75a14a9213a639dfb693aad803fa" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Lecture Notes - Habit <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Habit</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_eee5c52169bd5247d900a092a0895e9d"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_8eb9e0b212509603365f85a13ff6f2f1"
+                          parent="aspace_eee5c52169bd5247d900a092a0895e9d"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b624ebf8cafa32c2a47950484bc2c597" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Lecture Notes - History of Psychology <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - History of Psychology</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_32cbdf5b4d442ed0c2dfd4c5db8d2cf9"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_e36976ee41be3a21fd02c790dbccf0c7"
+                          parent="aspace_32cbdf5b4d442ed0c2dfd4c5db8d2cf9"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e80b137bedfa0288709c4b205c4c9d72" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Lecture Notes - Images <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Images</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c382997ccb5aaa59261a220021166554"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_87a7aaa678888059c78ccddca1b38813"
+                          parent="aspace_c382997ccb5aaa59261a220021166554"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_95e7768eebc9d4bd9ba8831ad8cd0d45" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lecture Notes - Inhibitions <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Inhibitions</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_74c1cdc2768087f75f1ba73b170c3a46"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_3d9c4aa83962b9eb84a0e926820d70ca"
+                          parent="aspace_74c1cdc2768087f75f1ba73b170c3a46"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8e37ad5ad5d3bc8036713af0658775af" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lecture Notes - Instincts <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Instincts</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2866fd968cd063c8a47d24b752175315"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_25906dbfc770949e506ccbd9b15d978e"
+                          parent="aspace_2866fd968cd063c8a47d24b752175315"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9833bc9e158f9ca69e0715521b914675" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Lecture Notes - Intellectual Processes <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Intellectual Processes</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c5ab219dccf9889ff370b8ddeb3037f1"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_2f2175a9452da4a735962a8f6a25b25f"
+                          parent="aspace_c5ab219dccf9889ff370b8ddeb3037f1"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_74dc07ad6e749bef299f00e1ef3eb413" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Lecture Notes - Memory <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Memory</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dba49da9a9aff555be1ff785cbbd3f6a"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_ded93238f9084961220f2b407f87859c"
+                          parent="aspace_dba49da9a9aff555be1ff785cbbd3f6a"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_882a730044efaae8135d176f85e066b3" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Lecture Notes - Mental Tests <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Mental Tests</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_22b8a9a57867b966ea46b6c2774cdd7c"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_4f3facac32735517d56f063a5c6bfe65"
+                          parent="aspace_22b8a9a57867b966ea46b6c2774cdd7c"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_036687f853882859fe937b18ca8b097f" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Lecture Notes - Perception <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Perception</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_425071c7f146a15a8b37b2ac6c12329c"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_024c6aac2a82f4ae4d259310ec0e671f"
+                          parent="aspace_425071c7f146a15a8b37b2ac6c12329c"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6d7287c26359b996348058dd270ecd4d" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Lecture Notes - Porgandoff Illusion <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Porgandoff Illusion</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_18416c3b210023f72da9e96982f681cc"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_f716b814041b8a6524f3ca478637ec84"
+                          parent="aspace_18416c3b210023f72da9e96982f681cc"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_982a337bd0807c36065a7b395101d89c" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Lecture Notes - Pleasure and Pain <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Pleasure and Pain</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c0d948a98d8b06f128a3707a1678de84"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_5503d5b22984289ab094f176220ce4c3"
+                          parent="aspace_c0d948a98d8b06f128a3707a1678de84"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_72b448f28d69aed88cf79d9aa293ac90" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Lecture Notes - Psychology of Advertising <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Psychology of Advertising</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_793871a5309501b99dd03d4a18bc9754"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_60a71549f65add41539449d9058a8f83"
+                          parent="aspace_793871a5309501b99dd03d4a18bc9754"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_af2282692e8194ad9b3b0ffd4ea5a53e" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Lecture Notes - Psychology of Testimony <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Psychology of Testimony</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a7ed3d6b6e99a0c6610721b480de670d"
+                          label="Mixed Materials [310183630223278]"
+                          type="box">972</container>
+               <container id="aspace_261689f906c338a8c7945d6560b20cb4"
+                          parent="aspace_a7ed3d6b6e99a0c6610721b480de670d"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9279c80f19f1113aede4953ed466a6cc" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Lecture Notes - Philosophy 12 - Experimental Psychology
-                     <unitdate>1907-1908</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Philosophy 12 - Experimental Psychology</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1907/1908"
+                         type="inclusive">1907-1908</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a79cf3825f3c509a617df4a3e1c8e35d"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_7a26fff41ab95a07617863bb70b63e03"
+                          parent="aspace_a79cf3825f3c509a617df4a3e1c8e35d"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_88e9d7e823cf5d8ef2b41cb9454a506e" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Lecture Notes - Reading process <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Reading process</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a70e6741df88f4ae0743bf3482832d6d"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_fc0fec5296246dbc081d8759e46351f2"
+                          parent="aspace_a70e6741df88f4ae0743bf3482832d6d"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6e519680314cb4bbc2828a2ce41781cc" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Lecture Notes - Reasoning <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Reasoning</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1b7dddb33ea04bd362389b06501936ea"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_6e4e70ec207db7bec26cf7ee5507f24d"
+                          parent="aspace_1b7dddb33ea04bd362389b06501936ea"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_72e236e0cbf4bd7b60306cfce52e3eb9" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Lecture Notes - Sensation <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Sensation</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6f39e0c96efb588046200582dee3a380"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_c33f603607b39b473e3dba32e98a6ce3"
+                          parent="aspace_6f39e0c96efb588046200582dee3a380"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2bd32f79a66a578c19f1b2b2f356f664" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Lecture Notes - The Senses of Sight, Hearing, etc.
-                     <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - The Senses of Sight, Hearing, etc.</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_559cd8023294d4140cfea7777a83624b"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_15a122fad87ba3318fd0cb8eee3ca9a1"
+                          parent="aspace_559cd8023294d4140cfea7777a83624b"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_420bb8207c83ea58e447967e4607a823" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lecture Notes - The Soul <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - The Soul</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fb231efd1a9faf66f4492cae178fd8b6"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_8860f244c7dcba911107ddd85fbfb57b"
+                          parent="aspace_fb231efd1a9faf66f4492cae178fd8b6"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d9494c5de846a372c8a30f49377192c0" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lecture Notes - Suggestion <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Suggestion</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f6cbf2c78c82b45e84d9619e9a07c87c"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_b88343de484bcaeaa68bfbb4f97fd19f"
+                          parent="aspace_f6cbf2c78c82b45e84d9619e9a07c87c"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1d3e38f4945ccc27215b9031394d1658" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Lecture Notes - Synaesthesia <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Synaesthesia</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e13e14f8df26eee3f82590199d813a0b"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_0d68dc352ac37e564ac4d087b0edb9be"
+                          parent="aspace_e13e14f8df26eee3f82590199d813a0b"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_20bf857a943f4559fcc462b9e8f1be93" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Lecture Notes - Telepathy <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Telepathy</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1d515329ecf440e033f5cc8aac27f25e"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_b730ea055331466dc387c02bbbc1fdc6"
+                          parent="aspace_1d515329ecf440e033f5cc8aac27f25e"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ec35061f1017d2f67559f07ffbeb4d4b" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Lecture Notes - Visual Space Perception <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Visual Space Perception</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a4a2464eb1cbf819397c9d4be706fae9"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_52cc850aefd2671b10f094c176123e7b"
+                          parent="aspace_a4a2464eb1cbf819397c9d4be706fae9"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a62174e1e3dffa887ea0c48ba351148d" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Lecture Notes - Weber's Law <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes - Weber's Law</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4566ed5b65e5280f389f226db2719f9d"
+                          label="Mixed Materials [310183630223211]"
+                          type="box">973</container>
+               <container id="aspace_450fe80e941704d3b297cce5431ff881"
+                          parent="aspace_4566ed5b65e5280f389f226db2719f9d"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2de0aafacedf55a870c9628b0d1eaff6" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Research on Apparent from of the heavens, etc
-                     <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Research on Apparent from of the heavens, etc</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4e80b9d8394ed8a0ce291c8028bfcbb7"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_0ec4689bfa2a5a8129b1a5f1ba21599a"
+                          parent="aspace_4e80b9d8394ed8a0ce291c8028bfcbb7"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_16fcc20a5a7c11eac674d9eb61ba2257" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ced66cb18749d0605b59ac9a596dfd80"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_0157576f9e17f908d5341718435ac7d5"
+                          parent="aspace_ced66cb18749d0605b59ac9a596dfd80"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f73f20c4987ffa4979e91527184aa356" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Data <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Data</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_548eb915e404c7f2171e411ec6dfa501"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_42820f9b1f7c9abe4e0acda49f6d12be"
+                          parent="aspace_548eb915e404c7f2171e411ec6dfa501"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7da0956ddfb4d885f9ca430c3c3d5ac4" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Experiments <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Experiments</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_57bad13f724ffc66830e2ea03b7976cd"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_9aa32d6f7d936595fd680589525ec3f1"
+                          parent="aspace_57bad13f724ffc66830e2ea03b7976cd"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9a49b188b0efd2567e72b7e60ca5be82" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Notes <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Notes</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_94c87b92d75b958e5a630be8dca33fc4"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_9fdec3d519f1267c74f1ea7de7dd1d9a"
+                          parent="aspace_94c87b92d75b958e5a630be8dca33fc4"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1274a152e855044a4ca084be5e1d4e36" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Original Records <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Original Records</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1decc6acc6c645ab8211fa41f150e8cd"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_05a3ec0c96b1b9cea2fa4a870eef93dd"
+                          parent="aspace_1decc6acc6c645ab8211fa41f150e8cd"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c61a3b8077f35967251066f7ba232f49" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Questionnaires <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Questionnaires</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ca59712822d129dfe55e2e190a02d50b"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_ff37dcf86e91c0d8685ee6fbaf419a4c"
+                          parent="aspace_ca59712822d129dfe55e2e190a02d50b"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b5831cd34f9c74f0c68d3a0c42b1a3df" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Reviews <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Reviews</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_02439eea1ad20718a6041c31a8968f3d"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_c5ff74f281922f209bcd51bccb2f398e"
+                          parent="aspace_02439eea1ad20718a6041c31a8968f3d"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_40e476ba8878811a4f39c92c7472f5e5" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Student observations <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Student observations</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_afadbdf2472a77db78e356e4a808ac2d"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_a5b2b4822b6f6f9e93ea33be1cedd6d8"
+                          parent="aspace_afadbdf2472a77db78e356e4a808ac2d"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0b75d068b54539d935d3762d2f628d16" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Summaries <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Summaries</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_56837c82424c2217b9f5ed2a17734115"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_882f31d4718a11fbc600c1d086dc268b"
+                          parent="aspace_56837c82424c2217b9f5ed2a17734115"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7add2ba1ccc78f74e1387949a1edf94e" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Size Illusion of Celestial Magnitude Vol. 1-2
-                     <unitdate>c.1900-1914</unitdate>
-               </unittitle>
+               <unittitle>Size Illusion of Celestial Magnitude Vol. 1-2</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1900/1914"
+                         type="inclusive">1900-1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_735cc8676c8b9309dbc4f0c598716867"
+                          label="Mixed Materials [310183630224649]"
+                          type="box">974</container>
+               <container id="aspace_dcd28ea815478df4422a5cb8799d77b7"
+                          parent="aspace_735cc8676c8b9309dbc4f0c598716867"
+                          type="folder">11</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

@@ -1,441 +1,603 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca64.xml//EN">manosca64</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca64</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper>Howard Madison Parshley Papers, 1913-1953 </titleproper>
-            <subtitle>Finding Aid</subtitle>
+            <titleproper>Finding aid to the Howard Madison Parshley Papers <num>CA.MS.00064</num>
+            </titleproper>
             <author>Finding aid prepared by manosca.</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
             <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date>© 2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook
-            Hopkins. <date>2003-06-04</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 14:55:15 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>manosca64 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher>Smith College Archives </publisher>
-         <titleproper>Howard Madison Parshley Papers, 1913-1953 </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>RG 42 </num>
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-            Foundation.</sponsor>
-         <p>© 2003 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="recordgrp" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Parshley, H. M. (Howard Madison),
-               1884-1953.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Howard Madison Parshley Papers</unittitle>
-         <unitdate encodinganalog="245$f" type="inclusive">1913-1953</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:7f8d5643-c6a3-40d9-8cf9-00c6e5ce8b79</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-            </address>
-         </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Professor, zoology, translator, <title
-               render="italic">The Second Sex</title>. Contains, biographical information, articles,
-            correspondence, photographs, published works, notes and translations. Notable
-            correspondents include Adelaide Cromwell and Margaret Sanger. </abstract>
-         <langmaterial label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Howard Madison Parshley Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Parshley, H. M. (Howard Madison), 1884-1953.</persname>
+         </origination>
+         <unitid>CA.MS.00064</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.042 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1913/1991"
+                   type="inclusive">1913-1991</unitdate>
+         <abstract id="aspace_133b26025cc31ad8bd6bc6d9c7031676">Professor, zoology, translator, <title render="italic">The Second Sex</title>. Contains, biographical information, articles, correspondence, photographs, published works, notes and translations. Notable correspondents include Adelaide Cromwell and Margaret Sanger.</abstract>
       </did>
-      <bioghist id="bioghist">
-
-         <p>Howard Madison Parshley was a professor at Smith from 1917 until 1952, and the chairman
-            of the Zoology Department for many years. His early specialization in entomology
-            broadened to include studies of genetics, reproduction and human sexuality. At Smith he
-            taught classes in general zoology, genetics/reproduction and entomology. His
-            publications included books, reviews and more than 300 articles in scientific as well as
-            nonscientific journals. His books include Science and Good Behavior, The Science of
-            Human Reproduction, and A Survey of Biology. Parshley was recognized as an international
-            authority on the Hemiptera-Heteroptera and was editor of the General Catalogue of the
-            Hemiptera. Parshley wrote the screenplay and co-starred with Clarence Darrow, the
-            well-known evolutionist of the Scopes trial, in the documentary film, "The Mystery of
-            Life," which was filmed and released in 1931. His fellow faculty called him a "pioneer
-            in the application of the scientific outlook to the behavior of man." A talented
-            musician and music-lover, for decades he played the double bass in the Smith College
-            Orchestra, in the Pioneer Valley Symphony and in the professional Springfield Symphony
-            Orchestra. </p>
-         <p>Born to a pianist and a Baptist minister in Hallowell, Maine in 1884, Parshley grew up
-            in eastern New York. With a strong classical education from the Boston Latin School
-            (1901-1905) he went on to study at Harvard University, achieving an A.B. (1909), an A.M.
-            (1910) and an Sc.D (1917). Concurrent with these studies Parshley also attended the New
-            England Conservatory of Music. He married Nancy Fredricson in 1910. From 1911 to 1914 he
-            taught zoology at the University of Maine in Orono. The Parshley's son, Thomas
-            Fredricson Parshley was born in 1912 and their daughter, Elsa Parshley Brown, Smith '35
-            was born in 1914. </p>
-         <p>In 1917, Parshley accepted a position at Smith as assistant professor of zoology. He
-            soon became professor and later chairman of the Department. He began translating into
-            English what is now called "The Feminist Bible," Simone de Beauvoir's groundbreaking and
-            controversial Le Deuxieme Sexe, in November 1949. During his work, he suffered a minor
-            heart attack in 1952. Shortly after the publication of his translation of The Second
-            Sex, and the completion of his translation of a French zoology book on mammals, Parshley
-            died of a second heart attack on May 19, 1953. Parshley's translation of de Beauvoir's
-            The Second Sex is still in print and widely used by Women's Studies programs throughout
-            the English-speaking world. </p>
-         <p>[Biographical note prepared in cooperation with Elsa Parshley Brown] </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Howard Madison Parshley was a professor at Smith from 1917 until 1952, and the chairman of the Zoology Department for many years. His early specialization in entomology broadened to include studies of genetics, reproduction and human sexuality. At Smith he taught classes in general zoology, genetics/reproduction and entomology. His publications included books, reviews and more than 300 articles in scientific as well as nonscientific journals. His books include Science and Good Behavior, The Science of Human Reproduction, and A Survey of Biology. Parshley was recognized as an international authority on the Hemiptera-Heteroptera and was editor of the General Catalogue of the Hemiptera. Parshley wrote the screenplay and co-starred with Clarence Darrow, the well-known evolutionist of the Scopes trial, in the documentary film, "The Mystery of Life," which was filmed and released in 1931. His fellow faculty called him a "pioneer in the application of the scientific outlook to the behavior of man." A talented musician and music-lover, for decades he played the double bass in the Smith College Orchestra, in the Pioneer Valley Symphony and in the professional Springfield Symphony Orchestra. </p>
+         <p> Born to a pianist and a Baptist minister in Hallowell, Maine in 1884, Parshley grew up in eastern New York. With a strong classical education from the Boston Latin School (1901-1905) he went on to study at Harvard University, achieving an A.B. (1909), an A.M. (1910) and an Sc.D (1917). Concurrent with these studies Parshley also attended the New England Conservatory of Music. He married Nancy Fredricson in 1910. From 1911 to 1914 he taught zoology at the University of Maine in Orono. The Parshley's son, Thomas Fredricson Parshley was born in 1912 and their daughter, Elsa Parshley Brown, Smith '35 was born in 1914. </p>
+         <p> In 1917, Parshley accepted a position at Smith as assistant professor of zoology. He soon became professor and later chairman of the Department. He began translating into English what is now called "The Feminist Bible," Simone de Beauvoir's groundbreaking and controversial Le Deuxieme Sexe, in November 1949. During his work, he suffered a minor heart attack in 1952. Shortly after the publication of his translation of The Second Sex, and the completion of his translation of a French zoology book on mammals, Parshley died of a second heart attack on May 19, 1953. Parshley's translation of de Beauvoir's The Second Sex is still in print and widely used by Women's Studies programs throughout the English-speaking world. </p>
+         <p> [Biographical note prepared in cooperation with Elsa Parshley Brown]</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The Parshley papers are divided into four Series. Series I, located in Box 1, Folder 1,
-            includes biographical information such as newspaper articles, faculty files, obituaries
-            and other miscellaneous items. Series II, in Box 1, Folder 2, consists of photographs
-            only. Series III, in Box 1, Folders 3 through 10, is correspondence, divided into two
-            sections: correspondence with family and associates and correspondence concerning the
-            translation and publication of The Second Sex. The first section, located in Folder 3,
-            includes letters from Margaret Sanger and Adelaide Cromwell, Smith, class of 1940.
-            Series IV consists of Parshley's published works and is also divided into two sections:
-            articles and reviews, Box 2, Folders 1 - 3, and the translation of The Second Sex and
-            related material, beginning in Box 2, Folder 4 and continuing through Box 3. In Folder 4
-            - 7 are Parshley's copy of Le Deuxieme Sexe, news clippings, publishing notes and
-            translation notes, respectively. The translated manuscript begins in Folder 8 and
-            continues through Box 3. </p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection contains biographical information, articles, correspondence, photographs, published works, notes and translations. Notable correspondents include Adelaide Cromwell and Margaret Sanger.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into four series:</p>
-         <list>
-            <item> I. Biographical </item>
-            <item> II. Photographs </item>
-            <item> III. Correspondence </item>
-            <item> IV. Publications </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Biographical</item>
+            <item>II. Photographs</item>
+            <item>III. Correspondence</item>
+            <item>IV. Publications</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Smith College
-                  Archives. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>All rights are owned by the various publishers and authors and permission is
-                  required for publication beyond "fair use." </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Howard Madison Parshley Papers, Box #, Smith College Archives.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Second Sex manuscript and related materials were donated by Professor
-                  Parshley's daughter, Elsa Parshley Brown, Smith class of 1935. All other materials
-                  are from various sources at Smith College.</p>
-            </acqinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-
-         <persname encodinganalog="600" source="lcnaf">Parshley, H. M. (Howard Madison),
-            1884-1953.</persname>
-         <persname encodinganalog="600" source="lcnaf">Beauvoir, Simone de, 1908- Deuxieme
-            sexe.</persname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Howard Madison Parshley Papers, Smith College Archives, CA-MS-00064, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Second Sex manuscript and related materials were donated by Professor Parshley's daughter, Elsa Parshley Brown, Smith class of 1935. All other materials are from various sources at Smith College.</p>  
+      </acqinfo>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Parshley, H. M. (Howard Madison), 1884-1953.</persname>
+         <persname encodinganalog="600" source="naf">Beauvoir, Simone de, 1908- Deuxieme sexe.</persname>
          <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-         <persname encodinganalog="700" source="lcnaf">Sanger, Margaret, 1879-1966.</persname>
-         <persname encodinganalog="700" source="lcnaf">Cromwell, Adelaide M.</persname>
-         <persname encodinganalog="700" source="lcnaf">Beauvoir, Simone de, 1908- Deuxieme
-            sexe.</persname>
+         <persname encodinganalog="600" source="naf">Sanger, Margaret, 1879-1966.</persname>
+         <persname encodinganalog="600" source="naf">Cromwell, Adelaide M., Class of 1940</persname>
+    
       </controlaccess>
-      <dsc id="contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I. Biographical</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3dbe636109394a0b413d6250eb33975d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Biographical <unitdate>1922-1988</unitdate>
-                  </unittitle>
+                  <unittitle>Biographical</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1988"
+                            type="inclusive">1922-1988</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_992fff017366c3813ef760e4802403cb"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_0494ce609774aa1b5e5fccffa869cb8e"
+                             parent="aspace_992fff017366c3813ef760e4802403cb"
+                             type="folder">1</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II: Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_0bd14e7a3b40b9a4e8fb0255b4ad5c5f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Photographs <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_672d7dca1b794cd143663cb21442b324"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_46e8d1190f0bb2a872f2a431ab87032e"
+                             parent="aspace_672d7dca1b794cd143663cb21442b324"
+                             type="folder">2</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III: Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_26e15faa7acffedec8cd7f87c60cae25" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Correspondence with family and associates
-                        <unitdate>1933-1991</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence with family and associates</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1991"
+                            type="inclusive">1933-1991</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_f7ce147ea09f388de17f53a87f81a3f2"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_c127806ea84255b23eef514a4fe3ea58"
+                             parent="aspace_f7ce147ea09f388de17f53a87f81a3f2"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ef5088980185b8666b3ccae6c17e6ca1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Correspondence on the translation of Le Deuxieme Sexe <unitdate>Jul
-                        1949 - Dec 1949</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence on the translation of Le Deuxieme Sexe</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949-07/1949-12"
+                            type="inclusive">Jul 1949 - Dec 1949</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_ca9d405446e44aa33b505fa38624c4f9"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_7e2ae61ff181ebeec76c899e802d65a9"
+                             parent="aspace_ca9d405446e44aa33b505fa38624c4f9"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7bafba6009ee42a1efabac19264bfec7" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>
-                     <unitdate>Jan 1950 - Dec 1950</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1950-01/1950-12"
+                            type="inclusive">Jan 1950 - Dec 1950</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a54c82f715623303b3048ce94c81f163"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_706eee750adddab7611746cb5f815730"
+                             parent="aspace_a54c82f715623303b3048ce94c81f163"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e4e44fa2260f43c633991faa946c9c23" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>
-                     <unitdate>Jan 1951 - Jun 1951</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951-01/1951-06"
+                            type="inclusive">Jan 1951 - Jun 1951</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_17773cd77d8f202231a0335af89bcfce"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_c079308f9d7993f8d27e0532bb7c51aa"
+                             parent="aspace_17773cd77d8f202231a0335af89bcfce"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_05ca0b01b093071b201ad2c7af092af6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>
-                     <unitdate>Jul 1951 - Dec 1951</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1951-07/1951-12"
+                            type="inclusive">Jul 1951 - Dec 1951</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_9d1f75447ff4a1463c3fd5b21253b53a"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_ee6e566b03a04da01f5ba497fe51e1d6"
+                             parent="aspace_9d1f75447ff4a1463c3fd5b21253b53a"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bcab12cbf68561188d9cf10548144b56" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>
-                     <unitdate>Jan 1952 - Jun 1952</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1952-01/1952-06"
+                            type="inclusive">Jan 1952 - Jun 1952</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_9a5155fb1015138b98b60434f0abfe66"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_7cbc24ef485d3c371c6cd1d0464e234b"
+                             parent="aspace_9a5155fb1015138b98b60434f0abfe66"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1c442c2e7040c5a8634adaa6ab9ec550" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>
-                     <unitdate>Jul 1952 - Jan 1953</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1952-07/1953-01"
+                            type="inclusive">Jul 1952 - Jan 1953</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_d718f51b07244cce5ecb81d5ae09835e"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_f7d3f17d647d0f434f4b7a8e66dfdcfc"
+                             parent="aspace_d718f51b07244cce5ecb81d5ae09835e"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f9e2afeaa2b47eec21e2c7f1e2e47d70" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>
-                     <unitdate>Mar 1953 - Apr 1953</unitdate>
-                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953-03/1953-04"
+                            type="inclusive">Mar 1953 - Apr 1953</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_0a5c1dd2e0724db8ad97b91832f84209"
+                             label="Mixed Materials [310183630223815]"
+                             type="box">963</container>
+                  <container id="aspace_2bed2d89bdc1ce241f10eebd1887dd8c"
+                             parent="aspace_0a5c1dd2e0724db8ad97b91832f84209"
+                             type="folder">10</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>SERIES IV: Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_14b5836a9a9fbfb284d27bc872b0dd98" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Publications: A - G <unitdate>1913-1952</unitdate>
-                  </unittitle>
+                  <unittitle>Publications: A - G</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1913/1952"
+                            type="inclusive">1913-1952</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_72270e31c8bbd30e2efb348f15424b4c"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_7863582d5a2f9a16829577e42748b4e9"
+                             parent="aspace_72270e31c8bbd30e2efb348f15424b4c"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc92d584e8782719f54456cf5f52860c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Publications: H - Z <unitdate>1917-1949</unitdate>
-                  </unittitle>
+                  <unittitle>Publications: H - Z</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1949"
+                            type="inclusive">1917-1949</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_073ab34a1eb3ea87a66d97e720f816a7"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_82ceed9da1818b96e1bed5d9ceb957ec"
+                             parent="aspace_073ab34a1eb3ea87a66d97e720f816a7"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bdbf2f195602398a58ad293c1ea1b0c9" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Publications: Reviews <unitdate>1918-1952</unitdate>
-                  </unittitle>
+                  <unittitle>Publications: Reviews</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1918/1952"
+                            type="inclusive">1918-1952</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_02b89bd8c8b2d76cad34aebbb66c0de7"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_adfbede554a2bd027a8cbb57be2823a7"
+                             parent="aspace_02b89bd8c8b2d76cad34aebbb66c0de7"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f8d2ab692533c242102afa92491026f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Copy of Le Deuxieme Sexe by Simone de Beauvior
-                        <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>Copy of Le Deuxieme Sexe by Simone de Beauvior</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_71b81e98d2507e45ed34afa70a707729"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_552e027aaea03bc0160f7311a9725ba3"
+                             parent="aspace_71b81e98d2507e45ed34afa70a707729"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b267a534b594ece08065d30384255d51" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>The Second Sex: News clippings, miscellany <unitdate>c.1952</unitdate>
-                  </unittitle>
+                  <unittitle>The Second Sex: News clippings, miscellany</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1952/1952">1952</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_b052668fee5de70e1dbd59291e7abf64"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_e7ba129e9566902887b29f0c5f39a9f6"
+                             parent="aspace_b052668fee5de70e1dbd59291e7abf64"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f2a9f0f7620044f4734c856d0f83373b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>The Second Sex: Publishing notes <unitdate>c.1952</unitdate>
-                  </unittitle>
+                  <unittitle>The Second Sex: Publishing notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1952/1952">1952</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_a78ccf6cd1eda62e868249dcee51bb3f"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_50b0c63745ad50092c2452a30e50f9ed"
+                             parent="aspace_a78ccf6cd1eda62e868249dcee51bb3f"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_56683daeb9aed6d9de517ea3bfb6da72" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>The Second Sex: Translation notes <unitdate>c.1951-1953</unitdate>
-                  </unittitle>
+                  <unittitle>The Second Sex: Translation notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1951/1953"
+                            type="inclusive">1951-1953</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d93e51565d2d20467ddd3916b1ea6070"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_9ce772ddfff22a1d45a42e27f568cf04"
+                             parent="aspace_d93e51565d2d20467ddd3916b1ea6070"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_06eb735a8dd565a461fc8e6b6a7ac817" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>The Second Sex: Manuscript: Book I, Preface and Part I, p.1-127
-                        <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>The Second Sex: Manuscript: Book I, Preface and Part I, p.1-127</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_f964bfde4a38771d54cf77a6fe091f76"
+                             label="Mixed Materials [310183630224102]"
+                             type="box">963.1</container>
+                  <container id="aspace_cb067ea4c3992f3f4a42c19ea29732d7"
+                             parent="aspace_f964bfde4a38771d54cf77a6fe091f76"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2c797369f33c46129e04d86156245b0b" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Book I, Part II, p.128-232 <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book I, Part II, p.128-232</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a7cf1bd2430a0ce4f9c3cc6cbcdd1859"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_50bb921882a9a149890fd217d3a8e1e1"
+                             parent="aspace_a7cf1bd2430a0ce4f9c3cc6cbcdd1859"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4235dcdb81426a1b9588caddc4f3f95f" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Book I, Part III, Chap IX, <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book I, Part III, Chap IX</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_76f60cd912f6f151e54c87209bc85849"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_773b3ba6a3ca233d94d26a43bc226ff1"
+                             parent="aspace_76f60cd912f6f151e54c87209bc85849"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b690be34d45b6850a63f508a5c3a878d" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Book I, Part III, Chap X-XI, <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book I, Part III, Chap X-XI</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ed052b8e54917d29d54fd5ba246efa98"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_11272e1408ad24b0fa4627edef112eae"
+                             parent="aspace_ed052b8e54917d29d54fd5ba246efa98"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6eab76dfe7b0615827cd770fd6e599a5" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Book II, Part I, Chap I <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part I, Chap I</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3cf15ba6ad524a5bf55ae2e8de1a1b73"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_2237dac546b6b71c0a9f966f693b3f35"
+                             parent="aspace_3cf15ba6ad524a5bf55ae2e8de1a1b73"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7820911bba482880dc3dbd5bb2647d11" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Book II, Part I, Chap II <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part I, Chap II</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3a8ce12cf8af08794b96e7526e09ed7a"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_d3a72cda3ca75e13e726e626c10e91be"
+                             parent="aspace_3a8ce12cf8af08794b96e7526e09ed7a"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d4963ef604c12f2325c5085a6246413e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Book II, Part I-II, Chap IV-V <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part I-II, Chap IV-V</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_474cfd2a63ebd96f21d7281f9ad46e33"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_04a32e4a555f7fea3a09529c542e8c27"
+                             parent="aspace_474cfd2a63ebd96f21d7281f9ad46e33"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8872530ad61239f54b6217e43b12006e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Book II, Part II, Chap VI-VII <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part II, Chap VI-VII</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_875737d2ff5bd93609610578a31b3c4c"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_6407108c89298d47f90ec6a3f1428678"
+                             parent="aspace_875737d2ff5bd93609610578a31b3c4c"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6c32491853f9d552ec8bea5591c3bf1e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Book II, Part II, Chap VIII-X <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part II, Chap VIII-X</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1cb5a6df7e41c287b4d32b3aed826c3f"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_23a116ec65c9fba542ba4e142e2901f4"
+                             parent="aspace_1cb5a6df7e41c287b4d32b3aed826c3f"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_817e339b96630a097bbb1cf5212087cb" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Book II, Part III <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part III</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bb34148058699f1eed4e8e47f55eecea"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_94666f056e12853388d18d4230a085dd"
+                             parent="aspace_bb34148058699f1eed4e8e47f55eecea"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e1e808ed65c56530ea44877865b79bc3" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Book II, Part IV <unitdate>c.1949-1953</unitdate>
-                  </unittitle>
+                  <unittitle>Book II, Part IV</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_899bb80d1f79e0d61e30fb1785dfc772"
+                             label="Mixed Materials [310183630223757]"
+                             type="box">963.2</container>
+                  <container id="aspace_5aa952c039e0630a759f44cbaa602529"
+                             parent="aspace_899bb80d1f79e0d61e30fb1785dfc772"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cac66f85e98fde11fe6914b789503017" level="file">
                <did>
-                  <container type="box" label="mixed materials">OV</container>
-                  <unittitle>"The Mystery of Life": film poster <unitdate>1931</unitdate>
-                  </unittitle>
+                  <unittitle>"The Mystery of Life": film poster</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container id="aspace_58ff790a774684ea81290ef43fc841d7"
+                             label="Mixed Materials"
+                             type="box">OV</container>
                </did>
             </c02>
          </c01>

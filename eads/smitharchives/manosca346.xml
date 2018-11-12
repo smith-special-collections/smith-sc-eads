@@ -1,401 +1,559 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca346.xml//EN">manosca346</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca346</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Helen Sinclair Pittman Papers,
-               1917-1979</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Helen Sinclair Pittman Papers <num>CA.MS.00346</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-04">2013-12-04</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 14:41:46 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Pittman, Helen Sinclair,
-               1899-1991</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Helen Sinclair Pittman Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1917-1979</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:c63a4e3c-1f79-4110-bc91-ce600999f15a</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(1 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Physician and chairman of the Counselor
-            Committee for the Smith College Health Service and Infirmary. Contains correspondence,
-            pamphlets, publications, clippings, budget reports, and photograph album. </abstract>
+         <unittitle>Helen Sinclair Pittman Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Pittman, Helen Sinclair, 1899-1991</persname>
+         </origination>
+         <unitid>CA.MS.00346</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1917/1979"
+                   type="inclusive">1917-1979</unitdate>
+         <abstract id="aspace_c62b35b49e1128ff1466ee0401ebe23f">Physician and chairman of the Counselor Committee for the Smith College Health Service and Infirmary. Contains correspondence, pamphlets, publications, clippings, budget reports, and photograph album.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Mary Helen Sinclair Pittman was born in 1899 in Halifax, Nova Scotia to Henry H. and
-            Mary Agnes Sinclair Tremaine Pittman. Prior to Smith, she attended St. Agnes School in
-            Albany, New York. Pittman graduated from Smith College in 1921 and received her M.D.
-            from Johns Hopkins Medical School in 1927. Concerned primarily with the care of
-            patients, Pittman became a noted physician in the medical field. Joining the staff of
-            Massachusetts General Hospital in 1931, Pittman became the Director of the Pulmonary
-            Clinic in 1942, and held that position for 17 years, until 1959. Her work with the 1942
-            Coconut Grove Club fire victims brought a better understanding to the medical world
-            regarding the treatment of pulmonary damage secondary to the burns and the inhalation of
-            toxic fumes. Not only was Pittman the first woman to be made president of the Suffolk
-            District branch of the Massachusetts Medical Society, she was also a member of the
-            Council of the Massachusetts Medical Society from 1936-1964, serving on both the Censors
-            Committee and the Grievances Committee. Joining the staff of Harvard Medical School in
-            1946, Pittman ended her tenure at Harvard as a Clinical Associate in Medicine in 1959,
-            and was an active member of the medical school's admissions committee. Pittman
-            eventually rejoined the Smith community, becoming chairman of the Counselor Committee
-            for the Health Service and Infirmary. Upon her retirement from Smith in 1966, Pittman
-            received an honorary doctorate from the college for her service to the Smith community
-            and her contributions to the development of modern medicine. She died in 1991 in Ayer,
-            Massachusetts.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Mary Helen Sinclair Pittman was born in 1899 in Halifax, Nova Scotia to Henry H. and Mary Agnes Sinclair Tremaine Pittman. Prior to Smith, she attended St. Agnes School in Albany, New York. Pittman graduated from Smith College in 1921 and received her M.D. from Johns Hopkins Medical School in 1927. Concerned primarily with the care of patients, Pittman became a noted physician in the medical field. Joining the staff of Massachusetts General Hospital in 1931, Pittman became the Director of the Pulmonary Clinic in 1942, and held that position for 17 years, until 1959. Her work with the 1942 Coconut Grove Club fire victims brought a better understanding to the medical world regarding the treatment of pulmonary damage secondary to the burns and the inhalation of toxic fumes. Not only was Pittman the first woman to be made president of the Suffolk District branch of the Massachusetts Medical Society, she was also a member of the Council of the Massachusetts Medical Society from 1936-1964, serving on both the Censors Committee and the Grievances Committee. Joining the staff of Harvard Medical School in 1946, Pittman ended her tenure at Harvard as a Clinical Associate in Medicine in 1959, and was an active member of the medical school's admissions committee. Pittman eventually rejoined the Smith community, becoming chairman of the Counselor Committee for the Health Service and Infirmary. Upon her retirement from Smith in 1966, Pittman received an honorary doctorate from the college for her service to the Smith community and her contributions to the development of modern medicine. She died in 1991 in Ayer, Massachusetts.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The collection contains correspondence, pamphlets, publications (including her 1934
-            article titled "The Pulmonary Complications: A Clinical Description"), clippings, budget
-            reports, materials relating to her various organizational involvement (including the
-            Smith College Infirmary and counseling services), and a photograph album from her days
-            as a college student.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains correspondence, pamphlets, publications (including her 1934 article titled "The Pulmonary Complications: A Clinical Description"), clippings, budget reports, materials relating to her various organizational involvement (including the Smith College Infirmary and counseling services), and a photograph album from her days as a college student.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Helen Sinclair Pittman Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Helen Sinclair Pittman Papers, Smith College Archives, CA-MS-00346, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Helen Sinclair Pittman papers were donated to the Smith College Archives from a
-            number of sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Helen Sinclair Pittman papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Pittman, Helen Sinclair, 1899-1991</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_de1004df7ec5f04b3e9c011c346861ea" level="file">
             <did>
                <unittitle>
                   <title render="bold">Biography</title>
                </unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_39c26750f436daf34252c011bba957cd" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Biographical information <unitdate>1930-1977</unitdate>
-                  </unittitle>
+                  <unittitle>Biographical information</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1977"
+                            type="inclusive">1930-1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b258b653ae6e4acfdb6f19084294b20"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_acc5ffa8264e41c38ab42a14dc2abeb8"
+                             parent="aspace_3b258b653ae6e4acfdb6f19084294b20"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ad9288024755b0dcbbff8e7b8c02eb7b" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Awards and honors: consideration for Smith College Medal
-                        <unitdate>1966</unitdate>
-                  </unittitle>
+                  <unittitle>Awards and honors: consideration for Smith College Medal</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e889e77884b1d7d730ea41c5fa4002e6"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_81da7e551ddfea12197a661ae980d759"
+                             parent="aspace_e889e77884b1d7d730ea41c5fa4002e6"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6a86b2ca3b6596243a9b4e046df2ef54" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Awards and honors: honorary degree material
-                        <unitdate>1965-1966</unitdate>
-                  </unittitle>
+                  <unittitle>Awards and honors: honorary degree material</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1966"
+                            type="inclusive">1965-1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5183b6804e2a701e5868295f5633043a"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_3a72bba318810036d157eb439298a836"
+                             parent="aspace_5183b6804e2a701e5868295f5633043a"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_44877354017c0ccba63ef578714187bc" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Commencement speech: St. Agnes School <unitdate>1967-1969</unitdate>
-                  </unittitle>
+                  <unittitle>Commencement speech: St. Agnes School</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1969"
+                            type="inclusive">1967-1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_60e557a0d3896ca03ddb05cd522fbff5"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_caba9555345d3ec344ea689cb7a30363"
+                             parent="aspace_60e557a0d3896ca03ddb05cd522fbff5"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_819b11b7d815103abfba5a0c3b44a853" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Photograph album <unitdate>1917- 1920s</unitdate>
-                  </unittitle>
+                  <unittitle>Photograph album</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1929"
+                            type="inclusive">1917- 1920s</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a712616a1b7cab23abe6f28e20ab8de1"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_d58909dc51a373da5f474d064f38678d"
+                             parent="aspace_a712616a1b7cab23abe6f28e20ab8de1"
+                             type="folder">5</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b3f121f432fe4eff283cc22d53b2309b" level="file">
             <did>
                <unittitle>
                   <title render="bold">Correspondence</title>
                </unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_907ceb4a77cf4d487e1fb5fcbbf8f70c" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Admission of women to Harvard Medical School
-                        <unitdate>1942-1943</unitdate>
-                  </unittitle>
+                  <unittitle>Admission of women to Harvard Medical School</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-1943</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8398e2dc7771b0d8c2c008dd4a4bc107"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_d13de7c64d61c2ff134131a37d9cf195"
+                             parent="aspace_8398e2dc7771b0d8c2c008dd4a4bc107"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5ceaaa286ce789ea6c6b8098fe52c578" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Harvard Medical School Admissions Committee
-                        <unitdate>1967-1972</unitdate>
-                  </unittitle>
+                  <unittitle>Harvard Medical School Admissions Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1972"
+                            type="inclusive">1967-1972</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2891489a588374350b010c6938428b5e"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_991c5789331d0c9f9a9c8c74b9eb19b5"
+                             parent="aspace_2891489a588374350b010c6938428b5e"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dfe4952b38d0e6d57758f34aa6f7cc25" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">8</container>
                   <unittitle>Interview for <title render="italic">Dartmouth Magazine</title>
-                     <unitdate>1979, undated</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1979/1979">1979</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_edf2186e1a41d46301ce239b1a3db121"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_d3c63f9b30552b1afd525949c57a28bc"
+                             parent="aspace_edf2186e1a41d46301ce239b1a3db121"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6f7e5d447002f881a3cfb6bfaede0a49" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>"Leaders in American Medicine" <unitdate>1974-1975, undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Leaders in American Medicine"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1974/1975"
+                            type="inclusive">1974-1975</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eb7c63363e310ac6449eb8ae25c7612a"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_c972c674520df1c1c3ec4361c1be8c10"
+                             parent="aspace_eb7c63363e310ac6449eb8ae25c7612a"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_45b2a1b99d22952577bd007e48d7e186" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Miscellaneous correspondence <unitdate>1928-1977, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1928/1977"
+                            type="inclusive">1928-1977</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_08797710f77f4ee677082995ee6125d4"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_452b107012fffc49d87667fa854610b0"
+                             parent="aspace_08797710f77f4ee677082995ee6125d4"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_83365816687d4f795003ed2b466dc509" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle> Re: Joan Critchlow letter <unitdate>1971-1972, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Re: Joan Critchlow letter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1971/1972"
+                            type="inclusive">1971-1972</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4e21240c1ba182003e1828e12d8e0703"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_15bdef33a4f8283f5db6771fa8cff43e"
+                             parent="aspace_4e21240c1ba182003e1828e12d8e0703"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4a31e8578ffc56e20d7edafd692d3a1" level="file">
                <did>
-                  <container type="box" label="mixed materials">975</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Suffolk District Polio Program <unitdate>1962-1964</unitdate>
-                  </unittitle>
+                  <unittitle>Suffolk District Polio Program</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1962/1964"
+                            type="inclusive">1962-1964</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f87d27d36013af1fe00e68a00a9386dc"
+                             label="Mixed Materials [310183630224581]"
+                             type="box">975</container>
+                  <container id="aspace_08dde9afd075d7807d8e75fe58819a78"
+                             parent="aspace_f87d27d36013af1fe00e68a00a9386dc"
+                             type="folder">12</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_67351104b39054f39855f338fa834f30" level="file">
             <did>
-               <container type="box" label="mixed materials">976</container>
                <unittitle>
                   <title render="bold">Committees</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_2ca9604133803ba2f7d592c91db17e67"
+                          label="Mixed Materials [310183630224524]"
+                          type="box">976</container>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_e2223fdf53efe062282443b3f3cde570" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>American College of Physicians <unitdate>1967-1968</unitdate>
-                  </unittitle>
+                  <unittitle>American College of Physicians</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1968"
+                            type="inclusive">1967-1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4a0b9eb90f57ef2d95a93d246cb79617"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_2669b18ffa954ab7b6dad7dd2469a2b2"
+                             parent="aspace_4a0b9eb90f57ef2d95a93d246cb79617"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_abf62869a819a4c912aa13821c78e1ec" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1955-1959</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1959"
+                            type="inclusive">1955-1959</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3e054e79675afc2a65b28701538dcee5"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_2848a7720760ca85460b5a0ebba1b787"
+                             parent="aspace_3e054e79675afc2a65b28701538dcee5"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0eb7588268e2483e8e868179dfb6dfd1" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1958-1960</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1960"
+                            type="inclusive">1958-1960</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_12a4b15588fcb2671765c6fb6aae5c36"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_34ad01c5846bfac5b9924b703e59169b"
+                             parent="aspace_12a4b15588fcb2671765c6fb6aae5c36"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dbd67490b7b03c97f6973f6202e56126" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1959-1960</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1960"
+                            type="inclusive">1959-1960</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2d6d50e6ad0e255f4c883661778b920c"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_ecebada74309edd15ff95aecf66a367d"
+                             parent="aspace_2d6d50e6ad0e255f4c883661778b920c"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_89ef368efc06111a219c128196e76c83" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1960-1961</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f69e84398a8a759a714a3a80cc80130e"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_95f427f381388555e4f1b09194293c4a"
+                             parent="aspace_f69e84398a8a759a714a3a80cc80130e"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4f2dbb6d6ae130d4807e3d5db3bee100" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1961-1962</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/1962"
+                            type="inclusive">1961-1962</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_10105cfb84b6a435f424024fbf57b56a"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_7c5085737f2bf1ecc288aedb015f2a15"
+                             parent="aspace_10105cfb84b6a435f424024fbf57b56a"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_72912950e7486fbbb42e9cc390e8be12" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1964-1965</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1964/1965"
+                            type="inclusive">1964-1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3c50fba2613b1d731e3592a57f9ce6da"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_16b45d244b50d38fce287b8eb1bec6fe"
+                             parent="aspace_3c50fba2613b1d731e3592a57f9ce6da"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_59c33747e2edbf69844cccd5325aafc4" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Board of Counselors: Health and Infirmary Committee
-                        <unitdate>1965-1966</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Counselors: Health and Infirmary Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1966"
+                            type="inclusive">1965-1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_27d81324cb728ad16084d0a551582d93"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_d3079a246a9a253b62ec866344a80ff8"
+                             parent="aspace_27d81324cb728ad16084d0a551582d93"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7c1054e572bed581eb28ae01df79f295" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Massachusetts Medical Censors <unitdate>1956-1964</unitdate>
-                  </unittitle>
+                  <unittitle>Massachusetts Medical Censors</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1956/1964"
+                            type="inclusive">1956-1964</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d927fff6721fc69d6b8ee48227ee5c5a"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_60da7aaa0ca53b5c7ba07a900c4ab2cf"
+                             parent="aspace_d927fff6721fc69d6b8ee48227ee5c5a"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4410931b829eaa7650eed87083af68e8" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Massachusetts Medical Headquarters <unitdate>1960-1965</unitdate>
-                  </unittitle>
+                  <unittitle>Massachusetts Medical Headquarters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1965"
+                            type="inclusive">1960-1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a70f96931bea6f68c326cf93820ecb8e"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_716eb0ff8724cf9f7bbbc49a230a3a73"
+                             parent="aspace_a70f96931bea6f68c326cf93820ecb8e"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_19b4c11c7c5819d1710e19261489d0e2" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Massachusetts Medical Society <unitdate>1932-1965</unitdate>
-                  </unittitle>
+                  <unittitle>Massachusetts Medical Society</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1965"
+                            type="inclusive">1932-1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c1ac174d3eec738e7bb392c5b147c751"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_47f1b610ab571cfc832e6abb2bea6fab"
+                             parent="aspace_c1ac174d3eec738e7bb392c5b147c751"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5887b866d59d7c7bd22ef39aa342df8d" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Suffolk District Medical Society <unitdate>1955-1964</unitdate>
-                  </unittitle>
+                  <unittitle>Suffolk District Medical Society</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1964"
+                            type="inclusive">1955-1964</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9c69b23478b02f763c3cf312f1ff97db"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_ef2b5ac92a95d99d4ae0348bd386d82e"
+                             parent="aspace_9c69b23478b02f763c3cf312f1ff97db"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1bd8097b4d0e2bb4f286d80c3424bd49" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Suffolk District Medical Society <unitdate>1961-1965</unitdate>
-                  </unittitle>
+                  <unittitle>Suffolk District Medical Society</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/1965"
+                            type="inclusive">1961-1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_52b78de6b670a9050ceb509d3604029c"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_d76ca35a9f3c9dbffef6afbcf5f7f531"
+                             parent="aspace_52b78de6b670a9050ceb509d3604029c"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3509a22df60d3b0669818e8b2cbea6b9" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>United Community Services <unitdate>1961-1965</unitdate>
-                  </unittitle>
+                  <unittitle>United Community Services</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/1965"
+                            type="inclusive">1961-1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3fad693fdca61cbd2d1b25f2eb453adb"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_edeb70f55c965b7948a5c3ed72a4074b"
+                             parent="aspace_3fad693fdca61cbd2d1b25f2eb453adb"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1f8b0b8e43b1edc03d0c8cefd89cb414" level="file">
                <did>
-                  <container type="box" label="mixed materials">976</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Publications <unitdate>1934-1969</unitdate>
-                  </unittitle>
+                  <unittitle>Publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1934/1969"
+                            type="inclusive">1934-1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fdee0479492ba6e2d5b08ff976da2151"
+                             label="Mixed Materials [310183630224524]"
+                             type="box">976</container>
+                  <container id="aspace_85374b87dd8309586f6bd33e1a3305b4"
+                             parent="aspace_fdee0479492ba6e2d5b08ff976da2151"
+                             type="folder">15</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

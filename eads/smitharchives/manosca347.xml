@@ -1,527 +1,768 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca347.xml//EN">manosca347</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca347</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Karl Scott Putnam, 1883-1965, Papers,
-               1910-1978</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Karl Scott Putnam Papers <num>CA.MS.00347</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-04">2013-12-04</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 14:47:31 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Putnam, Karl Scott, 1883-1965</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Karl Scott Putnam Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1910-1978</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:02c30958-154c-4900-947e-79638b4c8aca</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">4 boxes</extent>
-            <extent encodinganalog="300$a">(1.7 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of Architecture. Contains
-            correspondence, clippings, notes, publications, syllabi, sketches, and photographs.
-         </abstract>
+         <unittitle>Karl Scott Putnam Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Putnam, Karl Scott, 1883-1965</persname>
+         </origination>
+         <unitid>CA.MS.00347</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.667 linear feet</extent>
+            <extent altrender="carrier">(4 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1910/1978"
+                   type="inclusive">1910-1978</unitdate>
+         <abstract id="aspace_6355207513483e25953091774bacafee">Professor of Architecture. Contains correspondence, clippings, notes, publications, syllabi, sketches, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Karl Scott Putnam was born on April 28, 1883 in Leverett, Massachusetts to Roswell and
-            Sarah Putman. In 1910, Putnam graduated from the University of Pennsylvania with a
-            Bachelors of Science, and attended graduate school at the Columbia University School of
-            Architecture. After graduation, Putnam worked for architectural offices in Boston and
-            New York. He moved to Northampton, Massachusetts in 1913 to begin his own practice.
-            Constructing many homes within the Pioneer Valley, Putnam commonly designed homes within
-            the classical, New England vein. That said, he also designed homes that were considered
-            modern for the time period. Putnam's most famous client was President Calvin Coolidge,
-            as he designed two of his homes. Oliver Carlton, President of the Northampton Historical
-            Society in the 1960s, said Putman's "buildings were always a place for people."
-            Beginning his tenure at Smith College in 1929, Putnam was an associate professor of
-            Architecture until his retirement in 1952. He held the title of Professor Emeritus until
-            his death in 1965. Putnam also taught at the Cambridge School of Architecture, which was
-            purchased by the college under President William Allan Neilson. During his professorship
-            at Smith, Putnam was contracted by the college to design many buildings throughout
-            campus. Included in the buildings he designed for the college are the Quadrangle, the
-            Crew House, the Field House, and Scott Gymnasium. In addition to his work for the
-            college, Putnam was Director of the Northampton Historical Society from 1943-1953, and
-            was President of the New England Architectural Society for a number of years. He also
-            served as a visiting Professor at the University of Massachusetts from 1949-1950. Putnam
-            was married to Mabel (Cratts) Putnam, with whom he had a daughter named Ruth Ann
-            Jackson. Karl Scott Putnam died in 1965 at his home in Northampton, Massachusetts.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Karl Scott Putnam was born on April 28, 1883 in Leverett, Massachusetts to Roswell and Sarah Putman. In 1910, Putnam graduated from the University of Pennsylvania with a Bachelors of Science, and attended graduate school at the Columbia University School of Architecture. After graduation, Putnam worked for architectural offices in Boston and New York. He moved to Northampton, Massachusetts in 1913 to begin his own practice. Constructing many homes within the Pioneer Valley, Putnam commonly designed homes within the classical, New England vein. That said, he also designed homes that were considered modern for the time period. Putnam's most famous client was President Calvin Coolidge, as he designed two of his homes. Oliver Carlton, President of the Northampton Historical Society in the 1960s, said Putman's "buildings were always a place for people." Beginning his tenure at Smith College in 1929, Putnam was an associate professor of Architecture until his retirement in 1952. He held the title of Professor Emeritus until his death in 1965. Putnam also taught at the Cambridge School of Architecture, which was purchased by the college under President William Allan Neilson. During his professorship at Smith, Putnam was contracted by the college to design many buildings throughout campus. Included in the buildings he designed for the college are the Quadrangle, the Crew House, the Field House, and Scott Gymnasium. In addition to his work for the college, Putnam was Director of the Northampton Historical Society from 1943-1953, and was President of the New England Architectural Society for a number of years. He also served as a visiting Professor at the University of Massachusetts from 1949-1950. Putnam was married to Mabel (Cratts) Putnam, with whom he had a daughter named Ruth Ann Jackson. Karl Scott Putnam died in 1965 at his home in Northampton, Massachusetts.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Collection contains correspondence, clippings, obituaries, course materials, notes,
-            publications, and lists of buildings designed by Putnam. Also included in the collection
-            are various building plans, including contracts, estimated costs, sketches, photographs,
-            and details regarding materials used. The collection also contains materials relating to
-            Raymond Putnam, including a song written in honor of his retirement and drawings given
-            to him by Claire Manwell.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection contains correspondence, clippings, obituaries, course materials, notes, publications, and lists of buildings designed by Putnam. Also included in the collection are various building plans, including contracts, estimated costs, sketches, photographs, and details regarding materials used. The collection also contains materials relating to Raymond Putnam, including a song written in honor of his retirement and drawings given to him by Claire Manwell.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Karl Scott Putnam Papers, Box #, Smith College Archives. </p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Karl Scott Putnam Papers, Smith College Archives, CA-MS-00347, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Karl Scott Putnam papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Karl Scott Putnam papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Putnam, Karl Scott, 1883-1965</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_fd863e8bb69243b451a14ef5203fb38a" level="file">
             <did>
-               <container type="box" label="mixed materials">978</container>
                <unittitle>
                   <title render="bold">Biographical Information</title>
                </unittitle>
             </did>
+            <c02 id="aspace_1d090443c622fa0d7c11cad46123bda8" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1978"
+                            type="inclusive">1937-1978</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_61524fc9d9102ea26556d3f0e459368d"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_d60a330584b39049143ad38a4e8a5625"
+                             parent="aspace_61524fc9d9102ea26556d3f0e459368d"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5e36ed912eb42d83eff2db72ca11315b" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1952/1958"
+                            type="inclusive">1952-1958</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb31f472c798f942f70dae4ba1ac302b"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_30c103f976f1e8fbae6920834e31036a"
+                             parent="aspace_cb31f472c798f942f70dae4ba1ac302b"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_22af060bd50eb028eff1cd8e7464280b" level="file">
+               <did>
+                  <unittitle>Obituaries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1966"
+                            type="inclusive">1965-1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_306f52814934bd361a1349e64b0fae51"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_6c36f95ce4f44bbc8277c52fe932f3dc"
+                             parent="aspace_306f52814934bd361a1349e64b0fae51"
+                             type="folder">3</container>
+               </did>
+            </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_47336ba9a9df35cfac90b05bf6e76f8f" level="file">
             <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General <unitdate>1937-1978, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>1952-1958, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Obituaries <unitdate>1965-1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
                <unittitle>
                   <title render="bold">Project Materials</title>
                </unittitle>
             </did>
+            <c02 id="aspace_33aee669fed90c7de12eaa2173b1ebd1" level="file">
+               <did>
+                  <unittitle>Building notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1956/1964"
+                            type="inclusive">1956-1964</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_763764b3e782bcf8fc7ed8f91c07b7b7"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_771149687ebab4f2a7d47329d1cce7b2"
+                             parent="aspace_763764b3e782bcf8fc7ed8f91c07b7b7"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3d563f0e79b175e7b10d443bb27d081e" level="file">
+               <did>
+                  <unittitle>Contract specifications</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_258cc9f5feb875f834bc9c3649205cbc"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_ac2c5cf3eeeb18ef349ffa50119cfe80"
+                             parent="aspace_258cc9f5feb875f834bc9c3649205cbc"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d6d8fa7c43e82e39d8fefd2429f538f0" level="file">
+               <did>
+                  <unittitle>Contract specifications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1963"
+                            type="inclusive">1943-1963</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_422a098ddc24ea1053e71b388e38df43"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_b93e54a239b94e0aa62bf42402e0f7eb"
+                             parent="aspace_422a098ddc24ea1053e71b388e38df43"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_aa9eb6ff350c43858d4ca6e5a4661caa" level="file">
+               <did>
+                  <unittitle>Mitchell house</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93fbde6142e37dda16244e8d41ccd7b0"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_dac2c12277fe2888b12c60de758d3049"
+                             parent="aspace_93fbde6142e37dda16244e8d41ccd7b0"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_80b79b9cfb3d59b0d78f44ecd51a98b3" level="file">
+               <did>
+                  <unittitle>Notes and slide lists</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1944"
+                            type="inclusive">1943-1944</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a44dc02389cc2c8ac1fe3ee3c3137adc"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_fb12fa2bc425738c80e1491664889c4c"
+                             parent="aspace_a44dc02389cc2c8ac1fe3ee3c3137adc"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0ec854905c25e9b5225e0d237598f176" level="file">
+               <did>
+                  <unittitle>Potter house, Route 9</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_67c5e38af5828f8eda7171a2939814f0"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_6b8e8b6e2019c6b877e7c249f1c374eb"
+                             parent="aspace_67c5e38af5828f8eda7171a2939814f0"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_933d16afa30259b87ef57428da2e7c59" level="file">
+               <did>
+                  <unittitle>Sketches</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1c360a42ea0ccc6ba940e9336a080321"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_4f0d24fb74310b7ee47b6906d5fcbcdd"
+                             parent="aspace_1c360a42ea0ccc6ba940e9336a080321"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a46a331000056aea6597bfd67ab6b8b7" level="file">
+               <did>
+                  <unittitle>Misc. notes on useable materials</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1934/1964"
+                            type="inclusive">1934-1964</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f2036dca25cc0184bed60f70fd9f8988"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_bd6c92da9c05db80886292ef6674fdcf"
+                             parent="aspace_f2036dca25cc0184bed60f70fd9f8988"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bad6f3322035ed0696de1fad915ff21c" level="file">
+               <did>
+                  <unittitle>Misc. photos and lists of work projects</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1930/1946"
+                            type="inclusive">1930-1946</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3146171098edbf8368f46063817b03e6"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_ac0609c3b9d4a49bff7eb39bb532221d"
+                             parent="aspace_3146171098edbf8368f46063817b03e6"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_19f921a900cd77bc3f2bebba2a4933b9" level="file">
+               <did>
+                  <unittitle>Raymond Putnam: drawings by Claire Manwell</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca36d039029306bcd7fff5222fc32e3a"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_83fe5e9227b43d67c5fb29ca2b820f44"
+                             parent="aspace_ca36d039029306bcd7fff5222fc32e3a"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_088f6ed13f82bd9fcc652d1d2b2bad9d" level="file">
+               <did>
+                  <unittitle>Raymond Putnam: retirement song</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b0cd8deadb4436186d714bb4420b80c4"
+                             label="Mixed Materials [310183630224466]"
+                             type="box">978</container>
+                  <container id="aspace_cdb533d99d5ffdf42268a72dd87c035a"
+                             parent="aspace_b0cd8deadb4436186d714bb4420b80c4"
+                             type="folder">14</container>
+               </did>
+            </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7cb2191122566c24e78206e415d0a056" level="file">
             <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Building notes <unitdate>1956-1964, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Contract specifications <unitdate>1922</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Contract specifications <unitdate>1943-1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Mitchell house <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Notes and slide lists <unitdate>1943-1944, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Potter house, Route 9 <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Sketches <unitdate>1960, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Misc. notes on useable materials <unitdate>1934-1964, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Misc. photos and lists of work projects <unitdate>ca. 1930-1946,
-                     undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Raymond Putnam: drawings by Claire Manwell <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">978</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Raymond Putnam: retirement song <unitdate>1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
                <unittitle>
                   <title render="bold">Course Notes</title>
                </unittitle>
             </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>1940s, 1950s, 1960s,1970s up to Centennial (1975)
-                     <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>19th Century England <unitdate>1954, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>America: 18th Century/ Late Georgian <unitdate>1932, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>America: South Carolina, North Carolina, Virginia, Maryland, D.C.
-                     <unitdate>1910, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>American Art 77 <unitdate>c.a. 1940, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>American Bulfrinch, Shranguin, Benjamin, Blesserman <unitdate>1931,
-                     undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Art 12 (Sem. 1)-Key <unitdate>1939-1940</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Art 12 (Sem. 1)-Key <unitdate>1940-1941</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Art 12 (Sem. 2)-Key <unitdate>1940-1941</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Art 22 (1800s) <unitdate>1936-1946, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">979</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Art 22 (Early Christian Art and Architecture) <unitdate>1921-1940,
-                     undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Art 22 (Sem. 1)-Key <unitdate>1936-1937</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Art 22 (Sem. 2) <unitdate>1936-1937</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Byzantine <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Classical Revival <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Colonial and Queen Anne Restoration <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>English: Medieval <unitdate>1934-1951, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>French Medieval Art <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>French Renaissance <unitdate>1935-1940, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">980</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>German Medieval Art <unitdate>1936, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Germany: Modern Architecture <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Gothic Revival in England 18th Century Costumes
-                     <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Greece <unitdate>1934, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Medieval and Gothic Architecture, Gothic Tradition in America
-                     <unitdate>1931-1940, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Principles of Architecture <unitdate>1942-1948</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Renaissance Italy <unitdate>1929-1939, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Rome <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Unlabeled course notes <unitdate>1935-1942, undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">981</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Miscellaneous class notes <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
+            <c02 id="aspace_22e0a95c58bdbe885e29deff4e340779" level="file">
+               <did>
+                  <unittitle>1940s, 1950s, 1960s,1970s up to Centennial (1975)</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e4a7f8f8bd5b82c0a5b821319a1a1d3e"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_49a09c7fe2253845ba03b86269981f70"
+                             parent="aspace_e4a7f8f8bd5b82c0a5b821319a1a1d3e"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cb8e778f3cd20eef872d247720f5c9ee" level="file">
+               <did>
+                  <unittitle>19th Century England</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30426d18ede405ab43aa7cb4780a152a"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_8b825f6f77b433adb199aebe117c09fb"
+                             parent="aspace_30426d18ede405ab43aa7cb4780a152a"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d32415a98f570c983728f012396da79a" level="file">
+               <did>
+                  <unittitle>America: 18th Century/ Late Georgian</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ef73e053b2ca9194a13640fb0dd40f5c"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_da3ea3f8e9e602655ee2f97505531d85"
+                             parent="aspace_ef73e053b2ca9194a13640fb0dd40f5c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1cf831d2cc6d81b166ec37217c3b7043" level="file">
+               <did>
+                  <unittitle>America: South Carolina, North Carolina, Virginia, Maryland, D.C.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_34b236b1abd58d5c4309f8e14693bc91"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_3bbe15e583b30ef79bb06f42d0490c98"
+                             parent="aspace_34b236b1abd58d5c4309f8e14693bc91"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_190c2057b8e351702b0c3e1fec4c351e" level="file">
+               <did>
+                  <unittitle>American Art 77</unittitle>
+                  <unitdate calendar="gregorian" certainty="approximate" era="ce">a. 1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d6d76a1e10ebc39477d550cfca4a1750"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_073c383fbba41d6db057236db11347fb"
+                             parent="aspace_d6d76a1e10ebc39477d550cfca4a1750"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cc122efa2aa840f3f777e0c269e1dd69" level="file">
+               <did>
+                  <unittitle>American Bulfrinch, Shranguin, Benjamin, Blesserman</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7757fec817fa75eba32de1f29c2e45ea"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_f75f83372a8226a7742ff5b3b029d509"
+                             parent="aspace_7757fec817fa75eba32de1f29c2e45ea"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f26fa5daac7592193150157c00a5ef6f" level="file">
+               <did>
+                  <unittitle>Art 12 (Sem. 1)-Key</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1940"
+                            type="inclusive">1939-1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8da376a8552e98431cabe092793864de"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_d133c9b7dfdd6c3a7e7624492d684c88"
+                             parent="aspace_8da376a8552e98431cabe092793864de"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a3bc56521405c694510f61c4ea3dbca7" level="file">
+               <did>
+                  <unittitle>Art 12 (Sem. 1)-Key</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1940/1941"
+                            type="inclusive">1940-1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b875a877261dbfa12fcf14e58e9507e5"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_434247f017e83d89ee38c82d6a7cdff7"
+                             parent="aspace_b875a877261dbfa12fcf14e58e9507e5"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_70d40bbc27fa7eb10af6d2d12d618c03" level="file">
+               <did>
+                  <unittitle>Art 12 (Sem. 2)-Key</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1940/1941"
+                            type="inclusive">1940-1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca3056cf1aa03704db07e336a7a32f30"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_f487283d9960abddbc299c05456b91ca"
+                             parent="aspace_ca3056cf1aa03704db07e336a7a32f30"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f1bf96588a801ba395a41903567c466b" level="file">
+               <did>
+                  <unittitle>Art 22 (1800s)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1936/1946"
+                            type="inclusive">1936-1946</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_556ac2a2a58e71f6e071371bee9feb38"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_8d739d13a2fb411589fc716f3d5e630a"
+                             parent="aspace_556ac2a2a58e71f6e071371bee9feb38"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a2142876ecbc0947341980b135a0fa1f" level="file">
+               <did>
+                  <unittitle>Art 22 (Early Christian Art and Architecture)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1921/1940"
+                            type="inclusive">1921-1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e48c975ede53a20e46ef3015080d404c"
+                             label="Mixed Materials [310183630224409]"
+                             type="box">979</container>
+                  <container id="aspace_649a9dfe42aff95535ee5577b8106a93"
+                             parent="aspace_e48c975ede53a20e46ef3015080d404c"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9aa858ebab873c0f27b35881cc18dbc1" level="file">
+               <did>
+                  <unittitle>Art 22 (Sem. 1)-Key</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1936/1937"
+                            type="inclusive">1936-1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_63bfa4b580e01216377b21595221bc63"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_4358f2b781b53763f0a47aff646d125a"
+                             parent="aspace_63bfa4b580e01216377b21595221bc63"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2aecbe80e38e79efc0ae3e7c7155efa5" level="file">
+               <did>
+                  <unittitle>Art 22 (Sem. 2)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1936/1937"
+                            type="inclusive">1936-1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca3f853daf3c129aefd047af211c08bd"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_1aa70c9802faa04ca91fdf7de83962a9"
+                             parent="aspace_ca3f853daf3c129aefd047af211c08bd"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_234006a50c733448d43c1299b8a489b7" level="file">
+               <did>
+                  <unittitle>Byzantine</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1be259b12675abe852b01a7397325ff"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_2f313dc9dc12c877b73c0ea52d36317a"
+                             parent="aspace_f1be259b12675abe852b01a7397325ff"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b779ab102ae106c7b47ba241c235530e" level="file">
+               <did>
+                  <unittitle>Classical Revival</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d4b976bb5167f92c4fe5ba8366122043"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_996b2f99f19fce20fe20263c10fefa47"
+                             parent="aspace_d4b976bb5167f92c4fe5ba8366122043"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0033ba3f72f752a7e407707d2db7143d" level="file">
+               <did>
+                  <unittitle>Colonial and Queen Anne Restoration</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_99652c859d4af387795ae4c0323625b1"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_87eddb581e44c1acc69ced232363e403"
+                             parent="aspace_99652c859d4af387795ae4c0323625b1"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9011919b031d00db8a8d33ed10b8f8e4" level="file">
+               <did>
+                  <unittitle>English: Medieval</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1934/1951"
+                            type="inclusive">1934-1951</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b9dbc5373743b622b4644dae65e3e06"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_adfaf5081a12d785812852776f064fb7"
+                             parent="aspace_3b9dbc5373743b622b4644dae65e3e06"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_940fd445014c4ac3282d11f9a88644c2" level="file">
+               <did>
+                  <unittitle>French Medieval Art</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_51cbaa7dc210dda90d022e9a0e87a887"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_1c29d8f22e3443a8b004ae116ca3ae39"
+                             parent="aspace_51cbaa7dc210dda90d022e9a0e87a887"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1ce0802c85c12a4aa6c6ba88f86d7ed8" level="file">
+               <did>
+                  <unittitle>French Renaissance</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1940"
+                            type="inclusive">1935-1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c452a8d271a6b20792708a84770105cd"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_255f470a9f314e077a258113111fb6bd"
+                             parent="aspace_c452a8d271a6b20792708a84770105cd"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_aaa7a94f1921ab7d35fff44a3248e660" level="file">
+               <did>
+                  <unittitle>German Medieval Art</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ce894a2234a82b609718e71b4c1f2c26"
+                             label="Mixed Materials [310183630224342]"
+                             type="box">980</container>
+                  <container id="aspace_7debb8ad6c138d16df76bf5f601f8721"
+                             parent="aspace_ce894a2234a82b609718e71b4c1f2c26"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2c308f61ce2aacb77f743bfbccd4f09d" level="file">
+               <did>
+                  <unittitle>Germany: Modern Architecture</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_63b709ad7547e1b49d224dcbd59c4b4b"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_c858ba8e7dc67b1e29f4db6a7d672064"
+                             parent="aspace_63b709ad7547e1b49d224dcbd59c4b4b"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_846b813503d0f7f44ae548bafede6fa1" level="file">
+               <did>
+                  <unittitle>Gothic Revival in England 18th Century Costumes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5c5d0cf09eee155dda31c2107808ec6a"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_58338523a2d1e6340c060af184bcaa6c"
+                             parent="aspace_5c5d0cf09eee155dda31c2107808ec6a"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_22f41d7a943d5ecd3f0ceaa44205a97c" level="file">
+               <did>
+                  <unittitle>Greece</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30e4b0a25cff4fe85180e22c0bd78bdc"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_1048237ae1c93bdc7b88ef09fca1d0d6"
+                             parent="aspace_30e4b0a25cff4fe85180e22c0bd78bdc"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f58d7ea35bb40c4380f95f5b143e4fc5" level="file">
+               <did>
+                  <unittitle>Medieval and Gothic Architecture, Gothic Tradition in America</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1931/1940"
+                            type="inclusive">1931-1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c30a35130c28343f2b4cb98dd33d3f0f"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_c9fe86bbf7d5f15d03d23b00e2d8d01b"
+                             parent="aspace_c30a35130c28343f2b4cb98dd33d3f0f"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fbe6da352303e0c2777fc292d7565f3d" level="file">
+               <did>
+                  <unittitle>Principles of Architecture</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1948"
+                            type="inclusive">1942-1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_467e425f5c13a8a3e1377d6255514263"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_8bdec51a41c74e68860b749a06393fbb"
+                             parent="aspace_467e425f5c13a8a3e1377d6255514263"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f00ddc417199e93e56b32530fe426898" level="file">
+               <did>
+                  <unittitle>Renaissance Italy</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1929/1939"
+                            type="inclusive">1929-1939</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1bf2b8f3fac9085e817e9e5267aa5f3c"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_419477f201e4ae77d0e13c6a07ea3a25"
+                             parent="aspace_1bf2b8f3fac9085e817e9e5267aa5f3c"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_093032d901bcfb2a0fc18bf2b19c9764" level="file">
+               <did>
+                  <unittitle>Rome</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_766d50d49323f3240983a8e9155ceaaf"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_e733609fa31747c1d18183920b7b7267"
+                             parent="aspace_766d50d49323f3240983a8e9155ceaaf"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6cbbd1d5fde8975fb662d2b3e758b628" level="file">
+               <did>
+                  <unittitle>Unlabeled course notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1942"
+                            type="inclusive">1935-1942</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae120a47dfb5683bfd274af39e5e7bff"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_330731263529a23fcf6e67f9ca6c67c0"
+                             parent="aspace_ae120a47dfb5683bfd274af39e5e7bff"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_41f08b1360b5407aab23fcdfb4105464" level="file">
+               <did>
+                  <unittitle>Miscellaneous class notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2958d5c2801c173e759e981e28e69f69"
+                             label="Mixed Materials [310183630224284]"
+                             type="box">981</container>
+                  <container id="aspace_d1f967378ff7c3d1b140df9809db7811"
+                             parent="aspace_2958d5c2801c173e759e981e28e69f69"
+                             type="folder">9</container>
+               </did>
+            </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

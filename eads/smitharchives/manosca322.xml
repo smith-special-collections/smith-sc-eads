@@ -1,281 +1,357 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca322.xml//EN">manosca322</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca322</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Louise Rood Papers, 1937-1983</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jeanne Lowrey.</author>
-
+            <titleproper>Finding aid to the Louise Rood Papers <num>CA.MS.00322</num>
+            </titleproper>
+            <author>Finding aid prepared by Jeanne Lowrey.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-10-21">2013-10-21</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-12 15:15:37 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Rood, Louise, 1910-1964</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Louise Rood Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1937-1983</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:827e70e2-70d6-4e6b-be98-a12d99672b4c</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(0.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Instructor of music 1937-1958,
-            Professor of Music 1958-1964. Contains biographical information, photographs,
-            correspondence, sheet music, and lecture notes. </abstract>
+         <unittitle>Louise Rood Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Rood, Louise, 1910-1964</persname>
+         </origination>
+         <unitid>CA.MS.00322</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1937/1983"
+                   type="inclusive">1937-1983</unitdate>
+         <abstract id="aspace_23a7e92ba57d4455ce2eed414e7b04d8">Instructor of music 1937-1958, Professor of Music 1958-1964. Contains biographical information, photographs, correspondence, sheet music, and lecture notes.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> Louise Miles Rood was born in 1910 to James and Myrtle Merrill Rood in Easton,
-            Pennsylvania. She obtained her bachelor degree in 1929 from the University of Wisconsin.
-            Around 1934, Rood taught for three years at Sweet Briar College on a Julliard Extension
-            Fellowship. In 1937 Rood was hired as an instructor of music at Smith. While teaching
-            full time, she completed her master degree in 1942 at Smith College. In 1945, she
-            received a diploma from the Julliard Graduate School of Music.</p>
-
-         <p>Rood taught a wide range of musical subjects, from theory to practical, focusing on the
-            violin and the viola. She performed as a soloist with Smith groups and elsewhere around
-            New England and the Midwest. Rood also wrote the book Introduction to the Orchestra
-            Score. During many summers, Rood taught sessions at the University of Iowa, the
-            University of Michigan, and Mary Washington College. In 1958, she became a professor at
-            Smith.</p>
-
-         <p>Rood died suddenly of a cerebral hemorrhage on February 7, 1964. Following her death,
-            the annual Louise Rood Memorial Concert was established in her honor.</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Louise Miles Rood was born in 1910 to James and Myrtle Merrill Rood in Easton, Pennsylvania. She obtained her bachelor degree in 1929 from the University of Wisconsin. Around 1934, Rood taught for three years at Sweet Briar College on a Julliard Extension Fellowship. In 1937 Rood was hired as an instructor of music at Smith. While teaching full time, she completed her master degree in 1942 at Smith College. In 1945, she received a diploma from the Julliard Graduate School of Music.</p>
+         <p> Rood taught a wide range of musical subjects, from theory to practical, focusing on the violin and the viola. She performed as a soloist with Smith groups and elsewhere around New England and the Midwest. Rood also wrote the book Introduction to the Orchestra Score. During many summers, Rood taught sessions at the University of Iowa, the University of Michigan, and Mary Washington College. In 1958, she became a professor at Smith.</p>
+         <p> Rood died suddenly of a cerebral hemorrhage on February 7, 1964. Following her death, the annual Louise Rood Memorial Concert was established in her honor.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Contains biographical information, photographs, correspondence, sheet music, and lecture
-            notes covering Rood's career as a faculty member at Smith College and as a performing
-            musician.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Contains biographical information, photographs, correspondence, sheet music, and lecture notes covering Rood's career as a faculty member at Smith College and as a performing musician.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Louise Rood Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Louise Rood Papers, Smith College Archives, CA-MS-00322, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Louise Rood papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Louise Rood papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Rood, Louise, 1910-1964</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_c3a918639fa18d66b61a69297a64d670" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical Materials <unitdate>1948-1983, undated</unitdate>
-               </unittitle>
+               <unittitle>Biographical Materials</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1948/1983"
+                         type="inclusive">1948-1983</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_78b150b9f92d0a9cf22e56caeec73ade"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_cae51be7ea9c4e83d81f1a5f70e79ff2"
+                          parent="aspace_78b150b9f92d0a9cf22e56caeec73ade"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3e034a60b9cd81dca987246b343e937b" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>1943-1964, undated</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1943/1964"
+                         type="inclusive">1943-1964</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_f29ccf930a08fbec661781b65cad30ed"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_61e46b4592edb78d4822b88ebe4c8345"
+                          parent="aspace_f29ccf930a08fbec661781b65cad30ed"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b8327d6c2a48e152d968a648d35ed2d8" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Lecture Notes: Counterpoint <unitdate>1955-1957, undated</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Counterpoint</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1957"
+                         type="inclusive">1955-1957</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e74581e5768ab68ecc5eef7426d273a3"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_d515acc5be727646c6753bfa7d600901"
+                          parent="aspace_e74581e5768ab68ecc5eef7426d273a3"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0452a4120f1e6aa6b2539f8c9e3cfa37" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Lecture Notes: Music 22 <unitdate>1950-1958, undated</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Music 22</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1958"
+                         type="inclusive">1950-1958</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_ba48aefe83059eeef29b83076acfd17a"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_f43cda7a936168cd76ab5a09d5429f80"
+                          parent="aspace_ba48aefe83059eeef29b83076acfd17a"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_29791a28f1ece3bf20d6ee6741879e3a" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Lecture Notes: Music 23 <unitdate>1947</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Music 23</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_a33894c896e292f72c38c06670b61dbb"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_505ab1badee276b3ad42151090b3f219"
+                          parent="aspace_a33894c896e292f72c38c06670b61dbb"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1fab6dec6414c7686e9c42c992524174" level="file">
             <did>
-               <container type="box" label="mixed materials">990</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lecture Notes: Music 31a <unitdate>1954-1955</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Music 31a</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1954/1955"
+                         type="inclusive">1954-1955</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_b290c68b5702a40c6b245924a0304c55"
+                          label="Mixed Materials [310183630223963]"
+                          type="box">990</container>
+               <container id="aspace_33effdb2458ec52d44659ce7a6de900f"
+                          parent="aspace_b290c68b5702a40c6b245924a0304c55"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ccac4197cce4da9034e3568962f29e10" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lecture Notes: Music 35a <unitdate>1946</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Music 35a</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e7a36494cca2b27b289c02565df5a4e"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_e6eb1ad560b6f35dccefc068a1933fdd"
+                          parent="aspace_1e7a36494cca2b27b289c02565df5a4e"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_faa7368b6cfdb51039f21cd8ee35378b" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Lecture Notes: Music 35 <unitdate>1947</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Music 35</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b022f0adb61905aa31639751aaee9845"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_c09a1ebb958b39060a029cec6f8fb75e"
+                          parent="aspace_b022f0adb61905aa31639751aaee9845"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c071ce35e850bd53f776e9af1dc58cb9" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Lecture Notes: Orchestration - The Instruments <unitdate>1956-1958,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Lecture Notes: Orchestration - The Instruments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1958"
+                         type="inclusive">1956-1958</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1bd74cffc0ab83e5be6e1fa9056df551"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_970709e8b4e334347221186c07a94a94"
+                          parent="aspace_1bd74cffc0ab83e5be6e1fa9056df551"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_09ba47be67700cadf4f657e9773c9dbc" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Notes on 17th Century <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Notes on 17th Century</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_155b4a116a302bfe6f8e4a63627e724a"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_58467a7aefefa63581f8a29c57367925"
+                          parent="aspace_155b4a116a302bfe6f8e4a63627e724a"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fa34dd670c84f29c8bd62896dc092c8d" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Notes on Giovanni Battista Vitali <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Notes on Giovanni Battista Vitali</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3f30b2ee769d576bf4ef560e604111ec"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_f0459662e70010d36d2f5f31fd76c4d8"
+                          parent="aspace_3f30b2ee769d576bf4ef560e604111ec"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b60df72fc0b1bff1c8d1a5063ba21528" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Notes on Ornamentation <unitdate>1959</unitdate>
-               </unittitle>
+               <unittitle>Notes on Ornamentation</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1880b037c2c89f027747501dd9971381"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_d3891e7bf809f7e7b91ea804bfb6638f"
+                          parent="aspace_1880b037c2c89f027747501dd9971381"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0e09ff45a6a675c8f3cbc5865451f6c1" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Violin Notes <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Violin Notes</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a640a28f917997e36c8dbd5f82c1acd3"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_5bbc991ae4c493549cd0208336a56ba7"
+                          parent="aspace_a640a28f917997e36c8dbd5f82c1acd3"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a12e55b524105388e0f480cf1debc727" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Miscellaneous Notes <unitdate>1951-1956, undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous Notes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1951/1956"
+                         type="inclusive">1951-1956</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_806dd79f858b9b906bc5a9c29d8fa767"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_f12643d43851e8aeb7e09cc0cb302e1f"
+                          parent="aspace_806dd79f858b9b906bc5a9c29d8fa767"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9e12f4d8dcb7b1a89913001b47f0e37d" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Miscellaneous: Asher on the Horn - Ed London <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous: Asher on the Horn - Ed London</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5cceaf039f4dfb9792fb4dac73732ba7"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_e0148eb6b8dc4f3f9b91981019aa89f7"
+                          parent="aspace_5cceaf039f4dfb9792fb4dac73732ba7"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3cd1bd5f4349ad63e208c567ac7151a6" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Sheet Music <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Sheet Music</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c1f2ee4b1f24bc0d4d3bea64b46ea311"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_8d81b8d47f3e937e3988ab0411afa52f"
+                          parent="aspace_c1f2ee4b1f24bc0d4d3bea64b46ea311"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d537b77bc93c83f2c6dbfba1c114b106" level="file">
             <did>
-               <container type="box" label="mixed materials">991</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Photographs <unitdate>1952-1953, undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1953"
+                         type="inclusive">1952-1953</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c1f26947ddee30a9f3d04902a1640f67"
+                          label="Mixed Materials [310183630224615]"
+                          type="box">991</container>
+               <container id="aspace_d9e81965ea32c399e8278141c354892b"
+                          parent="aspace_c1f26947ddee30a9f3d04902a1640f67"
+                          type="folder">17</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
