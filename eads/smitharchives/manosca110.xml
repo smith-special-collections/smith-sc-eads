@@ -1,600 +1,817 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca110.xml//EN">manosca110</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Special Days A-Z Files, 1884-[ongoing] </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Christine Merrill.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Laura Cutter. <date>2003-06-10</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca110 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Special Days A-Z Files, 1884-[ongoing] </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 80 </num>
-            <author>Christine Merrill </author>
-            <date>2002 </date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="100" source="lcnaf">Smith College.</corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Special Days A-Z Files</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1884-[ongoing]</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 80 UUID:421b6160-1705-4884-bd7f-c92714ca8210</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">2 boxes</extent>
-                <extent encodinganalog="300$a">(.75 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">The records of the Special Days vary
-                in their coverage of events. For some special days the only recognition of its
-                existence is the presence of the folders. However, other folders contain records of
-                the special day's beginnings on campus. The Valentine's Day and Thanksgiving Day
-                folders contain information about past celebrations with newspaper clippings and
-                reports, photographs, and memorabilia. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p> As an institution Smith College has many traditions, some with history since its
-                inception. One of the earliest special days celebrated at Smith College was Ivy Day.
-                Still celebrated, Ivy Day is a day in which departing seniors plant ivy cuts on the
-                Smith grounds, symbolizing their seed of knowledge, in hopes that it will flourish.
-                Today, cuts are taken from vines around campus and given to first-year students in
-                anticipation of their own Ivy Day celebration. </p>
-            <p> Many of those traditions include Special Day celebrations for students, staff,
-                faculty, and parents. Included in the Special Days boxes are the Father's Day
-                folders containing programs, POPS! concert programs, photographs, letters, and
-                newspaper clippings. The change from Father's Weekend to Parent's Weekend and then
-                Family Weekend is documented with the information contained in these folders. </p>
-            <p> Halloween, Thanksgiving, Easter, Float Night are special days included within the
-                folders. And the repertoire of special days continues to grow as Smith College adds
-                new special day traditions to its old ones: Celebration of Sisterhood and Otelia
-                Cromwell Day. Each celebration seeks to acknowledge and diversify, celebrating what
-                is present and what is to come. Smith College, having a history of celebrating,
-                embracing, renewing and creating traditions, will carry several of them into the
-                future and create several more.</p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p> The degree to which folders contain information varies. For some special days the
-                only recognition of its existence is the presence of the folders, perhaps containing
-                as little as a single photograph or a single event program. In such case, the
-                Sophian may be a good place to look for further information.</p>
-            <p> However, other folders contain records of the special day's beginnings on campus.
-                The Valentine's Day and Thanksgiving Day folders contain information about past
-                celebrations with newspaper clippings and reports, photographs, and memorabilia. In
-                general, information for present day special day celebrations is not as complete as
-                those of earlier celebratory years. For instance, though the Celebration of
-                Sisterhood still takes place, the documents contain information for only 2 years.
-                Similarly, Float Night is a continued Tradition that is documented for only 2
-                individual years. Additional files on Float Night are available in 80. Athletics
-                Records.</p>
-            <p> The folders are arranged alphabetically. Two special days, Christmas and Mountain
-                Day have their own boxes. These have separate finding aids.</p>
-        </scopecontent>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>The records are open to public research according to the regulations of the
-                        Smith College Archives. </p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        or quote from the documents must be obtained from the Smith College
-                        Archives. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Special Days A-Z Files, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The Special Days files were collected over time by the Smith College
-                        Archives. </p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Christine Merrill.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and
-                customs.</corpname>
-            <subject encodinganalog="650" source="lcsh">Women college
-                students--Massachusetts--Northampton--Social life and customs.</subject>
-        </controlaccess>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Africa Day <unitdate>1994</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>All College Picnic <unitdate>1986-1994</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>April Fool's Day <unitdate>1981</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Armistice Day <unitdate>1935-1940</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Celebration of Sisterhood <unitdate>1993-1995</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Commencement, general <unitdate>1896-1987</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Convocation, Barbara Bush recieves Honorary Degree
-                            <unitdate>1989</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Easter <unitdate>1889-1952</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Environmental Events <unitdate>1968-1970</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Family Weekend <unitdate>1992-2000</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Fathers Weekend, implementation <unitdate>1949</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1952</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1953</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1954</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1955</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1956</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1957</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1958</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1959</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1960</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1961</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1962</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1963</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1964</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1965</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1966</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1967</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1968</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1969</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1970</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1971</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1972</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend <unitdate>1973</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Father's Weekend Miscellaneous Photographs
-                            <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Float Night <unitdate>1952-1998</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3079</container>
-                    <unittitle>Freshman Day <unitdate>1967-1982</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Halloween <unitdate>1890-1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Halloween Photographs <unitdate>1888-1994</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Harvest Weekend <unitdate>1979-1989</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Homecoming <unitdate>1990-1992</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Hoop Rolling <unitdate>1914</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Illumination <unitdate>1995-1996</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Ivy Day <unitdate>1884-1984</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>May Day <unitdate>1884-1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Memorial Day <unitdate>1882-1940</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>No Diet Day <unitdate>1994</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Octoberfest <unitdate>1994-1995</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Opening Convocation (September), All College Meeting (January)
-                            <unitdate>1949</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Otelia Cromwell Day <unitdate>1989-2002</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Parent's Weekend <unitdate>1974-1991</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Pre College Day <unitdate>1967-1970</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Sophomore Carnival <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Spirit Week <unitdate>1982</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Spring Weekend <unitdate>1988</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Thanksgiving <unitdate>1880-1942</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Turkey Trot <unitdate>1987</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Valentine's Day <unitdate>1895-1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Week of Prayer <unitdate>1916</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Winter Weekend <unitdate>1987-1992</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Women's Week <unitdate>1982-1985</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3080</container>
-                    <unittitle>Women's Weekend <unitdate>1972-1980</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca110</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Special Days A-Z records <num>CA.MS.00110</num>
+            </titleproper>
+            <author>Christine Merrill</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 14:34:48 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca110 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Special Days A-Z records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College.</corpname>
+         </origination>
+         <unitid>CA.MS.00110</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.042 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1880/2002"
+                   type="inclusive">1880-2002</unitdate>
+         <abstract id="aspace_15c68f8bdc7b8fb718ad17cfe44362d8">The records of the Special Days vary in their coverage of events. For some special days the only recognition of its existence is the presence of the folders. However, other folders contain records of the special day's beginnings on campus. The Valentine's Day and Thanksgiving Day folders contain information about past celebrations with newspaper clippings and reports, photographs, and memorabilia.</abstract>
+      </did>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown</p>  
+      </acqinfo>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>As an institution Smith College has many traditions, some with history since its inception. One of the earliest special days celebrated at Smith College was Ivy Day. Still celebrated, Ivy Day is a day in which departing seniors plant ivy cuts on the Smith grounds, symbolizing their seed of knowledge, in hopes that it will flourish. Today, cuts are taken from vines around campus and given to first-year students in anticipation of their own Ivy Day celebration. </p>
+         <p>  Many of those traditions include Special Day celebrations for students, staff, faculty, and parents. Included in the Special Days boxes are the Father's Day folders containing programs, POPS! concert programs, photographs, letters, and newspaper clippings. The change from Father's Weekend to Parent's Weekend and then Family Weekend is documented with the information contained in these folders. </p>
+         <p>  Halloween, Thanksgiving, Easter, Float Night are special days included within the folders. And the repertoire of special days continues to grow as Smith College adds new special day traditions to its old ones: Celebration of Sisterhood and Otelia Cromwell Day. Each celebration seeks to acknowledge and diversify, celebrating what is present and what is to come. Smith College, having a history of celebrating, embracing, renewing and creating traditions, will carry several of them into the future and create several more.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Special Days A-Z Files, Box #, Smith College Archives, CA-MS-00110, Smith College Special Collections, Smith College Archives, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Christine Merrill.</p>  
+      </processinfo>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The degree to which folders contain information varies. For some special days the only recognition of its existence is the presence of the folders, perhaps containing as little as a single photograph or a single event program. In such case, the Sophian may be a good place to look for further information.</p>
+         <p>  However, other folders contain records of the special day's beginnings on campus. The Valentine's Day and Thanksgiving Day folders contain information about past celebrations with newspaper clippings and reports, photographs, and memorabilia. In general, information for present day special day celebrations is not as complete as those of earlier celebratory years. For instance, though the Celebration of Sisterhood still takes place, the documents contain information for only 2 years. Similarly, Float Night is a continued Tradition that is documented for only 2 individual years. Additional files on Float Night are available in 80. Athletics Records.</p>
+         <p>  The folders are arranged alphabetically. Two special days, Christmas and Mountain Day have their own boxes. These have separate finding aids.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Women college students--Massachusetts--Northampton--Social life and customs.</subject>
+         <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Students--Social life and customs.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_38f742ca42cab9397cf19ef060f29c95" level="file">
+            <did>
+               <unittitle>Africa Day</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ae79e7c9ffa4653b958397267411f5a3"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e19629db42d17a190a005a2fbe0346c9" level="file">
+            <did>
+               <unittitle>All College Picnic</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1986/1994"
+                         type="inclusive">1986-1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_868e37be263a8143996f314a5551c6de"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a5fbcae5963e2618eb16220eb4500694" level="file">
+            <did>
+               <unittitle>April Fool's Day</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1981/1981">1981</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3c3e3c39ec995c310183d4d2d760f808"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ecce1053553e353a45293241ad2e1d3d" level="file">
+            <did>
+               <unittitle>Armistice Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1935/1940"
+                         type="inclusive">1935-1940</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cf786f6260cf30bb65d612eef20f54ba"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f8fd18f2d09a7773cecd54d379cfa657" level="file">
+            <did>
+               <unittitle>Celebration of Sisterhood</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1995"
+                         type="inclusive">1993-1995</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e939cfb0932dc5423ef697e51eb45ff"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b22dd2182187b84ba06d50b134ad9119" level="file">
+            <did>
+               <unittitle>Commencement, general</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1896/1987"
+                         type="inclusive">1896-1987</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6378194ed389cd2592d15121ad669ea3"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f3466e18a15f506d11c85e1b4a35c8ed" level="file">
+            <did>
+               <unittitle>Convocation, Barbara Bush recieves Honorary Degree</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1989/1989">1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6cac27f34563264f3e43be2c8a170129"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3f651032c10d1ac8c1dc8f8bb99bde34" level="file">
+            <did>
+               <unittitle>Easter</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1889/1952"
+                         type="inclusive">1889-1952</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_89c72b7a4099864c3524de19e4259a05"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d98e2c166591695c03deff8776697139" level="file">
+            <did>
+               <unittitle>Environmental Events</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1970"
+                         type="inclusive">1968-1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9c23a8492f799bce67c77fa4c0d3b8c6"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fa5ec2cf489fcad27e8480f0dbd676e5" level="file">
+            <did>
+               <unittitle>Family Weekend</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/2000"
+                         type="inclusive">1992-2000</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_521c6bd2e83f76256d99ada06c4ee054"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6fa7753ae58d1451097cb82f262399ad" level="file">
+            <did>
+               <unittitle>Fathers Weekend, implementation</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f6642ba3524994305e0c82e20ab7beb3"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1647dab4c6cef5e2d2aeecf5486582a3" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_de761b41081f8854246ad8047cff357b"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_40c524fcc6faa8d5f2aec9e48acfb511" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9efa725834ab05ef2e16a0b58e07f95e"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6d5c65d3ad32a77101e13d5863419923" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1953/1953">1953</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e7e32bf1d863a392d3a0afa6ee340dfa"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cb49302eca574602fa73e7f8861698e6" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e3f7bf4bdc5b905f91ba2b3b35970b2b"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8c9f587818b6d6cdafe40ad0986c21ce" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9c88b8ecb05eeea59586b84feb870837"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e95959ccdddc75f448668a64bae7c112" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1956/1956">1956</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_35f1a67d98c176d7ff5863c5498d6ec4"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_efa8e8764ef9f124657b8c4413823b5c" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b387419738fd502137b407224d9a4fce"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_01d6243b0dc1d2d7d85fb6b9d0c0564f" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f3ad66aaea3510292fbaddd16e637b28"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_31037e7eac3984f0d601ddc7885dfef3" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_830027b928e6afe403a526687ce011fe"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2c2c0690c05b13c1cb94c53669202fe1" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1d858ac170dbb345c7c1514758e1f3b4"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3b5ecbeca36e8d628c7866fb129a31dd" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a02e10fd91d84fa3dca952bcabaf32ad"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3d43ec3dc2b93e6838977ad074f23ad7" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e322d75251e8f648ecbd3f80f9f1ac70"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_44e1e0b30d1588acda870925b3aa378b" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2df75af8209faeaa6c4170150847a3f6"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4fb826fae5eed48ea471fd8e44d2e04e" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1964/1964">1964</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_db0778afa27a4ec27231ccb40c29866f"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_47a129709d9c546e50fac2da9dac28c5" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_710dbf742ea40a8b7d0a4d020f811ad5"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ffd67ce01ae1238e9c5d17573b59d545" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_673d245c41f02fecd64ae6dd671df4cd"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_89cf48b10169919bda1808b641fb0f55" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bba1fe088e328908ff69f3a95fffed40"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_503ffaad29c4c446b82050058014b019" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ca2bc37ab4fcbee134918b43ba2f6e93"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_45e769fc12376aabd24d65879d8859cc" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_db5add79fc53112e03a1cc21c7fe8746"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_23d89506fdad2daebd8cd00ef1c94e73" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4be89b82bd7d8e6985feb055118b7135"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4aa5c3952aac7113eb123285d10f59d3" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_81fc368bb49e8f8f36c5eec91afd6c3d"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_111fbe60b73a72bca7738fc7db51e04c" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0f6d8762fb7ac56677dc0254467d2b97"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7e2cfdb65fcfc29e56c466d907b01c98" level="file">
+            <did>
+               <unittitle>Father's Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_abf4c326d912d618732ae0a2dc1b67cc"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6aceb5f4bb9990ca268c6b2f8ce116ec" level="file">
+            <did>
+               <unittitle>Father's Weekend Miscellaneous Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_93575b1eaa40810041b9b68418e7891b"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7df1bde88c6a7c7845be1908b521c7d0" level="file">
+            <did>
+               <unittitle>Float Night</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1998"
+                         type="inclusive">1952-1998</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6d27ed6065c2f6f490204c8d510707b6"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a369cb1a063702006cb94659c824ba73" level="file">
+            <did>
+               <unittitle>Freshman Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1982"
+                         type="inclusive">1967-1982</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_21376db38c9e02a7be78721fcd289380"
+                          label="Mixed Materials [310183630239514]"
+                          type="box">3079</container>
+            </did>
+         </c01>
+         <c01 id="aspace_36c3cebede4b0fad67368f9019bde0da" level="file">
+            <did>
+               <unittitle>Halloween</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1890/1951"
+                         type="inclusive">1890-1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d7d4744e85101cbd30023ad8adcb5f78"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e74b7a562606d0229bbc744c54d22374" level="file">
+            <did>
+               <unittitle>Halloween Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1888/1994"
+                         type="inclusive">1888-1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7f9d7a73e40784ce0adbe17c6a43efc7"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_83a9cdb8f23145122a7da6748052f802" level="file">
+            <did>
+               <unittitle>Harvest Weekend</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1979/1989"
+                         type="inclusive">1979-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_118d5f9322144e44ceee3e9cccefc595"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_22e7ed4b83e1c2f40fb3fe3096deb6e8" level="file">
+            <did>
+               <unittitle>Homecoming</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1990/1992"
+                         type="inclusive">1990-1992</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dbe5566ab4d71d2ac5ffca26e5a08eaf"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5b7023d59248576b0d19977e97ac35fb" level="file">
+            <did>
+               <unittitle>Hoop Rolling</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e353e5bd9a47c25a8fbeaccc5f3c171c"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4817f35b6678836ae46217f1e77107ba" level="file">
+            <did>
+               <unittitle>Illumination</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/1996"
+                         type="inclusive">1995-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8b09cfe0ff3011a5e7d2de98bbb0af95"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5f379ab7413fbf3b68d6795bf333a47f" level="file">
+            <did>
+               <unittitle>Ivy Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1884/1984"
+                         type="inclusive">1884-1984</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_00da2e932df9c4f228b694edf034c5ff"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_db4ff7a5c4178fd3887716a5740f5166" level="file">
+            <did>
+               <unittitle>May Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1884/1951"
+                         type="inclusive">1884-1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_669c80301b1b33c20dcea29b6e811e36"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ffdb37252db9c4973965987bfcad2dfd" level="file">
+            <did>
+               <unittitle>Memorial Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1882/1940"
+                         type="inclusive">1882-1940</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a4109faf58a9cda08a19332e6740d4ac"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6d794e063ec5da91f1aa7f11157cc51f" level="file">
+            <did>
+               <unittitle>No Diet Day</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1bdb2c86e05f19722cd74ed091995c60"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c326569a1e1a848dec926e0ba72ea74f" level="file">
+            <did>
+               <unittitle>Octoberfest</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-1995</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dd6943b47912e8ecda34977c1bf1c96f"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_000693eab4a8235896dc7b170b6fe69a" level="file">
+            <did>
+               <unittitle>Opening Convocation (September), All College Meeting (January)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c65f925fff1e538d8ba6fb90d9e50278"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8f4ad0148cf7cb1ba267149926051647" level="file">
+            <did>
+               <unittitle>Otelia Cromwell Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1989/2002"
+                         type="inclusive">1989-2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3e9661038ffe3d57caffeb74ed41afcf"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bc3224b3ab5656e5387b024f582a6b16" level="file">
+            <did>
+               <unittitle>Parent's Weekend</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1974/1991"
+                         type="inclusive">1974-1991</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a3cc6a43911ce7787704a93fab117406"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dee66f9f35ac26fe6c8de8f9aa30568e" level="file">
+            <did>
+               <unittitle>Pre College Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1970"
+                         type="inclusive">1967-1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_68733e79848d2e46c851212517385aeb"
+                          label="Mixed Materials [310183630239522]"
+                          type="box">3080</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3cce9f18fb3c16f5a00892c0f1393018" level="file">
+            <did>
+               <unittitle>Sophomore Carnival</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_c5f84a86b84a03de4ce6642c3c044dca"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b6e26928048d41449c45cd70ecb02bf2" level="file">
+            <did>
+               <unittitle>Spirit Week</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_1166e4ca65ffe5746ebe2f6ddd638cec"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_20ebbbe2ce4d3baa7ab2bc70a931daac" level="file">
+            <did>
+               <unittitle>Spring Weekend</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1988/1988">1988</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_cd1391365f9e19b1eaefb2832df4fe28"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1162e1d275e4932b7ae6e7cae9f84259" level="file">
+            <did>
+               <unittitle>Thanksgiving</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1880/1942"
+                         type="inclusive">1880-1942</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_76fcfeb888d6f891fa204406ddd5dfdb"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_12dcb9f716bd9341f8c20df7093d38a1" level="file">
+            <did>
+               <unittitle>Turkey Trot</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1987/1987">1987</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_3de590e09ffb1ac1ec47202057217794"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_525b7fa9d56224af9317ac7609cb9117" level="file">
+            <did>
+               <unittitle>Valentine's Day</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1895/1951"
+                         type="inclusive">1895-1951</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_2fc097f44e7075b582d875e83dca7cd9"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e9d996b58e5e8d2810222b34e5d4c00d" level="file">
+            <did>
+               <unittitle>Week of Prayer</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_21122f92879466a9709a0d5185e5ab94"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_027aa1611cb3464aeccd98ed4098c10f" level="file">
+            <did>
+               <unittitle>Winter Weekend</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1987/1992"
+                         type="inclusive">1987-1992</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_7fe3a851e10cafa997c5ba94f77601f5"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a7f5fc42ab6b1ed65e418a8f613562c9" level="file">
+            <did>
+               <unittitle>Women's Week</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1982/1985"
+                         type="inclusive">1982-1985</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_9b8ef13ebe6fcd53e84b309149c83586"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7abf1156d4f88d5f28ae63b195a16cae" level="file">
+            <did>
+               <unittitle>Women's Weekend</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1972/1980"
+                         type="inclusive">1972-1980</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_fabf323fec8ca66f8d581daa172cc9a9"
+                          label="Mixed Materials [310183630239530]"
+                          type="box">3080.1</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
