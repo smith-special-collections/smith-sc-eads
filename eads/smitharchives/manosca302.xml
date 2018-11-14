@@ -1,257 +1,290 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca302.xml//EN">manosca302</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca302</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Henry M. Tyler Papers, 1877-1947</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jeanne Lowrey.</author>
-
+            <titleproper>Finding aid to the Henry M. Tyler Papers <num>CA.MS.00302</num>
+            </titleproper>
+            <author>Finding aid prepared by Jeanne Lowrey.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-03-28">2013-03-28</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 15:29:45 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-13</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Tyler, Henry M. 1843-1931</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Henry M. Tyler Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1877-1947</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:482bda08-d072-438b-9cbf-8d95e18c89eb</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(0.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of Greek 1877-1912, Professor
-            Emeritus 1912-1931. Contains correspondence, lectures, obituaries, photographs, travel
-            log, miscellaneous items, and publications. </abstract>
+         <unittitle>Henry M. Tyler Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Tyler, Henry M. 1843-1931</persname>
+         </origination>
+         <unitid>CA.MS.00302</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1872/1947"
+                   type="inclusive">1872-1947</unitdate>
+         <abstract id="aspace_8e4be22ce0ed6415761cc858b550e623">Professor of Greek 1877-1912, Professor Emeritus 1912-1931. Contains correspondence, lectures, obituaries, photographs, travel log, miscellaneous items, and publications.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Henry M. Tyler was born November 18, 1843 in Amherst, Massachusetts. He received
-            Bachelor of Arts (1865), Master (1868) and Doctor of Divinity (1902) degrees from
-            Amherst College. In addition, an honorary degree was conferred upon him by Smith College
-            in 1926. He taught for several years and was ordained a Congregational Minister in 1872,
-            serving as the pastor in Fitchburg, Massachusetts from then until 1877. </p>
-
-         <p>In January of 1877 he began teaching Latin and Greek at Smith College, where his father,
-            W. S. Tyler D.D. LL.D., had been one of the original trustees appointed by Sophia
-            Smith's will and had served as the first president of the trustees. At the time the
-            younger Tyler began teaching at Smith, the student body consisted of twenty-five women
-            (enrollment would grow to 1600 students by the time he retired). Devoted to Smith
-            College from the beginning, he held a strong conviction that women possessed brains and
-            should be educated.</p>
-
-         <p>In addition to his teaching duties and chairing the Greek Department for twenty years,
-            he unofficially filled the roll of a dean, finally becoming the first Dean of the
-            Faculty in 1900 after approximately twenty-five years of performing the functions of the
-            office. The work he conducted behind the scenes helped the college get up and running in
-            the early years in spite of having no official executive officer besides President
-            Seelye. After Professor Tyler's retirement in 1912, he contributed to L. Clark Seelye's
-            book, <title render="italic">Early History of Smith College</title> published in 1923.
-            He also served as president of the Northampton Historical Society for many years.</p>
-
-         <p>Henry M. Tyler was active until his sudden death on November 3, 1931, and was honored by
-            a memorial service on the campus for which he had devoted so much of his life.</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Henry M. Tyler was born November 18, 1843 in Amherst, Massachusetts. He received Bachelor of Arts (1865), Master (1868) and Doctor of Divinity (1902) degrees from Amherst College. In addition, an honorary degree was conferred upon him by Smith College in 1926. He taught for several years and was ordained a Congregational Minister in 1872, serving as the pastor in Fitchburg, Massachusetts from then until 1877. </p>
+         <p> In January of 1877 he began teaching Latin and Greek at Smith College, where his father, W. S. Tyler D.D. LL.D., had been one of the original trustees appointed by Sophia Smith's will and had served as the first president of the trustees. At the time the younger Tyler began teaching at Smith, the student body consisted of twenty-five women (enrollment would grow to 1600 students by the time he retired). Devoted to Smith College from the beginning, he held a strong conviction that women possessed brains and should be educated.</p>
+         <p> In addition to his teaching duties and chairing the Greek Department for twenty years, he unofficially filled the roll of a dean, finally becoming the first Dean of the Faculty in 1900 after approximately twenty-five years of performing the functions of the office. The work he conducted behind the scenes helped the college get up and running in the early years in spite of having no official executive officer besides President Seelye. After Professor Tyler's retirement in 1912, he contributed to L. Clark Seelye's book, <title render="italic">Early History of Smith College</title> published in 1923. He also served as president of the Northampton Historical Society for many years.</p>
+         <p> Henry M. Tyler was active until his sudden death on November 3, 1931, and was honored by a memorial service on the campus for which he had devoted so much of his life.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Professor of Greek 1877-1912, Professor Emeritus 1912-1931. Contains correspondence,
-            lectures, obituaries, photographs, travel log, miscellaneous items, and
-            publications.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Contains correspondence, lectures, obituaries, photographs, travel log, miscellaneous items, and publications.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>
-            <title render="italic">Henry M. Tyler Papers, Box #, Smith College Archives.</title>
-         </p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Henry M. Tyler Papers, Smith College Archives, CA-MS-00302, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Henry M. Tyler papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Henry M. Tyler papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Jeanne Lowrey</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Jeanne Lowrey</p>  
       </processinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Tyler, Henry M. 1843-1931</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_778e0797e5a5a0b95ce0ec3ad5a0ce4f" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical Information <unitdate>1900-1947</unitdate>
-               </unittitle>
+               <unittitle>Biographical Information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1947"
+                         type="inclusive">1900-1947</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a47c440a6f029348f7e63728d9b0dea6"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_c6284511a9606078e69b41702fcb6de3"
+                          parent="aspace_a47c440a6f029348f7e63728d9b0dea6"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_28ede94f2c2c20bf1ff443682be477c5" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Obituaries, Memorial Service, etc. <unitdate>1931-32</unitdate>
-               </unittitle>
+               <unittitle>Obituaries, Memorial Service, etc.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1931/1932"
+                         type="inclusive">1931-32</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ad34676e308797274688baabc92506e1"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_1de7328a0cab8d80473ec1b38855a0aa"
+                          parent="aspace_ad34676e308797274688baabc92506e1"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2f333161ba55ed3cc15ab676a88c98df" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Biographical-Family <unitdate>1931, undated</unitdate>
-               </unittitle>
+               <unittitle>Biographical-Family</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_daeac4f67dbbb5598e3322ccbb8513e0"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_1a9326cfd940a6964f27debaf667ba16"
+                          parent="aspace_daeac4f67dbbb5598e3322ccbb8513e0"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_01ce027ee86b20ab52ed3396cad37eac" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence <unitdate>1877-1908</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1877/1908"
+                         type="inclusive">1877-1908</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9d47d42ab2a24f6578facf430b40d648"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_a55f6ba08f7e11cd24bd1df20d3a54d4"
+                          parent="aspace_9d47d42ab2a24f6578facf430b40d648"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_26196ed60ba52b3eb14416c84f4b1a96" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence to George E. Dimock <unitdate>1902</unitdate>
-               </unittitle>
+               <unittitle>Correspondence to George E. Dimock</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a2bfe4822c1b963ab6ff3fa802248a17"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_97d0afcbf0532fd577c4ffd97b5f4ba4"
+                          parent="aspace_a2bfe4822c1b963ab6ff3fa802248a17"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_426f5cc6b802df4de920fd8464e4641b" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Fitchburg-Congregational Church <unitdate>1872</unitdate>
-               </unittitle>
+               <unittitle>Fitchburg-Congregational Church</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1872/1872">1872</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5411ffe561a2a1f8665d53dde14d285b"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_9fe4cf19acad79449d1b95f08dacc3e6"
+                          parent="aspace_5411ffe561a2a1f8665d53dde14d285b"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5f82744dabba263d7329bd2548760103" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lectures, comments, etc. <unitdate>1877-1916</unitdate>
-               </unittitle>
+               <unittitle>Lectures, comments, etc.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1877/1916"
+                         type="inclusive">1877-1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c734a6a4a5b07ccad1aba62338ee7a87"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_469e45069e34dc475da4c426b1ba2d1c"
+                          parent="aspace_c734a6a4a5b07ccad1aba62338ee7a87"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cbe91f4defb2c6f1953db58d8441303b" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Travel log <unitdate>1909</unitdate>
-               </unittitle>
+               <unittitle>Travel log</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a788a37609f3b9b487ee736cd5513c4c"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_31217e258b9d05cf61e97f1ed62097ca"
+                          parent="aspace_a788a37609f3b9b487ee736cd5513c4c"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_863d49d81b9f7671e29f0d9afde1d442" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Photographs <unitdate>1877-1897, undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1877/1897"
+                         type="inclusive">1877-1897</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f6951411b0cf3102d2df3a28bf4ba06c"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_3bd5fbe4b0206a7454d4ad665441552e"
+                          parent="aspace_f6951411b0cf3102d2df3a28bf4ba06c"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6c6c8d57b7ab9ac42ebed59d9d5500c8" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Publications <unitdate>1893-1906</unitdate>
-               </unittitle>
+               <unittitle>Publications</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1893/1906"
+                         type="inclusive">1893-1906</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_55d0221f49d7a6f5211eec47821034d6"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_5b633e8e999a0e962b3b27b8da620676"
+                          parent="aspace_55d0221f49d7a6f5211eec47821034d6"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_704cbcdd3034444bce78f65254712bab" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">11</container>
                <unittitle>
                   <title render="italic">A Greek Play and its Presentation</title>
-                  <unitdate>1891</unitdate>
                </unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7b73021c3ffc15a18c13a4756c1f3a53"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_f63bd38a4af13012959e641324a863cf"
+                          parent="aspace_7b73021c3ffc15a18c13a4756c1f3a53"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cca0a4f1f7a9a16fe35c99d17c371ae4" level="file">
             <did>
-               <container type="box" label="mixed materials">1037</container>
-               <container type="folder" label="mixed materials">12</container>
                <unittitle>
                   <title render="italic">Selections from the Greek Lyric Poets</title>
-                  <unitdate>1879</unitdate>
                </unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1879/1879">1879</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5b75b65d70a1c8ee9f1a4ac2e69ea21f"
+                          label="Mixed Materials [310183630225059]"
+                          type="box">1037</container>
+               <container id="aspace_a7bea968349e8f5ca09ad304e3728561"
+                          parent="aspace_5b75b65d70a1c8ee9f1a4ac2e69ea21f"
+                          type="folder">12</container>
             </did>
          </c01>
       </dsc>
-
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

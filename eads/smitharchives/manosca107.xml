@@ -1,681 +1,998 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-    langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-    scriptencoding="iso15924">
-
-    <eadid countrycode="us" mainagencycode="manosca"
-      publicid="-//us::manosca//TEXT us::manosca::manosca107.xml//EN">manosca107</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>Priscilla Van der Poel Papers, 1926-1994 </titleproper>
-        <subtitle>Finding Aid</subtitle>
-        <author>Finding aid prepared by Christina Lehman '03.</author>
-        <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Smith College Archives</publisher>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-        <date>© 2003 </date>
-        <p>Smith College. All rights reserved.</p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura
-        Cutter. <date>2003-06-09</date>
-      </creation>
-      <langusage>Finding aid written in English.</langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2005-09-23">2005-09-23</date>
-        <item>manosca107 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter id="front">
-    <titlepage>
-      <publisher>Smith College Archives </publisher>
-      <titleproper>Priscilla Van der Poel Papers, 1926-1994 </titleproper>
-      <subtitle>Finding Aid</subtitle>
-      <num>RG 42 </num>
-      <author>Christina Lehman '03 </author>
-      <date>2003 </date>
-      <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      <p>© 2003 Smith College. All rights reserved.</p>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="recordgrp" relatedencoding="MARC21">
-    <did id="main">
-      <head>Collection Overview</head>
-      <origination label="Creator:">
-        <persname encodinganalog="100" source="lcnaf">Van der Poel, Priscilla Paine. </persname>
-      </origination>
-      <unittitle encodinganalog="245$a" label="Title:">Priscilla Van der Poel Papers</unittitle>
-      <unitdate encodinganalog="245$f" type="inclusive">1926-1994</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-        repositorycode="manosca">RG 42 UUID:f01538c8-e7ff-4e5e-89f1-8da4ad2c20c6</unitid>
-      <physdesc label="Quantity:">
-        <extent encodinganalog="300$a">4 boxes</extent>
-        <extent encodinganalog="300$a">(1.25 linear ft.)</extent>
-      </physdesc>
-      <repository label="Location:">
-        <corpname>Smith College Archives</corpname>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-      </repository>
-      <abstract encodinganalog="520$a" label="Abstract:">The Priscilla Van der Poel Papers contain
-        materials primarily concerned with the professor's teaching career at Smith, but also reveal
-        much about her social life. Material includes correspondence, programs, writings,
-        photographs, diaries, and collected ephemera. </abstract>
-      <langmaterial label="Language of Material:">
-        <language langcode="eng">English.</language>
-      </langmaterial>
-    </did>
-    <bioghist id="bioghist">
-
-      <p> Priscilla Paine was born on April 9, 1907, in Brooklyn, New York, to Frederick H. and Mary
-        (Tillinghast) Paine. She graduated from Smith College in 1928 and went to Europe to continue
-        her artistic development. In Rome she attended the British Academy before returning to New
-        York City to participate in the Art Students League. She also studied interior design at the
-        New York School of Interior Decoration, and completed several decorating jobs in New York
-        and later Northampton (including a few Smith College buildings). Van der Poel wrote in her
-        resume that she left a "salary offer of $3900 in New York for one of $600 here at Smith,
-        because she cared about art, about studying, about teaching, and about Smith College, more
-        than about New York business." She joined the faculty of the Department of Art in 1934. In
-        1937, she completed a master's degree, also from Smith. It appears Paine married around
-        1938, when she begins to be listed as Mrs. Van der Poel in the course catalogs, but there
-        does not seem to be any mention of her husband in this collection of papers.</p>
-      <p> Van der Poel's main professional interests were modern art, design and decoration, and
-        Latin-American art. Early in her teaching career, she was assigned introductory studio art
-        and design courses. Later, in addition to the design courses, she taught modern art and art
-        theory courses. In 1945 she was promoted from assistant to associate professor. Van der Poel
-        also held many administrative positions, but she remained adamant that teaching, not
-        administrative work, was her passion. Besides a prominent role as the Dean of the Class of
-        1949, she served on the college admission board, the scholarship committee, the
-        Administrative Board, the Conference Committee, the Honors Committee, the Committee in
-        Honorary Degrees, and was chairman of the Lecture Committee from 1950-52. She also served a
-        distinguished term as chairman of the Art Department from 1955 to 1958. She retired in
-        1972.</p>
-      <p> Van der Poel traveled abroad frequently throughout her life. She often went to Europe for
-        the summer to conduct special studies and collect photographs and materials for Smith
-        courses. She collected modern art and donated her entire collection to the Smith College
-        Museum of Art before her death. Her active social life revolved around dinner parties that
-        she hosted almost weekly during the latter part of her career. A colleague remembers, "Her
-        elegance was striking, and so were the style and generosity of her hospitality, which was
-        often displayed at gatherings at her apartment." She died on March 19, 1994 at the age of
-        86.</p>
-    </bioghist>
-    <scopecontent id="scope">
-
-      <p> The Priscilla Van der Poel Papers, 1926-1994, contain materials primarily concerned with
-        the professor's teaching career at Smith, but also reveal much about her social life. Types
-        of materials include correspondence, clippings, programs, notes, typescripts, photographs,
-        diaries, and collected ephemera. </p>
-    </scopecontent>
-    <arrangement encodinganalog="351$a" id="scope-org">
-
-      <p>This collection is organized into eight series:</p>
-      <list>
-        <item> I. Biography </item>
-        <item> II. Professional Activities </item>
-        <item> III. Correspondence </item>
-        <item> IV. Travel </item>
-        <item> V. Writings </item>
-        <item> VI. Social Activities </item>
-        <item> VII. Photographs </item>
-        <item> VII. Oversize Materials </item>
-      </list>
-    </arrangement>
-    <descgrp id="admin" type="admininfo">
-      <head>Information on Use</head>
-      <descgrp type="admininfo">
-        <head>Terms of Access and Use</head>
-        <userestrict encodinganalog="540" id="admin-use">
-          <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. When requesting material at the
-            Smith College Archives, see the printed finding aid for specific instructions on
-            completing the call slip.</p>
-        </userestrict>
-      </descgrp>
-      <prefercite id="admin-cite">
-        <head>Preferred Citation</head>
-        <p>Please use the following format when citing materials from this collection:</p>
-        <p>Priscilla Van der Poel Papers, Box #, Smith College Archives.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca107</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Priscilla Van der Poel Papers <num>CA.MS.00107</num>
+            </titleproper>
+            <author>Christina Lehman '03</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 16:21:21 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca107 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-13</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Priscilla Van der Poel Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Van der Poel, Priscilla Paine.</persname>
+         </origination>
+    
+         <unitid>CA.MS.00107</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.292 linear feet</extent>
+            <extent altrender="carrier">(5 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1926/1994"
+                   type="inclusive">1926-1994</unitdate>
+         <abstract id="aspace_7dbd4545c1b93023649c83a4fbcabbf7">The Priscilla Van der Poel Papers contain materials primarily concerned with the professor's teaching career at Smith, but also reveal much about her social life. Material includes correspondence, programs, writings, photographs, diaries, and collected ephemera.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Priscilla Paine was born on April 9, 1907, in Brooklyn, New York, to Frederick H. and Mary (Tillinghast) Paine. She graduated from Smith College in 1928 and went to Europe to continue her artistic development. In Rome she attended the British Academy before returning to New York City to participate in the Art Students League. She also studied interior design at the New York School of Interior Decoration, and completed several decorating jobs in New York and later Northampton (including a few Smith College buildings). Van der Poel wrote in her resume that she left a "salary offer of $3900 in New York for one of $600 here at Smith, because she cared about art, about studying, about teaching, and about Smith College, more than about New York business." She joined the faculty of the Department of Art in 1934. In 1937, she completed a master's degree, also from Smith. It appears Paine married around 1938, when she begins to be listed as Mrs. Van der Poel in the course catalogs, but there does not seem to be any mention of her husband in this collection of papers.</p>
+         <p>  Van der Poel's main professional interests were modern art, design and decoration, and Latin-American art. Early in her teaching career, she was assigned introductory studio art and design courses. Later, in addition to the design courses, she taught modern art and art theory courses. In 1945 she was promoted from assistant to associate professor. Van der Poel also held many administrative positions, but she remained adamant that teaching, not administrative work, was her passion. Besides a prominent role as the Dean of the Class of 1949, she served on the college admission board, the scholarship committee, the Administrative Board, the Conference Committee, the Honors Committee, the Committee in Honorary Degrees, and was chairman of the Lecture Committee from 1950-52. She also served a distinguished term as chairman of the Art Department from 1955 to 1958. She retired in 1972.</p>
+         <p>  Van der Poel traveled abroad frequently throughout her life. She often went to Europe for the summer to conduct special studies and collect photographs and materials for Smith courses. She collected modern art and donated her entire collection to the Smith College Museum of Art before her death. Her active social life revolved around dinner parties that she hosted almost weekly during the latter part of her career. A colleague remembers, "Her elegance was striking, and so were the style and generosity of her hospitality, which was often displayed at gatherings at her apartment." She died on March 19, 1994 at the age of 86.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Priscilla Van der Poel Papers, 1926-1994, contain materials primarily concerned with the professor's teaching career at Smith, but also reveal much about her social life. Types of materials include correspondence, clippings, programs, notes, typescripts, photographs, diaries, and collected ephemera.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into eight series:</p>    
+         <list type="ordered">
+            <item>I. Biography</item>
+            <item>II. Professional Activities</item>
+            <item>III. Correspondence</item>
+            <item>IV. Travel</item>
+            <item>V. Writings</item>
+            <item>VI. Social Activities</item>
+            <item>VII. Photographs</item>
+            <item>VII. Oversize Materials</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Priscilla Van der Poel Papers, Smith College Archives, CA-MS-00107, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <descgrp type="admininfo">
-        <head>History of the Collection</head>
-        <acqinfo id="admin-acqinfo">
-          <p>The Priscilla Van der Poel Papers were donated by Mrs. Elliott Carlisle in April 1988.
-          </p>
-        </acqinfo>
-        <processinfo id="admin-process">
-          <p>Processed by Christina Lehman '03.</p>
-        </processinfo>
-      </descgrp>
-    </descgrp>
-    <controlaccess id="subj">
-      <head>Search Terms</head>
-
-      <persname encodinganalog="600" source="lcnaf">Van der Poel, Priscilla Paine.</persname>
-      <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-      <subject encodinganalog="650" source="lcsh">Art--Study and teaching (Higher)--Massachusetts
-        --Northampton.</subject>
-      <persname encodinganalog="700" source="lcnaf">Chase, Mary Ellen, 1887-1973.</persname>
-      <persname encodinganalog="700" source="lcnaf">Duckett, Eleanor Shipley.</persname>
-      <persname encodinganalog="700" source="lcnaf">Mendenhall, Cornelia.</persname>
-      <persname encodinganalog="700" source="lcnaf">Mendenhall, Thomas Corwin.</persname>
-    </controlaccess>
-    <descgrp id="addinfo" type="add">
-      <head>Additional Information</head>
-      <relatedmaterial id="add-related">
-        <head>Related Material</head>
-        <p>See also 52. Art Department Records </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>See also 52. Art Department Records</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc id="list-contlist" type="in-depth">
-      <c01 id="list-ser1" level="series">
-        <did>
-          <unittitle>SERIES I. BIOGRAPHY</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>General <unitdate>1994, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Education, Smith Class of 1928 <unitdate>1926-28, 1953</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser2" level="series">
-        <did>
-          <unittitle>SERIES II. PROFESSIONAL ACTIVITIES</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Artwork <unitdate>1944-46, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>Career Highlights <unitdate>1935-72, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>Dean of the Class of 1949 <unitdate>1945-1949</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>Exhibitions and Events <unitdate>1948-77</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Interior Decoration <unitdate>1944, 1949, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Speeches - Clippings <unitdate>1947-64, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>Speeches - Programs <unitdate>1938-56</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>Teaching - General <unitdate>1939-62, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>Teaching - General course materials <unitdate>1947-51, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>Teaching - Lecture Notes <unitdate>1944-49, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>Miscellaneous <unitdate>1929-68</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser3" level="series">
-        <did>
-          <unittitle>SERIES III. CORRESPONDENCE</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">14</container>
-            <unittitle>A-B</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">15</container>
-            <unittitle>C</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">16</container>
-            <unittitle>D</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">17</container>
-            <unittitle>E-G</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">18</container>
-            <unittitle>H-K</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">19</container>
-            <unittitle>L</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">20</container>
-            <unittitle>M</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">21</container>
-            <unittitle>N-O</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">22</container>
-            <unittitle>P-R</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">23</container>
-            <unittitle>S</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">24</container>
-            <unittitle>T-W</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">25</container>
-            <unittitle>Unidentified <unitdate>1947-76</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">26</container>
-            <unittitle>Unidentified <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">27</container>
-            <unittitle>Alumnae Association <unitdate>1946-60, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">28</container>
-            <unittitle>69th Birthday - April 9, 1976 <unitdate>1976</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.1</container>
-            <container type="folder" label="mixed materials">29</container>
-            <unittitle>Blank Postcards</unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser4" level="series">
-        <did>
-          <unittitle>SERIES IV. TRAVEL</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>England</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>France</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Greece and Turkey</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>Italy</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>New York City</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>Miscellaneous</unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser5" level="series">
-        <did>
-          <unittitle>SERIES V. WRITINGS</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Master's Thesis <unitdate>1937</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Personal Notes, Miscellaneous</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.2</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>Reviews <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Address Book</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Travel Diary (line-a-day) <unitdate>1949</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Travel Diary (line-a-day) <unitdate>1952</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Travel Diary (line-a-day) <unitdate>1954</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Travel Diary (line-a-day) <unitdate>1960</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.3</container>
-            <unittitle>Travel Journal <unitdate>1955-57</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser6" level="series">
-        <did>
-          <unittitle>SERIES VI. SOCIAL ACTIVITIES</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Club Membership cards <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Dinner parties <unitdate>1958-62</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Dinner parties <unitdate>1963-64</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>Dinner parties <unitdate>1965</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>Dinner parties <unitdate>1966</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>Dinner parties <unitdate>1967</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Dinner parties <unitdate>1968</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Dinner parties <unitdate>1969-70</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>Dinner parties <unitdate>1971</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>Dinner parties <unitdate>1972-74</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>Dinner parties <unitdate>1975-76, 1979</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>Dinner parties - Miscellaneous <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser7" level="series">
-        <did>
-          <unittitle>SERIES VII. PHOTOGRAPHS</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>Priscilla Van der Poel</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">14</container>
-            <unittitle>General</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">15</container>
-            <unittitle>Student Artwork</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.4</container>
-            <container type="folder" label="mixed materials">16</container>
-            <unittitle>Unidentified</unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser8" level="series">
-        <did>
-          <unittitle>SERIES VIII. OVERSIZE MATERIALS</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1039.5</container>
-            <unittitle>Artwork</unittitle>
-          </did>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Priscilla Van der Poel Papers were donated by Mrs. Elliott Carlisle in April 1988.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Christina Lehman '03.</p>  
+      </processinfo>
+      <accessrestrict id="aspace_6a64a1f0c65418cee5fba090716189d2">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Art--Study and teaching (Higher)--Massachusetts --Northampton.</subject>
+         <persname encodinganalog="600" source="naf">Van der Poel, Priscilla Paine.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+         <persname encodinganalog="600" source="naf">Chase, Mary Ellen, 1887-1973.</persname>
+         <persname encodinganalog="600" source="naf">Duckett, Eleanor Shipley.</persname>
+         <persname encodinganalog="600" source="naf">Mendenhall, Cornelia.</persname>
+         <persname encodinganalog="600" source="naf">Mendenhall, Thomas Corwin.</persname>
+         <persname encodinganalog="600" role="fmo" source="local">Carlisle, Elliott, Mrs.</persname>
+  
+         <persname encodinganalog="600" source="local">Carlisle, Elliott, Mrs.</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>SERIES I. BIOGRAPHY</unittitle>
+            </did>
+            <c02 id="aspace_e5c6f09266d64f4a4a7ee0af82b916dc" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_71a0a439c02eb6c311d1dbf2838bfb9b"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_354cecc1547b4c39405f8a8006bf21d0"
+                             parent="aspace_71a0a439c02eb6c311d1dbf2838bfb9b"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d9bcebbe76e4fed2925448451fcb64c2" level="file">
+               <did>
+                  <unittitle>Education, Smith Class of 1928</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1926/1928"
+                            type="inclusive">1926-28</unitdate>
+                  <unitdate normal="1953/1953">1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e118e33155dee4a78376770e20629b3c"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_1bf611cfad240c01f02ca4f7ae38d841"
+                             parent="aspace_e118e33155dee4a78376770e20629b3c"
+                             type="folder">2</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>SERIES II. PROFESSIONAL ACTIVITIES</unittitle>
+            </did>
+            <c02 id="aspace_26c3857cd24e9dca9eb1b4b413c5416d" level="file">
+               <did>
+                  <unittitle>Artwork</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1946"
+                            type="inclusive">1944-46</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_79366e944cc6ff098b399f3df2651a9c"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_90fadaaef993f9dcbd1872ee696b9b81"
+                             parent="aspace_79366e944cc6ff098b399f3df2651a9c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c3961ad2b1d1caf0c9c9982aa15172fd" level="file">
+               <did>
+                  <unittitle>Career Highlights</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1972"
+                            type="inclusive">1935-72</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e5d990ac46fe2ad7a9204e9e957af3bd"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_55ebc3b19dc4dc39c418ce37b4006a16"
+                             parent="aspace_e5d990ac46fe2ad7a9204e9e957af3bd"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d011272d6100e9b079fdef0d11819e21" level="file">
+               <did>
+                  <unittitle>Dean of the Class of 1949</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1949"
+                            type="inclusive">1945-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_78b7f924807d8906cc532549c887c161"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_96fccdbc83508764120322acec1fda56"
+                             parent="aspace_78b7f924807d8906cc532549c887c161"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8c4b4424f6411a15f96be9f0b9fb9c9" level="file">
+               <did>
+                  <unittitle>Exhibitions and Events</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1977"
+                            type="inclusive">1948-77</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cce4aa52d53c7f25a4994d72314ec808"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_da82b5346bdfcc27d4c3039869d52a1e"
+                             parent="aspace_cce4aa52d53c7f25a4994d72314ec808"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_801d4fffafdef53b9e003ab6fc7b1d61" level="file">
+               <did>
+                  <unittitle>Interior Decoration</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <unitdate normal="1949/1949">1949</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_592ff48d527d930b41dff0e4ed6e6e68"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_669d92eb465bdf933218927d000e9cda"
+                             parent="aspace_592ff48d527d930b41dff0e4ed6e6e68"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_081188cab0eb5bdaf878dbac0a9ddef2" level="file">
+               <did>
+                  <unittitle>Speeches - Clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1947/1964"
+                            type="inclusive">1947-64</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7a44ab616e1666b38e104bce857f4c23"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_4d41d7139fe11dfd20984135067bd88a"
+                             parent="aspace_7a44ab616e1666b38e104bce857f4c23"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1710ae8942aee54fc58356e2a4caa194" level="file">
+               <did>
+                  <unittitle>Speeches - Programs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1956"
+                            type="inclusive">1938-56</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_73c375906a90135b56288478a0aabb6c"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_ba36e9c4d6c1705d3009aad2b480b9bc"
+                             parent="aspace_73c375906a90135b56288478a0aabb6c"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_85ab8c0ff5774712faec7c0ec2c0ae80" level="file">
+               <did>
+                  <unittitle>Teaching - General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1962"
+                            type="inclusive">1939-62</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_31e21cbc535d6f27d76e4aa54aee61a9"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_da91873cec7fc2634d1a98e6e77b7094"
+                             parent="aspace_31e21cbc535d6f27d76e4aa54aee61a9"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1b44f166b98d1c85f139b8d6bbc0647a" level="file">
+               <did>
+                  <unittitle>Teaching - General course materials</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1947/1951"
+                            type="inclusive">1947-51</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9dc1917205a602cc3e5473d798e0cab4"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_81ba52759aeb7116a90d6461d3678ea7"
+                             parent="aspace_9dc1917205a602cc3e5473d798e0cab4"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a8deebba4bd94b963d95195a3def1098" level="file">
+               <did>
+                  <unittitle>Teaching - Lecture Notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1949"
+                            type="inclusive">1944-49</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a04434c30f376a78aa2f11a6742405a3"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_fec3be0ce1a76b813e1c5d5e53de1116"
+                             parent="aspace_a04434c30f376a78aa2f11a6742405a3"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c230c585b94baef61588e3bd744e9bf5" level="file">
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1929/1968"
+                            type="inclusive">1929-68</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_af87112fd638186310f74a0a7cb4e1b6"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_d0a2cf575e50571a8ed79a5b213573b9"
+                             parent="aspace_af87112fd638186310f74a0a7cb4e1b6"
+                             type="folder">13</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>SERIES III. CORRESPONDENCE</unittitle>
+            </did>
+            <c02 id="aspace_7ec56c24d03a229f2092207bc521f09e" level="file">
+               <did>
+                  <unittitle>A-B</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_50fe16cbc410bed405df80894c440032"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_c8ba480065d1c9657e95bf44ab98b46b"
+                             parent="aspace_50fe16cbc410bed405df80894c440032"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_abd7bf2012b839c64613c1af598bf7e0" level="file">
+               <did>
+                  <unittitle>C</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1804f7de78274cf4ad86dbdcaf0e6c37"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_aa9d6d44a4d257e2ed3ce6c23a84da21"
+                             parent="aspace_1804f7de78274cf4ad86dbdcaf0e6c37"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8ddd72c152ce3b71acbc5a1aac929edb" level="file">
+               <did>
+                  <unittitle>D</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_13f90af8f71c5de9dc45e5d721d76ba7"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_baf0fcd2a7351bbfacf94c1b8153c2c6"
+                             parent="aspace_13f90af8f71c5de9dc45e5d721d76ba7"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_34e39bc5528eb5f6a009666bd8e54288" level="file">
+               <did>
+                  <unittitle>E-G</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_108e6b216750955a72c6f6b719c749d6"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_4ed275b5fdde19f524782513874c820d"
+                             parent="aspace_108e6b216750955a72c6f6b719c749d6"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0431001abdb8eeffda0fb2c7a0c7b7d3" level="file">
+               <did>
+                  <unittitle>H-K</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f8487e7dab1437025ed522c496532435"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_b0622c8aa249270e296a9c397d866b1d"
+                             parent="aspace_f8487e7dab1437025ed522c496532435"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_347eee30cca25e807e524e538f56e2af" level="file">
+               <did>
+                  <unittitle>L</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_5ce9d2c0a155dd18048e4ee0d61a3b5d"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_6728d91d16a2661d724e680a208b2fdb"
+                             parent="aspace_5ce9d2c0a155dd18048e4ee0d61a3b5d"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b62e70fc579d234301cb230ac6e0cbf6" level="file">
+               <did>
+                  <unittitle>M</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1bfd46af830bae8281eff267b61b27ee"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_76ec470829f44400bf2457e235a8e3bf"
+                             parent="aspace_1bfd46af830bae8281eff267b61b27ee"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c69ebc3179871deaa240bade25717f45" level="file">
+               <did>
+                  <unittitle>N-O</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_b0fd5ae237180f5de0ce8af1c13fed54"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_3b331bd58b426c03bba2eece3869bda9"
+                             parent="aspace_b0fd5ae237180f5de0ce8af1c13fed54"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_41eb7cd6ed2accf4cc6a7ddefd501591" level="file">
+               <did>
+                  <unittitle>P-R</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d9195541987d6b0b426ae00d73ae3663"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_4b2b12f07be7d31be169a920365e3270"
+                             parent="aspace_d9195541987d6b0b426ae00d73ae3663"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bf40be8237d05c61f0a8792c705d3056" level="file">
+               <did>
+                  <unittitle>S</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8b50bc1d69866a71eaf433bdff01ac89"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_19f4c26be214c77fcd2784761f1c5cde"
+                             parent="aspace_8b50bc1d69866a71eaf433bdff01ac89"
+                             type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_49e710256d8c413d40c09b13cfcc21ed" level="file">
+               <did>
+                  <unittitle>T-W</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e0f4e7bc62c9d226404d8c78d806330b"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_7e4016d7ce37dc179b3cdc8f34f132e0"
+                             parent="aspace_e0f4e7bc62c9d226404d8c78d806330b"
+                             type="folder">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f75ffc223b6741bb7ad64cc602bf96a7" level="file">
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1947/1976"
+                            type="inclusive">1947-76</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a6de2c96665d0e2e436f4f5c8340bfa7"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_f843bb86e671772c3f0da2eff02146af"
+                             parent="aspace_a6de2c96665d0e2e436f4f5c8340bfa7"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ca995a33f30bc628688486511a157b7d" level="file">
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_386db9df47b01f387e204a6e3a9d7728"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_f76aa1e23331ed3551696f02debd0793"
+                             parent="aspace_386db9df47b01f387e204a6e3a9d7728"
+                             type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f5c1aca305171d08ab9b962666a86ac5" level="file">
+               <did>
+                  <unittitle>Alumnae Association</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1946/1960"
+                            type="inclusive">1946-60</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c88c5330cdc1eed81321f6749829cef"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_9037aed32f714b7550a112189dec0e67"
+                             parent="aspace_6c88c5330cdc1eed81321f6749829cef"
+                             type="folder">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8ed4d3dabe61c08b90f9420df6dde6d1" level="file">
+               <did>
+                  <unittitle>69th Birthday - April 9, 1976</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d4eee381d3c318b7a4d61428b7e6b25d"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_9a78a90111b1024de21d514f87d88d2e"
+                             parent="aspace_d4eee381d3c318b7a4d61428b7e6b25d"
+                             type="folder">28</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a9296f8a6b84844d6aeedcbdf8f55c01" level="file">
+               <did>
+                  <unittitle>Blank Postcards</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_39ea47e051f400a881428c58374e140b"
+                             label="Mixed Materials [310183630224870]"
+                             type="box">1039.1</container>
+                  <container id="aspace_bbed4f4925aaffb856aa6f06f6322e45"
+                             parent="aspace_39ea47e051f400a881428c58374e140b"
+                             type="folder">29</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>SERIES IV. TRAVEL</unittitle>
+            </did>
+            <c02 id="aspace_543c8ff96293ec9f18565e6a10f538c5" level="file">
+               <did>
+                  <unittitle>England</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3054541d7a9eeac85ada9d6e22e5973b"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_a295a5dccd5ff170abcefefa1060da5b"
+                             parent="aspace_3054541d7a9eeac85ada9d6e22e5973b"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dd510a63111f7a6da2c6f7ffe0e17e48" level="file">
+               <did>
+                  <unittitle>France</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_1e1d0e16afe83f2f16fca70ee5150b96"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_90328fd0166f072666ed7320c44eb3e2"
+                             parent="aspace_1e1d0e16afe83f2f16fca70ee5150b96"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2f1ce9cf299ec711aecd1cce4ea4debd" level="file">
+               <did>
+                  <unittitle>Greece and Turkey</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a7dd26633d86ed5e0f0a93e735cc0a7a"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_f5e2106535bdb6a61ab1c35cfe80ea93"
+                             parent="aspace_a7dd26633d86ed5e0f0a93e735cc0a7a"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_15cc5f553f4d68faf6f1e8fb6513e369" level="file">
+               <did>
+                  <unittitle>Italy</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_4c2361f4ba16c77ca1eb862cde659e53"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_af3547e5bdbcacd35ed91bb85244482b"
+                             parent="aspace_4c2361f4ba16c77ca1eb862cde659e53"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_771ff851f5339e8050b3849efeeeeeba" level="file">
+               <did>
+                  <unittitle>New York City</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_38c4c083c1af1781bf05fd051ab7ba1f"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_ce0d159cf83c3fafd4133a542c2cbafb"
+                             parent="aspace_38c4c083c1af1781bf05fd051ab7ba1f"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cf5d9ade7f8350ad1c79c57d12349810" level="file">
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_8f884f38a299dda6b7aea560144e7836"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_b6efa5f23d1dae3940190a2c970f790c"
+                             parent="aspace_8f884f38a299dda6b7aea560144e7836"
+                             type="folder">6</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser5" level="series">
+            <did>
+               <unittitle>SERIES V. WRITINGS</unittitle>
+            </did>
+            <c02 id="aspace_32472a80f1de8288debba6a46866ba69" level="file">
+               <did>
+                  <unittitle>Master's Thesis</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6d48c83f2258b26663e4b76d17aafc3a"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_c526a2d8ebb42794975e0a7965999313"
+                             parent="aspace_6d48c83f2258b26663e4b76d17aafc3a"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_635fba8b08e78d5ff556a0c476c6647f" level="file">
+               <did>
+                  <unittitle>Personal Notes, Miscellaneous</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_49e48d4a75f9a22d5d92ba6aa81f784b"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_cc62f453cf689117d88e1b6f518cae41"
+                             parent="aspace_49e48d4a75f9a22d5d92ba6aa81f784b"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9a56a4d548d5fd8464c03072c5378584" level="file">
+               <did>
+                  <unittitle>Reviews</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b3bc938db4fe85bec353ef560149096e"
+                             label="Mixed Materials [310183630224813]"
+                             type="box">1039.2</container>
+                  <container id="aspace_9c3c7b2a9dd7871c6d2f12c113c1c087"
+                             parent="aspace_b3bc938db4fe85bec353ef560149096e"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a1e3483ffec7130b0e85d8aca80d6bd9" level="file">
+               <did>
+                  <unittitle>Address Book</unittitle>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_64b90fb4cd16e1741c9dc5ec19776385"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cd604e2e76e17c98c5ffb7da74d58edc" level="file">
+               <did>
+                  <unittitle>Travel Diary (line-a-day)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_ebfc9ede108d591d3fa20484024b4c14"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_59ac182ce43d6c58f4acdeae1238c0c4" level="file">
+               <did>
+                  <unittitle>Travel Diary (line-a-day)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_aded0b130c05980422e16b2796c49eea"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9c74af853e6df4735c37a2f085e8264d" level="file">
+               <did>
+                  <unittitle>Travel Diary (line-a-day)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_7c935b867b526a3d8c91261c7cb344e8"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fe236167d73b5364cbd7ad05246e8e6a" level="file">
+               <did>
+                  <unittitle>Travel Diary (line-a-day)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_ac8fb2850b1b5298ea665fdae20ed6f9"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_101c405f19083d001e1f3a1009f95d3b" level="file">
+               <did>
+                  <unittitle>Travel Journal</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1957"
+                            type="inclusive">1955-57</unitdate>
+                  <container altrender="Card file box (12d x 3h x 5w) "
+                             id="aspace_cb917d97985113a71a4a836934a9566d"
+                             label="Mixed Materials [310183630224755]"
+                             type="box">1039.3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser6" level="series">
+            <did>
+               <unittitle>SERIES VI. SOCIAL ACTIVITIES</unittitle>
+            </did>
+            <c02 id="aspace_9538b7a63cd5e0de8b52ccf70a849a41" level="file">
+               <did>
+                  <unittitle>Club Membership cards</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ac674645d33413deb90005b40d222bf6"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_56d96fe968b661e5469a9c045e4b2745"
+                             parent="aspace_ac674645d33413deb90005b40d222bf6"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a1ffe06b2cc2d2d93b393bdddd517b66" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1962"
+                            type="inclusive">1958-62</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_be1cf6f9077cdd5e0f65370eab1b7d7c"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_52022ea74a9681d4211a53a2002f057b"
+                             parent="aspace_be1cf6f9077cdd5e0f65370eab1b7d7c"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b8ecc3b2365eb53903e23d786e3d3fe2" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1963/1964"
+                            type="inclusive">1963-64</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1f1f4ea519b79ae8fea025a2728d3aea"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_63bd9804eafefdb01c117c7c967e77d8"
+                             parent="aspace_1f1f4ea519b79ae8fea025a2728d3aea"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4ce3bc534ae73be3119ebc8c0175c3a8" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_72b4cbad1d788a97b7d87835ff926c7c"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_985cfc7b6d9f0c5a3fe4668204e3f85e"
+                             parent="aspace_72b4cbad1d788a97b7d87835ff926c7c"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_be842e3b43e5ee408ececb3761117f9c" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a1ff10ff30cf4c719757776fc88cf4c5"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_6929e46c93bcb8894932749b9b2f9d4a"
+                             parent="aspace_a1ff10ff30cf4c719757776fc88cf4c5"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d1be569de2dd8368f3c4d3d2a0c2e4c1" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1f16bc8e234d9ea17ae816c97f024b9e"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_cd85c30aa52082806f4b6621f5d6c667"
+                             parent="aspace_1f16bc8e234d9ea17ae816c97f024b9e"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4449417e3614adaa34942b76e952eb8b" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f04fc7c520ffe85011dcbc2a6e7fef14"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_fbe932d365bf6b8bd21227b7ec46c593"
+                             parent="aspace_f04fc7c520ffe85011dcbc2a6e7fef14"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_53b8dbd8324fc9660912744bea75d94e" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1970"
+                            type="inclusive">1969-70</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_add90b3fba8e826b59f9e52cb49a128c"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_3ffcc901c2430a380fdca058cc4ca77f"
+                             parent="aspace_add90b3fba8e826b59f9e52cb49a128c"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0b7a54e9d2f709ca55a76ab9a1ad3631" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5fdefd21040858f1fd5ae7dd79b4a642"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_f7c22067204a289517b9ab41266426f4"
+                             parent="aspace_5fdefd21040858f1fd5ae7dd79b4a642"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1701ff29fb4a1e68e0773eadc6e97f2d" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1972/1974"
+                            type="inclusive">1972-74</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ba1815a564a70a6f84f8de1ab5431b8d"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_9511a7c33e81f2a119c1cb7590fd4e57"
+                             parent="aspace_ba1815a564a70a6f84f8de1ab5431b8d"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a064b25a6d5b7a600ad21f19a50a6766" level="file">
+               <did>
+                  <unittitle>Dinner parties</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/1976"
+                            type="inclusive">1975-76</unitdate>
+                  <unitdate normal="1979/1979">1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c93c858178d8b0708494e424d0e3a3ee"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_575f3f72364da5bdd91a0b4dae116f67"
+                             parent="aspace_c93c858178d8b0708494e424d0e3a3ee"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ec0bd81488f24e05f524b17954fa0902" level="file">
+               <did>
+                  <unittitle>Dinner parties - Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d21a18cb9b9f00c4b59fb57561b08ae8"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_86326d882f9ee682dd262c181090ec83"
+                             parent="aspace_d21a18cb9b9f00c4b59fb57561b08ae8"
+                             type="folder">12</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser7" level="series">
+            <did>
+               <unittitle>SERIES VII. PHOTOGRAPHS</unittitle>
+            </did>
+            <c02 id="aspace_549d76ed245dae1796426199cf6499e4" level="file">
+               <did>
+                  <unittitle>Priscilla Van der Poel</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_519d73a855123c9c4b08a13ee04f2fc3"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_3eb56f1a30a253ca98d80e74fcafe337"
+                             parent="aspace_519d73a855123c9c4b08a13ee04f2fc3"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1b37fda543b4d8e949855b0df524c1bc" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_192b9b0c46d85098ea0ed097aa380bbe"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_92100bae66e1b9049a5454b0ba9fa4a2"
+                             parent="aspace_192b9b0c46d85098ea0ed097aa380bbe"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a6768633063a4c1284118246a727b35d" level="file">
+               <did>
+                  <unittitle>Student Artwork</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_d83522a4d3e20022134bf88506b2ae2c"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_8d23341df8e43adf0fadba2ac90b9a47"
+                             parent="aspace_d83522a4d3e20022134bf88506b2ae2c"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6288f7785019d7014562fac5c4a94fe8" level="file">
+               <did>
+                  <unittitle>Unidentified</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_a776fd7b0fad196a56ac2e8134478fce"
+                             label="Mixed Materials [310183630224698]"
+                             type="box">1039.4</container>
+                  <container id="aspace_4b14f75d362e54ae3d7341a6886f5020"
+                             parent="aspace_a776fd7b0fad196a56ac2e8134478fce"
+                             type="folder">16</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser8" level="series">
+            <did>
+               <unittitle>SERIES VIII. OVERSIZE MATERIALS</unittitle>
+            </did>
+            <c02 id="aspace_f800b099c51c2c71ab32430f0474f13b" level="file">
+               <did>
+                  <unittitle>Artwork</unittitle>
+                  <container altrender="Flat box (25d x 3h x 19.5w)"
+                             id="aspace_084c6b5630469545aa2c5b39a304276b"
+                             label="Mixed Materials [310183630225695]"
+                             type="box">1039.5</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>

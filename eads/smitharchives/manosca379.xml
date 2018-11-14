@@ -1,488 +1,620 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca379.xml//EN">manosca379</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca379</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Quentin Quesnell papers, 1927 - 2012 (bulk 1970 -
-               2000)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Carron.</author>
-
+            <titleproper>Finding aid to the Quentin Quesnell papers <num>CA.MS.00379</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-12-11">2014-12-11</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 14:33:12 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Quesnell, Quentin</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Quentin Quesnell papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1927 - 2012</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1970 - 2000</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:982a6e10-cc35-45ac-b6d1-949dca4284db</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 document boxes, 1 flat file</extent>
-            <extent encodinganalog="300$a">( 1.5 linear ft.)</extent>
-
-
-
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English</language>
-            <language>Greek</language>
-         </langmaterial>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Faculty. Head of the Department of
-            Religion from 1975 to 1997. The papers contain biographical materials including a
-            complete bibliography, correspondence, notes, photographs, publications and research.
-         </abstract>
+         <unittitle>Quentin Quesnell papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Quesnell, Quentin</persname>
+         </origination>
+         <unitid>CA.MS.00379</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.292 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1927/2012"
+                   type="inclusive">1927-2012</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1970/2000" type="bulk">1970 - 2000</unitdate>
+         <langmaterial id="aspace_8daaa0ef9cebad054075b1b06e97308c">
+            <language langcode="eng">English</language> and <language>Greek</language>
+         </langmaterial>
+         <abstract id="aspace_d01ff041e5ba8de6a284bdd189746975">Faculty. Head of the Department of Religion from 1975 to 1997. The papers contain biographical materials including a complete bibliography, correspondence, notes, photographs, publications and research.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> Born on February 27, 1927 in Milwaukee, Wisconsin, Quesnell earned a Master's Degree in
-            Philosophy and an STL from St. Louis University. He later did studies in eastern
-            languages and the Bible in Vienna, Paris, Jerusalem, and Rome. After receiving a PhD in
-            Sacred Scriptures from the Pontifical Biblical Institute, he joined Marquette University
-            as a professor (1966 - 1972). He left Marquette for Smith College, becoming the head of
-            the Department of religion from 1975 until 1997. During his time at Smith, Quesnell met
-            fellow professor Jean Higgins and the two married in 1973. After retirement in 1997, he
-            was awarded the Roe Straut Professor Emeritus (Roe Straut Professor of Humanities,
-            1988). </p>
-         <p>Quesnell actively engaged in several scholarly debates throughout his lifetime but is
-            most known for his role in the Mar Saba Letter debate and his subsequent high-profile
-            disputes with the discoverer letter, Morton Smith (1915 - 1991). In 1973 Smith published
-            two books on his discovery of a previously unknown letter written by Clement of
-            Alexandria to "Theodore" regarding a secret gospel of Mark. Quesnell's initial
-            skepticism of the authenticity of this discovery sparked a 30-year debate within the
-            academic community.</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Born on February 27, 1927 in Milwaukee, Wisconsin, Quesnell earned a Master's Degree in Philosophy and an STL from St. Louis University. He later did studies in eastern languages and the Bible in Vienna, Paris, Jerusalem, and Rome. After receiving a PhD in Sacred Scriptures from the Pontifical Biblical Institute, he joined Marquette University as a professor (1966 - 1972). He left Marquette for Smith College, becoming the head of the Department of religion from 1975 until 1997. During his time at Smith, Quesnell met fellow professor Jean Higgins and the two married in 1973. After retirement in 1997, he was awarded the Roe Straut Professor Emeritus (Roe Straut Professor of Humanities, 1988). </p>
+         <p> Quesnell actively engaged in several scholarly debates throughout his lifetime but is most known for his role in the Mar Saba Letter debate and his subsequent high-profile disputes with the discoverer letter, Morton Smith (1915 - 1991). In 1973 Smith published two books on his discovery of a previously unknown letter written by Clement of Alexandria to "Theodore" regarding a secret gospel of Mark. Quesnell's initial skepticism of the authenticity of this discovery sparked a 30-year debate within the academic community.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The collection contains correspondence, photographic prints and slides, publications,
-            research and Quesnell's professional file.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains correspondence, photographic prints and slides, publications, research and Quesnell's professional file.</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into five series:</p>
-         <list>
-            <item> Correspondence </item>
-            <item> Professional Life </item>
-            <item> Publications </item>
-            <item> Research </item>
-            <item> Oversized Materials </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>Correspondence</item>
+            <item>Professional Life</item>
+            <item>Publications</item>
+            <item>Research</item>
+            <item>Oversized Materials</item>
          </list>
       </arrangement>
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>Except where noted in the finding aid, the papers are open to research according to the
-            regulations of the Smith College Archives. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>Except where noted in the finding aid, the papers are open to research according to the regulations of the Smith College Archives.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Smith College owns copyright to any published material relating to college events and
-            activities. Copyright to materials created by other individuals may be owned by those
-            individuals or their heirs or assigns. It is the responsibility of the researcher to
-            identify and satisfy the holders of all copyrights. Permission must be obtained from the
-            Smith College Archives to publish reproductions or quotations beyond "fair use."</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Quentin Quesnell papers, Box #, Smith College Archives </p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Quentin Quesnell papers, Smith College Archives, CA-MS-00379, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Quentin Quesnell Papers, 1927 - 2012 were created by Quentin Quesnell and donated
-            over a period of two (2) years to the College Archives.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Quentin Quesnell Papers, 1927 - 2012 were created by Quentin Quesnell and donated over a period of two (2) years to the College Archives.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Aquisition evalutation performed by Mark Umstot, Simmons Library and Information Science
-            student internship, 2013. Collection processed and encoded by Elizabeth Carron, Archives
-            Specialist.</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Aquisition evalutation performed by Mark Umstot, Simmons Library and Information Science student internship, 2013. Collection processed and encoded by Elizabeth Carron, Archives Specialist.</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-
-         <subject encodinganalog="650" source="lcsh">Bible -- Study and teaching (Higher) -
-            Massachusetts -- Northampton.</subject>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <list type="ordered">
+            <item>42. Faculty - Quesnell, Jean Higgins</item>
+            <item>52. Department of Religion</item>
+         </list>
+      </relatedmaterial>
+      <separatedmaterial id="aspace_add-separated">
+         <head>Separated Materials</head>
+         <p>Additional unprocessed materials are housed in fourteen (14) record center cartons measuring fourteen (14) linear feet. A <extref href="http://www.smith.edu/libraries/libs/ssc/eadfiles/ca_manosca379.pdf">preliminary inventory</extref> is available. Please contact the Smith College Archives for more information.</p>  
+      </separatedmaterial>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Bible -- Study and teaching (Higher) - Massachusetts -- Northampton.</subject>
          <subject encodinganalog="650" source="lcsh">Hapax legomenon.</subject>
          <subject encodinganalog="650" source="lcsh">Hebrew language -- Lexicology.</subject>
-         <subject encodinganalog="650" source="lcsh">Literary forgeries and mystifications - Early
-            works to 1800.</subject>
+         <subject encodinganalog="650" source="lcsh">Literary forgeries and mystifications - Early works to 1800.</subject>
          <subject encodinganalog="650" source="lcsh">Mar Saba (Monastery)</subject>
          <subject encodinganalog="650" source="lcsh">Secret Gospel according to Mark.</subject>
-         <persname encodinganalog="600" source="lcnaf">Quesnell, Quentin, 1927 -- 2012.</persname>
-         <persname encodinganalog="600" source="lcnaf">Smith College. Department of Religion and
-            Biblical Literature.</persname>
-         <persname encodinganalog="600" source="lcnaf">Smith, Morton, 1915 -- 1991.</persname>
          <subject encodinganalog="650" source="lcsh">Writing -- Identification.</subject>
          <genreform encodinganalog="655" source="aat">35mm</genreform>
-         <genreform encodinganalog="655" source="aat">correspondence</genreform>
-         <genreform encodinganalog="655" source="aat">drafts (documents)</genreform>
+         <genreform encodinganalog="655" authfilenumber="300026877" source="aat">correspondence</genreform>
+         <genreform encodinganalog="655" authfilenumber="300026931" source="aat">drafts (documents)</genreform>
          <genreform encodinganalog="655" source="aat">manuscripts for publication</genreform>
          <genreform encodinganalog="655" source="aat">photographic prints</genreform>
-
+         <persname encodinganalog="600" source="naf">Quesnell, Quentin, 1927 -- 2012.</persname>
+         <persname encodinganalog="600" source="naf">Smith College. Department of Religion and Biblical Literature.</persname>
+         <persname encodinganalog="600" source="naf">Smith, Morton, 1915 -- 1991.</persname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>
-            <list>
-               <item>42. Faculty - Quesnell, Jean Higgins</item>
-               <item>52. Department of Religion</item>
-            </list>
-         </p>
-      </relatedmaterial>
-
-
-      <separatedmaterial id="add-separated">
-
-
-         <p>Additional unprocessed materials are housed in fourteen (14) record center cartons
-            measuring fourteen (14) linear feet. A <extref
-               href="http://www.smith.edu/libraries/libs/ssc/eadfiles/ca_manosca379.pdf">preliminary
-               inventory</extref> is available. Please contact the Smith College Archives for more
-            information.</p>
-      </separatedmaterial>
-
-
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_f24a79c437a56e58219deb522a63a2a6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Brown, Scott <unitdate>1994 - 2003</unitdate>
-                  </unittitle>
+                  <unittitle>Brown, Scott</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/2003"
+                            type="inclusive">1994 - 2003</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8aee165b618bfe3d4174477fe2aa5be7"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_fb6946c680aae69381879119c3c321cf"
+                             parent="aspace_8aee165b618bfe3d4174477fe2aa5be7"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2d0c6c0057e8e90eb6cac3a6c47ea8f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Brown, Scott (thesis) <unitdate>1994 - 2003</unitdate>
-                  </unittitle>
+                  <unittitle>Brown, Scott (thesis)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/2003"
+                            type="inclusive">1994 - 2003</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a00ee9cfeeccd07e505dfaedf8982ee8"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_df9a4a056571f027aca13b3fdad84015"
+                             parent="aspace_a00ee9cfeeccd07e505dfaedf8982ee8"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e088edbbf84b99d80e18bf6944516ba6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>editorial materials <unitdate>1970 - 2000</unitdate>
-                  </unittitle>
+                  <unittitle>editorial materials</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/2000"
+                            type="inclusive">1970 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_37a28aeb5adf76850509417c425b3212"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_2f329b1185ebd115f38cc3b4ec2bdb1f"
+                             parent="aspace_37a28aeb5adf76850509417c425b3212"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b945e505b95459af89ba6da5f9ff2420" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Fish, Dick <unitdate>1990 - 1995</unitdate>
-                  </unittitle>
+                  <unittitle>Fish, Dick</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/1995"
+                            type="inclusive">1990 - 1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b127283d2dc192436b798dbf7718a86a"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_148217f988ecb31c241909ab65251cc3"
+                             parent="aspace_b127283d2dc192436b798dbf7718a86a"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_81ef3ecff1f8934cc5870680cf8c6391" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Paananen, Timo <unitdate>2009 - 2011</unitdate>
-                  </unittitle>
+                  <unittitle>Paananen, Timo</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2009/2011"
+                            type="inclusive">2009 - 2011</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1be30e0d18c517c6152576184fbb8de2"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_962228e2e65b165b6010de8f1a807ac0"
+                             parent="aspace_1be30e0d18c517c6152576184fbb8de2"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_55b9c791358f82452942541328067854" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Quesnell, Jean Higgins <unitdate>1983</unitdate>
-                  </unittitle>
+                  <unittitle>Quesnell, Jean Higgins</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1983/1983">1983</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_925f99da6ea58838959cf57ffed37271"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_357f43399bbddfa6b7d5103733a7fd79"
+                             parent="aspace_925f99da6ea58838959cf57ffed37271"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_088f35e5c7166a124d1e59ab34fbfd65" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Smith, Morton <unitdate>1970 - 1985</unitdate>
-                  </unittitle>
+                  <unittitle>Smith, Morton</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1985"
+                            type="inclusive">1970 - 1985</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae3698b465afce15c427e21f8996c9f6"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_b88b14c19e962d327eafeb5e222754f8"
+                             parent="aspace_ae3698b465afce15c427e21f8996c9f6"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a4f1b79ec3e36c1350acfad8d09355b" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>various scholars <unitdate>1975 - 2005</unitdate>
-                  </unittitle>
+                  <unittitle>various scholars</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/2005"
+                            type="inclusive">1975 - 2005</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6dd8d1685dec0647b99a3706548a3e0f"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_e063bd6e702cc8aa239f7e79b5bfe1af"
+                             parent="aspace_6dd8d1685dec0647b99a3706548a3e0f"
+                             type="folder">8</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Professional Life</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_abafbc6feb75d5f63554c5780d119c6e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Smith College <unitdate>1994 - 2003</unitdate>
-                  </unittitle>
+                  <unittitle>Smith College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/2003"
+                            type="inclusive">1994 - 2003</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ddd891686d44dd024a8f7ad770e7fb6a"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_ec88e451437f6f5daa176a154c844f9f"
+                             parent="aspace_ddd891686d44dd024a8f7ad770e7fb6a"
+                             type="folder">9</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_0215e9d0c0ff99996c142f4940155476" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>"An Amusing Pericope" <unitdate>1994</unitdate>
-                  </unittitle>
+                  <unittitle>"An Amusing Pericope"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_67e1951453db000baf34997598a20929"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_229fb984710f1267895e9e08e5ddf768"
+                             parent="aspace_67e1951453db000baf34997598a20929"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_74121f22b1416e7bf632c04e2249c161" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>"Internal of the Literary Analysis" <unitdate>1975 - 1989</unitdate>
-                  </unittitle>
+                  <unittitle>"Internal of the Literary Analysis"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/1989"
+                            type="inclusive">1975 - 1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4b12eaf19d49ccf731ac33d825916d3f"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_6508d7d03187a942c4302a18f05b7b2e"
+                             parent="aspace_4b12eaf19d49ccf731ac33d825916d3f"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_02ca9a7fe842fd3f29ffc072ae71dfc8" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>"The Mar Saba Clementine: A Question of Evidence" <unitdate>1973 -
-                        1985</unitdate>
-                  </unittitle>
+                  <unittitle>"The Mar Saba Clementine: A Question of Evidence"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1973/1985"
+                            type="inclusive">1973 - 1985</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_47487011cc6fe63bda71eed8f9f8c70c"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_7ad83eebead6943b566cfb689abe894f"
+                             parent="aspace_47487011cc6fe63bda71eed8f9f8c70c"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d40669f6c26df11cbf7e23f5de1db391" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>"A New Gospel Story and It's Explanation" <unitdate>1975 -
-                        1990</unitdate>
-                  </unittitle>
+                  <unittitle>"A New Gospel Story and It's Explanation"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/1990"
+                            type="inclusive">1975 - 1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a2de35526ad84a59cdda5915ad0743fa"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_4ff0e6c287193442508df6eb40e44cd5"
+                             parent="aspace_a2de35526ad84a59cdda5915ad0743fa"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5d6d27f25a5304b1bda153ccd7356d15" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>"A Note On Overkill" <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"A Note On Overkill"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c4c305aac000637163534fd279700e8"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_0593eed0b71db3cae281f36f6efd3e8d"
+                             parent="aspace_6c4c305aac000637163534fd279700e8"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c93c8308909c5a585eace4478114837c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>(review) "The Secret Gospel: The Discovery and Interpretation of the
-                     Secret Gospel According to Mark" <unitdate>197</unitdate>
-                  </unittitle>
+                  <unittitle>(review) "The Secret Gospel: The Discovery and Interpretation of the Secret Gospel According to Mark"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">197</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e0e95a1cdb931213392a7cdb7e8ce0b5"
+                             label="Mixed Materials [310183630224144]"
+                             type="box">989.6</container>
+                  <container id="aspace_f69c418063725e0029c8fd693e009d05"
+                             parent="aspace_e0e95a1cdb931213392a7cdb7e8ce0b5"
+                             type="folder">15</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Research</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_6827b138e9c5c549b6c0385fa332cde7" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>handwriting analysis <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>handwriting analysis</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1afe8d3b182f2d7e087f6a823d62baa1"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_b88029d2c16865f53af879e2db12fe6c"
+                             parent="aspace_1afe8d3b182f2d7e087f6a823d62baa1"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dd59a3342c58bbf810c730d2a2334b9b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Hapax legomenon <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Hapax legomenon</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_41d868d8c44b08dec9783eac695eda7e"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_23557f3c82a54c9758524532d354068a"
+                             parent="aspace_41d868d8c44b08dec9783eac695eda7e"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_646ccd312b2af2fc48cb8f65a30c23e8" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>notes: A - H <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>notes: A - H</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f8e0b6814abce20ee16eecada6e29685"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_f8e032b136e70b6a4eaf6168aba2d021"
+                             parent="aspace_f8e0b6814abce20ee16eecada6e29685"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d8d6a50b0e859bada9d2252dd6d1d4c7" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>notes: I -N <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>notes: I -N</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_84412d89a010b9bdfa1669f41f2e694e"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_bfe9838b8c3dfd12bac85238f1a4deb4"
+                             parent="aspace_84412d89a010b9bdfa1669f41f2e694e"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d37ec8e66bb3291dab8b349ee3625575" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>notes: O - Z <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>notes: O - Z</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_29166ccf128efc95df11b1e79ba9041d"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_be91573646f1bc6505de32d6e35c53c5"
+                             parent="aspace_29166ccf128efc95df11b1e79ba9041d"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_acf35260e0392240505cb9553978e743" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>notes: untitled <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>notes: untitled</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_815d1a1d94a065b1fabc48dc62bfee95"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_748ece3a7a51dfc6afa7675c82730681"
+                             parent="aspace_815d1a1d94a065b1fabc48dc62bfee95"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_91293192f1cd9929d93d0fa9b761ad50" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">22</container>
-                  <unittitle>notes: 2009 <unitdate>2009</unitdate>
-                  </unittitle>
+                  <unittitle>notes: 2009</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2009/2009">2009</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_51bf0ee3dee888bc71219419498d803a"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_c323fe17b9802e0e95ce38b75599b39f"
+                             parent="aspace_51bf0ee3dee888bc71219419498d803a"
+                             type="folder">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_780f29b28236b077abed472729058180" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>Professional Development Fund <unitdate>1987 - 1988</unitdate>
-                  </unittitle>
+                  <unittitle>Professional Development Fund</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1987/1988"
+                            type="inclusive">1987 - 1988</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2abcbf39fab2546a825bfa101bc58e0b"
+                             label="Mixed Materials [310183630224086]"
+                             type="box">989.7</container>
+                  <container id="aspace_8d7f07e1a0232b3def7e3308d3f12684"
+                             parent="aspace_2abcbf39fab2546a825bfa101bc58e0b"
+                             type="folder">23</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>Series V: Oversized Materials</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_4ae66fc72e4fc3468d091e743e96ad3a" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>(3) 8" x 11" photographs, unknown manuscript <unitdate>circa
-                        1988</unitdate>
-                  </unittitle>
+                  <unittitle>(3) 8" x 11" photographs, unknown manuscript</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1988/1988">1988</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_348fe4cd9c1116f99f36b97c048b19da"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3a9b747a3460c4c4948a577a7345c8b8" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>(33) 11" x 14" photographs, unknown manuscript <unitdate>circa
-                        1988</unitdate>
-                  </unittitle>
+                  <unittitle>(33) 11" x 14" photographs, unknown manuscript</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1988/1988">1988</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_f9b5e9e42f62ec7e658dbc9e381ae72b"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b43111c152924cadca766d9def97d042" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>(3) slides of a stone fish, sent by Dick Fish (see Correspondence)
-                        <unitdate>1995</unitdate>
-                  </unittitle>
+                  <unittitle>(3) slides of a stone fish, sent by Dick Fish (see Correspondence)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1995/1995">1995</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_d8319096473767091ae6d5edc3b3a0fc"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_346a6f13914de71f1e8e46964fbb050c" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 9 ) slides; "unknown manuscript" <unitdate>circa 1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 9 ) slides; "unknown manuscript"</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_3575a77830b5f61affd5a5f3c9dff759"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d6178918322de927e04c1353b48d3131" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 3 ) slides; shelfmark, "VD v18"; by Garo Nalbandian <unitdate>circa
-                        1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 3 ) slides; shelfmark, "VD v18"; by Garo Nalbandian</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_e7ca04a1a150b5e09213af822c479597"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_211733af08725cc6e49ab31008d20731" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 4) slides; title page, "Bibliotheque Maj. Coll. 1776"; by Garo
-                     Nalbandian <unitdate>circa 1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 4) slides; title page, "Bibliotheque Maj. Coll. 1776"; by Garo Nalbandian</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_be28e1222dd45f436df8fd577350ecb2"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc6c1176439b8402bceac50064ffa783" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 3 ) slides; colophon, "Isacci Vossii de septuaginta interpretibus
-                     corumpque tralatione atque chronologia dissertatione"; by Garo Nalbandian
-                        <unitdate>circa 1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 3 ) slides; colophon, "Isacci Vossii de septuaginta interpretibus corumpque tralatione atque chronologia dissertatione"; by Garo Nalbandian</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_7cce9e7b544c06466df46dc73f7380a8"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b2d65d7b47e078e7e7f2c3b8cf77c980" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 4 ) slides; title page, "Gerardi Ioannis Vossii harmoniae evangelicae
-                     de passion, morte, resurrection atque ascension Jesu Christi salvatoris
-                     nostri"; by Garo Nalbandian <unitdate>circa 1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 4 ) slides; title page, "Gerardi Ioannis Vossii harmoniae evangelicae de passion, morte, resurrection atque ascension Jesu Christi salvatoris nostri"; by Garo Nalbandian</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_dcfb45f4210911470f753b431c6bcedb"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_40f8e4f08a512a83cc955ec251115b59" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>( 2 ) slides; front endpaper, "Nota pro domina ad Xbre 1735", "Nota pro
-                     Marehesina Julio 1737", unknown manuscript; by Garo Nalbandian <unitdate>circa
-                        1983</unitdate>
-                  </unittitle>
+                  <unittitle>( 2 ) slides; front endpaper, "Nota pro domina ad Xbre 1735", "Nota pro Marehesina Julio 1737", unknown manuscript; by Garo Nalbandian</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1983/1983">1983</unitdate>
+                  <container altrender="Flat Box (12d x 3h x 17.5w)"
+                             id="aspace_392dbe2a0db91d90b7a5adad8b4433ef"
+                             label="Mixed Materials [310183630224029]"
+                             type="box">989.8</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
