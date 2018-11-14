@@ -1,535 +1,763 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca317.xml//EN">manosca317</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca317</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Student Demonstrations Files, ca.
-               1933-[ongoing]</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Anna Eisen.</author>
-
+            <titleproper>Finding aid to the Student Demonstrations files <num>CA.MS.00317</num>
+            </titleproper>
+            <author>Finding aid prepared by Anna Eisen.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2010</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2010">2010</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah
-            Richards. <date normal="2010-03-26">2010-03-26</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 11:18:38 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Smith College.</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Student Demonstrations Files</unittitle>
-         <unitdate label="Dates:" type="inclusive">ca. 1933-[ongoing]</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:6d7bc4f3-8d0b-4491-aaaf-36f921964459</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The Student Demonstrations files
-            contain a wide range of information about the history of political demonstrations at
-            Smith College. </abstract>
+         <unittitle>Student Demonstrations files</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College.</corpname>
+         </origination>
+         <unitid>CA.MS.00317</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1933/2007"
+                   type="inclusive">1933-2007</unitdate>
+         <abstract id="aspace_7d830deada1aa7fec7435f1f8d0ba46c">The Student Demonstrations files contain a wide range of information about the history of political demonstrations at Smith College.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Student Demonstrations files document how Smith College students have expressed
-            their opposition to national and local issues through rallies and protests since 1933.
-            Major events such as the United States' involvement in World War II, presidential
-            elections, and segregation prompted the majority of student demonstrations from the
-            1930s to 1960s. Issues of the 1980s and 1990s include opposition to the Persian Gulf
-            War, support for Ada Comstock Scholars, as well as rallies to help improve women's
-            safety on college campuses.</p>
-
-         <p>The 1986 occupation of College Hall makes up the largest portion of the Student
-            Demonstration files. These folders contain both primary and secondary sources,
-            documenting Smith students' opposition to the Board of Trustees' investment in South
-            African companies that contributed to apartheid.</p>
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Student Demonstrations files include documents that relate to demonstrations and
-            protests conducted by Smith College students from 1933 to present. These activities
-            include rallies and campaigns regarding national and local issues, ranging from
-            opposition to U.S. wars abroad to conflicts of racism on the Smith campus. Types of
-            materials include academic papers, news clippings, newsletters, photographs, protest
-            signs, and student diaries.</p>
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Student Demonstrations Files, Box #, Smith College Archives.</p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Student Demonstrations files were donated to the Smith College Archives over a
-            period of time from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Student Demonstrations files were donated to the Smith College Archives over a period of time from a variety of sources.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>
-            <list>
-               <head>Researchers should also view:</head>
-               <item>- 80. <extref
-                     href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca25_main.html"
-                     >College Hall Occupation Oral History Project</extref></item>
-               <item>- 80. <extref
-                     href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca31_main.html"
-                     >Student Strike 1970</extref></item>
-            </list>
-         </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Student Demonstrations files document how Smith College students have expressed their opposition to national and local issues through rallies and protests since 1933. Major events such as the United States' involvement in World War II, presidential elections, and segregation prompted the majority of student demonstrations from the 1930s to 1960s. Issues of the 1980s and 1990s include opposition to the Persian Gulf War, support for Ada Comstock Scholars, as well as rallies to help improve women's safety on college campuses.</p>
+         <p> The 1986 occupation of College Hall makes up the largest portion of the Student Demonstration files. These folders contain both primary and secondary sources, documenting Smith students' opposition to the Board of Trustees' investment in South African companies that contributed to apartheid.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Student Demonstrations Files, Box #, Smith College Archives, CA-MS-00317, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Materials</head>
+         <list type="ordered">
+            <head>Researchers should also view:</head>
+            <item>-	80. <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca25_main.html">College Hall Occupation Oral History Project</extref>
+            </item>
+            <item>-	80. <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca31_main.html">Student Strike 1970</extref>
+            </item>
+         </list>
       </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Student Demonstrations files include documents that relate to demonstrations and protests conducted by Smith College students from 1933 to present. These activities include rallies and campaigns regarding national and local issues, ranging from opposition to U.S. wars abroad to conflicts of racism on the Smith campus. Types of materials include academic papers, news clippings, newsletters, photographs, protest signs, and student diaries.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <dsc>
+         <c01 id="aspace_b80560113eb608d8974006e990d04bfa" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Demonstrations <unitdate>1933-35</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1933/1935"
+                         type="inclusive">1933-1935</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e316b3c9846e0152124b1c39599f4e2a"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_577a7d7352673018e94d57366f18a967"
+                          parent="aspace_e316b3c9846e0152124b1c39599f4e2a"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_acaa074cd5e07942f9960eea17894153" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Demonstrations - Riots <unitdate>1936-37</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (including Riots)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1936/1937"
+                         type="inclusive">1936-1937</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_72486134d9bab4dd8a563d1c73dbd098"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_0387519755197fe352887d52b17d6a58"
+                          parent="aspace_72486134d9bab4dd8a563d1c73dbd098"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_34688e2b45582254c0f9210f8303d154" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Demonstrations <unitdate>1940-49</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1940/1949"
+                         type="inclusive">1940-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3a511942210d5e8db9e88082ab891735"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_a53536cf237fa84ce179e782a7cd6e82"
+                          parent="aspace_3a511942210d5e8db9e88082ab891735"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9a6c6b8f0dd6f34e16c18c804ec1a618" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Demonstrations - Photos <unitdate>1950-59</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (including Photos)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1959"
+                         type="inclusive">1950-1959</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f74d13c3ceba17af84bfc1019e7027ca"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_af7c6afea49a1f0316cdd3fc68a53322"
+                          parent="aspace_f74d13c3ceba17af84bfc1019e7027ca"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c47e5d3a62e3f0fa1e7c61c77cc3494e" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Demonstrations <unitdate>1960-65</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1965"
+                         type="inclusive">1960-1965</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e12d1624cd0c0e752363e698c7fc6ddd"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_e0f0fcc7a0e9b7c091317b207918f651"
+                          parent="aspace_e12d1624cd0c0e752363e698c7fc6ddd"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_858e00c3b3fd80269441d3ec672a0503" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Demonstrations <unitdate>1965-66</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1966"
+                         type="inclusive">1965-1966</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2e8882a9ea33e6dfe01ee52137008cca"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_eeb4ba28c95a505c19bec0ab2032a357"
+                          parent="aspace_2e8882a9ea33e6dfe01ee52137008cca"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8e85efe21223bfa993902666d9e2980f" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Demonstrations <unitdate>1966-67</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/1967"
+                         type="inclusive">1966-1967</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6843ac8d1f62a511ebaffd60b3ab43a3"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_adbd7b7b1c5f6a64d73993c5db1cafaa"
+                          parent="aspace_6843ac8d1f62a511ebaffd60b3ab43a3"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_aa5f2a66f2f2a486b2fd993af1bcc54d" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Demonstrations <unitdate>1967-68</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1968"
+                         type="inclusive">1967-1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9df0283d1d286d4d8bb4d19551473a9b"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_a0d1ae3fc63149dc069f96b3ed76365b"
+                          parent="aspace_9df0283d1d286d4d8bb4d19551473a9b"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f535c3ef23c766cb2e1d8a88ae90c5de" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Demonstrations - News clippings, local <unitdate>March 1967</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (including News clippings)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967-03/1967-03">March 1967</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9842fc9b4c6326789722c6dd3e6209f8"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_e4e1d4d5884fadc398cf1a2d1e0fa39f"
+                          parent="aspace_9842fc9b4c6326789722c6dd3e6209f8"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9c618f1f492144c3ad87404a3c1b17bc" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Demonstrations - News clippings, local <unitdate>1967</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (including News clippings)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c2a89edee187f2bd4761ac5ef3aff64b"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_69db83b7c7cd8011f72cc995fa37e411"
+                          parent="aspace_c2a89edee187f2bd4761ac5ef3aff64b"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8e0a35ee99131e0e0625480e8d3ec7b3" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Demonstrations - Fast For Peace <unitdate>1968</unitdate>
-               </unittitle>
+               <unittitle>Fast For Peace</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8550b4f7f687070a8064ee0e050c151b"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_f68313335bda19357732ad36f2e772af"
+                          parent="aspace_8550b4f7f687070a8064ee0e050c151b"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_845b008a18fa57dcf7329d0e6c437dda" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Demonstrations - News clippings, local <unitdate>1968</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (News clippings)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e3b0951182b6d32ae15167c803ca249f"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_355873dbfe9724b4f204c6763325a695"
+                          parent="aspace_e3b0951182b6d32ae15167c803ca249f"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a274335068173929304a5552a94021ef" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Demonstrations <unitdate>1968-69</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1969"
+                         type="inclusive">1968-1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4c30d97dcc88e0b1a20f07396d877027"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_f6aebf06932dd25f67de465d7fb84d5f"
+                          parent="aspace_4c30d97dcc88e0b1a20f07396d877027"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7328f22c0d5801b30a2d1de89da71ef4" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Demonstrations - News clippings, local <unitdate>1968-69</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (News clippings)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1969"
+                         type="inclusive">1968-1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_da488bedc48b562caab7807de7122fd7"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_7ffd6a45721755d7b827b4823bc26265"
+                          parent="aspace_da488bedc48b562caab7807de7122fd7"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_be9f5cd0adfc8e26375cd4455eb94116" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Demonstrations - Photographs <unitdate>October 1969</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (Photographs)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969-10/1969-10">October 1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_415e0763b210d66430698b05d3809ce5"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_75e22f80ffafd9b1addb9588c24047c1"
+                          parent="aspace_415e0763b210d66430698b05d3809ce5"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_21819354edc255bb3e585d1507efc63f" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Demonstrations - Day of Dialogue <unitdate>1969</unitdate>
-               </unittitle>
+               <unittitle>Day of Dialogue</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e123ba2ceeeee545a61a9b62fface21b"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_a71afd4dc7935ead98778c122b3532e2"
+                          parent="aspace_e123ba2ceeeee545a61a9b62fface21b"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_03ee90c5c6541bbd87074a2facf9d711" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Demonstrations - Work for Peace <unitdate>October 1969</unitdate>
-               </unittitle>
+               <unittitle>Work for Peace</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969-10/1969-10">October 1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e023708cd3efa2e018c241b78f638ae4"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_32e266d3b0ff7b2c9224140b59494761"
+                          parent="aspace_e023708cd3efa2e018c241b78f638ae4"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_65dd686eb6dc38ce697fe04be881078d" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Demonstrations - National Student Strike <unitdate>1969-70</unitdate>
-               </unittitle>
+               <unittitle>National Student Strike</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1970"
+                         type="inclusive">1969-1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_644865a3d9c595398720e6c2151ea3da"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_7a0b3c4794943ac761dee2d44bdd8292"
+                          parent="aspace_644865a3d9c595398720e6c2151ea3da"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3f16075bfdf633dde8aee4d4635cf33b" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Demonstrations <unitdate>1970-72</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1972"
+                         type="inclusive">1970-1972</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_eb5a0bcf02fe4d3f4c6064ac198118d7"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_e7e9b5731ee247537b3d613f613d9567"
+                          parent="aspace_eb5a0bcf02fe4d3f4c6064ac198118d7"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7211285c6f5ff9d134e8a4f0ee97ea5d" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Demonstrations - News clippings <unitdate>1971-72</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations (News clippings)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1972"
+                         type="inclusive">1971-1972</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_58e9605419e1ad7633f3fbb3d4970385"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_6f30640f217d6aca9e93815b9ff415c9"
+                          parent="aspace_58e9605419e1ad7633f3fbb3d4970385"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2200a56adb15c7f051275ff48ea7b952" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Demonstrations <unitdate>1973-74</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1973/1974"
+                         type="inclusive">1973-1974</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9dc5292fcf72f800a73f7132c66803ba"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_ff1c22ab113864b086e6f890f24337a3"
+                          parent="aspace_9dc5292fcf72f800a73f7132c66803ba"
+                          type="folder">21</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6b3929a1060de9b79418c2df9ae31faf" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Demonstrations - South Africa <unitdate>1975-80</unitdate>
-               </unittitle>
+               <unittitle>South Africa</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1980"
+                         type="inclusive">1975-1980</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c28e26eaf3e518a5ac4812f41d054c80"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_a19e0e1cb43adc2ddd96bd24aabd44c5"
+                          parent="aspace_c28e26eaf3e518a5ac4812f41d054c80"
+                          type="folder">22</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d73aa1313d3e54bc897a435cdd62ce24" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Demonstrations <unitdate>1981</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1981/1981">1981</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b92f3be24aa64e2df9db3ca40e8f7318"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_1680e45a425eb2e51a9789a44f6167b8"
+                          parent="aspace_b92f3be24aa64e2df9db3ca40e8f7318"
+                          type="folder">23</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7aedda14ba971314f057cd03e1800039" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Demonstrations <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4d951c91f8d8cec4fbf1c921e9f61d61"
+                          label="Mixed Materials [310183630239209]"
+                          type="box">3023</container>
+               <container id="aspace_8ce2ab21c130bdc992d824f804868249"
+                          parent="aspace_4d951c91f8d8cec4fbf1c921e9f61d61"
+                          type="folder">24</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d99af9d505f1475336541efc2d287312" level="series">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">25</container>
-               <unittitle>Demonstrations - College Hall Occupation - "Why Smith, Why Now?" - Donna
-                  Kenny <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>College Hall Occupation</unittitle>
+            </did>
+            <c02 id="aspace_62330d0fb5ba49138c73fd86f9adab6c" level="file">
+               <did>
+                  <unittitle>"Why Smith, Why Now?" - Donna Kenny</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3227497dea5879d9a7e5f21ae930ec68"
+                             label="Mixed Materials [310183630239209]"
+                             type="box">3023</container>
+                  <container id="aspace_080e0cbac42b2b2041e418b885b219ee"
+                             parent="aspace_3227497dea5879d9a7e5f21ae930ec68"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4753299cd9694afced13248ec97ddec0" level="file">
+               <did>
+                  <unittitle>"It Happened at Smith" - Maureen Dooley Lawrence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_07ad3d8d9c91f973f3024905bf40b1bc"
+                             label="Mixed Materials [310183630239209]"
+                             type="box">3023</container>
+                  <container id="aspace_aaf3bc621ab30c80b0a44d05bceac176"
+                             parent="aspace_07ad3d8d9c91f973f3024905bf40b1bc"
+                             type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0cccd285436f70c105ef531301bc63ac" level="file">
+               <did>
+                  <unittitle>Diaries</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a5dafa9094ac5d127ec05f86a9c03362"
+                             label="Mixed Materials [310183630239209]"
+                             type="box">3023</container>
+                  <container id="aspace_085aa3b2a12a877433cb38391497ace6"
+                             parent="aspace_a5dafa9094ac5d127ec05f86a9c03362"
+                             type="folder">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_55853fc9ad21d2b4ea0459457a8b317c" level="file">
+               <did>
+                  <unittitle>Notes by Rebecca Loveland, Class of 1988</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0179dd48c0ef15fa3239dec4ebe6a969"
+                             label="Mixed Materials [310183630239209]"
+                             type="box">3023</container>
+                  <container id="aspace_a5ef96bc2a0fd932efa795a4604087ef"
+                             parent="aspace_0179dd48c0ef15fa3239dec4ebe6a969"
+                             type="folder">28</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fd642998be78ea1bf151ca2d7c17d317" level="file">
+               <did>
+                  <unittitle>Signs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c65d64d7ddcbb8893e2f4b479d7f80fe"
+                             label="Mixed Materials [310183630239209]"
+                             type="box">3023</container>
+                  <container id="aspace_1234beeee6654372e71f731589f2d486"
+                             parent="aspace_c65d64d7ddcbb8893e2f4b479d7f80fe"
+                             type="folder">29</container>
+               </did>
+            </c02>
+            <c02 id="aspace_743bf3f08c3f839276339f6aac78b3eb" level="file">
+               <did>
+                  <unittitle>Statements of Support - Notes from Mary Maples Dunn</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_57e5fa5a0e0fa8ffb1b8a8b6ab8d483e"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_edbfe868766027fac1989cb0d129cb9c"
+                             parent="aspace_57e5fa5a0e0fa8ffb1b8a8b6ab8d483e"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a602425fca5604cc599eb70c30310b33" level="file">
+               <did>
+                  <unittitle>Student Proposal for Settlement</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_dfda145251bf46cc2701036a17040d59"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_fcad518fac00d95ce2b2086dc8b4cad1"
+                             parent="aspace_dfda145251bf46cc2701036a17040d59"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_87d40474152b20e35250c5feca2722c0" level="file">
+               <did>
+                  <unittitle>Lists of People at Sit-in &amp; Supporters</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_3102dad35454c2af61ba4b20d7083941"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_552b4b1ce73ccd9001400dc8e01932a7"
+                             parent="aspace_3102dad35454c2af61ba4b20d7083941"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e242cf3fd6f4b93a1393910618c9739d" level="file">
+               <did>
+                  <unittitle>Trustee Investment Policy Statements</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_43aff5c54056962632a9ef1a981d6f0d"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_44c5adebbe63eb0333ad57fb2dce120b"
+                             parent="aspace_43aff5c54056962632a9ef1a981d6f0d"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1414046062753f9ff106dd388def2e15" level="file">
+               <did>
+                  <unittitle>Press Coverage and Public Relations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_836af00a0b7636361d625d8463ae26be"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_7a3e89e1e54e782d642ec52c5222403e"
+                             parent="aspace_836af00a0b7636361d625d8463ae26be"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cc54aeb4a9544df7018a9134c0d2fcbb" level="file">
+               <did>
+                  <unittitle>Community Policy Committee Report</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986-10/1986-10">October 1986</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_2807edf7948e2651c36eda524e127001"
+                             label="Mixed Materials [310183630239217]"
+                             type="box">3023.1</container>
+                  <container id="aspace_7ed712799d500735862e087ddb424afb"
+                             parent="aspace_2807edf7948e2651c36eda524e127001"
+                             type="folder">6</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_d1bd4c22780e60b868c95f91653c0f9b" level="file">
+            <did>
+               <unittitle>Women's March for Life - Washington, D.C.</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_8166248f15e9140764a783c5bf0437d7"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_dc81ff75b23df0ca220e817e9b74e86a"
+                          parent="aspace_8166248f15e9140764a783c5bf0437d7"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0dbc4e24c0aa6410032e3a8827a0d4c5" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">26</container>
-               <unittitle>Demonstrations - College Hall Occupation - "It Happened at Smith" -
-                  Maureen Dooley Lawrence <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>C.I.A. Recruiting</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1987/1987">1987</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_5e6260d8c1548b37fa42ca8771bb9d70"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_13ca1a5b1ef8fe9f9e960cda815e4637"
+                          parent="aspace_5e6260d8c1548b37fa42ca8771bb9d70"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_465f7e8dbc410112ae680abaf9194dda" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">27</container>
-               <unittitle>Demonstrations - College Hall Occupation - Diaries
-                     <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Space for Multicultural Organizations</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_50a2fffb5f6b5d8257b9c1085c248d44"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_e224a40eefcb5df6212940afbc8412bd"
+                          parent="aspace_50a2fffb5f6b5d8257b9c1085c248d44"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d867a6f7f47f2e70d2fbc0535703efb7" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">28</container>
-               <unittitle>Demonstrations - College Hall Occupation - Notes by Rebecca Loveland,
-                  Class of 1988 <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Persian Gulf War</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1991/1991">1991</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e76adb5a957b398ca7cd13ac7eba4d75"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_b752e30504a5544d8cfe5aea917168db"
+                          parent="aspace_e76adb5a957b398ca7cd13ac7eba4d75"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_48ecc1acb5571f66c21501d5ae2d3dba" level="file">
             <did>
-               <container type="box" label="mixed materials">3023</container>
-               <container type="folder" label="mixed materials">29</container>
-               <unittitle>Demonstrations - College Hall Occupation - Signs <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>United Student Employee Delegation (USED)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1991/1991">1991</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_91e77ed77239467c6cbe50dd671508bd"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_395bfd0bba5ee0b104bbf20855142858"
+                          parent="aspace_91e77ed77239467c6cbe50dd671508bd"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_236583123b7145563fcc7423d355131f" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Demonstrations - Statements of Support - 2 Notes from Mary Maples Dunn
-                     <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Rodney King Verdict</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1992/1992">1992</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_dcf491a56400450b84fa5051441f8ce6"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_b4e2bed1b94ca7f75239dcc15ec9dd76"
+                          parent="aspace_dcf491a56400450b84fa5051441f8ce6"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_769f0d2906227647ec5b45f5c070af20" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Demonstrations - Student Proposal for Settlement <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Rally for Ada's</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_24684cd11a92f7cb162ca5051a5d721e"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_61a34253f17190cbd0d8cfa11fc6153a"
+                          parent="aspace_24684cd11a92f7cb162ca5051a5d721e"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_53417cc57e8617a2038ca843223fae74" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Demonstrations - Lists of People at Sit-in &amp; Supporters
-                     <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Chain for Change</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e2c33aa5a38264ad41be6388f05d3241"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_109b6940a5bace5866cf7f35d6abb42e"
+                          parent="aspace_e2c33aa5a38264ad41be6388f05d3241"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_402b8ec50f102df794daedaf35a80736" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Demonstrations - Trustee Investment Policy Statements
-                     <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1997/1998"
+                         type="inclusive">1997-1998</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_0421229738234a473c0a6f7c68015c4d"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_1c23de51418c90e69e7f6542652a6b49"
+                          parent="aspace_0421229738234a473c0a6f7c68015c4d"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_62af993576e1f3920848716769c79c95" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Demonstrations - College Hall Occupation - Press Coverage and Public
-                  Relations <unitdate>1986</unitdate>
-               </unittitle>
+               <unittitle>Demonstrations</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1999/1999">1999</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_5ce1f8d411d0427e60e8776b759f0721"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_c172994b6ffb6d9fc42df100c270f4e7"
+                          parent="aspace_5ce1f8d411d0427e60e8776b759f0721"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_217b9761be435d64732b7cb8e18b3103" level="file">
             <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Demonstrations - College Hall Occupation - Community Policy Committee
-                  Report <unitdate>October 1986</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Demonstrations - Women's March for Life - Washington, D.C.
-                     <unitdate>1986</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Demonstrations - C.I.A. Recruiting <unitdate>1987</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Demonstrations - Space for Multicultural Organizations
-                     <unitdate>1990</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Demonstrations - Persian Gulf War <unitdate>1991</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Demonstrations - United Student Employee Delegation (USED)
-                     <unitdate>1991</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Demonstrations - Rodney King Verdict <unitdate>1992</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Demonstrations - Rally for Ada's <unitdate>1994</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Demonstrations - Chain for Change <unitdate>1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Demonstrations <unitdate>1997-98</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Demonstrations <unitdate>1999</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3023.1</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Demonstrations - Blackface Incident - Posters, etc.
-                     <unitdate>2007</unitdate>
-               </unittitle>
+               <unittitle>Blackface Incident (Posters, etc.)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2007/2007">2007</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_c20a9eb3303affde6dfc1439faa28351"
+                          label="Mixed Materials [310183630239217]"
+                          type="box">3023.1</container>
+               <container id="aspace_3242b7eb99622d923f6cc240c2b631b3"
+                          parent="aspace_c20a9eb3303affde6dfc1439faa28351"
+                          type="folder">17</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
