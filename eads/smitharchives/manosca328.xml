@@ -1,175 +1,176 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca328.xml//EN">manosca328</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca328</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">United States National Student Association Records,
-               1947-1965</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jenna Novotny.</author>
-
+            <titleproper>Finding aid to the United States National Student Association records <num>CA.MS.00328</num>
+            </titleproper>
+            <author>Finding aid prepared by Jenna Novotny.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-13">2013-11-13</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 10:28:16 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">United States National Student
-               Association</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">United States National Student Association
-            Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1947-1965</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:2ac85c61-fe85-49d9-84aa-eca9adf1c8bf</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(2.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains correspondence, clippings, and
-            photographs. </abstract>
+         <unittitle>United States National Student Association records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">United States National Student Association</corpname>
+         </origination>
+         <unitid>CA.MS.00328</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1947/1965"
+                   type="inclusive">1947-1965</unitdate>
+         <abstract id="aspace_22c02d681329e2ca5945d973a990eac6">Contains correspondence, clippings, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The National Student Association was founded in 1947 as a confederation of student
-            governments across the nation, united for the purpose of improving education. It
-            advocated federal aid for education, student publications without censorship and it took
-            a stand against discrimination. Smith College students began affiliation with the
-            organization the year it was created. In 1978 it merged with the National Student Lobby,
-            forming the United States Student Association.</p>
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The collection consists of correspondence, conference publications, press releases,
-            newspaper clippings, and photographs.</p>
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives except where noted in the finding aid.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>United States National Student Association, Box #, Smith College Archives.</p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The records of the National Student Association were donated over a period of time to
-            the Smith College Archives from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the National Student Association were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The National Student Association was founded in 1947 as a confederation of student governments across the nation, united for the purpose of improving education. It advocated federal aid for education, student publications without censorship and it took a stand against discrimination. Smith College students began affiliation with the organization the year it was created. In 1978 it merged with the National Student Lobby, forming the United States Student Association.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> United States National Student Association, Box #, Smith College Archives, CA-MS-00328, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection consists of correspondence, conference publications, press releases, newspaper clippings, and photographs.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <dsc>
+         <c01 id="aspace_efb149763745514e6f4ffbdcef19bd69" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Conference Publications <unitdate>1950-53, undated</unitdate>
-               </unittitle>
+               <unittitle>Conference Publications</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1953"
+                         type="inclusive">1950-1953</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_8561c6ef039cb60ae96ec9519f2470ae"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9a10b521f6445ec38c75e4d0115f5a8c" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Correspondence, By-laws <unitdate>1947-60</unitdate>
-               </unittitle>
+               <unittitle>Correspondence, By-laws</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/1960"
+                         type="inclusive">1947-1960</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_6e23dc971620f61f5e2686364308d6f3"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_85c740fd63a1edfa517c58cc422524aa" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Newspaper Clippings <unitdate>1947-65</unitdate>
-               </unittitle>
+               <unittitle>Newspaper Clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/1965"
+                         type="inclusive">1947-1965</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_f252546611dee3d51e6151ca6275d145"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e55f5142f0127817d317f8cd5c95670b" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Notebook <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Notebook</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_ea82387734f976b58f426c247a525147"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0970ce142f139e0b5b0b3e35a7c80f11" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Photographs <unitdate>1952-53</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1953"
+                         type="inclusive">1952-1953</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_68583bcaae2e329fc284119ab56da51c"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0ef2e103d55f0995f31d1ba7627ea912" level="file">
             <did>
-               <container type="box" label="mixed materials">3017</container>
-               <unittitle>Press Releases <unitdate>1947-65</unitdate>
-               </unittitle>
+               <unittitle>Press Releases</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/1965"
+                         type="inclusive">1947-1965</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_2fc9661ac7fd4e37640402a00742226b"
+                          label="Mixed Materials [310183630238797]"
+                          type="box">3017</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
