@@ -1,413 +1,576 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca309.xml//EN">manosca309</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca309</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Pro-Life Alliance Records, 1990-1997</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz, Class of 2015;
-               Noelle Giguere, Class of 2000.</author>
-
+            <titleproper>Finding aid to the Pro-Life Alliance records <num>CA.MS.00309</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz, Class of 2015; Noelle Giguere, Class of 2000.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-10-28">2013-10-28</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 10:30:27 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-11</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Pro-Life Alliance</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Pro-Life Alliance Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1990-1997</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:bf4d8c19-a230-47f7-a047-5bc98f6bba4d</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1.3 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Records contain budget proposals,
-            pamphlets, flyers, minutes, photographs, clippings, and correspondence.</abstract>
+         <unittitle>Pro-Life Alliance records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Pro-Life Alliance</corpname>
+         </origination>
+         <unitid>CA.MS.00309</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.042 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1985/1998"
+                   type="inclusive">1985-1998</unitdate>
+         <abstract id="aspace_6b71a150b553f4f925e0f2aad0c67853">Records contain budget proposals, pamphlets, flyers, minutes, photographs, clippings, and correspondence.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Smith College Senate chartered the Pro-Life Alliance in 1990, and the organization
-            held its first meeting the following fall. The organization became inactive during the
-            autumn of 1997. Clea Emerson-Farley, Class of 1997 and club secretary, compiled the
-            majority of these files. The Pro-Life Alliance organized an annual Pro-Life 5-College
-            Conference, actively attended pro-life conferences at other universities (such as
-            Harvard and Brown), participated in Boston's annual Respect Life Walk, distributed
-            pro-life literature throughout the Smith community, and brought in speakers such as
-            journalist Kathleen Howley from the <title encodinganalog="630" render="italic"
-               source="lcsh">Boston Globe</title> and Teresa Donovan, an active member of the
-            Massachusetts Citizens for Life.</p>
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Pro-Life Alliance files are primarily composed of pro-life literature, including
-            pamphlets, flyers, and newsletters from various national organizations. Some of the
-            files contain information regarding the organization's activities on campus; however,
-            these files are not particularly detailed or comprehensive. In relation to the group's
-            work on campus, the folder containing issues of <title encodinganalog="630"
-               render="italic" source="lcsh">The Sophian</title> proves to be informative as it
-            contains a series of letters to the editor, both from the organization itself explaining
-            its stance, and responses from the student body. The treasurer's notebook provides
-            interesting insight into the activities of the club, as it contains many letters from
-            students and club correspondence.</p>
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives except where noted in the finding aid.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Pro-Life Alliance, Box #, Smith College Archives.</p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The records of the Pro-Life Alliance were donated over a period of time to the Smith
-            College Archives from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the Pro-Life Alliance were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Smith College Senate chartered the Pro-Life Alliance in 1990, and the organization held its first meeting the following fall. The organization became inactive during the autumn of 1997. Clea Emerson-Farley, Class of 1997 and club secretary, compiled the majority of these files. The Pro-Life Alliance organized an annual Pro-Life 5-College Conference, actively attended pro-life conferences at other universities (such as Harvard and Brown), participated in Boston's annual Respect Life Walk, distributed pro-life literature throughout the Smith community, and brought in speakers such as journalist Kathleen Howley from the <title encodinganalog="630" render="italic" source="lcsh">Boston Globe</title> and Teresa Donovan, an active member of the Massachusetts Citizens for Life.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Pro-Life Alliance, Box #, Smith College Archives, CA-MS-00309, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Pro-Life Alliance files are primarily composed of pro-life literature, including pamphlets, flyers, and newsletters from various national organizations. Some of the files contain information regarding the organization's activities on campus; however, these files are not particularly detailed or comprehensive. In relation to the group's work on campus, the folder containing issues of <title encodinganalog="630" render="italic" source="lcsh">The Sophian</title> proves to be informative as it contains a series of letters to the editor, both from the organization itself explaining its stance, and responses from the student body. The treasurer's notebook provides interesting insight into the activities of the club, as it contains many letters from students and club correspondence.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <dsc>
+         <c01 id="aspace_3ef124fae708e086de5773f50a5dd9a0" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Budget proposal <unitdate>1995-1996</unitdate>
-               </unittitle>
+               <unittitle>Artifacts: t-shirt, plastic fetus model, pins</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1998"
+                         type="inclusive">1993-1998</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_c2aeb5957bc76c0b6ef5f453aee3bd2b"
+                          label="Mixed Materials [310183630238979]"
+                          type="box">3017.4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bffd1ecbd99f4665e349a8fa55449020" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Contact list <unitdate>1993-1996</unitdate>
-               </unittitle>
+               <unittitle>Budget proposal</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/1996"
+                         type="inclusive">1995-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3c8eb8602b55da7bfbc1d2dab43d83ec"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_6cb0cea5d8bf1a74b9a2923f191fcf7c"
+                          parent="aspace_3c8eb8602b55da7bfbc1d2dab43d83ec"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b1d3616002cdb8f298dfe96e7f68d865" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence <unitdate>1994-1997</unitdate>
-               </unittitle>
+               <unittitle>Contact list</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1996"
+                         type="inclusive">1993-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_44e9dff519881d47add73e789f990021"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_c3049e51b264c2e40f310f2b4929b573"
+                          parent="aspace_44e9dff519881d47add73e789f990021"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e663ab84a906c4911f05ef7443b862bc" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Educational materials <unitdate>1992-1996</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1997"
+                         type="inclusive">1994-1997</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_82f77494b03cad034a83149f1a7fbe80"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_4c62f67860c2fef2ae5fd927670da87f"
+                          parent="aspace_82f77494b03cad034a83149f1a7fbe80"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3de28c3b8399857f889b43db97fd8090" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Events <unitdate>1994-1996</unitdate>
-               </unittitle>
+               <unittitle>Educational materials</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1996"
+                         type="inclusive">1992-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6796bc24fba34b7f867fc87dfd9cd44a"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_739303f22b7fda073e1530719bacd962"
+                          parent="aspace_6796bc24fba34b7f867fc87dfd9cd44a"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8177c9687e56d55e0e50bc7c5cfda963" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Executive board <unitdate>1991-1996</unitdate>
-               </unittitle>
+               <unittitle>Events</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1996"
+                         type="inclusive">1994-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b1883e43da1dc6ee70a85b2c4924507e"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_970b266a6f7d00d493c098368436ad72"
+                          parent="aspace_b1883e43da1dc6ee70a85b2c4924507e"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c0bf8a1087c9468c073525ca96ba9cae" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Flyers and announcements <unitdate>1996, undated</unitdate>
-               </unittitle>
+               <unittitle>Executive board</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1996"
+                         type="inclusive">1991-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_76d6ec0ffb54b1a4ef70915ad09a8ca4"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_cdac49c16fa4f7aaa5e28e458d817a56"
+                          parent="aspace_76d6ec0ffb54b1a4ef70915ad09a8ca4"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f584276661297606fe5fb2b2e22b13ae" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Fundraising <unitdate>1994-1996</unitdate>
-               </unittitle>
+               <unittitle>Flyers and announcements</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_96752774d533035cebfbaca794aa0473"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_d5ac8a8c85b6f048efe0735d4b133f7c"
+                          parent="aspace_96752774d533035cebfbaca794aa0473"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cf031bc25a99ec2ba20bd61b79352e46" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Meeting notes <unitdate>1994-1995</unitdate>
-               </unittitle>
+               <unittitle>Fundraising</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1996"
+                         type="inclusive">1994-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e5917e0ac518af9ed0f5ed7d9092374a"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_bb9cba67e8477f22bf3cbd7bc7c2a893"
+                          parent="aspace_e5917e0ac518af9ed0f5ed7d9092374a"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e755429c2a3c110db1f6f5a72a4301f5" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Pamphlets and literature <unitdate>1985-1995</unitdate>
-               </unittitle>
+               <unittitle>Meeting notes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-1995</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7465e6c8c7c4f801b3b1e208030131d8"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_30f40542f0e8ea81b0cc5bb1e77f2090"
+                          parent="aspace_7465e6c8c7c4f801b3b1e208030131d8"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b753e839ab2e255e149da1feff7bde6c" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Petition <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Pamphlets and literature</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1985/1995"
+                         type="inclusive">1985-1995</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1a0bf0e9faac27334d3572dc1a44c788"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_9f180c3928c6a6b4adcdb9501c3c8186"
+                          parent="aspace_1a0bf0e9faac27334d3572dc1a44c788"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1c8d4b1effddc4d98fc92cd794b1f9ea" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Photographs <unitdate>1994, 1996</unitdate>
-               </unittitle>
+               <unittitle>Petition</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d727c7ba3cc95560d396bffa777e61d3"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_63da9aefc2b767c5d45c8932000a3db5"
+                          parent="aspace_d727c7ba3cc95560d396bffa777e61d3"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2d48a5145de682786fd04002ef0e6677" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Press clippings <unitdate>1990, 1994</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1994/1994">1994</unitdate>
+               <unitdate normal="1996/1996">1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_879407ce92f158ec8a66e59868c14b6a"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_5ba8a66fbb0810a82be23705e16d6635"
+                          parent="aspace_879407ce92f158ec8a66e59868c14b6a"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d3aab3af255c6d974b179e29e7d80e00" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">14</container>
+               <unittitle>Press clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+               <unitdate normal="1994/1994">1994</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b8511a65c90ef25acdd06b64bfd52038"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_da5f9cd98fbb1908c70145c6feb96121"
+                          parent="aspace_b8511a65c90ef25acdd06b64bfd52038"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f46065a91231ddfa4c16a75ae6805c3b" level="series">
+            <did>
+               <unittitle>Related organizations</unittitle>
+            </did>
+            <c02 id="aspace_0b8b3429e043e5092da453f8254909cc" level="file">
+               <did>
+                  <unittitle>Black Americans for Life</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1991/1992"
+                            type="inclusive">1991-1992</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c125cf68b1c7fca4fb1e6f6c5bb8730d"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_dde0dcd738dccfbe49a63fac25fff21f"
+                             parent="aspace_c125cf68b1c7fca4fb1e6f6c5bb8730d"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b54bc37a23fc12bc83126ada8a865320" level="file">
+               <did>
+                  <unittitle>Feminists for Life</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1996"
+                            type="inclusive">1994-1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e10f9b7bc4fd4ced608344159f986331"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_4c324986cd4d1f1d91260b8108d1ae9f"
+                             parent="aspace_e10f9b7bc4fd4ced608344159f986331"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f0a8083e2d8f5c51016241d83c900956" level="file">
+               <did>
+                  <unittitle>Massachusetts Blacks for Life</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c357c7f711ebc7f3cc4cd3ec7f930ccb"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_ebf4e91b65eaa838242a8cc6bf28f06c"
+                             parent="aspace_c357c7f711ebc7f3cc4cd3ec7f930ccb"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e47714075da25c564921418c4e663a80" level="file">
+               <did>
+                  <unittitle>Massachusetts Citizens for Life</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1993/1994"
+                            type="inclusive">1993-1994</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_46c075a1f58abadef5e01b9701fd528b"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_d83f200870d478817c19a6dfb309b6fd"
+                             parent="aspace_46c075a1f58abadef5e01b9701fd528b"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a23ed29a5d81309d1137e303d980644a" level="file">
+               <did>
+                  <unittitle>N.O.W. (National Organization for Women)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1996"
+                            type="inclusive">1994-1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e6b0bdcfada5461042e907e2004944e5"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_7c98855dab3c0e6fd7d80a212078f94a"
+                             parent="aspace_e6b0bdcfada5461042e907e2004944e5"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3faa64422a887baf2026d8201070fee5" level="file">
+               <did>
+                  <unittitle>National Right to Life Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1992/1994"
+                            type="inclusive">1992-1994</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d3ba6c53ec6082f61d33754ae83c2dbb"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_cde4f2fb70f042c2323a81e4689d7d70"
+                             parent="aspace_d3ba6c53ec6082f61d33754ae83c2dbb"
+                             type="folder">6</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_6cb99460977ad9a57a27c5eb8324d696" level="file">
+            <did>
+               <unittitle>Related publications</unittitle>
+            </did>
+            <c02 id="aspace_a1cc5fb1632875e4bbf958acf00d972a" level="file">
+               <did>
+                  <unittitle>Colleges</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1995"
+                            type="inclusive">1994-1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b8938df21cff7736490c6639cd5123a0"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_d53906d7d2060f1eae697d1fc988b484"
+                             parent="aspace_b8938df21cff7736490c6639cd5123a0"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d51773877742c7e761d20fff92975a06" level="file">
+               <did>
+                  <unittitle>Human Life Alliance of Minnesota</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_709092f4aaa5ccaf6a8becb0e00579ee"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_ed1f74b6ca709f33263293995592335f"
+                             parent="aspace_709092f4aaa5ccaf6a8becb0e00579ee"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eee682753ea55b1d02c90fc460990a27" level="file">
+               <did>
+                  <unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">Life Cycle</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1989/1994"
+                            type="inclusive">1989-1994</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5d2147a23ee524b7c055ec02f56af484"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_5c88902e85172bcb397b775f7bd07635"
+                             parent="aspace_5d2147a23ee524b7c055ec02f56af484"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f11d3460feb44cf0be6954ff38db3d41" level="file">
+               <did>
+                  <unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">Massachusetts Citizens for Life</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1997"
+                            type="inclusive">1994-1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_df2bf50cd25fbf95861216a3f3f9f04d"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_96084ffb266d8527bbba6ef4e3b159cc"
+                             parent="aspace_df2bf50cd25fbf95861216a3f3f9f04d"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e57a19ddf51e6aec0f009a14eee3755e" level="file">
+               <did>
+                  <unittitle>Newspapers and Pamphlets</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1993/1995"
+                            type="inclusive">1993-1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dc3ef3fd46c84a4c78fa9d48986a0fab"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_3860014f754907e102c9c413cd5a58d3"
+                             parent="aspace_dc3ef3fd46c84a4c78fa9d48986a0fab"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9f7a0d8d31d0a42686d3c5403d32ba41" level="file">
+               <did>
+                  <unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">National Right to Life News</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1995"
+                            type="inclusive">1994-1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b98bc738b85291ca244754cbb370f6fc"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_f066582c220b65f238b1c9bcd4197158"
+                             parent="aspace_b98bc738b85291ca244754cbb370f6fc"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0b38c47e21153b558afee0605ffb1c4e" level="file">
+               <did>
+                  <unittitle>
+                     <title encodinganalog="630" render="italic" source="lcsh">National Right to Life News</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_024f7a74a013e7357f284dd931645a83"
+                             label="Mixed Materials [310183630238813]"
+                             type="box">3017.3</container>
+                  <container id="aspace_bbafb0b0dff283aa100b28024386b962"
+                             parent="aspace_024f7a74a013e7357f284dd931645a83"
+                             type="folder">13</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_738fc03b6cc7145b40da116807791599" level="file">
+            <did>
                <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">Sophian</title> articles
-                     <unitdate>1996</unitdate>
-               </unittitle>
+                  <title encodinganalog="630" render="italic" source="lcsh">Sophian</title> articles</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1f678caabfc3aca37ac8bbec76e1218d"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_ead6ea43c58959e3687302478e210abe"
+                          parent="aspace_1f678caabfc3aca37ac8bbec76e1218d"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8c43468acae8f3d8d9eda857e53fc893" level="file">
             <did>
-               <container type="box" label="mixed materials">3017.2</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Treasurer's notebook (budget reports, correspondence, pamphlets)
-                     <unitdate>1993-1998</unitdate>
-               </unittitle>
+               <unittitle>Speakers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1996"
+                         type="inclusive">1994-1996</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6a82816786481b9ce36a1f40651de05e"
+                          label="Mixed Materials [310183630238813]"
+                          type="box">3017.3</container>
+               <container id="aspace_bc1cb4d557c8a2b942a94a22679ef0dd"
+                          parent="aspace_6a82816786481b9ce36a1f40651de05e"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_696ddcb96dc4010704acbed9e1d91fa8" level="file">
             <did>
-               <unittitle>
-                  <title encodinganalog="730" render="italic">Related organizations:</title>
-               </unittitle>
+               <unittitle>Treasurer's notebook (budget reports, correspondence, pamphlets)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1998"
+                         type="inclusive">1993-1998</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bdfc8ca0bb0907816588b869ab9832a2"
+                          label="Mixed Materials [310183630238805]"
+                          type="box">3017.2</container>
+               <container id="aspace_0d1bc588056ca97600b231ecc1428939"
+                          parent="aspace_bdfc8ca0bb0907816588b869ab9832a2"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Black Americans for Life <unitdate>1991-1992</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Feminists for Life <unitdate>1994-1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Massachusetts Blacks for Life <unitdate>1990</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Massachusetts Citizens for Life <unitdate>1993-1994</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>N.O.W. (National Organization for Women) <unitdate>1994-1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>National Right to Life Committee <unitdate>1992-1994</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">Related
-                     publications:</title>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Colleges <unitdate>1994-1995</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Human Life Alliance of Minnesota <unitdate>1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">Life Cycle</title>
-                  <unitdate>1989-1994</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">Massachusetts Citizens
-                     for Life</title>
-                  <unitdate>1994-1997</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Newspapers and Pamphlets <unitdate>1993-1995</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">National Right to Life
-                     News</title>
-                  <unitdate>1994-1995</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>
-                  <title encodinganalog="630" render="italic" source="lcsh">National Right to Life
-                     News</title>
-                  <unitdate>1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.3</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Speakers <unitdate>1994-1996</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3017.4</container>
-               <unittitle>Artifacts: t-shirt, plastic fetus model, pins
-                     <unitdate>1993-1998</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
