@@ -1,592 +1,854 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-    langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-    scriptencoding="iso15924">
-
-    <eadid countrycode="us" mainagencycode="manosca"
-      publicid="-//us::manosca//TEXT us::manosca::manosca78.xml//EN">manosca78</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>Cambridge School of Architecture and Landscape Architecture Records, 1919-1986 </titleproper>
-        <subtitle>Finding Aid</subtitle>
-        <author>Finding aid prepared by Gayla Spaulding.</author>
-        <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Smith College Archives</publisher>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-        <date>© 2003 </date>
-        <p>Smith College. All rights reserved.</p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura
-        Cutter. <date>2003-06-04</date>
-      </creation>
-      <langusage>Finding aid written in English.</langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2005-09-23">2005-09-23</date>
-        <item>manosca78 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter id="front">
-    <titlepage>
-      <publisher>Smith College Archives </publisher>
-      <titleproper>Cambridge School of Architecture and Landscape Architecture Records, 1919-1986 </titleproper>
-      <subtitle>Finding Aid</subtitle>
-      <num>RG 60 </num>
-      <author>Gayla Spaulding </author>
-      <date>Revised 2002 </date>
-      <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      <p>© 2003 Smith College. All rights reserved.</p>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="recordgrp" relatedencoding="MARC21">
-    <did id="main">
-      <head>Collection Overview</head>
-      <origination label="Creator:">
-        <corpname encodinganalog="110" source="lcnaf">Cambridge School of Architecture and Landscape
-          Architecture</corpname>
-      </origination>
-      <unittitle encodinganalog="245$a" label="Title:">Cambridge School of Architecture and
-        Landscape Architecture Records</unittitle>
-      <unitdate encodinganalog="245$f" type="inclusive">1919-1986</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-        repositorycode="manosca">RG 60 UUID:f533eb70-ccad-44fb-9d77-272c92f1fad9</unitid>
-      <physdesc label="Quantity:">
-        <extent encodinganalog="300$a">15 boxes</extent>
-        <extent encodinganalog="300$a">(9.5 linear ft.)</extent>
-      </physdesc>
-      <repository label="Location:">
-        <corpname>Smith College Archives</corpname>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-      </repository>
-      <abstract encodinganalog="520$a" label="Abstract:">Educational institution developed in
-        association with Harvard University, and later affiliated with Smith College, as a Graduate
-        School of Architecture and Landscape Architecture. Contains Alumnae Bulletins, sketches,
-        bookplates, certificates, brochures, correspondence, examinations, photographs, reports,
-        slides, and information on student careers. </abstract>
-      <langmaterial label="Language of Material:">
-        <language langcode="eng">English.</language>
-      </langmaterial>
-    </did>
-    <bioghist id="bioghist">
-
-      <p> The School was founded in 1915 as the Cambridge School of Architecture and Landscape
-        Architecture, and was the first to produce women graduate training in these two professions,
-        coordinated under a single faculty. Due to Harvard University's policy of a male
-        institution, the school ran as a "little experiment" in the office of Henry Frost, professor
-        of architectural design at Harvard University, with only nine to twelve students, all women.
-        In 1924 it was incorporated under Massachusetts law as an educational institution. In 1934
-        the School was affiliated with Smith College as a Graduate School, retaining its own name
-        and independent organization, but with the privilege of recommending its students to the
-        College for the graduate degrees of Master in Architecture and Master in Landscape
-        Architecture. Two years later the graduate degrees of Bachelor of Architecture and Bachelor
-        of Landscape Architecture were introduced, preceding the Master's degrees, which since that
-        time have been granted for advanced work. In 1938 the School became actually a part of Smith
-        College as its Graduate School in the two professions for which it prepares students, while
-        the school itself was to remain in Cambridge.</p>
-    </bioghist>
-    <scopecontent id="scope">
-
-      <p>The Cambridge School of Architecture and Landscape Architecture Records are comprised of
-          <title render="italic">Alumnae Bulletins</title>, sketches, bookplates, certificates,
-        brochures, correspondence, examinations, photographs, reports, slides and information on
-        student careers. </p>
-    </scopecontent>
-    <arrangement encodinganalog="351$a" id="scope-org">
-
-      <p>This collection is organized into four series:</p>
-      <list>
-        <item> I. Background </item>
-        <item> II. Alumnae </item>
-        <item> III. Correspondence </item>
-        <item> IV. Publications </item>
-      </list>
-    </arrangement>
-    <descgrp id="admin" type="admininfo">
-      <head>Information on Use</head>
-      <descgrp type="admininfo">
-        <head>Terms of Access and Use</head>
-        <accessrestrict encodinganalog="506" id="admin-access">
-          <p>The papers are open for research according to the regulations of the Smith College
-            Archives with the exception of student files which are restricted and closed to research
-            use. </p>
-        </accessrestrict>
-        <userestrict encodinganalog="540" id="admin-use">
-          <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
-        </userestrict>
-      </descgrp>
-      <prefercite id="admin-cite">
-        <head>Preferred Citation</head>
-        <p>Please use the following format when citing materials from this collection:</p>
-        <p>Cambridge School of Architecture and Landscape Architecture Records, Box #, Smith College
-          Archives.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca78</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to Cambridge School of Architecture and Landscape Architecture records <num>CA.MS.00078</num>
+            </titleproper>
+            <author>Gayla Spaulding, Ellice Amanna</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-15 10:04:19 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca78 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>11/14/18</date>
+            <item>Finding aid updated with new top container numbers, barcodes</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Cambridge School of Architecture and Landscape Architecture records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Cambridge School of Architecture and Landscape Architecture</corpname>
+         </origination>
+         <unitid>CA.MS.00078</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.667 linear feet</extent>
+            <extent altrender="carrier">(6 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1916/1998"
+                   type="inclusive">1916-1998</unitdate>
+         <abstract id="aspace_bca97f459c47611ae1a8b6fc2b5a02c5">Educational institution developed in association with Harvard University, and later affiliated with Smith College, as a Graduate School of Architecture and Landscape Architecture. Contains Alumnae Bulletins, sketches, bookplates, certificates, brochures, correspondence, examinations, photographs, reports, slides, and information on student careers.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The School was founded in 1915 as the Cambridge School of Architecture and Landscape Architecture, and was the first to produce women graduate training in these two professions, coordinated under a single faculty. Due to Harvard University's policy of a male institution, the school ran as a "little experiment" in the office of Henry Frost, professor of architectural design at Harvard University, with only nine to twelve students, all women. In 1924 it was incorporated under Massachusetts law as an educational institution. In 1934 the School was affiliated with Smith College as a Graduate School, retaining its own name and independent organization, but with the privilege of recommending its students to the College for the graduate degrees of Master in Architecture and Master in Landscape Architecture. Two years later the graduate degrees of Bachelor of Architecture and Bachelor of Landscape Architecture were introduced, preceding the Master's degrees, which since that time have been granted for advanced work. In 1938 the School became actually a part of Smith College as its Graduate School in the two professions for which it prepares students, while the school itself was to remain in Cambridge.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Cambridge School of Architecture and Landscape Architecture Records are comprised of <title render="italic">Alumnae Bulletins</title>, sketches, bookplates, certificates, brochures, correspondence, examinations, photographs, reports, slides and information on student careers.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Background</item>
+            <item>II. Alumnae</item>
+            <item>III. Correspondence</item>
+            <item>IV. Publications</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Cambridge School of Architecture and Landscape Architecture records, College Archives,CA-MS-00078, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <descgrp type="admininfo">
-        <head>History of the Collection</head>
-        <acqinfo id="admin-acqinfo">
-          <p>The Cambridge School of Architecture and Landscape Architecture Records were donated by
-            Dorothy May Anderson to the Smith College Archives.</p>
-        </acqinfo>
-        <processinfo id="admin-process">
-          <p>Processed by Gayla Spaulding</p>
-        </processinfo>
-      </descgrp>
-    </descgrp>
-    <controlaccess id="subj">
-      <head>Search Terms</head>
-
-      <corpname encodinganalog="610" source="lcsh">Cambridge School of Architecture and Landscape
-        Architecture</corpname>
-      <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
-      <subject encodinganalog="650" source="lcsh">Architecture--Study and teaching
-        (Higher)--Massachusetts --Cambridge.</subject>
-      <subject encodinganalog="650" source="lcsh">Landscape architecture--Study and teaching (Higher
-        --Massachusetts--Cambridge.</subject>
-    </controlaccess>
-    <descgrp id="addinfo" type="add">
-      <head>Additional Information</head>
-      <relatedmaterial id="add-related">
-        <head>Related Material</head>
-        <p>Smith College President's Office Records re: Cambridge School, 1927-1943 </p>
-        <p>Dorothy May Anderson Papers, American Society of Landscape, 1976 </p>
-        <p>Architects, Committee for Women in Landscape Architecture, Cambridge School Project,
-          questionnaires to Cambridge School graduates</p>
-        <p>Records of the Smith College Committee on Graduate Instruction, 1933-1942 </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Smith College President's Office Records re: Cambridge School, 1927-1943 </p>
+         <p> Dorothy May Anderson Papers, American Society of Landscape, 1976 </p>
+         <p> Architects, Committee for Women in Landscape Architecture, Cambridge School Project, questionnaires to Cambridge School graduates</p>
+         <p> Records of the Smith College Committee on Graduate Instruction, 1933-1942</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc id="list-contlist" type="combined">
-      <c01 id="list-ser1" level="series">
-        <did>
-          <unittitle>SERIES I. BACKGROUND</unittitle>
-        </did>
-        <scopecontent>
-          <p>Background contains information of examinations, exhibitions, faculty salaries, history
-            of the school, photographs, reports and slides and books given to Smith College.</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Examinations <unitdate>1938-1942</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Exhibitions <unitdate>1929-1940, 1984</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Faculty salaries <unitdate>1941-42</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>History of School <unitdate>1928-1973</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>Organization of school <unitdate>1924-1945</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>Photographs <unitdate>1935-1978, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Report on the plan for Smith College <unitdate>1942</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Report to the President of Smith College <unitdate>1938-1941</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>List: slides and books given to Smith College <unitdate>1942-46</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser2" level="series">
-        <did>
-          <unittitle>SERIES II. ALUMNAE</unittitle>
-        </did>
-        <scopecontent>
-          <p>Alumnae contains information on the work of former students.</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>General <unitdate>1919-1941</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>Baily, Jane Luce <unitdate>1921</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>Christiansen, Abby <unitdate>1977-79, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>Cunningham, Mary Parsons <unitdate>1973-1980</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">14</container>
-            <unittitle>Greely, Rose Ishbel <unitdate>1998</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">15</container>
-            <unittitle>Jones, Elizabeth Dickerman <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">16</container>
-            <unittitle>Kirkwood, Grace Hight <unitdate>1986</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">17</container>
-            <unittitle>McPhearson, Bertha Mather <unitdate>1993</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">18</container>
-            <unittitle>Norcross, Katherine Brooks <unitdate>1976-1978</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">19</container>
-            <unittitle>Power, Ethel B. <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">20</container>
-            <unittitle>Whitmore, Frances <unitdate>1933</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">21</container>
-            <unittitle>Williams, Beatrice <unitdate>1982</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">22-23</container>
-            <unittitle>Board of Trustees (Cambridge School): minutes <unitdate>1924-1945</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">24</container>
-            <unittitle>Miscellaneous <unitdate>1935-1986</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser3" level="series">
-        <did>
-          <unittitle>SERIES III. CORRESPONDENCE</unittitle>
-        </did>
-        <scopecontent>
-          <p>Correspondence is comprised of general and course-related correspondence.</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <unittitle>General</unittitle>
-          </did>
-          <c03 level="file">
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The papers are open for research according to the regulations of the Smith College Archives with the exception of student files which are restricted and closed to research use.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Cambridge School of Architecture and Landscape Architecture Records were donated by Dorothy May Anderson to the Smith College Archives.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Gayla Spaulding</p>  
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Architecture--Study and teaching (Higher)--Massachusetts --Cambridge.</subject>
+         <subject encodinganalog="650" source="lcsh">Landscape architecture--Study and teaching (Higher --Massachusetts--Cambridge.</subject>
+         <corpname encodinganalog="610" source="lcsh">Cambridge School of Architecture and Landscape Architecture</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">1</container>
-              <unittitle>Nicolson, Marjorie H. <unitdate>1933-1940</unitdate>
-              </unittitle>
+               <unittitle>SERIES I. BACKGROUND</unittitle>
             </did>
-          </c03>
-          <c03 level="file">
+            <scopecontent id="aspace_35bc82bb44ee86ad290ed5b4228dcf2c">
+               <head>Scope and Contents</head>
+               <p>Background contains information of examinations, exhibitions, faculty salaries, history of the school, photographs, reports and slides and books given to Smith College.</p>
+            </scopecontent>
+            <c02 id="aspace_e43155fb02a60c98a879de608ece180a" level="file">
+               <did>
+                  <unittitle>Examinations</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1942"
+                            type="inclusive">1938-1942</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2a19fb535fa57f8f6d3f43b031342423"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_86728ae94324b8b786eaf454be0c68a3"
+                             parent="aspace_2a19fb535fa57f8f6d3f43b031342423"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d72d5a8105ccc5f79001546378ede2fb" level="file">
+               <did>
+                  <unittitle>Exhibitions</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1929/1940"
+                            type="inclusive">1929-1940</unitdate>
+                  <unitdate normal="1984/1984">1984</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5f444e4fbc28186d342268a4233bfba0"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_506ae5f11bc1073084eb52775cdad4b2"
+                             parent="aspace_5f444e4fbc28186d342268a4233bfba0"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_81a973ec873e8cdd5631061614794e2b" level="file">
+               <did>
+                  <unittitle>Faculty salaries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1942"
+                            type="inclusive">1941-42</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e9334a3e2242243b145201aebfb584cf"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_b688e6216321da89360741b991dba949"
+                             parent="aspace_e9334a3e2242243b145201aebfb584cf"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_049210e152cf7fec07725783db82f6af" level="file">
+               <did>
+                  <unittitle>History of School</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1928/1973"
+                            type="inclusive">1928-1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7a5c61b175dda051053ec78da8c060df"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_84d4d6d045980000df71124119922449"
+                             parent="aspace_7a5c61b175dda051053ec78da8c060df"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_286f596878e079f986192de298aeff2d" level="file">
+               <did>
+                  <unittitle>Organization of school</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924/1945"
+                            type="inclusive">1924-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb1bbdb4a4387b13aec7357bc256bb7c"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_2c7a43e579a2ca2ebf89a531f7590649"
+                             parent="aspace_cb1bbdb4a4387b13aec7357bc256bb7c"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a74820db69fd752ace30f6dec0bd78c6" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1978"
+                            type="inclusive">1935-1978</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a7c81fb10fed5507c8e8bbf6ddbab603"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_8be71ce6d2c1dfbb6567d46ce547d37a"
+                             parent="aspace_a7c81fb10fed5507c8e8bbf6ddbab603"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_01f5f4c020455c1b76d4d2c9fa4ac593" level="file">
+               <did>
+                  <unittitle>Report on the plan for Smith College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ce6b7507c34e46b3794a030e5b026e8b"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_427aa847cf180bec29853fc058ddc56a"
+                             parent="aspace_ce6b7507c34e46b3794a030e5b026e8b"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d721fe9c7909e189753c0bc8b873e75d" level="file">
+               <did>
+                  <unittitle>Report to the President of Smith College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1941"
+                            type="inclusive">1938-1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8b5ae1c0e2aa38ba498bfb9979a2c5a9"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_a555648e3430d7d1ce20f050d09ebaff"
+                             parent="aspace_8b5ae1c0e2aa38ba498bfb9979a2c5a9"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5a74f207983875e288cc984f35f3ef5c" level="file">
+               <did>
+                  <unittitle>List: slides and books given to Smith College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1946"
+                            type="inclusive">1942-46</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_75780773632ec313072433ff6c40fc07"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_11619de9bfcf94d5eb34bf6ff7379aa9"
+                             parent="aspace_75780773632ec313072433ff6c40fc07"
+                             type="folder">9</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
             <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">2</container>
-              <unittitle>Ford, Harriet Bliss (trustee) <unitdate>1935</unitdate>
-              </unittitle>
+               <unittitle>SERIES II. ALUMNAE</unittitle>
             </did>
-          </c03>
-          <c03 level="file">
+            <scopecontent id="aspace_b8cb6f7915d4dcb4c5a3ab84e7ece6ff">
+               <head>Scope and Contents</head>
+               <p>Alumnae contains information on the work of former students.</p>
+            </scopecontent>
+            <c02 id="aspace_64c417818c83ec489c4593b27bdf3bcd" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1919/1941"
+                            type="inclusive">1919-1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_44dbfab16b301a17879552506d63366d"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_36183695fe83fdcba647fe9a2b071d1c"
+                             parent="aspace_44dbfab16b301a17879552506d63366d"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_087f52c858e2bd884cb968fcea053d01" level="file">
+               <did>
+                  <unittitle>Baily, Jane Luce</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1921/1921">1921</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_563f102a79fa13c61d2a1a436ae8376c"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_569f4a451145c16642a7801f884cd5bf"
+                             parent="aspace_563f102a79fa13c61d2a1a436ae8376c"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_59371c47460aee3eda97901e09f7749d" level="file">
+               <did>
+                  <unittitle>Christiansen, Abby</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1977/1979"
+                            type="inclusive">1977-79</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d10937b14aa95d9a44757e186604b139"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_66fd9ce049c3b456cb6dda311de92282"
+                             parent="aspace_d10937b14aa95d9a44757e186604b139"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_26ac10c754cbd11e7689f6ac675b1009" level="file">
+               <did>
+                  <unittitle>Cunningham, Mary Parsons</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1973/1980"
+                            type="inclusive">1973-1980</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_45dbf3ace2d25bb6c615994045ebd087"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_8a7ffae2476fef819b5bdedea0b1c847"
+                             parent="aspace_45dbf3ace2d25bb6c615994045ebd087"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2ed71d7fd037fdb42c3132ce2a721f5e" level="file">
+               <did>
+                  <unittitle>Greely, Rose Ishbel</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3d0a7f82df61945aa1c20287014fd5fd"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_6c5a0f06734e4ad7ce7c04397a52cb71"
+                             parent="aspace_3d0a7f82df61945aa1c20287014fd5fd"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ef5d3127afc09a8d76329814e899a8d2" level="file">
+               <did>
+                  <unittitle>Jones, Elizabeth Dickerman</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bcf3434c4fb874bfaae19b4ff7492312"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_fe6dc1d71432c19407b2979a19261770"
+                             parent="aspace_bcf3434c4fb874bfaae19b4ff7492312"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_81fda5b491066ea55f7c9d9e740d087d" level="file">
+               <did>
+                  <unittitle>Kirkwood, Grace Hight</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fc03e9b4c69e606c8ed079072ae31b7b"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_1314dc76f6f7d133c8c65c3b7e9e7e29"
+                             parent="aspace_fc03e9b4c69e606c8ed079072ae31b7b"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0ab6d286eac7318d558ddf142ea3d835" level="file">
+               <did>
+                  <unittitle>McPhearson, Bertha Mather</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d12c3988d187a0a5a21af6f00577c81c"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_c0f5c1cc41357ff5effd649be1589504"
+                             parent="aspace_d12c3988d187a0a5a21af6f00577c81c"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7af638f00cec612ef383938f61fe649c" level="file">
+               <did>
+                  <unittitle>Norcross, Katherine Brooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1976/1978"
+                            type="inclusive">1976-1978</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5e3473d2e05a4cb88d11e7e7dcdff29c"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_48fb5980d81ac59e2f74974eca479db1"
+                             parent="aspace_5e3473d2e05a4cb88d11e7e7dcdff29c"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_906d7ca7415c01009f2fcd41c6ffbc43" level="file">
+               <did>
+                  <unittitle>Power, Ethel B.</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1c0a30148d2910305dcae1942841136a"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_ff15f2848b19ad9793aba36065028f55"
+                             parent="aspace_1c0a30148d2910305dcae1942841136a"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e4c339a8d91aa6cb73197fccf4fe40c1" level="file">
+               <did>
+                  <unittitle>Whitmore, Frances</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f55d3026c92be6837ee15e5bacda74e7"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_ca828a16adaef52200501b4785a283c8"
+                             parent="aspace_f55d3026c92be6837ee15e5bacda74e7"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_29d42606c5f45b4f97d5ee2a780cacb0" level="file">
+               <did>
+                  <unittitle>Williams, Beatrice</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1982/1982">1982</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8c02ba4b6b6dbd52502acc2af05179ee"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_2b967a9f991d1a818155e9d8e1329c10"
+                             parent="aspace_8c02ba4b6b6dbd52502acc2af05179ee"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_82979530b3f9456042beb50cf1f3bf8c" level="file">
+               <did>
+                  <unittitle>Board of Trustees (Cambridge School): minutes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924/1945"
+                            type="inclusive">1924-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_75bd7703a0005756ffc94e68e453af24"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_68a6078205bd58ca3fef27e2aa974ce0"
+                             parent="aspace_75bd7703a0005756ffc94e68e453af24"
+                             type="folder">22-23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c4cf7cfde36dd60c862b51aabe5c4b9a" level="file">
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1986"
+                            type="inclusive">1935-1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9d3248a0b3b1d5889a7aefe7bfd3e345"
+                             label="Mixed Materials [310183630242104]"
+                             type="box">1298</container>
+                  <container id="aspace_5e505bca11332fe0769068be56c4b54e"
+                             parent="aspace_9d3248a0b3b1d5889a7aefe7bfd3e345"
+                             type="folder">24</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
             <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">3-4</container>
-              <unittitle>President Neilson <unitdate>1926-1938</unitdate>
-              </unittitle>
+               <unittitle>SERIES III. CORRESPONDENCE</unittitle>
             </did>
-          </c03>
-          <c03 level="file">
+            <scopecontent id="aspace_097fa8bde11ca845e222627a74b39621">
+               <head>Scope and Contents</head>
+               <p>Correspondence is comprised of general and course-related correspondence.</p>
+            </scopecontent>
+            <c02 id="aspace_6ee48d6ce4221ae9211bf454a65847df" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+               </did>
+               <c03 id="aspace_531af9d940c76dc9af4da5d9b8d99d61" level="file">
+                  <did>
+                     <unittitle>Nicolson, Marjorie H.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1933/1940"
+                               type="inclusive">1933-1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_823a8d6c4a4d3a33fc66ee8e0e80841a"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_ad481a3e0fdd38867e2ffeea5db7146f"
+                                parent="aspace_823a8d6c4a4d3a33fc66ee8e0e80841a"
+                                type="folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_dbb8a4b58c9da021896a3178f5f77383" level="file">
+                  <did>
+                     <unittitle>Ford, Harriet Bliss (trustee)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_c63d0828cdfc2020d90b9ae00722967d"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_7b9371c5b1ffc8f7ed1305acf5f13606"
+                                parent="aspace_c63d0828cdfc2020d90b9ae00722967d"
+                                type="folder">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_50e5b7b5cc90ea99749dd2b9d63805b3" level="file">
+                  <did>
+                     <unittitle>President Neilson</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1926/1938"
+                               type="inclusive">1926-1938</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_0ad694d734f8eada53ca04a443ba0f13"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_e9c211e9163347497abba46420739d47"
+                                parent="aspace_0ad694d734f8eada53ca04a443ba0f13"
+                                type="folder">3-4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_e2f0e131640863a20d3ad919490e5efb" level="file">
+                  <did>
+                     <unittitle>Presidents Neilson/Morrow/Davis</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1939/1940"
+                               type="inclusive">1939-1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_6aab5ee28ca7d0b751790ea906b451cb"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_3f47dc1dc7c09c2b79aa56c919d153fc"
+                                parent="aspace_6aab5ee28ca7d0b751790ea906b451cb"
+                                type="folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_577978c4a67b54fe09838f6802f1b84f" level="file">
+                  <did>
+                     <unittitle>President Davis</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1941/1942"
+                               type="inclusive">1941-42</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_aa8164b54b44d726875b159824d81bf5"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_d5251d9aa92724e41b7c63801274c617"
+                                parent="aspace_aa8164b54b44d726875b159824d81bf5"
+                                type="folder">6-7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_f58ffc88a61a2642b904c7f52169579f" level="file">
+                  <did>
+                     <unittitle>From alumnae</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_99e464814f7d4ccdb04b26331c72bd8a"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_a3ddb9fac0419ccab329272f0013cfc5"
+                                parent="aspace_99e464814f7d4ccdb04b26331c72bd8a"
+                                type="folder">8</container>
+                  </did>
+                  <odd id="aspace_21dfdee262c38c0f0ba6deb9acf2ece4">
+                     <head>General</head>
+                     <p>[See also File of correspondence-Trustees, Eleanor Raymond]</p>
+                  </odd>
+               </c03>
+               <c03 id="aspace_912930dee75ca3787216f273dfc419c1" level="file">
+                  <did>
+                     <unittitle>From trustees</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_be6949fb33e27bdf9f16984a4cd28d58"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_4bed5206ac602ddf629bcb4bf4f4ab02"
+                                parent="aspace_be6949fb33e27bdf9f16984a4cd28d58"
+                                type="folder">9</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_12e3bf50d9a01dcc717fec05a5dc0f5f" level="file">
+               <did>
+                  <unittitle>Correspondence re: courses</unittitle>
+               </did>
+               <c03 id="aspace_07dbb29415602ca2492051a4f7b1be84" level="file">
+                  <did>
+                     <unittitle>Koch, Kate Ries</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1927/1940"
+                               type="inclusive">1927-1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_4d3a5eb4645768cfcc8477723117d506"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_1b90799ec3d6c56d31cb90bb6721fab8"
+                                parent="aspace_4d3a5eb4645768cfcc8477723117d506"
+                                type="folder">10</container>
+                  </did>
+                  <c04 id="aspace_cff153c92df8c9120930886c4a38a435" level="file">
+                     <did>
+                        <unittitle>booklet: course info</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1920/1921"
+                                  type="inclusive">1920-21</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_b217b81e3804e1ca37a89f2a0627737a"
+                                   label="Mixed Materials [310183630242161]"
+                                   type="box">1299</container>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 id="aspace_2c7df20f2ede13ad9f2fc6c55b77f3d3" level="file">
+                  <did>
+                     <unittitle>Larkin, Oliver W.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1936/1940"
+                               type="inclusive">1936-1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_a50abbc78cfbdc5e562701c38e2a5979"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_444f0eaea5f74e9e0837fb87bed5bf4b"
+                                parent="aspace_a50abbc78cfbdc5e562701c38e2a5979"
+                                type="folder">11</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_c8be6dec130bec68be485037a04e656b" level="file">
+                  <did>
+                     <unittitle>Putnam, Karl L.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1934/1941"
+                               type="inclusive">1934-1941</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_b1c65edac39e334de9d95a648b22d69c"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_9b3bd5773b7e0e90fb7f6cb874448c03"
+                                parent="aspace_b1c65edac39e334de9d95a648b22d69c"
+                                type="folder">12</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_81a4894bd329af021039f6c45a972686" level="file">
+                  <did>
+                     <unittitle>Van Der Poel, Priscilla (Paine)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_05da7acf6e5cdcb4c1e4af802d2d6055"
+                                label="Mixed Materials [310183630242161]"
+                                type="box">1299</container>
+                     <container id="aspace_e0f2b777e5cf42ce6b3bcc31b26828e6"
+                                parent="aspace_05da7acf6e5cdcb4c1e4af802d2d6055"
+                                type="folder">13</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
             <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">5</container>
-              <unittitle>Presidents Neilson/Morrow/Davis <unitdate>1939-1940</unitdate>
-              </unittitle>
+               <unittitle>SERIES IV. PUBLICATIONS</unittitle>
             </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">6-7</container>
-              <unittitle>President Davis <unitdate>1941-42</unitdate>
-              </unittitle>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">8</container>
-              <unittitle>From alumnae <unitdate>1942</unitdate>
-              </unittitle>
-            </did>
-            <note>
-              <p>[See also File of correspondence-Trustees, Eleanor Raymond]</p>
-            </note>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">9</container>
-              <unittitle>From trustees <unitdate>1942</unitdate>
-              </unittitle>
-            </did>
-          </c03>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Correspondence re: courses</unittitle>
-          </did>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">10</container>
-              <unittitle>Koch, Kate Ries <unitdate>1927-1940</unitdate>
-              </unittitle>
-            </did>
-            <c04 level="file">
-              <did>
-                <container type="box" label="mixed materials">2</container>
-                <unittitle>booklet: course info <unitdate>1920-21</unitdate>
-                </unittitle>
-              </did>
-            </c04>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">11</container>
-              <unittitle>Larkin, Oliver W. <unitdate>1936-1940</unitdate>
-              </unittitle>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">12</container>
-              <unittitle>Putnam, Karl L. <unitdate>1934-1941</unitdate>
-              </unittitle>
-            </did>
-          </c03>
-          <c03 level="file">
-            <did>
-              <container type="box" label="mixed materials">2</container>
-              <container type="folder" label="mixed materials">13</container>
-              <unittitle>Van Der Poel, Priscilla (Paine) <unitdate>1940</unitdate>
-              </unittitle>
-            </did>
-          </c03>
-        </c02>
-      </c01>
-      <c01 id="list-ser4" level="series">
-        <did>
-          <unittitle>SERIES IV. PUBLICATIONS</unittitle>
-        </did>
-        <scopecontent>
-          <p>Publications consists of <title render="italic">Alumnae Bulletins</title>,
-            architectural sketches by alumnae, bookplates, certificates, <title render="italic"
-              >Alumnae Bulletin</title> publications and school bulletins.</p>
-        </scopecontent>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">3</container>
-            <unittitle>
-              <title render="italic">Alumnae Bulletins</title>
-              <unitdate>1928-1937</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">3</container>
-            <unittitle>Small, untitled architectural sketch <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <unittitle>
-              <title render="italic">Alumnae Bulletins</title>
-              <unitdate>1938</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Bookplates <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Certificates <unitdate>1940, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Brochures <unitdate>1932-39, undated</unitdate>
-            </unittitle>
-          </did>
-          <note>
-            <p>[See also Slides]</p>
-          </note>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle><title render="italic">Alumnae Bulletin</title> publications
-                <unitdate>1939-1942, 1978</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">4</container>
-            <container type="folder" label="mixed materials">5-6</container>
-            <unittitle>School bulletins <unitdate>1916-1941</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">5</container>
-            <unittitle>Student transcripts <unitdate>1920-1946</unitdate>
-            </unittitle>
-          </did>
-          <note>
-            <p>[These records are restricted and closed to research use. Please see the reference
-              archivist for more information.]</p>
-          </note>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">6</container>
-            <unittitle>Student files <unitdate>1916-1946</unitdate>
-            </unittitle>
-          </did>
-          <note>
-            <p>[These records are restricted and closed to research use. Please see the reference
-              archivist for more information.]</p>
-          </note>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+            <scopecontent id="aspace_8d5fd9f86f42ccf7ed8b4f1f9aeb5a42">
+               <head>Scope and Contents</head>
+               <p>Publications consists of <title render="italic">Alumnae Bulletins</title>, architectural sketches by alumnae, bookplates, certificates, <title render="italic">Alumnae Bulletin</title> publications and school bulletins.</p>
+            </scopecontent>
+            <c02 id="aspace_249f52059234f66c012605bf13912f4b" level="file">
+               <did>
+                  <unittitle>
+                     <title render="italic">Alumnae Bulletins</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1928/1937"
+                            type="inclusive">1928-1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b87d1d9fcc7048d86e2d04bffbef9e5"
+                             label="Mixed Materials [310183630242229]"
+                             type="box">1300</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d861d9d88d5dcfd3751e45195f12c287" level="file">
+               <did>
+                  <unittitle>Small, untitled architectural sketch</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4db1cef19d047583ee81a5ed98df112d"
+                             label="Mixed Materials [310183630242229]"
+                             type="box">1300</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f42c0d0406f6ba937c2037501236a619" level="file">
+               <did>
+                  <unittitle>
+                     <title render="italic">Alumnae Bulletins</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a7ecfe0134aedab1bcab70202c1d951b"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a9499a96aeb2072ebd1cc594138340a5" level="file">
+               <did>
+                  <unittitle>Bookplates</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_198e25150ca1e98fc08dc61157932da7"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+                  <container id="aspace_590fda45c15930a99c017e4ea8617932"
+                             parent="aspace_198e25150ca1e98fc08dc61157932da7"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5cc4d16b5d1a492b820dd964d2f89fab" level="file">
+               <did>
+                  <unittitle>Certificates</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_616cdeaf9393566038aae4b2e86d1c37"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+                  <container id="aspace_4a236aab83b682d781ae216de09ac191"
+                             parent="aspace_616cdeaf9393566038aae4b2e86d1c37"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3f9708c49fa87427e26b2447c21bef8b" level="file">
+               <did>
+                  <unittitle>Brochures</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1939"
+                            type="inclusive">1932-39</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2fbc51344d8f5089fdd7aa0c8674e050"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+                  <container id="aspace_02f2672d3d9276470894b58ab29a8f9a"
+                             parent="aspace_2fbc51344d8f5089fdd7aa0c8674e050"
+                             type="folder">3</container>
+               </did>
+               <odd id="aspace_bf942fe86b6b1653c904e7aaa5caa5d5">
+                  <head>General</head>
+                  <p>[See also Slides]</p>
+               </odd>
+            </c02>
+            <c02 id="aspace_6c6cb9bdab14f7ea771ab7cea2d04f8f" level="file">
+               <did>
+                  <unittitle>
+                     <title render="italic">Alumnae Bulletin</title> publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1942"
+                            type="inclusive">1939-1942</unitdate>
+                  <unitdate normal="1978/1978">1978</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_64aedf6182a26882e2a8425e4de0ffab"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+                  <container id="aspace_17ab0b542a079998ca647a1b8ec64a80"
+                             parent="aspace_64aedf6182a26882e2a8425e4de0ffab"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_822f95f5d2fb08f1f0173dcb88eb3e0b" level="file">
+               <did>
+                  <unittitle>School bulletins</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1916/1941"
+                            type="inclusive">1916-1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_64e2388ed6b6e3cc023c7c119b1a68f7"
+                             label="Mixed Materials [310183630242286]"
+                             type="box">1301</container>
+                  <container id="aspace_fe4bcb8ea75d5eda3789ef890c061880"
+                             parent="aspace_64e2388ed6b6e3cc023c7c119b1a68f7"
+                             type="folder">5-6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_03973f3c9763679bb35bde559d8bab97" level="file">
+               <did>
+                  <unittitle>Student transcripts</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1920/1946"
+                            type="inclusive">1920-1946</unitdate>
+                  <container id="aspace_0c173a1fe2cab363830ce70559557733"
+                             label="Mixed Materials"
+                             type="box">5</container>
+               </did>
+               <odd id="aspace_d9a66712cc2a7a3822275f32e6e9cca6">
+                  <head>General</head>
+                  <p>[These records are restricted and closed to research use. Please see the reference archivist for more information.]</p>
+               </odd>
+            </c02>
+            <c02 id="aspace_518dd1ac34d1502fd6171880de061fec" level="file">
+               <did>
+                  <unittitle>Student files</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1916/1946"
+                            type="inclusive">1916-1946</unitdate>
+                  <container id="aspace_a95fecc0e7243261aa3267986157e88d"
+                             label="Mixed Materials"
+                             type="box">6</container>
+               </did>
+               <odd id="aspace_43079eb856903565d1b4c5246876d550">
+                  <head>General</head>
+                  <p>[These records are restricted and closed to research use. Please see the reference archivist for more information.]</p>
+               </odd>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
