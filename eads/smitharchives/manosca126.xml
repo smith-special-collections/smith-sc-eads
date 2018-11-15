@@ -1,488 +1,646 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca126.html"
-            >manosca126</eadid>
-
-        <filedesc>
-            <titlestmt>
-                <titleproper>Department of French Studies Records, ca. 1900-[ongoing]</titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Elisha Winkler.</author>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2006</date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded in NoteTab Pro. Encoded by Deborah A. Richards.
-                    <date>2006-03-31</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-    </eadheader>
-
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives</publisher>
-            <titleproper>Department of French Studies Records, ca. 1900-[ongoing]</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 52</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US"
+             mainagencycode="manosca"
+             url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca126.html">manosca126</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Department of French Studies Records <num>CA.MS.00126</num>
+            </titleproper>
             <author>Elisha Winkler</author>
-            <date>2004</date>
-            <p>© 2006 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-
-    <archdesc level="collection" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="110" source="lcnaf">Smith College. Dept. of French
-                    Studies.</corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Department of French Studies
-                Records</unittitle>
-            <unitdate label="Dates:">ca. 1900-[ongoing]</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 52 UUID:780e8ef3-c9f3-4157-a283-a0c49417e2db</unitid>
-
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">2 boxes</extent>
-                <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-            </physdesc>
-            <langmaterial encodinganalog="546" label="Language of Material:">
-                <language langcode="eng">English</language>
-            </langmaterial>
-
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:"> This collection is in two boxes and
-                contains black and white photographs, meeting minutes, course syllabi and exam
-                questions, and programs. </abstract>
-        </did>
-
-
-
-        <bioghist id="bioghist">
-
-            <p>The French Studies Department at Smith College was established in 1894. Between the
-                years 1899-1901, Italian courses were also included within the department. Its name
-                changed to the French Language and Literature Department in 1895. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The French Studies Department records, 1900s-1990s, contain materials describing the
-                department's courses and dramatic productions, as well as information about the
-                French club. Types of materials include black and white photographs, meeting
-                minutes, course syllabi and exam questions, and programs from theatrical
-                performances.</p>
-        </scopecontent>
-
-
-
-
-
-
-        <descgrp id="admin">
-            <head>Information on Use</head>
-            <descgrp>
-                <head>Terms of Access and Use</head>
-                <userestrict id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        material from the documents must be requested from the Smith College
-                        Archives. Smith College owns copyright to any published material relating to
-                        college events and activities. Provenance and copyright ownership of other
-                        materials is unknown and researchers are responsible for determining any
-                        question of copyright.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Smith College Dept. of French Studies, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp>
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The French Studies Department records were created by the departments and its
-                        students and transferred/donated to the College Archives.</p>
-                </acqinfo>
-                <processinfo id="admin-process">
-                    <p>Processed by Elisha Winkler</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <descgrp id="addinfo">
-            <head>Additional Information</head>
-            <relatedmaterial id="add-related">
-                <head>Related Material</head>
-                <p>Researchers should also view:</p>
-                <list>
-                    <item>RG 42. Faculty </item>
-                    <item>93A-118Departmental files and minutes, 1950s-1991 </item>
-                    <item>95A-74Departmental files, 1930s-1970s </item>
-                    <item>03A-46Departmental files, 1938-2001 </item>
-                    <item>04A-093Correspondence, student files, miscellaneous files 1981-2001
-                    </item>
-                </list>
-                <p>These records are unprocessed and portions may be restricted. </p>
-            </relatedmaterial>
-        </descgrp>
-
-
-
-
-
-
-
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>General <unitdate>1915-16, 1930s-60s, 1990</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>French club- General <unitdate>Early 1900s, 1930s-40s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>French club- Constitution and By-laws <unitdate>Undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>French club- Reports of the Secretary <unitdate>1911-24, 1926-31,
-                            1941-44</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Courses <unitdate>1900s-1950</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Courses- 100d <unitdate>1978</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Courses- 102-200 <unitdate>1978, 1981</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Courses- 201-330 <unitdate>1978-79, 1981</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>French 11-46a <unitdate>1930s-1950s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>French Dept. lectures, guests, others <unitdate>1941, 1974</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Photographs--Courses <unitdate>1948</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">12</container>
-                    <unittitle>Photographs <unitdate>1940s-60s, 1980s-90s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1156</container>
-                    <container type="folder" label="mixed materials">13</container>
-                    <unittitle>Teacher training <unitdate>1950s-60s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">1</container>
-                    <unittitle>Dramatics- General <unitdate>Early 1900s</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">2</container>
-                    <unittitle>Dramatics- Les Deux Sourds <unitdate>1901</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">3</container>
-                    <unittitle>Dramatics- Les Precieuses Ridicules <unitdate>1901</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">4</container>
-                    <unittitle>Dramatics- Le Barbier de Seville <unitdate>1902</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">5</container>
-                    <unittitle>Dramatics- Le Bourgeois Gentilhomme <unitdate>1903</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">6</container>
-                    <unittitle>Dramatics- Le Voyage de Monsieur Perrichon <unitdate>1903</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">7</container>
-                    <unittitle>Dramatics- Les Pattes de Mouche <unitdate>1905</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">8</container>
-                    <unittitle>Dramatics- Le Monde ou l'on s'ennuie <unitdate>1906</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">9</container>
-                    <unittitle>Dramatics- Le Voyage de Monsieur Perrichon <unitdate>1908</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">10</container>
-                    <unittitle>Dramatics- Le Malade Imaginaire <unitdate>1910</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">11</container>
-                    <unittitle>Dramatics- Le Barbier de Seville <unitdate>1912</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">12</container>
-                    <unittitle>Dramatics- Le Luthier de Cremone <unitdate>1914</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">13</container>
-                    <unittitle>Dramatics- Songs of Old France <unitdate>1915</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">14</container>
-                    <unittitle>Dramatics- L'Anglais tel qu'on le parle and Gringoire
-                            <unitdate>1917</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">15</container>
-                    <unittitle>Dramatics- Le Bourgeois Gentilhomme <unitdate>1920</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">16</container>
-                    <unittitle>Dramatics- Le Malade Imaginaire <unitdate>1922</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">17</container>
-                    <unittitle>Dramatics- L'Anglais tel qu'on le parle <unitdate>1927</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">18</container>
-                    <unittitle>Dramatics- The man who married a dumb wife <unitdate>1927</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">19</container>
-                    <unittitle>Dramatics- Gringoire <unitdate>1930</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">20</container>
-                    <unittitle>Dramatics- La Folle Journee <unitdate>1933</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">21</container>
-                    <unittitle>Dramatics- La paix chex soi, Un cliente serieux
-                            <unitdate>1934</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">22</container>
-                    <unittitle>Dramatics- Concert de musique <unitdate>1940</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">23</container>
-                    <unittitle>Dramatics- Le Bourgeois Gentilhomme <unitdate>1941</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">24</container>
-                    <unittitle>Dramatics- Les Trent-sept sous de Monsieur Montaudoin
-                            <unitdate>1946</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">1157</container>
-                    <container type="folder" label="mixed materials">25</container>
-                    <unittitle>Dramatics- La Farce de Maitre Mimin and George Dandin
-                            <unitdate>1954</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-
-
-
-
-
-
-
-    </archdesc>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2006</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-15 15:17:23 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-15</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Department of French Studies Records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College. Dept. of French Studies.</corpname>
+         </origination>
+         <unitid>CA.MS.00126</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   certainty="approximate"
+                   era="ce"
+                   normal="1900/1990"
+                   type="inclusive">1900-1990</unitdate>
+         <abstract id="aspace_4cd23bf8f2b739a79aa674518ce27de3">This collection contains black and white photographs, meeting minutes, course syllabi and exam questions, and programs.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The French Studies Department at Smith College was established in 1894. Between the years 1899-1901, Italian courses were also included within the department. Its name changed to the French Language and Literature Department in 1895.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Department of French Studies records contain materials describing the department's courses and dramatic productions, as well as information about the French club. Types of materials include black and white photographs, meeting minutes, course syllabi and exam questions, and programs from theatrical performances.</p>  
+      </scopecontent>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Department of French Studies Records, Smith College Archives, CA-MS-00126, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Researchers should also view:</p>    
+         <list type="ordered">
+            <item>RG 42. Faculty</item>
+            <item>93A-118 Departmental files and minutes, 1950s-1991</item>
+            <item>95A-74 Departmental files, 1930s-1970s</item>
+            <item>03A-46 Departmental files, 1938-2001</item>
+            <item>04A-093 Correspondence, student files, miscellaneous files 1981-2001</item>
+         </list>
+         <p>These records are unprocessed and portions may be restricted.</p>  
+      </relatedmaterial>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Department of French Studies records were created by the departments and its students and transferred/donated to the College Archives.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Elisha Winkler</p>  
+      </processinfo>
+      <accessrestrict id="aspace_ce97b56378491b3c5c4e92795d2dfedc">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <controlaccess>
+         <corpname encodinganalog="610" source="naf">Smith College. Dept. of French Studies.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_7d6a91cf88f3e88094e80893ce552c51" level="file">
+            <did>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1915/1916"
+                         type="inclusive">1915-16</unitdate>
+               <unitdate calendar="gregorian" era="ce">1930s-60s</unitdate>
+               <unitdate normal="1990/1990">1990</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_29a52e7e56830edfa88076eb3b4cbf07"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_cd700e5cc03202392cfb4bf502935ffb"
+                          parent="aspace_29a52e7e56830edfa88076eb3b4cbf07"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1a64c37be0c44f7e3f296495889c3435" level="file">
+            <did>
+               <unittitle>French club- General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1905"
+                         type="inclusive">Early 1900s</unitdate>
+               <unitdate calendar="gregorian" era="ce">1930s-40s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_28f61a0f8a571c8f936efdff8e79b004"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_02280f3526f5bdd8a8e7ad5a70781749"
+                          parent="aspace_28f61a0f8a571c8f936efdff8e79b004"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6f8f5671c4aabc9add537809a40da619" level="file">
+            <did>
+               <unittitle>French club- Constitution and By-laws</unittitle>
+               <unitdate calendar="gregorian" era="ce">Undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c2f36a1a1e66bb93ae66d03e71c6bad2"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_509f8074f84960c31576ab06f3919236"
+                          parent="aspace_c2f36a1a1e66bb93ae66d03e71c6bad2"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c8ec4b8de9dc388f5b21fa2cd5b20513" level="file">
+            <did>
+               <unittitle>French club- Reports of the Secretary</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1911/1924"
+                         type="inclusive">1911-24</unitdate>
+               <unitdate normal="1926/1931" type="inclusive">1926-31</unitdate>
+               <unitdate normal="1941/1944" type="inclusive">1941-44</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a04c207716fd13df4f168fb5ab3c890f"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_e2e5503a97d21c36cf1e0f7e330f323d"
+                          parent="aspace_a04c207716fd13df4f168fb5ab3c890f"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d168df4951f4e2aadd852d051c4157b8" level="file">
+            <did>
+               <unittitle>Courses</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1950"
+                         type="inclusive">1900s-1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3d011ceacfe00f8ce85639d7f8f0cb17"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_8269fdbcbaa2caf66ff93c80663e422d"
+                          parent="aspace_3d011ceacfe00f8ce85639d7f8f0cb17"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c595611a19e658c645e2f5aea2488a08" level="file">
+            <did>
+               <unittitle>Courses- 100d</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2d24199186389d9b505737d8cbc5c6e3"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_d360124970041ab128e39a9a94b948a9"
+                          parent="aspace_2d24199186389d9b505737d8cbc5c6e3"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cf8df451446ddcc1c11d75da126387d9" level="file">
+            <did>
+               <unittitle>Courses- 102-200</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+               <unitdate normal="1981/1981">1981</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5e44ab0ed4c17b42f39c8bac2df75083"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_8370105f3084e2c187c45a2534206a6f"
+                          parent="aspace_5e44ab0ed4c17b42f39c8bac2df75083"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_414e2212d68217dee7629c3517325dfb" level="file">
+            <did>
+               <unittitle>Courses- 201-330</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1978/1979"
+                         type="inclusive">1978-79</unitdate>
+               <unitdate normal="1981/1981">1981</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fdcf2340582c53f6b025328dfd2aeca4"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_e1231b5419e38430c9d2289199de9f45"
+                          parent="aspace_fdcf2340582c53f6b025328dfd2aeca4"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5129fbf9bd781e78d44d93ea6d5f47bc" level="file">
+            <did>
+               <unittitle>French 11-46a</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1930/1959"
+                         type="inclusive">1930s-1950s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cdfe0e6ce083d0adf3066a4a185bb17d"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_61cf5988d90c245ebe968d7a33b59294"
+                          parent="aspace_cdfe0e6ce083d0adf3066a4a185bb17d"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_361e8a3ec4cd96f8d173c4955bba9c4f" level="file">
+            <did>
+               <unittitle>French Dept. lectures, guests, others</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <unitdate normal="1974/1974">1974</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ef4f8233de42baf416727f43544d8eee"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_703d57773ea62fd19b6c41738b5b2bd2"
+                          parent="aspace_ef4f8233de42baf416727f43544d8eee"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8a10ea7ad8126c35b758b5adc14c3236" level="file">
+            <did>
+               <unittitle>Photographs--Courses</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e2cd1738aa88b279576fafbd6366ab43"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_e72e3aa2de6e78b700165ad7dac317ce"
+                          parent="aspace_e2cd1738aa88b279576fafbd6366ab43"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6d8085b0bc379457de6e62330143b66c" level="file">
+            <did>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">1940s-60s</unitdate>
+               <unitdate calendar="gregorian" era="ce">1980s-90s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_96e2d0c035ee46a79da43bcfab437b96"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_c8d88909904cdf7ec12d54aba878aa3b"
+                          parent="aspace_96e2d0c035ee46a79da43bcfab437b96"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5f4a3fa65e6bf11fd3180a827c719b7e" level="file">
+            <did>
+               <unittitle>Teacher training</unittitle>
+               <unitdate calendar="gregorian" era="ce">1950s-60s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_19b8fe812d948feb4c290d111540e9a2"
+                          label="Mixed Materials [310183630226131]"
+                          type="box">1156</container>
+               <container id="aspace_226e22b32f3c26d1a84ecc4b65071dac"
+                          parent="aspace_19b8fe812d948feb4c290d111540e9a2"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cbf1c12944f93127f2f8d35c120ae21f" level="file">
+            <did>
+               <unittitle>Dramatics- General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1905"
+                         type="inclusive">Early 1900s</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e31310a25970c7b8224fc82c8789058d"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_77a8068d3df5240fa74a97bb29154c7e"
+                          parent="aspace_e31310a25970c7b8224fc82c8789058d"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8ccdcdbe7dc03e2f9a8c9a880d856e9f" level="file">
+            <did>
+               <unittitle>Dramatics- Les Deux Sourds</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6c3b279e803266ac450d0592bb66bd27"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_1742314555f7fba5124762b114ab580b"
+                          parent="aspace_6c3b279e803266ac450d0592bb66bd27"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_722448fba7c1edfac39f97bd272062ed" level="file">
+            <did>
+               <unittitle>Dramatics- Les Precieuses Ridicules</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e1062d66ba76b72e3445578e64cec2ed"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_73593e61b76355aca712d773902794bd"
+                          parent="aspace_e1062d66ba76b72e3445578e64cec2ed"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e11e86101242a733df7e33f14704def3" level="file">
+            <did>
+               <unittitle>Dramatics- Le Barbier de Seville</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ffe67012ece09cb1c847eb0d1e699f64"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_b9a9136c0007e16457123d2c4a376c80"
+                          parent="aspace_ffe67012ece09cb1c847eb0d1e699f64"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8aefe29be1a4867cd57ae6d5bc7ec1c1" level="file">
+            <did>
+               <unittitle>Dramatics- Le Bourgeois Gentilhomme</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0ffb0f72b2181989d9f27234e6e310de"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_27749b5bc0261845a74170a73e819d40"
+                          parent="aspace_0ffb0f72b2181989d9f27234e6e310de"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3c5d8626142ddbe347f2e49bbee3e101" level="file">
+            <did>
+               <unittitle>Dramatics- Le Voyage de Monsieur Perrichon</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bc15ed50f9524c59b8ea9c83dac73dcd"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_456d9e4223f4fe0aaf0ac7ad64bd31aa"
+                          parent="aspace_bc15ed50f9524c59b8ea9c83dac73dcd"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bdc077f4f4dbfc0d1d8144f0e540e4a7" level="file">
+            <did>
+               <unittitle>Dramatics- Les Pattes de Mouche</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1905/1905">1905</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_81c18cb7dfb5d7d357e9c1ef57daa0d5"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_80b908ec6d3bcfc97ed5ed446574ffa4"
+                          parent="aspace_81c18cb7dfb5d7d357e9c1ef57daa0d5"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bf5322fdf2b50c97a9a1f1157e73d2b3" level="file">
+            <did>
+               <unittitle>Dramatics- Le Monde ou l'on s'ennuie</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2b836e661c15f3da372dd690abd36ee0"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_79c51cc7e642ff31c78e617763a254ba"
+                          parent="aspace_2b836e661c15f3da372dd690abd36ee0"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8d45de088b03f40d40a9b78c65a33778" level="file">
+            <did>
+               <unittitle>Dramatics- Le Voyage de Monsieur Perrichon</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_238fed8e85aa453b5731a295d193e7df"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_b1af9239c0fe776a3d3e0a73131fc469"
+                          parent="aspace_238fed8e85aa453b5731a295d193e7df"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_47c237d1c5d79d8b650827b968be5762" level="file">
+            <did>
+               <unittitle>Dramatics- Le Malade Imaginaire</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c719e2fa1e2453970bd689b639f7c874"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_99a5a577185d03b1acac1ba0e377bb8a"
+                          parent="aspace_c719e2fa1e2453970bd689b639f7c874"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5fb81ca4e90c1ab6a042926a58a0f060" level="file">
+            <did>
+               <unittitle>Dramatics- Le Barbier de Seville</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1912/1912">1912</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_600dca1c9167444c2438f67c0e146f87"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_2bcc33f815340d1c1a1f2dcd3ebe6716"
+                          parent="aspace_600dca1c9167444c2438f67c0e146f87"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7f5c7f9d9991a32e82ddb71a1fc8f94b" level="file">
+            <did>
+               <unittitle>Dramatics- Le Luthier de Cremone</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_68fd41380f33ee50300984216d72b98c"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_a4ec299caf2d965862ba3d269e46bf64"
+                          parent="aspace_68fd41380f33ee50300984216d72b98c"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_588eda0e06fd0bde48d28dc1e151dbc2" level="file">
+            <did>
+               <unittitle>Dramatics- Songs of Old France</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_77d68a4a6941cc56c447a98fa4e22955"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_9d44845773688b738ff9e2abbf6abfff"
+                          parent="aspace_77d68a4a6941cc56c447a98fa4e22955"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8d0f2fc24b1fef0ab7fb9dd9b10eefaa" level="file">
+            <did>
+               <unittitle>Dramatics- L'Anglais tel qu'on le parle and Gringoire</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e5dbb35471c9876dda2ca668a428db3"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_0c969c106452f222c9835ba6956373a9"
+                          parent="aspace_1e5dbb35471c9876dda2ca668a428db3"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_19632e428580922d705fa74901a67ef7" level="file">
+            <did>
+               <unittitle>Dramatics- Le Bourgeois Gentilhomme</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1920/1920">1920</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9b1fc134eed53ac80c46ab476eabd07d"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_6436187a1891e0dfe02412c680d52695"
+                          parent="aspace_9b1fc134eed53ac80c46ab476eabd07d"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_85d1369cdbdea16c3f75044052c88eeb" level="file">
+            <did>
+               <unittitle>Dramatics- Le Malade Imaginaire</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_32d85ae3db02757fe7dafb9bb86403d6"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_e50ed28469c0b764ccac6a22afdce7d1"
+                          parent="aspace_32d85ae3db02757fe7dafb9bb86403d6"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dc8e5b1d353ae7cbacd5cf940d1970c8" level="file">
+            <did>
+               <unittitle>Dramatics- L'Anglais tel qu'on le parle</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7b83a892368986692b5b44358f2545fb"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_cb5a617aaa3fcaa84dd894bdbaf671c9"
+                          parent="aspace_7b83a892368986692b5b44358f2545fb"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3e1936fdbd36ec6119acb1c70c99f89d" level="file">
+            <did>
+               <unittitle>Dramatics- The man who married a dumb wife</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b7e7d476425d8f3900e7aff8406efad2"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_253bbba40d7b0211a3e5cd4fcec95af1"
+                          parent="aspace_b7e7d476425d8f3900e7aff8406efad2"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6a44bc882627c9199b5170b4ecd68540" level="file">
+            <did>
+               <unittitle>Dramatics- Gringoire</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b5be6eadf65285d480173e8aba14fa03"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_b1300e11a9a6705d2b6098b1d4f0090d"
+                          parent="aspace_b5be6eadf65285d480173e8aba14fa03"
+                          type="folder">19</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bc7c3dd90ad12af7ee3bca2a86489a17" level="file">
+            <did>
+               <unittitle>Dramatics- La Folle Journee</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_62d147a8bae05cc70908e51e49e41fa0"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_c3a104a9d1295a8276ae83cfafd5bf71"
+                          parent="aspace_62d147a8bae05cc70908e51e49e41fa0"
+                          type="folder">20</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d823a28bd6c3410bcbfc50f2dbf9d13d" level="file">
+            <did>
+               <unittitle>Dramatics- La paix chex soi, Un cliente serieux</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a010d56acf97f070ee25788aac6df297"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_373aca5602277ba99c82d297a0a8ee94"
+                          parent="aspace_a010d56acf97f070ee25788aac6df297"
+                          type="folder">21</container>
+            </did>
+         </c01>
+         <c01 id="aspace_75e43f912c68e4cd7c4f025deba5d5a3" level="file">
+            <did>
+               <unittitle>Dramatics- Concert de musique</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_900a06d1b4ed5e47f77f17affc28c0c5"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_162f429ff593449f8224b7fcd619e626"
+                          parent="aspace_900a06d1b4ed5e47f77f17affc28c0c5"
+                          type="folder">22</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d601af768d20dba2b82ab397a448b600" level="file">
+            <did>
+               <unittitle>Dramatics- Le Bourgeois Gentilhomme</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1aa1f994cc0da5576376399076526d56"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_db8eacb10bf7121c1a362e82e4f8482c"
+                          parent="aspace_1aa1f994cc0da5576376399076526d56"
+                          type="folder">23</container>
+            </did>
+         </c01>
+         <c01 id="aspace_393607170ad769ad60aaf5ffc9a56202" level="file">
+            <did>
+               <unittitle>Dramatics- Les Trent-sept sous de Monsieur Montaudoin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4c7695aef76269dee7a2c12c9c894546"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_e90a5dacf7957215df06faed7ba590bd"
+                          parent="aspace_4c7695aef76269dee7a2c12c9c894546"
+                          type="folder">24</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c06e1566ddbfea7eb48f9f8ecf1fa5ee" level="file">
+            <did>
+               <unittitle>Dramatics- La Farce de Maitre Mimin and George Dandin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_05c1603abe17dab31f0f08931ec168a0"
+                          label="Mixed Materials [310183630226784]"
+                          type="box">1157</container>
+               <container id="aspace_56f76b41e2b8ce868c4ecdfb4c621af2"
+                          parent="aspace_05c1603abe17dab31f0f08931ec168a0"
+                          type="folder">25</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
