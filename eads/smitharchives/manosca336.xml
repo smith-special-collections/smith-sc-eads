@@ -1,248 +1,282 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca336.xml//EN">manosca336</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca336</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Sophia Satina Papers, 1922-1978</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Sophia Satina Papers <num>CA.MS.00336</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-20">2013-11-20</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 14:39:53 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Satina, Sophia, 1879-1975</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Sophia Satina Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1922-1978</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:ee7b3768-fd48-4985-8d54-95ddab30aa7e</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(0.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English</language>
-            <language langcode="rus">Russian</language>
-         </langmaterial>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of Botany. Contains
-            correspondence, clippings, publications, photographs, and scrapbook. </abstract>
+         <unittitle>Sophia Satina Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Satina, Sophia, 1879-1975</persname>
+         </origination>
+    
+         <unitid>CA.MS.00336</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1922/1978"
+                   type="inclusive">1922-1978</unitdate>
+         <langmaterial id="aspace_c8eeba108a10131e6fa13f8a10a20146">
+            <language langcode="eng">English</language> and <language langcode="rus">Russian</language>
+         </langmaterial>
+         <abstract id="aspace_15799c19d2d86d8e6c5e88fce36e22f9">Professor of Botany. Contains correspondence, clippings, publications, photographs, and scrapbook.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Sophie Satin (Sophia Satina) was born on April 17, 1879 in Tambov, Russia, a town just
-            south of Moscow. Satin, an ardent advocate for women's education during the Tsarist
-            regime, was a graduate of the first class to matriculate at the Women's University in
-            Moscow. She continued to be involved with the University, becoming an assistant
-            professor in the Department of Botany, a position she held until her departure from
-            Russia in 1921. Prior to her emigration, Satin and a few of her colleagues opened a
-            botanical museum in Moscow that was free to the public. The museum was active until the
-            Bolsheviks staged a revolution in 1917. Satin, an activist and feminist, fled to the
-            United States in response to the new regime and began researching at the Carnegie
-            Research Laboratories in Cold Springs Harbor, New York. In 1943, Satin acquired a
-            position at Smith College working under famed Geneticist Albert Blakeslee as a research
-            assistant in the Genetics Experimental Station (G.E.S.). While Satin did not hold a
-            Ph.D., she became a visiting associate professor of Botany, and assistant director of
-            the G.E.S. She worked at the college until her retirement in 1955. Through her work,
-            Satin helped lay the foundations for growing the fungus penicillium, and in 1944 was
-            awarded an Honorary Doctorate in Science from Smith College. Satin died on February 24,
-            1975 in New York City.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Sophie Satin (Sophia Satina) was born on April 17, 1879 in Tambov, Russia, a town just south of Moscow. Satin, an ardent advocate for women's education during the Tsarist regime, was a graduate of the first class to matriculate at the Women's University in Moscow. She continued to be involved with the University, becoming an assistant professor in the Department of Botany, a position she held until her departure from Russia in 1921. Prior to her emigration, Satin and a few of her colleagues opened a botanical museum in Moscow that was free to the public. The museum was active until the Bolsheviks staged a revolution in 1917. Satin, an activist and feminist, fled to the United States in response to the new regime and began researching at the Carnegie Research Laboratories in Cold Springs Harbor, New York. In 1943, Satin acquired a position at Smith College working under famed Geneticist Albert Blakeslee as a research assistant in the Genetics Experimental Station (G.E.S.). While Satin did not hold a Ph.D., she became a visiting associate professor of Botany, and assistant director of the G.E.S. She worked at the college until her retirement in 1955. Through her work, Satin helped lay the foundations for growing the fungus penicillium, and in 1944 was awarded an Honorary Doctorate in Science from Smith College. Satin died on February 24, 1975 in New York City.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Box contains biographical information regarding Sophie Satin, correspondence,
-            photographs, publications, and a retirement tribute (in the form of a scrapbook) for
-            Satin.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection contains biographical information regarding Sophie Satin, correspondence, photographs, publications, and a retirement tribute (in the form of a scrapbook) for Satin.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Sophia Satina Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Sophia Satina Papers, Smith College Archives, CA-MS-00336, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Sophia Satina papers were donated to the Smith College Archives from a number of
-            sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Sophia Satina papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <persname encodinganalog="600" role="fmo" source="naf">Satina, Sophia, 1879-1975</persname>
+  
+         <persname encodinganalog="600" source="naf">Satina, Sophia, 1879-1975</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_90999223be686e9059a4d57b98fe662a" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical information <unitdate>1948-1976</unitdate>
-               </unittitle>
+               <unittitle>Biographical information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1948/1976"
+                         type="inclusive">1948-1976</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4a837f9711ed2f8a3404fba2927f6816"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
+               <container id="aspace_1d1aa8e46a4643b548843cecb3c1b34c"
+                          parent="aspace_4a837f9711ed2f8a3404fba2927f6816"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2c2b598120a1645862ef205778126fb9" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Award and degree information <unitdate>1943-1944</unitdate>
-               </unittitle>
+               <unittitle>Award and degree information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1943/1944"
+                         type="inclusive">1943-1944</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a676c7c9bea17a33a0edf7e51d074bfa"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
+               <container id="aspace_3d58f6aa77ab4cc937c944c549ac7ac7"
+                          parent="aspace_a676c7c9bea17a33a0edf7e51d074bfa"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e3124e5e5a160af289bca1cd89892929" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence <unitdate>1944-1976</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1976"
+                         type="inclusive">1944-1976</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_79f6e9e3b7c45f13eb0cb722faa3a872"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
+               <container id="aspace_7c2c81861be85b934cdd9790ca5afa3e"
+                          parent="aspace_79f6e9e3b7c45f13eb0cb722faa3a872"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a02f989c9e8c3534307d42c64cecbb5d" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Retirement tribute <unitdate>1955</unitdate>
-               </unittitle>
+               <unittitle>Retirement tribute</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_89aeeae5313560c88625cdea992e877d"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
+               <container id="aspace_cf8cda64f7fd376a2d3ca7b6cb551a8f"
+                          parent="aspace_89aeeae5313560c88625cdea992e877d"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bb674a33986bf2e8b5086886e5254ad5" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Photographs <unitdate>1922-1978</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1922/1978"
+                         type="inclusive">1922-1978</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_33837f69fb8f81214372e31bfe9cd2d1"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
+               <container id="aspace_e006369adb2f28ff79d0d83e0b0e980a"
+                          parent="aspace_33837f69fb8f81214372e31bfe9cd2d1"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4d952d3da18984a7882513f732a843b5" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <unittitle>
-                  <title render="bold">Publications</title>
-               </unittitle>
+               <unittitle>Publications</unittitle>
             </did>
+            <c02 id="aspace_781123494938cd459b796d2fd4dd60e5" level="file">
+               <did>
+                  <unittitle>"Education of Women in Pre-Revolutionary Russia" (English)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3315a4d8e83b6c634b1ec77fbc4f73ca"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_fcb8d9afa11918f951c92de211294472"
+                             parent="aspace_3315a4d8e83b6c634b1ec77fbc4f73ca"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fad7ee13bbdb51a3cdc8b5b5e4c9ecd3" level="file">
+               <did>
+                  <unittitle>"Education of Women in Pre-Revolutionary Russia" (Russian)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_362004167a3fe0db0dae03448b4e2ca9"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_de986f7f6d562bfdfac8fad1fd8efc4a"
+                             parent="aspace_362004167a3fe0db0dae03448b4e2ca9"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_41e0adf51d7c8df0d4e63b853a9f059f" level="file">
+               <did>
+                  <unittitle>"Recollections" (English)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1975"
+                            type="inclusive">Early 1970s</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_70139715a6f77ca061174e3f7f86a4cb"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_06f3b53e34f61f0bff72a1e19c81e811"
+                             parent="aspace_70139715a6f77ca061174e3f7f86a4cb"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1d50d32c0297dc8b441af9fac5f2c645" level="file">
+               <did>
+                  <unittitle>"Recollections" (Russian)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1975"
+                            type="inclusive">Early 1970s</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1afdca565df8cdc2ca31e9e5f3b60e44"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_24428d6dd26d8b443f816d8d5d8d44d3"
+                             parent="aspace_1afdca565df8cdc2ca31e9e5f3b60e44"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f9dbe4ef2c14dfb3059f7c42aa6483dc" level="file">
+               <did>
+                  <unittitle>"Reminiscences of Rachmaninoff" (Russian)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_95a04bdd84d6642dcb509ab492bc8e96"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_d1d7686fd7160f53cc392b2a2b2b48a9"
+                             parent="aspace_95a04bdd84d6642dcb509ab492bc8e96"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6b5242932ef69eac828043a6a94fd49d" level="file">
+               <did>
+                  <unittitle>Publications and publication information</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1954"
+                            type="inclusive">1943-1954</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3dd078b47a7a8083eb460da0854cfc36"
+                             label="Mixed Materials [310183630224128]"
+                             type="box">1005</container>
+                  <container id="aspace_a9cf61e69a4543f8260ed95efee1586d"
+                             parent="aspace_3dd078b47a7a8083eb460da0854cfc36"
+                             type="folder">11</container>
+               </did>
+            </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_18f96a8b8080117f16b76160b77494b4" level="file">
             <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>"Education of Women in Pre-Revolutionary Russia" (English)
-                     <unitdate>1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>"Education of Women in Pre-Revolutionary Russia" (Russian)
-                     <unitdate>1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>"Recollections" (English) <unitdate>Early 1970s</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>"Recollections" (Russian) <unitdate>Early 1970s</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>"Reminiscences of Rachmaninoff" (Russian) <unitdate>1946</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Publications and publication information <unitdate>1943-1954</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1005</container>
-               <unittitle>Scrapbook (retirement tribute) <unitdate>1955</unitdate>
-               </unittitle>
+               <unittitle>Scrapbook (retirement tribute)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fb733f3b2ef3f34ba3378c442db85be3"
+                          label="Mixed Materials [310183630224128]"
+                          type="box">1005</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

@@ -1,467 +1,577 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca160.html"
-            >manosca160</eadid>
-
-        <filedesc>
-            <titlestmt>
-                <titleproper>Alfred Young Papers, 1893-1935</titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Melvin Carlson, Jr..</author>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2006</date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded in NoteTab Pro. Encoded by Deborah A. Richards.
-                    <date>2006-09-22</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-    </eadheader>
-
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives</publisher>
-            <titleproper>Alfred Young Papers, 1893-1935</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 42</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US"
+             mainagencycode="manosca"
+             url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca160.html">manosca160</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Alfred Young Papers <num>CA.MS.00160</num>
+            </titleproper>
             <author>Melvin Carlson, Jr.</author>
-            <date>2005</date>
-            <p>© 2006 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-
-    <archdesc level="collection" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <persname encodinganalog="100 1" source="lcnaf">Young, Alfred</persname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Alfred Young Papers</unittitle>
-            <unitdate label="Dates:">1893-1935</unitdate>
-
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 42 UUID:3f9eac10-600c-429b-b879-8f83ceea0d6f</unitid>
-
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">2 boxes</extent>
-                <extent encodinganalog="300$a">(10 linear inches)</extent>
-            </physdesc>
-            <langmaterial encodinganalog="546" label="Language of Material:">
-                <language langcode="eng">English</language>
-            </langmaterial>
-
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:"> The papers contain Alfred Young's
-                files on the production of William Shakespeare's plays The Merchant of Venice, Merry
-                Wives of Windsor, A Midsummer Night's Dream and Twelfth Night. </abstract>
-        </did>
-
-
-
-        <bioghist id="bioghist">
-
-            <p>Alfred Young, the stage name of John Carolan, was director of senior Dramatics at
-                Smith College, 1892-1917, with the exception of 1893. He also was involved with
-                directing plays at other colleges and stage venues. </p>
-            <p>Young was engaged to direct a play chosen by the senior class and with only a few
-                exceptions they were Shakespeare plays. Once the play was chosen, members of Smith
-                College's Dept. of Elocution trained individual actors in their parts. Young would
-                send instructions as to the overall shape of the play and would come to campus for
-                final rehearsals and production. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The papers contain Alfred Young's files on the production of William Shakespeare's
-                plays The Merchant of Venice, Merry Wives of Windsor, A Midsummer Night's Dream and
-                Twelfth Night. </p>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
             <p>
-                <list>
-                    <head> The papers are divided into five series: </head>
-                    <item>Series I: General materials</item>
-                    <item>Series II: The Merchant of Venice</item>
-                    <item>Series III: Merry Wives of Windsor</item>
-                    <item>Series IV: A Midsummer Night's Dream</item>
-                    <item>Series V: Twelfth Night</item>
-                </list>
+               <date>2006</date>
             </p>
-
-        </scopecontent>
-
-
-
-
-
-
-        <descgrp id="admin">
-            <head>Information on Use</head>
-            <descgrp>
-                <head>Terms of Access and Use</head>
-                <accessrestrict id="admin-access">
-                    <p>The papers are open for research according to the regulations of the Smith
-                        College Archives without any additional restrictions.</p>
-                </accessrestrict>
-                <userestrict id="admin-use">
-                    <p>Single photocopies may be made for research purposes. Permission to publish
-                        or quote from the documents must be obtained from the Smith College
-                        Archives.</p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Alfred Young Papers, Box #, Smith College Archives.</p>
-            </prefercite>
-            <descgrp>
-                <head>History of the Collection</head>
-                <acqinfo id="admin-acqinfo">
-                    <p>The papers were created by Alfred Young and donated to the College
-                        Archives.</p>
-                </acqinfo>
-            </descgrp>
-        </descgrp>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <descgrp id="addinfo">
-            <head>Additional Information</head>
-            <relatedmaterial id="add-related">
-                <head>Related Material</head>
-                <p>
-                    <list>
-                        <head> Researchers should also view: </head>
-                        <item>80. Class of 1893-1917. Senior Dramatics box</item>
-                        <item>80. Dramatics</item>
-                    </list>
-                </p>
-                <p>"Senior Dramatics," <title render="italic">Smith College Weekly</title> (May 15,
-                    1912) 2, no. 30: [1]-2. </p>
-                <p>"Senior Dramatics," <title render="italic">Smith College Weekly</title> (June 10,
-                    1914) 4, no. 24: [1]-2. </p>
-            </relatedmaterial>
-        </descgrp>
-
-
-
-
-
-
-
-        <dsc id="list-contlist" type="in-depth">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>Series I: General</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Correspondence <unitdate>1890s-1909</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Photographs</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Miscellaneous <unitdate>undated, 1935</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>Series II: The Merchant of Venice</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Director's copy and prompt book</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Smith College production programs and reviews <unitdate>1897,
-                                1911</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Programs of production by Alfred Young <unitdate>1898</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Programs of productions by other directors
-                                <unitdate>1910,1924</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Stage designs</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Smith College production notes <unitdate>1911</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Other production notes</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Clippings on costume and stage design</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>Series III: Merry Wives of Windsor</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Director's copy and prompt book</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Programs and reviews <unitdate>1894-1909</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Production notes</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Music</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Clippings on costume</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser4" level="series">
-                <did>
-                    <unittitle>Series IV: A Midsummer Night's Dream</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Director's copy and prompt books</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Programs and reviews</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Smith College production notes <unitdate>1909</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Hunter College production notes <unitdate>1935</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Other production notes</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Music</unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser5" level="series">
-                <did>
-                    <unittitle>Series V: Twelfth Night</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Director's copy and prompt book</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Smith College program and review <unitdate>1917</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Programs and reviews of productions by Alfred Young
-                                <unitdate>1893-1909</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Programs of productions by other directors
-                                <unitdate>1900s-1910s</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Smith College production notes <unitdate>1917</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Barnard College production notes <unitdate>1909</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Other production notes</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>State design drawings</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Music - Smith College Senior Dramatics, June 1917, Music for
-                            Twelfth Night, Pianoforte Score. Boston, Mass. : C. W. Thompson and Co.
-                                <unitdate>1917</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>Costumes and stage design clippings</unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>Reviews, articles, etc.</unittitle>
-                    </did>
-                </c02>
-            </c01>
-        </dsc>
-
-
-
-
-
-
-
-    </archdesc>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-14 16:08:08 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-13</date>
+            <item>Containers added and finding aid updated as part of College Archives survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Alfred Young Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Young, Alfred</persname>
+         </origination>
+         <unitid>CA.MS.00160</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1890/1935"
+                   type="inclusive">1890-1935</unitdate>
+         <abstract id="aspace_4775c12fe6fdde6dcd26337828c470e6">The papers contain Alfred Young's files on the production of William Shakespeare's plays The Merchant of Venice, Merry Wives of Windsor, A Midsummer Night's Dream and Twelfth Night.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Alfred Young, the stage name of John Carolan, was director of senior Dramatics at Smith College, 1892-1917, with the exception of 1893. He also was involved with directing plays at other colleges and stage venues. </p>
+         <p> Young was engaged to direct a play chosen by the senior class and with only a few exceptions they were Shakespeare plays. Once the play was chosen, members of Smith College's Dept. of Elocution trained individual actors in their parts. Young would send instructions as to the overall shape of the play and would come to campus for final rehearsals and production.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The papers contain Alfred Young's files on the production of William Shakespeare's plays The Merchant of Venice, Merry Wives of Windsor, A Midsummer Night's Dream and Twelfth Night.</p>    
+         <list type="ordered">
+            <head>The papers are divided into five series:</head>
+            <item>Series I: General materials</item>
+            <item>Series II: The Merchant of Venice</item>
+            <item>Series III: Merry Wives of Windsor</item>
+            <item>Series IV: A Midsummer Night's Dream</item>
+            <item>Series V: Twelfth Night</item>
+         </list>
+      </scopecontent>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Alfred Young Papers, Smith College Archives, CA-MS-00160, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <list type="ordered">
+            <head>Researchers should also view:</head>
+            <item>80. Class of 1893-1917. Senior Dramatics box</item>
+            <item>80. Dramatics</item>
+         </list>
+         <p>"Senior Dramatics," <title render="italic">Smith College Weekly</title> (May 15, 1912) 2, no. 30: [1]-2. </p>
+         <p> "Senior Dramatics," <title render="italic">Smith College Weekly</title> (June 10, 1914) 4, no. 24: [1]-2.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <controlaccess>
+         <persname encodinganalog="600"
+                   authfilenumber="faculty_5018"
+                   source="local_inmagic-faculty">Young, Alfred</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>Series I: General</unittitle>
+            </did>
+            <c02 id="aspace_7669aae82b50ecf35be0f7250125aff8" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1890/1909"
+                            type="inclusive">1890s-1909</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_02d43452beddaa4c24fa25402da2a64d"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_81a6eedac4ff235be4b5d1ef7eada918"
+                             parent="aspace_02d43452beddaa4c24fa25402da2a64d"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_60338a69d3f74ae3d69e95503acfdcd7" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_30425df44d5658c1258da1cc47934079"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_7be36244dce31d1ccfa2067bf5c5ae65"
+                             parent="aspace_30425df44d5658c1258da1cc47934079"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_39188677ee2df156923297cd32c1fbb0" level="file">
+               <did>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <unitdate normal="1935/1935">1935</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2a8ec6ec1f6f4f5b92ec7127886c5d57"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_b349198535cda7fb25d9b3b212bc5646"
+                             parent="aspace_2a8ec6ec1f6f4f5b92ec7127886c5d57"
+                             type="folder">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II: The Merchant of Venice</unittitle>
+            </did>
+            <c02 id="aspace_4b5c8aaea73c51b7e1e6aa14f7ecd1cc" level="file">
+               <did>
+                  <unittitle>Director's copy and prompt book</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_238f6e2ecd135e20554c874c3a093cf2"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_047ac91b21d98ee228d8d5c784752f13"
+                             parent="aspace_238f6e2ecd135e20554c874c3a093cf2"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a3309ae2921bead9623cb62fbb4aaa81" level="file">
+               <did>
+                  <unittitle>Smith College production programs and reviews</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1897/1897">1897</unitdate>
+                  <unitdate normal="1911/1911">1911</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c21ed9ca244649d4baf2f479e8ba2a7b"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_93930c486cac6220af4c81fc06cdd87a"
+                             parent="aspace_c21ed9ca244649d4baf2f479e8ba2a7b"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_74cd22ac79283bf2f2add2c6a83e12bc" level="file">
+               <did>
+                  <unittitle>Programs of production by Alfred Young</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_96e242f26480e1a01baa4f6207fb2275"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_7305b7232345dc4a5525e6e828bde135"
+                             parent="aspace_96e242f26480e1a01baa4f6207fb2275"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e909c8bcdd21ff09dbfe9b18c466a59e" level="file">
+               <did>
+                  <unittitle>Programs of productions by other directors</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <unitdate normal="1924/1924">1924</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_92ddbc5706a67c6e77ff1e19bfd78add"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_0abd9281dded876ba0f1cb5a675bc44c"
+                             parent="aspace_92ddbc5706a67c6e77ff1e19bfd78add"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2d79ae7539e0e30536c591221ba7211c" level="file">
+               <did>
+                  <unittitle>Stage designs</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_51dfdad9f4d58fa844d4c4d7e090411d"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_c5f08fd7722fe448cf960a109fd852e7"
+                             parent="aspace_51dfdad9f4d58fa844d4c4d7e090411d"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2ccb6e1ae31c6a3ebd51fa95fa3d8b7f" level="file">
+               <did>
+                  <unittitle>Smith College production notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_085b3124a63c341c36e1c83d133936f5"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_041c1d45ea419a4f58099cea6d9ccc75"
+                             parent="aspace_085b3124a63c341c36e1c83d133936f5"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_29efac46f8fcb9d24de74eb957e231e4" level="file">
+               <did>
+                  <unittitle>Other production notes</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_c5768c8f6399381c530f6eb360001404"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_6d711060b8e326ccdc013e3b6946f207"
+                             parent="aspace_c5768c8f6399381c530f6eb360001404"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_169917140e67043898a1f66748c78b02" level="file">
+               <did>
+                  <unittitle>Clippings on costume and stage design</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_ef8257f68b8587ec8d61b222d431ff8f"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_59f7f94af77598206492fe9946754d8e"
+                             parent="aspace_ef8257f68b8587ec8d61b222d431ff8f"
+                             type="folder">8</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III: Merry Wives of Windsor</unittitle>
+            </did>
+            <c02 id="aspace_6aeb10197250a38a2573cb8df46fe987" level="file">
+               <did>
+                  <unittitle>Director's copy and prompt book</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_8a9dadf4e578082a13326dbfbec7a430"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_c7ed4c19ef8ddaec299b37c4b7cf3932"
+                             parent="aspace_8a9dadf4e578082a13326dbfbec7a430"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_af13cec27e976261e38253d1e5cd90ae" level="file">
+               <did>
+                  <unittitle>Programs and reviews</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1894/1909"
+                            type="inclusive">1894-1909</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4e8fd23b2b907a3138606c3a35d7853e"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_808a6e8142d044c9146a976762a53240"
+                             parent="aspace_4e8fd23b2b907a3138606c3a35d7853e"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9c7dccdd90eb9fbffffce06c3907c6be" level="file">
+               <did>
+                  <unittitle>Production notes</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_2f15afc59dfb48c419126e9bbc3040d9"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_ae5d900d24f63cb665002551ede9b539"
+                             parent="aspace_2f15afc59dfb48c419126e9bbc3040d9"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_db6bfeb1cdec2062a40f6bb914434bb3" level="file">
+               <did>
+                  <unittitle>Music</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_3376d4a09bec16a9b87789b0bde0acd1"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_6b3a94ded53c6ea808e1405071160538"
+                             parent="aspace_3376d4a09bec16a9b87789b0bde0acd1"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3ac93365b675686440e72d6d84a60345" level="file">
+               <did>
+                  <unittitle>Clippings on costume</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_1f9f76581e36d24727d56ef6be68db68"
+                             label="Mixed Materials [310183630225703]"
+                             type="box">1106</container>
+                  <container id="aspace_2ca6cb67b7a3de7c11abcdc9fc246bfe"
+                             parent="aspace_1f9f76581e36d24727d56ef6be68db68"
+                             type="folder">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>Series IV: A Midsummer Night's Dream</unittitle>
+            </did>
+            <c02 id="aspace_69b761473d0d9c3c383fb346f089f0b0" level="file">
+               <did>
+                  <unittitle>Director's copy and prompt books</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_b77023c4b1f10cc47735b343ec78ddf7"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_80f46dc5b8054cecec8e8da4effe8b0d"
+                             parent="aspace_b77023c4b1f10cc47735b343ec78ddf7"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c3d175347bdee430e6dc24d5857b5077" level="file">
+               <did>
+                  <unittitle>Programs and reviews</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_26965c20b1e428c32d8ea363adc89577"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_809ec8730c6a980d2023fbedb5dbe61c"
+                             parent="aspace_26965c20b1e428c32d8ea363adc89577"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9c67a98da7bc9075a6603fa3281b94c9" level="file">
+               <did>
+                  <unittitle>Smith College production notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_31736fa275a4e0071071ad341b115897"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_f89fb32131dfa0f8197cb67c72b04fb7"
+                             parent="aspace_31736fa275a4e0071071ad341b115897"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bf4ad314e23d48d676cd13b6120bc1c6" level="file">
+               <did>
+                  <unittitle>Hunter College production notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_ad9bccf598ff3e0d18d02cabcdafd7ab"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_d3d26ee275f0e6c7b2725d5de7b23eab"
+                             parent="aspace_ad9bccf598ff3e0d18d02cabcdafd7ab"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_37d37d4c17f57f1770916e4bc8fc0518" level="file">
+               <did>
+                  <unittitle>Other production notes</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_a4b0e6f8156496e8aae43af125f66d6f"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_d594677d9b217859398c2a33cdf4457c"
+                             parent="aspace_a4b0e6f8156496e8aae43af125f66d6f"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_49f6b677c66bf5f1e0b1b4bb95ef9466" level="file">
+               <did>
+                  <unittitle>Music</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_05828e3136d7b943aa2032a9ac093e7a"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_ab4242943581520e8cb975b4058680fd"
+                             parent="aspace_05828e3136d7b943aa2032a9ac093e7a"
+                             type="folder">6</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser5" level="series">
+            <did>
+               <unittitle>Series V: Twelfth Night</unittitle>
+            </did>
+            <c02 id="aspace_6e6a1ac27e0473f778283e477f890e07" level="file">
+               <did>
+                  <unittitle>Director's copy and prompt book</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_cf1451b48ea319e4b0a89b4d98930dd1"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_f6b8c484ddbe2b6a7f5ad671de1bdffd"
+                             parent="aspace_cf1451b48ea319e4b0a89b4d98930dd1"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5c945a1a548beead4bd1bffea2b1f38b" level="file">
+               <did>
+                  <unittitle>Smith College program and review</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_63fa7bf096d3d2601f8fc3a1b06de1a3"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_d551b3f970c443238b05f4096f015d25"
+                             parent="aspace_63fa7bf096d3d2601f8fc3a1b06de1a3"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2f36ca6f41f83558fc66a44dd1095617" level="file">
+               <did>
+                  <unittitle>Programs and reviews of productions by Alfred Young</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1893/1909"
+                            type="inclusive">1893-1909</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9e799f2d21f27d4c6280f5b1bcb5c1c3"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_a77a52359a3472c1d40e8a9db309e9ef"
+                             parent="aspace_9e799f2d21f27d4c6280f5b1bcb5c1c3"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_edf3af3de13375151a4d5a32b2aff119" level="file">
+               <did>
+                  <unittitle>Programs of productions by other directors</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1919"
+                            type="inclusive">1900s-1910s</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_ce9a51d6b96e598a9810708ed0f79339"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_c9379f993d2afc0f6223c54bdfb17c8b"
+                             parent="aspace_ce9a51d6b96e598a9810708ed0f79339"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_99a8b120e5fff3d46054b6e0dece0693" level="file">
+               <did>
+                  <unittitle>Smith College production notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_e69913d4b7a698d2a236f2ea0396403c"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_5b6087ad6b42f4baff3c67cbf4a32dd2"
+                             parent="aspace_e69913d4b7a698d2a236f2ea0396403c"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_257812ae4f803e053eb8d6cb0561ba63" level="file">
+               <did>
+                  <unittitle>Barnard College production notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_87f493e3718781adfd65ba89f26efa3c"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_c18b3a80293237c3a9fa2e16525a41eb"
+                             parent="aspace_87f493e3718781adfd65ba89f26efa3c"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2ad46a9f3fe5c964939736775205fbc8" level="file">
+               <did>
+                  <unittitle>Other production notes</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_f3ed6725d52ddbbe17061ddcc21908f0"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_1f1dfe666898d647ef5c7e431487145a"
+                             parent="aspace_f3ed6725d52ddbbe17061ddcc21908f0"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7948c6c8d09eb0c93495038f969cea6b" level="file">
+               <did>
+                  <unittitle>State design drawings</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_4176213e4f34b19d0c99480b654778b0"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_104504b4fef726237b4163a81f0b131d"
+                             parent="aspace_4176213e4f34b19d0c99480b654778b0"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_713ac6bff228c3d377ec0dd94b08056a" level="file">
+               <did>
+                  <unittitle>Music - Smith College Senior Dramatics, June 1917, Music for Twelfth Night, Pianoforte Score. Boston, Mass. : C. W. Thompson and Co.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_433460b6388d99163e07974e719f7a88"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_9ae7e2ff02db48eacd5cfe049767cb4e"
+                             parent="aspace_433460b6388d99163e07974e719f7a88"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c8043a09ed9c1b17582f89631751d1bb" level="file">
+               <did>
+                  <unittitle>Costumes and stage design clippings</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_8da495dbd544d008f559f8cae76ea439"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_fc0af464e9482c7c5d3a3c1dc151168d"
+                             parent="aspace_8da495dbd544d008f559f8cae76ea439"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_076ffa877ba383d1a768e71e3ace2630" level="file">
+               <did>
+                  <unittitle>Reviews, articles, etc.</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_7743cd180ba56bd8be1ee99d55b987f4"
+                             label="Mixed Materials [310183630225646]"
+                             type="box">1107</container>
+                  <container id="aspace_efdef8b2cdb7917c20bbf9bf4b90c7dd"
+                             parent="aspace_7743cd180ba56bd8be1ee99d55b987f4"
+                             type="folder">11</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
