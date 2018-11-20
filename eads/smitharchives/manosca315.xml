@@ -1,558 +1,792 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca315.xml//EN">manosca315</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca315</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Sigma Xi, the Scientific Research Society. Smith
-               College Chapter. Records 1930-ongoing</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Amanda Lineweber.</author>
-
+            <titleproper>Finding aid to Sigma Xi, the Scientific Research Society, Smith College Chapter Records. <num>CA.MS.00315</num>
+            </titleproper>
+            <author>Finding aid prepared by Amanda Lineweber.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2010</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2010">2010</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah
-            Richards. <date normal="2010-03-31">2010-03-31</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-20 14:37:45 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-20</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Sigma Xi, the Scientific Research Society.
-               Smith College Chapter.</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Sigma Xi, the Scientific Research Society.
-            Smith College Chapter. Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1930-[ongoing]</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 50 UUID:df0a95a2-bf0b-41a4-9cfc-ac7e16d10eaa</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">8 boxes</extent>
-            <extent encodinganalog="300$a">(2 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The Sigma Xi, the Scientific Research
-            Society, Smith College Chapter records contain correspondence, minutes, programs, and
-            committee records. </abstract>
+         <unittitle>Sigma Xi, the Scientific Research Society, Smith College Chapter Records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Sigma Xi, the Scientific Research Society. Smith College Chapter.</corpname>
+         </origination>
+         <unitid>CA.MS.00315</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.771 linear feet</extent>
+            <extent altrender="carrier">(8 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1930/2007"
+                   type="inclusive">1930-2007</unitdate>
+         <abstract id="aspace_da8791a229c8df0e0d35877c4b94d9d8">The Sigma Xi, the Scientific Research Society, Smith College Chapter records contain correspondence, minutes, programs, and committee records.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter was granted its
-            charter on December 28, 1934, the first charter ever granted to a women's institution.
-            Throughout its history the chapter has undertaken many programs designed to encourage
-            and support scientific research at Smith, both amongst its undergraduate students and
-            its faculty. These programs include: a house academic competition, lecture series,
-            participation in national meetings, and research and conference support. The chapter
-            also nominates and elects new members each spring.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter was granted its charter on December 28, 1934, the first charter ever granted to a women's institution. Throughout its history the chapter has undertaken many programs designed to encourage and support scientific research at Smith, both amongst its undergraduate students and its faculty. These programs include: a house academic competition, lecture series, participation in national meetings, and research and conference support. The chapter also nominates and elects new members each spring.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter records are very
-            thorough, encompassing correspondence dating from 1931 to present, minutes and records
-            from 1934 to present, membership lists from 1931 to present, and initiation programs
-            from 1938 to present. The correspondence is mostly concerned with lectures, membership,
-            and national Sigma Xi topics such as grant allocation.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter records are very thorough, encompassing correspondence dating from 1931 to present, minutes and records from 1934 to present, membership lists from 1931 to present, and initiation programs from 1938 to present. The correspondence is mostly concerned with lectures, membership, and national Sigma Xi topics such as grant allocation.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Sigma Xi, the Scientific Research Society, Smith College Chapter Records, Box #, Smith
-            College Archives.</p>
+         <p>Sigma Xi, the Scientific Research Society, Smith College Chapter Records, Smith College Archives, CA-MS-00315, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter records were
-            donated over a period of time to the Smith College Archives from a variety of
-            sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Sigma Xi, the Scientific Research Society, Smith College Chapter records were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. MINUTES AND OFFICIAL RECORDS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_9dc863cc07a6e71da4f10dda43477919" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>History of the Smith College Chapter <unitdate>1936</unitdate>
-                  </unittitle>
+                  <unittitle>History of the Smith College Chapter</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e225ce0a4542c0a19c2582a3fb8b63b0"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc17ddac3c1480925702f1e6bcb9ef71" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>By-Laws of the Smith College Chapter <unitdate>1937-90</unitdate>
-                  </unittitle>
+                  <unittitle>By-Laws of the Smith College Chapter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1990"
+                            type="inclusive">1937-90</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dae424e10e5a05bc8b810f762441a59f"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_11319a62605f172f67ed96cf1001ea28" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Petition for Charter - Faculty Publications
-                        <unitdate>1930-34</unitdate>
-                  </unittitle>
+                  <unittitle>Petition for Charter - Faculty Publications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1934"
+                            type="inclusive">1930-34</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_36479ec7729ea54d7e0b65f9995baf8b"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_931f05887a2f59013f2672bdc82be2f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Petition for Establishment of Smith Chapter
-                        <unitdate>1931-35</unitdate>
-                  </unittitle>
+                  <unittitle>Petition for Establishment of Smith Chapter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1931/1935"
+                            type="inclusive">1931-35</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_108512d303dee4e74b466fe8575393dd"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_31fce24d5a7a01e30bbbe49b3a453445" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Installation of the Chapter <unitdate>1935</unitdate>
-                  </unittitle>
+                  <unittitle>Installation of the Chapter</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dba9a69a4d7811c611d6a4c7700a5767"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4aa50919f167c18b33f0ef02c28506f6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Minutes and Records <unitdate>1934-53</unitdate>
-                  </unittitle>
+                  <unittitle>Minutes and Records</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1934/1953"
+                            type="inclusive">1934-53</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1ef8b5f8ba379b3f543ed3b4fbbbb61d"
+                             label="Mixed Materials [310183630250768]"
+                             type="box">1122</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a115cdf49755882d15afda4680e05998" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Minutes and Records <unitdate>1953-85</unitdate>
-                  </unittitle>
+                  <unittitle>Minutes and Records</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1985"
+                            type="inclusive">1953-85</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_188b7c8fed6f42e9382c504c58835cbc"
+                             label="Mixed Materials [310183630250776]"
+                             type="box">1123</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5e33aa8567a94710213d47cd3835a521" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Minutes and Records <unitdate>1985-ongoing</unitdate>
-                  </unittitle>
+                  <unittitle>Minutes and Records</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1985-ongoing</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_112f03805351675caa30694f8b2df1ec"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_19b29889fe04301e9665867bbc356ff9" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Elected Officers <unitdate>1966-2006</unitdate>
-                  </unittitle>
+                  <unittitle>Elected Officers</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1966/2006"
+                            type="inclusive">1966-2006</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1a5c11980a2fb4b720451a321b09994"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_88aa0c5c48000ef339f3d5bb661ab40e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>President's Reports <unitdate>1935, 1940</unitdate>
-                  </unittitle>
+                  <unittitle>President's Reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <unitdate normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b93c807bc7b850f8e0d26e2463cdbc57"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3f70019ddaf01bcb04f40b6d708ae5e5" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Secretary's Notebooks and Reports <unitdate>1935-77</unitdate>
-                  </unittitle>
+                  <unittitle>Secretary's Notebooks and Reports</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1977"
+                            type="inclusive">1935-77</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4bbcffdd53b13fda9d5f3137569350e2"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_10a63501e177010bdfd8f7064aa2fcc0" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Treasurer's Reports <unitdate>1953-84</unitdate>
-                  </unittitle>
+                  <unittitle>Treasurer's Reports</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1984"
+                            type="inclusive">1953-84</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5ed14f0a2e7c7f805b42260bd6c84e2e"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cb86837865a3713c912c5574c4a581cf" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Admissions Committee <unitdate>1938-60</unitdate>
-                  </unittitle>
+                  <unittitle>Admissions Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1960"
+                            type="inclusive">1938-60</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bce71ea6b7ae2cb805f725d6b9dce73d"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c1197cda1f382a81ed07050e834dfa3c" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Executive Committee <unitdate>1935-52</unitdate>
-                  </unittitle>
+                  <unittitle>Executive Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1952"
+                            type="inclusive">1935-52</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d21424f13b7727730c5846df7e398520"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc87fa49b8f11b5c3771b7c981a23a07" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Membership Committee <unitdate>1940-62</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1940/1962"
+                            type="inclusive">1940-62</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_aab2abce64428f068d3147a41d00a703"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_da5ed9e7f06cb534242c21c284f53bf4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Membership Committee: Certificates <unitdate>1953-82</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Committee: Certificates</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1982"
+                            type="inclusive">1953-82</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_569a3b528e450970e663f97689ab3f6a"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1c33ef429965cb858bd4b94ce499ad35" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Membership Committee: Membership Lists
-                        <unitdate>1931-ongoing</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Committee: Membership Lists</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1931-ongoing</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_03cea1de3b1fbf2a361020e554d5c570"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a29ce2d83e9c4fdf3adc14630c77ae7f" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Membership Committee: Roll of Members <unitdate>1935-80</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Committee: Roll of Members</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1980"
+                            type="inclusive">1935-80</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_70239cb44e1f77323b2e19e26636df93"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_90055043ddc84949a1feb35df25e71c5" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Membership Certificate Order Forms <unitdate>1964-78</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Certificate Order Forms</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1964/1978"
+                            type="inclusive">1964-78</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_be7fa40a91d86a6e0b275bf646a78fb9"
+                             label="Mixed Materials [310183630250784]"
+                             type="box">1124</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_936085ce9b4c876be79badeaa1f94ccc" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Membership Data Cards <unitdate>1935-68</unitdate>
-                  </unittitle>
+                  <unittitle>Membership Data Cards</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1968"
+                            type="inclusive">1935-68</unitdate>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_d4d93c4aa369d17630d7ad6965bcb255"
+                             label="Mixed Materials [310183630250792]"
+                             type="box">1125</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_058436c7f843a87c743334f793f3d57e" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Nominating Committee <unitdate>1936-84</unitdate>
-                  </unittitle>
+                  <unittitle>Nominating Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1936/1984"
+                            type="inclusive">1936-84</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9b7eab1a75c71dc373c0feebbeb4e643"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2920866abfba5f52e5e3114c729be2ca" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Nominating Committee: Nomination Forms <unitdate>1970-71</unitdate>
-                  </unittitle>
+                  <unittitle>Nominating Committee: Nomination Forms</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1971"
+                            type="inclusive">1970-71</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_01257c8f89c4bdbae98eb527ebca9cb4"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b9b362a6c6a1ecffb7f88e2f8e94eba0" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Nominating Committee: Nomination Forms <unitdate>1972-91</unitdate>
-                  </unittitle>
+                  <unittitle>Nominating Committee: Nomination Forms</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1972/1991"
+                            type="inclusive">1972-91</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_90da9e67b3dd8256b81afc8e610dd633"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ed7bf00596cc144f6b59848eb2f5895c" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Initiation Information <unitdate>1970, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Initiation Information</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_59a3acea154fd63026d317da24cd89b7"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ad2f8f41eee6003bba1b9622bbd0df73" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Initiation Ceremony <unitdate>1958-85</unitdate>
-                  </unittitle>
+                  <unittitle>Initiation Ceremony</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1985"
+                            type="inclusive">1958-85</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4cf4d957906bcf794502af174c843170"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_70d0316571b64f4e39ee1ea0e05171e0" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Initiation Correspondence <unitdate>1944-78</unitdate>
-                  </unittitle>
+                  <unittitle>Initiation Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1978"
+                            type="inclusive">1944-78</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f6d1787de97f56cd569f6a4516e4ac98"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7d216f2e662055c5ef2380541231136c" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Initiation Procedures <unitdate>1945-63</unitdate>
-                  </unittitle>
+                  <unittitle>Initiation Procedures</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1963"
+                            type="inclusive">1945-63</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b6f678884c3eb4d99b81a8f605bb3921"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_770cc115435e8e6650a31d478a9b8ac7" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Initiation Programs <unitdate>1938-92</unitdate>
-                  </unittitle>
+                  <unittitle>Initiation Programs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1938/1992"
+                            type="inclusive">1938-92</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5122c6099945dc7c2a6bd39a22728a1e"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_332b26f5953deb28fac8ee5696157e2b" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Insignia <unitdate>1963</unitdate>
-                  </unittitle>
+                  <unittitle>Insignia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e3bce950cd1ce68d1217bac9b79414a2"
+                             label="Mixed Materials [310183630250800]"
+                             type="box">1126</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. CORRESPONDENCE</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_7187948f9c5f137b8f8e3d309f0ebf4e" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Correspondence <unitdate>1930-ongoing</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1930-ongoing</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_86b1e1ba517fb1d6ebb29a8f30d4df82"
+                             label="Mixed Materials [310183630250818]"
+                             type="box">1127</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. ACTIVITIES</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_bac70ffcd9bd2113ff2b55be23e001c3" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Anniversary (semi-centennial celebration) <unitdate>1936</unitdate>
-                  </unittitle>
+                  <unittitle>Anniversary (semi-centennial celebration)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6050fbea412eafd64e7a3012ffc51c75"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7349fd88b5f96ced876e4cfe65b9dc72" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Annual Meeting (National) ( 3 folders) <unitdate>1984-88</unitdate>
-                  </unittitle>
+                  <unittitle>Annual Meeting (National) ( 3 folders)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1984/1988"
+                            type="inclusive">1984-88</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_113b472bb0e1fb4e9e6e305ac645fbcd"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_358d71d4159b63821a8d708007cd2113" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Awards - House Award Certificate <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Awards - House Award Certificate</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e664296e96bbbdfbcbe6cd6faa8e2a54"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_69c9a458623f43150e17f501ac289af1" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Awards - Special Research Awards <unitdate>1932-34</unitdate>
-                  </unittitle>
+                  <unittitle>Awards - Special Research Awards</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1934"
+                            type="inclusive">1932-34</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6e399910041036e6bd6de1e578b9bf95"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dc837a8b2a6779f0f2579ff60023b8b0" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Awards - House Plaque <unitdate>1939-63</unitdate>
-                  </unittitle>
+                  <unittitle>Awards - House Plaque</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1963"
+                            type="inclusive">1939-63</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_72db5e9bcfe9585732ac68bde311e3c1"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_108b5679d0d5b2bb2d87798574e941e6" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Caen University Letter of Appreciation for Gift
-                        <unitdate>1946</unitdate>
-                  </unittitle>
+                  <unittitle>Caen University Letter of Appreciation for Gift</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3161bb7cd3dd77f921fd76f4443fdaab"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_444a678d782ccaa28ab1337cc2671346" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Certificates of Recognition from National Committee on Qualifications
-                     and Membership <unitdate>1997-2007</unitdate>
-                  </unittitle>
+                  <unittitle>Certificates of Recognition from National Committee on Qualifications and Membership</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/2007"
+                            type="inclusive">1997-2007</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4aeb1ea8816ff3213f9c38a4bd380d85"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dab53a9aedb872ebe50d6c755291c883" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Committee on Long Range Planning National Committee Meeting at Smith
-                     College <unitdate>1985</unitdate>
-                  </unittitle>
+                  <unittitle>Committee on Long Range Planning National Committee Meeting at Smith College</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1985/1985">1985</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3591114e4fa1f740bc1f01a456240c67"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ebdafd7de8525a0d5468e90a81188138" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Connecticut Valley Student Scientific Conference
-                        <unitdate>1953-56</unitdate>
-                  </unittitle>
+                  <unittitle>Connecticut Valley Student Scientific Conference</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1956"
+                            type="inclusive">1953-56</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_01600254c3c5be05e51998c7bf04630d"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8e3050d1441f1f1faf1a59151982ff79" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Forum on Global Change and Our Common Future <unitdate>1989</unitdate>
-                  </unittitle>
+                  <unittitle>Forum on Global Change and Our Common Future</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1989/1989">1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6bb9db996f9b9a312898846dc7a04010"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1573b15933eeacab848520d36fda90ff" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Lectures (3 folders) <unitdate>1935-96</unitdate>
-                  </unittitle>
+                  <unittitle>Lectures (3 folders)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1996"
+                            type="inclusive">1935-96</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8efe2c290d782f288dba2605af7ae3b1"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_48edf2869a63f0dc261a894608724deb" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Luncheon Lectures <unitdate>1940, 1977-85</unitdate>
-                  </unittitle>
+                  <unittitle>Luncheon Lectures</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <unitdate normal="1977/1985" type="inclusive">1977-85</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2324f73aad1503b2a8463bb4c1efe12c"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4c5e688cea473e8e77a73bf72d113c57" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Miscellaneous <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c9df8c6a0e7bfa37b322035073627b60"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d39b9d46e142d88badffc9e08b191021" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>National Lectures <unitdate>1986-90</unitdate>
-                  </unittitle>
+                  <unittitle>National Lectures</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1986/1990"
+                            type="inclusive">1986-90</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dc34265a00ac4b25f5b86dc603c9dfca"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9cf1af0b3b4ad8ef0c19367d14eb426f" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>National Sigma Xi Information <unitdate>1944, 1970</unitdate>
-                  </unittitle>
+                  <unittitle>National Sigma Xi Information</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <unitdate normal="1970/1970">1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bda8df363df32ee365d0d3c7d6ba9be1"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_77235ecc6f506b7108371f6924db14d9" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Newspaper Articles <unitdate>1935-95</unitdate>
-                  </unittitle>
+                  <unittitle>Newspaper Articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1995"
+                            type="inclusive">1935-95</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_73487595e3eb7562bd8253e84f775949"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bbcbf1c4ce38938d42c8b7b942286372" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Photographs <unitdate>1935-48</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1948"
+                            type="inclusive">1935-48</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7602bd0dc696d46383756e0e5f60f926"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5f8c1bdcf84730941d677cd2a0ff2362" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Princeton Study <unitdate>1948-49</unitdate>
-                  </unittitle>
+                  <unittitle>Princeton Study</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1948/1949"
+                            type="inclusive">1948-49</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_806a2ff4ba0b6b99be874e8d36ca1093"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0d4c9abf57c41f5126ebaa11e0f75541" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Proposed Merger of Sigma Xi and RESA <unitdate>1949-53</unitdate>
-                  </unittitle>
+                  <unittitle>Proposed Merger of Sigma Xi and RESA</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949-53</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7649f71f1de4d0edcb6497513f7e1523"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b405ac2d1a858b90cbc17007fc0b3007" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Publications - General <unitdate>1936-95</unitdate>
-                  </unittitle>
+                  <unittitle>Publications - General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1936/1995"
+                            type="inclusive">1936-95</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_df12444041aa364614568e99d221d00c"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7c30b12c2d6dff290f318de87e536054" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Publications - Smith <unitdate>1937-49</unitdate>
-                  </unittitle>
+                  <unittitle>Publications - Smith</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1949"
+                            type="inclusive">1937-49</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5674e9c1e2aa5b36bc477db08e9530d1"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f0e4c2df6f7001967a3dd703764c5cae" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Science Legislation <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Science Legislation</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3a495f1ef885134ce39d94c9b056e8fd"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_715ef385e49a71fc105262fe1836ace3" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Student Subsidies for Conference Travel <unitdate>1989</unitdate>
-                  </unittitle>
+                  <unittitle>Student Subsidies for Conference Travel</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1989/1989">1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a99d22994af430803789d6ea552a7bf6"
+                             label="Mixed Materials [310183630250826]"
+                             type="box">1128</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>SERIES IV. ARTIFACTS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_72e53908bf5d13d8549446640c9d10b3" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle><title render="italic">Robert's Rules of Order</title>, revised
-                        <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>
+                     <title render="italic">Robert's Rules of Order</title>, revised</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Flat box (12.5d x 3h x 9.25w)"
+                             id="aspace_347e8afa5f7283f3f091e489f4627f7c"
+                             label="Mixed Materials [310183630250834]"
+                             type="box">1129</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a9ddee82f299729a41555ddd119e8f76" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>2 die cut logos <unitdate>1959, undated</unitdate>
-                  </unittitle>
+                  <unittitle>2 die cut logos</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Flat box (12.5d x 3h x 9.25w)"
+                             id="aspace_e355fcf749088599ed1345d34f751110"
+                             label="Mixed Materials [310183630250834]"
+                             type="box">1129</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e326c71764286496eae6942a8112c712" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>Award plaque, oversized <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Award plaque, oversized</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Flat box (12.5d x 3h x 9.25w)"
+                             id="aspace_ec885558df9c1e2a9f05caf74fbbb051"
+                             label="Mixed Materials [310183630250834]"
+                             type="box">1129</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

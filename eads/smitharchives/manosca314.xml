@@ -1,425 +1,668 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca314.xml//EN">manosca314</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca314</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Out But Not Down Club Records,
-               1952-1998</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Karen Eberhardt, Sarah
-               Lindblom.</author>
-
+            <titleproper>Finding aid to Out But Not Down Club Records <num>CA.MS.00314</num>
+            </titleproper>
+            <author>Finding aid prepared by Karen Eberhardt, Sarah Lindblom.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2010</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2010">2010</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah
-            Richards. <date normal="2010-03-26">2010-03-26</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-20 14:23:40 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-19</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Out But Not Down Club</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Out But Not Down Club Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1952-1998</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 40 UUID:5a7af4ea-117b-45f7-b11c-f5b5ee850ae9</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The records contain minutes,
-            photographs, newspaper clippings, meeting minutes, membership directories, and reunion
-            materials documenting the Out But Not Down Club's activities. </abstract>
+         <unittitle>Out But Not Down Club Records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Out But Not Down Club</corpname>
+         </origination>
+         <unitid>CA.MS.00314</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1952/1998"
+                   type="inclusive">1952-1998</unitdate>
+         <abstract id="aspace_d2807338d040f6cfacb9379275bb7d59">The records contain minutes, photographs, newspaper clippings, meeting minutes, membership directories, and reunion materials documenting the Out But Not Down Club's activities.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Out But Not Down Club (OBND) was the generous innovation created by <extref
-               href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca39_main.html"
-               >Albert Blakeslee</extref>, Professor of Botany and Director of the Smith College
-            Genetics Experiment Station, 1942-1954. When his wife Margaret Blakeslee died in 1947 he
-            donated money to the college to create a memorial fund in her honor called "An
-            Investment in Friendship." The memorial fund supports the activities of the OBND Club
-            which primarily consist of several dinners each year featuring speakers on a wide
-            variety of topics. Members of the Smith College faculty and administration who plan to
-            continue living in the Northampton area are eligible for membership when they
-            retire.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Out But Not Down Club (OBND) was the generous innovation created by <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca39_main.html">Albert Blakeslee</extref>, Professor of Botany and Director of the Smith College Genetics Experiment Station, 1942-1954. When his wife Margaret Blakeslee died in 1947 he donated money to the college to create a memorial fund in her honor called "An Investment in Friendship." The memorial fund supports the activities of the OBND Club which primarily consist of several dinners each year featuring speakers on a wide variety of topics. Members of the Smith College faculty and administration who plan to continue living in the Northampton area are eligible for membership when they retire.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The records of the club consist of memos, correspondence, photographs, treasurer's
-            reports, meeting minutes, invitations, financial records, newsletters, officers lists,
-            CVs of members, mailing lists, speeches, and information about the various speakers over
-            the years.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The records of the club consist of memos, correspondence, photographs, treasurer's reports, meeting minutes, invitations, financial records, newsletters, officers lists, CVs of members, mailing lists, speeches, and information about the various speakers over the years.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the papers must be requested from the College Archives. The Archives has no
-            information on the status of literary rights in the collection and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Out But Not Down Club Records, Box #, Smith College Archives.</p>
+         <p>Out But Not Down Club Records, Smith College Archives, CA-MS-00314, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The records of the Out But Not Down Club have been donated over the years by the
-            secretary of the club at the time.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the Out But Not Down Club have been donated over the years by the secretary of the club at the time.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_9bf3adda8dfa643c23a993aaf07cb393" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Records <unitdate>1952-53</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1953"
+                         type="inclusive">1952-53</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_acc0c9d16317a50b5e6dc876d6f45452"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_9d476be5ba92ca684e721cf14d791d6d"
+                          parent="aspace_acc0c9d16317a50b5e6dc876d6f45452"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bbab652d6d7550c8201f357abfc04f24" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Records <unitdate>1953-54</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1953/1954"
+                         type="inclusive">1953-54</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7d9ff3940677306de48c6f97caae35b8"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_0a8792ed28c87f93e1e74bee9cff1141"
+                          parent="aspace_7d9ff3940677306de48c6f97caae35b8"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1b1a548042365db93a92c155f5444d3a" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Records <unitdate>1954-55</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1954/1955"
+                         type="inclusive">1954-55</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_61e9819f5996c17683ef2bc84f93f9ec"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_5aab0d05fa73cf79f2faf3f3ca9cea57"
+                          parent="aspace_61e9819f5996c17683ef2bc84f93f9ec"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6577fd4bc3e0847cdc14ce29935780ca" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Records <unitdate>1955-56</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1956"
+                         type="inclusive">1955-56</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fde6c55fc2b8e449b9d78c73f333955a"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_686f5af9c0780808671e45540163c85a"
+                          parent="aspace_fde6c55fc2b8e449b9d78c73f333955a"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_046d390856f051b589f916f7070d737c" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Records <unitdate>1956-57</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1957"
+                         type="inclusive">1956-57</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4a8826c329e5b64fd54595f4d165ab5a"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_23b48a84fd8e1099059c99d216fcbb95"
+                          parent="aspace_4a8826c329e5b64fd54595f4d165ab5a"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_aeca732c31a39c56fceca858823b5a04" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Records <unitdate>1957-58</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1958"
+                         type="inclusive">1957-58</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a0859f33f2fca6994f1aa5b5f62da0f3"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_9ceaa0a4650b48e9589017cffb5e9b8a"
+                          parent="aspace_a0859f33f2fca6994f1aa5b5f62da0f3"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0ec2ddfc6411b8cdba2f124d134c84b2" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Records <unitdate>1958-59</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1959"
+                         type="inclusive">1958-59</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6d3dc69e946a443e064397ead1515b4a"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_d44cbfa16006eae8f1c22d8164aed58e"
+                          parent="aspace_6d3dc69e946a443e064397ead1515b4a"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2de51ee4be30bd7651571b1520bfeca1" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Records <unitdate>1959-60</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1960"
+                         type="inclusive">1959-60</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_422613b49530a5e52147230355f68dc5"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_33784c3fd6db93d52f0575e79961921a"
+                          parent="aspace_422613b49530a5e52147230355f68dc5"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_40bfdfac5e5fa050594aa53d8c7b4faf" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Records <unitdate>1960-61</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1961"
+                         type="inclusive">1960-61</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_27be4c507550e607b096b399cf439a94"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_a94c263ed33dde937136fe91cb83da10"
+                          parent="aspace_27be4c507550e607b096b399cf439a94"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_23aa74cccc6887169c48802e001d6274" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Records <unitdate>1961-62</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1962"
+                         type="inclusive">1961-62</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0ff481e742da51fccee85163b4c8cd44"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_9cb969e21b7b320af95a741f9f7d6599"
+                          parent="aspace_0ff481e742da51fccee85163b4c8cd44"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a583d8f86c641d3b3b31c351b368eaf2" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Records <unitdate>1962-63</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1962/1963"
+                         type="inclusive">1962-63</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_52bb424b9d3541eef4a7707029be8fed"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_3f2d3cbbc5ace481b1c9ac080947cbd0"
+                          parent="aspace_52bb424b9d3541eef4a7707029be8fed"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_98b5cdfcadde5111d1df9dd5908c4414" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Records <unitdate>1963-64</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1963/1964"
+                         type="inclusive">1963-64</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8f4e5ce421bc89bad2efdbdc63a93933"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_0f8d40e7d15b5452040418463bc49a32"
+                          parent="aspace_8f4e5ce421bc89bad2efdbdc63a93933"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_00e17a97208a2431cc973da21ce14fef" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Records <unitdate>1964-65</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1964/1965"
+                         type="inclusive">1964-65</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3d7272a51442b48bb89cc6a6a2849cc5"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_346f130618ab69dcb1eee1329f4aa12f"
+                          parent="aspace_3d7272a51442b48bb89cc6a6a2849cc5"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_21690fd173e7c0f63d90299704e0fbfc" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Records <unitdate>1965-67</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1967"
+                         type="inclusive">1965-67</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c14aabe2fdec433f8776713d6dc300b7"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_697fb82413e4fb79c037f8ecddc1f8e3"
+                          parent="aspace_c14aabe2fdec433f8776713d6dc300b7"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1ef92dcff78a606d4b321d00b087eb4d" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Records <unitdate>1967-69</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1969"
+                         type="inclusive">1967-69</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_70863c41aea0d68412df643865344dcd"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_8e9e47365f3d9c61c7977734c684d608"
+                          parent="aspace_70863c41aea0d68412df643865344dcd"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0b94d2c1558f5f3a40e08f6786762e14" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Records <unitdate>1969-73</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1973"
+                         type="inclusive">1969-73</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_64e77c1109926795597b2c0b8451a307"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_c0423a35b61505779791c357f98a37db"
+                          parent="aspace_64e77c1109926795597b2c0b8451a307"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8cf3d99c8cb339898dfe43837d8d7975" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Records <unitdate>1973-75</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1973/1975"
+                         type="inclusive">1973-75</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a8dc4ca9d612812ce5f967d3b815892a"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_b32b8f440e920641b391faa452f8c0bf"
+                          parent="aspace_a8dc4ca9d612812ce5f967d3b815892a"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2ee275df44d846ae2660962a33847d6b" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Records <unitdate>1975-78</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1978"
+                         type="inclusive">1975-78</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4561dba2b6c6aeb9a462855fec1d8786"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_41b517910178cb971a80fddde909872b"
+                          parent="aspace_4561dba2b6c6aeb9a462855fec1d8786"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c3bacfa903c23705b6e08b3369527666" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Photographs <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_63674341109f80d5037f4d4fc6bcb9ee"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_e1e1defb82eb4fa467b91b6f2dd49854"
+                          parent="aspace_63674341109f80d5037f4d4fc6bcb9ee"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cad0987ff1e0c01e20e6c5e49d705703" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Newspaper clippings <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Newspaper clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ca18f357ddd0f0b5469c38384eecf675"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_1eec74590535b456b24cf6f1880f05ae"
+                          parent="aspace_ca18f357ddd0f0b5469c38384eecf675"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1a173ed15fb04a3a446d2b3455b115cd" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Treasurer's Reports <unitdate>1967-70</unitdate>
-               </unittitle>
+               <unittitle>Treasurer's Reports</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1970"
+                         type="inclusive">1967-70</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3c58d04e6b4b670d7fe4a41f1cc7b121"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_24552cbec9e2106adfcf2cbab6aa6c8e"
+                          parent="aspace_3c58d04e6b4b670d7fe4a41f1cc7b121"
+                          type="folder">21</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b4d6d51a72cf6521f52da128931e1293" level="file">
             <did>
-               <container type="box" label="mixed materials">646</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>25th Anniversary records <unitdate>1977</unitdate>
-               </unittitle>
+               <unittitle>25th Anniversary records</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_69903b5b3dc9e82a25048b51a1ff8a51"
+                          label="Mixed Materials [310183630243342]"
+                          type="box">646</container>
+               <container id="aspace_8b4cf06daad03e9bea345f17391dd956"
+                          parent="aspace_69903b5b3dc9e82a25048b51a1ff8a51"
+                          type="folder">22</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5fff4673f53c615ccae5e12e93e4c967" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Records <unitdate>1975-84</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1984"
+                         type="inclusive">1975-84</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cb414fa6fd399affb488a6fb6af74e5a"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_1c2f3730527ae8cd95da69da5ce35ef8"
+                          parent="aspace_cb414fa6fd399affb488a6fb6af74e5a"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5149074542ec0ce962f58e4e51674d28" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Records <unitdate>1984-87</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1984/1987"
+                         type="inclusive">1984-87</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7cf6099fda4557b67898e17233696251"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_3b6165e33fc50df92238591a59fbc096"
+                          parent="aspace_7cf6099fda4557b67898e17233696251"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2cc726304cc932998d5be1d6c03242dc" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Records <unitdate>1987-88</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1987/1988"
+                         type="inclusive">1987-88</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1eda93b746fba9aeafa8e7ff63222939"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_2aa7fd2f12b40e9bee634aec699d113d"
+                          parent="aspace_1eda93b746fba9aeafa8e7ff63222939"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e9865e12864271e651bb2908a1bbd480" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Records <unitdate>1988-89</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1988/1989"
+                         type="inclusive">1988-89</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_722c4cd961e399e4d4331a8125892b99"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_108e1370b7079208c92b27efcc1edda9"
+                          parent="aspace_722c4cd961e399e4d4331a8125892b99"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ade7dad9683bf068d3bcd3d4781e7d60" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Records <unitdate>1989-90</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1989/1990"
+                         type="inclusive">1989-90</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_890afad1c74cecd8b263fcb8f42849a0"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_2927c3c4dd6601fcd9beb2b8229a43b0"
+                          parent="aspace_890afad1c74cecd8b263fcb8f42849a0"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_342cb795f7e72babdc3ca8f297eb202d" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Records <unitdate>1990-91</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1990/1991"
+                         type="inclusive">1990-91</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ebea22b3c2f575747d0be96e67a2d0cc"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_9dcf2efd8dd7368053dde200e70548ad"
+                          parent="aspace_ebea22b3c2f575747d0be96e67a2d0cc"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ad859e40f81546e0f65aab142a666ce6" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Records <unitdate>1991-92</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1992"
+                         type="inclusive">1991-92</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f6915fbe821235f97538a772acb37064"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_b9755a995292a0de5f8fd67739ba7371"
+                          parent="aspace_f6915fbe821235f97538a772acb37064"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c8c193f19b33fb0b4ad52d20453367c4" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Records <unitdate>1991-92</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1992"
+                         type="inclusive">1991-92</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7e4871be14f32d126285c9881ab62d2a"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_8c2d05fea433f310d4d8b3f610cee3ba"
+                          parent="aspace_7e4871be14f32d126285c9881ab62d2a"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d35fe446a928c64d39834393754d1b4f" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Records <unitdate>1992-93</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1993"
+                         type="inclusive">1992-93</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8976ec4a3394fe134f4109b5539807e2"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_d26d2a7be4f86a458da0009055b395bc"
+                          parent="aspace_8976ec4a3394fe134f4109b5539807e2"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8f4532ec286e1c7bb71f7d67eec90b64" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Records <unitdate>1992-94</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/1994"
+                         type="inclusive">1992-94</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9a282d92335efd7d9033cc6aad722188"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_e1f8ab3931cca9df45acb7276790598d"
+                          parent="aspace_9a282d92335efd7d9033cc6aad722188"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_36eed022002f13fa35e30b567e2090eb" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Records <unitdate>1994-95</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-95</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_367e0133ef9d6490e1336ea668c1926d"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_e31794a3f68e3e293de7206cbf3715cb"
+                          parent="aspace_367e0133ef9d6490e1336ea668c1926d"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a3df0828e98128c7bc46779037b5a54a" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Records <unitdate>1995-96</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/1996"
+                         type="inclusive">1995-96</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0fce2cc71516773967da55973da246fe"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_5580ce991c31cc9180787f5bd4a4edd8"
+                          parent="aspace_0fce2cc71516773967da55973da246fe"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2f9378427d8563ae0e02e03d34edf6c4" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Records <unitdate>1996-97</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1996/1997"
+                         type="inclusive">1996-97</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3950eb4d85d5d97b577d711aa90a30d8"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_d9c9d92972b256a4fbf40fd1cbdb5c32"
+                          parent="aspace_3950eb4d85d5d97b577d711aa90a30d8"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4fc6f8b3d78f8ed9b349472c4ee870f3" level="file">
             <did>
-               <container type="box" label="mixed materials">646.1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Records <unitdate>1997-98</unitdate>
-               </unittitle>
+               <unittitle>Records</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1997/1998"
+                         type="inclusive">1997-98</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_227a40326991a39907c5be429a6b2fdf"
+                          label="Mixed Materials [310183630243292]"
+                          type="box">646.1</container>
+               <container id="aspace_b46590c14e8f001d84ef5745f75125bc"
+                          parent="aspace_227a40326991a39907c5be429a6b2fdf"
+                          type="folder">14</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
