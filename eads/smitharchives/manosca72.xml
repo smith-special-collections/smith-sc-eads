@@ -1,1012 +1,1626 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca72.xml//EN">manosca72</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Department of Astronomy Records, 1887-[ongoing] </titleproper>
-                <author>Finding aid prepared by Gayla Spaulding.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Laura Cutter. <date>2003-06-04</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca72 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives </publisher>
-            <titleproper>Department of Astronomy Records, 1887-[ongoing] </titleproper>
-            <num>RG 52 </num>
-            <author>Gayla Spaulding </author>
-            <date>Revised 2002 </date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="110" source="lcnaf">Smith College. Dept. of Astronomy.
-                </corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Department of Astronomy
-                records</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1885-[ongoing]</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 52 UUID:cb29e6a0-377e-4526-9f4b-9c57829a6172</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">15 boxes</extent>
-                <extent encodinganalog="300$a">(7.5 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Records include a history of the
-                department, booklets, course and faculty information, diagrams, account books,
-                notebooks and photographs of astronomical observations, information on observatory
-                instruments, correspondence, and notes and photographs of astronomical societies.
-                Student work is also included, as well as information on the Five College Program. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <scopecontent id="scope">
-
-            <p> SERIES I. OFFICE FILES consists of background information on the program of studies,
-                account books, correspondence and course information. SERIES II. STUDENT WORK
-                consists of rules, models and diagrams of observations, photographs and charts of
-                eclipses and student notebooks. SERIES III. FIVE COLLEGE PROGRAM consists of faculty
-                lists, Four-College Astronomy Department information, information on laboratory
-                work, examinations, observatory visitor books, photographs and course notebooks.
-                SERIES IV. OBSERVATORY RECORDS consists mostly of notebooks on charts and plates,
-                mean and apparent star places, radial velocity, variable stars, the Meridian Circle,
-                sunspots and transit instrument observations, but also contains correspondence and
-                information on observatory instruments. SERIES V. SOCIETIES consists of information
-                , photographs, records, notes and predictions of the American Association of
-                Variable Star Observers (AAVSO), the Astronomy Club, Smith College Astronomical
-                Society, Students for the Exploration and Development of Space and Telescopium. </p>
-        </scopecontent>
-        <arrangement encodinganalog="351$a" id="scope-org">
-
-            <p>This collection is organized into five series:</p>
-            <list>
-                <item> I. Office Files </item>
-                <item> II. Student Work </item>
-                <item> III. Five College Program </item>
-                <item> IV. Observatory Records </item>
-                <item> V. Societies </item>
-            </list>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>Records are open to research according to the regulations of the Smith
-                        College Archives.</p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>The Archives has no information on the status of literary rights in the
-                        collection and researchers are responsible for determining any question of
-                        copyright. Permission to cite the papers for publication of quotations
-                        beyond "fair use" must be obtained from the Smith College Archives. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Smith College Dept. of Astronomy Records, Box #, Smith College Archives.</p>
-            </prefercite>
-            <accruals encodinganalog="584" id="admin-accruals">
-                <head>Additions to the Collection</head>
-                <p>Additions to the records are expected. </p>
-            </accruals>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <processinfo id="admin-process">
-                    <p>Processed by Gayla Spaulding</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <corpname encodinganalog="610" source="lcsh">Smith College. Dept. of
-                Astronomy.</corpname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
-            <subject encodinganalog="650" source="lcsh">Astronomy--Study and teaching
-                (Higher)--Massachusetts</subject>
-            <corpname encodinganalog="710" source="lcnaf">Smith College. Astronomy Club.</corpname>
-            <corpname encodinganalog="710" source="lcnaf">Smith College Astronomical
-                Society.</corpname>
-            <subject encodinganalog="650" source="lcsh">Astronomy--Study and teaching
-                (Higher)--Massachusetts--Northampton.</subject>
-        </controlaccess>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 id="list-ser1" level="series">
-                <did>
-                    <unittitle>SERIES I. OFFICE FILES</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Sciences: General <unitdate>1951-1996, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>History of Science Studies Program of Studies
-                                <unitdate>1983-84</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Astronomy</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">3</container>
-                            <unittitle>General <unitdate>1939-1993, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">4</container>
-                            <unittitle>Account book <unitdate>1898-1934</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">5</container>
-                            <unittitle>Budget sheets <unitdate>1911-1933</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>Code <unitdate>1939, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>Conferences <unitdate>1929-1938</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">1</container>
-                            <container type="folder" label="mixed materials">8-9</container>
-                            <unittitle>Correspondence <unitdate>1885-1947, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Courses <unitdate>1934-1986</unitdate>
-                            </unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">1</container>
-                                <container type="folder" label="mixed materials">10</container>
-                                <unittitle>11-37b</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">1</container>
-                                <container type="folder" label="mixed materials">11</container>
-                                <unittitle>101-237</unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">1</container>
-                                <container type="folder" label="mixed materials">12</container>
-                                <unittitle>100-110</unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Astronomy Department</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">2</container>
-                                <container type="folder" label="mixed materials">1</container>
-                                <unittitle>Reports <unitdate>1888-1904</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">2</container>
-                                <container type="folder" label="mixed materials">2</container>
-                                <unittitle>Annual Reports <unitdate>1906-09</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">2</container>
-                                <container type="folder" label="mixed materials">3</container>
-                                <unittitle>Reports and minutes <unitdate>1919-1920</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">2</container>
-                                <container type="folder" label="mixed materials">4</container>
-                                <unittitle>Secretary's book <unitdate>1919-1920</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-                <did>
-                    <unittitle>SERIES II. STUDENT WORK</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Rules, models and diagrams <unitdate>1902-05</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Comets: Telegrams re: observations <unitdate>1939-1954</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Eclipses: Photographs and charts <unitdate>6/13/17, 5/14/38,
-                                11/7/38</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <unittitle>Five observation notebooks <unitdate>1905-1915</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Eleven comet observation computer books
-                                <unitdate>1902-1930</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-                <did>
-                    <unittitle>SERIES III. FIVE COLLEGE PROGRAM</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Course notebooks</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy 11 <unitdate>1930</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy 10b (teaching course) <unitdate>circa
-                                    1913</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy 22 <unitdate>1924-25</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy 8a <unitdate>1906-08</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy (general) <unitdate>1915</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">5</container>
-                            <unittitle>Astronomy, Special Honors <unitdate>1928-1930</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Smith College Observatory Notices <unitdate>1955, 1973</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Five-college observatory radio telescope
-                                <unitdate>1976</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Faculty list <unitdate>undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Four-College</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">4-5</container>
-                            <unittitle>Astronomy Department <unitdate>1953-1965</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>Graduate program <unitdate>1962-64</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>Faculty <unitdate>1959</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">8</container>
-                            <unittitle>Observatory in Whately <unitdate>1962-1974</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">9</container>
-                            <unittitle>General <unitdate>1935-1966</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">10</container>
-                            <unittitle>Gifts and grants <unitdate>1958</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">11</container>
-                            <unittitle>Laboratory work <unitdate>undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">12</container>
-                            <unittitle>Library <unitdate>1931-1948, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">13</container>
-                            <unittitle>Examinations <unitdate>1912-1939</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">6</container>
-                            <container type="folder" label="mixed materials">14</container>
-                            <unittitle>National Science Foundation <unitdate>1961-67</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-            </c01>
-            <c01 id="list-ser4" level="series">
-                <did>
-                    <unittitle>SERIES IV. OBSERVATORY RECORDS</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <unittitle>Observatory visitor book <unitdate>1955-58</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Open house <unitdate>1933-1956</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Order book <unitdate>1896-1933</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Smith College Observatory Notices <unitdate>1977-1981</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Parties <unitdate>1977</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca72</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the Department of Astronomy Records <num>CA.MS.00072</num>
+            </titleproper>
+            <author>Gayla Spaulding</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-20 13:10:30 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca72 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-1120</date>
+            <item>Containers added and finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Department of Astronomy records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College. Dept. of Astronomy.</corpname>
+         </origination>
+         <unitid>CA.MS.00072</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">6.458 linear feet</extent>
+            <extent altrender="carrier">(16 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1847/1996"
+                   type="inclusive">1847-1996</unitdate>
+         <abstract id="aspace_fbb25261f6280e358c6f012a74b7ba9e">Records include a history of the department, booklets, course and faculty information, diagrams, account books, notebooks and photographs of astronomical observations, information on observatory instruments, correspondence, and notes and photographs of astronomical societies. Student work is also included, as well as information on the Five College Program.</abstract>
+      </did>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Records include a history of the department, booklets, course and faculty information, diagrams, account books, notebooks and photographs of astronomical observations, information on observatory instruments, correspondence, and notes and photographs of astronomical societies. Student work is also included, as well as information on the Five College Program.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>I. Office Files</item>
+            <item>II. Student Work</item>
+            <item>III. Five College Program</item>
+            <item>IV. Observatory Records</item>
+            <item>V. Societies</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Department of Astronomy Records, Smith College Archives, CA-MS-00072, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Gayla Spaulding</p>  
+      </processinfo>
+      <acqinfo id="aspace_0cb6d5a5ee62340ee8cbf68226742303">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Astronomy--Study and teaching (Higher)--Massachusetts</subject>
+         <subject encodinganalog="650" source="lcsh">Astronomy--Study and teaching (Higher)--Massachusetts--Northampton.</subject>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Dept. of Astronomy.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College. Astronomy Club</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College Astronomical Society.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>SERIES I. OFFICE FILES</unittitle>
+            </did>
+            <scopecontent id="aspace_9dba3fe4b6546e93904b4ac4b8a1dbde">
+               <head>Scope and Contents</head>
+               <p>SERIES I. OFFICE FILES consists of background information on the program of studies, account books, correspondence and course information.</p>
+            </scopecontent>
+            <c02 id="aspace_66a52913dcd53365d1b1511a61087cbc" level="file">
+               <did>
+                  <unittitle>Sciences: General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1951/1996"
+                            type="inclusive">1951-1996</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_45a76e45f65f2a59901aba0bc88982a3"
+                             label="Mixed Materials [310183630227022]"
+                             type="box">1223</container>
+                  <container id="aspace_b51bd7c9546a4b86222e36ed789fbffe"
+                             parent="aspace_45a76e45f65f2a59901aba0bc88982a3"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_060065e64089a89ac6a5fa677fa4d582" level="file">
+               <did>
+                  <unittitle>History of Science Studies Program of Studies</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1983/1984"
+                            type="inclusive">1983-84</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a7d0ae2359056243bb80cb6c68a72364"
+                             label="Mixed Materials [310183630227022]"
+                             type="box">1223</container>
+                  <container id="aspace_d865f69d09019aa036a69b77f522deaa"
+                             parent="aspace_a7d0ae2359056243bb80cb6c68a72364"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_080c7806a4c4af77e2539d3a8c41bb15" level="file">
+               <did>
+                  <unittitle>Astronomy</unittitle>
+               </did>
+               <c03 id="aspace_c80c32a1306fd84c8bb4b3f054968e08" level="file">
+                  <did>
+                     <unittitle>General</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1939/1993"
+                               type="inclusive">1939-1993</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_8a2ee16034bb6853f11a346ea280582d"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_bc9736de961f806243a03bb8c5dfb7ed"
+                                parent="aspace_8a2ee16034bb6853f11a346ea280582d"
+                                type="folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_1f2fad8e9de667f8085ed01add8ff870" level="file">
+                  <did>
+                     <unittitle>Account book</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1898/1934"
+                               type="inclusive">1898-1934</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_f457ce74c5e02826312b4c81fc7621a8"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_4a81283f65ccc9dc687bc1889ba92c40"
+                                parent="aspace_f457ce74c5e02826312b4c81fc7621a8"
+                                type="folder">4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_8fad6fc336a713eeacfbea8409d10bcb" level="file">
+                  <did>
+                     <unittitle>Budget sheets</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1911/1933"
+                               type="inclusive">1911-1933</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_f5d68e88b66279d9921214ada272f5f6"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_38999fec89ea2aff18de64e2bc6451c6"
+                                parent="aspace_f5d68e88b66279d9921214ada272f5f6"
+                                type="folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_06b95ad1f88c6db58aac3d1737819b6d" level="file">
+                  <did>
+                     <unittitle>Code</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_dd191e5fc8b68a0b1227131e5a25fd38"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_3a1fbe6f312f24db126be377737f51e8"
+                                parent="aspace_dd191e5fc8b68a0b1227131e5a25fd38"
+                                type="folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_a6f94d867e04339fc72c0f7a262b38a1" level="file">
+                  <did>
+                     <unittitle>Conferences</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1929/1938"
+                               type="inclusive">1929-1938</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_05327bb9bf40edf38e346fd65671ebc1"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_794188fb8ed6e417acf058cc7a1471eb"
+                                parent="aspace_05327bb9bf40edf38e346fd65671ebc1"
+                                type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_30ad86c1eb0524e31f25ba8fa813343a" level="file">
+                  <did>
+                     <unittitle>Correspondence</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1885/1947"
+                               type="inclusive">1885-1947</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_838cd8a548bf8507870dee112104fe46"
+                                label="Mixed Materials [310183630227022]"
+                                type="box">1223</container>
+                     <container id="aspace_6d8fcb4313ddb940b6971dfec4d4952e"
+                                parent="aspace_838cd8a548bf8507870dee112104fe46"
+                                type="folder">8-9</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_7765600f7fa9ce1b90511981d94ba822" level="file">
+                  <did>
+                     <unittitle>Courses</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1934/1986"
+                               type="inclusive">1934-1986</unitdate>
+                  </did>
+                  <c04 id="aspace_0dad88c56f6dbfcd96cd020923a3b408" level="file">
+                     <did>
+                        <unittitle>11-37b</unittitle>
+                        <container altrender="Letter document box"
+                                   id="aspace_d13961d486bc1e58c41db8d5409799f7"
+                                   label="Mixed Materials [310183630227022]"
+                                   type="box">1223</container>
+                        <container id="aspace_7fe0a256c818e3041189d4d4ce802701"
+                                   parent="aspace_d13961d486bc1e58c41db8d5409799f7"
+                                   type="folder">10</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_45dd6d71d9241223d308d308850330b7" level="file">
+                     <did>
+                        <unittitle>101-237</unittitle>
+                        <container altrender="Letter document box"
+                                   id="aspace_5c8c4337ff774271fa712d4019d63622"
+                                   label="Mixed Materials [310183630227022]"
+                                   type="box">1223</container>
+                        <container id="aspace_84b583cbb9542a17da237540958fcd53"
+                                   parent="aspace_5c8c4337ff774271fa712d4019d63622"
+                                   type="folder">11</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_48405359d44f8d3c14a9c8b7e61abfdb" level="file">
+                     <did>
+                        <unittitle>100-110</unittitle>
+                        <container altrender="Letter document box"
+                                   id="aspace_7bd565271f2b0db0549616fdad9c4f0b"
+                                   label="Mixed Materials [310183630227022]"
+                                   type="box">1223</container>
+                        <container id="aspace_c056e56ce7bd500dbcce36710e945170"
+                                   parent="aspace_7bd565271f2b0db0549616fdad9c4f0b"
+                                   type="folder">12</container>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 id="aspace_143ee5ce39d7054ad85478dca1cae1a9" level="file">
+                  <did>
+                     <unittitle>Astronomy Department</unittitle>
+                  </did>
+                  <c04 id="aspace_566c9f1f0101ef24d103412bb7a612d4" level="file">
+                     <did>
+                        <unittitle>Reports</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1888/1904"
+                                  type="inclusive">1888-1904</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_94a603283638aa48727cb251d786b57a"
+                                   label="Mixed Materials [310183630226966]"
+                                   type="box">1224</container>
+                        <container id="aspace_d847b7fad9dc415e3ba45ca6243baaff"
+                                   parent="aspace_94a603283638aa48727cb251d786b57a"
+                                   type="folder">1</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_217f575ac2fa9531ff632ae07376d282" level="file">
+                     <did>
+                        <unittitle>Annual Reports</unittitle>
+                        <unitdate calendar="gregorian" era="ce">1906-09</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_bb3db10a2c781cd7d21ff33b2674d4da"
+                                   label="Mixed Materials [310183630226966]"
+                                   type="box">1224</container>
+                        <container id="aspace_f783ac0768c453170a2d953baaad33f3"
+                                   parent="aspace_bb3db10a2c781cd7d21ff33b2674d4da"
+                                   type="folder">2</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_62139da71e26771c2d541412cb9b864f" level="file">
+                     <did>
+                        <unittitle>Reports and minutes</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1919/1920"
+                                  type="inclusive">1919-1920</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_e666905ffec59432eb037c14b41d5b05"
+                                   label="Mixed Materials [310183630226966]"
+                                   type="box">1224</container>
+                        <container id="aspace_0d0993dfa5af8b890cf3b20a7dfaf530"
+                                   parent="aspace_e666905ffec59432eb037c14b41d5b05"
+                                   type="folder">3</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_afd6d3b8e82e3f0f5d7ed9d2987a9f64" level="file">
+                     <did>
+                        <unittitle>Secretary's book</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1919/1920"
+                                  type="inclusive">1919-1920</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_e32b1d68b07072f85c0cfbd9ddfd0e96"
+                                   label="Mixed Materials [310183630226966]"
+                                   type="box">1224</container>
+                        <container id="aspace_ff80990084fd20f023c5d1a211e45f75"
+                                   parent="aspace_e32b1d68b07072f85c0cfbd9ddfd0e96"
+                                   type="folder">4</container>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>SERIES II. STUDENT WORK</unittitle>
+            </did>
+            <scopecontent id="aspace_ac1701d8fa36b96faaa0bf7325aee5d5">
+               <head>Scope and Contents</head>
+               <p>SERIES II. STUDENT WORK consists of rules, models and diagrams of observations, photographs and charts of eclipses and student notebooks.</p>
+            </scopecontent>
+            <c02 id="aspace_32ed8baf4d524d40a7c03290c8ad5571" level="file">
+               <did>
+                  <unittitle>Rules, models and diagrams</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1902-05</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_19898517fa0d26b0068b706f5079834f"
+                             label="Mixed Materials [310183630226909]"
+                             type="box">1225</container>
+                  <container id="aspace_d003102bcc08e4a79bacfd22f3acefd7"
+                             parent="aspace_19898517fa0d26b0068b706f5079834f"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_16ba835552b21e09f1f07bda9fa1d65e" level="file">
+               <did>
+                  <unittitle>Comets: Telegrams re: observations</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1954"
+                            type="inclusive">1939-1954</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_146b7d70893ae1de6a9a26a0741f332d"
+                             label="Mixed Materials [310183630226909]"
+                             type="box">1225</container>
+                  <container id="aspace_16e08607c9e0e3391cc58dcb02134e5a"
+                             parent="aspace_146b7d70893ae1de6a9a26a0741f332d"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4b60a5279c311c883f7d9c2570788cb8" level="file">
+               <did>
+                  <unittitle>Eclipses: Photographs and charts</unittitle>
+                  <unitdate calendar="gregorian" era="ce">6/13/17</unitdate>
+                  <unitdate calendar="gregorian" era="ce">5/14/38</unitdate>
+                  <unitdate calendar="gregorian" era="ce">11/7/38</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dd4f0405647396ad1a43bd6326260df6"
+                             label="Mixed Materials [310183630226909]"
+                             type="box">1225</container>
+                  <container id="aspace_6a340b3532646855c35ab78adbdd755a"
+                             parent="aspace_dd4f0405647396ad1a43bd6326260df6"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d5de633848c5992f35f1539aada1c621" level="file">
+               <did>
+                  <unittitle>Five observation notebooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1905/1915"
+                            type="inclusive">1905-1915</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_719cbd3fb672b7b51695a5527612d140"
+                             label="Mixed Materials [310183630226909]"
+                             type="box">1225</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3ac76dc4b3aca857eb6b32cce92500f2" level="file">
+               <did>
+                  <unittitle>Eleven comet observation computer books</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1902/1930"
+                            type="inclusive">1902-1930</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_bc9c755d6a428f1e5f34dd475c57eb5e"
+                             label="Mixed Materials [310183630227485]"
+                             type="box">1226</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>SERIES III. FIVE COLLEGE PROGRAM</unittitle>
+            </did>
+            <scopecontent id="aspace_bb5935bfe1b2d8aac86ead4b6b29f076">
+               <head>Scope and Contents</head>
+               <p>SERIES III. FIVE COLLEGE PROGRAM consists of faculty lists, Four-College Astronomy Department information, information on laboratory work, examinations, observatory visitor books, photographs and course notebooks.</p>
+            </scopecontent>
+            <c02 id="aspace_83919ae8fa164b7d770a4505a39e7eea" level="file">
+               <did>
+                  <unittitle>Course notebooks</unittitle>
+               </did>
+               <c03 id="aspace_9cf8f2006202f7d969a844f8097ad86e" level="file">
+                  <did>
+                     <unittitle>Astronomy 11</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_10119a084a1956707c6684e2a9f9214c"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_dd538f3a54bb8258c228a2524d6772be" level="file">
+                  <did>
+                     <unittitle>Astronomy 10b (teaching course)</unittitle>
+                     <unitdate calendar="gregorian"
+                               certainty="approximate"
+                               era="ce"
+                               normal="1913/1913">1913</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_73c1effedcea2cce93c96a6587370915"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_86e448477675f2a2d789e4c978164c39" level="file">
+                  <did>
+                     <unittitle>Astronomy 22</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1924/1925"
+                               type="inclusive">1924-25</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_fe16a7f36a839a6a64bde80e0a9dd75e"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_e498203718ec9ec9729c568b426cf9d7" level="file">
+                  <did>
+                     <unittitle>Astronomy 8a</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1906-08</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_bd698290a37a63286c2868f316e5d07c"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_242baf8c9c3e1c93a5c65465b6a35a69" level="file">
+                  <did>
+                     <unittitle>Astronomy (general)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_1fbae7b6561fc31678b0549758f575cc"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_546c0ef79d850c12fa4754f216a6f89f" level="file">
+                  <did>
+                     <unittitle>Astronomy, Special Honors</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1928/1930"
+                               type="inclusive">1928-1930</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_a9d31d918f91e64cf2009e132644137a"
+                                label="Mixed Materials [310183630226842]"
+                                type="box">1227</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_9b8255a5a3b2f07e2d13c9686d099ba8" level="file">
+               <did>
+                  <unittitle>Smith College Observatory Notices</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <unitdate normal="1973/1973">1973</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f5936d5725e40e26ae0c83cd680eb42e"
+                             label="Mixed Materials [310183630227493]"
+                             type="box">1228</container>
+                  <container id="aspace_1181d0ff37cbe25f03c95f86c088171b"
+                             parent="aspace_f5936d5725e40e26ae0c83cd680eb42e"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bd231765c0dc8e673fe63a8800b0207e" level="file">
+               <did>
+                  <unittitle>Five-college observatory radio telescope</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9235d30dccabcea5f4b808db08b03052"
+                             label="Mixed Materials [310183630227493]"
+                             type="box">1228</container>
+                  <container id="aspace_f6ce83ce0fa972cf0cacc4fd4ec87fb1"
+                             parent="aspace_9235d30dccabcea5f4b808db08b03052"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_84aa9e5518677ee087c105069cff482d" level="file">
+               <did>
+                  <unittitle>Faculty list</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_86cd7b695a352becda85e9e18c6a7908"
+                             label="Mixed Materials [310183630227493]"
+                             type="box">1228</container>
+                  <container id="aspace_8d517f1a7c6bfc8cf66400e04da49e3e"
+                             parent="aspace_86cd7b695a352becda85e9e18c6a7908"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6d18f33827c0168be76eb40e4c285623" level="file">
+               <did>
+                  <unittitle>Four-College</unittitle>
+               </did>
+               <c03 id="aspace_e02dbc6ae8ea4dea6fb842c0b1151a87" level="file">
+                  <did>
+                     <unittitle>Astronomy Department</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1953/1965"
+                               type="inclusive">1953-1965</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_6b11db866734a37943ffe1e3d3daa5fd"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_cdaedb793073e7741e4567683a246387"
+                                parent="aspace_6b11db866734a37943ffe1e3d3daa5fd"
+                                type="folder">4-5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_3dfc90f079897f0672d4b9120e8bd45a" level="file">
+                  <did>
+                     <unittitle>Graduate program</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1962/1964"
+                               type="inclusive">1962-64</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_4c3626ffd2b2fe857cd221155fd0765c"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_8d7ecab6edf76dbe53972e4b7ef8bac8"
+                                parent="aspace_4c3626ffd2b2fe857cd221155fd0765c"
+                                type="folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_eceb65cfd522176a4ac8e910beb81066" level="file">
+                  <did>
+                     <unittitle>Faculty</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_857c5b3c87dd5db3a3e832aad2d38abc"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_c76ea2ef8a9b3fd4eaef45bb98a17ce1"
+                                parent="aspace_857c5b3c87dd5db3a3e832aad2d38abc"
+                                type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_ea6dce3e9fd97c03ada602971302174f" level="file">
+                  <did>
+                     <unittitle>Observatory in Whately</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1962/1974"
+                               type="inclusive">1962-1974</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_1a73f4663ef062751d7985fc9487bef2"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_d80d86e8c639c267cd82bd25431883d5"
+                                parent="aspace_1a73f4663ef062751d7985fc9487bef2"
+                                type="folder">8</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_4cb45dac872dd6ad3591e7267423846d" level="file">
+                  <did>
+                     <unittitle>General</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1935/1966"
+                               type="inclusive">1935-1966</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_36372490cd5f070c384d45d0806353e8"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_c8bcf4dfb88bc319854bce3b5b66c4e4"
+                                parent="aspace_36372490cd5f070c384d45d0806353e8"
+                                type="folder">9</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_1d05bb2f5cf111ae484352faa11cdf55" level="file">
+                  <did>
+                     <unittitle>Gifts and grants</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_226b4616b951745e84ed73b69441a595"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_b895a02df7d9b5c722ce94ab748c143c"
+                                parent="aspace_226b4616b951745e84ed73b69441a595"
+                                type="folder">10</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_da88031af2493328eae0f3bf581ebfc3" level="file">
+                  <did>
+                     <unittitle>Laboratory work</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_b6684963857aca8078ea18961d394da2"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_3f7994aad6857582b2c424df0d420b79"
+                                parent="aspace_b6684963857aca8078ea18961d394da2"
+                                type="folder">11</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_d50080045716d4b42d5a979824a11fe9" level="file">
+                  <did>
+                     <unittitle>Library</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1931/1948"
+                               type="inclusive">1931-1948</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_4362ebb21a9b9a46b48a16f921ba8d1e"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_1aab2596109df61ebfd36e0d163ab1be"
+                                parent="aspace_4362ebb21a9b9a46b48a16f921ba8d1e"
+                                type="folder">12</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_c6bb2208c26726fad6df7d7803e32563" level="file">
+                  <did>
+                     <unittitle>Examinations</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1912/1939"
+                               type="inclusive">1912-1939</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_0694ba76da445a2287a87666a6986b81"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_00cb070c3be477dff4602f375f5ab7da"
+                                parent="aspace_0694ba76da445a2287a87666a6986b81"
+                                type="folder">13</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_d07ef69c6f6d6011c9d26ea344c1adb7" level="file">
+                  <did>
+                     <unittitle>National Science Foundation</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1961/1967"
+                               type="inclusive">1961-67</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_e5ebf405d32953e36d8fe690ba594ed6"
+                                label="Mixed Materials [310183630227493]"
+                                type="box">1228</container>
+                     <container id="aspace_1bed683b29633cbc5a55e130097a3c9b"
+                                parent="aspace_e5ebf405d32953e36d8fe690ba594ed6"
+                                type="folder">14</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>SERIES IV. OBSERVATORY RECORDS</unittitle>
+            </did>
+            <scopecontent id="aspace_78d13ac70176223914a8e3cce10e98f0">
+               <head>Scope and Contents</head>
+               <p>SERIES IV. OBSERVATORY RECORDS consists mostly of notebooks on charts and plates, mean and apparent star places, radial velocity, variable stars, the Meridian Circle, sunspots and transit instrument observations, but also contains correspondence and information on observatory instruments.</p>
+            </scopecontent>
+            <c02 id="aspace_2e519c5c866e63604c6243a37d51e6be" level="file">
+               <did>
+                  <unittitle>Observatory visitor book</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1958"
+                            type="inclusive">1955-58</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c00650b56e1922228b4b0f56e0ab71df"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4cd49b7b761b8b39e74ef36708cfb976" level="file">
+               <did>
+                  <unittitle>Open house</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1956"
+                            type="inclusive">1933-1956</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2a26d4c3ff597e5aaa487e8a46f832c7"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+                  <container id="aspace_598130057c8a6f9f5e961601869a7280"
+                             parent="aspace_2a26d4c3ff597e5aaa487e8a46f832c7"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0804546bbb9c4b210baa8be04997d676" level="file">
+               <did>
+                  <unittitle>Order book</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1896/1933"
+                            type="inclusive">1896-1933</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_882cf9fa460f8b7bd59c8ba9f316427a"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+                  <container id="aspace_d584344402489d987b8733a785a28cb3"
+                             parent="aspace_882cf9fa460f8b7bd59c8ba9f316427a"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d243b1139c923df10644e685f8fa034b" level="file">
+               <did>
+                  <unittitle>Smith College Observatory Notices</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1977/1981"
+                            type="inclusive">1977-1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_45f2df9ceaeeb629e8bf83bc5d8e7a38"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+                  <container id="aspace_d96ae13d3eb91a75e6da30bc7cd847d0"
+                             parent="aspace_45f2df9ceaeeb629e8bf83bc5d8e7a38"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7a6b001cc62223e6e321818a70078ea7" level="file">
+               <did>
+                  <unittitle>Parties</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_124109807edb09b82405e23bef7d20b9"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+                  <container id="aspace_b4a8e4af5e68d07f83270063768e3fed"
+                             parent="aspace_124109807edb09b82405e23bef7d20b9"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ac6b9c946b70889c2a8a66564c675c06" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+               </did>
+               <c03 id="aspace_1a788d09722031b330bee80d4ccc7a6c" level="file">
+                  <did>
+                     <unittitle>Classes</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1890/1909"
+                               type="inclusive">1890s-1900s</unitdate>
+                     <unitdate normal="1930/1939" type="inclusive">1930s</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_624e67aa12d56c51896f997ada550734"
+                                label="Mixed Materials [310183630227436]"
+                                type="box">1229</container>
+                     <container id="aspace_626e42a228a4250c7ac99965854cb6d3"
+                                parent="aspace_624e67aa12d56c51896f997ada550734"
+                                type="folder">5-6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_18a7e25b9c07cf8047521506fc058254" level="file">
+                  <did>
+                     <unittitle>Solar eclipse</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1940-04-07/1940-04-07">April 7, 1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_77d4ecc3bb2d42aedf854098d2d2da05"
+                                label="Mixed Materials [310183630227436]"
+                                type="box">1229</container>
+                     <container id="aspace_07d8254dcb39ff62e8fd67e52cddffa6"
+                                parent="aspace_77d4ecc3bb2d42aedf854098d2d2da05"
+                                type="folder">7</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_e88b96e82cfecb61cc3d0d80993adbce" level="file">
+               <did>
+                  <unittitle>Telescopes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/1992"
+                            type="inclusive">1990-92</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_03acb5692281f9529ed3d752feacff6b"
+                             label="Mixed Materials [310183630227436]"
+                             type="box">1229</container>
+                  <container id="aspace_86fa5e2567e0ef07383f4acbc7f75db2"
+                             parent="aspace_03acb5692281f9529ed3d752feacff6b"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d6df5a11a1f1c8dc5238cbad59861c1c" level="file">
+               <did>
+                  <unittitle>Meridian Circle observations, seven notebooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1894/1904"
+                            type="inclusive">1894-1904</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_61b8b16d9ddc3a6cc79b994e5e3f3150"
+                             label="Mixed Materials [310183630227428]"
+                             type="box">1230</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dc09b3ffea088a2ffd50ecfec979a2ed" level="file">
+               <did>
+                  <unittitle>Meridian Circle reductions, four notebooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1888/1957"
+                            type="inclusive">1888-1957</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d818f61274cc28ae222ddea532975ac9"
+                             label="Mixed Materials [310183630227428]"
+                             type="box">1230</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bc2c4df5550b171248bc179f3603c599" level="file">
+               <did>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1885/1886"
+                            type="inclusive">1885-86</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f05ac6c80787ccca6e90f077482ea327"
+                             label="Mixed Materials [310183630227378]"
+                             type="box">1231</container>
+                  <container id="aspace_63237d2a966bd65cf04cd12f9b168c7b"
+                             parent="aspace_f05ac6c80787ccca6e90f077482ea327"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2acdade743b2f13708a210c74d8f9bb3" level="file">
+               <did>
+                  <unittitle>Equipment</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1888/1957"
+                            type="inclusive">1888-1957</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_00551cc79eee0ad9598cdcdd2169c49d"
+                             label="Mixed Materials [310183630227378]"
+                             type="box">1231</container>
+                  <container id="aspace_ff5044c3dcc2d05c47ced66367f3600f"
+                             parent="aspace_00551cc79eee0ad9598cdcdd2169c49d"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6510fc9b36c2769d60cc549ac33d39b1" level="file">
+               <did>
+                  <unittitle>Instruments</unittitle>
+               </did>
+               <c03 id="aspace_5f6c1b1545884a367c9507eb407cc5e0" level="file">
+                  <did>
+                     <unittitle>Camera</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_28f14decb29c0f6c610696f260772695"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_8b1a08181d2131bee809c4f2a5181664"
+                                parent="aspace_28f14decb29c0f6c610696f260772695"
+                                type="folder">3</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_12b56aab6a6fa2da7302d9e52e9acf4f" level="file">
+                  <did>
+                     <unittitle>Chronograph</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1887/1904"
+                               type="inclusive">1887-1904</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_b784c49e35b9009b3e532e2dc6155c2b"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_ef972dce1790c9a5064cc9b0b4d14feb"
+                                parent="aspace_b784c49e35b9009b3e532e2dc6155c2b"
+                                type="folder">4</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_1f4534f0c89789c3c73ce58d12041021" level="file">
+                  <did>
+                     <unittitle>Chronometer</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1934/1947"
+                               type="inclusive">1934-1947</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_bc4ab809ccc3c6388e70af2a4bfeb4a5"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_8dbb1e69cbd2ae062cac5a52deec9b56"
+                                parent="aspace_bc4ab809ccc3c6388e70af2a4bfeb4a5"
+                                type="folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_0d1f1e406e28015f4000ef10d2153b20" level="file">
+                  <did>
+                     <unittitle>Clock</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1887/1889"
+                               type="inclusive">1887-89</unitdate>
+                     <unitdate normal="1960/1960">1960</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_3323b1018a5c43a2110baef022d8d091"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_f810d744d1445c5efd59dbac878fdb7f"
+                                parent="aspace_3323b1018a5c43a2110baef022d8d091"
+                                type="folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_b0137b291aa6eb2562ff68f2814efc69" level="file">
+                  <did>
+                     <unittitle>Field glasses</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1893/1908"
+                               type="inclusive">1893-1908</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_54f47729ff47dba8d7f4656bdfd0aba3"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_8fab6c9f2053268f3fb67918f5b014b5"
+                                parent="aspace_54f47729ff47dba8d7f4656bdfd0aba3"
+                                type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_bdf2ca4bcc6e6349218def985f5c00eb" level="file">
+                  <did>
+                     <unittitle>Gaertner measuring machine</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_3ed985a0e6ffcf03971750c5a7e87470"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_5fb256055614875c28ee20e8df49983d"
+                                parent="aspace_3ed985a0e6ffcf03971750c5a7e87470"
+                                type="folder">8</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_cd110e8d8bdb580ff55b5a92414a16fc" level="file">
+                  <did>
+                     <unittitle>Levels</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1888/1903"
+                               type="inclusive">1888-1903</unitdate>
+                     <unitdate normal="1945/1945">1945</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_1a7fe6078b88c3e7dd2a32288187e7ea"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_ec44b29d5d6d58b4064c9516da28956d"
+                                parent="aspace_1a7fe6078b88c3e7dd2a32288187e7ea"
+                                type="folder">9</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_7f80b67d6370289304de34dfe3db77c7" level="file">
+                  <did>
+                     <unittitle>Micrometer</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1888/1907"
+                               type="inclusive">1888-1907</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_22e5cbf495a9e4546032b3daf25b1023"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_5b330349a621a1d5259e47de441f09f7"
+                                parent="aspace_22e5cbf495a9e4546032b3daf25b1023"
+                                type="folder">10</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_85737e82c32e9ced3bb0e511d8d8c2cd" level="file">
+                  <did>
+                     <unittitle>Photographic reflectors</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1847/1847">1847</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_39cad39cd21f6bd690e8e13f4766a307"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_915cc3b1cef437a2185c4cc127160f73"
+                                parent="aspace_39cad39cd21f6bd690e8e13f4766a307"
+                                type="folder">11</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_341a1e5ecf5e498260558826d3da4f48" level="file">
+                  <did>
+                     <unittitle>Telescopes</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1885/1920"
+                               type="inclusive">1885-1920</unitdate>
+                     <unitdate normal="1957/1959" type="inclusive">1957-59</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_8519d5e9622f1365dabf618595e9d06e"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_095025455ece8ef2b58c38ad78e2b45a"
+                                parent="aspace_8519d5e9622f1365dabf618595e9d06e"
+                                type="folder">12</container>
+                  </did>
+                  <c04 id="aspace_b140d7ad1872fad41359155410bb6e1e" level="file">
+                     <did>
+                        <unittitle>Gaertner, 6"</unittitle>
+                        <unitdate calendar="gregorian" era="ce">1910-11</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_7977f2ad0d178a043e6c32b2a912edec"
+                                   label="Mixed Materials [310183630227378]"
+                                   type="box">1231</container>
+                        <container id="aspace_391799e2432d09c3bf6d153162b388a1"
+                                   parent="aspace_7977f2ad0d178a043e6c32b2a912edec"
+                                   type="folder">13</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_51ce94aff36c03afaba32a09af58c31a" level="file">
+                     <did>
+                        <unittitle>Portable</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1890/1909"
+                                  type="inclusive">1890-1909</unitdate>
+                        <unitdate normal="1937/1937">1937</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_1ee5a2af0c1a33411f31213230bc43e1"
+                                   label="Mixed Materials [310183630227378]"
+                                   type="box">1231</container>
+                        <container id="aspace_0289b15edb595c5baa4a9c36c6213f37"
+                                   parent="aspace_1ee5a2af0c1a33411f31213230bc43e1"
+                                   type="folder">14</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_b21ceb67726230d95b4befeb41b5c135" level="file">
+                     <did>
+                        <unittitle>Information</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1885/1885">1885</unitdate>
+                        <unitdate normal="1979/1979">1979</unitdate>
+                        <container altrender="Letter document box"
+                                   id="aspace_018afb6c2abc793b2f288d57bace3b5c"
+                                   label="Mixed Materials [310183630227378]"
+                                   type="box">1231</container>
+                        <container id="aspace_2485a70c39fa9ef1d6dd94662cacd45d"
+                                   parent="aspace_018afb6c2abc793b2f288d57bace3b5c"
+                                   type="folder">15</container>
+                     </did>
+                  </c04>
+               </c03>
+               <c03 id="aspace_3e53d4354bbdfba6eafe9bc124923c00" level="file">
+                  <did>
+                     <unittitle>Observatory, position</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1900/1914"
+                               type="inclusive">1900-1914</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_b32147284105c9f8fb3fa4878db6ab3b"
+                                label="Mixed Materials [310183630227378]"
+                                type="box">1231</container>
+                     <container id="aspace_659653ac1bb98fe74f82f4238740f4fc"
+                                parent="aspace_b32147284105c9f8fb3fa4878db6ab3b"
+                                type="folder">16</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_54e417810df638f83212eb3da1b330a1" level="file">
+               <did>
+                  <unittitle>Schedule book</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <unitdate calendar="gregorian" era="ce">1906-07</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_205fd96d05c2fe68873ae37d730d1469"
+                             label="Mixed Materials [310183630227360]"
+                             type="box">1232</container>
+                  <container id="aspace_3b8213255aa789294b4abac961596844"
+                             parent="aspace_205fd96d05c2fe68873ae37d730d1469"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1773b4c394eac499bbd9d3c6ff976149" level="file">
+               <did>
+                  <unittitle>Science building</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_01500d32b14b888b02904526c11d60bc"
+                             label="Mixed Materials [310183630227360]"
+                             type="box">1232</container>
+                  <container id="aspace_139e69cbd52be5c743888992d294f974"
+                             parent="aspace_01500d32b14b888b02904526c11d60bc"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_eafa74b707f598422e7fe13ca9f5ee13" level="file">
+               <did>
+                  <unittitle>Notebooks: star observations</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1893/1906"
+                            type="inclusive">1893-1906</unitdate>
+                  <unitdate normal="1911/1911">1911</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_6f7e44531e4b4b5263c11027103696a7"
+                             label="Mixed Materials [310183630227360]"
+                             type="box">1232</container>
+                  <container id="aspace_50032e364660c261ca2a68238da67878"
+                             parent="aspace_6f7e44531e4b4b5263c11027103696a7"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9da5946d70f300c89a2eaa531337cb14" level="file">
+               <did>
+                  <unittitle>Notebooks</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_e983f3ecf019d4f695d6f1cdfad0b4e9"
+                             label="Mixed Materials [310183630227360]"
+                             type="box">1232</container>
+                  <container id="aspace_dba4c9f8274ca6b2ee4590de99f36fe8"
+                             parent="aspace_e983f3ecf019d4f695d6f1cdfad0b4e9"
+                             type="folder">4</container>
+               </did>
+               <c03 id="aspace_28cf372345c7a2d8f589135f03f5619a" level="file">
+                  <did>
+                     <unittitle>charts and plates</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1918/1918">1918</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_3f6319b9061bebd279b360a2ff7ddc4e"
+                                label="Mixed Materials [310183630227360]"
+                                type="box">1232</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_a0700325bac52a7086691e989caf7d1d" level="file">
+                  <did>
+                     <unittitle>mean and Apparent star places</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1905/1916"
+                               type="inclusive">1905-1916</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_b54ed11604934c08520948dedbceefab"
+                                label="Mixed Materials [310183630227360]"
+                                type="box">1232</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_7b952248693312bfdd99be1083be1a24" level="file">
+               <did>
+                  <unittitle>Marjorie Williams</unittitle>
+               </did>
+               <c03 id="aspace_4729fd3727cd192b95d24db41fbd0f94" level="file">
+                  <did>
+                     <unittitle>Radial velocities</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929</unitdate>
+                     <unitdate normal="1936/1939" type="inclusive">1936-39</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_64508bd5e0adf23671aa0b523f5873a9"
+                                label="Mixed Materials [310183630227360]"
+                                type="box">1232</container>
+                     <container id="aspace_e254a4d0d4a1aac01c140b38ad47416e"
+                                parent="aspace_64508bd5e0adf23671aa0b523f5873a9"
+                                type="folder">5</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_af7ece87132de8e30186914ce386b71f" level="file">
+                  <did>
+                     <unittitle>Variable stars</unittitle>
+                  </did>
+                  <c04 id="aspace_44fb078173f9133132a339847bca1d30" level="file">
+                     <did>
+                        <unittitle>Correspondence</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1934/1946"
+                                  type="inclusive">1934-1946</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_b2e2d3d75a263d8436834cb0195f5e6a"
+                                   label="Mixed Materials [310183630227360]"
+                                   type="box">1232</container>
+                        <container id="aspace_52075903b489302d36b7b7769ea985ed"
+                                   parent="aspace_b2e2d3d75a263d8436834cb0195f5e6a"
+                                   type="folder">6</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_6e764fc2e8d5d92d13f880621412dd5d" level="file">
+                     <did>
                         <unittitle>Photographs</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">7</container>
-                            <container type="folder" label="mixed materials">5-6</container>
-                            <unittitle>Classes <unitdate>1890s-1900s, 1930s</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">7</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>Solar eclipse <unitdate>April 7, 1940</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Telescopes <unitdate>1990-92</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>Meridian Circle observations, seven notebooks
-                                <unitdate>1894-1904</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>Meridian Circle reductions, four notebooks
-                                <unitdate>1888-1957</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Correspondence <unitdate>1885-86</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Equipment <unitdate>1888-1957</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Instruments</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">3</container>
-                            <unittitle>Camera <unitdate>1936</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">4</container>
-                            <unittitle>Chronograph <unitdate>1887-1904</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">5</container>
-                            <unittitle>Chronometer <unitdate>1934-1947</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>Clock <unitdate>1887-89, 1960</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>Field glasses <unitdate>1893-1908</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">8</container>
-                            <unittitle>Gaertner measuring machine <unitdate>1943</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">9</container>
-                            <unittitle>Levels <unitdate>1888-1903, 1945</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">10</container>
-                            <unittitle>Micrometer <unitdate>1888-1907</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">11</container>
-                            <unittitle>Photographic reflectors <unitdate>1847</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">12</container>
-                            <unittitle>Telescopes <unitdate>1885-1920, 1957-59</unitdate>
-                            </unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">9</container>
-                                <container type="folder" label="mixed materials">13</container>
-                                <unittitle>Gaertner, 6" <unitdate>1910-11</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">9</container>
-                                <container type="folder" label="mixed materials">14</container>
-                                <unittitle>Portable <unitdate>1890-1909, 1937</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">9</container>
-                                <container type="folder" label="mixed materials">15</container>
-                                <unittitle>Information <unitdate>1885, 1979</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">9</container>
-                            <container type="folder" label="mixed materials">16</container>
-                            <unittitle>Observatory, position <unitdate>1900-1914</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">10</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Schedule book <unitdate>1901, 1906-07</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">10</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Science building <unitdate>1945, undated</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">10</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Notebooks: star observations <unitdate>1893-1906, 1911</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">10</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Notebooks</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">10</container>
-                            <unittitle>charts and plates <unitdate>1918</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">10</container>
-                            <unittitle>mean and Apparent star places <unitdate>1905-1916</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Marjorie Williams</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">10</container>
-                            <container type="folder" label="mixed materials">5</container>
-                            <unittitle>Radial velocities <unitdate>1929, 1936-39</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <unittitle>Variable stars</unittitle>
-                        </did>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">10</container>
-                                <container type="folder" label="mixed materials">6</container>
-                                <unittitle>Correspondence <unitdate>1934-1946</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">10</container>
-                                <container type="folder" label="mixed materials">7</container>
-                                <unittitle>Photographs <unitdate>1900, 1904, undated</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">10</container>
-                                <container type="folder" label="mixed materials">8</container>
-                                <unittitle>Field 8 <unitdate>1930-38, undated</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                        <c04 level="file">
-                            <did>
-                                <container type="box" label="mixed materials">10</container>
-                                <container type="folder" label="mixed materials">9</container>
-                                <unittitle>Field 8 plots <unitdate>undated</unitdate>
-                                </unittitle>
-                            </did>
-                        </c04>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">11</container>
-                        <unittitle>Notebooks: Meridian Circle observations books I-III
-                                <unitdate>1887-1894</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">11</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Notes: Meridian stones, lines, marks and gnomons
-                                <unitdate>1901</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">12</container>
-                        <unittitle>Notebooks</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">12</container>
-                            <unittitle>Sunspot observations books I-II
-                                    <unitdate>1908-1945</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">12</container>
-                            <unittitle>Sunspot observations books III-IV
-                                    <unitdate>1945-1953</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">12</container>
-                            <unittitle>AAVSU sunspot observations <unitdate>1945-1951</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">12</container>
-                            <unittitle>Equatorial telescope observations books I-IV
-                                    <unitdate>1891-1931</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Sky photographic observations</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">13</container>
-                            <container type="folder" label="mixed materials">1-2</container>
-                            <unittitle>3" telescope <unitdate>1933-1978</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">13</container>
-                            <container type="folder" label="mixed materials">3-4</container>
-                            <unittitle>11" telescope <unitdate>1930-1977</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">14</container>
-                        <unittitle>Notebooks: Transit instrument observations, books I-VIII
-                                <unitdate>1904-08</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-            </c01>
-            <c01 id="list-ser5" level="series">
-                <did>
-                    <unittitle>SERIES V. SOCIETIES</unittitle>
-                </did>
-                <c02 level="file">
-                    <did>
-                        <unittitle>American Association of Variable Star Observers</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">1</container>
-                            <unittitle>Photos, records, notes and predictions
-                                    <unitdate>1929-1952</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">2</container>
-                            <unittitle>Memos, correspondence and notes <unitdate>1976</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">3-4</container>
-                            <unittitle>Photographs <unitdate>1920-1950, undated</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">15</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Astronomy Club: Charter <unitdate>1955</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Smith College Astronomical Society</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">6</container>
-                            <unittitle>Annual letter <unitdate>1900-1923</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">7</container>
-                            <unittitle>Constitution</unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">8</container>
-                            <unittitle>Records <unitdate>1891-1921</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <container type="box" label="mixed materials">15</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Students for the Exploration and Development of Space
-                                <unitdate>1993</unitdate>
-                        </unittitle>
-                    </did>
-                </c02>
-                <c02 level="file">
-                    <did>
-                        <unittitle>Telescopium</unittitle>
-                    </did>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">10</container>
-                            <unittitle>Meeting notes, questionnaire <unitdate>1913-1938</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <container type="folder" label="mixed materials">11-13</container>
-                            <unittitle>Minutes <unitdate>1899-1940</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                    <c03 level="file">
-                        <did>
-                            <container type="box" label="mixed materials">15</container>
-                            <unittitle>Telescopium and Astronomical Society (visitor and graduate
-                                name book) <unitdate>1907-1954</unitdate>
-                            </unittitle>
-                        </did>
-                    </c03>
-                </c02>
-            </c01>
-        </dsc>
-    </archdesc>
+                        <unitdate calendar="gregorian" era="ce" normal="1900/1900">1900</unitdate>
+                        <unitdate normal="1904/1904">1904</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_6f0bcb1238a3582adfdee3182e3b50f0"
+                                   label="Mixed Materials [310183630227360]"
+                                   type="box">1232</container>
+                        <container id="aspace_079bf7c4556af9b56e58782a4e30d064"
+                                   parent="aspace_6f0bcb1238a3582adfdee3182e3b50f0"
+                                   type="folder">7</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_1c1ddcee172ad1f65e666130d3ecb9f8" level="file">
+                     <did>
+                        <unittitle>Field 8</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1930/1938"
+                                  type="inclusive">1930-38</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_820a59909e676920c0a961f39eaf2e5b"
+                                   label="Mixed Materials [310183630227360]"
+                                   type="box">1232</container>
+                        <container id="aspace_d8fe747ec34986fcb91a52a553544d06"
+                                   parent="aspace_820a59909e676920c0a961f39eaf2e5b"
+                                   type="folder">8</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_79c9ad7dcc48f70507c4667052757663" level="file">
+                     <did>
+                        <unittitle>Field 8 plots</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_774babef2a993012f5474aaa77cc6ae9"
+                                   label="Mixed Materials [310183630227360]"
+                                   type="box">1232</container>
+                        <container id="aspace_88397eebbfa530afa6d7426591466a1a"
+                                   parent="aspace_774babef2a993012f5474aaa77cc6ae9"
+                                   type="folder">9</container>
+                     </did>
+                  </c04>
+               </c03>
+            </c02>
+            <c02 id="aspace_e11b91abe69539c3ed287c3c32e59558" level="file">
+               <did>
+                  <unittitle>Notebooks: Meridian Circle observations books I-III</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1887/1894"
+                            type="inclusive">1887-1894</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_60b749491cf6a53dc7ad72167484bb2b"
+                             label="Mixed Materials [310183630227311]"
+                             type="box">1233</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1e48e6fb05fd71c25ec1a5d3627ea3e1" level="file">
+               <did>
+                  <unittitle>Notes: Meridian stones, lines, marks and gnomons</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_58b29ba35ec134365c40ae1b6b5e0077"
+                             label="Mixed Materials [310183630227311]"
+                             type="box">1233</container>
+                  <container id="aspace_cd46ccaadc0af2ea365737a872af0a8c"
+                             parent="aspace_58b29ba35ec134365c40ae1b6b5e0077"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b2746d594fa2e048b3f762e5c3ce7496" level="file">
+               <did>
+                  <unittitle>Notebooks</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_55bd3847853850815e96a230105d0f75"
+                             label="Mixed Materials [310183630227303]"
+                             type="box">1234</container>
+               </did>
+               <c03 id="aspace_bdda8eb7d16d8ecb2d434eec0fc65167" level="file">
+                  <did>
+                     <unittitle>Sunspot observations books I-II</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1908/1945"
+                               type="inclusive">1908-1945</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_3e2665237d10f55043ef0b5d7574f20b"
+                                label="Mixed Materials [310183630227303]"
+                                type="box">1234</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_2143bebc3108d190877484cf5448f8ea" level="file">
+                  <did>
+                     <unittitle>Sunspot observations books III-IV</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1945/1953"
+                               type="inclusive">1945-1953</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_49c80d3f5ee2ecfc14f5780fd045dc66"
+                                label="Mixed Materials [310183630227303]"
+                                type="box">1234</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_dc5325396bc69f94c318aaa843686a37" level="file">
+                  <did>
+                     <unittitle>AAVSU sunspot observations</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1945/1951"
+                               type="inclusive">1945-1951</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_66f29671435c6ca77912d6e29ce318ee"
+                                label="Mixed Materials [310183630227303]"
+                                type="box">1234</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_c6c031b760aa9304d4e42e9461a0410b" level="file">
+                  <did>
+                     <unittitle>Equatorial telescope observations books I-IV</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1891/1931"
+                               type="inclusive">1891-1931</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_e99295a2b79baae6a8bbba0ea2f7b522"
+                                label="Mixed Materials [310183630227303]"
+                                type="box">1234</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_5f107c1b0b77381f80f31eec90c5344b" level="file">
+               <did>
+                  <unittitle>Sky photographic observations</unittitle>
+               </did>
+               <c03 id="aspace_0b5495a91a5bf0bba9d05a18a71f709b" level="file">
+                  <did>
+                     <unittitle>3" telescope</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1933/1978"
+                               type="inclusive">1933-1978</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_9619b9343a5a485037704e8f31de0c55"
+                                label="Mixed Materials [310183630227253]"
+                                type="box">1235</container>
+                     <container id="aspace_6a9a76ccd418df2ef8524c93badb8262"
+                                parent="aspace_9619b9343a5a485037704e8f31de0c55"
+                                type="folder">1-2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_39cec4f47a12c510d4bf473adb6bbe80" level="file">
+                  <did>
+                     <unittitle>11" telescope</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1930/1977"
+                               type="inclusive">1930-1977</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_dc1a7527de93937adb5c9ca3bd0325b8"
+                                label="Mixed Materials [310183630227253]"
+                                type="box">1235</container>
+                     <container id="aspace_261dffb10c3781de60ce648c4070bc4e"
+                                parent="aspace_dc1a7527de93937adb5c9ca3bd0325b8"
+                                type="folder">3-4</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_47b184790a403b77b070f496b1e8828a" level="file">
+               <did>
+                  <unittitle>Notebooks: Transit instrument observations, books I-VIII</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1904-08</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2e2e04ab89ab66c25db0873d460bcbb9"
+                             label="Mixed Materials [310183630227246]"
+                             type="box">1236</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser5" level="series">
+            <did>
+               <unittitle>SERIES V. SOCIETIES</unittitle>
+            </did>
+            <scopecontent id="aspace_faa37fc363d6745a46f4ee77a80737f7">
+               <head>Scope and Contents</head>
+               <p>SERIES V. SOCIETIES consists of information , photographs, records, notes and predictions of the American Association of Variable Star Observers (AAVSO), the Astronomy Club, Smith College Astronomical Society, Students for the Exploration and Development of Space and Telescopium.</p>
+            </scopecontent>
+            <c02 id="aspace_50e43f530c4cf63d3a86957a4eccb03f" level="file">
+               <did>
+                  <unittitle>American Association of Variable Star Observers</unittitle>
+               </did>
+               <c03 id="aspace_3c9665e285d56d34a052ef5204d14506" level="file">
+                  <did>
+                     <unittitle>Photos, records, notes and predictions</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1929/1952"
+                               type="inclusive">1929-1952</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_2f4ac1382246e7fcf025f827db0554c8"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_d4c91ea9f932636f154c38f6dca6e122"
+                                parent="aspace_2f4ac1382246e7fcf025f827db0554c8"
+                                type="folder">1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_129a48d5eeaad87de1aff045b2c8a1f8" level="file">
+                  <did>
+                     <unittitle>Memos, correspondence and notes</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_0414ecba44bb5fa03a0a4d5e1a97062f"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_33142bf2abbfafbdf541850bcbf8960f"
+                                parent="aspace_0414ecba44bb5fa03a0a4d5e1a97062f"
+                                type="folder">2</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_50930259b7f2d2f078ba947f95dc1dee" level="file">
+                  <did>
+                     <unittitle>Photographs</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1920/1950"
+                               type="inclusive">1920-1950</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_3725a8c2e2d1d565581d7b26ec0e0d29"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_21fcbe33cab731917cd41472d463260d"
+                                parent="aspace_3725a8c2e2d1d565581d7b26ec0e0d29"
+                                type="folder">3-4</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_b15114253e6aa97a8f6c0c684ccaa48a" level="file">
+               <did>
+                  <unittitle>Astronomy Club: Charter</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0f1ed55e25a6b51519a42c42635eb938"
+                             label="Mixed Materials [310183630227196]"
+                             type="box">1237</container>
+                  <container id="aspace_b75107999937b79b4b35ad645156dc21"
+                             parent="aspace_0f1ed55e25a6b51519a42c42635eb938"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_647e8792b0a9a39603b82d990464a31f" level="file">
+               <did>
+                  <unittitle>Smith College Astronomical Society</unittitle>
+               </did>
+               <c03 id="aspace_8f6a23d1d95bd712b273f94b92d1187a" level="file">
+                  <did>
+                     <unittitle>Annual letter</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1900/1923"
+                               type="inclusive">1900-1923</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_a87e701507b52535595f45c251623041"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_194cda23310bc37e7c8d8455d7db079d"
+                                parent="aspace_a87e701507b52535595f45c251623041"
+                                type="folder">6</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_680693b90e1a09db1ca9a43ec972c53c" level="file">
+                  <did>
+                     <unittitle>Constitution</unittitle>
+                     <container altrender="Letter document box"
+                                id="aspace_11804139645e9d80241fb4e10dd3da74"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_7b43991280acefdf33d7ad4b23817ca5"
+                                parent="aspace_11804139645e9d80241fb4e10dd3da74"
+                                type="folder">7</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_da0e385f11d2419ffd85dee4eddb043d" level="file">
+                  <did>
+                     <unittitle>Records</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1891/1921"
+                               type="inclusive">1891-1921</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_badd7f9ddeff6b251bb67b1237aaead0"
+                                label="Mixed Materials [310183630227196]"
+                                type="box">1237</container>
+                     <container id="aspace_8ec8f5d8b83068e70244caf8c9f99142"
+                                parent="aspace_badd7f9ddeff6b251bb67b1237aaead0"
+                                type="folder">8</container>
+                  </did>
+               </c03>
+            </c02>
+            <c02 id="aspace_e738559941d967f1e7c75978f2392af2" level="file">
+               <did>
+                  <unittitle>Students for the Exploration and Development of Space</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a7a3909662b5ea05b3eea58d176624eb"
+                             label="Mixed Materials [310183630227196]"
+                             type="box">1237</container>
+                  <container id="aspace_84ad0844180ff64d57ba93105396aa6b"
+                             parent="aspace_a7a3909662b5ea05b3eea58d176624eb"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_948026d40e11273ac78eb2ed18cb620f" level="file">
+               <did>
+                  <unittitle>Telescopium</unittitle>
+               </did>
+               <c03 id="aspace_8e9472df01280da0fde7ed9cad7d29b3" level="file">
+                  <did>
+                     <unittitle>Meeting notes, questionnaire</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1913/1938"
+                               type="inclusive">1913-1938</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_e516396195f353c54317825cb6749b84"
+                                label="Mixed Materials [310183630227139]"
+                                type="box">1237.1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_80e7fb2acda9c4f46b0aff21104ada2e" level="file">
+                  <did>
+                     <unittitle>Minutes</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1899/1940"
+                               type="inclusive">1899-1940</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_10e4a5064751cfdc31d35f960a8747a6"
+                                label="Mixed Materials [310183630227139]"
+                                type="box">1237.1</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_a9037959c04fbc11083149d1edd143fe" level="file">
+                  <did>
+                     <unittitle>Telescopium and Astronomical Society (visitor and graduate name book)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1907/1954"
+                               type="inclusive">1907-1954</unitdate>
+                     <container altrender="Letter document box"
+                                id="aspace_b30df48d276da407fc58c59d05c7bb9c"
+                                label="Mixed Materials [310183630227139]"
+                                type="box">1237.1</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
