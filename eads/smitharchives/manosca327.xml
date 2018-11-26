@@ -1,600 +1,950 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca327.xml//EN">manosca327</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca327</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Association of Former Juniors in France Records
-               1925-1973</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Abby Schlessinger, Maris Schwarz
-               .</author>
-
+            <titleproper>Finding aid to Association of Former Juniors in France Records <num>CA.MS.00327</num>
+            </titleproper>
+            <author>Finding aid prepared by Abby Schlessinger, Maris Schwarz .</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-13">2013-11-13</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-20 14:34:37 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-19</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Association of Former Juniors in
-               France</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Association of Former Juniors in France
-            Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1925-1973</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 50 UUID:85f61fe3-4fe8-4b77-b4d2-b0ef90d9ee1f</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(1 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains correspondence, photographs,
-            financial records, publications, minutes, and news clippings. </abstract>
+         <unittitle>Association of Former Juniors in France Records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Association of Former Juniors in France</corpname>
+         </origination>
+         <unitid>CA.MS.00327</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1925/1973"
+                   type="inclusive">1925-1973</unitdate>
+         <abstract id="aspace_514d4a06dc73da464378e7cdc466e162">Contains correspondence, photographs, financial records, publications, minutes, and news clippings.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>In 1927, the first Smith College juniors studied abroad in Paris, France. Nine years
-            later, in 1936, the Association of Former Juniors in France was established by college
-            alumnae who had participated in the Paris Junior Year Abroad program. The primary goal
-            of the association was to fund a scholarship for future Smith students to study abroad
-            in France. The secondary aim of the members was to stay up-to-date on information
-            regarding both France and the Smith students currently studying abroad in the country.
-            In addition, the association raised money to aid French soldiers and refugees displaced
-            due to World War II, including sponsoring French children and their families. Holding an
-            annual dinner in New York City, the members actively fundraised while reconnecting with
-            old friends and maintaining a strong alumnae network. The association also published a
-            newsletter, Trait D'Union, which included articles from both former and current Smith
-            students, commentary from various professors, and updates on French politics, music,
-            cinema, and books. While having a lively membership for over thirty years, the
-            Association of Former Juniors in France was no longer active by the mid-1970s.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>In 1927, the first Smith College juniors studied abroad in Paris, France. Nine years later, in 1936, the Association of Former Juniors in France was established by college alumnae who had participated in the Paris Junior Year Abroad program. The primary goal of the association was to fund a scholarship for future Smith students to study abroad in France. The secondary aim of the members was to stay up-to-date on information regarding both France and the Smith students currently studying abroad in the country. In addition, the association raised money to aid French soldiers and refugees displaced due to World War II, including sponsoring French children and their families. Holding an annual dinner in New York City, the members actively fundraised while reconnecting with old friends and maintaining a strong alumnae network. The association also published a newsletter, Trait D'Union, which included articles from both former and current Smith students, commentary from various professors, and updates on French politics, music, cinema, and books. While having a lively membership for over thirty years, the Association of Former Juniors in France was no longer active by the mid-1970s.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Association of Former Juniors in France records consist of files relating to club
-            activity from 1936 to 1972. Types of materials include: correspondence, information
-            pertaining to the founding of the French House, invitations, photographs, meeting
-            minutes and notices, records of World War II relief efforts, membership lists,
-            organization and officer information, scholarship records, and publications.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Association of Former Juniors in France records consist of files relating to club activity from 1936 to 1972. Types of materials include: correspondence, information pertaining to the founding of the French House, invitations, photographs, meeting minutes and notices, records of World War II relief efforts, membership lists, organization and officer information, scholarship records, and publications.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Association of Former Juniors in France, Box #, Smith College Archives.</p>
+         <p> Association of Former Juniors in France records, Smith College Archives, CA-MS-00327, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Association of Former Juniors in France records were donated over a period of time
-            to the Smith College Archives from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Association of Former Juniors in France records were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_6394118ed1f6bce7d71920536c526190" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Anniversaries <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Anniversaries</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_828e348c075fc684aaaa77a5a29f8ee2"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_a5c8f8bd3bd86dead48e82761e42db38"
+                          parent="aspace_828e348c075fc684aaaa77a5a29f8ee2"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e296a2284545b0f32776da0647ddbb59" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Articles and pamphlets <unitdate>1955-1966</unitdate>
-               </unittitle>
+               <unittitle>Articles and pamphlets</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1966"
+                         type="inclusive">1955-1966</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_983d8d3b8dddee070aad06bcccfb661e"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_bab9bbbdc666b2c4e704da8424a42467"
+                          parent="aspace_983d8d3b8dddee070aad06bcccfb661e"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7efb81476bb4c89f682af44ce075b241" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence: general <unitdate>1931-1950</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: general</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1931/1950"
+                         type="inclusive">1931-1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9b8cabf83cd4552824c68b617eb4ee9b"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_cc2367ec2b6a8358e8eaac490332199f"
+                          parent="aspace_9b8cabf83cd4552824c68b617eb4ee9b"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c0bc0e3bfec2e3dba0e2aa87b08592e6" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence: Alumnae Association <unitdate>1943-1945</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Alumnae Association</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1943/1945"
+                         type="inclusive">1943-1945</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5bfe6c4584349da5f6643c9470147c19"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_ebfdf05992830112e28aa0e28e5febc0"
+                          parent="aspace_5bfe6c4584349da5f6643c9470147c19"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c911ca91fa60402905a322cf5c89827a" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
                <unittitle>Correspondence:</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_9ff06817136b446732b3a78ce0db1f50"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e8b1b63befc4545bea43f4ce779e858c" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Alder, Emily Frank <unitdate>1942</unitdate>
-               </unittitle>
+               <unittitle>Alder, Emily Frank</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_52727a99120cc6b4640988a10c744909"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_dc4eb09474639e61641076814076dfc6"
+                          parent="aspace_52727a99120cc6b4640988a10c744909"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_396d3297cf0f386b7b33d278a0ce410d" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Alward, Jane <unitdate>1955</unitdate>
-               </unittitle>
+               <unittitle>Alward, Jane</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_394a6360f2a84c06c4c406b13ebb347a"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_57efca0ea093955deb55f5ece1ba80d7"
+                          parent="aspace_394a6360f2a84c06c4c406b13ebb347a"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a1b270defe24925b0c75d715634228e7" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Benjamin, Alice Louise <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Benjamin, Alice Louise</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_150fb98c58d21f6b178e1f82967f6df0"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_a647c3ac83c46ee716082abd84a74363"
+                          parent="aspace_150fb98c58d21f6b178e1f82967f6df0"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_12d5108520ad4b2aeeee07925c5fd22a" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Boname, Mary <unitdate>1938-1960</unitdate>
-               </unittitle>
+               <unittitle>Boname, Mary</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1960"
+                         type="inclusive">1938-1960</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_77b2d0cb9a4eedd5f1d1473b6b023004"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_3a783ac1d56c633e8474b9a0c1214499"
+                          parent="aspace_77b2d0cb9a4eedd5f1d1473b6b023004"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_043c278a80529d5f5c47796a8ac8cfb9" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Bourgoin, Louise M. <unitdate>1942-1943</unitdate>
-               </unittitle>
+               <unittitle>Bourgoin, Louise M.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1942/1943"
+                         type="inclusive">1942-1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3e48169955620af20f2e7c8d99496ad3"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_8a09b5cbaa4b13f54a8408ede14cd454"
+                          parent="aspace_3e48169955620af20f2e7c8d99496ad3"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3ab50b60bfd5c9c10fa4e6c16488ae9f" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Brooks, Nathalie Jeanne <unitdate>1938-1942</unitdate>
-               </unittitle>
+               <unittitle>Brooks, Nathalie Jeanne</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1942"
+                         type="inclusive">1938-1942</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_39595c8e9e1c428b8c0690dde75928fb"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_b5cfebb607d508c54b8c1266a6e0b37a"
+                          parent="aspace_39595c8e9e1c428b8c0690dde75928fb"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_31c68a1003032c65f5f109ad3aee3b44" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Burrell, Jane <unitdate>1938-1949</unitdate>
-               </unittitle>
+               <unittitle>Burrell, Jane</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1949"
+                         type="inclusive">1938-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b958bdc58781efe97d97477b131d2ccb"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_e66c199f26911c012c07770af6174870"
+                          parent="aspace_b958bdc58781efe97d97477b131d2ccb"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_54db127eb9bc5b86cd24e6df17c7f2cd" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Cattanes, Helene <unitdate>1942-1960</unitdate>
-               </unittitle>
+               <unittitle>Cattanes, Helene</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1942/1960"
+                         type="inclusive">1942-1960</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_43f5b91428e9d07ecb82b5a47889e1a4"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_9b08e3ffd4d5a831fff176712203232a"
+                          parent="aspace_43f5b91428e9d07ecb82b5a47889e1a4"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c30e54c995524e23620e2b7728f88489" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Davis, Herbert <unitdate>1943</unitdate>
-               </unittitle>
+               <unittitle>Davis, Herbert</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7a48e90be59d8e9f1668d0021100cb9f"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_2021a73f5e49fae68b747d5c83ca443d"
+                          parent="aspace_7a48e90be59d8e9f1668d0021100cb9f"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_62b14679e4f2c637dde413a0fdf7ce63" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Delpit, Louise <unitdate>1938-1948</unitdate>
-               </unittitle>
+               <unittitle>Delpit, Louise</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1948"
+                         type="inclusive">1938-1948</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ec5fd490ccdfa7503d9fc784c6030b3a"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_960407f342f2e31d1288baaea67b294a"
+                          parent="aspace_ec5fd490ccdfa7503d9fc784c6030b3a"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b44efc1e19405b4dcd496c15dbf7ea5a" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Emerson, Harriet <unitdate>1939</unitdate>
-               </unittitle>
+               <unittitle>Emerson, Harriet</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0ba10b7a51a74b8c995b0593672d2b38"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_bec1fd610734da36b9b39df0a53d64cc"
+                          parent="aspace_0ba10b7a51a74b8c995b0593672d2b38"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d697071c328a1a124e95906e653c1ca9" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Freschl, Lisbeth Newelt <unitdate>1947</unitdate>
-               </unittitle>
+               <unittitle>Freschl, Lisbeth Newelt</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9333ee4942905b8a3bf4ff85ca4ce1d4"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_48dd6c8d05351254b35cf2ba49fea7b6"
+                          parent="aspace_9333ee4942905b8a3bf4ff85ca4ce1d4"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0da53b9354b0f9f770f0da8a2c75bdb3" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Freyss, Beatrice <unitdate>1938</unitdate>
-               </unittitle>
+               <unittitle>Freyss, Beatrice</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_96e557751e66f0ca25aab185690e4907"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_da08bdd56ae65eadb3ebbf9741db61d8"
+                          parent="aspace_96e557751e66f0ca25aab185690e4907"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a29cd3103d9c3c17f666dfc3db5b7453" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Goube, Pierre <unitdate>1944-1946</unitdate>
-               </unittitle>
+               <unittitle>Goube, Pierre</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1946"
+                         type="inclusive">1944-1946</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c87e32efb1758c36ba18b48401fcda5e"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_9eb7094dd6d22e218e9a274b2ad1594d"
+                          parent="aspace_c87e32efb1758c36ba18b48401fcda5e"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e33840572fbc47f12c6aef165d46f743" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Guilloton, Vincent <unitdate>1943-1944, undated</unitdate>
-               </unittitle>
+               <unittitle>Guilloton, Vincent</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1943/1944"
+                         type="inclusive">1943-1944</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c1753fa75d766b5768c084cc45d15cec"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_33ff519ff3823f4b250b6e219a7dcfb8"
+                          parent="aspace_c1753fa75d766b5768c084cc45d15cec"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b5c36aec4ae0b3b26773cbf19cf68a0d" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Healy, Marjorie <unitdate>1938</unitdate>
-               </unittitle>
+               <unittitle>Healy, Marjorie</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ffc7c80c8412b0d8d2e1d2710850c325"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_988c5e526d42309fc6ee06100db93f07"
+                          parent="aspace_ffc7c80c8412b0d8d2e1d2710850c325"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8ba5eff98fd4cb1323b67f6e261d3c7e" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Imbault-Huart, Yvonne <unitdate>1938-1949, undated</unitdate>
-               </unittitle>
+               <unittitle>Imbault-Huart, Yvonne</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1949"
+                         type="inclusive">1938-1949</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3de7ff967fa0754ddb20863130b8c89a"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_bdeca246b69df7f0c5bc6738503b813f"
+                          parent="aspace_3de7ff967fa0754ddb20863130b8c89a"
+                          type="folder">21</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f68c131d8b15f1fb9b1135b2887a6101" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Lagarde, Charlotte <unitdate>1949</unitdate>
-               </unittitle>
+               <unittitle>Lagarde, Charlotte</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d0c45fd22a57067a1aee41836dc64c4d"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_be94b67d9de304f432ce3ca76407341a"
+                          parent="aspace_d0c45fd22a57067a1aee41836dc64c4d"
+                          type="folder">22</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_49527a4995133d3f78108b7a05219bc1" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Messieres, Rene de <unitdate>1949-1950</unitdate>
-               </unittitle>
+               <unittitle>Messieres, Rene de</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1949/1950"
+                         type="inclusive">1949-1950</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_08f3ae4d6b51da9c00ac2f306fbe8f51"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_9c3477b82973f2c523c8f50a3c5cea15"
+                          parent="aspace_08f3ae4d6b51da9c00ac2f306fbe8f51"
+                          type="folder">23</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_02d9ec50460c125607cac8a7e71d0876" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Neilson, William Allan <unitdate>1938-1944</unitdate>
-               </unittitle>
+               <unittitle>Neilson, William Allan</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1944"
+                         type="inclusive">1938-1944</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_272b911e336dfa0e04522309ef968ade"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_d223a7072728ac29e192c0dca40e6e2f"
+                          parent="aspace_272b911e336dfa0e04522309ef968ade"
+                          type="folder">24</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2d616986f88adf9625030fe97d3dafcd" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">25</container>
-               <unittitle>O'Brien, Mary <unitdate>1934</unitdate>
-               </unittitle>
+               <unittitle>O'Brien, Mary</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b2957d8da2f3753d02ee4c1feb5c6ecb"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_0689849a714dde66b1558383a0a82f8c"
+                          parent="aspace_b2957d8da2f3753d02ee4c1feb5c6ecb"
+                          type="folder">25</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fb277894fee4d9b9c47b79fbf445e396" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">26</container>
-               <unittitle>Powers, Helen <unitdate>1943</unitdate>
-               </unittitle>
+               <unittitle>Powers, Helen</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dbf40e50fd2202cdc0aa1988a86b79ff"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_72ac32ca40ef4272dad1efde62ab086f"
+                          parent="aspace_dbf40e50fd2202cdc0aa1988a86b79ff"
+                          type="folder">26</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_689633485829b73f2ff462560d21d609" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">27</container>
-               <unittitle>Rosenfield, Leonora <unitdate>1962, undated</unitdate>
-               </unittitle>
+               <unittitle>Rosenfield, Leonora</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7307b45dc3f56e449838b97cb425d6c4"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_805a670a074a8642d3510ea324e07ff1"
+                          parent="aspace_7307b45dc3f56e449838b97cb425d6c4"
+                          type="folder">27</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d6c168a060fdf8a263db67bf5da9f279" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">28</container>
-               <unittitle>Railo, Carol <unitdate>1963</unitdate>
-               </unittitle>
+               <unittitle>Railo, Carol</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_51926e73726d8821d70ef53d13d4cf4a"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_22381958481a39d6d15f02c31f8013e6"
+                          parent="aspace_51926e73726d8821d70ef53d13d4cf4a"
+                          type="folder">28</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9684cb275ef22e8c5563e661be83aa17" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">29</container>
-               <unittitle>Saliel, Jeanne <unitdate>1950-1965</unitdate>
-               </unittitle>
+               <unittitle>Saliel, Jeanne</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1965"
+                         type="inclusive">1950-1965</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e7116c6b306be782aa9a6f9fb25988f5"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_fa7afe77ecc82f60474af02dfae6057f"
+                          parent="aspace_e7116c6b306be782aa9a6f9fb25988f5"
+                          type="folder">29</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_57d32b13b359b68c8e3e524d6dc9d006" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">30</container>
-               <unittitle>Stapleton, Florence <unitdate>1929-1968</unitdate>
-               </unittitle>
+               <unittitle>Stapleton, Florence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929/1968"
+                         type="inclusive">1929-1968</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bd7e0577f62d880f7d97713dd088b832"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_dc84ae34aac7c7c598753296d1b64e8a"
+                          parent="aspace_bd7e0577f62d880f7d97713dd088b832"
+                          type="folder">30</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_83d39dd1c896e21ca7019b079eaf771a" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">31</container>
-               <unittitle>French House <unitdate>1941-1949</unitdate>
-               </unittitle>
+               <unittitle>French House</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1941/1949"
+                         type="inclusive">1941-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_84fe42fa66bb0765da6efaae46e370cb"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_f4d58322270eb8b33b63bb1f1572368f"
+                          parent="aspace_84fe42fa66bb0765da6efaae46e370cb"
+                          type="folder">31</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a2c75d7e385053e9723713e2570337a3" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">32</container>
-               <unittitle>French war relief <unitdate>1940-1948</unitdate>
-               </unittitle>
+               <unittitle>French war relief</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1940/1948"
+                         type="inclusive">1940-1948</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0cf2197611c1c6d4db72e2e4b252e07d"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_a3c16d92df690cd74e905fb170f2e2ec"
+                          parent="aspace_0cf2197611c1c6d4db72e2e4b252e07d"
+                          type="folder">32</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e777bc9d6826c21be1897de05fb24c46" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">33</container>
-               <unittitle>French War Relief Unit: New York <unitdate>1944-1945</unitdate>
-               </unittitle>
+               <unittitle>French War Relief Unit: New York</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1945"
+                         type="inclusive">1944-1945</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_de5f5e4a84823f62336483873b9c3cb5"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_0f209a557207ee35a701a65633e2e01c"
+                          parent="aspace_de5f5e4a84823f62336483873b9c3cb5"
+                          type="folder">33</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_23f0b3f612f7516e82a57566302a32c9" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">34</container>
-               <unittitle>History <unitdate>1965, undated</unitdate>
-               </unittitle>
+               <unittitle>History</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_91e3e3e4f325a29daf808b8c3bfdebb2"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_46dcc22ee6cc505952220b6e65ff41b1"
+                          parent="aspace_91e3e3e4f325a29daf808b8c3bfdebb2"
+                          type="folder">34</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1dca45100e32ce0ed1e809f37b35b69e" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">35</container>
-               <unittitle>Invitations <unitdate>1963-1969, undated</unitdate>
-               </unittitle>
+               <unittitle>Invitations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1963/1969"
+                         type="inclusive">1963-1969</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8364047bcd4b5811537416cd28cd2f3a"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_a5d80a113709ffea943894f5f085b2ee"
+                          parent="aspace_8364047bcd4b5811537416cd28cd2f3a"
+                          type="folder">35</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e9a784bf025d18fad054a5762d7d52e4" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">36</container>
-               <unittitle>Meetings <unitdate>1936-1938</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1936/1938"
+                         type="inclusive">1936-1938</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_67f1c584d5691a377d85967904888e23"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_f6b54b3eeaf60efa5f0281c0f2fd3f57"
+                          parent="aspace_67f1c584d5691a377d85967904888e23"
+                          type="folder">36</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bd2855ec4772a7cee885377c9a28ef81" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">37</container>
-               <unittitle>Meetings <unitdate>1939</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f435752c6eb05594f7a9c85881a88752"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_18a39ee50f0d8004cd923d9ded66a7c0"
+                          parent="aspace_f435752c6eb05594f7a9c85881a88752"
+                          type="folder">37</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_880190b220093ba22fa2cc0bedfede80" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">38</container>
-               <unittitle>Meetings <unitdate>1940</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d94b0b8171ab1834784b66b0aa3994bf"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_394d45ce94ad90e352aaeb18f4207a99"
+                          parent="aspace_d94b0b8171ab1834784b66b0aa3994bf"
+                          type="folder">38</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_441da36635a0474998fe9b7b7c45e699" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">39</container>
-               <unittitle>Meetings <unitdate>1941</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d2a81f8e463f133de65cec57c02d84d0"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_244b8ac9f03f032f8f8f6eb2a05a7d0f"
+                          parent="aspace_d2a81f8e463f133de65cec57c02d84d0"
+                          type="folder">39</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bbc111aeb61f0e95bbb72cb396f63f07" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">40</container>
-               <unittitle>Meetings <unitdate>1942</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5bafecaaa2e616806493323565d342cb"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_6053c036d19be3bfcd8fcc615d89237a"
+                          parent="aspace_5bafecaaa2e616806493323565d342cb"
+                          type="folder">40</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6c3072a1d650df20c1510337925e4255" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">41</container>
-               <unittitle>Meetings <unitdate>1943</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e732894e8ab98a43812d422fe0ff042"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_9219736c7ab83ea820014f74af8f3c3e"
+                          parent="aspace_9e732894e8ab98a43812d422fe0ff042"
+                          type="folder">41</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_467f9f0a81d5e479339523fe580e5e2c" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">42</container>
-               <unittitle>Meetings <unitdate>1944-1949</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1949"
+                         type="inclusive">1944-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a1f96f008ef396e1ddc3ab9cbfa2e099"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_0ddef778fdd773dbdd0da848357beed9"
+                          parent="aspace_a1f96f008ef396e1ddc3ab9cbfa2e099"
+                          type="folder">42</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_99b3abd1305bfcf37ca5d86326e22fbe" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">43</container>
-               <unittitle>Meetings <unitdate>1950-1954</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1954"
+                         type="inclusive">1950-1954</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f4f216875dc80956955265c9f0a91a16"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_356eab872cd084df0af810e19f4cb590"
+                          parent="aspace_f4f216875dc80956955265c9f0a91a16"
+                          type="folder">43</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d7e1c9de9bf5745c567097ab89082af1" level="file">
             <did>
-               <container type="box" label="mixed materials">1133</container>
-               <container type="folder" label="mixed materials">44</container>
-               <unittitle>Meetings <unitdate>1955-1967</unitdate>
-               </unittitle>
+               <unittitle>Meetings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1967"
+                         type="inclusive">1955-1967</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4e3b5245bf5b24773707f92db19ee3c4"
+                          label="Mixed Materials [310183630250743]"
+                          type="box">1133</container>
+               <container id="aspace_82c9cae91b7e97471144ec87cdef0be9"
+                          parent="aspace_4e3b5245bf5b24773707f92db19ee3c4"
+                          type="folder">44</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d4ad11a8629a27f386d763d53ac2ef48" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Membership lists <unitdate>1925-1941</unitdate>
-               </unittitle>
+               <unittitle>Membership lists</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1941"
+                         type="inclusive">1925-1941</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4161e20ca60526f696f6d62e50924673"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_10add47f208c1185cb03b4bdbd561231"
+                          parent="aspace_4161e20ca60526f696f6d62e50924673"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1ef3342360505420eebbee81cbb32206" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Officers <unitdate>1942-1945</unitdate>
-               </unittitle>
+               <unittitle>Officers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1942/1945"
+                         type="inclusive">1942-1945</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6dd0ae6aaae7fa1740a2dd8dcc090432"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_ea452e8f4aa86f5e117dd7e34057f620"
+                          parent="aspace_6dd0ae6aaae7fa1740a2dd8dcc090432"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_baa1ad11ec38350178ebeb53f3803a0d" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Organization, general information <unitdate>1939-1972, undated</unitdate>
-               </unittitle>
+               <unittitle>Organization, general information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1972"
+                         type="inclusive">1939-1972</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a99a693e1bf86c6405364fd2ba5df97a"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_ff647c6fc661eeb26f4a6288b234caac"
+                          parent="aspace_a99a693e1bf86c6405364fd2ba5df97a"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8de88ec18daf45610dd2da86dbba2b44" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Photographs <unitdate>1944, undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_21c8b87ace5e33f4dfd768b3e21bce2b"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_01c545641ed81a201b32492423a58324"
+                          parent="aspace_21c8b87ace5e33f4dfd768b3e21bce2b"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bde0ac7f70702deb8279f838fa24d928" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Publications: Trait D'Union <unitdate>1939-1949</unitdate>
-               </unittitle>
+               <unittitle>Publications: Trait D'Union</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1949"
+                         type="inclusive">1939-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6ae9e430b7963efa9309ae94e1506ea3"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_e338e5b5e3dc1239c74db591c29f6b93"
+                          parent="aspace_6ae9e430b7963efa9309ae94e1506ea3"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_57bfdebf5c3194ec427611ce947d0550" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Publications: Trait D'Union <unitdate>1950-1973</unitdate>
-               </unittitle>
+               <unittitle>Publications: Trait D'Union</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1973"
+                         type="inclusive">1950-1973</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bfeb4ca3d0a729c38cf8b6d89b5aaa37"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_89be71449abbfd229074ea0347ba923f"
+                          parent="aspace_bfeb4ca3d0a729c38cf8b6d89b5aaa37"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b0a1d4a893a558994d0e3697a5cae5b2" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Publications: Trait D'Union archives (bound copies)
-                     <unitdate>1938-1965</unitdate>
-               </unittitle>
+               <unittitle>Publications: Trait D'Union archives (bound copies)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1965"
+                         type="inclusive">1938-1965</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2c9d0dbd73234427db22b8a939c9a5bf"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_29b3e0c6f59e3933b277facc604dd0c2"
+                          parent="aspace_2c9d0dbd73234427db22b8a939c9a5bf"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7c47d8b64aa009a8e4c2d5129a33e3a1" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Publications: Trait D'Union book list <unitdate>1939-1944</unitdate>
-               </unittitle>
+               <unittitle>Publications: Trait D'Union book list</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1944"
+                         type="inclusive">1939-1944</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_070d851e2902525169ba522855c89f0d"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_ea620883e1f8a3d402bdbb968856e836"
+                          parent="aspace_070d851e2902525169ba522855c89f0d"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_877cdec4376405874ac3a895814becc2" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Publications: Trait D'Union correspondence <unitdate>1938-1950.</unitdate>
-               </unittitle>
+               <unittitle>Publications: Trait D'Union correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1938/1950"
+                         type="inclusive">1938-1950.</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4f64a873da8225f31bde9b1d2e82b186"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_f7dd00f3f9b0940d6c9689d4fe547ef2"
+                          parent="aspace_4f64a873da8225f31bde9b1d2e82b186"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_52b33dca37f84616606d538c2f156f45" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Scholarships <unitdate>1939-1959</unitdate>
-               </unittitle>
+               <unittitle>Scholarships</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1959"
+                         type="inclusive">1939-1959</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9a432074c04854bc34a2aa1fee4d20b9"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_a241d9b89a6b66ff94134318cc13a0cb"
+                          parent="aspace_9a432074c04854bc34a2aa1fee4d20b9"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7a109589c43d01a572c6ff3241e31ad8" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Scholarships: Campbell, Edith Sumner <unitdate>1953-1964</unitdate>
-               </unittitle>
+               <unittitle>Scholarships: Campbell, Edith Sumner</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1953/1964"
+                         type="inclusive">1953-1964</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5c6a186b1b38dfd6a04f76507d88ee51"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_e58779d356d72617fd0336764a0849d3"
+                          parent="aspace_5c6a186b1b38dfd6a04f76507d88ee51"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0c1b370244c36e9f416ba40c83ba00ab" level="file">
             <did>
-               <container type="box" label="mixed materials">1134</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Treasurers' reports <unitdate>1939-1955</unitdate>
-               </unittitle>
+               <unittitle>Treasurers' reports</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1955"
+                         type="inclusive">1939-1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ade3740b0c877b7b76d86c31528d478f"
+                          label="Mixed Materials [310183630250750]"
+                          type="box">1134</container>
+               <container id="aspace_a2895cfeec028c035e111145aa7811ba"
+                          parent="aspace_ade3740b0c877b7b76d86c31528d478f"
+                          type="folder">12</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
