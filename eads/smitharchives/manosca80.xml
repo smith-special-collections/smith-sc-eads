@@ -1,937 +1,1429 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-  <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-    langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-    scriptencoding="iso15924">
-
-    <eadid countrycode="us" mainagencycode="manosca"
-      publicid="-//us::manosca//TEXT us::manosca::manosca80.xml//EN">manosca80</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>John Morton Greene Papers, 1853-1997 </titleproper>
-        <subtitle>Finding Aid</subtitle>
-        <author>Finding aid prepared by Valerie Love, '02.</author>
-        <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Smith College Archives</publisher>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-        <date>© 2003 </date>
-        <p>Smith College. All rights reserved.</p>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura
-        Cutter. <date>2003-06-04</date>
-      </creation>
-      <langusage>Finding aid written in English.</langusage>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date normal="2005-09-23">2005-09-23</date>
-        <item>manosca80 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <frontmatter id="front">
-    <titlepage>
-      <publisher>Smith College Archives </publisher>
-      <titleproper>John Morton Greene Papers, 1853-1997 </titleproper>
-      <subtitle>Finding Aid</subtitle>
-      <num>RG 10 </num>
-      <author>Valerie Love, '02 </author>
-      <date>Revised 2002 </date>
-      <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-      <p>© 2003 Smith College. All rights reserved.</p>
-    </titlepage>
-  </frontmatter>
-  <archdesc level="recordgrp" relatedencoding="MARC21">
-    <did id="main">
-      <head>Collection Overview</head>
-      <origination label="Creator:">
-        <persname encodinganalog="100" source="lcnaf">Greene, John Morton, 1830-1919. </persname>
-      </origination>
-      <unittitle encodinganalog="245$a" label="Title:">John Morton Greene Papers</unittitle>
-      <unitdate encodinganalog="245$f" type="inclusive">1856-1930</unitdate>
-      <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-        repositorycode="manosca">RG 10 UUID:26ecefe2-929d-4acf-a9a3-83f9e977e020</unitid>
-      <physdesc label="Quantity:">
-        <extent encodinganalog="300$a">8 boxes</extent>
-        <extent encodinganalog="300$a">(41 linear ft.)</extent>
-      </physdesc>
-      <repository label="Location:">
-        <corpname>Smith College Archives</corpname>
-        <address>
-          <addressline>Northampton, MA</addressline>
-        </address>
-      </repository>
-      <abstract encodinganalog="520$a" label="Abstract:">Pastor of Sophia Smith, generally regarded
-        as the originator of the idea of founding Smith College as a college for women. Papers
-        contain biographical information, personal and professional correspondence, recollections,
-        journals, manuscripts, photographs, and published works. There are also articles and
-        clippings pertaining to his life, Sophia Smith, and the early history and founding of Smith
-        College. </abstract>
-      <langmaterial label="Language of Material:">
-        <language langcode="eng">English.</language>
-      </langmaterial>
-    </did>
-    <bioghist id="bioghist">
-
-      <p> John Morton Greene, Sophia Smith's pastor, is generally regarded as the originator of the
-        idea of founding Smith College as a college for women. Born in Hadley, Mass. on March 12,
-        1830, he was an 1853 graduate of Amherst College, which also granted him the A.M. in 1856
-        and D.D. in 1881. In 1857 he married Louisa Dickinson of North Amherst, an 1857 graduate of
-        Mount Holyoke Seminary. In the same year, he was installed as the pastor at the
-        Congregational church at Hatfield, where he remained for eleven years. In Hatfield he met
-        Sophia Smith. In 1868 he was called to the pastorate at the Congregational Church at South
-        Hadley, Mass. Two years later he went to the Eliot Congregational Church in Lowell, Mass.,
-        where he remained for thirty years. After retiring from regular pastoral duties in 1910,
-        Greene assisted in the establishment of a mission in Maine. He died April 28, 1919.</p>
-      <p> John Morton Greene was a trustee of Smith College almost continuously from its founding in
-        1871 until his death. In addition, he served on the board of trustees of Mount Holyoke
-        Seminary (now Mount Holyoke College), 1866-1875; and was president of the board of trustees
-        at the French Protestant College in Springfield, 1885-1889. As advisor to Sophia Smith, he
-        was also instrumental in the founding of Smith Academy in Hatfield, and acted in a similar
-        capacity for Miss Rogers to found the Rogers Hall School in Lowell, where he acted as
-        president of its board of trustees, 1892-1909. For over forty years he was one of the
-        overseers of the charity fund at Amherst College.</p>
-    </bioghist>
-    <scopecontent id="scope">
-
-      <p> The John Morton Greene Papers contain materials including biographical information,
-        personal and professional correspondence, journals, manuscripts, photographs, and published
-        works. There are also articles and clippings pertaining to his life, Sophia Smith, and the
-        early history and founding of Smith College.</p>
-    </scopecontent>
-    <arrangement encodinganalog="351$a" id="scope-org">
-
-      <p>This collection is organized into five series:</p>
-      <list>
-        <item> I. Biographical </item>
-        <item> II. Correspondence </item>
-        <item> III. Journals </item>
-        <item> IV. Publications </item>
-        <item> V. Scrapbooks </item>
-      </list>
-    </arrangement>
-    <descgrp id="admin" type="admininfo">
-      <head>Information on Use</head>
-      <descgrp type="admininfo">
-        <head>Terms of Access and Use</head>
-        <userestrict encodinganalog="540" id="admin-use">
-          <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the John Morton Greene Papers must be requested from the Smith College Archives.
-            When requesting material at the Smith College Archives, see the printed finding aid for
-            specific instructions on completing the call slip. </p>
-        </userestrict>
-      </descgrp>
-      <prefercite id="admin-cite">
-        <head>Preferred Citation</head>
-        <p>Please use the following format when citing materials from this collection:</p>
-        <p>John Morton Greene Papers, Box #, Smith College Archives.</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca80</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to the John Morton Greene papers <num>CA.MS.00080</num>
+            </titleproper>
+            <author>Valerie Love, '02</author>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-26 09:28:25 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca80 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-21</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>John Morton Greene papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Greene, John Morton, 1830-1919.</persname>
+         </origination>
+         <unitid>CA.MS.00080</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.5 linear feet</extent>
+            <extent altrender="carrier">(8 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1833/1997"
+                   type="inclusive">1833-1997</unitdate>
+         <abstract id="aspace_92a65f81f9ffe760b994bcb6301be391">Pastor of Sophia Smith, generally regarded as the originator of the idea of founding Smith College as a college for women. Papers contain biographical information, personal and professional correspondence, recollections, journals, manuscripts, photographs, and published works. There are also articles and clippings pertaining to his life, Sophia Smith, and the early history and founding of Smith College.</abstract>
+      </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>John Morton Greene, Sophia Smith's pastor, is generally regarded as the originator of the idea of founding Smith College as a college for women. Born in Hadley, Mass. on March 12, 1830, he was an 1853 graduate of Amherst College, which also granted him the A.M. in 1856 and D.D. in 1881. In 1857 he married Louisa Dickinson of North Amherst, an 1857 graduate of Mount Holyoke Seminary. In the same year, he was installed as the pastor at the Congregational church at Hatfield, where he remained for eleven years. In Hatfield he met Sophia Smith. In 1868 he was called to the pastorate at the Congregational Church at South Hadley, Mass. Two years later he went to the Eliot Congregational Church in Lowell, Mass., where he remained for thirty years. After retiring from regular pastoral duties in 1910, Greene assisted in the establishment of a mission in Maine. He died April 28, 1919.</p>
+         <p>  John Morton Greene was a trustee of Smith College almost continuously from its founding in 1871 until his death. In addition, he served on the board of trustees of Mount Holyoke Seminary (now Mount Holyoke College), 1866-1875; and was president of the board of trustees at the French Protestant College in Springfield, 1885-1889. As advisor to Sophia Smith, he was also instrumental in the founding of Smith Academy in Hatfield, and acted in a similar capacity for Miss Rogers to found the Rogers Hall School in Lowell, where he acted as president of its board of trustees, 1892-1909. For over forty years he was one of the overseers of the charity fund at Amherst College.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The John Morton Greene Papers contain materials including biographical information, personal and professional correspondence, journals, manuscripts, photographs, and published works. There are also articles and clippings pertaining to his life, Sophia Smith, and the early history and founding of Smith College.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>I. Biographical</item>
+            <item>II. Correspondence</item>
+            <item>III. Journals</item>
+            <item>IV. Publications</item>
+            <item>V. Scrapbooks</item>
+         </list>
+      </arrangement>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>John Morton Greene papers, Smith College Archives, CA-MS-00080, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <altformavail encodinganalog="530" id="admin-altform" type="digital">
-        <head>Additional Formats</head>
-        <p>The following information is also available online as part of the <extref
-            href="http://clio.fivecolleges.edu/smith/greene/">Five College Archives Digital Access
-            Project</extref>
-          <list>
+      <altformavail id="aspace_admin-altform">
+         <head>Additional Formats</head>
+         <p>The following information is also available online as part of the <extref href="http://clio.fivecolleges.edu/smith/greene/">Five College Archives Digital Access Project</extref>
+         </p>    
+         <list type="ordered">
             <item>1. General Correspondence, 1856-1917</item>
             <item>2. Personal Journal (entries written 1861-1876 only)</item>
-            <item>3. "My Notes On Smith College," ca. 1910-1917 (A 129-page booklet of handwritten
-              notes by John Morton Greene recording his recollections of the circumstances
-              surrounding the founding of Smith College.)</item>
-            <item>4. Scrapbook, 1860-1918 (A 100-page scrapbook consisting predominantly of
-              newspaper clippings related to women's education and academic affairs at Smith
-              College, with particular reference to Greene's role in the College's founding; also,
-              some published articles related to women's education at other U.S.
-              institutions.)</item>
-            <item>5. Published Writings, 1875-1916 (Writings by JMG published in periodicals:
-              Includes his "Early History of Smith College" [a 12-part series appearing in the Daily
-              Hampshire Gazette, 1891-93], also correspondence related to it; a "Sketch of the Life
-              and Character of Miss Sophia Smith"; "An Inside View of Smith College," published in a
-              Lowell, Mass. newspaper in 1882; and other occasional pieces.)</item>
-            <item>6. Louisa Dickinson Greene Papers, 1854-1881 (6 letters and 2 other writings by
-              the wife of John Morton Greene.)</item>
+            <item>3. "My Notes On Smith College," ca. 1910-1917 (A 129-page booklet of handwritten notes by John Morton Greene recording his recollections of the circumstances surrounding the founding of Smith College.)</item>
+            <item>4. Scrapbook, 1860-1918 (A 100-page scrapbook consisting predominantly of newspaper clippings related to women's education and academic affairs at Smith College, with particular reference to Greene's role in the College's founding; also, some published articles related to women's education at other U.S. institutions.)</item>
+            <item>5. Published Writings, 1875-1916 (Writings by JMG published in periodicals: Includes his "Early History of Smith College" [a 12-part series appearing in the Daily Hampshire Gazette, 1891-93], also correspondence related to it; a "Sketch of the Life and Character of Miss Sophia Smith"; "An Inside View of Smith College," published in a Lowell, Mass. newspaper in 1882; and other occasional pieces.)</item>
+            <item>6. Louisa Dickinson Greene Papers, 1854-1881 (6 letters and 2 other writings by the wife of John Morton Greene.)</item>
             <item>7. Obituaries and Retrospectives on John Morton Greene, 1919-1930</item>
-          </list>
-        </p>
+         </list>
       </altformavail>
-      <descgrp type="admininfo">
-        <head>History of the Collection</head>
-        <acqinfo id="admin-acqinfo">
-          <p>The materials were donated over a period of time by John Morton Greene and his
-            daughter, Helen French Greene.</p>
-        </acqinfo>
-        <processinfo id="admin-process">
-          <p>Processed by Valerie Love, '02</p>
-        </processinfo>
-      </descgrp>
-    </descgrp>
-    <controlaccess id="subj">
-      <head>Search Terms</head>
-
-      <persname encodinganalog="600" source="lcnaf">Greene, John Morton, 1830-1919.</persname>
-      <persname encodinganalog="600" source="lcnaf">Greene, Louisa Dickinson, 1830-1881.</persname>
-      <corpname encodinganalog="610" source="lcsh">Smith College--Administration.</corpname>
-      <subject encodinganalog="650" source="lcsh">Congregational churches--Clergy.</subject>
-      <subject encodinganalog="650" source="lcsh">Clergy--Massachusetts.</subject>
-      <persname encodinganalog="700" source="lcnaf">Greene, Louisa Dickinson, 1830-1881.</persname>
-      <persname encodinganalog="700" source="lcnaf">Greene, Helen French, 1868-</persname>
-      <persname encodinganalog="700" source="lcnaf">Burton, Marion Le Roy, 1874-1925.</persname>
-      <persname encodinganalog="700" source="lcnaf">Hubbard, George W. (George Warner)</persname>
-      <persname encodinganalog="700" source="lcnaf">Seelye, Laurenus Clark, 1837-1924.</persname>
-      <persname encodinganalog="700" source="lcnaf">Smith, Sophia, 1796-1870.</persname>
-      <persname encodinganalog="700" source="lcnaf">Wells, Daniel White, 1842-</persname>
-    </controlaccess>
-    <descgrp id="addinfo" type="add">
-      <head>Additional Information</head>
-      <relatedmaterial id="add-related">
-        <head>Related Material</head>
-        <p>See also: 10.Founding of the College 10.Sophia Smith Papers </p>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>See also: 10.Founding of the College 10.Sophia Smith Papers</p>  
       </relatedmaterial>
-    </descgrp>
-    <dsc id="list-contlist" type="in-depth">
-      <c01 id="list-ser1" level="series">
-        <did>
-          <unittitle>Series I. Biographical Materials</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Addresses: Centennial of the Birth of Sophia Smith <unitdate>1853,
-                1896</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Biography and Genealogy <unitdate>1864-1997</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Household Servants <unitdate>1863</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>Obituaries, correspondence re: death of <unitdate>1919, 1930</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>Rogers Hall School <unitdate>1901-1919</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>General: Watch- see artifacts <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Greene, Louisa <unitdate>1904</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Photographs <unitdate>1860, 1879, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>Photographs: Portraits <unitdate>1913, undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>Portrait: Clippings and Correspondence <unitdate>1894-1938</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>Photograph: Emily Dickinson <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>Professional Employment: Appleton St. Church, Lowell, MA <unitdate>1870,
-                1879</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>Professional Employment: Eliot Church, Lowell, MA <unitdate>1881-1948,
-                undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">14</container>
-            <unittitle>Professional Employment: Eliot Church, Lowell, MA: Sermons
-                <unitdate>1887-1909</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">15</container>
-            <unittitle>Professional Employment: Enfield, CT Church <unitdate>1866</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">16</container>
-            <unittitle>Professional Employment: Hatfield: Congregational Church, Hatfield MA
-                <unitdate>1857-1925</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">17</container>
-            <unittitle>Professional Employment: South Hadley: First Church, South Hadley, MA
-                <unitdate>1870</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">18</container>
-            <unittitle>Smith Charities <unitdate>1875</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">1</container>
-            <container type="folder" label="mixed materials">19</container>
-            <unittitle>Sophia Smith: Excerpts from journals <unitdate>1860-1911</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser2" level="series">
-        <did>
-          <unittitle>Series II. Correspondence</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Index</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>from: Burton, Marion LeRoy <unitdate>1909-1918</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>to Alcott, Mr. <unitdate>1881, 1883</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>from: Ames, Henrietta <unitdate>1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>to: Brown, Nina Eliza, '82 <unitdate>1917</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>to: Caverno, Julia Harwood, '87 <unitdate>1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>to: Clark, Elizabeth (Lawrence), '83 <unitdate>1911</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>to: Clark, Josephine Adelaide, '80 <unitdate>1910, 1914</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>to: Cone, Kate (Morris), '79 <unitdate>1910</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>to: Dickinson, Mrs. (mother-in-law) <unitdate>1886</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>to: Fuller, Grace P. <unitdate>1910</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>to: Greene, Helen F., '91 <unitdate>1898-1905</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>from: Greene, Louisa Dickinson.(before marriage) <unitdate>1856-57</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">14</container>
-            <unittitle>from: Greene, Louisa Dickinson to others <unitdate>1854-81</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">15</container>
-            <unittitle>from: Greene, Louisa Dickinson to JMG <unitdate>1866-75</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">16</container>
-            <unittitle>to: Greene, Louisa Dickinson (wife) <unitdate>1863, 1864, 1878,
-                1880</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">17</container>
-            <unittitle>to: Greene, Louisa (daughter) <unitdate>1864, 1895, 1899, 1902</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">18</container>
-            <unittitle>from: Greene, Lulu (Louisa)</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">19</container>
-            <unittitle>to: Greene, William (brother) <unitdate>1853</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">20</container>
-            <unittitle>from: Greene, William S. <unitdate>1872</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">21</container>
-            <unittitle>to: Hill, Edith Naomi, '03 <unitdate>1911, 1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">22</container>
-            <unittitle>to: Hubbard, George W. <unitdate>1868-1879</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">23</container>
-            <unittitle>to: Jackson, Alice, '98 <unitdate>1904</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">24</container>
-            <unittitle>to: Jordan, Mary Augusta <unitdate>1911</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">25</container>
-            <unittitle>to: Keyes, Bertha A. <unitdate>1917</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">26</container>
-            <unittitle>to: Mardus, Mrs. <unitdate>1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">27</container>
-            <unittitle>from: Mason, John W. <unitdate>1894</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">28</container>
-            <unittitle>from: Northrop, B.G. <unitdate>1888</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">29</container>
-            <unittitle>from: Noyes, Lucia (Clapp), '81 <unitdate>1917</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">30</container>
-            <unittitle>to: Park, Edward A. <unitdate>1979</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">31</container>
-            <unittitle>to: Parker, Mrs. Henry <unitdate>1906</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">32</container>
-            <unittitle>from: Scott, Mary Augusta <unitdate>1911</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">33</container>
-            <unittitle>from: Seelye, L. Clark <unitdate>1881-1918</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">34</container>
-            <unittitle>to: Smith, Sophia <unitdate>1869-70</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">35</container>
-            <unittitle>to Tucker, Charlotte (Cheever) <unitdate>1891-92</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">36</container>
-            <unittitle>to Tyler, William S. <unitdate>1873, 1882-84</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">37</container>
-            <unittitle>from: Tyler, William S. <unitdate>1875</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">38</container>
-            <unittitle>from: Warner, Elisa A. <unitdate>1882</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">39</container>
-            <unittitle>from: Wells, D. W. <unitdate>1893-1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">2</container>
-            <container type="folder" label="mixed materials">40</container>
-            <unittitle>to: Whipple, Mrs. Shipman <unitdate>1910</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser3" level="series">
-        <did>
-          <unittitle>Series III. Journals</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">3-4</container>
-            <unittitle>Journals <unitdate>1883-1919</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">5</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Journal and scrapbook index <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">5</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Journal excerpts <unitdate>1861-1917</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">6</container>
-            <unittitle>Journals <unitdate>1833-1919</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser4" level="series">
-        <did>
-          <unittitle>Series IV. Publications</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Sketch of the Life and Character of Sophia Smith <unitdate>1875</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>Early History of Smith College, Daily Hampshire Gazette
-                <unitdate>1891-93</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>Early History of Smith College, Correspondence <unitdate>1881-1919</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>Early History of Smith College, Typescript <unitdate>1891</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>Happy Wedlock <unitdate>1900</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>Little Things for Little Folk, parts I-IV <unitdate>1901</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>Little Things for Little Folk, parts V-VII <unitdate>1901</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>Looking on the Bright Side <unitdate>1901</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>Friendship <unitdate>1865</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>Semi-Centennial of the Eliot Church, Lowell, MA <unitdate>1881</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>Publications: General <unitdate>1897</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">12</container>
-            <unittitle>Inside View of Smith College <unitdate>undated</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">7</container>
-            <container type="folder" label="mixed materials">13</container>
-            <unittitle>Pub. Miscellaneous <unitdate>1909</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-      </c01>
-      <c01 id="list-ser5" level="series">
-        <did>
-          <unittitle>Series V. Scrapbook</unittitle>
-        </did>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">1</container>
-            <unittitle>Index</unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">2</container>
-            <unittitle>pages 1-10 <unitdate>1872</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">3</container>
-            <unittitle>pages 11-20 <unitdate>1872-73</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">4</container>
-            <unittitle>pages 21-30 <unitdate>1875-77</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">5</container>
-            <unittitle>pages 31-40 <unitdate>1888</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">6</container>
-            <unittitle>pages 41-50 <unitdate>1873-82</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">7</container>
-            <unittitle>pages 51-60 <unitdate>1894-96</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">8</container>
-            <unittitle>pages 61-70 <unitdate>1893-1913</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">9</container>
-            <unittitle>pages 71-80 <unitdate>1896-1907</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">10</container>
-            <unittitle>pages 81-90 <unitdate>1906-1916</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <container type="box" label="mixed materials">8</container>
-            <container type="folder" label="mixed materials">11</container>
-            <unittitle>pages 91- end <unitdate>1866-79</unitdate>
-            </unittitle>
-          </did>
-        </c02>
-        <c02 level="file">
-          <did>
-            <unittitle>Books pertaining to Smith College- addresses by Seelye, Tyler,
-              etc.</unittitle>
-          </did>
-          <c03 level="file">
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The materials were donated over a period of time by John Morton Greene and his daughter, Helen French Greene.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Valerie Love, '02</p>  
+      </processinfo>
+      <accessrestrict id="aspace_19631f80b052aab2cac4e2f294be705b">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
+      </accessrestrict>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Congregational churches--Clergy.</subject>
+         <subject encodinganalog="650" source="lcsh">Clergy--Massachusetts.</subject>
+         <persname encodinganalog="600" source="naf">Greene, John Morton, 1830-1919.</persname>
+         <persname encodinganalog="600" source="naf">Greene, Louisa Dickinson, 1830-1881.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Administration.</corpname>
+    
+         <persname encodinganalog="600" source="naf">Greene, Helen French, 1868-</persname>
+         <persname encodinganalog="600" source="naf">Burton, Marion Le Roy, 1874-1925.</persname>
+         <persname encodinganalog="600" source="naf">Hubbard, George W. (George Warner)</persname>
+         <persname encodinganalog="600" source="naf">Seelye, Laurenus Clark, 1837-1924.</persname>
+         <persname encodinganalog="600" source="naf">Smith, Sophia, 1796-1870.</persname>
+         <persname encodinganalog="600" source="naf">Wells, Daniel White, 1842-</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
-              <container type="box" label="mixed materials">8</container>
-              <container type="folder" label="mixed materials">12</container>
-              <unittitle>Greene, John Morton: "My Notes on Smith College" <unitdate>1883</unitdate>
-              </unittitle>
+               <unittitle>Series I. Biographical Materials</unittitle>
             </did>
-          </c03>
-        </c02>
-      </c01>
-    </dsc>
-  </archdesc>
+            <c02 id="aspace_277a55e03a5dde263d9bb09b1ffc782d" level="file">
+               <did>
+                  <unittitle>Addresses: Centennial of the Birth of Sophia Smith</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1853/1853">1853</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eac01620060b974b091dc39ee532972c"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_2b5f6fe0b21ebaa6573d7ea638e10d8a"
+                             parent="aspace_eac01620060b974b091dc39ee532972c"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8f4620f7a4aaedcb47882f528cedec3a" level="file">
+               <did>
+                  <unittitle>Biography and Genealogy</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1864/1997"
+                            type="inclusive">1864-1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_84695b60dd29c71f6dd2b199ae19f025"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_17f2439dbd1cb340922e3cb8277db745"
+                             parent="aspace_84695b60dd29c71f6dd2b199ae19f025"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ca9e53048a61c384f30b67a1d327346b" level="file">
+               <did>
+                  <unittitle>Household Servants</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1c2e59c30fa90f8706304858f5a99d2c"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_1de614283595ed28543618926b9196fe"
+                             parent="aspace_1c2e59c30fa90f8706304858f5a99d2c"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_46269c61492dd41a6d10a35c25c647c2" level="file">
+               <did>
+                  <unittitle>Obituaries, correspondence re: death of</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919</unitdate>
+                  <unitdate normal="1930/1930">1930</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_559a0bd3e7e37905903554a00ebb66e7"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_a7d5458ae0d0eda0e8c56eaa12b813cb"
+                             parent="aspace_559a0bd3e7e37905903554a00ebb66e7"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cb5f2add036edf96f1c43e3f15886cd8" level="file">
+               <did>
+                  <unittitle>Rogers Hall School</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1901/1919"
+                            type="inclusive">1901-1919</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1cf7f6adc711acf35a788466fcf12d16"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_9961ae33cde9160d026b0dc8d7af1426"
+                             parent="aspace_1cf7f6adc711acf35a788466fcf12d16"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1ce74ee72f0d00b43c0fd4247c78dec5" level="file">
+               <did>
+                  <unittitle>General: Watch- see artifacts</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7b2ad798890f3ae3a2ee944f1607399e"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_001d5069a991b6b05df13cb9b1d9bff3"
+                             parent="aspace_7b2ad798890f3ae3a2ee944f1607399e"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b88fb72a7975e0397773c1cb908b5801" level="file">
+               <did>
+                  <unittitle>Greene, Louisa</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2e636f82f6e68d8487587ac33f04ff1c"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_0eca1c49ee51e33fd662cc447d690772"
+                             parent="aspace_2e636f82f6e68d8487587ac33f04ff1c"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7454ae93992a122b4ade49d095394e7e" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1860/1860">1860</unitdate>
+                  <unitdate normal="1879/1879">1879</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_698eb6ed4af674b03660b1af979869bf"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_8cb4df2a986200b047891c29b4fa458a"
+                             parent="aspace_698eb6ed4af674b03660b1af979869bf"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_182969c223edd38084d9dac6648c52b9" level="file">
+               <did>
+                  <unittitle>Photographs: Portraits</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_32f48b634f0819e709c2636e1768a330"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_69b9033cef45d5032a904aed7a190c9e"
+                             parent="aspace_32f48b634f0819e709c2636e1768a330"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e9db8ae08767baf5a149ba8a6a922e55" level="file">
+               <did>
+                  <unittitle>Portrait: Clippings and Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1894/1938"
+                            type="inclusive">1894-1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d22b488e9ce7d79fbbfc6113007330ce"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_399f09d5673b63460eec2e100c2b05b2"
+                             parent="aspace_d22b488e9ce7d79fbbfc6113007330ce"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dc838f31915eaf28e736f51efe6107c8" level="file">
+               <did>
+                  <unittitle>Photograph: Emily Dickinson</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1855b4e5949f1b085759666ebb6e1f41"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_b50143030476258b48396306b0a0fd67"
+                             parent="aspace_1855b4e5949f1b085759666ebb6e1f41"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_70b4a12a18ea7d13004750bd2a653fc6" level="file">
+               <did>
+                  <unittitle>Professional Employment: Appleton St. Church, Lowell, MA</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1870/1870">1870</unitdate>
+                  <unitdate normal="1879/1879">1879</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_019b4453cc0762e1a35dbdc1f9b00bab"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_b9498f7a4d052bd9ad80c0a8090b2d8a"
+                             parent="aspace_019b4453cc0762e1a35dbdc1f9b00bab"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_334e0642510269174231cabb1d22c133" level="file">
+               <did>
+                  <unittitle>Professional Employment: Eliot Church, Lowell, MA</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1881/1948"
+                            type="inclusive">1881-1948</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dd3cf2a4e1a09d7518e497e69d3ae393"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_89fe19c8ef86435396399439d69b349a"
+                             parent="aspace_dd3cf2a4e1a09d7518e497e69d3ae393"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_530c12ae40870f927ee450eb7a0fc9af" level="file">
+               <did>
+                  <unittitle>Professional Employment: Eliot Church, Lowell, MA: Sermons</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1887/1909"
+                            type="inclusive">1887-1909</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b31dcee0710c4b5197fc179fbbd190b8"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_abd4cd7bd0bb0535ef745923597b84c2"
+                             parent="aspace_b31dcee0710c4b5197fc179fbbd190b8"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_55c04246b88ec7ed183d57b95c2af0dc" level="file">
+               <did>
+                  <unittitle>Professional Employment: Enfield, CT Church</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1866/1866">1866</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d092c06eff8ff069d9aa1c36b713845e"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_e76cd3c508bb978ca76bdac9d774efe2"
+                             parent="aspace_d092c06eff8ff069d9aa1c36b713845e"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ded3d1c61d578298b0da9cca230e93cf" level="file">
+               <did>
+                  <unittitle>Professional Employment: Hatfield: Congregational Church, Hatfield MA</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1857/1925"
+                            type="inclusive">1857-1925</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_66435cbfc4b08e984e609815cc951fa8"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_6d37ba6bcaebd1b99d59388c5c7fe806"
+                             parent="aspace_66435cbfc4b08e984e609815cc951fa8"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a2c352eae7fb90d4c9449d7f3a2bcefb" level="file">
+               <did>
+                  <unittitle>Professional Employment: South Hadley: First Church, South Hadley, MA</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1870/1870">1870</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3190dd97890e99f7c34d19f9dfadae29"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_f7987ac5f1af4baf25270111563f540b"
+                             parent="aspace_3190dd97890e99f7c34d19f9dfadae29"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7e37f43606c2b98854a83a9d214179f1" level="file">
+               <did>
+                  <unittitle>Smith Charities</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1875/1875">1875</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca7f3276dfbcb8e11f1e48a03bae60c5"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_e261bff8986c9c46f58470e7ea958fd9"
+                             parent="aspace_ca7f3276dfbcb8e11f1e48a03bae60c5"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_90daae88d423a7c08fdee19738ef1971" level="file">
+               <did>
+                  <unittitle>Sophia Smith: Excerpts from journals</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1860/1911"
+                            type="inclusive">1860-1911</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a21ddad8dad671651f1f548cb8d903f3"
+                             label="Mixed Materials [310183630025780]"
+                             type="box">17</container>
+                  <container id="aspace_b5c9365c9c89c3d70ae5a0f9a93c0228"
+                             parent="aspace_a21ddad8dad671651f1f548cb8d903f3"
+                             type="folder">19</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>Series II. Correspondence</unittitle>
+            </did>
+            <c02 id="aspace_b626a8a74c4cc01964aa8a7990cc04fa" level="file">
+               <did>
+                  <unittitle>Index</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_642f9c03102eb9d2adac8498b827ae39"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_7b6b6097d87f5dd11648a274af0a6bfb"
+                             parent="aspace_642f9c03102eb9d2adac8498b827ae39"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_413f74801acb111fc8dbc96eeed16485" level="file">
+               <did>
+                  <unittitle>from: Burton, Marion LeRoy</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1909/1918"
+                            type="inclusive">1909-1918</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ab6f1cab826dfc4b3ccee8161b709bde"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_bdb05593fc6f72f0de8fed607a19e944"
+                             parent="aspace_ab6f1cab826dfc4b3ccee8161b709bde"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b381239c8605fe136a3a06ad15603c3f" level="file">
+               <did>
+                  <unittitle>to Alcott, Mr.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1881/1881">1881</unitdate>
+                  <unitdate normal="1883/1883">1883</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_68ad7d33de735fb1f9fda6331f1ac102"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_fb88f6dda0f9452766004ddea9e6c11a"
+                             parent="aspace_68ad7d33de735fb1f9fda6331f1ac102"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4c4920eb77a19adeca9be35ad2a35bbc" level="file">
+               <did>
+                  <unittitle>from: Ames, Henrietta</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0f4f963464b709b66214fc2ba5a6896a"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_9d72bf3702cdc3105e8f1e339a709b6d"
+                             parent="aspace_0f4f963464b709b66214fc2ba5a6896a"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a6ca9f678531ffcae0f09787d7586ed7" level="file">
+               <did>
+                  <unittitle>to: Brown, Nina Eliza, '82</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a3c7a7e6b25027433020abe6c1a58eea"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_a9f7841d34e9cbeaf3ed6660a880a1c2"
+                             parent="aspace_a3c7a7e6b25027433020abe6c1a58eea"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2098d8c2af8a347f99b9f762160e05f9" level="file">
+               <did>
+                  <unittitle>to: Caverno, Julia Harwood, '87</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c8973108142985fbf9d26247fa099adf"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_5a194966d2947361fb9608d894ad2dcf"
+                             parent="aspace_c8973108142985fbf9d26247fa099adf"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_625d19d90ea82d8d1952b8843ae8ea7e" level="file">
+               <did>
+                  <unittitle>to: Clark, Elizabeth (Lawrence), '83</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_13310a4f69c0c464870e5f93a9a91941"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_142f937f7327cfbe9367560d3de0b39f"
+                             parent="aspace_13310a4f69c0c464870e5f93a9a91941"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f4aa75aae641a16a0553c680ec3563e5" level="file">
+               <did>
+                  <unittitle>to: Clark, Josephine Adelaide, '80</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <unitdate normal="1914/1914">1914</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_23c322e09d31cabc42d00be20b6699b1"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_b805cd1c75ec4840ae20799872cafec2"
+                             parent="aspace_23c322e09d31cabc42d00be20b6699b1"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_125c5c1c47464ebb1a0d4fee416f648e" level="file">
+               <did>
+                  <unittitle>to: Cone, Kate (Morris), '79</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f6671b8c56488687f5036545edde7658"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_948c8e8020462ebeaf7082c16bec39e8"
+                             parent="aspace_f6671b8c56488687f5036545edde7658"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_19eb7628ae85deaa2071c97e09460c7e" level="file">
+               <did>
+                  <unittitle>to: Dickinson, Mrs. (mother-in-law)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1886/1886">1886</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8d00a75b2338c7b1bc8402c5ce9f85dc"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_7eb00ce9195d9c4665ab2615d7811193"
+                             parent="aspace_8d00a75b2338c7b1bc8402c5ce9f85dc"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9b9ecd11782981cd59976e00b3b76dcd" level="file">
+               <did>
+                  <unittitle>to: Fuller, Grace P.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e726efc344f3409f19c9780edf9e3944"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_5b877291c0084dbf7577f54b6126f3c8"
+                             parent="aspace_e726efc344f3409f19c9780edf9e3944"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7daad6579a2645c68b03beb8b90a63c5" level="file">
+               <did>
+                  <unittitle>to: Greene, Helen F., '91</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1898/1905"
+                            type="inclusive">1898-1905</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2701764ae76045884f392fbec827cebc"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_e18d23c71ae10ba8a614f07f10f129d5"
+                             parent="aspace_2701764ae76045884f392fbec827cebc"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_031a07e185007ffeb0f5e46e37015915" level="file">
+               <did>
+                  <unittitle>from: Greene, Louisa Dickinson.(before marriage)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1856/1857"
+                            type="inclusive">1856-57</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0569b6c2bf9933312d380ad19df74f94"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_f0dd874fae6747b081f4f1f744bc248d"
+                             parent="aspace_0569b6c2bf9933312d380ad19df74f94"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a9141521ad2c54352d54c2cf6fd197e7" level="file">
+               <did>
+                  <unittitle>from: Greene, Louisa Dickinson to others</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1854/1881"
+                            type="inclusive">1854-81</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c48b4b63c4819b48fb39f65484636942"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_543f0bd06fd354c6744cce06af9fb62f"
+                             parent="aspace_c48b4b63c4819b48fb39f65484636942"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7261f4f85f29f7cd2cc41b2a24595a22" level="file">
+               <did>
+                  <unittitle>from: Greene, Louisa Dickinson to JMG</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1866/1875"
+                            type="inclusive">1866-75</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1157d55e0ea24ab47ec675d5dc4b3e93"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_29457b7821628a9ea3fda3ee05dfe9f3"
+                             parent="aspace_1157d55e0ea24ab47ec675d5dc4b3e93"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_328f26c0923b5d8401f5824bc0e978a0" level="file">
+               <did>
+                  <unittitle>to: Greene, Louisa Dickinson (wife)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863</unitdate>
+                  <unitdate normal="1864/1864">1864</unitdate>
+                  <unitdate normal="1878/1878">1878</unitdate>
+                  <unitdate normal="1880/1880">1880</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8334c0de32c41ecf0d6ebaa540897e56"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_17af5e961694f7429d779cbc1d61429c"
+                             parent="aspace_8334c0de32c41ecf0d6ebaa540897e56"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4e22a25d2c02f713b533ba47b23299dd" level="file">
+               <did>
+                  <unittitle>to: Greene, Louisa (daughter)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1864/1864">1864</unitdate>
+                  <unitdate normal="1895/1895">1895</unitdate>
+                  <unitdate normal="1899/1899">1899</unitdate>
+                  <unitdate normal="1902/1902">1902</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_de44a7f5bb5ba22d29eb2213d1da1bc0"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_a4dd87318200ed60fa6d68a70b173b90"
+                             parent="aspace_de44a7f5bb5ba22d29eb2213d1da1bc0"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_55fd4c986a5491405e49a3684cbcb5e6" level="file">
+               <did>
+                  <unittitle>from: Greene, Lulu (Louisa)</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_f9e15466ad9e3c66d88fc1254b7994ab"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_fb0b754c19a9e1941f72a049a94c6403"
+                             parent="aspace_f9e15466ad9e3c66d88fc1254b7994ab"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5ee3ded81011b21f14a573a3cb808271" level="file">
+               <did>
+                  <unittitle>to: Greene, William (brother)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1853/1853">1853</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7dd8059532604281e594704bff272c9a"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_6c2bb2150ddd29c07bc5943de9b6fd10"
+                             parent="aspace_7dd8059532604281e594704bff272c9a"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9ce926450bfda7a796b1b41a23d5bcdc" level="file">
+               <did>
+                  <unittitle>from: Greene, William S.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1872/1872">1872</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_61e0fabf5b9691e7c1da1f7e10f1d3ef"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_8aa842aab86fe09b1117783b2dd9aa98"
+                             parent="aspace_61e0fabf5b9691e7c1da1f7e10f1d3ef"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2cb8cf64af0adf172d034c0487c920c5" level="file">
+               <did>
+                  <unittitle>to: Hill, Edith Naomi, '03</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                  <unitdate normal="1916/1916">1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ec1ac340bcd53507718b52c1f9dd7bd0"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_9a212b7ce76fd6874621e4a4f11b72a0"
+                             parent="aspace_ec1ac340bcd53507718b52c1f9dd7bd0"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ac971403244b2cedf4fdb8324acfe829" level="file">
+               <did>
+                  <unittitle>to: Hubbard, George W.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1868/1879"
+                            type="inclusive">1868-1879</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93d3f92545f95c7a98d32913ca8452cb"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_6c454ea6741df2c6b0cba300ca4ee15f"
+                             parent="aspace_93d3f92545f95c7a98d32913ca8452cb"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_20048411db08719946f5dd233700b0cc" level="file">
+               <did>
+                  <unittitle>to: Jackson, Alice, '98</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a244c7a30329992f76825e23158568bf"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_eb586985cfc96f8cd01a2882f6b7d3d5"
+                             parent="aspace_a244c7a30329992f76825e23158568bf"
+                             type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1c2ad9759f9157240ed5a36e34ca661a" level="file">
+               <did>
+                  <unittitle>to: Jordan, Mary Augusta</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_480e22f95d5f0a100cc8f2824717e907"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_bfcd48531909606167d8657d14d34bd8"
+                             parent="aspace_480e22f95d5f0a100cc8f2824717e907"
+                             type="folder">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_adc3b81619766fe8ce9ae04ad5697311" level="file">
+               <did>
+                  <unittitle>to: Keyes, Bertha A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_48cf295e352dfbd3601f38abbea6c3d2"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_4b2561b9e8ef283ea6d9a69a048afe4d"
+                             parent="aspace_48cf295e352dfbd3601f38abbea6c3d2"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_29d16e428425aff3ea3dca7b2811cc80" level="file">
+               <did>
+                  <unittitle>to: Mardus, Mrs.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_47deb02e21bf72ea48636ef77fc86b4f"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_8c97a1dc7c914738ab4ee133dd17fc4b"
+                             parent="aspace_47deb02e21bf72ea48636ef77fc86b4f"
+                             type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5db3c0d198059c8dfa285e8c3fffbacd" level="file">
+               <did>
+                  <unittitle>from: Mason, John W.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1894/1894">1894</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cbf788ed299454959c70a6206518d41a"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_491fcb2d2a7078be4863bac545b6f17a"
+                             parent="aspace_cbf788ed299454959c70a6206518d41a"
+                             type="folder">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_814edb3634ed63857ae42c495d05404b" level="file">
+               <did>
+                  <unittitle>from: Northrop, B.G.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2f3bf4803d5107b9325ebaaab0c7100d"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_db57c37a947df21be22aae9ef4f0a45d"
+                             parent="aspace_2f3bf4803d5107b9325ebaaab0c7100d"
+                             type="folder">28</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1f9304327250ed1e8959f2c63514f0ea" level="file">
+               <did>
+                  <unittitle>from: Noyes, Lucia (Clapp), '81</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d1a1f03dbeba69d1f3b3b3251f54c2dd"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_30597514c5baf2fe1496bcaf5013c050"
+                             parent="aspace_d1a1f03dbeba69d1f3b3b3251f54c2dd"
+                             type="folder">29</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0a76d708b73082effe93e0613df87155" level="file">
+               <did>
+                  <unittitle>to: Park, Edward A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1979/1979">1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c15ddbc7f9774eed78490aed71335ff"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_c0883197378ee2d0a4d2ef161d836807"
+                             parent="aspace_6c15ddbc7f9774eed78490aed71335ff"
+                             type="folder">30</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0c14b38f4b55545204556d96af536f87" level="file">
+               <did>
+                  <unittitle>to: Parker, Mrs. Henry</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cc59d09ddae1714e23d9d80531fbdfef"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_a2d9f8d88b3bf94cf8df6d9d1033a1bc"
+                             parent="aspace_cc59d09ddae1714e23d9d80531fbdfef"
+                             type="folder">31</container>
+               </did>
+            </c02>
+            <c02 id="aspace_48b8044705030c7ae20f70ea81dc03dc" level="file">
+               <did>
+                  <unittitle>from: Scott, Mary Augusta</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3af2fceec0881f4826b440fa5aac79b5"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_8a240bbbe5f6c7f8f0762b0e1fea6e76"
+                             parent="aspace_3af2fceec0881f4826b440fa5aac79b5"
+                             type="folder">32</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2bee4f7998c85d13cae669dde46aeb58" level="file">
+               <did>
+                  <unittitle>from: Seelye, L. Clark</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1881/1918"
+                            type="inclusive">1881-1918</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_06977e22026cf44c1a4e622c8409e5bd"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_e16996b9724fada372c9e032e833bd67"
+                             parent="aspace_06977e22026cf44c1a4e622c8409e5bd"
+                             type="folder">33</container>
+               </did>
+            </c02>
+            <c02 id="aspace_71a34c8e5670ad900e99067f8d839034" level="file">
+               <did>
+                  <unittitle>to: Smith, Sophia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1869/1870"
+                            type="inclusive">1869-70</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_efd012ca20ec8f3b35211314de59e5c2"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_ddbd941fc1d951eadb551ff47db8a0a3"
+                             parent="aspace_efd012ca20ec8f3b35211314de59e5c2"
+                             type="folder">34</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5d09c66b7af11d27dca3001f34345148" level="file">
+               <did>
+                  <unittitle>to Tucker, Charlotte (Cheever)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1891/1892"
+                            type="inclusive">1891-92</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_425148a8f3798278883a7a7bc8af5e74"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_6737e42d3b494fffac2647bc78fe250b"
+                             parent="aspace_425148a8f3798278883a7a7bc8af5e74"
+                             type="folder">35</container>
+               </did>
+            </c02>
+            <c02 id="aspace_44b31d94647aec6ebe0767a63e523c57" level="file">
+               <did>
+                  <unittitle>to Tyler, William S.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1873/1873">1873</unitdate>
+                  <unitdate normal="1882/1884" type="inclusive">1882-84</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b9d612d528d93be0c2fe02cdf3765a63"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_0da5f51a473260a0aab9195ccfcc13aa"
+                             parent="aspace_b9d612d528d93be0c2fe02cdf3765a63"
+                             type="folder">36</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e13876772969866dbe9328b7b4afc0bb" level="file">
+               <did>
+                  <unittitle>from: Tyler, William S.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1875/1875">1875</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c93c78adbeb6be77e1834526bf17e4ec"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_72c09e4eed8fe203d30818babf2f22de"
+                             parent="aspace_c93c78adbeb6be77e1834526bf17e4ec"
+                             type="folder">37</container>
+               </did>
+            </c02>
+            <c02 id="aspace_74b5739a1992cdf8b66b04dfbcd735ab" level="file">
+               <did>
+                  <unittitle>from: Warner, Elisa A.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1882/1882">1882</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_15858ee88544ec3f395630dac7abdf34"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_928fd1a140ab907903427b2b6502933f"
+                             parent="aspace_15858ee88544ec3f395630dac7abdf34"
+                             type="folder">38</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9dd80eae8bfe3d4b723664c6836109bf" level="file">
+               <did>
+                  <unittitle>from: Wells, D. W.</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1893/1916"
+                            type="inclusive">1893-1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f30e538c2141ad7c37dc6106a76c5550"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_71d34dcbe78f8d551b29440ab8686906"
+                             parent="aspace_f30e538c2141ad7c37dc6106a76c5550"
+                             type="folder">39</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f3dbec2c0b3e4fddaa6498e0f99a0330" level="file">
+               <did>
+                  <unittitle>to: Whipple, Mrs. Shipman</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4dbf9d0523881977eb6728d310f54e3e"
+                             label="Mixed Materials [310183630025798]"
+                             type="box">18</container>
+                  <container id="aspace_1553e97f9c15b5f17910e9b7574981c3"
+                             parent="aspace_4dbf9d0523881977eb6728d310f54e3e"
+                             type="folder">40</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>Series III. Journals</unittitle>
+            </did>
+            <c02 id="aspace_cf87705cd0ee7b029be44c0e2c80f9db" level="file">
+               <did>
+                  <unittitle>Journals</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1883/1919"
+                            type="inclusive">1883-1919</unitdate>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_dd53ecdcad20047e87b361f6c5853209"
+                             label="Mixed Materials [310183630025806]"
+                             type="box">18.1</container>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_122d406e48f48a4ea76bd980e6e6a9e6"
+                             label="Mixed Materials [310183630025814]"
+                             type="box">18.2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_09004efc9eaa49165e109a57667fc6b7" level="file">
+               <did>
+                  <unittitle>Journal and scrapbook index</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c7cb76d0400390355150dc7403dbb1c5"
+                             label="Mixed Materials [310183630025848]"
+                             type="box">19</container>
+                  <container id="aspace_c529451109330c270094c8aaf2519e03"
+                             parent="aspace_c7cb76d0400390355150dc7403dbb1c5"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3d0b614f74d5e49b841e2ffc054bd571" level="file">
+               <did>
+                  <unittitle>Journal excerpts</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1861/1917"
+                            type="inclusive">1861-1917</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_861b65f05704b46988eaac53d00bfaf3"
+                             label="Mixed Materials [310183630025848]"
+                             type="box">19</container>
+                  <container id="aspace_65c9e57992ee8747d4862395a506b829"
+                             parent="aspace_861b65f05704b46988eaac53d00bfaf3"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3931bc1619ecb47adbde95ec9d931680" level="file">
+               <did>
+                  <unittitle>Journals</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1833/1919"
+                            type="inclusive">1833-1919</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_407c27fd4b6ac3e55ba50139f1223096"
+                             label="Mixed Materials [310183630025830]"
+                             type="box">20</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>Series IV. Publications</unittitle>
+            </did>
+            <c02 id="aspace_2dcb15c2a096d90841d0222b906e527d" level="file">
+               <did>
+                  <unittitle>Sketch of the Life and Character of Sophia Smith</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1875/1875">1875</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3cd539cc51db3016791c155c865d6058"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_80afbea583ee00fd517ff3da04a462a5"
+                             parent="aspace_3cd539cc51db3016791c155c865d6058"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3589fcd20a3c4c9613235d2fbfba1781" level="file">
+               <did>
+                  <unittitle>Early History of Smith College, Daily Hampshire Gazette</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1891/1893"
+                            type="inclusive">1891-93</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ffd761c16b5befdaa442a7294eb76c4"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_9bb90d5774b1a0d4f833a7ee22aba808"
+                             parent="aspace_9ffd761c16b5befdaa442a7294eb76c4"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fdd53ec60e59f003ec31c024f5556f41" level="file">
+               <did>
+                  <unittitle>Early History of Smith College, Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1881/1919"
+                            type="inclusive">1881-1919</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_25d6dda03f6ce9c9ec2d2b1e02a17052"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_43ad0ade34bb81ba652930fbde8de9ec"
+                             parent="aspace_25d6dda03f6ce9c9ec2d2b1e02a17052"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5731f6840ee883555b3e917409f36c26" level="file">
+               <did>
+                  <unittitle>Early History of Smith College, Typescript</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_67e529fedc5eb04712fe80ef85ac6516"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_07599817968d2d1ba8c7bc0c6ea1e046"
+                             parent="aspace_67e529fedc5eb04712fe80ef85ac6516"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_25178b5e3bf64b664eb8ee05597388f5" level="file">
+               <did>
+                  <unittitle>Happy Wedlock</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1900/1900">1900</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ebc5e32b66f109454bfe98a430497a7a"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_4f58dacbab564bb08678ce6c271792c2"
+                             parent="aspace_ebc5e32b66f109454bfe98a430497a7a"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_625ca5a13f12385e939bc35ef9c93631" level="file">
+               <did>
+                  <unittitle>Little Things for Little Folk, parts I-IV</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_63c72037be48889c833c5bfdd1757dc8"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_61747fca17fb907172ea3c87d879150d"
+                             parent="aspace_63c72037be48889c833c5bfdd1757dc8"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6838861bbeedaa2d3c768cafa96cc77e" level="file">
+               <did>
+                  <unittitle>Little Things for Little Folk, parts V-VII</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8019c3e96fab34eb83c82ba197610ec5"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_ae0b31634f84fa699b3cf866c70c5fca"
+                             parent="aspace_8019c3e96fab34eb83c82ba197610ec5"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b6ed41ae160528640965bafcdcdcf981" level="file">
+               <did>
+                  <unittitle>Looking on the Bright Side</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_235273ebdeaa0a9b8b701b5aeac13716"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_896596d3bb897a769f39b6accaff8554"
+                             parent="aspace_235273ebdeaa0a9b8b701b5aeac13716"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_359524f4403dbb1358153c61fa436fa9" level="file">
+               <did>
+                  <unittitle>Friendship</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1865/1865">1865</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eea60e0d175461e19bd9ff494534e2cf"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_9bd0766bc7b21bfae82ef409b4558681"
+                             parent="aspace_eea60e0d175461e19bd9ff494534e2cf"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c360c8645b5837f19529bed4895025eb" level="file">
+               <did>
+                  <unittitle>Semi-Centennial of the Eliot Church, Lowell, MA</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1881/1881">1881</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_53b3394d0c6b2467a7a4ae348d8367ca"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_457629e32a847c972ecc997b2dde6ba1"
+                             parent="aspace_53b3394d0c6b2467a7a4ae348d8367ca"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_249c3452e3c6d46c6ba695563532377e" level="file">
+               <did>
+                  <unittitle>Publications: General</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1897/1897">1897</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_34506703030475046e31585fb8f7a18c"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_949186136e944e2d588370e0b79a35a9"
+                             parent="aspace_34506703030475046e31585fb8f7a18c"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c8442579b26857bf3ef93ba8c1340598" level="file">
+               <did>
+                  <unittitle>Inside View of Smith College</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_de25703eb2657efa85ddea325200a5c2"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_bef753528e39fff49127ea68effa7d8a"
+                             parent="aspace_de25703eb2657efa85ddea325200a5c2"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b5aceb6bb38925d2a89de63154f5f579" level="file">
+               <did>
+                  <unittitle>Pub. Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_931aca869eed57aa2f3e5a037c23c558"
+                             label="Mixed Materials [310183630025822]"
+                             type="box">21</container>
+                  <container id="aspace_76f89e95508a62cfa6c6e8032795030a"
+                             parent="aspace_931aca869eed57aa2f3e5a037c23c558"
+                             type="folder">13</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser5" level="series">
+            <did>
+               <unittitle>Series V. Scrapbook</unittitle>
+            </did>
+            <c02 id="aspace_8b2b8cd7ae8727135133d3250e470e8d" level="file">
+               <did>
+                  <unittitle>Index</unittitle>
+                  <container altrender="Legal document box"
+                             id="aspace_7e45bf4b84253d8caa411ca33fa001d5"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_8ca87ea6d40434909a0d47de776d4bf8"
+                             parent="aspace_7e45bf4b84253d8caa411ca33fa001d5"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_81d1ecde0fcf103e344908b6003bf025" level="file">
+               <did>
+                  <unittitle>pages 1-10</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1872/1872">1872</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_29ef892de1cd279243b4e2bfc12783fa"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_988e4fbe4443870fe2884579328e919b"
+                             parent="aspace_29ef892de1cd279243b4e2bfc12783fa"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f02c27dfcda763472df9cae6d91dc78f" level="file">
+               <did>
+                  <unittitle>pages 11-20</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1872/1873"
+                            type="inclusive">1872-73</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_bcae147ceb1bec8a8ed2e0ab45a5172b"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_0b3ea8ba0350f26e01e568e5b4effa50"
+                             parent="aspace_bcae147ceb1bec8a8ed2e0ab45a5172b"
+                             type="folder">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_557e8c7aa06adaafdb2116a263ff81fc" level="file">
+               <did>
+                  <unittitle>pages 21-30</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1875/1877"
+                            type="inclusive">1875-77</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_96fdd5a2a11365eac68e49b4a461a6b4"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_e4a3bddd5e48129dfd85bd91c35243ba"
+                             parent="aspace_96fdd5a2a11365eac68e49b4a461a6b4"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_454087f39c07651e2c82afac4e0086fb" level="file">
+               <did>
+                  <unittitle>pages 31-40</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4ff439e8e33a0a663aef4af882ac8ab2"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_c3031b5588e6cc89b4f0b4eb7a4b1502"
+                             parent="aspace_4ff439e8e33a0a663aef4af882ac8ab2"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_695a2637a9e9a5c819e3182f3e383fd3" level="file">
+               <did>
+                  <unittitle>pages 41-50</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1873/1882"
+                            type="inclusive">1873-82</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_ae2c0592840fac5dad3e520aab164136"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_1154a272c51bcc39324fd5a57ec7f6e1"
+                             parent="aspace_ae2c0592840fac5dad3e520aab164136"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cdd89a222d5afe0eb10cd4533c2669c4" level="file">
+               <did>
+                  <unittitle>pages 51-60</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1894/1896"
+                            type="inclusive">1894-96</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_e36efc0bc5837122583fc3d31d16a036"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_8631e58fad6fb295e5269f67b4e47577"
+                             parent="aspace_e36efc0bc5837122583fc3d31d16a036"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0e5ba0d40f7e39b4547757b93357498c" level="file">
+               <did>
+                  <unittitle>pages 61-70</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1893/1913"
+                            type="inclusive">1893-1913</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_133a5e8c067c3cf0505f2ed4f0058f7f"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_8876ca6d51025b821c6fcfa34a0374a4"
+                             parent="aspace_133a5e8c067c3cf0505f2ed4f0058f7f"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fde2665b8b036591241c9be6102f6ca1" level="file">
+               <did>
+                  <unittitle>pages 71-80</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1896/1907"
+                            type="inclusive">1896-1907</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_110c22ec60e60eb033b00564674967f0"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_256e88a6e4bce05cdf620e19076cc1f2"
+                             parent="aspace_110c22ec60e60eb033b00564674967f0"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b1e04bc6177e3893490d33d408448116" level="file">
+               <did>
+                  <unittitle>pages 81-90</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1906/1916"
+                            type="inclusive">1906-1916</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9fdeee378dd80343b61dff559d19240f"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_b1b2e6887c5b8683ab63621568181c79"
+                             parent="aspace_9fdeee378dd80343b61dff559d19240f"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e6b00de3654179c3c8dbdded545f0f71" level="file">
+               <did>
+                  <unittitle>pages 91- end</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1866/1879"
+                            type="inclusive">1866-79</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_dfa4b9bbb532505e59f46451d5469757"
+                             label="Mixed Materials [310183630025855]"
+                             type="box">22</container>
+                  <container id="aspace_0bb59661ea668bca360c9844a7028f13"
+                             parent="aspace_dfa4b9bbb532505e59f46451d5469757"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c9232d2d2e76b7dc0bfcce0c9b4691c7" level="file">
+               <did>
+                  <unittitle>Books pertaining to Smith College- addresses by Seelye, Tyler, etc.</unittitle>
+               </did>
+               <c03 id="aspace_bab129d7b30e67d7c61d8a7b2270eda2" level="file">
+                  <did>
+                     <unittitle>Greene, John Morton: "My Notes on Smith College"</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1883/1883">1883</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_9434192f8c4e76262c59702eb1e2c6be"
+                                label="Mixed Materials [310183630025855]"
+                                type="box">22</container>
+                     <container id="aspace_12b094ee8f13b9f9657cda82a85eeb45"
+                                parent="aspace_9434192f8c4e76262c59702eb1e2c6be"
+                                type="folder">12</container>
+                  </did>
+               </c03>
+            </c02>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>

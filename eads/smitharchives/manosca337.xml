@@ -1,395 +1,594 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca337.xml//EN">manosca337</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca337</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Charlotte (Cheever) Tucker Papers,
-               1858-1979</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Abby Schlessinger.</author>
-
+            <titleproper>Finding aid to the Charlotte Cheever Tucker papers <num>CA.MS.00337</num>
+            </titleproper>
+            <author>Finding aid prepared by Abby Schlessinger.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-20">2013-11-20</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-26 09:16:17 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-21</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Tucker, Charlotte (Cheever),
-               1858-1944</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Charlotte (Cheever) Tucker
-            Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1858-1979</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 30 UUID:cb7d41f9-1467-4754-917e-5b25f820ef4d</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(0.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> President of the Alumnae Association
-            and member of the Board of Trustees. Contains biographical information, correspondence,
-            speeches, and photographs. </abstract>
+         <unittitle>Charlotte Cheever Tucker papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Tucker, Charlotte (Cheever), 1858-1944</persname>
+         </origination>
+         <unitid>CA.MS.00337</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1858/1979"
+                   type="inclusive">1858-1979</unitdate>
+         <abstract id="aspace_6bd01686fb8a6454fbcc0053dced0a79">President of the Alumnae Association and member of the Board of Trustees. Contains biographical information, correspondence, speeches, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Charlotte Barrell Cheever was born on March 10, 1858 in Jewett City, Connecticut to
-            parents Henry and Jane Tyler Cheever. She was a member of Smith College's Class of 1881
-            and later served as the President of the Alumnae Association (1883-1885) as well as on
-            the Board of Trustees (1885-1889). After her marriage to William Jewett Tucker in 1887,
-            she moved to Worcester, Massachusetts where she was an organizer of the Y.M.C.A. and her
-            husband was a professor in the Andover Theological Society until 1893, when he took over
-            the presidency of Dartmouth College. Mrs. Tucker took a great interest in music,
-            community and public affairs, as well as in her husband's literary work. She died in
-            Brookline, Massachusetts on April 5, 1944 after a long illness.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Charlotte Barrell Cheever was born on March 10, 1858 in Jewett City, Connecticut to parents Henry and Jane Tyler Cheever. She was a member of Smith College's Class of 1881 and later served as the President of the Alumnae Association (1883-1885) as well as on the Board of Trustees (1885-1889). After her marriage to William Jewett Tucker in 1887, she moved to Worcester, Massachusetts where she was an organizer of the Y.M.C.A. and her husband was a professor in the Andover Theological Society until 1893, when he took over the presidency of Dartmouth College. Mrs. Tucker took a great interest in music, community and public affairs, as well as in her husband's literary work. She died in Brookline, Massachusetts on April 5, 1944 after a long illness.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>Collection contains biographical information, as well as information pertaining to the
-            family's genealogy. Also included the collection are Tucker's journals, poetry, and
-            lecture notes. There is also extensive correspondence between Tucker and her friends and
-            family, as well as various photographs documenting her life.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>Collection contains biographical information, as well as information pertaining to the family's genealogy. Also included the collection are Tucker's journals, poetry, and lecture notes. There is also extensive correspondence between Tucker and her friends and family, as well as various photographs documenting her life.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Charlotte (Cheever) Tucker Papers, Box #, Smith College Archives. </p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Charlotte Cheever Tucker papers, Smith College Archives, CA-MS-00337, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Charlotte (Cheever) Tucker papers were donated to the Smith College Archives from a
-            number of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Charlotte Cheever Tucker papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_5381dbfd07447fc48135a2f5637aae2e" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
                <unittitle>
                   <title render="bold">Biographical Information</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_6283a0196b5467c1d3fb31c8120e1a00"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1ba7282d8dcfd718ea63e0f949f255f2" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biography <unitdate>1858-1917, undated</unitdate>
-               </unittitle>
+               <unittitle>Biography</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1858/1917"
+                         type="inclusive">1858-1917</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2b8a1fc7d790d08ad1d1825a714da20a"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_7cdb1e1d7f1caabca63793614caf5542"
+                          parent="aspace_2b8a1fc7d790d08ad1d1825a714da20a"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_756b008b57b3fc77aca7e338dd9189a8" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Genealogy <unitdate>1901-1931, undated</unitdate>
-               </unittitle>
+               <unittitle>Genealogy</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1901/1931"
+                         type="inclusive">1901-1931</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ce3c05ea6c30c88c6176b11c0ee2f308"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_8788175befb07031458252fb4a99bc22"
+                          parent="aspace_ce3c05ea6c30c88c6176b11c0ee2f308"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f5c7b4187feaf5f12fbfb6e30f0d8be8" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Journals <unitdate>1882-1903</unitdate>
-               </unittitle>
+               <unittitle>Journals</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1882/1903"
+                         type="inclusive">1882-1903</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9151d8f2702f155faf10988834fbd2e4"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_daf11da840e649e18b0c21362d1ff2a6"
+                          parent="aspace_9151d8f2702f155faf10988834fbd2e4"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_10bf8b35fa952e29660b9844093d40c0" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Lists and account book <unitdate>1878-1928, undated</unitdate>
-               </unittitle>
+               <unittitle>Lists and account book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1878/1928"
+                         type="inclusive">1878-1928</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_727271991e6d84f6ac30fb7f2a3b7b8e"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_75321c61f180ac27db9d6465d0c70df5"
+                          parent="aspace_727271991e6d84f6ac30fb7f2a3b7b8e"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6405583b292084c15b00964359219909" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Education <unitdate>1877-1979, undated</unitdate>
-               </unittitle>
+               <unittitle>Education</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1877/1979"
+                         type="inclusive">1877-1979</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f31432a6faecda4ad12ac27de8318fd3"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_9b8ae18e662bc9710d837751c3b4134d"
+                          parent="aspace_f31432a6faecda4ad12ac27de8318fd3"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2cf89a4f080701eb637d5a305d260f1d" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lecture notes-First Chapel <unitdate>1877</unitdate>
-               </unittitle>
+               <unittitle>Lecture notes-First Chapel</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1877/1877">1877</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3b31ba68e48aa39ffc7703a818b5b262"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_dd438f8ad8174293b62b9eee6800af26"
+                          parent="aspace_3b31ba68e48aa39ffc7703a818b5b262"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a1a5ecf91d87ed176521a5df6468ec3c" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lecture notes-Old Testament <unitdate>1878</unitdate>
-               </unittitle>
+               <unittitle>Lecture notes-Old Testament</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1878/1878">1878</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ea5f5fecd87fbfb8a41bd5f305326583"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_b62381cb744aee65b1ad5eafccbe7984"
+                          parent="aspace_ea5f5fecd87fbfb8a41bd5f305326583"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e1945ce4284fd0a2f6f6e8fa1019fbf1" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Photographs <unitdate>1867-1910, undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1867/1910"
+                         type="inclusive">1867-1910</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_45f757997424d2cfadfa354be32e0384"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_b08109f10c7afd97af274f5c9b40f21a"
+                          parent="aspace_45f757997424d2cfadfa354be32e0384"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cda304dd9a13c13af631f6e42a8772a9" level="file">
             <did>
-               <container type="box" label="mixed materials">277</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Poetry, speech, and report <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Poetry, speech, and report</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_300c196902ca27b9045ac1aa86e7fbad"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_5fcc72267b3801ba0dc89154750def91"
+                          parent="aspace_300c196902ca27b9045ac1aa86e7fbad"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_748d43baba874611699b57ab8c9770fe" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
+               <unittitle>Journal</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1879/1879">1879</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_27b91b243e343b13aef0183f25faac61"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_16db09da716ca0cbf455234880e23dfd"
+                          parent="aspace_27b91b243e343b13aef0183f25faac61"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2277d6efff08a328740d8de42e566c9b" level="file">
+            <did>
+               <unittitle>Journal</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1879/1880"
+                         type="inclusive">1879-1880</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e6b46c8cb1d65e156fe7a4995f4783c6"
+                          label="Mixed Materials [310183630024379]"
+                          type="box">277</container>
+               <container id="aspace_ed971c079c6db09e8f4892b963e00645"
+                          parent="aspace_e6b46c8cb1d65e156fe7a4995f4783c6"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d0cca3d435512c9df387e3fffb8fdef2" level="file">
+            <did>
                <unittitle>
                   <title render="bold">Correspondence</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_5526d57ff89f2effb807d58004fa2be6"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_93a3ec0e82271e7ca582bce7aa578ba7" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General <unitdate>1880-1927</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1880/1927"
+                         type="inclusive">1880-1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0a9dec2b4578754799d5390c23b28160"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_aba0a805452c2f34e439aa5c92a8e9b3"
+                          parent="aspace_0a9dec2b4578754799d5390c23b28160"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c79520e99c629ccfb5544796878066f3" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Burton, Marion Le Roy <unitdate>1910</unitdate>
-               </unittitle>
+               <unittitle>Burton, Marion Le Roy</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_200af103c8468695c03cdacaf42100a1"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_8c539c2412a4110d048ca5bc53a77848"
+                          parent="aspace_200af103c8468695c03cdacaf42100a1"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ae1590fd7f8b6d3683e0e6c904678c19" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Caverno, Julia Harwood <unitdate>1895</unitdate>
-               </unittitle>
+               <unittitle>Caverno, Julia Harwood</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6f7861d2b5c165e82958ab285c21ad70"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_d412d255f9ebc966fdaa2d115ec80485"
+                          parent="aspace_6f7861d2b5c165e82958ab285c21ad70"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_41ea738717c4a637b508e88e450d7817" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Cheever, Charlotte to family <unitdate>1878-1885</unitdate>
-               </unittitle>
+               <unittitle>Cheever, Charlotte to family</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1878/1885"
+                         type="inclusive">1878-1885</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4c9410efc2667644787cfa54e76b05fd"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_3164a2d56b6649085928d4607c595aea"
+                          parent="aspace_4c9410efc2667644787cfa54e76b05fd"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9324fd2d0b401c71fea3b483b7b5f328" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Cheever, Louisa Sewall <unitdate>1917-1924</unitdate>
-               </unittitle>
+               <unittitle>Cheever, Louisa Sewall</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1924"
+                         type="inclusive">1917-1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_134687d0ad71d6390c93fea979001109"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_a2925756887590527dcc2607245180dc"
+                          parent="aspace_134687d0ad71d6390c93fea979001109"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_08dfc562a724f9f58d69f8a239b5b1c4" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Frost, Mary Adeline <unitdate>1896</unitdate>
-               </unittitle>
+               <unittitle>Frost, Mary Adeline</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cea9b0459b4e6134e792780b07322ab9"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_2e5fa1fc683a7f98b9a8ac91f6b06a87"
+                          parent="aspace_cea9b0459b4e6134e792780b07322ab9"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_594d9ca65d299b464626e92abad3058a" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Harris, George <unitdate>1920</unitdate>
-               </unittitle>
+               <unittitle>Harris, George</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1920/1920">1920</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6df1bc2e04cad64027de44be49fc9101"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_ff2c2924661b78012e94dc16cbdd3118"
+                          parent="aspace_6df1bc2e04cad64027de44be49fc9101"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4c4aeb93837287aaffb6827c58860e67" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Howells, William Dean <unitdate>1923</unitdate>
-               </unittitle>
+               <unittitle>Howells, William Dean</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1923/1923">1923</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_28ed70ea26e74ccebdc2ef040e8711d8"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_86846d9f97ded247e032f48e7556eca5"
+                          parent="aspace_28ed70ea26e74ccebdc2ef040e8711d8"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_58d93f972ad6329b3c49d748b161402f" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Huntington, Eliza Prentiss <unitdate>1917-1931</unitdate>
-               </unittitle>
+               <unittitle>Huntington, Eliza Prentiss</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1931"
+                         type="inclusive">1917-1931</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9537f9b38f75d5900359f544496c03bc"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_d4c0695481b9e0c19f7356f07beb1915"
+                          parent="aspace_9537f9b38f75d5900359f544496c03bc"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1b5819d2492988391d0016701161e714" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Jordan, Mary Augusta <unitdate>1891</unitdate>
-               </unittitle>
+               <unittitle>Jordan, Mary Augusta</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a0708dfc77d83589d04a4e58c4098f32"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_18c419c83a934c3d38c66333dd756ab4"
+                          parent="aspace_a0708dfc77d83589d04a4e58c4098f32"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f9856be2cb848809ba655a8b6bbc9de6" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Kapp, Marie F. <unitdate>1893</unitdate>
-               </unittitle>
+               <unittitle>Kapp, Marie F.</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0e2678e4c2b915b9ebc8d87f88d3da29"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_7c6eb23e13031acb0044c7cf78fc5f25"
+                          parent="aspace_0e2678e4c2b915b9ebc8d87f88d3da29"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fe5ddf7f3acd0e71c9f443ea7c6c0d84" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Rockwood, Ellen (Cheever) <unitdate>1886-1927</unitdate>
-               </unittitle>
+               <unittitle>Rockwood, Ellen (Cheever)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1886/1927"
+                         type="inclusive">1886-1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_14baaf0dc836438284518e7f35860226"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_41ecc10f65b38afca937f929531e0b9b"
+                          parent="aspace_14baaf0dc836438284518e7f35860226"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bf4a9fb682fb7f3d3992f1cd7e3ac9c5" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Scudder, Vida Dutton <unitdate>1893</unitdate>
-               </unittitle>
+               <unittitle>Scudder, Vida Dutton</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_803fdb9ec71e3adc3a1f41045d1ec0ef"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_289d9384a8d286ffa91fe5d824e59983"
+                          parent="aspace_803fdb9ec71e3adc3a1f41045d1ec0ef"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4831332b4648150d92b624dabb876b35" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Seelye, Laurenus Clark <unitdate>1909</unitdate>
-               </unittitle>
+               <unittitle>Seelye, Laurenus Clark</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_77422ed95f9518c812341aeb1881c393"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_f258c1dd1e23529beaf0748a1cd064df"
+                          parent="aspace_77422ed95f9518c812341aeb1881c393"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_54fe5b7deeeeffa29443acc87df43403" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Tucker, Charlotte to Tucker, William Jewett <unitdate>1901-1926</unitdate>
-               </unittitle>
+               <unittitle>Tucker, Charlotte to Tucker, William Jewett</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1901/1926"
+                         type="inclusive">1901-1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f89dda86bcdb32e038d6be024aedc259"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_e35e57b0ef6a190f8e967fb592ec3720"
+                          parent="aspace_f89dda86bcdb32e038d6be024aedc259"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7e523c5c0d876bcad8294d953803d381" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Tucker, William Jewett <unitdate>1886-Feb. 1887</unitdate>
-               </unittitle>
+               <unittitle>Tucker, William Jewett</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1886-01/1887-02"
+                         type="inclusive">1886-Feb. 1887</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c130523075bd71875d9a1bed3499bb9a"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_b06b815968d7cbddec0ec58793284cb4"
+                          parent="aspace_c130523075bd71875d9a1bed3499bb9a"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3fc3901a44caa9fa1b40321f1d2ab18f" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Tucker, William Jewett <unitdate>March-April 1887</unitdate>
-               </unittitle>
+               <unittitle>Tucker, William Jewett</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1887-03/1887-04"
+                         type="inclusive">March-April 1887</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2f1799f271565e30381246e2da6cb606"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_e443d7c76de4990a44952f016e89772c"
+                          parent="aspace_2f1799f271565e30381246e2da6cb606"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_42045e6b04246909016bab3df46c2ad9" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Tucker, William Jewett <unitdate>May-June 1887</unitdate>
-               </unittitle>
+               <unittitle>Tucker, William Jewett</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1887-05/1887-06"
+                         type="inclusive">May-June 1887</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_eeaf7c3ced0f99a9bd9a76636aa18194"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_ae0f162c6e3c57a3b188a31a374303d0"
+                          parent="aspace_eeaf7c3ced0f99a9bd9a76636aa18194"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_30cd24a1da0a4b0dd199c94116d54f4e" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Tucker, William Jewett <unitdate>1901-</unitdate>
-               </unittitle>
+               <unittitle>Tucker, William Jewett</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901-</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d55b4f3c3ee040b1a0071dbe2b28296b"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_79d3d2fa09ea4220e0e5d86ea685f07e"
+                          parent="aspace_d55b4f3c3ee040b1a0071dbe2b28296b"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e4a205ada500aa77edb9366d6cb87e2f" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Wheeler, Elizabeth (Cheever) <unitdate>1917-1925</unitdate>
-               </unittitle>
+               <unittitle>Wheeler, Elizabeth (Cheever)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1925"
+                         type="inclusive">1917-1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_570c9ed97bd96e85871403b2f670fa5e"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_01f6d286ab8a922fd73783339112d2bd"
+                          parent="aspace_570c9ed97bd96e85871403b2f670fa5e"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_36371832846d326f56c90a7a351ca388" level="file">
             <did>
-               <container type="box" label="mixed materials">278</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Woods, Robert Archey <unitdate>1925</unitdate>
-               </unittitle>
+               <unittitle>Woods, Robert Archey</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1925/1925">1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f497a9af4c9fff55fdd52100d0d33f13"
+                          label="Mixed Materials [310183630024387]"
+                          type="box">278</container>
+               <container id="aspace_8a981741ca370c2e8398cc7d439711b9"
+                          parent="aspace_f497a9af4c9fff55fdd52100d0d33f13"
+                          type="folder">21</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
