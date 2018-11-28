@@ -1,595 +1,786 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-    <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-        langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-        scriptencoding="iso15924">
-
-        <eadid countrycode="us" mainagencycode="manosca"
-            publicid="-//us::manosca//TEXT us::manosca::manosca21.xml//EN">manosca21</eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper>Mountain Day and Picnics Files, 1882- </titleproper>
-                <subtitle>Finding Aid</subtitle>
-                <author>Finding aid prepared by Abby Schlessinger.</author>
-                <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-            </titlestmt>
-            <publicationstmt>
-                <publisher>Smith College Archives</publisher>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-                <date>© 2003 </date>
-                <p>Smith College. All rights reserved.</p>
-            </publicationstmt>
-        </filedesc>
-        <profiledesc>
-            <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by
-                Brook Hopkins. <date>2003-06-03</date>
-            </creation>
-            <langusage>Finding aid written in English.</langusage>
-        </profiledesc>
-        <revisiondesc>
-            <change>
-                <date normal="2005-09-23">2005-09-23</date>
-                <item>manosca21 converted from EAD 1.0 to 2002 by v1to02-5c.xsl
-                    (sy2003-10-15).</item>
-            </change>
-        </revisiondesc>
-    </eadheader>
-    <frontmatter id="front">
-        <titlepage>
-            <publisher>Smith College Archives</publisher>
-            <titleproper>Mountain Day and Picnics Files, 1882-</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <num>RG 80</num>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca21</eadid>
+      <filedesc>
+         <titlestmt>
+            <titleproper>Finding aid to Mountain Day and Picnics Files <num>CA.MS.00021</num>
+            </titleproper>
             <author>Abby Schlessinger</author>
-            <date>2001</date>
-            <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-                Foundation.</sponsor>
-            <p>© 2003 Smith College. All rights reserved.</p>
-        </titlepage>
-    </frontmatter>
-    <archdesc level="recordgrp" relatedencoding="MARC21">
-        <did id="main">
-            <head>Collection Overview</head>
-            <origination label="Creator:">
-                <corpname encodinganalog="100" source="lcnaf">Smith College.</corpname>
-            </origination>
-            <unittitle encodinganalog="245$a" label="Title:">Mountain Day and Picnics
-                Files</unittitle>
-            <unitdate encodinganalog="245$f" type="inclusive">1882-[ongoing]</unitdate>
-            <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-                repositorycode="manosca">RG 80 UUID:085e5981-f362-4c83-9c0f-37e765aa669b</unitid>
-            <physdesc label="Quantity:">
-                <extent encodinganalog="300$a">2 boxes</extent>
-                <extent encodinganalog="300$a">(7.5 linear ft.)</extent>
-            </physdesc>
-            <repository label="Location:">
-                <corpname>Smith College Archives</corpname>
-                <address>
-                    <addressline>Northampton, MA</addressline>
-                </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:">Smith College tradition. Contains
-                photographs, clippings, and memorabilia. </abstract>
-            <langmaterial label="Language of Material:">
-                <language langcode="eng">English.</language>
-            </langmaterial>
-        </did>
-        <bioghist id="bioghist">
-
-            <p>Mountain Day has remained a unique and much-anticipated holiday at Smith College
-                since it was first celebrated in October 1877. According to an article written in
-                The Sophian in 1970, "On this occasion, the date of which is unknown to all except
-                [the college president], bells ring to announce a surprise holiday on which all
-                academic appointments are cancelled." Students are encouraged to use this day to
-                take long walks or bike rides and to enjoy a beautiful fall day free from the stress
-                of everyday life. </p>
-        </bioghist>
-        <scopecontent id="scope">
-
-            <p>The majority of the material is composed of photographs and newspaper clippings
-                documenting Smith's celebration of Mountain Day from 1882 to the present. All of the
-                materials are arranged chronologically, while undated and miscellaneous materials
-                are located at the back of each document box. </p>
-        </scopecontent>
-        <arrangement id="scope-arr">
-
-            <p>The material is arranged chronologically. </p>
-        </arrangement>
-        <descgrp id="admin" type="admininfo">
-            <head>Information on Use</head>
-            <descgrp type="admininfo">
-                <head>Terms of Access and Use</head>
-                <accessrestrict encodinganalog="506" id="admin-access">
-                    <p>All of the files are open to the public according to the regulations of the
-                        Smith College Archives. </p>
-                </accessrestrict>
-                <userestrict encodinganalog="540" id="admin-use">
-                    <p>Single photocopies may be made for research purposes. In order to publish any
-                        material contained in the records of Mountain Day and Picnics, permission
-                        must be obtained from the Smith College Archives. </p>
-                </userestrict>
-            </descgrp>
-            <prefercite id="admin-cite">
-                <head>Preferred Citation</head>
-                <p>Please use the following format when citing materials from this collection:</p>
-                <p>Mountain Day and Picnics Files, Box #, Smith College Archives.</p>
-            </prefercite>
-            <accruals encodinganalog="584" id="admin-accruals">
-                <head>Additions to the Collection</head>
-                <p>Additions to these records arrive in the College Archives on a regular basis.
-                    Please contact the College Archives for the most up-to-date information. </p>
-            </accruals>
-            <descgrp type="admininfo">
-                <head>History of the Collection</head>
-                <processinfo id="admin-process">
-                    <p>Processed by Abby Schlessinger.</p>
-                </processinfo>
-            </descgrp>
-        </descgrp>
-        <controlaccess id="subj">
-            <head>Search Terms</head>
-
-            <corpname encodinganalog="610" source="lcsh">Smith College--Mountain Day.</corpname>
-            <corpname encodinganalog="710" source="lcnaf">Smith College.</corpname>
-        </controlaccess>
-        <dsc id="list-contlist" type="in-depth">
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos, Programs <unitdate>1882</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Program <unitdate>1883</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1884</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Programs <unitdate>1886</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1887</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1891</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1892</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1893</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1894</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1895</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos, Clippings <unitdate>1896</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1897</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1898</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos, Memorabilia <unitdate>1899</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1900</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1901</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1902</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1903</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1904</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1905</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos, Clippings <unitdate>1905</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1906</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1907</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1908</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1909</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1910</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1911</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1912</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1913</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1914</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1915</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1916</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings, Photos <unitdate>1917</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Notes, Photos <unitdate>1918</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1923</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1925</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1927</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1928</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1930</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings, Photos <unitdate>1931</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1932</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Notes, Photos <unitdate>1933</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1934</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings, Photos <unitdate>1936</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clipping, Photos <unitdate>1937</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1938</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings, Photos <unitdate>1940</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings, Photos <unitdate>1941</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1942</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1943</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1944</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1945</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1946</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Photos <unitdate>1947</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Clippings <unitdate>1948</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083</container>
-                    <unittitle>Misc. Clippings <unitdate>1982-1949</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Photos <unitdate>1950</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Photos <unitdate>1951</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Photos <unitdate>1952-1953</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Photos <unitdate>1954</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Clippings, Photos <unitdate>1955-1960</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Clippings, Photos <unitdate>1960-1979</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Clippings, Photos <unitdate>1980 -</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Clippings, Photos <unitdate>undated</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-            <c01 level="file">
-                <did>
-                    <container type="box" label="mixed materials">3083.1</container>
-                    <unittitle>Misc. Clippings <unitdate>1950 -</unitdate>
-                    </unittitle>
-                </did>
-            </c01>
-        </dsc>
-    </archdesc>
+            <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
+         </titlestmt>
+         <publicationstmt>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
+            <address>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
+            </address>
+         </publicationstmt>
+      </filedesc>
+      <profiledesc>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-28 10:32:42 -0500</date>.</creation>
+         <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
+      </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
+            <item>manosca21 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-20</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
+   </eadheader>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
+         </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Mountain Day and Picnics Files</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College.</corpname>
+         </origination>
+         <unitid>CA.MS.00021</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1882/2008"
+                   type="inclusive">1882-2008</unitdate>
+         <abstract id="aspace_339e38e0e62a4c72c7c68e28d5376b0b">Smith College tradition. Contains photographs, clippings, and memorabilia.</abstract>
+      </did>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_8b3d7110788071c95cb5da545c35d07e">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
+      </acqinfo>
+      <arrangement id="aspace_scope-arr">
+         <head>Arrangement</head>
+         <p>All of the materials are arranged chronologically, while undated and miscellaneous materials are located at the back of each document box.</p>  
+      </arrangement>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Mountain Day has remained a unique and much-anticipated holiday at Smith College since it was first celebrated in October 1877. According to an article written in The Sophian in 1970, "On this occasion, the date of which is unknown to all except [the college president], bells ring to announce a surprise holiday on which all academic appointments are cancelled." Students are encouraged to use this day to take long walks or bike rides and to enjoy a beautiful fall day free from the stress of everyday life.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>Mountain Day and Picnics Files, Smith College Archives, CA-MS-00021, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Abby Schlessinger.</p>  
+      </processinfo>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The majority of the material is composed of photographs and newspaper clippings documenting Smith's celebration of Mountain Day from 1882 to the present.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Mountain Day.</corpname>
+         <corpname encodinganalog="610" source="naf">Smith College.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_c55b496188ec1b7faf97362b06f4d5fb" level="file">
+            <did>
+               <unittitle>Photos, Programs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1882/1882">1882</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d9801735896d9823bc6d59363a3933f8"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_15b74824cc231cc9527f5ea04684a28a" level="file">
+            <did>
+               <unittitle>Program</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1883/1883">1883</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9d4c4836173dd377400efc5aeb615b12"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_aa950a03f9e1e3bae68298eedd202036" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1884/1884">1884</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5560423d02c5b21419589745289a29fe"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d9ed10b2ba8eb1871a0407f071223608" level="file">
+            <did>
+               <unittitle>Programs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1886/1886">1886</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bdd5e6da93c3177404b06e4c2820ef90"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_26823469102ee1aeaf5e5f356908f318" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1887/1887">1887</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_378ae9cf9dde45a23089c2bd7f3c546d"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a8ed4d57977d4fc11fed94f1e9368d4b" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5b654e67d4e38e88efce0b00f781ba89"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4ca24b3191da8face076570a7fb6bbf8" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1892/1892">1892</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_49ea5b8ec47b9c6f03d00bdd9400da42"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_aa9f121e4791018f1d3280b08081a5f5" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1893/1893">1893</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d3709963f17ba5f89c79114eb16062ff"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a500a74bc9edb1fae65947d65b17c014" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1894/1894">1894</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_175c97904e336d0cac83698c72da7a6d"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_317494fc956121c207159804f3a4b54a" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3dac4ba3ca8c77dbd9b80daa90b3edd2"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_705ab42537846766a1878c60e8efad9d" level="file">
+            <did>
+               <unittitle>Photos, Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c65a458b670d52ce0518f8e4e71c27fe"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_421d2f18533e261e0de1d417cd9e3cdb" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1897/1897">1897</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e86cabf1c0ac165e45f2074654adc30"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_923e1903c30f754fbb2b2aed7a05f266" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1898/1898">1898</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_76ee52cf54c54263b8195f6bb6b52361"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a02324f041b2c49da465051ac912a439" level="file">
+            <did>
+               <unittitle>Photos, Memorabilia</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1899/1899">1899</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_816d481f6a0e27225ef41e18d38576b4"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bc71261f64d558130e1ee76e42437b19" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1900/1900">1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fe2a83b531888abdeb370c12ba2886a0"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c4ce232140f3db298c0f45855cc25ce7" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_01eb0039f7cdf47b57d0e82109ebd242"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d94b5752c0b86fa08b09c5b2f573b722" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ec0049c5ede2a8cee754136cdfca1582"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fff88bf6634970d49ac962cdbdc58454" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8fbb81f87efa85fbc1614af759e55f3c"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a3281847d7d63cd11ad3b65730a49733" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8ae8024d4613e728e3f042392a4c8a97"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6bb0daaeadb9d44aef0d0ac3e6019785" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1905/1905">1905</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0ffa85905fe3f1d7b212cec767b53fbb"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2db1c80836a062def064e90f6093957d" level="file">
+            <did>
+               <unittitle>Photos, Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1905/1905">1905</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a2be09e820db358d93aeff51822e712e"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_407dacd16f1af3cc0c72ceb31f33b324" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bc29c634fc36d1bf8aa6edfa1c333219"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b50aa8c5d0d00515af35bde9e1485c62" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_eb150ce55d5d03813fc4f7ebba30e782"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7f9e87eb2385876d5f1d7892fb4b70ad" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a390143b01e515c2743e62dc91654135"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_84525de03e4be9a0209086258280ac04" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5d7f01d3038e2ca8cbea2d806670c423"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_26d79a67bd2015eeae7fa351af5e2ebc" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4d963fea8dcbaf4e4658ba9ab15ca776"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d51c8784cea7baea8932b97427017009" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8b2ca647d2b90e1752342d926ff99c86"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_087e0d1aaa4d68b8947101794b8f6453" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1912/1912">1912</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2ef7b90dafe781a337bff4853a386e25"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0081f4e9437d013ad425b0a8ecb3c6e5" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a95b780c467374ab97912f581572b51a"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6830ac87ec703e5c988502f03c46d108" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_46df33826139d48778c36dfae216b29e"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ab8f2c39ec1116b8f6490d2417042f72" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c348c66157d4909e7bb150d5b74fbf4e"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_32c7f7a6eba2e48d4e4443f33681e44d" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5a5e5e171347ba0aff4a90f0016e6ca5"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bdaf0549346b82408d6cfd4f31c7d5a9" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_57f8c36f7dac2f03ed7243884c4a17e4"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a84a3a2434dffe1ff7f1e4b64c7dc064" level="file">
+            <did>
+               <unittitle>Notes, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1918/1918">1918</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_34e4819c9cce98c166c8057c86c018da"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cf5b90c4aca2665afca5d50ee2fd8c9d" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1923/1923">1923</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_747daabc945fce714aaaa6c18866830f"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_29a6cdb93f6764d80cc4471f411923df" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1925/1925">1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dffc50830dd008d34f2aeda921e4c4c5"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fd058da5af6d1fff754f604d419e5ae2" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_57e34b6f2a8d2aad2c5da2614a659506"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_44a3e6458d080378f569ba9b5f2306fe" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1928/1928">1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_fe624285370fd9ee6705508d72ef7967"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f8ec94050812eb42b512cdcd66ddeb96" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1bb665e21506aa5f5c9e493c80c3106d"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_920aaa0123d9252e25a0759a353efd7d" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_725e00ce95fcaf1318b1f8b46f581634"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c1d4e522624496375a669cb52aeb0557" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e6ca55f984a600d504446060794de466"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0a56987e0f9cba41876eadc50296f613" level="file">
+            <did>
+               <unittitle>Notes, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d2922807bab2d5b5cd3c5347a65e32a0"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a81a51b0b1e55b7ce35787cc29760e2f" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_55cdf18a7c7efcd12f629f44f023614b"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e71d380a68833257e4e45a6304d4b778" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_81f80ed1a0f58381ccbf314f8702313e"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8e2ac792d353f5f61ad01dbfab2c9c30" level="file">
+            <did>
+               <unittitle>Clipping, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_73dd6988e63b8cf20f638c008e68a2c2"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_040172f9ee3b9ff50218d6bd94d2fc76" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_79940629e117a06f175dec21ada96e5c"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7300a9799c5cbfe79f067701ca678d22" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a5d8591ba6bbb0415f35361c3e1c5e43"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_943f6df87874cec65251cc3c2b71f405" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e5aea6213075a6b7839cfe2a058c89a"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_303709fb2a4e1b35e79b30aa37e117ea" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_34f09e1b0ff46443321f1a302d1e1f96"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_89ca3368355f0b9dc70ef23d630cb686" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_67c0e9d62b5fbefdc18ef9a8baf0a196"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cba460cc734ecbe226ec11867d814243" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_1e81ba25bf47aca9b95670549662eecd"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e0bd2ecc02e516f459dcaf8950c52df9" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f318b4d74dc93f8aa717bbc6c11cc548"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8ec0e71adba43d06c2fb16d2992b7cc2" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a4e72300f32283e4af8a4f2b6368bb28"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_19b390b2a83bb2a635b11d054784e137" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_56489cc557b12620e648c2f0d296725d"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_58c306fe956c5ae358f404b91dded2d8" level="file">
+            <did>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_28e57fd4481cd23bd657f5769e6df57c"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_60470a21f53a03f9d54aefbe99b71a51" level="file">
+            <did>
+               <unittitle>Misc. Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce">1882-1949</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4027e190780b367d2325f38478b9f1d5"
+                          label="Mixed Materials [310183630239548]"
+                          type="box">3083</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ed6f518dca813b79875f6e9f3eb98e6c" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_380ec626140694d772c5c3a3fdd5ed1c"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_54a89bb0a86f98fd289ae6ae81ff0eb8" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e28d4456c62010adb811dea2e673615e"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_db3b5db35ea28e69333bf53e36b3ae94" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1953"
+                         type="inclusive">1952-1953</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_0d6c8476b59e0d4cf71bf0a45671dd59"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_183feab8c308e698e4c341be60713987" level="file">
+            <did>
+               <unittitle>Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_a5dc392df632edd229f559ad1ce541b6"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a2fa997badf9f1f6ebe60a4de6c8bfe8" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1960"
+                         type="inclusive">1955-1960</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_ef83201f58754a431b7e7abfba47d70a"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_799d979812b400a8ec1d0e07008682c0" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1979"
+                         type="inclusive">1960-1979</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_f3559a412d399c9f2f2c854304e07779"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_49ab3c1b43bb9034388b50b83ca5767f" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1980/1980">1980 -</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_405ae22bbfd46dac9da4961404ba7637"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5a82e79373c4e264cbb20e0902848cd9" level="file">
+            <did>
+               <unittitle>Clippings, Photos</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_cfb2d4e663c42be5a548662c3a60ce3b"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ab9686564edbafe1f59ced1f6dc2098d" level="file">
+            <did>
+               <unittitle>Misc. Clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950 -</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_617ea6274676f7d6ae35d891cdb14104"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fab375ec2356e19283580be20b4d1ec1" level="file">
+            <did>
+               <unittitle>Announcements</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2008/2008">2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_6c4e35bfeef1f496fc354e15d67eadde"
+                          label="Mixed Materials [310183630239555]"
+                          type="box">3083.1</container>
+            </did>
+         </c01>
+      </dsc>
+   </archdesc>
 </ead>
