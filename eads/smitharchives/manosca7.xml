@@ -1,961 +1,1329 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca7.xml//EN">manosca7</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca7</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper>WAVES (Women Accepted for Voluntary Emergency Services Unit) Files,
-               1942-1996 (bulk 1942-1945) </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author>Finding aid prepared by Mariah Leavitt and Kate Baker.</author>
+            <titleproper>Finding aid to WAVES (Women Accepted for Voluntary Emergency Services Unit) files <num>CA.MS.00007</num>
+            </titleproper>
+            <author>Mariah Leavitt and Kate Baker; Ellice Amanna</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
             <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date>© 2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook
-            Hopkins. <date>2003-06-03</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-27 10:43:32 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>manosca7 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-11-26</date>
+            <item>Finding aid updated with new box numbers, barcodes, locations</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher>Smith College Archives </publisher>
-         <titleproper>WAVES (Women Accepted for Voluntary Emergency Services Unit) Files, 1942-1996
-            (bulk 1942-1945) </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>RG 12 </num>
-         <author>Mariah Leavitt and Kate Baker </author>
-         <date>1999 </date>
-
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-            Foundation.</sponsor>
-         <p>© 2003 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="recordgrp" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="100" source="lcnaf">United States. Naval Reserve. Women's
-               Reserve.</corpname>
-         </origination>
-
-         <unittitle encodinganalog="245$a" label="Title:">WAVES (Women Accepted for Voluntary
-            Emergency Services Unit) Files</unittitle>
-         <unitdate encodinganalog="245$f" type="inclusive">1942-1996</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1942-1945</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 12 UUID:fc7aa0ec-d0b8-407f-8404-f538009de689</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">8 boxes</extent>
-            <extent encodinganalog="300$a">(3.5 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-            </address>
-         </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Smith College unit of of the women's
-            Naval Reserve. Contains books, broadcasts, correspondence, printed materials, press
-            releases, newspaper clippings, memoranda, notes, and photographs. </abstract>
-         <langmaterial label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>WAVES files</unittitle>
+         <origination label="creator">
+            <corpname source="naf">United States. Naval Reserve. Women's Reserve.</corpname>
+         </origination>
+         <unitid>CA.MS.00007</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.5 linear feet</extent>
+            <extent altrender="carrier">(10 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1939/1996"
+                   type="inclusive">1939-1996</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1942/1945" type="bulk">1942-1945</unitdate>
+         <abstract id="aspace_ac7e101704ea15ceb44c7bc2cc554e8e">Records of the WAVES, Smith College's unit of of the women's Naval Reserve. These files contain books, broadcasts, correspondence, printed materials, press releases, newspaper clippings, memoranda, notes and photographs.</abstract>
       </did>
-      <bioghist id="bioghist">
-
-         <p>The United States entered WWII in 1941 and soon faced a serious shortage of manpower in
-            the military. Congress, along with public interest and advocacy from various National
-            organizations, forced the Department of the Navy (over considerable internal resistance)
-            to start accepting women into their service to augment the many thousands of men already
-            active in the war effort. On June 24, 1942, Congress passed an act to create a women's
-            reserve as a branch of the Naval reserve; to be governed by the same rules and
-            privileges and limited in that women could only work non-combat duty in the continental
-            U.S. The idea was to free trained Naval men from desk jobs in order to increase the
-            active fighting force--thus the rallying theme, "Free a man to fight." The new women's
-            Naval Reserve units were called the WAVES (Women Accepted for Voluntary Emergency
-            Services) and, with its sister Coast Guard Reserve the SPARS, proceeded to immediately
-            set up training schools at many colleges and universities across the country. Basic
-            training sites were located in Oklahoma (Oklahoma Agricultural and Mechanical College at
-            Stillwater), Iowa (Iowa State Teacher's College at Cedar Falls), Wisconsin (University
-            of Wisconsin at Madison), Indiana (University of Indiana at Bloomington), and New York
-            state (Hunter College in New York City). Officer training sites were established in
-            Massachusetts at Mt. Holyoke College in South Hadley, and at Smith College in
-            Northampton.</p>
-         <p>The creation of the WAVES represented a fundamental change that was occurring in
-            American society as the war effort increased. Women were moving from the home into the
-            work force and gaining increasing independence. In WWI, 11,275 women served in the Navy,
-            mainly in secretarial and office positions, but they were not recognized nor was their
-            service publicized, and no formal program existed for their training. In 1942, for the
-            first time women were in uniform, earning the same pay, doing the same work, following
-            the same rules, and receiving the same respect as Navy men. The publicity surrounding
-            the WAVES focused on their independence, intelligence and equality with their male
-            counterparts. However, the naval officers took care to remind everyone of their gender
-            when designing their uniforms. Pants were vetoed in favor of skirts, fitted jackets, and
-            stack heeled shoes that served to emphasize the femininity of the recruits. Women came
-            to the WAVES from all sections of society, bringing a wide variety of skills and
-            experience. Originally, black women were banned from the WAVES, creating a great deal of
-            friction at some of the training schools. The President lifted the ban in 1944 and later
-            that year the first black female officers graduated from the Smith College training
-            school.</p>
-         <p>By the end of the war over 83,000 women were serving in the Navy, a number significantly
-            over the original estimate of 11,000. They filled positions such as parachute riggers,
-            pharmacist's mates, instrument flying trainers, store keepers, radio dispatchers,
-            clerks, mechanics, lab technicians, mail carriers, decoders, and navigators. Most of the
-            officers were restricted to the rank of lieutenant with the notable exception of Captain
-            Mildred McAfee (the president of Wellesley College) who was the director the WAVES. Soon
-            after peace was declared in 1945, the WAVES and SPARS programs were dismantled and the
-            women who had been in the Navy returned to their homes or civilian jobs.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The United States entered WWII in 1941 and soon faced a serious shortage of manpower in the military. Congress, along with public interest and advocacy from various national organizations, forced the Department of the Navy (over considerable internal resistance) to start accepting women into their service to augment the many thousands of men already active in the war effort. On June 24, 1942, Congress passed an act to create a women's reserve as a branch of the Naval reserve; to be governed by the same rules and privileges, but limited in that women could only work non-combat duty in the continental U.S. The idea was to free trained Naval men from desk jobs in order to increase the active fighting force--thus the rallying theme, "Free a man to fight." The new women's Naval Reserve units were called the WAVES (Women Accepted for Voluntary Emergency Services) and, with its sister Coast Guard Reserve the SPARS, proceeded to immediately set up training schools at many colleges and universities across the country. Basic training sites were located in Oklahoma (Oklahoma Agricultural and Mechanical College at Stillwater), Iowa (Iowa State Teacher's College at Cedar Falls), Wisconsin (University of Wisconsin at Madison), Indiana (University of Indiana at Bloomington), and New York state (Hunter College in New York City). Officer training sites were established in Massachusetts at Mt. Holyoke College in South Hadley, and at Smith College in Northampton.</p>
+         <p> The creation of the WAVES represented a fundamental change that was occurring in American society as the war effort increased. Women were moving from the home into the work force and gaining increasing independence. In WWI, 11,275 women served in the Navy, mainly in secretarial and office positions, but they were not recognized nor was their service publicized, and no formal program existed for their training. In 1942, for the first time women were in uniform, earning the same pay, doing the same work, following the same rules, and receiving the same respect as Navy men. The publicity surrounding the WAVES focused on their independence, intelligence and equality with their male counterparts. However, the naval officers took care to remind everyone of their gender when designing their uniforms. Pants were vetoed in favor of skirts, fitted jackets, and stack heeled shoes that served to emphasize the femininity of the recruits. Women came to the WAVES from all sections of society, bringing a wide variety of skills and experience. Originally, black women were banned from the WAVES, creating a great deal of friction at some of the training schools. The President lifted the ban in 1944 and later that year the first black female officers graduated from the Smith College training school.</p>
+         <p> By the end of the war over 83,000 women were serving in the Navy, a number significantly over the original estimate of 11,000. They filled positions such as parachute riggers, pharmacist's mates, instrument flying trainers, store keepers, radio dispatchers, clerks, mechanics, lab technicians, mail carriers, decoders, and navigators. Most of the officers were restricted to the rank of lieutenant with the notable exception of Captain Mildred McAfee (the president of Wellesley College) who was the director the WAVES. Soon after peace was declared in 1945, the WAVES and SPARS programs were dismantled and the women who had been in the Navy returned to their homes or civilian jobs.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The WAVES files contain books, broadcasts, correspondence, printed materials, press
-            releases, newspaper clippings, memoranda, notes, and photographs documenting the Naval
-            training school for women that was located on the Smith College campus from
-            1942-1945.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The WAVES files consist of 2.5 linear feet including books, broadcast materials, correspondence, printed materials, press releases, newspaper clippings, memoranda, notes and photographs documenting the Naval training school for women that was located on the Smith College campus from 1942-1945.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into three series:</p>
-         <list>
-            <item> I. General </item>
-            <item> II. Publications </item>
-            <item> III. Photographs </item>
-            <item> IV. Audio-Visual </item>
-
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. General</item>
+            <item>II. Publications</item>
+            <item>III. Photographs</item>
+            <item>IV. Audio-Visual</item>
          </list>
       </arrangement>
-      <arrangement id="scope-arr">
-
-         <p>The files are arranged in three series: Series I, General, Series II, Publications,
-            Series III, Photographs, Series IV, Audio-Visual. The materials in the General and
-            Photographs series are arranged alphabetically by subject. The Publications series is
-            arranged by material type. </p>
-      </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The collection is open to research according to the regulations of the Smith
-                  College Archives. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Single photocopies may be made for research purposes. Permission to publish
-                  materials from the files must be requested from the College Archives. Smith
-                  College owns the copyright of all the official correspondence. The Archives has no
-                  information on the literary rights of the remainder of the collection and
-                  researchers are responsible for determining any question of copyright. </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>WAVES (Women Accepted for Voluntary Emergency Services Unit) Files, Box #, Smith
-               College Archives.</p>
-         </prefercite>
-         <accruals encodinganalog="584" id="admin-accruals">
-            <head>Additions to the Collection</head>
-            <p>Additions to these records arrive in the College Archives on a regular basis. Please
-               contact the College Archives for the most up-to-date information. </p>
-         </accruals>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <processinfo id="admin-process">
-               <p>Processed by Mariah Leavitt and Kate Baker '02.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-
-         <corpname encodinganalog="610" source="lcsh">United States. Naval Reserve. Women's
-            Reserve--History--Sources.</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>WAVES files,College Archives, CA-MS-00007, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Mariah Leavitt and Kate Baker '02.</p>  
+      </processinfo>
+      <acqinfo id="aspace_28ca7c53ac296b30ba20b09b3a1ea77a">
+         <head>Immediate Source of Acquisition</head>
+         <p>Sources unknown</p>  
+      </acqinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Naval history--Massachusetts--Northampton.</subject>
+         <corpname encodinganalog="610" source="lcsh">United States. Naval Reserve. Women's Reserve--History--Sources.</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College--History--Sources.</corpname>
-         <subject encodinganalog="650" source="lcsh">Naval
-            history--Massachusetts--Northampton.</subject>
-         <corpname encodinganalog="710" source="lcnaf">United States. Naval Reserve. Women's
-            Reserve.</corpname>
+         <corpname encodinganalog="610" source="naf">United States. Naval Reserve. Women's Reserve.</corpname>
       </controlaccess>
-      <dsc id="contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: General</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_1e3ae87b180a3ae6b46d9b21043c6cb6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Alumnae House Diary <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae House diary, financial and other records</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_06cc38ccc96e9296434ac718c764bdcc"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e94cc512365c75da2f5c64d58bfeff08" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Alumnae Relations <unitdate>1942-43, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae Relations</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_87ab080a43105112c01b1c9b6025d719"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_75f228807c41961fb0ba5309de760fd0" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Anniversaries <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Anniversaries</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d8309ab2d74294063a7a363490bb7c79"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_06c8ec8091eafc00f176348c57371075" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Anniversaries <unitdate>1944</unitdate>
-                  </unittitle>
+                  <unittitle>Anniversaries</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_5310ef1752f57929e9a7953792547502"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_17c26b8ce02b50c4d4c59f65c44e9233" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Benefit Show <unitdate>Feb. 1944</unitdate>
-                  </unittitle>
+                  <unittitle>Benefit Show</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944-02/1944-02">Feb. 1944</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c0d94ba430163d83abd357ff1ca6bee5"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7630cd258edf2658332adefa321c4422" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Board of Directors <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Board of Directors</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_0e92fab5e167d184824d7b2cd4fa0915"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_40e7f3a0090ac402ffa43e4de736ade1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Broadcasts: correspondence <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Broadcasts: correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_8e8dd7b47af3c471c7abf5d4caad47c8"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9b54c333de0d44adfa297346fc49cb13" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Broadcasts by Mr. Davis <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Broadcasts by Mr. Davis</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_8f91e5094cd511fb463585992f76f935"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c13e3fe91ca772352393649b5e408fe2" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Chaplain's Services <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Chaplain's Services</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_f1eba08127e68d5b4475c46e77a507ac"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_58463d937050881a5df7e1b351626605" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Citations <unitdate>1946</unitdate>
-                  </unittitle>
+                  <unittitle>Citations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d0d63555e2ce7d2c52aeb855ec1460e0"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_16268536c91dda0393dddc9d7dcb6f1f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Cleaning Women <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Cleaning Women</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_aa99cdf160b58d3400437096d3bf79d2"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5829ba7e7f5a5bed79bf3b5001c97236" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Commencements <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Commencements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d103bcde868e2c0e7dc6a0e38a1ed82f"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cfb703d59d090615b569d8298250b5b0" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Commencement Programs <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Commencement Programs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c9d98b0835085872e4271e51633cd51c"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5942378ba7c3da109bc6e8a6c3df69f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Contract with Navy <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Contract with Navy</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_79819dc3e8ed98f0d89e18e80ecd9237"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_07caf957dd07c893ff466d76873f676a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Correspondence <unitdate>1942-48</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1948"
+                            type="inclusive">1942-48</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_71cd7fca12583554b4285d2368c59738"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ec72c065c853f52011fd4607cc8c6fec" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Exhibit: Citron, Minna <unitdate>Dec. 1943</unitdate>
-                  </unittitle>
+                  <unittitle>Exhibit: Citron, Minna</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1943-12/1943-12">Dec. 1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_3e33ea08d053f0869aa56295b8858ebf"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3181d409f1aaa883ad12679ac5054ffc" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Film "WAVES at Smith College": correspondence <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Film "WAVES at Smith College": correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_e45e80dfad901914d3c5009f0b7faabc"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
-               <note>
+               <odd id="aspace_e214f1080a9963eaec7cf2567c1202e1">
+                  <head>General</head>
                   <p>See also Series IV.</p>
-               </note>
+               </odd>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5467a6d74e9dfc4323e0dd76cb9f0b9e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Financial: Alumnae House Agreement <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Alumnae House Agreement</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c8e414dc2196e320e79930ae74b848f8"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_befaeaa32c2f191502d442c404d979f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Financial: Cleaning Supplies <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Cleaning Supplies</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_7d62df02f0831fb54ac18237af08c534"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_389de5b221e8603cd2b4c42605d8b4f7" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Financial: Direct Charges <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Direct Charges</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_cbfa78305fa8ad664b4d7e5372711975"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_301f25a86d806827dcf7ded429088c30" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Financial: Direct Charges Paid <unitdate>1943-45</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Direct Charges Paid</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1945"
+                            type="inclusive">1943-45</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9b9b7504d31ecaeb98aa8757e0586b22"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_af06cb29f5bd92c8ae89501554f3fd96" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>Financial: Direct Salaries and Wages <unitdate>1944</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Direct Salaries and Wages</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_635e01915605ed430f82a42064b70cfa"
+                             label="Mixed Materials [310183630247285]"
+                             type="box">180</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_11617fa932115a108c3f1bcd85e1d769" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Employees at Alum. House <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Employees at Alumnae House</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_73472f512acd8b0f3b0c889562adae42"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d65ebeb8c7de01e911ac705bfa6962c9" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Expense Misc. <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Expense Misc.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c31b58f65da148d1ec503ae617c44c08"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fd359d6d5b81b46c77223328ab1799ee" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Final Reports <unitdate>Oct.1943-Dec.1944</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Final Reports</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1943-10/1944-12"
+                            type="inclusive">Oct.1943-Dec.1944</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_92dfbd34c2e2413193a4b3d6340fd60a"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5d28c2dacdaaff8be8140a0a07a54054" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Final Report <unitdate>Aug.1942-Sept.1943</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Final Report</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942-08/1943-09"
+                            type="inclusive">Aug.1942-Sept.1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_17c743bc1c06fb64c96dd6bba304686e"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c4cc11b7ea34e3e99b9eaa8e5c2cd392" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: First Proposal to Navy <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: First Proposal to Navy</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_78285228ed581e1f724feb836d3d98e7"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_78e94835c01c701c4da8a9c0b9b47efa" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Fuel - Electricity <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Fuel - Electricity</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_05c5bc85d0f39d9824da121e609f6f60"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 id="furniture" level="file">
+            <c02 id="aspace_furniture" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Furniture <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Furniture</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_56db318f9fa6009a00537119c039bc25"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_63b765d4ada57ab0adbef0ec03fc6841" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Installation Charges <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Installation Charges</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_fa22fa50e0cbcccc869410d13575b6f9"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2f1b9ef242f8a275f7b7122804024e40" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Lavatory Supplies <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Lavatory Supplies</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_4aca479a1373d429e2ad12b355277870"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2abd64f28f6363cf45e696d286602943" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Financial: Oil <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Financial: Oil</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_e0e7b8ad5e118a3501e99e5160057a83"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_46a3598f3064a58a89da9d4251221ff6" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>History <unitdate>1942-80</unitdate>
-                  </unittitle>
+                  <unittitle>History</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1980"
+                            type="inclusive">1942-80</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_515fe954468fb55833d537d5b49fec9a"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5398ddc57f3f1a9a6ee9de94f39aa6a9" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>History <unitdate>1942-80</unitdate>
-                  </unittitle>
+                  <unittitle>History</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1980"
+                            type="inclusive">1942-80</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_db0b7ccec3b9d9a0eace55fc618d9491"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c9f6efb5085c7fa2cb7171a39f24b418" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Housing <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Housing</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_0f903dcfedfe850bb6da922e4e902ede"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_62f41017bc006fdf4cad88f249f2f6ec" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Instructions Governing Naval Training School <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Instructions Governing Naval Training School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_982e1706f4c497f9aaef184182cebe02"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bf72225dd297747a7c2f62aa7941c70c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Keys <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Keys</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d2994a75b17c91f03a9293a91c4019e6"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9e250581a6f0d08860bb8c4a7cffa06f" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>George King <unitdate>1942,1945</unitdate>
-                  </unittitle>
+                  <unittitle>George King</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <unitdate normal="1945/1945">1945</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d887cec9568f9ff7d1a2de37614d6194"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1a60cf42b329702380d0d7474161295b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Letter to Students <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Letter to Students</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2b81b2975917813d47a5c56bb9dfd567"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2648e0745fba0ab84ac9138e1ea1bd1c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Helen Lord and Belle Norton <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Helen Lord and Belle Norton</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_341a85357f687f7c6caf735ea6284c0d"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4984a08c729775296f41c971c4a20b28" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Marines <unitdate>1944</unitdate>
-                  </unittitle>
+                  <unittitle>Marines</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_a5e06b4a699963a897e9346e92b20143"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_916df6154376f88165fcd424c5488f31" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Miss Mason-Schopfer <unitdate>1943-44</unitdate>
-                  </unittitle>
+                  <unittitle>Miss Mason-Schopfer</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1944"
+                            type="inclusive">1943-44</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_7790c53a8dd1e5fbc95fc5de227b6ea7"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c38cbc9145b1e22567bb9c2950d3989d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Record of Meetings <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Record of Meetings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_ddfee390462ec695fca48144f694868e"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ea29e459d88442c81b4750a420e15939" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Mt. Holyoke Naval School <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Mt. Holyoke Naval School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2e465eae2bd495c7aa2202d7bd1864e4"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f1ccec330e9fa8c4a4f33637d4be88ea" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Naval Records <unitdate>1945</unitdate>
-                  </unittitle>
+                  <unittitle>Naval Records</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_5294defc1a7e79cf1311315ecb5c2145"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_092cdc7a40760455b9964c9f256f4637" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Navy Day <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Navy Day</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_7ff5507f78f80f179fe193063d1e870e"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4016d432d2b5bc6e8d1837c31c312faf" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Officers: Lt. Com. P. Baker <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Lt. Com. P. Baker</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1475f2e75e255471f1be69de4742bb84"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2f52721b5f7ce6e17118e4a0a8f2e4c9" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Officers: Lt. Com. Bullis (also office) <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Lt. Com. Bullis (also office)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_1bf761bdcc6e62366aeaf583334623aa"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8bd77535de0d8efdfc0158f45c0cdc6c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Officers: Crandall <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Crandall</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_218003a1d6b1d1a5099c1429fb9e360b"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d4e221de18d1aa4aee6478ba00a24024" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>Officers: Lt. Com. M. Disert <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Lt. Com. M. Disert</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_307549839dc54c26feab9a8e52f18b00"
+                             label="Mixed Materials [310183630247343]"
+                             type="box">180.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dcbbad40f5d220939182a1342356d9ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Mildred McAfee <unitdate>1943-46</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Mildred McAfee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1946"
+                            type="inclusive">1943-46</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_363d8c6d736131cad6a12f303bb84dd2"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_de610a83839aa096cd3e6c55168e3dc4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Marianne McNees <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Marianne McNees</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_570844397fe28fb66d5ec516d2fac778"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c1a1bf61d43b18bd7b770c35e1bc1557" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Lt. Elizabeth Reynard <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Lt. Elizabeth Reynard</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_714f3ff1d72d40fadfb3846149f02013"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bf6d204ee428c2eb285990760c886d66" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Lt. Schoonover <unitdate>1942-44</unitdate>
-                  </unittitle>
-                  <note>
-                     <p> see also Furniture </p>
-                  </note>
+                  <unittitle>Officers: Lt. Schoonover</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_c21c54800e09791e958e7c2dde801645"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
+               </did>
+               <odd id="aspace_f2c44986f4cd723f6101a0fb556ad89d">
+                  <head>General</head>
+                  <p>see also Furniture</p>
+               </odd>
+            </c02>
+            <c02 id="aspace_0106339467df73161cf5a13d9b0c3be3" level="file">
+               <did>
+                  <unittitle>Officers: Capt. Underwood</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1944"
+                            type="inclusive">1942-44</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_c90a0fc57d43abd0a5cb1d264f9d5746"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6ab000c36b116a08515bd9c499e9b11f" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Capt. Underwood <unitdate>1942-44</unitdate>
-                  </unittitle>
+                  <unittitle>Officers: Louise Wilde</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_6985ca0909b546768624e5b65c3c363c"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bff6133a3f03f224c0577421d2a2bd08" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Officers: Louise Wilde <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Plaque Presentation</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947-11-11/1947-11-11">Nov. 11, 1947</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_718d30273d4bd4e1c2f4726604901d5b"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4ace31e6f57d67cf5387c9a67d724228" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Plaque Presentation <unitdate>Nov. 11, 1947</unitdate>
-                  </unittitle>
+                  <unittitle>Postals</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_ee6bdfe1ce046f07e0fc2a3650e77b34"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a10524a95991d1020a449aa47037e983" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Postals <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Procurement</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_49565e2ec2cef6355f5f698e94950098"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a1c13349d49b56b0e9557431edaeb83a" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Procurement <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Public Relations</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_25df9ae5bb2247657529dfcdbc1b9812"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bdef04ce5fafd869b32b80cca8633796" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Public Relations <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>Publicity In Smith Alumnae Quarterly</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_6eec2a1533658fade4829907350bb41e"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e918334d5928ad92bd52da20535ee119" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Publicity In Smith Alumnae Quarterly <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Publicity Tour</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_d430accc9b202f97f17a054b3d6b85a9"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fe208c831f6fca5f839ff4c9a264d453" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Publicity Tour <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Roosevelt, Eleanor</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_c91c2aebf292d98e31e33ef49d290d18"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a76761abfd655cfb5cc206fe8b09553c" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Roosevelt, Eleanor <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Schedules</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_73b5a140b5a485a7456e1d83cd84718f"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9cfe4afaaa2672f761fe9acf4ed27c63" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Schedules <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Florence H. Snow</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1945"
+                            type="inclusive">1944-45</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_6996bdec1be4b7a90df81acc7d09003b"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5b7f869c4fa23ea27e60fd87b224a49f" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Florence H. Snow <unitdate>1944-45</unitdate>
-                  </unittitle>
+                  <unittitle>Songs</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_2e02614f6eb549d170218057d0282c57"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a476897369c1e0d161e475b2bd03a358" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Songs <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Speeches by Mr. Davis</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_0a831100899e35ebe6e58ecdba497a78"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7713981d83741dfe2546592a0c6534f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Speeches by Mr. Davis <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Smith WAVES members</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1945"
+                            type="inclusive">1942-45</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_5ccab37b5adf2380600342cb2c8817aa"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5b2faae688c7a96807221fd8143862fc" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Smith WAVES members <unitdate>1942-45</unitdate>
-                  </unittitle>
+                  <unittitle>Smith participants</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_58657a7831fdf16e987b2ffc02c58498"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e496067be979d4b7904afe64084a9e16" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Smith participants <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Tea</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_e968ae642e51bb9abe68b5b83707d4b6"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4a4d22601c7ccd802f388ad95b8c6560" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Tea for Wives</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_3a0351f7047b3d6577f3559aa3cb32dd"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_81b4d00141d18d409ab3685960f75672" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea for Wives <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Tea for Smith WAVES</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_975729d85065b4ce0d10b6e0ed77b8f4"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a9b65e30bf12280dab0fc1fcab36f228" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea for Smith WAVES <unitdate>1942</unitdate>
-                  </unittitle>
+                  <unittitle>Tea</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_58d25bf40a92db936e529c71713fb4e3"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dd1faa7291a6fdace6241d71ee63f047" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Tea for Smith WAVES</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944-02/1944-02">Feb. 1944</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_fd71fefd02296c7904ad1fae390655fe"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_36aec7663a84af0fbf2e91dfefb6dac9" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea for Smith WAVES <unitdate>Feb. 1944</unitdate>
-                  </unittitle>
+                  <unittitle>WAVES Tea</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944-05/1944-05">May 1944</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_961dff87c6686fc60ffae081ff5b865d"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9242169b68b84eea5e64d77f9d894778" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>WAVES Tea <unitdate>May 1944</unitdate>
-                  </unittitle>
+                  <unittitle>Tea for Smith WAVES</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944-11/1944-11">Nov. 1944</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_e8a8a9132e57c55076cb5888a2b64c84"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cdb9a4869b7aab99f284e8273f937a1e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>Tea for Smith WAVES <unitdate>Nov. 1944</unitdate>
-                  </unittitle>
+                  <unittitle>W.A.A.C. - Smith Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1947"
+                            type="inclusive">1945-47</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_71f9ee996a9ff8d76e8df59d734394ee"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2bb298cf04845fa308781a29a4386ff9" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>W.A.A.C. - Smith Alumnae <unitdate>1945-47</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>[Wanting] Lists <unitdate>1942-43</unitdate>
-                  </unittitle>
+                  <unittitle>[Wanting] Lists</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942/1943"
+                            type="inclusive">1942-43</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_72d439c2367375d120e434b09af6d9e9"
+                             label="Mixed Materials [310183630247400]"
+                             type="box">180.2</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Publications</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_a1ed86b45756a741952178a34c7f0a2c" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>General <unitdate>1943-44, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1944"
+                            type="inclusive">1943-44</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_d1d3e4f2715878c08ec17ec23e3f734b"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_04f866b8e09f723defd08e299fe3db7c" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>"The Activities of the WAVES, SPARS, and the MCWR at the Naval
-                     Reserve</unittitle>
+                  <unittitle>"The Activities of the WAVES, SPARS, and the MCWR at the Naval Reserve</unittitle>
+                  <container altrender="Half legal document box"
+                             id="aspace_42e693484e0bdc55c2220c27e593bb3a"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e9e9e325544bbd5ae35008dfec773517" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Midshipman's School, Northampton, MA" <unitdate>1943-44</unitdate>
-                  </unittitle>
+                  <unittitle>Midshipman's School, Northampton, MA"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1943/1944"
+                            type="inclusive">1943-44</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_8d518e680cb459f642c334095ecfb01c"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5531a2e12300be2172ac85637b3b302a" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
                   <unittitle>"The Naval Reserve Midshipman's School</unittitle>
+                  <container altrender="Half legal document box"
+                             id="aspace_1fbcde5f5938da305d136383e72374d3"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d8f69a3e9cb969d46325047bb5ccfae" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
                   <unittitle>(WR) Northampton and the Naval Training</unittitle>
+                  <container altrender="Half legal document box"
+                             id="aspace_c8801f4dfe2bcd05edfcacb21b3599c0"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_544b704782d57b1ffce9134b069caba4" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>School (Communications-W) South Hadley, MA"
-                        <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>School (Communications-W) South Hadley, MA"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_06855c1f4c35615229e521502fd00bf8"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7f7355c9c92e91a6b4e794c2bb6cef32" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Newsletter <unitdate>1945-46</unitdate>
-                  </unittitle>
+                  <unittitle>Newsletter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1946"
+                            type="inclusive">1945-46</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_3b0c24221e87192f12100b826ce28ef0"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e4b20f4c7c1e02aef97d9ba507187338" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>"Wave Lengths" <unitdate>12/4/42-3/11/43</unitdate>
-                  </unittitle>
+                  <unittitle>"Wave Lengths"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">12/4/42-3/11/43</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_1629579a11c47587543e71159a8a2d68"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9646492cf38372beb93b4dc87bc79935" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Book - Naval Customs, Traditions and Usage <unitdate>1939</unitdate>
-                  </unittitle>
+                  <unittitle>Book - Naval Customs, Traditions and Usage</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_807e377deea5fed88db48f3ae1ce4069"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_92f3c7d88eacb2754b1351180273c728" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>Book - Angel of the Navy: The Story Of a WAVE <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Book - Angel of the Navy: The Story Of a WAVE</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container altrender="Half legal document box"
+                             id="aspace_6186d6c004aff7ca551d25f286dc294e"
+                             label="Mixed Materials [310183630247467]"
+                             type="box">181</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0d0fffecfb3731e4fc29eb6cbb5e0e66" level="file">
                <did>
-                  <container type="box" label="mixed materials">*</container>
-                  <unittitle>Book - The WAVES : The Story of the Girls in Blue by Nancy Wilson Ross
-                     [1943] <unitdate>1943</unitdate>
-                  </unittitle>
+                  <unittitle>Book - The WAVES : The Story of the Girls in Blue by Nancy Wilson Ross [1943]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                  <container id="aspace_757d10365706ffef612b7c82c0284103"
+                             label="Mixed Materials"
+                             type="box">*</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_902cc1126635d868fcef5524dbfd1525" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>Publications - clippings <unitdate>Jun 1942-Apr 1943</unitdate>
-                  </unittitle>
+                  <unittitle>Publications - clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1942-06/1943-04"
+                            type="inclusive">Jun 1942-Apr 1943</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8738baeb25bc987a3c191f160638ef45"
+                             label="Mixed Materials [310183630247103]"
+                             type="box">181.1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b09a84cccd28ce03efd87e77a7ee5bbd" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Publications - clippings <unitdate>May 1943- Dec 1945</unitdate>
-                  </unittitle>
+                  <unittitle>Publications - clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1943-05/1996"
+                            type="inclusive">May 1943- 1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_636779a51c5b702cb9ab7216d3260b87"
+                             label="Mixed Materials [310183630247160]"
+                             type="box">181.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9b39e30f6f483e5726137b4a06ae27ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>WAVES Clippings <unitdate>1946</unitdate>
-                  </unittitle>
+                  <unittitle>WAVES Clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_68985acfa801bcbdf52a71dd9a60d4f8"
+                             label="Mixed Materials [310183630247160]"
+                             type="box">181.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_df5b1f017b8f1567f6fc6100f3c286ac" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Clippings <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8b362e2fe44e1f1f7eff89e01ae0c6d3"
+                             label="Mixed Materials [310183630247160]"
+                             type="box">181.2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f5c72a78e2fbc389b2147cd691601ae4" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>Clippings <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fd4c1533add25fb7d63727ecd4490cab"
+                             label="Mixed Materials [310183630247160]"
+                             type="box">181.2</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_e7e065a75adc66156d7d97e2cd7bc505" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
                   <unittitle>Photographs</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_75ce9be4af345730b4eaa276b8df96b3"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1eec7a5a9b887743774edf6b17c9a8f5" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>General <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_941926c31270b3c6381d8eb7dfae290d"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c9282c6600ee0f31d7f589aae600f5cc" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Alumnae House Headquarters <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Alumnae House Headquarters</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f3d3c767e83cf38c4213a33ce60a92f7"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4f6a7f6168b720f4cd513547ca0e4e76" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Events <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Events</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4eeffc886d39be14e6020523148c5600"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bd00f4e5931f77dcecd00faa33de5fdb" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Marching <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Marching</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fcb3a9d707e76c22481f94d8009b29c7"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fbdb90dc50b2960f2f00fbbe7b8db0e6" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Officers <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Officers</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_54d7c75b53d8859b006c1c56c025aac3"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e0f939c08cac10fe1e1c0c5125e1e3a1" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>Students and Classes <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Students and Classes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6150acbec4583b06dcb73a3daff14ebb"
+                             label="Mixed Materials [310183630247228]"
+                             type="box">181.3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0e214285b11efb9f881c96a40da88b38" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
                   <unittitle>Publications - Newsletter (Oversize)</unittitle>
+                  <container id="aspace_68abaff1144bedb04dee0bd8d88ba3a1"
+                             label="Mixed Materials"
+                             type="box">8</container>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_9622d2bbf8856b1a95a73eb4f847a9c7" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Sounding Off, vol 1, no. 1-52,vol. 2, no. 1-39
-                           <unitdate>1943-44</unitdate>
-                     </unittitle>
+                     <unittitle>Sounding Off, vol 1, no. 1-52,vol. 2, no. 1-39</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1943/1944"
+                               type="inclusive">1943-44</unitdate>
+                     <container id="aspace_ace124586377a2e7ba0eac538eeb4392"
+                                label="Mixed Materials"
+                                type="box">8</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Audio-Visual</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_add82664cb733079cf1ce1f4da31217d" level="file">
                <did>
-                  <container type="box" label="mixed materials">AV</container>
-                  <unittitle>Spars and Marines. Coast Guard, W.A., semper paratus?
-                        <unitdate>1939-45</unitdate>
-                  </unittitle>
+                  <unittitle>Spars and Marines. Coast Guard, W.A., semper paratus?</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-45</unitdate>
+                  <container id="aspace_1ba423dc6506faa581d649e824a13677"
+                             label="Mixed Materials"
+                             type="box">AV</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f10906a883e60e2373568808212a4c69" level="file">
                <did>
-                  <container type="box" label="mixed materials">AV</container>
-                  <unittitle>"Waves at Smith" <unitdate>1939-45</unitdate>
-                  </unittitle>
+                  <unittitle>"Waves at Smith"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-45</unitdate>
+                  <container id="aspace_59e71aa3a9441937912746505343e454"
+                             label="Mixed Materials"
+                             type="box">AV</container>
                </did>
             </c02>
          </c01>
