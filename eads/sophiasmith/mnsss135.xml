@@ -1,277 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss135.xml//EN">mnsss135</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss135</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Mary Ritter Beard Papers, 1915-1958
-        </titleproper>
+            <titleproper>Mary Ritter Beard papers <num>SSC.MS.00013</num>
+            </titleproper>
             <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Amanda Izzo.</author>
+            <author>Amanda Izzo</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-07-01</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-11-29 14:13:58 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss135 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:11-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Mary Ritter Beard Papers, 1915-1958
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 13
-      </num>
-         <author encodinganalog="245$c">Amanda Izzo
-      </author>
-         <date>2001
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Beard, Mary Ritter, 1876-1958</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Mary Ritter Beard papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1915 -  1958</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 13 UUID:4b666079-7732-4f94-9f91-87deb6db1c92</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(2.25 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
             <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Historian, archivist, and women's rights activist. The Mary Ritter Beard papers primarily document the organization and dissolution of the World Center for Women's Archives, which Beard founded, as well as the founding of both the Sophia Smith Collection at Smith College and the Schlesinger Library at Radcliffe College, both women's history archives. Materials include correspondence, writings, photographs, and books. Correspondents include Dorothy Brush; Ethel Weed; prominent Japanese activist and Diet member, Shizue Kato; Sophia Smith Collection founder, Margaret Grierson; and Grierson's companion, Marine Leland.</abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
-         </langmaterial>
+         </repository>
+         <unittitle>Mary Ritter Beard papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Beard, Mary Ritter, 1876-1958</persname>
+         </origination>
+         <unitid>SSC.MS.00013</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2 boxes</extent>
+            <extent altrender="carrier">(2.25 linear feet)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1915/1958"
+                   type="inclusive">1915 - 1958</unitdate>
+         <abstract id="aspace_aa65bdfb7ff34b31df31a2733548ae63">Historian, archivist, and women's rights activist. The Mary Ritter Beard papers primarily document the organization and dissolution of the World Center for Women's Archives, which Beard founded, as well as the founding of both the Sophia Smith Collection at Smith College and the Schlesinger Library at Radcliffe College, both women's history archives. Materials include correspondence, writings, photographs, and books. Correspondents include Dorothy Brush; Ethel Weed; prominent Japanese activist and Diet member, Shizue Kato; Sophia Smith Collection founder, Margaret Grierson; and Grierson's companion, Marine Leland.</abstract>
+         <langmaterial id="aspace_e189d03bd3d154241e0031ac51452bbb">English.</langmaterial>
       </did>
-      <bioghist id="bioghist">
-         
-         <p>Mary Ritter Beard was born in Indianapolis on 5 August
-    1876, the third of six children and the elder of two
-    daughters of Narcissa (Lockwood) and Eli Foster Ritter. At
-    sixteen she left home to attend De Pauw University in Asbury,
-    Indiana, where she studied political science, languages, and
-    literature. She graduated in 1897 and taught high school
-    German until 1900 when she married Charles Austin Beard, whom
-    she had met at De Pauw. Mary Beard accompanied her husband to
-    Oxford, and both were active politically as well as
-    academically. Charles helped organize Ruskin Hall, the "free
-    university" aimed at workingmen, and Mary became involved
-    with the British women's suffrage movement. They returned to
-    New York in 1902. Their daughter Miriam was born in 1903. The
-    following year the Beards enrolled at Columbia University,
-    but Mary quit soon after to take care of their child and
-    volunteer for progressive causes.</p>
- 
-         <p>Following the birth of her son William in 1907, Mary Beard
-    became an organizer for the National Women's Trade Union
-    League. From 1910 to 1912 she edited the suffragist
-    periodical The Woman Voter, and after that worked with the
-    Wage Earner's League. She was a member of the militant
-    faction of the suffrage movement led by Alice Paul from 1913
-    to 1919, and she worked on several progressive causes. During
-    this period, Charles taught at Columbia University, but he
-    resigned in 1917 in protest of the firing of anti-war
-    faculty. Charles helped establish the New School for Social
-    Research and both Beards helped found the Workers Education
-    Bureau, but by the early 1920, the Beards generally worked
-    outside of academic institutions.</p>
-
-         <p>Following her resignation from the National Woman's Party
-    in 1917, Mary Beard devoted her skills and efforts to writing
-    and lecturing, rather than public political activity. Her
-    first book, Woman's Work in Municipalities (1915) and her
-    second, A Short History of the American Labor Movement
-    (1920), focused on social reform and the working class. With
-    Charles, she co-authored The Rise of American Civilization
-    (1927), a groundbreaking text that integrated political,
-    economic, social, and cultural histories with a progressive
-    vision of America's past and distinctive national character.
-    The two collaborated on several books that would become some
-    of the most enduringly significant American history texts,
-    but by herself, Mary pioneered the field of women's history.
-    She was appalled by the omission of women from the historical
-    record, and she wrote about and promoted the recognition of
-    women's achievements in the present day and the past, in the
-    U.S. and internationally. She authored and edited
-    Understanding Women (1931), America Through Women's Eyes
-    (1933), A Changing Political Economy as It Affects Women
-    (1934), and Women as Force in History (1946), among
-    others.</p>
-         <p>Rather than concentrating on grievances and questions of
-    the subjugation of women, Beard's work promoted women's
-    contributions to the formation of society and brought to
-    light a long-neglected past. To this end in the early 1930s,
-    she collaborated with Hungarian pacifist feminist Rosika
-    Schwimmer to organize the World Center for Women's Archives
-    (WCWA). Beard quoted French historian Fustel de Coulanges for
-    the motto of the WCWA: "No documents, no history," and she
-    envisioned an archive of women's papers and organizational
-    records that would provide a foundation for women's history
-    as an academic field as well as serve as a public good. Beard
-    and Schwimmer raised funds, founded a board of directors, and
-    collected documents from their network of women activists.
-    The WCWA was headquartered in New York but collected on an
-    international level. It was a well-publicized effort, and
-    though the collection specialized in material from the
-    pacifist movement, Beard worked to realize a broader
-    conception for a collection representing the range of women's
-    activities. Factionalism among WCWA supporters, shaky
-    financial support, and an increasingly militaristic
-    atmosphere in the U.S. and abroad forced the dissolution of
-    the WCWA in the early 1940s.</p>
-         <p>This development was very discouraging to Beard, but
-    fortunately, the WCWA generated momentum for developing
-    institutions of women's history. Beard worked closely with
-    Smith College archivist Margaret Grierson to create the
-    Sophia Smith Collection, one of the world's largest women's
-    history manuscript collections, founded in 1942, and she
-    worked with Harvard historians to create the eventual
-    Schlesinger Library at Radcliffe. These two institutions
-    received many of the WCWA documents, as did several smaller
-    collections. Together, they carried on the WCWA mission, at
-    least partly due to Beard's influence.</p>
-         <p>Neither of the Beards avoided controversy in their
-    writings or public stands. Though both were well-respected
-    historians, they increasingly drew criticism for their
-    pacifist and progressive politics in the years surrounding
-    World War II. Charles Beard died in 1948, and Mary Ritter
-    Beard died on 14 August 1958. Both Beards have had enduring
-    reputations as incisive historians, and they are recognized
-    for their pioneering work in social history. Mary Beard
-    especially has been celebrated for her work to promote
-    women's history.</p>
-         <p>Nancy Cott has written about Mary Beard as an activist,
-    historian, and pioneer in the field of women's history in
-    several articles and books, and she edited a volume of
-    Beard's correspondence, A Woman Making History: Mary Beard
-    through Her Letters (1991). Ann Lane's Mary Ritter Beard: A
-    Sourcebook (1977) was edited and re-released in 2000 as
-    Making Women's History: the Essential Mary Beard. Barbara
-    Turoff's biography, Mary Beard as Force in History, was
-    published in 1979.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Mary Ritter Beard was born in Indianapolis on 5 August 1876, the third of six children and the elder of two daughters of Narcissa (Lockwood) and Eli Foster Ritter. At sixteen she left home to attend De Pauw University in Asbury, Indiana, where she studied political science, languages, and literature. She graduated in 1897 and taught high school German until 1900 when she married Charles Austin Beard, whom she had met at De Pauw. Mary Beard accompanied her husband to Oxford, and both were active politically as well as academically. Charles helped organize Ruskin Hall, the "free university" aimed at workingmen, and Mary became involved with the British women's suffrage movement. They returned to New York in 1902. Their daughter Miriam was born in 1903. The following year the Beards enrolled at Columbia University, but Mary quit soon after to take care of their child and volunteer for progressive causes.</p>
+         <p> Following the birth of her son William in 1907, Mary Beard became an organizer for the National Women's Trade Union League. From 1910 to 1912 she edited the suffragist periodical The Woman Voter, and after that worked with the Wage Earner's League. She was a member of the militant faction of the suffrage movement led by Alice Paul from 1913 to 1919, and she worked on several progressive causes. During this period, Charles taught at Columbia University, but he resigned in 1917 in protest of the firing of anti-war faculty. Charles helped establish the New School for Social Research and both Beards helped found the Workers Education Bureau, but by the early 1920, the Beards generally worked outside of academic institutions.</p>
+         <p> Following her resignation from the National Woman's Party in 1917, Mary Beard devoted her skills and efforts to writing and lecturing, rather than public political activity. Her first book, Woman's Work in Municipalities (1915) and her second, A Short History of the American Labor Movement (1920), focused on social reform and the working class. With Charles, she co-authored The Rise of American Civilization (1927), a groundbreaking text that integrated political, economic, social, and cultural histories with a progressive vision of America's past and distinctive national character. The two collaborated on several books that would become some of the most enduringly significant American history texts, but by herself, Mary pioneered the field of women's history. She was appalled by the omission of women from the historical record, and she wrote about and promoted the recognition of women's achievements in the present day and the past, in the U.S. and internationally. She authored and edited Understanding Women (1931), America Through Women's Eyes (1933), A Changing Political Economy as It Affects Women (1934), and Women as Force in History (1946), among others.</p>
+         <p> Rather than concentrating on grievances and questions of the subjugation of women, Beard's work promoted women's contributions to the formation of society and brought to light a long-neglected past. To this end in the early 1930s, she collaborated with Hungarian pacifist feminist Rosika Schwimmer to organize the World Center for Women's Archives (WCWA). Beard quoted French historian Fustel de Coulanges for the motto of the WCWA: "No documents, no history," and she envisioned an archive of women's papers and organizational records that would provide a foundation for women's history as an academic field as well as serve as a public good. Beard and Schwimmer raised funds, founded a board of directors, and collected documents from their network of women activists. The WCWA was headquartered in New York but collected on an international level. It was a well-publicized effort, and though the collection specialized in material from the pacifist movement, Beard worked to realize a broader conception for a collection representing the range of women's activities. Factionalism among WCWA supporters, shaky financial support, and an increasingly militaristic atmosphere in the U.S. and abroad forced the dissolution of the WCWA in the early 1940s.</p>
+         <p> This development was very discouraging to Beard, but fortunately, the WCWA generated momentum for developing institutions of women's history. Beard worked closely with Smith College archivist Margaret Grierson to create the Sophia Smith Collection, one of the world's largest women's history manuscript collections, founded in 1942, and she worked with Harvard historians to create the eventual Schlesinger Library at Radcliffe. These two institutions received many of the WCWA documents, as did several smaller collections. Together, they carried on the WCWA mission, at least partly due to Beard's influence.</p>
+         <p> Neither of the Beards avoided controversy in their writings or public stands. Though both were well-respected historians, they increasingly drew criticism for their pacifist and progressive politics in the years surrounding World War II. Charles Beard died in 1948, and Mary Ritter Beard died on 14 August 1958. Both Beards have had enduring reputations as incisive historians, and they are recognized for their pioneering work in social history. Mary Beard especially has been celebrated for her work to promote women's history.</p>
+         <p> Nancy Cott has written about Mary Beard as an activist, historian, and pioneer in the field of women's history in several articles and books, and she edited a volume of Beard's correspondence, A Woman Making History: Mary Beard through Her Letters (1991). Ann Lane's Mary Ritter Beard: A Sourcebook (1977) was edited and re-released in 2000 as Making Women's History: the Essential Mary Beard. Barbara Turoff's biography, Mary Beard as Force in History, was published in 1979.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Mary Ritter Beard Papers are a small but significant
-    collection of Beard's correspondence, writings, and materials
-    from the World Center for Women's Archives (WCWA). Beard
-    destroyed most of her personal papers. Nonetheless, what
-    remains provides fascinating insight into one of the most
-    significant American intellectuals of the twentieth century.
-    Margaret Storrs Grierson, Smith College Archivist,
-    established the Sophia Smith Collection (SSC), one the
-    largest repositories for primary sources in women's history,
-    in consultation with Beard. The documents in this collection
-    pertain primarily to the years surrounding the demise of the
-    WCWA and the founding of the Sophia Smith Collection.</p>
-         <p>A small amount of biographical material includes
-    photographs and clippings. The correspondence spans the
-    mid-1940s to early 1950s. Letters exchanged between Beard,
-    Dorothy [Dick] Brush, and Ethel Weed pertain to a proposed
-    book on Japanese women's history. The project began as a
-    collaboration between Brush and Beard. Beard ultimately
-    authored Woman as Force in Japanese History (1953). Ethel
-    Weed provided research assistance and served as a liaison
-    between Beard and Shidzue Kato, a prominent Japanese activist
-    and Diet member involved in the drafting of the Japanese
-    Constitution following World War II.</p>
-         <p>Correspondence between Beard, Margaret Grierson, and
-    Grierson's companion Marine Leland offers special insight
-    into Beard's personal life. The correspondence details
-    Beard's professional life in the 1940s and 1950s as well. She
-    deposited the materials from the defunct WCWA at Smith,
-    Radcliffe College (at what would become the Schlesinger
-    Library), and elsewhere, and the correspondence documents
-    Beard's efforts to continue the mission of the WCWA. Beard
-    and Grierson collaborated to establish the Sophia Smith
-    Collection and sought each other's advice in their efforts to
-    preserve and promote women's history. There is a microfilmed
-    copy of Beard's outgoing correspondence that includes
-    correspondence in the Beard Papers and other collections of
-    the Sophia Smith Collection. See the Appendix at the end of
-    this finding aid for a list of correspondents.</p>
-         <p>The writings of Mary Beard include printed magazine
-    articles and speeches. A typed and printed syllabus and
-    bibliography prepared for the American Association of
-    University Women analyzes the "Changing Political Economy as
-    it Affects Women." There are also typescripts and research
-    materials from various projects undertaken by Beard in the
-    1940s, including notes on women in American history and a
-    study of the representation of women in the Enclyclopedia
-    Britannica. A significant amount of material was generated
-    from the Japanese women's history project. The collection
-    contains third party correspondence concerning research and
-    the manuscript, typescripts of sections of the project, and
-    research materials, including clippings about Shidzue Kato
-    [see also incoming correspondence from Ethel Weed for notes from an
-    interview of Kato]. The Papers contain printed copies of
-    several of Beard's books, including those coauthored with
-    Charles Beard.</p>
-         <p>The last section of material concerns the World Center for
-    Women's Archives. The materials in Beard Papers pertaining to
-    the WCWA consist of correspondence, which includes letters to
-    the general membership regarding the dissolution of the WCWA
-    and letters between Mary Ritter Beard and donors to the
-    archive; a file of general material; and a report from Dora
-    Ettinger about women in Germany that was intended to become a
-    WCWA document.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Mary Ritter Beard Papers are a small but significant collection of Beard's correspondence, writings, and materials from the World Center for Women's Archives (WCWA). Beard destroyed most of her personal papers. Nonetheless, what remains provides fascinating insight into one of the most significant American intellectuals of the twentieth century. Margaret Storrs Grierson, Smith College Archivist, established the Sophia Smith Collection (SSC), one the largest repositories for primary sources in women's history, in consultation with Beard. The documents in this collection pertain primarily to the years surrounding the demise of the WCWA and the founding of the Sophia Smith Collection.</p>
+         <p> A small amount of biographical material includes photographs and clippings. The correspondence spans the mid-1940s to early 1950s. Letters exchanged between Beard, Dorothy [Dick] Brush, and Ethel Weed pertain to a proposed book on Japanese women's history. The project began as a collaboration between Brush and Beard. Beard ultimately authored Woman as Force in Japanese History (1953). Ethel Weed provided research assistance and served as a liaison between Beard and Shidzue Kato, a prominent Japanese activist and Diet member involved in the drafting of the Japanese Constitution following World War II.</p>
+         <p> Correspondence between Beard, Margaret Grierson, and Grierson's companion Marine Leland offers special insight into Beard's personal life. The correspondence details Beard's professional life in the 1940s and 1950s as well. She deposited the materials from the defunct WCWA at Smith, Radcliffe College (at what would become the Schlesinger Library), and elsewhere, and the correspondence documents Beard's efforts to continue the mission of the WCWA. Beard and Grierson collaborated to establish the Sophia Smith Collection and sought each other's advice in their efforts to preserve and promote women's history. There is a microfilmed copy of Beard's outgoing correspondence that includes correspondence in the Beard Papers and other collections of the Sophia Smith Collection. See the Appendix at the end of this finding aid for a list of correspondents.</p>
+         <p> The writings of Mary Beard include printed magazine articles and speeches. A typed and printed syllabus and bibliography prepared for the American Association of University Women analyzes the "Changing Political Economy as it Affects Women." There are also typescripts and research materials from various projects undertaken by Beard in the 1940s, including notes on women in American history and a study of the representation of women in the Enclyclopedia Britannica. A significant amount of material was generated from the Japanese women's history project. The collection contains third party correspondence concerning research and the manuscript, typescripts of sections of the project, and research materials, including clippings about Shidzue Kato [see also incoming correspondence from Ethel Weed for notes from an interview of Kato]. The Papers contain printed copies of several of Beard's books, including those coauthored with Charles Beard.</p>
+         <p> The last section of material concerns the World Center for Women's Archives. The materials in Beard Papers pertaining to the WCWA consist of correspondence, which includes letters to the general membership regarding the dissolution of the WCWA and letters between Mary Ritter Beard and donors to the archive; a file of general material; and a report from Dora Ettinger about women in Germany that was intended to become a WCWA document.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into four series:</p>
-         <list>
-            <item>
-               I. Biographical Materials
-            </item>
-            <item>
-               II. Correspondence
-            </item>
-            <item>
-               III. Writings
-            </item>
-            <item>
-               IV. World Center for Women's Archives
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Materials</item>
+            <item>II. Correspondence</item>
+            <item>III. Writings</item>
+            <item>IV. World Center for Women's Archives</item>
          </list>
       </arrangement>
-      <odd id="odd-app">
+      <odd id="aspace_odd-app">
          <head>Appendix: The Letters of Mary R. Beard, 1934-1955</head>
          <p>Microfilmed from the holdings of the Sophia Smith Collection, Smith College.</p>
-         <p>FROM THE MARY R. BEARD PAPERS:</p>
-         <list>
+         <p> FROM THE MARY R. BEARD PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Dorothy Brush, 1946-1956</item>
             <item>Mary R. Beard to Mrs. Chamberlin, 1940</item>
             <item>Mary R. Beard to Margaret S. Grierson, 1941-1956</item>
@@ -281,639 +116,761 @@
             <item>Mary R. Beard to Margaret Sanger, n.d.</item>
             <item>Mary R. Beard to Ethel Weed, 1946-1952</item>
          </list>
-         <p>FROM THE NANCY COX-McCORMACK CUSHMAN PAPERS:</p>
-         <list>
+         <p>FROM THE NANCY COX-McCORMACK CUSHMAN PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Nancy Cox-McCormack Cushman, 1940-1952</item>
          </list>
-         <p>FROM THE EVA B. HANSL PAPERS:</p>
-         <list>
+         <p>FROM THE EVA B. HANSL PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Eva B. Hansl, 1941</item>
          </list>
-         <p>FROM THE FLORENCE ROSE PAPERS:</p>
-         <list>
+         <p>FROM THE FLORENCE ROSE PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Florence Rose, 1937-1939</item>
          </list>
-         <p>FROM THE MARGARET SANGER PAPERS:</p>
-         <list>
+         <p>FROM THE MARGARET SANGER PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Mary Compton, 1946</item>
             <item>Mary R. Beard to Miss Nelson, 1951</item>
             <item>Mary R. Beard to Margaret Sanger, 1951-1952</item>
          </list>
-         <p>FROM THE JOSEPHINE SCHAIN PAPERS:</p>
-         <list>
+         <p>FROM THE JOSEPHINE SCHAIN PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Dr. Maffett, 1940</item>
          </list>
-         <p>FROM THE MARGERY STEER PAPERS:</p>
-         <list>
+         <p>FROM THE MARGERY STEER PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Margery Steer, 1950-1955</item>
          </list>
-         <p>FROM THE MARY VAN KLEECK PAPERS:</p>
-         <list>
+         <p>FROM THE MARY VAN KLEECK PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Mary van Kleeck, 1935</item>
          </list>
-         <p>FROM THE RUTH WOODSMALL PAPERS:</p>
-         <list>
+         <p>FROM THE RUTH WOODSMALL PAPERS:</p>    
+         <list type="ordered">
             <item>Mary R. Beard to Mrs. Blaisdell, 1934</item>
          </list>
       </odd>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Karen A. Vagts and Arlene Beard hold copyright to the papers of Mary Ritter Beard. Permission must be obtained to publish reproductions or quotations beyond "fair use."  Copyright to materials created by others may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.</p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Mary Ritter Beard Papers, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <altformavail encodinganalog="530" id="admin-altform">
-            <head>Additional Formats</head>
-            <p>Portions of Beard's correspondence available on
-        microfilm, including correspondence from other
-        collections (see Appendix for list).
-        </p>
-         </altformavail>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Beard Papers were donated to the Sophia Smith Collection in the early 1940s after the dissolution of the World Center of Women's Archives and were collected by Margaret Grierson from her professional and personal association with Mary Beard.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Reprocessed by Amanda Izzo, 2001.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Beard, Mary Ritter, 1876-1958</persname>
-         <persname encodinganalog="600" source="lcnaf">Beard, Charles Austin, 1874-1948</persname>
-         <persname encodinganalog="600" source="lcnaf">Brush, Dorothy Hamilton--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Grierson, Margaret--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Hansl, Eva B. (Eva vom Bauer) --Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Kato, Shizue, 1897-</persname>
-         <corpname encodinganalog="610" source="lcnaf">Sophia Smith Collection--History</corpname>
-         <corpname encodinganalog="610" source="lcnaf">World Center for Women's Archives, Inc. (New York, N.Y.)</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Mary Ritter Beard Papers, Sophia Smith Collection, Smith College, Northampton, Mass.</p>  
+      </prefercite>
+      <altformavail id="aspace_admin-altform">
+         <head>Additional Formats</head>
+         <p>Portions of correspondence, including correspondence from other collections, are also available on microfilm; in Sophia Smith Collection and through interlibrary loan.</p>  
+      </altformavail>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>The Mary Ritter Beard Papers at the Sophia Smith Collection are one of the three primary collections of Beard's papers. DePauw University and the Schlesinger Library also have collections.</p>
+         <p> For additional Beard material, including correspondence from Beard in other manuscript collections, see the Sophia Smith Collection card catalog and the Donor Files of the Sophia Smith Collection (stored in the Smith College Archives). </p>
+         <p> See also <extref href="http://www.smith.edu/libraries/libs/ssc/pubs/revealing.pdf">
+               <title render="italic">Revealing Women's Life Stories: Papers from the 50th Anniversary Celebration of the Sophia Smith Collection</title>
+            </extref> for article on Mary Beard by Nancy F. Cott.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The papers are open to research according to the regulations of the Sophia Smith Collection.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Karen A. Vagts and Arlene Beard hold copyright to the papers of Mary Ritter Beard. Permission must be obtained to publish reproductions or quotations beyond "fair use." Copyright to materials created by others may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Beard Papers were donated to the Sophia Smith Collection in the early 1940s after the dissolution of the World Center of Women's Archives and were collected by Margaret Grierson from her professional and personal association with Mary Beard.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Reprocessed by Amanda Izzo, 2001.</p>  
+      </processinfo>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Libraries--Special collections--Women--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women historians--United States</subject>
          <subject encodinganalog="650" source="lcsh">Women--Historiography</subject>
          <subject encodinganalog="650" source="lcsh">Women--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women--Japan--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women's rights--Japan--History--Sources</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Beard, Charles Austin, 1874-1948</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Brush, Dorothy Hamilton--Correspondence</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Grierson, Margaret Storrs--Correspondence</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Hansl, Eva B. (Eva vom Bauer) --Correspondence</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Kato, Shizue, 1897-</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">articles</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Manuscripts</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Books</genreform>
+         <persname encodinganalog="600" source="naf">Beard, Mary Ritter, 1876-1958</persname>
+    
+    
+         <persname encodinganalog="600" source="naf">Grierson, Margaret--Correspondence</persname>
+    
+    
+         <corpname encodinganalog="610" source="naf">Sophia Smith Collection--History</corpname>
+         <corpname encodinganalog="610" source="naf">World Center for Women's Archives, Inc. (New York, N.Y.)</corpname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_708"
+                   source="local_inmagic-people">Vagts, Detlev F.</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1072"
+                   source="local_inmagic-people">Beard, Mary Ritter</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1408"
+                   source="local_inmagic-people">Beard, Arlene</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1486"
+                   source="local_inmagic-people">Cott, Nancy F.</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1838"
+                   source="local_inmagic-people">Turoff, Barbara</persname>
+    
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>The Mary Ritter Beard Papers at the Sophia Smith Collection are one of the three primary collections of Beard's papers. DePauw University and the Schlesinger Library also have collections.</p>
-            <p>For additional Beard material, including correspondence from Beard in other manuscript collections, see the Sophia Smith Collection card catalog and the Donor Files of the Sophia Smith Collection (stored in the Smith College Archives).  </p>
- 		 <p>See also <extref href="http://www.smith.edu/libraries/libs/ssc/pubs/revealing.pdf"><title render="italic">Revealing Women's Life Stories: Papers from the 50th Anniversary Celebration of the Sophia Smith Collection</title></extref> for article on Mary Beard by Nancy F. Cott.</p>
-         </relatedmaterial>
-      </descgrp>
-      <dsc id="contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. BIOGRAPHICAL MATERIALS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_a6db6dfb0b47d061cb62804196c72f73" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Biographical clippings,
-            <unitdate>1933, 1958</unitdate>
-                  </unittitle>
+                  <unittitle>Biographical clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                  <unitdate normal="1958/1958">1958</unitdate>
+                  <container id="aspace_b4b7df2585c016e45fc132926ed15b17"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_2a7d502f176fba1f658c1264773e56ef"
+                             parent="aspace_b4b7df2585c016e45fc132926ed15b17"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9b257d6ca209886dce793c48a13f70dc" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Letter re: Charles's death,
-            <unitdate>1948</unitdate>
-                  </unittitle>
+                  <unittitle>Letter re: Charles's death</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <container id="aspace_27e7509db6b4939da26e8b37c2f3eb58"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_efe4dec9429d9cbf13c9af2ff934933f"
+                             parent="aspace_27e7509db6b4939da26e8b37c2f3eb58"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5717c1c05761e98c5a59289ea580059a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Photographs,
-            <unitdate>1946, 1954, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <unitdate normal="1954/1954">1954</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_72827bcef82de3c76850d5df7f290bc4"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_3ce0da1fa310c0d93f617867d46c074e"
+                             parent="aspace_72827bcef82de3c76850d5df7f290bc4"
+                             type="folder">3</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. CORRESPONDENCE</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_16e876880406181ebaec50f90f6bbf12" level="file">
                <did>
                   <unittitle>Outgoing</unittitle>
                </did>
-
-
-               <c03 level="file">
+               <c03 id="aspace_1c85557402b81dc5127eded6a2415de2" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">4-5</container>
-                     <unittitle>Brush, Dorothy,
-              <unitdate>1946-56, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Brush, Dorothy</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1946/1956"
+                               type="inclusive">1946-56</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_fd65e3e537e026c6f4f6059df830459b"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_2e6c3ecc17a1c7b488265804fb1fe100"
+                                parent="aspace_fd65e3e537e026c6f4f6059df830459b"
+                                type="folder">4-5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3b244e573a3c7fe9e72548b46384fd00" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Chamberlain, Katharine Beecher Stetson,
-              (daughter of Charlotte Perkins Gilman),
-              <unitdate>1940</unitdate>
-                     </unittitle>
+                     <unittitle>Chamberlain, Katharine Beecher Stetson, (daughter of Charlotte Perkins Gilman)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                     <container id="aspace_21f9c235da6f0c3a3cd90f8eacc39652"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_d521bd77cab298113eafe70c82c5c066"
+                                parent="aspace_21f9c235da6f0c3a3cd90f8eacc39652"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4a81970a99ea99132cd68832fdff35d3" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Hansl, Eva, (includes typescript of
-              American Heritage Women's Activities with suggestions
-              by Beard),
-              <unitdate>1947</unitdate>
-                     </unittitle>
+                     <unittitle>Hansl, Eva, (includes typescript of American Heritage Women's Activities with suggestions by Beard)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                     <container id="aspace_73b8391d0bc1337ced9c5199b300fd19"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_7e368b0c68f26c563a9d220656089e68"
+                                parent="aspace_73b8391d0bc1337ced9c5199b300fd19"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_335cb5e3609a7438bcb170ff1b660418" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Lachmund, Alice,
-              <unitdate>1942-50</unitdate>
-                     </unittitle>
+                     <unittitle>Lachmund, Alice</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1942/1950"
+                               type="inclusive">1942-50</unitdate>
+                     <container id="aspace_e53fcbfff8630a84e565506541c6d401"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_d6fff9881ebdb7563563134b9000d4a0"
+                                parent="aspace_e53fcbfff8630a84e565506541c6d401"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e84b229852d9721c2d1152f90e63d132" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Leland, Marine,
-              <unitdate>1947-51</unitdate>
-                     </unittitle>
+                     <unittitle>Leland, Marine</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1947/1951"
+                               type="inclusive">1947-51</unitdate>
+                     <container id="aspace_210d90ced716df61cf331523781e8884"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_30859480bf6f7ab64bcd638fea3448e4"
+                                parent="aspace_210d90ced716df61cf331523781e8884"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_788376ce9b104fcae936ec1f1e0a9e89" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">10-13</container>
-                     <unittitle>Grierson, Margaret, (includes letters to
-              Grierson and Marine Leland),
-              <unitdate>1941-56, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Grierson, Margaret, (includes letters to Grierson and Marine Leland)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1941/1956"
+                               type="inclusive">1941-56</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_39c9474a2072c0bf785206223d45b548"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_0297adfdc75fad17f0de90945e169ef5"
+                                parent="aspace_39c9474a2072c0bf785206223d45b548"
+                                type="folder">10-13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7b5ac5dd51f7a5c7291f26db6064c04c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Sanger, Margaret,
-              <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Sanger, Margaret</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_94fffc28cedc32d7acf7252ebe14ae0d"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_f7c3720b9acf915b1b9c787245fbf9cc"
+                                parent="aspace_94fffc28cedc32d7acf7252ebe14ae0d"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_921b68beef8a13415dd5d8a4cf886b99" level="file">
                   <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Weed, Ethel,
-              <unitdate>1946-51</unitdate>
-                     </unittitle>
+                     <unittitle>Weed, Ethel</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1946/1951"
+                               type="inclusive">1946-51</unitdate>
+                     <container id="aspace_33fe71b062b316780b534be3c045f639"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_d5786940f676d6a2bf5bea26ca74767f"
+                                parent="aspace_33fe71b062b316780b534be3c045f639"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
-                <did>
-                     <container type="box" label="mixed materials">M39</container>
-                     <unittitle>Microfilm: The Letters of Mary R. Beard, 1934-1955. 
-Microfilmed from the holdings of the Sophia Smith Collection, Smith College (housed in microfilm collection), <unitdate>1934-55</unitdate>
-                     </unittitle>
-                     <note>
-                        <p>
-                           [see Appendix for complete list]</p>
-                     </note>
+               <c03 id="aspace_44b19b079f8b9674e19bd0e9e8d8db1f" level="file">
+                  <did>
+                     <unittitle>Microfilm: The Letters of Mary R. Beard, 1934-1955. Microfilmed from the holdings of the Sophia Smith Collection, Smith College (housed in microfilm collection)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1934/1955"
+                               type="inclusive">1934-55</unitdate>
+                     <container id="aspace_cf1aa655168b2a8010510cfb74c072cd"
+                                label="Mixed Materials"
+                                type="box">M39</container>
                   </did>
-               </c03>      
-	       
+                  <odd id="aspace_dbdc174955bf017cab55d35c4120e0d6">
+                     <head>General</head>
+                     <p>[see Appendix for complete list]</p>
+                  </odd>
+               </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9f07339569c34bc3128c6c17e93b926e" level="file">
                <did>
                   <unittitle>Incoming</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_8aa4298b41d5665ce66c8203457d8633" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Belgum, Florence Richter, (includes
-              biographical sketch of Emelie Richter and
-              Niebohrn[?]),
-              <unitdate>1940</unitdate>
-                     </unittitle>
+                     <unittitle>Belgum, Florence Richter, (includes biographical sketch of Emelie Richter and Niebohrn[?])</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                     <container id="aspace_6e837f6b91f65fde15f4b4fb8d76ae9e"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_7582293ae4502d85d93df91304266ce6"
+                                parent="aspace_6e837f6b91f65fde15f4b4fb8d76ae9e"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c919a0283d77cdea17e99bc39c10e40f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Bromer, Annie, re: Speaking of Women, an
-              international magazine for peace,
-              <unitdate>1938</unitdate>
-                     </unittitle>
+                     <unittitle>Bromer, Annie, re: Speaking of Women, an international magazine for peace</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                     <container id="aspace_940db892f79f06ea72dd619cabfcdea5"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_3b6e792499adba6c1bf94fae4a0bcb19"
+                                parent="aspace_940db892f79f06ea72dd619cabfcdea5"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_664fb2992d6c1e9f79d046884df1c6cb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Kato, Shidzue,
-              <unitdate>1946</unitdate>
-                     </unittitle>
+                     <unittitle>Kato, Shidzue</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                     <container id="aspace_c6bebd2a04df13e99cc875432e7673d8"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_febe8005c7ce14e716e96c9867ad11a5"
+                                parent="aspace_c6bebd2a04df13e99cc875432e7673d8"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8e0c1a9242e3c4f3969e671d4fb7c1cd" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Lachmund, Alice,
-              <unitdate>1939-42</unitdate>
-                     </unittitle>
+                     <unittitle>Lachmund, Alice</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1939/1942"
+                               type="inclusive">1939-42</unitdate>
+                     <container id="aspace_f1a109ff0c5c1c862ec52dc8f4031e0e"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_76d5283c95992891e4ffedf58e20f867"
+                                parent="aspace_f1a109ff0c5c1c862ec52dc8f4031e0e"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e2c8d31593b6a26f4dbf26de0072c56e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>May, Edith Hooper, re: Speaking of Women,
-              includes speech and magazine foreword,
-              <unitdate>1938</unitdate>
-                     </unittitle>
+                     <unittitle>May, Edith Hooper, re: Speaking of Women, includes speech and magazine foreword</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                     <container id="aspace_d4698c3878d5eb8a2c5edb3e1fafd64f"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_8298506a9ceae619ba8d602e9a7bbde9"
+                                parent="aspace_d4698c3878d5eb8a2c5edb3e1fafd64f"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6c884de06fa9fd6938f0a3d0bbc8333d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Wagner, Elin,
-              <unitdate>1948</unitdate>
-                     </unittitle>
+                     <unittitle>Wagner, Elin</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                     <container id="aspace_261e1b99fed1c5423c0fca7bf40fbfd8"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_495b8ebdb3296f4807e51a48c470b567"
+                                parent="aspace_261e1b99fed1c5423c0fca7bf40fbfd8"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_062f9d3f1c6419ecd21ca40beb1a2e24" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Weed, Ethel (includes notes re: Shidzue
-              Kato and women in Japan),
-              <unitdate>1946-52</unitdate>
-                     </unittitle>
+                     <unittitle>Weed, Ethel (includes notes re: Shidzue Kato and women in Japan)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1946/1952"
+                               type="inclusive">1946-52</unitdate>
+                     <container id="aspace_638c34f0add18965643be7fc44704859"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_adbdc104bd15acd42460507f28fab85d"
+                                parent="aspace_638c34f0add18965643be7fc44704859"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. WRITINGS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_d511f524f4b99d4ed3bf43493743d8e3" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Published magazine articles,
-            <unitdate>1930-50</unitdate>
-                  </unittitle>
+                  <unittitle>Published magazine articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1950"
+                            type="inclusive">1930-50</unitdate>
+                  <container id="aspace_d619538cec8881960e26fac491773adf"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_ed1ae3a72ebb4ce6cb1fb78576f364db"
+                             parent="aspace_d619538cec8881960e26fac491773adf"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a9ea5f416ee5328024622cf25226f961" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>"A Study of the Encyclopedia Britannica in
-            Relation to Its Treatment of Women": research material
-            and report,
-            <unitdate>1942, undated</unitdate>
-                  </unittitle>
+                  <unittitle>"A Study of the Encyclopedia Britannica in Relation to Its Treatment of Women": research material and report</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_9df767e1875ce7183ac5146679a1cde8"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_0478b66e154bff92ff09648f0f099e57"
+                             parent="aspace_9df767e1875ce7183ac5146679a1cde8"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4e233ecc03f88914a26e2034e27880f7" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Speeches: transcripts, notes, and
-            advertisement,
-            <unitdate>1933-37, 1947, 1950</unitdate>
-                  </unittitle>
+                  <unittitle>Speeches: transcripts, notes, and advertisement</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1937"
+                            type="inclusive">1933-37</unitdate>
+                  <unitdate normal="1947/1947">1947</unitdate>
+                  <unitdate normal="1950/1950">1950</unitdate>
+                  <container id="aspace_ab7f03cf9d882d5428d4110f3d9e5f85"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_d5f66334ee9c2b02d3bae7cca20d0808"
+                             parent="aspace_ab7f03cf9d882d5428d4110f3d9e5f85"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_90b34c24ada1f3f06e51464ba764f75e" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>"What Colleges Teach Young Men or Women":
-            submitted magazine article and correspondence,
-            <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>"What Colleges Teach Young Men or Women": submitted magazine article and correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container id="aspace_01688684aff0901663b5b0d71e8fed24"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_276621e560ec2fce75d06f5366635180"
+                             parent="aspace_01688684aff0901663b5b0d71e8fed24"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5805e36dfe695038c88bb1ed73709a8b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Women in Long History: typescript, cir
-            <unitdate>ca 1952</unitdate>
-                  </unittitle>
+                  <unittitle>Women in Long History: typescript, cir</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1952/1952">1952</unitdate>
+                  <container id="aspace_d159474a09d2cc9f8063bfe1e6714da4"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_077205e0680cd978fc885a7e9a3d0307"
+                             parent="aspace_d159474a09d2cc9f8063bfe1e6714da4"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4dd160f5b12a8008555a9d18932665a4" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>"Changing Political Economy as It Affects
-            Women": syllabus and bibliography for the American
-            Association of University Women, (includes typescript
-            and publication),
-            <unitdate>1934</unitdate>
-                  </unittitle>
+                  <unittitle>"Changing Political Economy as It Affects Women": syllabus and bibliography for the American Association of University Women, (includes typescript and publication)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                  <container id="aspace_29ca76d56ad2c635b7a6e0556a4d113c"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_725ffb3a3df43e6fbcffbc5cda3c696a"
+                             parent="aspace_29ca76d56ad2c635b7a6e0556a4d113c"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4781b2281ef93fe1c9823c6b12aec5bb" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Women as Force in History: publicity, cir
-            <unitdate>ca 1946</unitdate>
-                  </unittitle>
+                  <unittitle>Women as Force in History: publicity, cir</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1946/1946">1946</unitdate>
+                  <container id="aspace_a838dc05b4649c6b80f48df651b0bb7a"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_1e291d06db38fe3251fe8335d705f2b0"
+                             parent="aspace_a838dc05b4649c6b80f48df651b0bb7a"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_421104fdac1c9c639c63a27ba59dd79f" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>American women's history typed notes [from
-            Dictionary of American Biography?],
-            <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>American women's history typed notes [from Dictionary of American Biography?]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container id="aspace_ee70cf00468c0531963e62ff5a0120cd"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_71af49f96f08ecb89da716353af6707b"
+                             parent="aspace_ee70cf00468c0531963e62ff5a0120cd"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2481b2ff97f34535442d5982b8f9dbe9" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Notes and research material, (includes
-            "Proposal for the Organization of a Women's Reseach
-            Institute),
-            <unitdate>1936, 1948-49, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Notes and research material, (includes "Proposal for the Organization of a Women's Reseach Institute)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <unitdate normal="1948/1949" type="inclusive">1948-49</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_ee3f83c492e0c2a7abceaa4e75825b4b"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_96b571d39b61cd2cc3360d3fd0e9e95d"
+                             parent="aspace_ee3f83c492e0c2a7abceaa4e75825b4b"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_906b1da1cd852bc00e672a6be6aa7247" level="file">
                <did>
-                  <unittitle>Women in Long Japanese History/Force of
-            Women in Japanese History</unittitle>
+                  <unittitle>Women in Long Japanese History/Force of Women in Japanese History</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_f7dfcd2ce46792a9db46f9cadbe1cd10" level="file">
                   <did>
-                     <unittitle>
-                        Correspondence, third party re:
-                Japan material
-                     </unittitle>
+                     <unittitle>Correspondence, third party re: Japan material</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_40b3e0b93fb1876fe02d19b39bdca9b7" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>Grierson, Margaret to Dorothy Brush,
-                <unitdate>1946</unitdate>
-                        </unittitle>
+                        <unittitle>Grierson, Margaret to Dorothy Brush</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <container id="aspace_b40fc60ab40c9e1061cb89944c4fb4c1"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_7d74b0421e38971564ca3ae67d33a179"
+                                   parent="aspace_b40fc60ab40c9e1061cb89944c4fb4c1"
+                                   type="folder">17</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_71a01e1c5ad922254015d929e33c9004" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>Rilma, "Robbie" to Florence Rose,
-                <unitdate>1946</unitdate>
-                        </unittitle>
+                        <unittitle>Rilma, "Robbie" to Florence Rose</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <container id="aspace_e12ee404bacd9f59a0fc3ee3f9f8e477"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_a181e2ea5aea6de798882678fdf62258"
+                                   parent="aspace_e12ee404bacd9f59a0fc3ee3f9f8e477"
+                                   type="folder">18</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3e7ae0c5d787af50d6fec00fbd2e9dc4" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>Weed, Ethel to Dorothy Brush,
-                <unitdate>1946, 1950</unitdate>
-                        </unittitle>
+                        <unittitle>Weed, Ethel to Dorothy Brush</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                        <unitdate normal="1950/1950">1950</unitdate>
+                        <container id="aspace_9dc48f8b2e991364a5b76740f8daee24"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_7c964eeabf673b804046cc0136bfab30"
+                                   parent="aspace_9dc48f8b2e991364a5b76740f8daee24"
+                                   type="folder">19</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e1e86937dd52e78691a9254bf0b684fa" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">20</container>
-                     <unittitle>Notes by Beard and Dorothy Brush, foreword
-              and chapter, circa
-              <unitdate>1940s, 1953</unitdate>
-                     </unittitle>
+                     <unittitle>Notes by Beard and Dorothy Brush, foreword and chapter, circa</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1940/1949"
+                               type="inclusive">1940s</unitdate>
+                     <unitdate normal="1953/1953">1953</unitdate>
+                     <container id="aspace_08bf1bf66653dd6cef4dfa58366bd90e"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_d9f7e48e2f354a1e511ef6a0a51fb2ed"
+                                parent="aspace_08bf1bf66653dd6cef4dfa58366bd90e"
+                                type="folder">20</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_865d9d4694a1165be79397ebe413c73a" level="file">
                   <did>
                      <unittitle>Research material</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_b1c652d82d97234c1538e9f03bed26bc" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">21</container>
-                        <unittitle>General: Japanese (English language)
-                newsletters re: Japanese women's history, 1922;
-                Supreme Commander of the Allied Powers Public
-                Opinion Surveys and Publication Analysis,
-                <unitdate>1948-49</unitdate>
-                ; "Japan through Women" pamphlet, 1951; undated
-                documents re: religious history and Chinese women's
-                movement</unittitle>
+                        <unittitle>General: Japanese (English language) newsletters re: Japanese women's history, 1922; Supreme Commander of the Allied Powers Public Opinion Surveys and Publication Analysis, 1948-49 ; "Japan through Women" pamphlet, 1951; undated documents re: religious history and Chinese women's movement</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1948/1949"
+                                  type="inclusive">1948-49</unitdate>
+                        <container id="aspace_a1a9c28d3fc532b598406e3bc089f77a"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_d1987162c35d88bad003c2d22ff5a4df"
+                                   parent="aspace_a1a9c28d3fc532b598406e3bc089f77a"
+                                   type="folder">21</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_c8d49261ce88fda0e12f8ae8249d9200" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">22</container>
-                        <unittitle>Re: Shidzue Kato: history of birth
-                control movement by Kato?, 1947; clippings,
-                <unitdate>1925, 1946-52</unitdate>
-                ; photographs, 1947, n.d.</unittitle>
+                        <unittitle>Re: Shidzue Kato: history of birth control movement by Kato?, 1947; clippings, 1925, 1946-52 ; photographs, 1947, n.d.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1925/1925">1925</unitdate>
+                        <unitdate normal="1946/1952" type="inclusive">1946-52</unitdate>
+                        <container id="aspace_922f1f07fb98ecad18aac5a68e3744f7"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_319341401538cdbdbf55a9357d66863c"
+                                   parent="aspace_922f1f07fb98ecad18aac5a68e3744f7"
+                                   type="folder">22</container>
                      </did>
                   </c04>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_397913c06ddeafee0d6b43f16ef3c0b0" level="file">
                <did>
                   <unittitle>Books (on shelf)</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_6159a5aa276e78e93ca2fcf331bc9f6d" level="file">
                   <did>
-                     <unittitle>America in Midpassage, vol. 1, with
-              Charles A. Beard,
-              <unitdate>1939</unitdate>
-                     </unittitle>
+                     <unittitle>America in Midpassage, vol. 1, with Charles A. Beard</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e6915ab915c5e32c6d30ce3ccb177204" level="file">
                   <did>
-                     <unittitle>American Spirit: A Study of the Idea of
-              Civilization in the United States, Vol. IV The Rise
-              of American Civilization,
-              <unitdate>1942</unitdate>
-              (inscribed to Margaret Grierson by Mary and Charles
-              Beard)</unittitle>
+                     <unittitle>American Spirit: A Study of the Idea of Civilization in the United States, Vol. IV The Rise of American Civilization, 1942 (inscribed to Margaret Grierson by Mary and Charles Beard)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5bd4bc13f07ad4c88b4c850ec5b03085" level="file">
                   <did>
-                     <unittitle>America through Women's Eyes [editor],
-              <unitdate>1933</unitdate>
-                     </unittitle>
+                     <unittitle>America through Women's Eyes [editor]</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_eadf8ad63b7ea0443e29bf230c7a129a" level="file">
                   <did>
-                     <unittitle>The Beards' Basic History of the United
-              States, with Charles A. Beard,
-              <unitdate>1944,</unitdate>
-              (inscribed to Margaret Grierson by Mary and Charles
-              Beard)</unittitle>
+                     <unittitle>The Beards' Basic History of the United States, with Charles A. Beard, 1944, (inscribed to Margaret Grierson by Mary and Charles Beard)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_edd7466a611f10a172095e48f106f92c" level="file">
                   <did>
-                     <unittitle>The Force of Women in Japanese History, 2
-              copies,
-              <unitdate>1953,</unitdate>
-              (one copy inscribed to Grierson, one copy inscribed
-              to Marine Leland)</unittitle>
+                     <unittitle>The Force of Women in Japanese History, 2 copies, 1953, (one copy inscribed to Grierson, one copy inscribed to Marine Leland)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1953/1953">1953</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2bc214d04387e06f12a64171471ee52e" level="file">
                   <did>
-                     <unittitle>Laughing Their Way, with Martha Bensley
-              Bruere,
-              <unitdate>1934</unitdate>
-                     </unittitle>
+                     <unittitle>Laughing Their Way, with Martha Bensley Bruere</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d85c9309b4dc5ff06d88dde6d3631129" level="file">
                   <did>
-                     <unittitle>On Understanding Women, New York,
-              <unitdate>1931</unitdate>
-                     </unittitle>
+                     <unittitle>On Understanding Women, New York</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_73e55d513c41244503afe0bef3b13eaa" level="file">
                   <did>
-                     <unittitle>A Short History of the American Labor
-              Movement,
-              <unitdate>1920</unitdate>
-                     </unittitle>
+                     <unittitle>A Short History of the American Labor Movement</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1920/1920">1920</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_13770d6cc52e0fce2045c37de7117bf3" level="file">
                   <did>
-                     <unittitle>Woman as Force in History,
-              <unitdate>1946</unitdate>
-              (inscribed to Grierson)</unittitle>
+                     <unittitle>Woman as Force in History, 1946 (inscribed to Grierson)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4a1a41d34a2085e788cf81afb73949d7" level="file">
                   <did>
-                     <unittitle>Woman's Work in Municipalities,
-              <unitdate>1915</unitdate>
-                     </unittitle>
+                     <unittitle>Woman's Work in Municipalities</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
-               <unittitle>SERIES IV. WORLD CENTER FOR WOMEN'S
-          ARCHIVES</unittitle>
+               <unittitle>SERIES IV. WORLD CENTER FOR WOMEN'S ARCHIVES</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_19551e1ba2f64c603b15cd40dd42dd14" level="file">
                <did>
                   <unittitle>Correspondence</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_0291e30c3c67f0b6c3b9fe9d71ee68cd" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">23</container>
-                     <unittitle>Letters to general membership, (includes
-              list of where some material was ultimately
-              deposited),
-              <unitdate>1940</unitdate>
-                     </unittitle>
+                     <unittitle>Letters to general membership, (includes list of where some material was ultimately deposited)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                     <container id="aspace_f858d390f1c5521599c2338e2adcb875"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_cea59dbd27077516dcd014d5bd385109"
+                                parent="aspace_f858d390f1c5521599c2338e2adcb875"
+                                type="folder">23</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_54eefaf17a9d011f1188aef2c9e7288c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">24</container>
-                     <unittitle>Between Beard and donors, (includes third
-              party correspondence),
-              <unitdate>1938-47</unitdate>
-              (correspondents include Alice Henry, Kate Baker,
-              Wilhelmina Carlstedt, Katherine Gillette Blyley,
-              Charlotte Dobbin, Lillian Cox Athey, Nellie Sashman
-              [?], Jennie Flood Kreger, Dorothy Boulding Ferebee,
-              and Nettie Palmer)</unittitle>
+                     <unittitle>Between Beard and donors, (includes third party correspondence), 1938-47 (correspondents include Alice Henry, Kate Baker, Wilhelmina Carlstedt, Katherine Gillette Blyley, Charlotte Dobbin, Lillian Cox Athey, Nellie Sashman [?], Jennie Flood Kreger, Dorothy Boulding Ferebee, and Nettie Palmer)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1938/1947"
+                               type="inclusive">1938-47</unitdate>
+                     <container id="aspace_d6854b11fbe673347e9a0530b5e60ad6"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_275d6da85db84e084c98d509f9b2c0b6"
+                                parent="aspace_d6854b11fbe673347e9a0530b5e60ad6"
+                                type="folder">24</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0c452a83b4e21c05dee368323434ba18" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>General: clippings, list of materials, and
-            notes (author unknown),
-            <unitdate>1935, 1940, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General: clippings, list of materials, and notes (author unknown)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <unitdate normal="1940/1940">1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_15ece000ed148ab78443b06f8f7440fb"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_62fd71bbaa0247723fb957414e628b0c"
+                             parent="aspace_15ece000ed148ab78443b06f8f7440fb"
+                             type="folder">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9cf50e53cd4f40c1f538ac293d8573d1" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>Dora Ettinger: report "Political Thought and
-            Action of German Women in the Modern Age," letters to
-            Beard, and notes from Beard,
-            <unitdate>1939</unitdate>
-                  </unittitle>
+                  <unittitle>Dora Ettinger: report "Political Thought and Action of German Women in the Modern Age," letters to Beard, and notes from Beard</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <container id="aspace_f01b53e4b00c3915b8c884d747cc8c7c"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_99e194fabb732680ed79abbcc507e9b5"
+                             parent="aspace_f01b53e4b00c3915b8c884d747cc8c7c"
+                             type="folder">26</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-serOV" level="file">
+         <c01 id="aspace_list-serOV" level="file">
             <did>
                <unittitle>OVERSIZE MATERIALS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_8020b67904969a63f7dfae47b5e5b392" level="file">
                <did>
-                  <container type="map-case" label="mixed materials">Flat file</container>
-                  <unittitle>"Womanpower in this Election," clipping,
-            Mary and Charles Beard,
-            <unitdate>1944</unitdate>
-                  </unittitle>
+                  <unittitle>"Womanpower in this Election," clipping, Mary and Charles Beard</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container id="aspace_288ce32b0b7ba367c93186d70e9a17d3"
+                             label="Mixed Materials"
+                             type="map-case">Flat file</container>
                </did>
             </c02>
          </c01>
