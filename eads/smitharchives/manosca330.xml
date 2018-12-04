@@ -1,353 +1,529 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca330.xml//EN">manosca330</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca330</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Smith Club of Western Connecticut Records,
-               1947-[ongoing] </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Amanda Lineweber.</author>
-
+            <titleproper>Finding aid for Smith Club of Western Connecticut records <num>CA.MS.00330</num>
+            </titleproper>
+            <author>Finding aid prepared by Amanda Lineweber, Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-13">2013-11-13</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-03 15:24:12 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>12/03/18</date>
+            <item>Finding aid updated with barcodes, locations</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Smith Club of Western
-               Connecticut</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Smith Club of Western Connecticut
-            Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1947-[ongoing] </unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 90 UUID:c4d71b65-ac5d-491c-8344-d831647f6a80</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(0.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains minutes, photographs,
-            membership directories, publicity materials, clippings, and President's Notebooks
-            documenting the Club's activities. </abstract>
+         <unittitle>Smith Club of Western Connecticut records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith Club of Western Connecticut</corpname>
+         </origination>
+         <unitid>CA.MS.00330</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1947/2004"
+                   type="inclusive">1947-2004</unitdate>
+         <abstract id="aspace_3ad4fce4ef3f918f82256c958635923e">These records contain minutes, photographs, membership directories, publicity materials, clippings, and president's notebooks documenting the activities of the Smith Club of Western Connecticut .</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> The Smith Club of Western Connecticut was active beginning in 1947; it was then called
-            the Waterbury Smith Club. The club was refounded in 1953 as the Waterbury-Litchfield
-            Hills Smith Club; it wasn't until 1964 that the description 'Western Connecticut' began
-            to be used. Throughout its history the club undertook many fundraising efforts and
-            social events, and was active in promoting Smith to prospective students in the
-            area.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Smith Club of Western Connecticut was active beginning in 1947 when it was called the Waterbury Smith Club. The club was refounded in 1953 as the Waterbury-Litchfield Hills Smith Club. It wasn't until 1964 that the designation 'Western Connecticut' began to be used. Throughout its history the club undertook many fundraising efforts and social events, and was active in promoting Smith to prospective students in the area.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection includes a broad range of materials, including notebooks, membership
-            records and directories, agendas and minutes, photographs, press releases, scrapbooks,
-            and annual reports all relating to the events, fundraisers, and basic functions of the
-            club.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection including notebooks, membership records and directories, agendas and minutes, photographs, press releases, scrapbooks, and annual reports all relating to the events, fundraisers, and basic functions of the club.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Smith Club of Western Connecticut, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Smith Club of Western Connecticut records, College Archives, CA-MS-00330, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Smith Club of Western Connecticut Records were donated over a period of time to the
-            Smith College Archives from a variety of sources. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Smith Club of Western Connecticut Records were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Smith College - Alumni and alumnae - History - Sources</subject>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_796478d7527fcf0e4e097786f1fbfcac" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Alumnae Association - General <unitdate>1982-83</unitdate>
-               </unittitle>
+               <unittitle>Alumnae Association - General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1982/1983"
+                         type="inclusive">1982-83</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cb0de3a840a81cbd3131282b63892ace"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_00566351d85a5949b0b500bb2471725a"
+                          parent="aspace_cb0de3a840a81cbd3131282b63892ace"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6cb07cd356d2c51ad431ba6f22fa0885" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Alumnae Council <unitdate>1984-91</unitdate>
-               </unittitle>
+               <unittitle>Alumnae Council</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1984/1991"
+                         type="inclusive">1984-91</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2ffb6f71afbe3a1674db8d08115829e1"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_5f7c97f329eb0cafdc79283ff189c48e"
+                          parent="aspace_2ffb6f71afbe3a1674db8d08115829e1"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fcfcec9720479a228bef8be18c45b2dc" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3-6</container>
-               <unittitle>Annual Reports <unitdate>1977-92</unitdate>
-               </unittitle>
+               <unittitle>Annual Reports</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1977/1992"
+                         type="inclusive">1977-92</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9c7a93a1b63b40bdb23578d2dce0e3e2"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_8b2ff5cb805b5072c6fe49c74fb49c99"
+                          parent="aspace_9c7a93a1b63b40bdb23578d2dce0e3e2"
+                          type="folder">3-6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b39d223151bca37178ee190be7f061cf" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Annual Reports - Committees <unitdate>1982-96</unitdate>
-               </unittitle>
+               <unittitle>Annual Reports - Committees</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1982/1996"
+                         type="inclusive">1982-96</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_93d4cee6f946c7f53608d4bcb7c4f27f"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_cabbf0f21ea0d90d65a4a81195170454"
+                          parent="aspace_93d4cee6f946c7f53608d4bcb7c4f27f"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9b5c66b2790301ea7324b050c0aa635c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Annual Reports - Treasurer <unitdate>1981-83, 1990</unitdate>
-               </unittitle>
+               <unittitle>Annual Reports - Treasurer</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1981/1983"
+                         type="inclusive">1981-83</unitdate>
+               <unitdate normal="1990/1990">1990</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cbede1e9f0dfa1df3ccb931b65f086f5"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_10051eb149c2f1ea632a7d314179999f"
+                          parent="aspace_cbede1e9f0dfa1df3ccb931b65f086f5"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_079b1b5dd4e370d318f7c62a121e21c0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Board Member Job Descriptions <unitdate>1977, 1985-88</unitdate>
-               </unittitle>
+               <unittitle>Board Member Job Descriptions</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+               <unitdate normal="1985/1988" type="inclusive">1985-88</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e1e97a5f059fc92e1dbabae77aecea7"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_908815beb14862c1d5e4ce9c78d6e8b9"
+                          parent="aspace_9e1e97a5f059fc92e1dbabae77aecea7"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7cbb7dd5e4c55fe750085d1d9897845b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Book Awards - Correspondence <unitdate>1991-2000</unitdate>
-               </unittitle>
+               <unittitle>Book Awards - Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/2000"
+                         type="inclusive">1991-2000</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9c2184930225f181c9d029b2b9c3e3a1"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_71b375ad8a30de540e027c0883394007"
+                          parent="aspace_9c2184930225f181c9d029b2b9c3e3a1"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8d38d5c6a725354424bf05bd0a0f3778" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Book Awards - General <unitdate>1993-2000</unitdate>
-               </unittitle>
+               <unittitle>Book Awards - General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/2000"
+                         type="inclusive">1993-2000</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0d07210cb05a889865193dddd3a0f5be"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_697bb74a3258c2ad53c90f9981ae33b2"
+                          parent="aspace_0d07210cb05a889865193dddd3a0f5be"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e0517d7f3b24c7b61821bdf86fcb4dd8" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Bylaws <unitdate>1969-95</unitdate>
-               </unittitle>
+               <unittitle>Bylaws</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1995"
+                         type="inclusive">1969-95</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_465678368e61ae04baceede67e02ba7f"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_138977939a573269c1c4f117971b36b3"
+                          parent="aspace_465678368e61ae04baceede67e02ba7f"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_79f41c78bc49cd091a1a3bae0cb8d096" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Clippings <unitdate>1975-2003, undated</unitdate>
-               </unittitle>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/2003"
+                         type="inclusive">1975-2003</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2d064f47c69eaf22fe8936d181d37cf8"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_acccba1a6a4bc80beaac1cb2f8ce675b"
+                          parent="aspace_2d064f47c69eaf22fe8936d181d37cf8"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_51fa5558a887234126269e9108014829" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Correspondence <unitdate>1979-81, 1999-2003</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1979/1981"
+                         type="inclusive">1979-81</unitdate>
+               <unitdate normal="1999/2003" type="inclusive">1999-2003</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3fba989df40d5dc803eff681fa5ea51c"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_87811d7db4428a57723d12771fec29db"
+                          parent="aspace_3fba989df40d5dc803eff681fa5ea51c"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_af155a5d1b9310542118645be976ae25" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">15-17</container>
-               <unittitle>Directories <unitdate>1972-2001</unitdate>
-               </unittitle>
+               <unittitle>Directories</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1972/2001"
+                         type="inclusive">1972-2001</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ba2dbc33e82c60ff84fc547b2800f808"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_0ebb8d7d39ad7e5aaa05ad0a32036fb5"
+                          parent="aspace_ba2dbc33e82c60ff84fc547b2800f808"
+                          type="folder">15-17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9c54d7fcca3bb6e14398e05676265c30" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Events <unitdate>1981-2000</unitdate>
-               </unittitle>
+               <unittitle>Events</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1981/2000"
+                         type="inclusive">1981-2000</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8257a4b3ffb8e56ebb2015f64c6b2aa1"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_31390a078fde545b743e24de93a268bf"
+                          parent="aspace_8257a4b3ffb8e56ebb2015f64c6b2aa1"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ed4468178de2fb77759b710b658a51c1" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Inauguration, Jill Ker Conway <unitdate>1975</unitdate>
-               </unittitle>
+               <unittitle>Inauguration, Jill Ker Conway</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dab86327b16dbc1fc5bee0b39d7d51ca"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_ba68710993850a54a543d6a3e11fbc50"
+                          parent="aspace_dab86327b16dbc1fc5bee0b39d7d51ca"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bcdd6d12c069f2bcc1f5e8340ad8395f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Internship Information <unitdate>1997, undated</unitdate>
-               </unittitle>
+               <unittitle>Internship Information</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cf47f98831cb749983609eec57f14268"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_1705aa935dede16ea2c67902895e27cb"
+                          parent="aspace_cf47f98831cb749983609eec57f14268"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6ee17968db27c3b76da6bb75cf80a5b0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Mailings - Announcements and Invitations <unitdate>1982-99,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Mailings - Announcements and Invitations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1982/1999"
+                         type="inclusive">1982-99</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_411cd20fa9e8fe26321363ef6695f43f"
+                          label="Mixed Materials [310183630250511]"
+                          type="box">1</container>
+               <container id="aspace_f79d1ae6fd1cfc4e947298f684b5dff1"
+                          parent="aspace_411cd20fa9e8fe26321363ef6695f43f"
+                          type="folder">21</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_015be90f49e74c0cc3fcf0265043aff7" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Meeting <unitdate>1999</unitdate>
-               </unittitle>
+               <unittitle>Meeting</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1999/1999">1999</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_656f964c538b34f4ec4987617c6b4574"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_efdc26e4f9f9fba1639367cee3557a21"
+                          parent="aspace_656f964c538b34f4ec4987617c6b4574"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0b3b5503ace27bf186f7e189d4a21f0a" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Membership <unitdate>1991-92, undated</unitdate>
-               </unittitle>
+               <unittitle>Membership</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1992"
+                         type="inclusive">1991-92</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f18efd538e42e60658df4db18362ca81"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_89fd743b141551d0f490c4cd08549f93"
+                          parent="aspace_f18efd538e42e60658df4db18362ca81"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_87a2f46697ef11f95b42ff1675ca63ea" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">3-5</container>
-               <unittitle>Minutes and Agendas <unitdate>1981-1989</unitdate>
-               </unittitle>
+               <unittitle>Minutes and Agendas</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1981/1989"
+                         type="inclusive">1981-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_03ec98e0891f1d60a6d35e9b9782c840"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_c09f74d765d31174f9c4161963f73003"
+                          parent="aspace_03ec98e0891f1d60a6d35e9b9782c840"
+                          type="folder">3-5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_74e684226369b0e2dc939571b3ce2a64" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">6-8</container>
-               <unittitle>Newsletters <unitdate>1978-2004, undated</unitdate>
-               </unittitle>
+               <unittitle>Newsletters</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1978/2004"
+                         type="inclusive">1978-2004</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5eb497433eb7a789b6b89550a5b08686"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_20011a520c6c21e341912b2226d2898a"
+                          parent="aspace_5eb497433eb7a789b6b89550a5b08686"
+                          type="folder">6-8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_de8319d551d9bc57d1260286dd3fd295" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">9-10</container>
-               <unittitle>Notebook, B. Schancupp, President <unitdate>1993-2004</unitdate>
-               </unittitle>
+               <unittitle>Notebook, B. Schancupp, President</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/2004"
+                         type="inclusive">1993-2004</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d91a1c84d8c7cefbd0fd2958868ae424"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_3c771d2a4fa100c9164fc5a0991a9c00"
+                          parent="aspace_d91a1c84d8c7cefbd0fd2958868ae424"
+                          type="folder">9-10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_441212edaabe33323237f0a508b91071" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Obituaries <unitdate>1994-2002</unitdate>
-               </unittitle>
+               <unittitle>Obituaries</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/2002"
+                         type="inclusive">1994-2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_eb7862811a81df3304e2f660ae7058e7"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_3dc8c73a6ce8d42503c119f0850a5211"
+                          parent="aspace_eb7862811a81df3304e2f660ae7058e7"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3057a1364bc8567d68df64d6025a9741" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Photographs <unitdate>1994-97</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1997"
+                         type="inclusive">1994-97</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_965388ca564c7608658461e26601bdcc"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_04f0b2a8e3d8979bde176a85a8f14595"
+                          parent="aspace_965388ca564c7608658461e26601bdcc"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_abb087611d218d2a6b46de797f51f6b7" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Photographs - Earthwatch <unitdate>1977</unitdate>
-               </unittitle>
+               <unittitle>Photographs - Earthwatch</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_54c2e5d209ac99968635ff08cf94ba02"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_d8e67962623721ebf98a6684d1c66097"
+                          parent="aspace_54c2e5d209ac99968635ff08cf94ba02"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e59b96c435c5e4e8b44cb9e4a4b04cbf" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Presidents and Boardmembers <unitdate>1947-2002</unitdate>
-               </unittitle>
+               <unittitle>Presidents and Boardmembers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/2002"
+                         type="inclusive">1947-2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2bbe1f087c506835a861ae47372636f7"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_b1870270a68b2558851d38e1b84c6bca"
+                          parent="aspace_2bbe1f087c506835a861ae47372636f7"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b8e7a56c95563eb83898592e44c27c6a" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Press Releases and Public Relations <unitdate>1978-81, undated</unitdate>
-               </unittitle>
+               <unittitle>Press Releases and Public Relations</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1978/1981"
+                         type="inclusive">1978-81</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_aef6e57dfd22087ed3398b89494717bc"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_2aa3063cec1e7307afebfcda2b58996a"
+                          parent="aspace_aef6e57dfd22087ed3398b89494717bc"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_942e26a920ee0bae729b62ef8dee6e5e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Scrapbook <unitdate>1970-77</unitdate>
-               </unittitle>
+               <unittitle>Scrapbook</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1977"
+                         type="inclusive">1970-77</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3b32bd39d4defc3f90ee3633a4fa18aa"
+                          label="Mixed Materials [310183630249869]"
+                          type="box">2</container>
+               <container id="aspace_e9635b54ed65e1d4ddb1b6e4ffb71845"
+                          parent="aspace_3b32bd39d4defc3f90ee3633a4fa18aa"
+                          type="folder">16</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
