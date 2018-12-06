@@ -1,797 +1,1184 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca85.xml//EN">manosca85</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca85</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper>Smith College International Summer Institute Records, 1996-1998 </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author>Finding aid prepared by Karen Eberhart.</author>
+            <titleproper>Finding aid to the Smith College International Summer Institute records <num>CA.MS.00085</num>
+            </titleproper>
+            <author>Karen Eberhart</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
             <publisher>Smith College Archives</publisher>
+            <p>
+               <date>© 2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date>© 2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation>Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura
-            Cutter. <date>2003-06-09</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-06 15:30:03 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>manosca85 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2018-12-06</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher>Smith College Archives </publisher>
-         <titleproper>Smith College International Summer Institute Records, 1996-1998 </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>RG 34 </num>
-         <author>Karen Eberhart </author>
-         <date>2000 </date>
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon
-            Foundation.</sponsor>
-         <p>© 2003 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="recordgrp" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Smith College. International Summer
-               Institute. </corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Smith College International Summer
-            Institute Records</unittitle>
-         <unitdate encodinganalog="245$f" type="inclusive">1996-1998</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 34</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">5 boxes</extent>
-            <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-            </address>
-         </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">The program offered high school girls,
-            foreign nationals or U.S. citizens living abroad, an opportunity to spend one month at
-            Smith pursuing their academic interests. Records contain primarily correspondence,
-            evaluation forms, course descriptions, student work, photographs, and general
-            information about the Institute. </abstract>
-         <langmaterial label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Smith College Archives</corpname>
+         </repository>
+         <unittitle>Smith College International Summer Institute records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College. International Summer Institute.</corpname>
+         </origination>
+         <unitid>CA.MS.00085</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.083 linear feet</extent>
+            <extent altrender="carrier">(5 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1996/1999"
+                   type="inclusive">1996-1999</unitdate>
+         <abstract id="aspace_327377e7a684833d7d2a18edc609cbf6">The program offered high school girls, foreign nationals or U.S. citizens living abroad, an opportunity to spend one month at Smith pursuing their academic interests. Records contain primarily correspondence, evaluation forms, course descriptions, student work, photographs, and general information about the Institute.</abstract>
       </did>
-      <bioghist id="bioghist">
-
-         <p> The Smith College International Summer Institute was proposed in 1996. The program
-            offered high school girls, who were foreign nationals or U.S. citizens living abroad, an
-            opportunity to spend one month at Smith pursuing their academic interests. The program
-            was divided into two blocks of two weeks each in which the students would study computer
-            science, English, psychology and economics while also working on individual research
-            projects. The Institute operated successfully during the summer of 1997 with 13 students
-            from 11 different countries. The program for the summer of 1998 was cancelled in late
-            May.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Smith College International Summer Institute was proposed in 1996. The program offered high school girls, who were foreign nationals or U.S. citizens living abroad, an opportunity to spend one month at Smith pursuing their academic interests. The program was divided into two blocks of two weeks each in which the students would study computer science, English, psychology and economics while also working on individual research projects. The Institute operated successfully during the summer of 1997 with 13 students from 11 different countries. The program for the summer of 1998 was cancelled in late May.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p> The International Summer Institute files, which consist of 1.5 linear feet, contain
-            primarily correspondence, publicity, photos and general information about the Institute.
-            Of particular note are the evaluation forms regarding the quality of the program, course
-            descriptions and examples of some of the research projects completed by participants in
-            1997.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The International Summer Institute files, contain primarily correspondence, publicity, photos and general information about the Institute. Of particular note are the evaluation forms regarding the quality of the program, course descriptions and examples of some of the research projects completed by participants in 1997.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into three series:</p>
-         <list>
-            <item> I. Program Information </item>
-            <item> II. Restricted Information </item>
-            <item> III. Student Files RESTRICTED </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>I. Program Information</item>
+            <item>II. Restricted Information</item>
+            <item>III. Student Files RESTRICTED</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The majority of the records are open for research without restriction subject to
-                  the regulations of the College Archives. Budget materials are closed for 25 years
-                  from the date of creation and information about student participants and staff is
-                  closed for 75 years from the date of creation. </p>
-            </accessrestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Smith College International Summer Institute, Box #, Smith College Archives.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The records of the Smith College International Summer Institute were delivered to
-                  the College Archives by the director of the program, Kathleen Lyu Ryan, in August,
-                  1999. Accession #: 99A-98 </p>
-            </acqinfo>
-            <processinfo id="admin-process">
-               <p>Processed by Karen Eberhart</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-
-         <corpname encodinganalog="610" source="lcsh">Smith College. International Summer
-            Institute.</corpname>
-         <subject encodinganalog="650" source="lcsh">Summer
-            schools--Massachusetts--Northampton.</subject>
-         <subject encodinganalog="650" source="lcsh"
-            >Women--Education--Massachusetts--Northampton.</subject>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Smith College International Summer Institute records, Smith College Archives, CA-MS-00085, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use with following restrictions on access:
+Budget materials are closed for 25 years from the date of creation and information about student participants and staff is closed for 75 years from the date of creation.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the Smith College International Summer Institute were delivered to the College Archives by the director of the program, Kathleen Lyu Ryan, in August, 1999. Accession #: 99A-98</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Karen Eberhart</p>  
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Summer schools--Massachusetts--Northampton.</subject>
+         <subject encodinganalog="650" source="lcsh">Women--Education--Massachusetts--Northampton.</subject>
+         <corpname encodinganalog="610" source="lcsh">Smith College. International Summer Institute.</corpname>
       </controlaccess>
-      <dsc id="contlist" type="combined">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I. Program Information</unittitle>
             </did>
-            <scopecontent>
-               <p>This series is unrestricted information about the Institute and its
-                  activities.</p>
+            <scopecontent id="aspace_b8dd60a5eb41e24de71dc4a5507bc888">
+               <head>Scope and Contents</head>
+               <p>This series is unrestricted information about the Institute and its activities.</p>
             </scopecontent>
-            <c02 level="file">
+            <c02 id="aspace_cb82873c925fbadbd2d49d5a5d4bdb4a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Agendas <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Agendas</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_54e446b1b479e6440daf1d4c972f120d"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_d13307ae0f5e7db107e28b03469a026b"
+                             parent="aspace_54e446b1b479e6440daf1d4c972f120d"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1094108bace5649318d7a7bdeb5eb089" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Annual Report <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Annual Report</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bfebd40a2eeadbf77d2baa324d432ff5"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_0d995917d1db19c2f07635dce1edd1b2"
+                             parent="aspace_bfebd40a2eeadbf77d2baa324d432ff5"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5fba63031ac4d087f3726f05aef53539" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Brochures <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Brochures</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2663094fb682a8f4e5b27888f9822658"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_c991603157e385018946dff72b538ebe"
+                             parent="aspace_2663094fb682a8f4e5b27888f9822658"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_878cc6ae4b90bcb5d497cff767e30931" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Calendar and Room Assignments <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Calendar and Room Assignments</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_61faf6915680aa8f7b38090020cdcce0"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_4d40a2f4d759631b513e3aa28386d497"
+                             parent="aspace_61faf6915680aa8f7b38090020cdcce0"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_81454a074eb0e1fc22cc6d09b76add61" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Contacts <unitdate>1996-97</unitdate>
-                  </unittitle>
+                  <unittitle>Contacts</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1996/1997"
+                            type="inclusive">1996-97</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f62d5be0dddcc11b02d39f0b670cc62c"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_f2a2f8ffe8664abc498bcbb1c601b420"
+                             parent="aspace_f62d5be0dddcc11b02d39f0b670cc62c"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4dded5fcd277e10a5fdb5f272e55f2ed" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Correspondence <unitdate>1997-99</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1999"
+                            type="inclusive">1997-99</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_216881b01693ec98a62eaabc97187c39"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_1438339dcb04fe983c4d77d6118a4dde"
+                             parent="aspace_216881b01693ec98a62eaabc97187c39"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1746e406c0b9ec62decf6fde2a27ce52" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Courses <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Courses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6832e66d62f6ff21e848e44df0270e7a"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_97f50d7235bece74ae3e3838f855304c"
+                             parent="aspace_6832e66d62f6ff21e848e44df0270e7a"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3d48821464f58d8056f022a3cd375342" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Evaluations <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Evaluations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_168d65dec5eab994f57f465fdb41d87e"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_a7cd8f977e7c6e480c65150d98d7e099"
+                             parent="aspace_168d65dec5eab994f57f465fdb41d87e"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3bd4b02c2ec817e972c261db65be87c7" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Fall Reunion <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Fall Reunion</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_63e60bd97f50f18c679be2b3d7365e75"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_75fd88971fe3b42b658a8b342bec109d"
+                             parent="aspace_63e60bd97f50f18c679be2b3d7365e75"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0a56fce07656e5b8f980c569c24ef7ef" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Forms/Originals <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Forms/Originals</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_22379c39b596a8ea64b9a529d074551e"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_66b0bdf29b1da134fe79e946e710cd2e"
+                             parent="aspace_22379c39b596a8ea64b9a529d074551e"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ceeaf4716457c0214d707b41203143e6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>General Information <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>General Information</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_955f03315e1203f36d04161a4fd68171"
+                             label="Mixed Materials [310183630254059]"
+                             type="box">1</container>
+                  <container id="aspace_45f2fd7572387c4a18b1c63bf93ad3ef"
+                             parent="aspace_955f03315e1203f36d04161a4fd68171"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5ab9f9ade5ae0f0b632e500a4e0c617b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Grant Proposals <unitdate>1996</unitdate>
-                  </unittitle>
+                  <unittitle>Grant Proposals</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1996/1996">1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_66d57b31efd4c35fb84f50a3b6c2f28e"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_8cf0191262a2aa5aede471f9706c13ed"
+                             parent="aspace_66d57b31efd4c35fb84f50a3b6c2f28e"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bd26b367e36c16020dcc4316e3f2082d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Host Dinners <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Host Dinners</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9714c8b5995eea825d9eed4e0905078f"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_e11eb782cc3e000ce660d2731fcfa78e"
+                             parent="aspace_9714c8b5995eea825d9eed4e0905078f"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b5a214b120ca3f2421e148df38c18ffd" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Inquiries <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Inquiries</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fee7d914350b778b23762510bcd3af6a"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_b122041fd2119edaf90d476f0b526ae4"
+                             parent="aspace_fee7d914350b778b23762510bcd3af6a"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_27e5f6cf2a89a46a83c0984b317cedf7" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Inquiries <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Inquiries</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d6a60929d16394bf4a6ea39c19386a55"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_c36742dd650988ec52bcd647d6852227"
+                             parent="aspace_d6a60929d16394bf4a6ea39c19386a55"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5d7b0e4ea31539a05326348765968333" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Job Descriptions and Blank Applications <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Job Descriptions and Blank Applications</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_df88ce493375ccf7dc5c521047c4fd00"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_9b4cbe2dac68e73ae3638515dfb6b16c"
+                             parent="aspace_df88ce493375ccf7dc5c521047c4fd00"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_61f31501265ffd9d619a3297c57f7ca5" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Kathleen Ryan's Lists of Things to Do <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Kathleen Ryan's Lists of Things to Do</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c1b4a0246f0b642b476bacc1a507c032"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_117dbbd310b51fabf283771b265cef8b"
+                             parent="aspace_c1b4a0246f0b642b476bacc1a507c032"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4db2c8cc62e5cddac1313176ec3adaec" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Liberty High School <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Liberty High School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b041bb1d80d5fdde0d6b5350cbf65ee6"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_6a3cda60e29a78388cdfbef6f3b19425"
+                             parent="aspace_b041bb1d80d5fdde0d6b5350cbf65ee6"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3ebbf45540612d3b207127fbdee0b082" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Notebook <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Notebook</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_427d4d1120749d55e0a6c31dfd643e2f"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_ef51a2d281bcb6e8f434ebd32adb28a3"
+                             parent="aspace_427d4d1120749d55e0a6c31dfd643e2f"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ea646803f3bd78b351d6d39d93a243c2" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Notebook <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Notebook</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f1cd18ff045214a00c3461c7a3b297f2"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_2bb84c75d00bac726fc2e362d19a4352"
+                             parent="aspace_f1cd18ff045214a00c3461c7a3b297f2"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1e41fce943f2abbab139bb896e944cb3" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Other Programs Information <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Other Programs Information</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4e3adf56fa5254acb08b5f6df366f1db"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_6af48aba51e588fb65b5cacd4a9f2f50"
+                             parent="aspace_4e3adf56fa5254acb08b5f6df366f1db"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_958f6695672e658d6d23b24883f57cdf" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Participant Information <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Participant Information</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6ab2ff634826de43ee5efd5a9ecf81a8"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_06a51481b30343e5ce44bfcef7606a0c"
+                             parent="aspace_6ab2ff634826de43ee5efd5a9ecf81a8"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3d1e237cc44a86eeb54380dd11cc3b05" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Photos <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Photos</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5a486f48deffb027dc275b16d9875565"
+                             label="Mixed Materials [310183630254067]"
+                             type="box">2</container>
+                  <container id="aspace_dbf1ccbb6bcae806785c2fe269d61ad5"
+                             parent="aspace_5a486f48deffb027dc275b16d9875565"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f57f33be46505aa1fca72af66db1baf2" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Preparation for Participants <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Preparation for Participants</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e76c7daaecc384f3391a1327508bb29b"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_80433528354c16f0cc8ef4ac86a265d1"
+                             parent="aspace_e76c7daaecc384f3391a1327508bb29b"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c0a9cb5d5da9671820e15b1f3f80d8f4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Programs <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Programs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8d330693d7df6bbca28c87f96d61361f"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_0df188c3e21f403bbaa379bd0973e99c"
+                             parent="aspace_8d330693d7df6bbca28c87f96d61361f"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6f2060cc1fc4351db153b2a9649ef5ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Proposals and Reports <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Proposals and Reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_696ffee69bae791067eae51a28b029f9"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_284e9e3a0107f98e7d3a359abc7886f5"
+                             parent="aspace_696ffee69bae791067eae51a28b029f9"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0bbb11d03d9fa9d11cb38dcc4e92cd3e" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Publicity/Publications <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Publicity/Publications</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bc7700fe0b80a6babee652989004587e"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_412dda1de6aa4c92dda9d9ce6a62f131"
+                             parent="aspace_bc7700fe0b80a6babee652989004587e"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ffd022036c9100a21f7ee44703c34765" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Publicity <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Publicity</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e5674bad34f803948cfa3d8cffd383a9"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_6ed6a6c2e4b0aeb1068bc632227acedc"
+                             parent="aspace_e5674bad34f803948cfa3d8cffd383a9"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_75ea27ec1adc8d001825893d6fb8e387" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Publicity for 1998 <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Publicity for 1998</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2dbdae025edbdfeb3f4f43378a715f43"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_48b9f71fc35bd253408e11a21ca696b5"
+                             parent="aspace_2dbdae025edbdfeb3f4f43378a715f43"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f747ed5501b91b3a82d1363480330a87" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Student Handbook <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Student Handbook</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_60ffb4f2785e4bf4831f42cccb8d1442"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_15c2bc13fb8a0ca1e5b69f0f8c7653f0"
+                             parent="aspace_60ffb4f2785e4bf4831f42cccb8d1442"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ae40968930c4bcd097f5227dcb9a3641" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Student Packet Sample <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Student Packet Sample</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_913e202e035bc6a7dc3a97115e5eb04a"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_43cb83dc60d4f45119c5aa8437cd9886"
+                             parent="aspace_913e202e035bc6a7dc3a97115e5eb04a"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_33a34cbaed85a7e994b78eba5f9f4096" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Student Work <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Student Work</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6051027bc4088bf5992b4fe258302361"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_8994f264181839a1ebaec69b4cd3e5f3"
+                             parent="aspace_6051027bc4088bf5992b4fe258302361"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e87e9a25eef28fd7d1ccb99d6cda1a41" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Training for Residential Directors and Interns
-                        <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Training for Residential Directors and Interns</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dd69fa595b4e4b6d75f2b8476e7b49bb"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_103b820f75fb2d9728b619d67bc98310"
+                             parent="aspace_dd69fa595b4e4b6d75f2b8476e7b49bb"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a08aacba863474e04e85c24529fa8d0" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Video and Picture Release <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Video and Picture Release</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6df58ae902a2b0882aa8ad8e57f2173a"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_3b75f910a0bb7ef5d1e159b59f83a01b"
+                             parent="aspace_6df58ae902a2b0882aa8ad8e57f2173a"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4165edd2768cb783ead4c4ad650ffb60" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Young Women's Leadership School of East Harlem
-                        <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Young Women's Leadership School of East Harlem</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cc1656b73144a393ed498e80726c2e98"
+                             label="Mixed Materials [310183630254075]"
+                             type="box">3</container>
+                  <container id="aspace_8892150a329da900e7c929870c830047"
+                             parent="aspace_cc1656b73144a393ed498e80726c2e98"
+                             type="folder">12</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II. Restricted Information</unittitle>
             </did>
-            <scopecontent>
-               <p>This series contains files that are closed due to their confidential nature. The
-                  budget and billing materials are restricted for 25 years from the date of creation
-                  while the materials on students and staff are restricted for 75 years from the
-                  date of creation.</p>
+            <scopecontent id="aspace_33453bca7391883acd8e55accb53fb7e">
+               <head>Scope and Contents</head>
+               <p>This series contains files that are closed due to their confidential nature. The budget and billing materials are restricted for 25 years from the date of creation while the materials on students and staff are restricted for 75 years from the date of creation.</p>
             </scopecontent>
-            <c02 level="file">
+            <c02 id="aspace_f235b530d17dc6389f683b538f1e2f57" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Applicants <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Applicants</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9238a72296cc66798b84e1a1b5696422"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_2ea4a98a4c6738e2d88920e458a9d196"
+                             parent="aspace_9238a72296cc66798b84e1a1b5696422"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fe358bb2bcdcb6120e0a1182913e81b9" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Bills <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Bills</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2e3897b997d951d595c4cd037a96b21a"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_7931cce21da1fac7917f8fd8be524384"
+                             parent="aspace_2e3897b997d951d595c4cd037a96b21a"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1cb5caffd437a514121caeda98d206cf" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Budget <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Budget</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7e059ed6b3ab42bb0e882aa6f7f8b9ef"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_12bf8d23312eb478791a0255d4d55b1b"
+                             parent="aspace_7e059ed6b3ab42bb0e882aa6f7f8b9ef"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_056e3886bdb1407dd74415a0eb366733" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Financial Aid <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Financial Aid</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5c152981556e5cfa14cb38faeaba0a1f"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_a278404d8352f5b8ecf1defad37741ae"
+                             parent="aspace_5c152981556e5cfa14cb38faeaba0a1f"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_481a6ebdaca2a3e999c017642d8a77ac" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Interns and Residential Directors <unitdate>1997-98</unitdate>
-                  </unittitle>
+                  <unittitle>Interns and Residential Directors</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997-98</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ceb1913f3e610f73abb688ad684210cf"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_93a3ef34eb278de71aae04ad8ddbec40"
+                             parent="aspace_ceb1913f3e610f73abb688ad684210cf"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_083c2dc3d064bd2fb2e5ebcbde73e9c7" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Professor Contracts <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Professor Contracts</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b1de27252d195ecc926d46c8f8be6485"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_c34a99e46befe7e2544b88987051bf80"
+                             parent="aspace_b1de27252d195ecc926d46c8f8be6485"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_903235bef386e95fa1851aea5975ec86" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Student and Intern Profiles <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Student and Intern Profiles</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f147809c27434808f2f4f6f6efceb723"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_ce68cbac4d0ef6cfeddc1a163ef8ec9a"
+                             parent="aspace_f147809c27434808f2f4f6f6efceb723"
+                             type="folder">7</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III. Student Files RESTRICTED</unittitle>
             </did>
-            <scopecontent>
-               <p>This series contains the files of the students who were accepted into the program
-                  for 1997 and 1998 and are restricted for 75 years from the date of creation. </p>
+            <scopecontent id="aspace_baf50ae03a641d2dbbc7dd8e6b7b0fad">
+               <head>Scope and Contents</head>
+               <p>This series contains the files of the students who were accepted into the program for 1997 and 1998 and are restricted for 75 years from the date of creation.</p>
             </scopecontent>
-            <c02 level="file">
+            <c02 id="aspace_fe71f2da53d8ef4613406d3c309ac81f" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Adenika, Remi - Nigeria <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Adenika, Remi - Nigeria</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb3203de8cb1dd57bf2eb99928f1ca28"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_7c03366d88bbd92f5d8d2dd94657acf3"
+                             parent="aspace_cb3203de8cb1dd57bf2eb99928f1ca28"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a0527b7e0982a314d323a3f6326c896b" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Chang, Dana - Taiwan <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Chang, Dana - Taiwan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c6f4a26e197c12cfc9724614383ff0aa"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_58f05d41b2b6884c7dde337315b7d937"
+                             parent="aspace_c6f4a26e197c12cfc9724614383ff0aa"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dadbf2190c4d36154a4a1e95c938da32" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Chatzikonstantinou, Eleni - Greece <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Chatzikonstantinou, Eleni - Greece</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_88051d2ebe253b0fcd665677167d2762"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_1c686239c2202f5ca5dc58726a791773"
+                             parent="aspace_88051d2ebe253b0fcd665677167d2762"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5527afe29561b77fafea7361804f6442" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Chatzidimitriou, Stavroula (Julia) - Greece <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Chatzidimitriou, Stavroula (Julia) - Greece</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fb716bcf635464d3722c08311baee51e"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_e33b82dcac429f64e3b89dda805ce6ff"
+                             parent="aspace_fb716bcf635464d3722c08311baee51e"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_60a11116f13345c14c1124f6cc2c0dcc" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Hatzichrstou, Styliani - Greece <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Hatzichrstou, Styliani - Greece</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b5e3f5a68606fcebb591206452ca0fc6"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_55268c305cb320dd4cfa214baecfdf0f"
+                             parent="aspace_b5e3f5a68606fcebb591206452ca0fc6"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9b934c2c8c4842288adc9f8b3536f63a" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Kerr, Kathleen - New Zealand <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Kerr, Kathleen - New Zealand</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_20ed4e159fa86ff9da1c7ab150fadbe1"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_f98a1dca8855d6334680d3dbb8ddfc8d"
+                             parent="aspace_20ed4e159fa86ff9da1c7ab150fadbe1"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0e394064bd9ddc890890bb544e34db4d" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Khan, Farah - Bangladesh <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Khan, Farah - Bangladesh</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3cf069c88ca754988c97266c16c60071"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_f72cf8ba895a0ce04a861130f3130c25"
+                             parent="aspace_3cf069c88ca754988c97266c16c60071"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dcc986e7d543bbf09039e34682d44b80" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Materassi, Luisa - Italy <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Materassi, Luisa - Italy</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7ef9d8afd761a223e51352445fee4585"
+                             label="Mixed Materials [310183630254083]"
+                             type="box">4</container>
+                  <container id="aspace_76261497a80fcd33662e6a5ae1c381d9"
+                             parent="aspace_7ef9d8afd761a223e51352445fee4585"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a9e944be7dd1e83268b9c0f3ad9ca4ee" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Nedialkova, Teodora (Titi) - Bulgaria <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Nedialkova, Teodora (Titi) - Bulgaria</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6ba73eacde474c6786ff02f5853d1bb7"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_6a6560bf36fe7b6a39ffcee457b50a44"
+                             parent="aspace_6ba73eacde474c6786ff02f5853d1bb7"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d73bfd878d67d52e1a266fe77588ac15" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Rykovanova, Ekaterina - Russia <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Rykovanova, Ekaterina - Russia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b33dac7625ce72aab74f4ec4dbe48b8a"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_7089c72ea3f871e3be2b7d309c275b79"
+                             parent="aspace_b33dac7625ce72aab74f4ec4dbe48b8a"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c456aaf2b784848c23b066f48708d04d" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Sawara, Naoko - Japan <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Sawara, Naoko - Japan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_82cbbb8ac0b2cbd3d48fecea8f23b0ab"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_52258d398bd78fcb2566cd9bdfe3c0e9"
+                             parent="aspace_82cbbb8ac0b2cbd3d48fecea8f23b0ab"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9709a777914787d5888c7e5c981fd1b8" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Tallberg, Linda - Finland <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Tallberg, Linda - Finland</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ca9676576910257e0a579a432f76c588"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_f4c2be494bceed104408f553572b00f4"
+                             parent="aspace_ca9676576910257e0a579a432f76c588"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d29314285600ff7c1e0179e0d0fb0d2e" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Taran, Alexandra - Hong Kong <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Taran, Alexandra - Hong Kong</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8652cfa73bf147e59a0d3ff269dfadcd"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_7837c8e235be2b8ee7a948d947f9c8f0"
+                             parent="aspace_8652cfa73bf147e59a0d3ff269dfadcd"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ffbb11c2ee8da77a07bc9a852f25481d" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Batalska, Tatiana - Bulgaria [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Batalska, Tatiana - Bulgaria [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a0af11840d4c631f6625e93b4e90552a"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_40cd1ce212f2e47c7856ca4679c2c671"
+                             parent="aspace_a0af11840d4c631f6625e93b4e90552a"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b024c307af181073897bbc2c8d3febf6" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Carol, Yu Wing Ka - Hong Kong [did not attend]
-                        <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Carol, Yu Wing Ka - Hong Kong [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6b07ea6db77dd313f75cd23e58a44ce8"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_beb74a82df48c53bae3b0b2f89793acf"
+                             parent="aspace_6b07ea6db77dd313f75cd23e58a44ce8"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_99f67ccf2e737031e3cb956e7f5e8ff6" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Georgieva, Gergana D. - Bulgaria [did not attend]
-                        <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Georgieva, Gergana D. - Bulgaria [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cd1df696fa5bba8c8922324397e021aa"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_2d35aec2509a13566acf556930b0da06"
+                             parent="aspace_cd1df696fa5bba8c8922324397e021aa"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_daeac8dab842db3aa5931d1ad71e858d" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Khor, Fenny - Malaysia [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Khor, Fenny - Malaysia [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_996749dcd6abb5639a4408df2b6f524a"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_c01c8ce0d50825dd9fe197f873ecc8b0"
+                             parent="aspace_996749dcd6abb5639a4408df2b6f524a"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0478e30e7de17fac4e63dd61d9da97ea" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Kung, Cee - China [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Kung, Cee - China [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0f7ce3e72447d06427552cfa2bdee041"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_2116b02a4ae4fd59f8e7f107c75ccbab"
+                             parent="aspace_0f7ce3e72447d06427552cfa2bdee041"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_688c8b670fb93323d953db74f70b6dfd" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Malik, Zainab - Taiwan [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Malik, Zainab - Taiwan [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb68ae61c9c7218349a9e3dd68006675"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_4ba2cf2bcb381134fb68a5c049b95e3b"
+                             parent="aspace_cb68ae61c9c7218349a9e3dd68006675"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_932e7e6832ae5df6d699eb24277073a8" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Weisfelt, Romy - Australia [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Weisfelt, Romy - Australia [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb56f0d50f16ad8e826207ab829d7a7a"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_ead6bc861a9874200de78803351396f0"
+                             parent="aspace_cb56f0d50f16ad8e826207ab829d7a7a"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_187bd30fef499297efee9267b46a5ac4" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Yusuf, Mehreen - Bangladesh [did not attend] <unitdate>1997</unitdate>
-                  </unittitle>
+                  <unittitle>Yusuf, Mehreen - Bangladesh [did not attend]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1997/1997">1997</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_727980991c9b2e4b12a04080d7ae9e12"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_f404dda5fe733b409510ba9528d29a3b"
+                             parent="aspace_727980991c9b2e4b12a04080d7ae9e12"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b78714cb5e5a8d82d5c4c323c4447644" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Al Bakree, Basma - Saudi Arabia <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Al Bakree, Basma - Saudi Arabia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c7047cb12996a302d0e22b0e6e17234e"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_3395163e54c8883f8757f5bd9c36f6c1"
+                             parent="aspace_c7047cb12996a302d0e22b0e6e17234e"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4186be1f52564b93bb1b0fe673e4b8f5" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Alemu, Hlina - Ethiopia <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Alemu, Hlina - Ethiopia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_39527d22c47f75db0f79c92bb4e65ce7"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_95d975d51a75cc195f432188d7ffef26"
+                             parent="aspace_39527d22c47f75db0f79c92bb4e65ce7"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8aa59fde98947cdd1dd4814469aa21c0" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Arabadjiyska, Aneta - Bulgaria <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Arabadjiyska, Aneta - Bulgaria</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_64b491d74701715ef87d01c6c3d4370b"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_a855780ce3517df59b81237e043b1f4b"
+                             parent="aspace_64b491d74701715ef87d01c6c3d4370b"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_427952e74527c61332de4c2021ca69b4" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Bwalya, Chileshe - Zambia <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Bwalya, Chileshe - Zambia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f69c81150deae123a615772d7ab54a1b"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_3fa2abcdfb019374711b593b091ef601"
+                             parent="aspace_f69c81150deae123a615772d7ab54a1b"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c7504ef1f379df0a866bf821ea658f79" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>Chien, Liang-Ru (Laura) - Taiwan <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Chien, Liang-Ru (Laura) - Taiwan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d3bf68bf13020ebd5ab564086255196c"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_f9e826bc79206c5294c5c17e18dfae3d"
+                             parent="aspace_d3bf68bf13020ebd5ab564086255196c"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d72bfb3124fea140a1aafefc660037d2" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>Fynn, Rosy - Ghana <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Fynn, Rosy - Ghana</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0fe0d254fd9c63c6c94a4699eea0eb9f"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_69898ace9d3eff06ebb275695c51387a"
+                             parent="aspace_0fe0d254fd9c63c6c94a4699eea0eb9f"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ac3c0db4355ef35c5a85326a0e48276c" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Grashkin, Alexandra - Bulgaria <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Grashkin, Alexandra - Bulgaria</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30d655ce8bf240273591208e89f4c3a0"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_1cb866a69d420eb89c8fe7a2fb159192"
+                             parent="aspace_30d655ce8bf240273591208e89f4c3a0"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_045e83ffd4e22a1e61ae48f363b9957f" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Jaskot, Katarzyna - Poland <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Jaskot, Katarzyna - Poland</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6646959c105af0132194d3e5f9918f28"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_54ee9094c6403c581b3d5e2105f0a5a2"
+                             parent="aspace_6646959c105af0132194d3e5f9918f28"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ca729e0eadcde1fb3c78afc6dfdd483b" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">22</container>
-                  <unittitle>Khan, Maria Moin - Pakistan <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Khan, Maria Moin - Pakistan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fa053b87cb861b81fca99da19eecb259"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_a9d2bf03515277734935d10059ec0038"
+                             parent="aspace_fa053b87cb861b81fca99da19eecb259"
+                             type="folder">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f0bccfc20c6f296933b44f37d11ac1ea" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>Koeva, Martina - Bulgaria <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Koeva, Martina - Bulgaria</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d790c8d17ffc3092795f9e18eafa8340"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_b830fc42abfeddbeae35051a7fdffbf3"
+                             parent="aspace_d790c8d17ffc3092795f9e18eafa8340"
+                             type="folder">23</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cef1a044f4d1858ec7199d809e54a35b" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">24</container>
-                  <unittitle>Kurdi, Ghazal - Saudi Arabia <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Kurdi, Ghazal - Saudi Arabia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_52a613149bfc77a0522781d17f45a89f"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_bb0c454f22fce1126087ff3e59e2771e"
+                             parent="aspace_52a613149bfc77a0522781d17f45a89f"
+                             type="folder">24</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0f686b177a2cf621082a4af9e2f6f2e4" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>Pinarbasi, Bahar - Turkey <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Pinarbasi, Bahar - Turkey</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_19f3516acc2150d94cf0c5a921fa2adf"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_c923972f269d76aef058e2ccc412b07b"
+                             parent="aspace_19f3516acc2150d94cf0c5a921fa2adf"
+                             type="folder">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d6ff36718aa5aaa3d9844ff9a6c4d5e0" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>Tsutsui, Kimiko - Japan <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Tsutsui, Kimiko - Japan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_de00cd8bbca02ecd81b9287b4d5c7998"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_5098fdc2bd46250b8cd67a2435777993"
+                             parent="aspace_de00cd8bbca02ecd81b9287b4d5c7998"
+                             type="folder">26</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_babad94d846f22bb3d1c5ac1582f86ef" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">27</container>
-                  <unittitle>Zaman, Jawziya - Pakistan <unitdate>1998</unitdate>
-                  </unittitle>
+                  <unittitle>Zaman, Jawziya - Pakistan</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1e6a7341c86640a991ab06d5a1dbf361"
+                             label="Mixed Materials [310183630254091]"
+                             type="box">5</container>
+                  <container id="aspace_054daa6f3e9bd923816a071facb3722b"
+                             parent="aspace_1e6a7341c86640a991ab06d5a1dbf361"
+                             type="folder">27</container>
                </did>
             </c02>
          </c01>
