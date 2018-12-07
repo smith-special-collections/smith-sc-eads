@@ -1,856 +1,1202 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca392.xml//EN">manosca392</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca392</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Margaret Myers Dunn papers, 1916 -
-               2003</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Olivia Ruiz, Class of
-               2015.</author>
-
+            <titleproper>Finding aid to the Margaret Myers Dunn papers <num>CA.MS.00392</num>
+            </titleproper>
+            <author>Finding aid prepared by Olivia Ruiz, Class of 2015.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-03-26">2015-03-26</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-07 15:29:06 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-07</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf"> Myers Dunn, Margaret</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Margaret Myers Dunn papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1916 - 2003</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1935 - 1946</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:a9479d9b-56e9-4ffd-a29b-648fa6652204</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">9 boxes</extent>
-            <extent encodinganalog="300$a">(4 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Alumna. Class of 1937. Contains
-            correspondence, ephemera, and photographs. </abstract>
+         <unittitle>Margaret Myers Dunn papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Myers Dunn, Margaret</persname>
+         </origination>
+         <unitid>CA.MS.00392</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.125 linear feet</extent>
+            <extent altrender="carrier">(9 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1935/1959"
+                   type="inclusive">1935-1959</unitdate>
+         <abstract id="aspace_115b62601b5bc005e31c837caad3797e">Margaret Myers Dunn is a Smith College Alumna, Class of 1937. This collection contains correspondence, ephemera, and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-
-
-         <p>Margaret Myers Dunn was born Margaret Pauline Myers on May 1, 1916 in Pittsburgh,
-            Pennsylvania. She, her younger sister Harriet (Class of 1941) and her older brothers
-            Clay and Roy, were born to Stewart Clay Myers and Augusta Huth Myers.</p>
-
-         <p>Myers Dunn attended the Winchester School in Pittsburgh, PA for her preparatory
-            education and enrolled in Smith College in 1933. In 1937, she graduated with a B.A. in
-            Biology and a minor in German. She traveled through Europe on graduation and later
-            married Richard Byam Dunn at the end of 1938. Richard Dunn was a Williams College
-            undergraduate who later attended Harvard Law and courted Margaret since 1935. They wrote
-            frequent letters back and forth throughout their courtship, and during World War II
-            while Richard was stationed on the USS Steinaker. Margaret remained at home in Newton,
-            MA, dedicating her time to maintaining the household and raising their young family. </p>
-         <p>Together they had four children. According to the <title render="italic">Smith Alumnae
-               Quarterly</title> (Summer 2004), they spent much of their life in the Boston area
-            where Margaret was "deeply involved in scouting and the PTA." Margaret went on to earn
-            her Masters of Social Work from Boston College School of Social Work in 1965 and worked
-            with the physically and intellectually challenged, including senior citizens (SAQ,
-            Summer 2004). The family moved after the war to Wellesley, Massachusetts, and after
-            Richard's retirement to Kimball Farms, in Lenox, MA. She died there on October 29, 2003.
-            Richard died October 2, 2002. </p>
-
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Margaret Myers Dunn was born Margaret Pauline Myers on May 1, 1916 in Pittsburgh, Pennsylvania. She, her younger sister Harriet (Class of 1941), and her older brothers Clay and Roy were born to Stewart Clay Myers and Augusta Huth Myers.</p>
+         <p> Myers Dunn attended the Winchester School in Pittsburgh, PA for her preparatory education and enrolled in Smith College in 1933. In 1937, she graduated with a B.A. in Biology and a minor in German. She traveled through Europe on graduation and later married Richard Byam Dunn at the end of 1938. Richard Dunn was a Williams College undergraduate who later attended Harvard Law and courted Margaret since 1935. They wrote frequent letters back and forth throughout their courtship, and during World War II while Richard was stationed on the USS Steinaker. Margaret remained at home in Newton, MA, dedicating her time to maintaining the household and raising their young family. </p>
+         <p> Together they had four children. According to the <title render="italic">Smith Alumnae Quarterly</title> (Summer 2004), they spent much of their life in the Boston area where Margaret was "deeply involved in scouting and the PTA." Margaret went on to earn her Masters of Social Work from Boston College School of Social Work in 1965 and worked with the physically and intellectually challenged, including senior citizens (SAQ, Summer 2004). The family moved after the war to Wellesley, Massachusetts, and after Richard's retirement to Kimball Farms, in Lenox, MA. She died there on October 29, 2003. Richard died October 2, 2002.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The Margaret Myers Dunn papers include 4 linear feet (9 document boxes) of material
-            dating from 1935 to 1959. The collection includes digital copies of the correspondence,
-            physical copies of the transcribed correspondence, the original personal correspondence,
-            photographs, ephemera and travel memorabilia.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection includes digital copies of the correspondence, physical copies of the transcribed correspondence, the original personal correspondence, photographs, ephemera and travel memorabilia.</p>  
       </scopecontent>
-
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The collection (9 document boxes/ 4 linear feet) is open to researchers according to the
-            regulations of the Smith College Archives. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Smith College owns copyright to these materials. It is the responsibility of the
-            researcher to identify and satisfy the holders of all copyrights. Permission must be
-            obtained from the Smith College Archives to publish reproductions or quotations beyond
-            "fair use."</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that they own copyright, Erica H. Dunn has assigned the copyright of Margaret Myers Dunn's works to Smith College; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Margaret Myers Dunn, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Margaret Myers Dunn papers, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Margaret Myers Dunn papers, Smith College Archives, CA-MS-00392, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Margaret Myers Dunn papers were donated to the College Archives by her daughter
-            Erica H. Dunn in 2014. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Margaret Myers Dunn papers were donated to the Smith College Archives by her daughter Erica H. Dunn in 2014.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>The collection was processed and housed by Olivia Ruiz, Class of 2015; Elizabeth Carron,
-            Archives Specialist</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>The collection was processed and housed by Olivia Ruiz, Class of 2015; Elizabeth Carron, Archives Specialist</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <persname encodinganalog="600" source="lcnaf">Myers, Margaret, 1916 - 2003 </persname>
-
-         <corpname encodinganalog="610" source="lcsh">Smith College -- Alumni and alumnae -- History
-            -- Sources</corpname>
-         <corpname encodinganalog="610" source="lcsh">World War, 1939 - 1945</corpname>
-         <subject encodinganalog="650" source="lcsh">Women college students -- Massachusetts --
-            Northampton </subject>
-         <subject encodinganalog="650" source="lcsh">Women -- education (higher) -- Massachusetts --
-            History -- 20th Century</subject>
-         <subject encodinganalog="650" source="lcsh">Courtship</subject>
-         <corpname encodinganalog="610" source="lcsh">Williams College</corpname>
-         <corpname encodinganalog="610" source="lcsh"> Steinaker (Destroyer : DD-863</corpname>
-
-         <genreform encodinganalog="655" source="aat">correspondence</genreform>
-         <genreform encodinganalog="655" source="aat">photographs</genreform>
-         <genreform encodinganalog="655" source="aat">photographs</genreform>
-         <genreform encodinganalog="655" source="aat">memorabilia </genreform>
-      </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <separatedmaterial id="add-separated">
-         <p>The collection also contains a 6-mm film titled "Graduation + alumnae parade 1937" and a
-            DVD titled "Smith College graduation events 1937 and/or 1938". Please contact Smith
-            College Archives for information on access and use. </p>
+      <separatedmaterial id="aspace_add-separated">
+         <head>Separated Materials</head>
+         <p>The collection also contains a 6-mm film titled "Graduation + alumnae parade 1937" and a DVD titled "Smith College graduation events 1937 and/or 1938". Please contact Smith College Archives for information on access and use.</p>  
       </separatedmaterial>
-
-      <!-- End additional information -->
-
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Women college students -- Massachusetts -- Northampton</subject>
+         <subject encodinganalog="650" source="lcsh">Women -- education (higher) -- Massachusetts -- History -- 20th Century</subject>
+         <subject encodinganalog="650" authfilenumber="sh85033596" source="lcsh">Courtship</subject>
+         <genreform encodinganalog="655" authfilenumber="300026877" source="aat">correspondence</genreform>
+         <genreform encodinganalog="655" source="aat">photographs</genreform>
+    
+         <genreform encodinganalog="655" source="aat">memorabilia</genreform>
+         <persname encodinganalog="600" source="naf">Myers, Margaret, 1916 - 2003</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- Alumni and alumnae -- History -- Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">World War, 1939 - 1945</corpname>
+         <corpname encodinganalog="610" source="lcsh">Williams College</corpname>
+         <corpname encodinganalog="610" source="lcsh">Steinaker (Destroyer : DD-863)</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Transcripts</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_74a5d3b2a5388e96f4774d33feeefc19" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>CD-ROMS: Correspondence Transcripts <unitdate>1935 - 1946</unitdate>
-                  </unittitle>
+                  <unittitle>CD-ROMS: Correspondence Transcripts</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1946"
+                            type="inclusive">1935 - 1946</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_3798f4ef6b54995fd6bf7af37f4a6b45"
+                             label="Mixed Materials [310183630259918]"
+                             type="box">2106.2</container>
+                  <container id="aspace_32eeb3324af665131d974f3893b5964a"
+                             parent="aspace_3798f4ef6b54995fd6bf7af37f4a6b45"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_759bb8dfb6e03a3d141093ed090b954a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Correspondence Transcript, Volume 1 <unitdate>1935 - 1937</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence Transcript, Volume 1</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1937"
+                            type="inclusive">1935 - 1937</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_5601f5f593b4946e83598ad1b22ac347"
+                             label="Mixed Materials [310183630259918]"
+                             type="box">2106.2</container>
+                  <container id="aspace_5f6a95b380df2906ee70b4a28ec865fb"
+                             parent="aspace_5601f5f593b4946e83598ad1b22ac347"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0af03a41ee9677f2ec4670b086e3306a" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Correspondence Transcript, Volume 2 <unitdate>1938</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence Transcript, Volume 2</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_525e076ffabbc7c72540c3239474d46f"
+                             label="Mixed Materials [310183630259918]"
+                             type="box">2106.2</container>
+                  <container id="aspace_5ca74b91487d02ca99b727ed444a86b7"
+                             parent="aspace_525e076ffabbc7c72540c3239474d46f"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_12f2c6dd19a56b73a1eb8abd32e9e9e1" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Correspondence Transcript, Volume 3 <unitdate>1944 - 1946</unitdate>
-                  </unittitle>
+                  <unittitle>Correspondence Transcript, Volume 3</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1946"
+                            type="inclusive">1944 - 1946</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a13aac975206f8d5bbff837076ce5407"
+                             label="Mixed Materials [310183630259918]"
+                             type="box">2106.2</container>
+                  <container id="aspace_909fc72da49881b18cc000b340f9105d"
+                             parent="aspace_a13aac975206f8d5bbff837076ce5407"
+                             type="folder">4</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: Correspondence</unittitle>
             </did>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>May <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>June <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>July <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>August <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>September <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>October <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>November <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>December <unitdate>1935</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>January <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>February <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>March <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>April <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>May <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>June <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>July <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>August <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>September <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">22</container>
-                  <unittitle>October <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>November <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">24</container>
-                  <unittitle>December <unitdate>1936</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>January <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>February <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">27</container>
-                  <unittitle>March <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">28</container>
-                  <unittitle>April <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">29</container>
-                  <unittitle>May <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">30</container>
-                  <unittitle>June <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">31</container>
-                  <unittitle>July <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">32</container>
-                  <unittitle>August <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">33</container>
-                  <unittitle>September <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">34</container>
-                  <unittitle>October <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">35</container>
-                  <unittitle>November <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">36</container>
-                  <unittitle>December <unitdate>1937</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">37</container>
-                  <unittitle>January <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">38</container>
-                  <unittitle>February <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">39</container>
-                  <unittitle>March <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">40</container>
-                  <unittitle>April <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">41</container>
-                  <unittitle>May <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">42</container>
-                  <unittitle>June <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">43</container>
-                  <unittitle>July <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">44</container>
-                  <unittitle>August <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">45</container>
-                  <unittitle>September <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">46</container>
-                  <unittitle>October <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">47</container>
-                  <unittitle>November <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">48</container>
-                  <unittitle>December <unitdate>1938</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">49</container>
-                  <unittitle>January <unitdate>1939</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">50</container>
-                  <unittitle>September <unitdate>1939</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">51</container>
-                  <unittitle>May <unitdate>1940</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">52</container>
-                  <unittitle>June <unitdate>1940</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">53</container>
-                  <unittitle>February <unitdate>1941</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">54</container>
-                  <unittitle>December <unitdate>1941</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">55</container>
-                  <unittitle>June <unitdate>1944</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">56</container>
-                  <unittitle>July <unitdate>1944</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">57</container>
-                  <unittitle>August <unitdate>1944</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">58</container>
-                  <unittitle>April <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">59</container>
-                  <unittitle>May <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">60</container>
-                  <unittitle>June <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">61</container>
-                  <unittitle>July <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">62</container>
-                  <unittitle>August <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">63</container>
-                  <unittitle>September <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">64</container>
-                  <unittitle>October <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">65</container>
-                  <unittitle>November <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">66</container>
-                  <unittitle>December <unitdate>1945</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">67</container>
-                  <unittitle>February <unitdate>1946</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">68</container>
-                  <unittitle>March <unitdate>1946</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">69</container>
-                  <unittitle>April <unitdate>1954</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">70</container>
-                  <unittitle>September <unitdate>1959</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <container type="folder" label="mixed materials">71</container>
-                  <unittitle>various letters <unitdate>undated</unitdate>
-                  </unittitle>
+            <c02 id="aspace_88fc0f5787005f3a8d87f40db0d9602c" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7543cf14c93bf3a9af6c09b80e3af073"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_7c9a8637c4683dd46a81ba949673e11e"
+                             parent="aspace_7543cf14c93bf3a9af6c09b80e3af073"
+                             type="folder">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b8d7e47485f6feb335f75a1879884dea" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_971740f0679c1a4a15c371c449479b57"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_b11d8c0b19a4530b549312a10e8e9d6a"
+                             parent="aspace_971740f0679c1a4a15c371c449479b57"
+                             type="folder">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_49c590182a39814e39c41ffa877b3353" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dcc68d21a46316c9411b9f264ffade02"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_9fb1584d0256477576df3e543040f888"
+                             parent="aspace_dcc68d21a46316c9411b9f264ffade02"
+                             type="folder">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_676d6a3ce58e8df07ae4b43f472439da" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_086bcdfa82ff2b510eec4f698e759ef0"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_6b8b230fa5c5d11e370c5a98e9093cdf"
+                             parent="aspace_086bcdfa82ff2b510eec4f698e759ef0"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b7942af4ec4a3086c20d7cf0003162ac" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7c296aa0ac63684e85db46e55831f3a0"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_d7f964c75f2feaa4164475ce5dc454c0"
+                             parent="aspace_7c296aa0ac63684e85db46e55831f3a0"
+                             type="folder">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7944210d2a0ae54b41b9a179d6be8013" level="file">
+               <did>
+                  <unittitle>October</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7840ccba79e7be4f092abdc2bdc87e5b"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_3657416ce7f29befe41336fc92460d87"
+                             parent="aspace_7840ccba79e7be4f092abdc2bdc87e5b"
+                             type="folder">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_12abe8b65c2d9c4995270379c383b948" level="file">
+               <did>
+                  <unittitle>November</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7b331b09758e2d0d37bbfa06f84c3b94"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_112b0664a96521ddd4af9d1804a34e17"
+                             parent="aspace_7b331b09758e2d0d37bbfa06f84c3b94"
+                             type="folder">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_98d74b9fa75aade5f2e052e445f8bde9" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_76e77c1372b63fec014465a87712bf47"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_f6b66835e0668a615cdef082abd1a6a1"
+                             parent="aspace_76e77c1372b63fec014465a87712bf47"
+                             type="folder">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8334ff0cd1c72a7fed47f0a15cc6a639" level="file">
+               <did>
+                  <unittitle>January</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_777c0dad486b13bf61cb2baf7e71453d"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_148b86e5fc0e46aeea0b4cf5dce497a5"
+                             parent="aspace_777c0dad486b13bf61cb2baf7e71453d"
+                             type="folder">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e10cff92fec3157b41f2e8ed254e27af" level="file">
+               <did>
+                  <unittitle>February</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_24f0fd2e68b76113385140b4f1215256"
+                             label="Mixed Materials [310183630259900]"
+                             type="box">2106.3</container>
+                  <container id="aspace_d87e2e9d3487bb64e026bb23549e7c3a"
+                             parent="aspace_24f0fd2e68b76113385140b4f1215256"
+                             type="folder">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_12aabd817e72d10e442fed247edf2b68" level="file">
+               <did>
+                  <unittitle>March</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_96d796c3f582b43f9f983a28f5759635"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_f4cfdc4b0588b76898333af37b7f22f9"
+                             parent="aspace_96d796c3f582b43f9f983a28f5759635"
+                             type="folder">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4163fee285366b287aa658accab83210" level="file">
+               <did>
+                  <unittitle>April</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6eceba191163dd26f7dea63c71448a43"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_484b385ad47319934e9205373c47c434"
+                             parent="aspace_6eceba191163dd26f7dea63c71448a43"
+                             type="folder">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_113d24d7198e2df2867372dfa29232df" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_aed49ac7b357a3e42aafab4464e0fea3"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_ac5ece2d7da8fef1c40b19004b55a2c8"
+                             parent="aspace_aed49ac7b357a3e42aafab4464e0fea3"
+                             type="folder">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_57319fac0aeed1f410192a43e6de5d44" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1ebcb6cf903895e6d6d2d2ad01661592"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_f2a08d2787c682db7d5b757e7c563ea6"
+                             parent="aspace_1ebcb6cf903895e6d6d2d2ad01661592"
+                             type="folder">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8d19c428280888309eeb785cf8f9ce9a" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e77f06c2efd5ae20980dd838c39a1844"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_c86e56049d8509b9a937a473d568cac9"
+                             parent="aspace_e77f06c2efd5ae20980dd838c39a1844"
+                             type="folder">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b65588c6b4c17b57b2de68ace2531d9e" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d31079dc4b3ddd53074d8f996c39694e"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_f61e8f20654d83f8a761946da6847cb8"
+                             parent="aspace_d31079dc4b3ddd53074d8f996c39694e"
+                             type="folder">20</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6ab09c65f90a1efd4f0cc5c5d21e54a2" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b81d2ef58ecef95283c2ca1c2c49fd78"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_e330df8b3d1c2a329ccba00ce199c169"
+                             parent="aspace_b81d2ef58ecef95283c2ca1c2c49fd78"
+                             type="folder">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4e32e814e8ee5fa3068b204c74fc3154" level="file">
+               <did>
+                  <unittitle>October</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f58ece101f3f11f2f1d9426ee1ae0b93"
+                             label="Mixed Materials [310183630259892]"
+                             type="box">2106.4</container>
+                  <container id="aspace_0f3802c2e2b58022e81085e511a06b7c"
+                             parent="aspace_f58ece101f3f11f2f1d9426ee1ae0b93"
+                             type="folder">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c30939fd6cca18596e5cb63276084465" level="file">
+               <did>
+                  <unittitle>November</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f32cbdd92303b6bedce943489777d64d"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_0a5a8e0072310134fc4e9e02823ed1f5"
+                             parent="aspace_f32cbdd92303b6bedce943489777d64d"
+                             type="folder">23</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7e9b4a0d4a34744f0ccbfd5f42e4e659" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7549019ed2a66cd8375cc51b4eba889a"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_83a752277b9b3fe8351ab5b858836c61"
+                             parent="aspace_7549019ed2a66cd8375cc51b4eba889a"
+                             type="folder">24</container>
+               </did>
+            </c02>
+            <c02 id="aspace_680e2b0ddd3079ffa59be3632a680a5a" level="file">
+               <did>
+                  <unittitle>January</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f633cd018a4d6a275b7445a981f9732a"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_05e870c184fac1438ebab26d816d3b12"
+                             parent="aspace_f633cd018a4d6a275b7445a981f9732a"
+                             type="folder">25</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a7a7de2d160c90bd25dab6a6a888e61c" level="file">
+               <did>
+                  <unittitle>February</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93e3be865fdb5bd99adc93696f8aad5d"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_59dea0d87b970a707775081d0699a0ca"
+                             parent="aspace_93e3be865fdb5bd99adc93696f8aad5d"
+                             type="folder">26</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5e96e5bf97da41b543f12de66ddefad3" level="file">
+               <did>
+                  <unittitle>March</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_126d0b6decfd5fe4e8b95c587c7002a3"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_8ec68b84a497ccf8fa66e45b79e32535"
+                             parent="aspace_126d0b6decfd5fe4e8b95c587c7002a3"
+                             type="folder">27</container>
+               </did>
+            </c02>
+            <c02 id="aspace_52f5d158231533fe82b519379e4fd690" level="file">
+               <did>
+                  <unittitle>April</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_17f4f93096bf98bbe34aa136e0d7092e"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_2b7007a9bb905d1824a31fce5c466461"
+                             parent="aspace_17f4f93096bf98bbe34aa136e0d7092e"
+                             type="folder">28</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0f27fe9709db4ebda172c314b5399369" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_aa96b5ac555108d3ec0acdb0736af34e"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_b07c1b1663212e25bd1109a480f37f97"
+                             parent="aspace_aa96b5ac555108d3ec0acdb0736af34e"
+                             type="folder">29</container>
+               </did>
+            </c02>
+            <c02 id="aspace_593585ac1b7efcfbb3b2c1eabff9d481" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cb3f7fa73c8270f1fcb41a28941b1928"
+                             label="Mixed Materials [310183630259876]"
+                             type="box">2106.5</container>
+                  <container id="aspace_1736d08b80ebfc7640da4324708c2aa9"
+                             parent="aspace_cb3f7fa73c8270f1fcb41a28941b1928"
+                             type="folder">30</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b7dead08105f2f90fac6d35117de99c7" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d6b234dfbe224749015a033a066199be"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_7fe63d4c3754e13cfbf8d0947f344732"
+                             parent="aspace_d6b234dfbe224749015a033a066199be"
+                             type="folder">31</container>
+               </did>
+            </c02>
+            <c02 id="aspace_09d2304617704b7edc19439c9d90118b" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6c876751567f5102e992ec01c479f739"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_9154c5c5112483e23b200fd7a25a949d"
+                             parent="aspace_6c876751567f5102e992ec01c479f739"
+                             type="folder">32</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8b2f53337dd5036a62aae8c96cc71d6d" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_15209ff04424f91c00a36b261e057292"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_881f2bc24294bd56b203bff99720bfc7"
+                             parent="aspace_15209ff04424f91c00a36b261e057292"
+                             type="folder">33</container>
+               </did>
+            </c02>
+            <c02 id="aspace_426f3c233f1ca57b447642bc02ef096d" level="file">
+               <did>
+                  <unittitle>October</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_32effd77d4f6a38e78d4afdb9d95898d"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_80c15d83113663a500caa133ed15cc10"
+                             parent="aspace_32effd77d4f6a38e78d4afdb9d95898d"
+                             type="folder">34</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e90918f83fc5b295ce566e71c62fc846" level="file">
+               <did>
+                  <unittitle>November</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_04b84bb3ab5047e17770f366647f34c8"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_badee7767d4286b114741cedcfe028b1"
+                             parent="aspace_04b84bb3ab5047e17770f366647f34c8"
+                             type="folder">35</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fa241e316e51864b60682c4568322bde" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_adde749406a88919f5750256de9343e7"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_a077a98b4fee534f9aed9f0f63bbba6e"
+                             parent="aspace_adde749406a88919f5750256de9343e7"
+                             type="folder">36</container>
+               </did>
+            </c02>
+            <c02 id="aspace_17c574b27be5504f27ddc372503acdf7" level="file">
+               <did>
+                  <unittitle>January</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b49b01dced4929548d29e65def123862"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_4486a561e20c2dd4e1f11e9b73b57ded"
+                             parent="aspace_b49b01dced4929548d29e65def123862"
+                             type="folder">37</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ab6f6d7f43d3c72bf680104823fe567b" level="file">
+               <did>
+                  <unittitle>February</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_86f7a6fc795821f2b1c39b191144bce7"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_27d42dec176ce76acead2059f6887343"
+                             parent="aspace_86f7a6fc795821f2b1c39b191144bce7"
+                             type="folder">38</container>
+               </did>
+            </c02>
+            <c02 id="aspace_096115c27c0bdfa6d636facc0714afda" level="file">
+               <did>
+                  <unittitle>March</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_59eec903914e827e06e7116b2dd693c5"
+                             label="Mixed Materials [310183630259884]"
+                             type="box">2106.6</container>
+                  <container id="aspace_29e487be5534d0052579cc8c1a7d42f8"
+                             parent="aspace_59eec903914e827e06e7116b2dd693c5"
+                             type="folder">39</container>
+               </did>
+            </c02>
+            <c02 id="aspace_72dfb1d8c8d92b8f47d097808b0500fb" level="file">
+               <did>
+                  <unittitle>April</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_32c5fa791f4b3c6024b74ac28617c1cc"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_22c6f378c7ba650e2ad65468e45f2cd9"
+                             parent="aspace_32c5fa791f4b3c6024b74ac28617c1cc"
+                             type="folder">40</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4da1673524492895c4e72fc0815a978b" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_452efac2c86233bbc5f2b22d180514b0"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_b0e71ed483c83e4bb2b0e7f1d90308e7"
+                             parent="aspace_452efac2c86233bbc5f2b22d180514b0"
+                             type="folder">41</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e7c12fe4e4aed021180bff4b76cd2156" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8d910f708f2cb21399f53c27603d74a0"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_31f2c906f8a4da5661b9025b73dfe3ac"
+                             parent="aspace_8d910f708f2cb21399f53c27603d74a0"
+                             type="folder">42</container>
+               </did>
+            </c02>
+            <c02 id="aspace_839dd4596f7ac4d1bb8b6647cc6502b6" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fad3608fdb1c8f130839a79b1288924c"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_5c360878e73a8e74bf18317a63573871"
+                             parent="aspace_fad3608fdb1c8f130839a79b1288924c"
+                             type="folder">43</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8489de6a8aae7a521246f5e4dda859e3" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5674813f1cfb5fb6e49a5febc261675c"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_22ea0dc4fbd5ffe84d6cf4fdfdd0a02e"
+                             parent="aspace_5674813f1cfb5fb6e49a5febc261675c"
+                             type="folder">44</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8fb260d7ff3f5592177e85b7f4bebc5" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_61f491b596315b100c223f749a5ebc0f"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_6c2a256edb21caa9ccec189a4922c257"
+                             parent="aspace_61f491b596315b100c223f749a5ebc0f"
+                             type="folder">45</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bb1536d50f3e4152e2b9d950465c10a0" level="file">
+               <did>
+                  <unittitle>October</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d968d1eb5630adbace4494e022a3db04"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_405388b19bceb4eb0a76670a74fc859d"
+                             parent="aspace_d968d1eb5630adbace4494e022a3db04"
+                             type="folder">46</container>
+               </did>
+            </c02>
+            <c02 id="aspace_61eaa95d80a45a3069a0c88f6e1216be" level="file">
+               <did>
+                  <unittitle>November</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b975f6ddbe1f9571d2737694feaba3a4"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_f55f438aa3f0bc4a78656b125d2a2009"
+                             parent="aspace_b975f6ddbe1f9571d2737694feaba3a4"
+                             type="folder">47</container>
+               </did>
+            </c02>
+            <c02 id="aspace_33447596374d18ff7cba4ed6b3518af6" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_541bc6eae2712711fb199c9d15b28528"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_2de47fbc4b04d88d5cbcb78d441cc1de"
+                             parent="aspace_541bc6eae2712711fb199c9d15b28528"
+                             type="folder">48</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5f0c6184e07f039b131e403a7182fdfc" level="file">
+               <did>
+                  <unittitle>January</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b6159cb25229289df23cc864fc7ce3ee"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_02b14a55f49cc5b5a252c166d8db41d6"
+                             parent="aspace_b6159cb25229289df23cc864fc7ce3ee"
+                             type="folder">49</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a2d3a8969a7defe5de97cd523114c47e" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e36495da4476e042d99db41a5ac39e8d"
+                             label="Mixed Materials [310183630229135]"
+                             type="box">2106.7</container>
+                  <container id="aspace_4833722a72d115e82eab40c02d41cb2e"
+                             parent="aspace_e36495da4476e042d99db41a5ac39e8d"
+                             type="folder">50</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0db736354a4143b28a56b93e5876a0ea" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8becc56927345fde28acdabfa1162dd6"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_455ab9756ffa70f6329621213999eb58"
+                             parent="aspace_8becc56927345fde28acdabfa1162dd6"
+                             type="folder">51</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2bef34cf44c233cfc00a2ceabf435f01" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_698378562c379f98d7a0a9dab955c2ba"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_40c583f93dcfbcab9809b1d63403831e"
+                             parent="aspace_698378562c379f98d7a0a9dab955c2ba"
+                             type="folder">52</container>
+               </did>
+            </c02>
+            <c02 id="aspace_246bd46ba36f2196b2ebaf19115c177f" level="file">
+               <did>
+                  <unittitle>February</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_10c4f11d233a49868459a1ca3a69fddb"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_316633b3e0a773b7b794bf8f7ceb9660"
+                             parent="aspace_10c4f11d233a49868459a1ca3a69fddb"
+                             type="folder">53</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a488d409614488333d1aab19d3ed9808" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_677cd895e98058e4aa8200c42647bb26"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_a2e103169e5f1f1db1c68e216573b6fe"
+                             parent="aspace_677cd895e98058e4aa8200c42647bb26"
+                             type="folder">54</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d54e108ac6e38e969ef2fcde3b254615" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7c4a49765795980efced4d0dea01d367"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_32b1f29c42d89ed967e1fd878f0f82ba"
+                             parent="aspace_7c4a49765795980efced4d0dea01d367"
+                             type="folder">55</container>
+               </did>
+            </c02>
+            <c02 id="aspace_aa09c9ed947056db766288afce2d34c7" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a42adab8f1eb4a3851a665783a757968"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_28ae4d1e274a63bf56631789546cf4ef"
+                             parent="aspace_a42adab8f1eb4a3851a665783a757968"
+                             type="folder">56</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3ce28763e5d145b7a1c5811ae0a50cca" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_323a712c4c38e8960af133d8a84871dd"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_56a472dc085c4fd72148890312d9f42f"
+                             parent="aspace_323a712c4c38e8960af133d8a84871dd"
+                             type="folder">57</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f0c51240b5c1b48fa3b5b92eaae37187" level="file">
+               <did>
+                  <unittitle>April</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_165ffae5537f6ab94d4420c0efec007b"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_1b024230b0884ad7c6d2d9e171038a6c"
+                             parent="aspace_165ffae5537f6ab94d4420c0efec007b"
+                             type="folder">58</container>
+               </did>
+            </c02>
+            <c02 id="aspace_11db9031529d4f8f73ce3d5522ba928d" level="file">
+               <did>
+                  <unittitle>May</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_941c8eb815fc525906f365602c729108"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_272067863399675c670d24056e326797"
+                             parent="aspace_941c8eb815fc525906f365602c729108"
+                             type="folder">59</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8eec8554734d8fcbf25e9db6464b307" level="file">
+               <did>
+                  <unittitle>June</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d4c529ff9a4ddaa04f5225b0164e936c"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_bec2d81224df98325e417fd11b9a3c47"
+                             parent="aspace_d4c529ff9a4ddaa04f5225b0164e936c"
+                             type="folder">60</container>
+               </did>
+            </c02>
+            <c02 id="aspace_df0e16a90fa896a2a9cdd82f14451d0e" level="file">
+               <did>
+                  <unittitle>July</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2e6a933639ae25bb423941e555c17488"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_082ca6319bd11df2958c34a84540a315"
+                             parent="aspace_2e6a933639ae25bb423941e555c17488"
+                             type="folder">61</container>
+               </did>
+            </c02>
+            <c02 id="aspace_44c3a7a8de2d178279f4ba2bb5199856" level="file">
+               <did>
+                  <unittitle>August</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_adf03e54df778f6d2d2505272223fda9"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_d5861bc9ae831b6c984388c88b239c8a"
+                             parent="aspace_adf03e54df778f6d2d2505272223fda9"
+                             type="folder">62</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3164a3fa20bf0d20403dce8752cba88d" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b1ad536a29b694f437663abcc36905f6"
+                             label="Mixed Materials [310183630229077]"
+                             type="box">2106.8</container>
+                  <container id="aspace_a36a87fd52b668202eb2844bc3a5985f"
+                             parent="aspace_b1ad536a29b694f437663abcc36905f6"
+                             type="folder">63</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e587ffd4e0778846eba3047267b058c8" level="file">
+               <did>
+                  <unittitle>October</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_78b200dc6b8a50f4b38d3b62f3306951"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_ff8a0d8c46d2d03aa22b27321c219bb7"
+                             parent="aspace_78b200dc6b8a50f4b38d3b62f3306951"
+                             type="folder">64</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f9b347500a39e38f7b60719a00f5546f" level="file">
+               <did>
+                  <unittitle>November</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a877be49c90869d93627f5919c0fecc7"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_23ba6e68ab6b8780c24c39dd2e1add60"
+                             parent="aspace_a877be49c90869d93627f5919c0fecc7"
+                             type="folder">65</container>
+               </did>
+            </c02>
+            <c02 id="aspace_be20382e962b7f4526e201e18ad26939" level="file">
+               <did>
+                  <unittitle>December</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_9d69318bb2a9ab761e1b2f007dd7324f"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_40551ddaf5ac93278cbcdfe6d8deab04"
+                             parent="aspace_9d69318bb2a9ab761e1b2f007dd7324f"
+                             type="folder">66</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9f4a5aa154ff2126cfa77019bf0d3ea1" level="file">
+               <did>
+                  <unittitle>February</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_80c66aafce02087d344c1266f23bc618"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_8e171b3edb6cc4850c6f2905f7682090"
+                             parent="aspace_80c66aafce02087d344c1266f23bc618"
+                             type="folder">67</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7c6a803c9162c4d8f8691c3120356451" level="file">
+               <did>
+                  <unittitle>March</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_80d6f3d6b45298dbee4710cb074e7272"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_dcd223d59f52fba012e64adf2b6f7765"
+                             parent="aspace_80d6f3d6b45298dbee4710cb074e7272"
+                             type="folder">68</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d8d8d3b73e91af217f877070a8eeb6b5" level="file">
+               <did>
+                  <unittitle>April</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_7f6d37f341c715178a23276bf4283b4b"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_b847630a1702a743f19b109b6207cab5"
+                             parent="aspace_7f6d37f341c715178a23276bf4283b4b"
+                             type="folder">69</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fcd9d66d99bd15646d1cedc76eb0ff34" level="file">
+               <did>
+                  <unittitle>September</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_3a0bb278c21029cad25117c5f8ace811"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_2e4efae9c3e2f9423b701680100e9f16"
+                             parent="aspace_3a0bb278c21029cad25117c5f8ace811"
+                             type="folder">70</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e02edcab0e6eff0c6852fae6aaed2ff6" level="file">
+               <did>
+                  <unittitle>various letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1945"
+                            type="inclusive">1941-1945</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_5946bcc051d08378bf808cc11c304f2a"
+                             label="Mixed Materials [310183630229143]"
+                             type="box">2106.9</container>
+                  <container id="aspace_d4c1299f76a31e9ff0bc3f55376260d0"
+                             parent="aspace_5946bcc051d08378bf808cc11c304f2a"
+                             type="folder">71</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: Miscellaneous</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_c0a8ac13d5b2f9a1a43bac5348a8339b" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <container type="folder" label="mixed materials">72</container>
-                  <unittitle>Subseries a. Commencement ephemera <unitdate>1937</unitdate>
-                  </unittitle>
+                  <unittitle>Subseries a. Commencement ephemera</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_bf6a62e973274c79d85f59d52c5170bc"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
+                  <container id="aspace_06874a5ca589175b9fb5ba26d01f1115"
+                             parent="aspace_bf6a62e973274c79d85f59d52c5170bc"
+                             type="folder">72</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b57d97e868d0f09382bd6a00c85e7af5" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <container type="folder" label="mixed materials">73</container>
-                  <unittitle>Subseries b. General ephemera <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Subseries b. General ephemera</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_98c8fc9f4a66e0230e1a63fa7a520f68"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
+                  <container id="aspace_854e2da403eec0f7d65bd694b2c5a834"
+                             parent="aspace_98c8fc9f4a66e0230e1a63fa7a520f68"
+                             type="folder">73</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d77fad9f327822e3044883c989aaa39c" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <container type="folder" label="mixed materials">74</container>
-                  <unittitle>Subseries c. Travel <unitdate>1937</unitdate>
-                  </unittitle>
+                  <unittitle>Subseries c. Travel</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_5b86824b057d8fae06bebca2c64c401a"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
+                  <container id="aspace_cf04be73fbbb0cf2de449fba7455a866"
+                             parent="aspace_5b86824b057d8fae06bebca2c64c401a"
+                             type="folder">74</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>Series IV: Photographs</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_90af7ffb3a17d978f76cde84f379723d" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <container type="folder" label="mixed materials">75</container>
-                  <unittitle>(6) 5.5"4" photographic prints, "Various photographs".
-                        <unitdate>1935</unitdate>
-                  </unittitle>
+                  <unittitle>(6) 5.5"4" photographic prints, "Various photographs".</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_4bdf1f078247b66f3a95172529ef3543"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
+                  <container id="aspace_0dc888556732daf7f9e2627286d1c2de"
+                             parent="aspace_4bdf1f078247b66f3a95172529ef3543"
+                             type="folder">75</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_17ca5e6b3a6e456b1a882dbf95cd2894" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(14) 2"3" photographic prints, "Scenes from Cape Cod". Note: See
-                     correspondence. <unitdate>07/06/1935</unitdate>
-                  </unittitle>
+                  <unittitle>(14) 2"3" photographic prints, "Scenes from Cape Cod". Note: See correspondence.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935-07-06/1935-07-06">07/06/1935</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_a494c0cccd40c6884fb981680b9f8f13"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3c70f9b3de2005be2e56c9a6c55d5759" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(4) 2"3" (4) 4"2.5" photographic prints, "Portraits and scenes on
-                     boats". Note: See correspondence. <unitdate>07/26/1936, 08/30/1936</unitdate>
-                  </unittitle>
+                  <unittitle>(4) 2"3" (4) 4"2.5" photographic prints, "Portraits and scenes on boats". Note: See correspondence.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936-07-26/1936-07-26">07/26/1936</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1936-08-30/1936-08-30">08/30/1936</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_f956aa303fa847817b511e5c66e4a82a"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_96a874ed64babdff67e787332fd7a0cd" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(5) 3"4" photographic prints, "Photographs from 1937"
-                        <unitdate>1937</unitdate>
-                  </unittitle>
+                  <unittitle>(5) 3"4" photographic prints, "Photographs from 1937"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_ffe384149570396eb6ffcbd7919da892"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_672e00e3206bbb7cbfafe350088d75c6" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(5) negatives, "Margaret and brother". Note: See correspondence.
-                        <unitdate>1937</unitdate>
-                  </unittitle>
+                  <unittitle>(5) negatives, "Margaret and brother". Note: See correspondence.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_eb9e30d07d1d2b7175b881422282baac"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_de911cdc5503a141ab740293af6b022c" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(12) 4"3" photographic prints, "Scenes from Gettysburg". Note: See
-                     correspondence. <unitdate>1938</unitdate>
-                  </unittitle>
+                  <unittitle>(12) 4"3" photographic prints, "Scenes from Gettysburg". Note: See correspondence.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_492914668a72c1be8052a1ad5da305b4"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a1286622b1329d40fc882d4d198aea38" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(1) 3"2" photographic print, "Dog". <unitdate>1938</unitdate>
-                  </unittitle>
+                  <unittitle>(1) 3"2" photographic print, "Dog".</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_3328257bb06f80ff353c3bc5971fbb0b"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9ffe5779af74a8b08330f1325b4bce82" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>(2) 3"2" photographic prints, "USS Steinaker".
-                        <unitdate>11/11/1945</unitdate>
-                  </unittitle>
+                  <unittitle>(2) 3"2" photographic prints, "USS Steinaker".</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945-11-11/1945-11-11">11/11/1945</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_3880d4930deb835b90aa9b8895fa9cc1"
+                             label="Mixed Materials [310183630229010]"
+                             type="box">2106.10</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
