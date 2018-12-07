@@ -1,286 +1,390 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca366.xml//EN">manosca366</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca366</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Samantha Lyon Papers, Class of 2008</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Carron.</author>
-
+            <titleproper>Finding aid to the Samantha Lyon Papers. <num>CA.MS.00366</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-09-19">2014-09-19</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-06 15:27:06 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-06</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Samantha Lyon</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Samantha Lyon Papers, Class of
-            2008</unittitle>
-         <unitdate label="Dates:" type="inclusive">2004 - 2008</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">2007 - 2008</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG80</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes, 26 DVDs</extent>
-            <extent encodinganalog="300$a">( 1.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The collection consists of artifacts,
-            audiovisual materials, class notebooks, exams, and papers from courses taken by Samantha
-            Lyon, correspondence, and various ephemera. </abstract>
+         <unittitle>Samantha Lyon Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Samantha Lyon</persname>
+         </origination>
+         <unitid>CA.MS.00366</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 boxes, 26 DVDs)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="2004/2008"
+                   type="inclusive">2004-2008</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="2007/2008" type="bulk">2007 - 2008</unitdate>
+         <abstract id="aspace_af5b165cf38b266fbec5b764d3174da3">The collection consists of artifacts, audiovisual materials, class notebooks, exams, and papers from courses taken by Samantha Lyon, correspondence, and various ephemera.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Samantha L. Lyon, Class of 2008</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Samantha L. Lyon, Class of 2008</p>  
       </bioghist>
-
-
-      <scopecontent id="scope">
-
-         <p>The collection contains materials describing the activities of Samantha Lyon including
-            materials from courses and extracurricular activities. Specific material pertaining the
-            founding of Smith College's Bicycle Kitchen and its incorporation with the Student
-            Government Association as well as materials related to Ms. Lyon's "Documenting Oral
-            Histories: Activism at Smith" research thesis. Types of materials include photographs,
-            invitations, newspaper clippings, programs, letters, and DVDs.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains materials describing the activities of Samantha Lyon including materials from courses and extracurricular activities. Specific material pertaining the founding of Smith College's Bicycle Kitchen and its incorporation with the Student Government Association as well as materials related to Ms. Lyon's "Documenting Oral Histories: Activism at Smith" research thesis. Types of materials include photographs, invitations, newspaper clippings, programs, letters, and DVDs.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The papers are open for research according to the regulations of the Smith College
-            except where noted in the finding aid. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use with following restrictions on access:
+Some restrictions apply to the oral history interviews.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
          <p>Please use the following format when citing materials from this collection:</p>
-         <p>Samantha Lyon Papers, Box #, Smith College Archives</p>
+         <p> Samantha Lyon Papers, Smith College Archives, CA-MS-00366, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The papers of Samantha Lyon, Class of 2008 were donated to the College Archives by
-            Samantha Lyon in 2014.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The papers of Samantha Lyon were donated to the College Archives by Samantha Lyon in 2014.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Processed by Elizabeth Carron, Archives Specialist in September, 2014.</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Elizabeth Carron, Archives Specialist in September, 2014.</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <corpname encodinganalog="610" source="lcnaf">Smith College -- Alumni and alumnae --
-            History -- Sources</corpname>
+      <controlaccess>
+         <corpname encodinganalog="610" source="naf">Smith College -- Alumni and alumnae -- History -- Sources</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College -- Students.</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College - Social life and customs --
-            Sources.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College - Social life and customs -- Sources.</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_742c157e20d5c4aae06263e340c434d0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Community Bike Project: correspondence <unitdate>08/01/05 -
-                     11/01/05</unitdate>
-               </unittitle>
+               <unittitle>Community Bike Project: correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005-08-01/2005-11-01"
+                         type="inclusive">August 1, 2005- November 1, 2005</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c3cdb6bac2f684620e908808f072896b"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_025942911ed1c6fd4d6a3800c1a240e9"
+                          parent="aspace_c3cdb6bac2f684620e908808f072896b"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1f4b65d7298568901f6a65fe555d2322" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Community Bike Project: correspondence <unitdate>11/01/05 -
-                     02/01/06</unitdate>
-               </unittitle>
+               <unittitle>Community Bike Project: correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005-11-01/2006-02-01"
+                         type="inclusive">November 1, 2005 - February 1, 2006</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7dc6bc023f6a2395f8b523f580bfb431"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_56b31e8e451859e6c0733e643c2f9b3f"
+                          parent="aspace_7dc6bc023f6a2395f8b523f580bfb431"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e60c510395a799b3d6a0f2a273027ca3" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Community Bike Project: general <unitdate>2005 - 2006</unitdate>
-               </unittitle>
+               <unittitle>Community Bike Project: general</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2006"
+                         type="inclusive">2005 - 2006</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_947b12b1d46ec9be87e9d045abcabe56"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_670c20e23158cbf35a762c41eda49ff2"
+                          parent="aspace_947b12b1d46ec9be87e9d045abcabe56"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_10d0ecc3a24782c00039750e8955f20c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>campaigns: climate change <unitdate>2005 - 2008</unitdate>
-               </unittitle>
+               <unittitle>campaigns: climate change</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2008"
+                         type="inclusive">2005 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_63ff37979cd6164e8bf8be61223564ee"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_add2ccf27786a579c971374c9dd8a295"
+                          parent="aspace_63ff37979cd6164e8bf8be61223564ee"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_30f6f1351745dedd59583bca3fe933b7" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>campaigns: college administration <unitdate>2005 - 2008</unitdate>
-               </unittitle>
+               <unittitle>campaigns: college administration</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2008"
+                         type="inclusive">2005 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8f7595f0c52222dd457c365e7484e714"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_16dc13e02cf5036099d9335de9f8df94"
+                          parent="aspace_8f7595f0c52222dd457c365e7484e714"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bc6ac565c7b96404a62c04f1ffdfd9cb" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>campaigns: food and nutrition <unitdate>2005 - 2008</unitdate>
-               </unittitle>
+               <unittitle>campaigns: food and nutrition</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2008"
+                         type="inclusive">2005 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b245a618bdbfae0c6b6d7b77f7c50c2b"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_9252a50b05006b18be4dcd922b808d19"
+                          parent="aspace_b245a618bdbfae0c6b6d7b77f7c50c2b"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8484bf63303be07283f92d7d65b44c62" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>campaigns: LGBT <unitdate>2005 - 2008</unitdate>
-               </unittitle>
+               <unittitle>campaigns: LGBT</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2008"
+                         type="inclusive">2005 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0db4cde4912432b01f546a37ddd26e47"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_bd3395aa57926e20b0104d9d5daa4c84"
+                          parent="aspace_0db4cde4912432b01f546a37ddd26e47"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6b266fe40aac96a43ad0ce8a02bac81b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>campaigns: immigration and race <unitdate>2005 - 2008</unitdate>
-               </unittitle>
+               <unittitle>campaigns: immigration and race</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2005/2008"
+                         type="inclusive">2005 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_86dd6c0f69f7758b710a45c2123fe683"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_9a949ce9165adf1ca2470d101b82d71f"
+                          parent="aspace_86dd6c0f69f7758b710a45c2123fe683"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_99c5b76b39bc1d4304c8a8616ca848ba" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>courses: finals <unitdate>2004 - 2008</unitdate>
-               </unittitle>
+               <unittitle>courses: finals</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2004/2008"
+                         type="inclusive">2004 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_62c06b74bc1a962b4c747fb97ab56674"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_6e73f598f5af8014b2876d24cf376300"
+                          parent="aspace_62c06b74bc1a962b4c747fb97ab56674"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_85c8c55c22b712fd2b7b257b0052e177" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>course: papers <unitdate>2004 - 2008</unitdate>
-               </unittitle>
+               <unittitle>course: papers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2004/2008"
+                         type="inclusive">2004 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f5efa3790eaab007a166dfd3242a9195"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_b4e468a82d10d9432e1484fb6588f73e"
+                          parent="aspace_f5efa3790eaab007a166dfd3242a9195"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a81317593231f05943f8bcf2ee832680" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>general: artifacts <unitdate>2004 - 2008</unitdate>
-               </unittitle>
+               <unittitle>general: artifacts</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2004/2008"
+                         type="inclusive">2004 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6ac0dbf4a5a2e2fecdf6299e9bba0000"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_9056cd86c88dd5036e051856af08b6f0"
+                          parent="aspace_6ac0dbf4a5a2e2fecdf6299e9bba0000"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3ad9fc1180b641588f8be345034a766c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>general: publications <unitdate>2004 - 2008</unitdate>
-               </unittitle>
+               <unittitle>general: publications</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2004/2008"
+                         type="inclusive">2004 - 2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b9b5daa876035e70c6d4d63c65ecd4b7"
+                          label="Mixed Materials [310183630259025]"
+                          type="box">1</container>
+               <container id="aspace_bf67c7d851988ca07098e33edab7e001"
+                          parent="aspace_b9b5daa876035e70c6d4d63c65ecd4b7"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_05696ec9f4fa1c88bd16ca5ae03d555b" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>"Documenting Oral Histories": general <unitdate>2007 - 2008</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": general</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2007/2008"
+                         type="inclusive">2007 - 2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_93e2d9d7338011f465d01218f9da3b46"
+                          label="Mixed Materials [310183630259033]"
+                          type="box">2</container>
+               <container id="aspace_681b09bbdee403a74ff4b856ad59342d"
+                          parent="aspace_93e2d9d7338011f465d01218f9da3b46"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5bc3159bc0cbc759481a6ac6cc215d99" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>"Documenting Oral Histories": notebooks <unitdate>2007 - 2008</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": notebooks</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2007/2008"
+                         type="inclusive">2007 - 2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e65e2c5b8f22ba3a834a97c4290fd0be"
+                          label="Mixed Materials [310183630259033]"
+                          type="box">2</container>
+               <container id="aspace_fad91af1473f6664d9548869e4cb96cd"
+                          parent="aspace_e65e2c5b8f22ba3a834a97c4290fd0be"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c2428b682df80885cf85b6b59c3f5ae0" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>"Documenting Oral Histories": proposal <unitdate>2007 - 2008</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": proposal</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2007/2008"
+                         type="inclusive">2007 - 2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_0f1975a4375aa5a257fe3878e98abac6"
+                          label="Mixed Materials [310183630259033]"
+                          type="box">2</container>
+               <container id="aspace_61aa4bb0beada71858c689f7a6ad3f15"
+                          parent="aspace_0f1975a4375aa5a257fe3878e98abac6"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_13fc4140dcdcfe572dc120715cecfffb" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>"Documenting Oral Histories": release forms <unitdate>2007 -
-                     2008</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": release forms</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2007/2008"
+                         type="inclusive">2007 - 2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_5fdeee2dd087ad482927bb7b843f581c"
+                          label="Mixed Materials [310183630259033]"
+                          type="box">2</container>
+               <container id="aspace_257100459a2036412447a9860ae88adb"
+                          parent="aspace_5fdeee2dd087ad482927bb7b843f581c"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ecf08043085e3ac9adbb3189dc9bf127" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>"Documenting Oral Histories": thesis <unitdate>2007 - 2008</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": thesis</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2007/2008"
+                         type="inclusive">2007 - 2008</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_d624e52efc42f997d7c63fdac6e2e44b"
+                          label="Mixed Materials [310183630259033]"
+                          type="box">2</container>
+               <container id="aspace_047af681e990207522e2fb8e11ceccf8"
+                          parent="aspace_d624e52efc42f997d7c63fdac6e2e44b"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_68808613eb2e479cf6c3fd25e6f7769e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>"Documenting Oral Histories": interviews <unitdate>restrictions
-                     apply</unitdate>
-               </unittitle>
+               <unittitle>"Documenting Oral Histories": interviews</unittitle>
+               <unitdate calendar="gregorian" era="ce">restrictions apply</unitdate>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
