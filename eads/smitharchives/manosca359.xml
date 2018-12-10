@@ -1,246 +1,222 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca359.xml//EN">manosca359</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca359</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Elisabeth Koffka Papers, 1937-1943</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Hilary Buxton, Amanda
-               Lineweber.</author>
-
+            <titleproper>Finding Aid to the Elisabeth Koffka papers <num>CA.MS.00359</num>
+            </titleproper>
+            <author>Finding aid prepared by Hilary Buxton, Amanda Lineweber.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-16">2013-12-16</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-10 14:56:28 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-10</date>
+            <item>Updated to conform to DACS and added boxes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Koffka, Elisabeth, 1896-1994</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Elisabeth Koffka Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1937-1943</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:81a0de7f-deaa-48d4-8fc0-f68dbb4ec1ef</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(0.4 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of History. Contains
-            correspondence of Elisabeth Koffka. </abstract>
+         <unittitle>Elisabeth Koffka papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Koffka, Elisabeth, 1896-1994</persname>
+         </origination>
+         <unitid>CA.MS.00359</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1937/1943"
+                   type="inclusive">1937-1943</unitdate>
+         <abstract id="aspace_bbe0c7f4f1acaa6ce802a53931b68016">Professor of History. Contains correspondence of Elisabeth Koffka.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Elisabeth Ahlgrimm Koffka was born in Germany in 1896. Her father was a teacher at the
-            secondary school level in Germany. Both of her parents died of cancer within 2 weeks of
-            each other in 1928. Koffka had a younger brother, who went on to study agriculture and
-            became a researcher of fertilizers at Gertingham University, and sister, who was a
-            co-director of the progressive Albert-Schweitzer Gymnasium in Hamburg. Koffka herself
-            attended a special select school in Germany, taking mathematics, Latin, history, and
-            German language. From 1916 to 1918 she attended Marburg, Munich, and Kiel Universities
-            studying philology. She eventually chose intellectual history as her major discipline at
-            Geissen University and wrote a thesis on one of Kant's pupils. There she met her future
-            husband, Kurt Koffka, pursuing work in psychology. After obtaining her PhD, she went to
-            Berlin where she worked briefly at the Berlin branch of the Chicago Tribune. She was
-            disinterested in politics, and in 1924 spent a single year teaching at Cornell
-            University. Her husband, Kurt, received offers from the University of Wisconsin-Madison
-            and Smith College, choosing Smith when the William A. Neilson research chair was
-            founded. She lived in London and Paris for a number of years in the 1920s, and began
-            writing poetry regularly.</p>
-
-         <p>Her relationship with Koffka was considered a scandal in the small town of Geissen; they
-            married in 1928 after his marriage and divorce from Mina Klein. Klein agreed to a 3 year
-            divorce from Koffka, who then married Elisabeth, divorcing her and remarrying Klein
-            after the 3 year period ended. Koffka then obtained another final divorce from Klein and
-            remarried Elisabeth in London. (Elisabeth) Koffka joined her husband in Northampton, MA,
-            and was hired as a history professor at Smith College in 1929, a position which she held
-            until her retirement in 1961. Her major teaching field was General European History.</p>
-
-         <p>Koffka was in Europe at the time World War II broke out, and had difficulties returning
-            to the U.S. as she was still a German citizen; she did not obtain her American
-            citizenship until 1940. Kurt died in November of 1941, though Koffka later stated that
-            the great number of complications in their marriage prevented her from undergoing a
-            significant depression. In the following years, she spent much time visiting various
-            friends, especially the Nielson family. She had a close relationship with her dog, the
-            spaniel Jolly. Koffka eventually stopped teaching at Smith when her salary decreased,
-            and was offered a professorship at the University of Rochester but declined. In 1978, a
-            group of Koffka's friends collaborated to publish a volume of her poetry written
-            throughout her life, entitled <title render="italic">Figures in the Carpet</title>.
-            Koffka died at the age of 98 in 1994.</p>
-
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Elisabeth Koffka Papers encompass a series of letters written to Janice Tarlin,
-            Smith Class of 1931, a former student of Koffka's. Spanning from 1937 until 1943, the
-            letters were written almost monthly, besides a number of wider gaps including a 4 month
-            period following Kurt Koffka's death in 1941. Much of the correspondence addresses trips
-            and travel, including that of Tarlin and Koffka to each other's homes in New York City
-            and Northampton, respectively. Other frequently addressed topics include Kurt Koffka,
-            Elisabeth's history courses, families and friends in their social circle (the Nielsons
-            and Koehlers), Koffka's feelings about travel, isolation, and rural America, and in
-            later letters, news and events relating to World War II. The general file at the
-            beginning of the collection includes a copy of Figures in the Carpet, a rough
-            transcription of an oral history conducted with Elisabeth in 1977-78, and
-            photographs.</p>
-
-         <p>An index of letters is available.</p>
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The papers are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Elisabeth Koffka Papers, Box #, Smith College Archives. </p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Elisabeth Koffka papers were donated to the College Archives by Jeff Tarlin, the
-            great nephew of Janice Tarlin, to whom the letters in Koffka's collection are
-            addressed.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Elisabeth Koffka papers were donated to the College Archives by Jeff Tarlin, the great nephew of Janice Tarlin, to whom the letters in Koffka's collection are addressed.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Elisabeth Ahlgrimm Koffka was born in Germany in 1896. Her father was a teacher at the secondary school level in Germany. Both of her parents died of cancer within 2 weeks of each other in 1928. Koffka had a younger brother, who went on to study agriculture and became a researcher of fertilizers at Gertingham University, and sister, who was a co-director of the progressive Albert-Schweitzer Gymnasium in Hamburg. Koffka herself attended a special select school in Germany, taking mathematics, Latin, history, and German language. From 1916 to 1918 she attended Marburg, Munich, and Kiel Universities studying philology. She eventually chose intellectual history as her major discipline at Geissen University and wrote a thesis on one of Kant's pupils. There she met her future husband, Kurt Koffka, pursuing work in psychology. After obtaining her PhD, she went to Berlin where she worked briefly at the Berlin branch of the Chicago Tribune. She was disinterested in politics, and in 1924 spent a single year teaching at Cornell University. Her husband, Kurt, received offers from the University of Wisconsin-Madison and Smith College, choosing Smith when the William A. Neilson research chair was founded. She lived in London and Paris for a number of years in the 1920s, and began writing poetry regularly.</p>
+         <p> Her relationship with Koffka was considered a scandal in the small town of Geissen; they married in 1928 after his marriage and divorce from Mina Klein. Klein agreed to a 3 year divorce from Koffka, who then married Elisabeth, divorcing her and remarrying Klein after the 3 year period ended. Koffka then obtained another final divorce from Klein and remarried Elisabeth in London. (Elisabeth) Koffka joined her husband in Northampton, MA, and was hired as a history professor at Smith College in 1929, a position which she held until her retirement in 1961. Her major teaching field was General European History.</p>
+         <p> Koffka was in Europe at the time World War II broke out, and had difficulties returning to the U.S. as she was still a German citizen; she did not obtain her American citizenship until 1940. Kurt died in November of 1941, though Koffka later stated that the great number of complications in their marriage prevented her from undergoing a significant depression. In the following years, she spent much time visiting various friends, especially the Nielson family. She had a close relationship with her dog, the spaniel Jolly. Koffka eventually stopped teaching at Smith when her salary decreased, and was offered a professorship at the University of Rochester but declined. In 1978, a group of Koffka's friends collaborated to publish a volume of her poetry written throughout her life, entitled <title render="italic">Figures in the Carpet</title>. Koffka died at the age of 98 in 1994.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Elisabeth Koffka Papers, Smith College Archives, CA-MS-00359, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Elisabeth Koffka Papers encompass a series of letters written to Janice Tarlin, Smith Class of 1931, a former student of Koffka's. Spanning from 1937 until 1943, the letters were written almost monthly, besides a number of wider gaps including a 4 month period following Kurt Koffka's death in 1941. Much of the correspondence addresses trips and travel, including that of Tarlin and Koffka to each other's homes in New York City and Northampton, respectively. Other frequently addressed topics include Kurt Koffka, Elisabeth's history courses, families and friends in their social circle (the Nielsons and Koehlers), Koffka's feelings about travel, isolation, and rural America, and in later letters, news and events relating to World War II. The general file at the beginning of the collection includes a copy of Figures in the Carpet, a rough transcription of an oral history conducted with Elisabeth in 1977-78, and photographs.</p>
+         <p> An index of letters is available.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <controlaccess>
+         <persname encodinganalog="600" source="naf">Koffka, Elisabeth, 1896-1994</persname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_d8ddeb47a7fe627fae8dfbf81e0b926a" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General file <unitdate>1977-78, undated</unitdate>
-               </unittitle>
+               <unittitle>General file</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1977/1978"
+                         type="inclusive">1977-78</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_d69360ebf7d8dc52fc1d0383df5208d2"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_b054fd0345428faab52c31f340c4fb70"
+                          parent="aspace_d69360ebf7d8dc52fc1d0383df5208d2"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9d01fe1c509141ae714d185e62cfcaca" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1937,
-                     August-December</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+               <unitdate calendar="gregorian" era="ce">August-December</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_821e7fe638a7a101301778c8706164f2"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_4883d487c594472a5f92584e8e04150e"
+                          parent="aspace_821e7fe638a7a101301778c8706164f2"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_002b57499880b9c1c6d8e75da10409f0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1938,
-                     January-December</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <unitdate calendar="gregorian" era="ce">January-December</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_c7b49ee55021c6835c65400ff4c3f715"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_7142d4554cc60df32ef4e09376c7229b"
+                          parent="aspace_c7b49ee55021c6835c65400ff4c3f715"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a5aa6d3515480a8c438ccd469f24e263" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1939,
-                     February-August</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1939/1939">1939</unitdate>
+               <unitdate calendar="gregorian" era="ce">February-August</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_80eaeef2d49ff82f783c44c6f636b176"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_b56f0f00009df387b09c2c84255a3bd2"
+                          parent="aspace_80eaeef2d49ff82f783c44c6f636b176"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7acd474b3dc5c99d399431e9ec703565" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1940,
-                     March-November</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+               <unitdate calendar="gregorian" era="ce">March-November</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_36fa9b4f38768019c748ac730fcfe001"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_f8e1d2d04635a82f9e1413f96c4d7c7a"
+                          parent="aspace_36fa9b4f38768019c748ac730fcfe001"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d2aa4101ec244f317f6dfa3c0d329365" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1941,
-                     January-December</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <unitdate calendar="gregorian" era="ce">January-December</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_3d66e5bc690cdf77dcfbc7726a8fbbbe"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_6b6c1a996d616a6d0bc3d304249287e7"
+                          parent="aspace_3d66e5bc690cdf77dcfbc7726a8fbbbe"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e1007a08c9add6969d0d519450e02adc" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1942, January-
-                     October</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+               <unitdate calendar="gregorian" era="ce">January- October</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_78115b95b77a493bc2e66f1403278740"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_59027c912321d544c6bb462dd96b12fa"
+                          parent="aspace_78115b95b77a493bc2e66f1403278740"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b17d37fd2859793e6e2a44f8f917053d" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Correspondence with Janice Tarlin <unitdate>1943, January-
-                     August</unitdate>
-               </unittitle>
+               <unittitle>Correspondence with Janice Tarlin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+               <unitdate calendar="gregorian" era="ce">January- August</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_4054948067b8eb036f54eb6ac66fb365"
+                          label="Mixed Materials [310183630263076]"
+                          type="box">1</container>
+               <container id="aspace_72808c624b36b62821724a432d14c05a"
+                          parent="aspace_4054948067b8eb036f54eb6ac66fb365"
+                          type="folder">8</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
