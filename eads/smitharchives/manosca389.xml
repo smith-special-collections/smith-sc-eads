@@ -1,1476 +1,2276 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca389.xml//EN">manosca389</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca389</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">George Warren de Villafranca papers, 1922 - 1977
-               (bulk 1951 - 1992)</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Madison White, Class of 2016;
-               Elizabeth Carron, Archives Specialist.</author>
-
+            <titleproper>Finding aid to the George Warren de Villafranca papers <num>CA.MS.00389</num>
+            </titleproper>
+            <author>Finding aid prepared by Madison White, Class of 2016; Elizabeth Carron, Archives Specialist.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2015</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2015">2015</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2015-02-04">2015-02-04</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-13 09:50:11 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-12</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">De Villafranca, George W., 1922 -
-               1977</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">George Warren de Villafranca
-            papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1922 - 1977</unitdate>
-         <unitdate encodinganalog="245$g" type="bulk">1951 - 1992</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">42 UUID:0933a7bc-a5ef-447e-95d0-07d0a73b07a2</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">14 boxes</extent>
-            <extent encodinganalog="300$a">(6.25 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of Zoology. Contains
-            publications, research, grant applications, photographs, news clippings, and
-            correspondence documenting the professional life of George Warren de Villafranca.
-         </abstract>
+         <unittitle>George Warren de Villafranca papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">De Villafranca, George W., 1922 - 1977</persname>
+         </origination>
+         <unitid>CA.MS.00389</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">5.417 linear feet</extent>
+            <extent altrender="carrier">(8 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1922/1992"
+                   type="inclusive">1922-1992</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1951/1992" type="bulk">1951-1992</unitdate>
+         <abstract id="aspace_9e29827229578d7998593c6235bc8e86">George Warren de Villafranca was born in 1923 and became a Professor of Zoology at Smith College. The collection contains publications, research, grant applications, photographs, news clippings, and correspondence documenting his professional life.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> George Warren de Villafranca was born in 1923 in Meriden, Connecticut. He entered Yale
-            University as a student of Zoology in 1942. His studies were interrupted by the onset of
-            World War II and he became a radio and control tower operator for the USA Air Force in
-            1943. He eventually finished his undergraduate studies (1948) and went on to receive his
-            Ph.D. from Yale University in Zoology in 1953.</p>
-
-         <p>In 1951, de Villafranca left the Marine Biology Laboratories in Woods Hole to take up a
-            position at Smith College. At Smith, de Villafranca continued his research on
-            contractile proteins in muscle. By the 1950s Burton Hall was considered an outdated
-            facility for research and so de Villafranca and his students built a lab in one of the
-            closets of Burton Hall. During summer, he took his lab to Wood Hole where he enjoyed
-            state-of-the-art facilities and good sailing. </p>
-
-         <p>For his outstanding research and teaching, de Villafranca steadily rose through the
-            academic ranks. He was promoted to Assistant Professor in 1954, Associate Professor in
-            1959, full Professor in 1963, and Gates Professor in 1974. In 1961, he was appointed
-            Assistant to the President and was tasked with building a new science facility. The
-            Clark Science Center opened in 1967. </p>
-
-         <p>Outside of his duties at Smith College, de Villafranca was incredibly active. He wrote
-            nearly fifty articles on muscular contraction and won several grants for his research
-            including a NIH grant from the National Institute of Arthritis and Metabolic Disease. He
-            travelled to Germany as a visiting professor and to India as a consultant for the
-            National Science Foundation. In 1971, he became the first scientist to deliver the
-            prestigious Katherine Asher Engel lecture titled "The Driving Force: Muscle". De
-            Villafranca was a fellow of the American Association for the Advancement of Science and
-            a member of the American Society of Zoologists, the American Society of Biological
-            Chemists, the Society of General Physiologists, Sigma Xi, the Biophysical Society, and
-            the Marine Biological Laboratory Association. It is said that de Villafranca inspired so
-            many of his students to enter the zoological field that many began to call meetings on
-            the subject "de Villafranca Reunions".</p>
-
-         <p>De Villafranca passed away in 1977 after sustaining second heart attack. He was survived
-            by his wife, Diana Fetter de Villafranca, Class of 1955, his children: Suzanne Stina
-            Hans, Ruth Place de Villafranca and George de Villafranca Jr., and a former wife, Erica
-            Pauli. His first wife, Suzanne Crane, died in 1960.</p>
-
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>George Warren de Villafranca was born in 1923 in Meriden, Connecticut. He entered Yale University as a student of Zoology in 1942. His studies were interrupted by the onset of World War II and he became a radio and control tower operator for the USA Air Force in 1943. He eventually finished his undergraduate studies (1948) and went on to receive his Ph.D. from Yale University in Zoology in 1953.</p>
+         <p> In 1951, de Villafranca left the Marine Biology Laboratories in Woods Hole to take up a position at Smith College. At Smith, de Villafranca continued his research on contractile proteins in muscle. By the 1950s Burton Hall was considered an outdated facility for research and so de Villafranca and his students built a lab in one of the closets of Burton Hall. During summer, he took his lab to Wood Hole where he enjoyed state-of-the-art facilities and good sailing. </p>
+         <p> For his outstanding research and teaching, de Villafranca steadily rose through the academic ranks. He was promoted to Assistant Professor in 1954, Associate Professor in 1959, full Professor in 1963, and Gates Professor in 1974. In 1961, he was appointed Assistant to the President and was tasked with building a new science facility. The Clark Science Center opened in 1967. </p>
+         <p> Outside of his duties at Smith College, de Villafranca was incredibly active. He wrote nearly fifty articles on muscular contraction and won several grants for his research including a NIH grant from the National Institute of Arthritis and Metabolic Disease. He travelled to Germany as a visiting professor and to India as a consultant for the National Science Foundation. In 1971, he became the first scientist to deliver the prestigious Katherine Asher Engel lecture titled "The Driving Force: Muscle". De Villafranca was a fellow of the American Association for the Advancement of Science and a member of the American Society of Zoologists, the American Society of Biological Chemists, the Society of General Physiologists, Sigma Xi, the Biophysical Society, and the Marine Biological Laboratory Association. It is said that de Villafranca inspired so many of his students to enter the zoological field that many began to call meetings on the subject "de Villafranca Reunions".</p>
+         <p> De Villafranca passed away in 1977 after sustaining second heart attack. He was survived by his wife, Diana Fetter de Villafranca, Class of 1955, his children: Suzanne Stina Hans, Ruth Place de Villafranca and George de Villafranca Jr., and a former wife, Erica Pauli. His first wife, Suzanne Crane, died in 1960.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p> The collection contains materials related to the professional life of George Warren de
-            Villafranca at Smith College. Materials contained within the collection include:
-            photographs of de Villafranca's lab and his teaching, correspondence to other
-            researchers, news clippings about his achievements, and a volume titled Remembrances
-            written by colleagues and friends. Approximately 5.5 linear feet of the collection is
-            dedicated to de Villafranca's research and publications. These boxes include his
-            published articles, his research notebooks, graphs and charts of various research
-            projects, grant applications to fund his lab and his work as a consultant for the
-            National Science Foundation in India.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection contains materials related to the professional life of George Warren de Villafranca at Smith College. Materials contained within the collection include: photographs of de Villafranca's lab and his teaching, correspondence to other researchers, news clippings about his achievements, and a volume titled Remembrances written by colleagues and friends. Some of the collection is dedicated to de Villafranca's research and publications. These boxes include his published articles, his research notebooks, graphs and charts of various research projects, grant applications to fund his lab and his work as a consultant for the National Science Foundation in India.</p>  
       </scopecontent>
-
-      <arrangement id="scope-arr">
-         <p>The collection is organized into six boxes. The bulk of the collection contains research
-            material. Correspondence and faculty materials are located in Box 1. The materials found
-            in Box 8 are restricted as according to Smith College policies.</p>
+      <arrangement id="aspace_scope-arr">
+         <head>Arrangement</head>
+         <p>The bulk of the collection contains research material. Correspondence and faculty materials are located in Box 1.</p>  
       </arrangement>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives except where noted in the finding aid. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use with following restrictions on access:
+Box 8 is Restricted. Please see College Archives staff for assistance.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p> Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>George Warren de Villafranca papers, 1922 - 1977, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>George Warren de Villafranca papers, Smith College Archives, CA-MS-00389, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The George Warren de Villafranca papers, 1922 - 1977 were donated to the College
-            Archives. </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Madison White, Class of 2016; Elizabeth Carron, Archives Specialist</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-
-         <persname encodinganalog="600" source="lcnaf">De Villafranca, George W.</persname>
-         <corpname encodinganalog="610" source="lcsh">Marine Biological Laboratory (Woods Hole,
-            Mass.)</corpname>
-         <corpname encodinganalog="610" source="lcsh">National Science Foundation (U.S.).
-            Development in Science Education</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- Clark Science
-            Center</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College--Department of Biological
-            Sciences</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- Faculty -- Sources</corpname>
-         <subject encodinganalog="650" source="lcsh">Zoology -- Study and teaching (Higher) --
-            Massachusetts -- Northampton.</subject>
-         <genreform encodinganalog="655" source="aat">correspondence</genreform>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Zoology -- Study and teaching (Higher) -- Massachusetts -- Northampton.</subject>
+         <genreform encodinganalog="655" authfilenumber="300026877" source="aat">correspondence</genreform>
          <genreform encodinganalog="655" source="aat">grants</genreform>
          <genreform encodinganalog="655" source="aat">photographs</genreform>
          <genreform encodinganalog="655" source="aat">research centers (buildings)</genreform>
          <genreform encodinganalog="655" source="aat">research notes</genreform>
-
+         <persname encodinganalog="600" source="naf">De Villafranca, George W.</persname>
+         <corpname encodinganalog="610" source="lcsh">Marine Biological Laboratory (Woods Hole, Mass.)</corpname>
+         <corpname encodinganalog="610" source="lcsh">National Science Foundation (U.S.). Development in Science Education</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- Clark Science Center</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Department of Biological Sciences</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- Faculty -- Sources</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_97d7b1d1c8e45af2e3dd8fcabd9118e9" level="file">
+            <did>
+               <unittitle>Associate Professor of Zoology</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1954/1992"
+                         type="inclusive">1954 - 1992</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_750d2f1521cdfcbbc60b00afdfcff651"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_2622a7574554ac37f879d476a0573f77"
+                          parent="aspace_750d2f1521cdfcbbc60b00afdfcff651"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_baa06752ed520eded05732bfb4a6bff2" level="file">
+            <did>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1951/1985"
+                         type="inclusive">1951 - 1985</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_dfac789134410f08efa7a9aa08c2ba87"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_3220ac4d110495a420ee5d1332853153"
+                          parent="aspace_dfac789134410f08efa7a9aa08c2ba87"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2e384d5db2d16091d436bf22397b7317" level="file">
+            <did>
+               <unittitle>Correspondence - Sherman College of Chiropractic</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1962/1975"
+                         type="inclusive">1962 - 1975</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f4d63693bcd60e1dc91282c78a6b3718"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_7417f37bffd486530293a701976ce2a9"
+                          parent="aspace_f4d63693bcd60e1dc91282c78a6b3718"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0df6f1f5f21e55c43336865ebdb56781" level="file">
+            <did>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_fa0e08e7a7818515256ca4849a1f2bd7"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_e10c7395220db6a6ce23ac6f80d840df"
+                          parent="aspace_fa0e08e7a7818515256ca4849a1f2bd7"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_dcfc6f1cbfb79b03277007752c1b0742" level="file">
+            <did>
+               <unittitle>Volume of Remembrances</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1977/1978"
+                         type="inclusive">1977 - 1978</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0064e7b22dda2ca3c460217b4641fa85"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_eff579833d1cbf507894f374b4c621cb"
+                          parent="aspace_0064e7b22dda2ca3c460217b4641fa85"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1b5336408f69d2f10e920ae239004ef9" level="file">
+            <did>
+               <unittitle>Grants- AM 02647 Proposals</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1957"
+                         type="inclusive">1956 - 1957</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_33b3d3a700238202d4fb480da84c2032"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_bdbfeb85f1d30eae8dd367f199fb983c"
+                          parent="aspace_33b3d3a700238202d4fb480da84c2032"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7f42a81e3662fe99871d6804d7a388fe" level="file">
+            <did>
+               <unittitle>Grants- AM 02647 Renewal Application - Aug 1976</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1978"
+                         type="inclusive">1970 - 1978</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2c4151b7a2ef687e060f17988dd41bcc"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_d57c7aba0bc052f203e66fe6dde5f0b1"
+                          parent="aspace_2c4151b7a2ef687e060f17988dd41bcc"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d6b8fc85ee12048fb9942a07a99fa2ae" level="file">
+            <did>
+               <unittitle>Grants- Biochemistry and Localization of Muscle Proteins</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1968"
+                         type="inclusive">1958 - 1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ad9938c6a3fe54ab6bcc4cc60d4f081e"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_3362285f1a471b6a0b7151cb9e2735fb"
+                          parent="aspace_ad9938c6a3fe54ab6bcc4cc60d4f081e"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9efbb5b19e716c945bc325f1e59a1a35" level="file">
+            <did>
+               <unittitle>Grants- Biochemistry and Localization of Muscle Proteins</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1977"
+                         type="inclusive">1971 - 1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_d89a292e353885b1ffc76980af0fcb45"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_e093dcbb7708163df8b14d74ab8f1932"
+                          parent="aspace_d89a292e353885b1ffc76980af0fcb45"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_07de408420e61082d23c150b4c5e9d4a" level="file">
+            <did>
+               <unittitle>Grants- re-Embryonic Alterations in Pre-Dystrophic Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1978"
+                         type="inclusive">1965 - 1978</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_578a4402480f8534e6ee94463d2ef3d3"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_c5b55c4e7df08f030dd1c25beb22f6b5"
+                          parent="aspace_578a4402480f8534e6ee94463d2ef3d3"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e8652ba03a364e2bd8944659e2b31396" level="file">
+            <did>
+               <unittitle>Grants- General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1952/1955"
+                         type="inclusive">1952 - 1955</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_a54a40dfbf9df6976d0760fcb1ade629"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_a34d09a3e12119198f9040b9aca3f5d7"
+                          parent="aspace_a54a40dfbf9df6976d0760fcb1ade629"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_559230ad8ff84ef10bbde26d828c396c" level="file">
+            <did>
+               <unittitle>Grants-India</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_9f3613a6725c1cd8fce848e4d4cb2c45"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_1aa0b8fedd45a3f2663b9e8174b9a1f7"
+                          parent="aspace_9f3613a6725c1cd8fce848e4d4cb2c45"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c76cbd6ab2d90e701d689c1c4cab7dd9" level="file">
+            <did>
+               <unittitle>Grants-India</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1969"
+                         type="inclusive">1968 - 1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_a9028cbca918780b6839b3fe035c842b"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_66f5df9a580a3332644b6bf163b7b202"
+                          parent="aspace_a9028cbca918780b6839b3fe035c842b"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b1ec45d8b41568e8658d3701618ab9e9" level="file">
+            <did>
+               <unittitle>Grants-India- Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1970"
+                         type="inclusive">1967 - 1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_efa889350a563a9b4977fa1ad0fb24ba"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_c44565b72aed5eac6a884707f58a27af"
+                          parent="aspace_efa889350a563a9b4977fa1ad0fb24ba"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e6d0a10b955557e63f42763ded401aa9" level="file">
+            <did>
+               <unittitle>Grants-RG 4709 - C</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1958"
+                         type="inclusive">1957 - 1958</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1028a944c94773fee021a48220f250da"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_5ee33a1086834bb60816c617cd69a59c"
+                          parent="aspace_1028a944c94773fee021a48220f250da"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f5d874bfe710bf9324047d5d9483181e" level="file">
+            <did>
+               <unittitle>Grants-RG 4709</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1958"
+                         type="inclusive">1956 - 1958</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_4a591680b7540bd0e2f8cd808735636a"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_c8a167478fa3adc80a5adec107dff37f"
+                          parent="aspace_4a591680b7540bd0e2f8cd808735636a"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d6c33fb573d4d3f84d7d77cc0876668f" level="file">
+            <did>
+               <unittitle>Publications- General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1968"
+                         type="inclusive">1959 - 1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_58ca4af6b0052ef26be106349394aaf9"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_939f7d5f6db0e1d978f4d57bc6cc0707"
+                          parent="aspace_58ca4af6b0052ef26be106349394aaf9"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c4794e52e6f0a20e9bc04dadc7c4b109" level="file">
+            <did>
+               <unittitle>Publications- General- Abstracts</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1974"
+                         type="inclusive">1960 - 1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_24cf3f2b2eda8d550586c7af7babc68f"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_0ca2253e337a1e3b3042194191d81cd0"
+                          parent="aspace_24cf3f2b2eda8d550586c7af7babc68f"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b76877b90d0fdfcb23ce125053fb6d0e" level="file">
+            <did>
+               <unittitle>The A and I Band Lengths in Stretched or Contracted Horseshoe Crab Skeletal Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1961"
+                         type="inclusive">1960 - 1961</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_72276bbcf0f9e67bf2d1968e9c2dead8"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_920de314cb0aeebef76134edd586cb70"
+                          parent="aspace_72276bbcf0f9e67bf2d1968e9c2dead8"
+                          type="folder">19</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d33942960cca731b4723c59a7541b146" level="file">
+            <did>
+               <unittitle>The Action of ATP on Natural Actomyosin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_434060f3f1210e3c6009a2b2ca7ed13e"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_83acc32e09de65801283d0ab2e04d1aa"
+                          parent="aspace_434060f3f1210e3c6009a2b2ca7ed13e"
+                          type="folder">20</container>
+            </did>
+         </c01>
+         <c01 id="aspace_05c7d2d5ecaff9b7c0b2a4940ccbdd5d" level="file">
+            <did>
+               <unittitle>Actomyosin Solubility and Skeletal muscle Emptying of Horseshoe Crab</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1494cae05ce7de7501b4e621faabb0e1"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_60e14415ef5fbe19dd83708eca248323"
+                          parent="aspace_1494cae05ce7de7501b4e621faabb0e1"
+                          type="folder">21</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ae345d19f7d8c471ad2e07cad3d26bde" level="file">
+            <did>
+               <unittitle>Adenosintriphosphatase activity in developing rat muscles</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_d74171330aac90e16be01e96c6f825b2"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_853f2f7bb6d5e0dd0bfa0db053fd3942"
+                          parent="aspace_d74171330aac90e16be01e96c6f825b2"
+                          type="folder">22</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1c043c53c6927a16d6e79f3df0da2e44" level="file">
+            <did>
+               <unittitle>Adenosintriphosphatase activity of Frog Myosin B.</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_c9a410d76376931110e18fe981873608"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_21138190bc5105ea91aba00d0f40be00"
+                          parent="aspace_c9a410d76376931110e18fe981873608"
+                          type="folder">23</container>
+            </did>
+         </c01>
+         <c01 id="aspace_71e4b1100a4e21718f104486a2e78a05" level="file">
+            <did>
+               <unittitle>Adenosintriphosphatase activity of myofibrils</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_94bcfa2b198c609e09232f041c91b05a"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_30963e8a6fed9c69dee93d75c279bf97"
+                          parent="aspace_94bcfa2b198c609e09232f041c91b05a"
+                          type="folder">24</container>
+            </did>
+         </c01>
+         <c01 id="aspace_858fdbd3e7912befc705dbd46a417029" level="file">
+            <did>
+               <unittitle>Adenosintriphosphatase Activity of Squid Mantle Muscles (Loligo Peatii)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_33744377d4e7d3b8408eae429af17df5"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_0c228551f3416bf705356d93578fe379"
+                          parent="aspace_33744377d4e7d3b8408eae429af17df5"
+                          type="folder">25</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1138266f87c7cad12dc6c36527d5fb64" level="file">
+            <did>
+               <unittitle>Biology of Muscle Cells</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_4d0b84b0333612d6c57c676982f76eb5"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_1feaff48bc654fc8218680db3e4ef91e"
+                          parent="aspace_4d0b84b0333612d6c57c676982f76eb5"
+                          type="folder">26</container>
+            </did>
+         </c01>
+         <c01 id="aspace_60593996f387a7349c18b94a7a6ca858" level="file">
+            <did>
+               <unittitle>Contractive Proteins from Horseshoe Crab Muscle</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ca5852833548500fbef4de0be51afb4f"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_4ab5b68096fb8c53839dc8a7e172dee7"
+                          parent="aspace_ca5852833548500fbef4de0be51afb4f"
+                          type="folder">27</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6d0fbd103f79cdda17cb4814a1cc3f01" level="file">
+            <did>
+               <unittitle>Contraction of the A Band</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f18ad2825bebf8e76ad8bd156ce758cf"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_0c5c9d13e549fd2dfe383272531ddad3"
+                          parent="aspace_f18ad2825bebf8e76ad8bd156ce758cf"
+                          type="folder">28</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b91cf4968f68acff52c9975fd1209a16" level="file">
+            <did>
+               <unittitle>The Driving Force: Muscle</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_b1f0508230f2505d2be9aa35d436b0b8"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_6f1147192154f0b485f4cb6626acb0e8"
+                          parent="aspace_b1f0508230f2505d2be9aa35d436b0b8"
+                          type="folder">29</container>
+            </did>
+         </c01>
+         <c01 id="aspace_64cac931f1a1ab7ad072db40bccd3cf0" level="file">
+            <did>
+               <unittitle>Frog Myofibrillar Adenosintriphosphotase Activity</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1964/1964">1964</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_757cff7de1228bbf8b15d2369bcb7df8"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_f3c14834908aca10bd712c7ff85477de"
+                          parent="aspace_757cff7de1228bbf8b15d2369bcb7df8"
+                          type="folder">30</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9172dbb775dea050adbb748e502c1f49" level="file">
+            <did>
+               <unittitle>Immunahistochemical Localization of Contractile Proteins in Limulus Striated Muscle</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_b296c8ae4db045763fc70ab4309b9a69"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_cd74d6bfd1ecfc20396372d221a8a6a0"
+                          parent="aspace_b296c8ae4db045763fc70ab4309b9a69"
+                          type="folder">31</container>
+            </did>
+         </c01>
+         <c01 id="aspace_56026a73f7ed704861877f24a1561711" level="file">
+            <did>
+               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and Rabbit - I Relation of Tension to Muscle Fiber Dimensions</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_b0aa7df0c978f7aca4c55f46f6481e33"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_a6b146a48502ca51c2d548e4625528c9"
+                          parent="aspace_b0aa7df0c978f7aca4c55f46f6481e33"
+                          type="folder">32</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c70f54983974f7049ff3ca86a9354589" level="file">
+            <did>
+               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and Rabbit - II Calcium and Magnesium Requirements for Contraction 1970</unittitle>
+               <container altrender="Record carton"
+                          id="aspace_f766ac140ccc612c38fd50925bde7f6b"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_c5c945990afdd8fe36202adc830a0250"
+                          parent="aspace_f766ac140ccc612c38fd50925bde7f6b"
+                          type="folder">33</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9ca3f485fd224717605759526e9a6259" level="file">
+            <did>
+               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and Rabbit - III Relaxation</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_bffa0aa7cc04c37df86afa94e3ab9d67"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_2aad6d53dafc1745226a7c81349081cf"
+                          parent="aspace_bffa0aa7cc04c37df86afa94e3ab9d67"
+                          type="folder">34</container>
+            </did>
+         </c01>
+         <c01 id="aspace_73e322af56668172ecfce800842f8847" level="file">
+            <did>
+               <unittitle>Limulus Striated Muscle</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ada387446e24dffbb5cd078b2805dfe5"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_ee98fa981b106cc88641b386fc4d3fa7"
+                          parent="aspace_ada387446e24dffbb5cd078b2805dfe5"
+                          type="folder">35</container>
+            </did>
+         </c01>
+         <c01 id="aspace_aa2877ebf24f41ffa6de46a9053553c7" level="file">
+            <did>
+               <unittitle>Magnesium Activation of Natural Actomyosin ATPase from Horseshoe Crab</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_21e5298411c8a0bf3315e8adeefabb45"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_d6f43bfdb855ec35bdc1d45132c46f24"
+                          parent="aspace_21e5298411c8a0bf3315e8adeefabb45"
+                          type="folder">36</container>
+            </did>
+         </c01>
+         <c01 id="aspace_54d601d4debebf00c4368bc862168a90" level="file">
+            <did>
+               <unittitle>Magnesium Control of the Calcium Myosin and Actomyosin ATPase of Limulus polyphemus</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0858ce3e70bafb3d014a4db01a1dcf81"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_0277b7633d407c4eb2841d246fa412f0"
+                          parent="aspace_0858ce3e70bafb3d014a4db01a1dcf81"
+                          type="folder">37</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c057989118a258365b8850507caa2345" level="file">
+            <did>
+               <unittitle>Myofibrillar ATPase Activity and the Effect of Relaxing Substances</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1bb9fba8c9d1cdc7896462c02355b4ff"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_2c79a7b3b8e80729902d456a4d98c54b"
+                          parent="aspace_1bb9fba8c9d1cdc7896462c02355b4ff"
+                          type="folder">38</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e795fb16e42a0c085107f58a30a63571" level="file">
+            <did>
+               <unittitle>Observations on the Anisotropic Band of Cross-Striated Muscle</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2a624fbf7233760baf868c938c814b9f"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_b98554aee15552dc7ca12e0124c2938e"
+                          parent="aspace_2a624fbf7233760baf868c938c814b9f"
+                          type="folder">39</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4d5396d438ca1d0df7edf8a0f5b2e81f" level="file">
+            <did>
+               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1973"
+                         type="inclusive">1967 - 1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_cecc52a1fe83c3c3afad54ba35ee1f7d"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_7d0daf1023ad80574222d46bc15ec431"
+                          parent="aspace_cecc52a1fe83c3c3afad54ba35ee1f7d"
+                          type="folder">40</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6f4ed6cef2b6bcb3b845d2c6b3151c71" level="file">
+            <did>
+               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle - charts and graphs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1972"
+                         type="inclusive">1971 - 1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_70d752297472dda30bf392750252e9fa"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_9d12453d01f9a68bd8436ac67c147ca8"
+                          parent="aspace_70d752297472dda30bf392750252e9fa"
+                          type="folder">41</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6ae942541f305e67c786e35681f92f39" level="file">
+            <did>
+               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle - Clam (V. mercenaria) paramyosin- mol. wt.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1972"
+                         type="inclusive">1971 - 1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5524e0672098f1ecff01481ff1aeb2c5"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_142d5dd85fcd4a9b9e7194ef6c239fa7"
+                          parent="aspace_5524e0672098f1ecff01481ff1aeb2c5"
+                          type="folder">42</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9eaf787e630e685049836f0e9215326e" level="file">
+            <did>
+               <unittitle>Paramyosin from Arthropod Cross-Striated Muscle - Limulus Paramyosin - molecular weight data</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1972"
+                         type="inclusive">1970 - 1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_11c9db0608eb7c9c3d658b08e07421b1"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_7696d6b183a0a116b36512c56f2aa6c1"
+                          parent="aspace_11c9db0608eb7c9c3d658b08e07421b1"
+                          type="folder">43</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5744c32bc39f49d5855f0194606b1daf" level="file">
+            <did>
+               <unittitle>Paramyosin from Arthropod Cross-Striated Muscle - photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_6d3eec546a24bd4f8eb7856408462bac"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_887f5b7093719bce6c80ff61cf640d17"
+                          parent="aspace_6d3eec546a24bd4f8eb7856408462bac"
+                          type="folder">44</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e68e24e8b68029be7b643f7774aeae40" level="file">
+            <did>
+               <unittitle>Phase Contrast Observations on the Anisotropic Band of Cross - Striated Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1957"
+                         type="inclusive">1955 - 1957</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_88ef4e2233f8131ff818c30244fd01ad"
+                          label="Mixed Materials [310183630254919]"
+                          type="box">1</container>
+               <container id="aspace_793c15fba299cbc21348059b1fb1ceb1"
+                          parent="aspace_88ef4e2233f8131ff818c30244fd01ad"
+                          type="folder">45</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f19ee739fbd67607ef1ac6936cdd1b7b" level="file">
+            <did>
+               <unittitle>reviews</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1972"
+                         type="inclusive">1969 - 1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_d536fe43680d84dea366eaa0c37cd9b4"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_4bbb7b440ab1be0f0d9771903d3b6c7e"
+                          parent="aspace_d536fe43680d84dea366eaa0c37cd9b4"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c878d15017fe32033a35c81fb71c8ae1" level="file">
+            <did>
+               <unittitle>Sedimentation Behavior of Limulus Actomyosin</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1d21d6a56c76e6518108f4229f844655"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_f157ebd277129a5d74a602e706831a24"
+                          parent="aspace_1d21d6a56c76e6518108f4229f844655"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ddab7604103e68b523d0a43d0bf516c3" level="file">
+            <did>
+               <unittitle>Some Physico - Chemical Properties of Myosin B from the Horseshoe Crab, Limulus polyphemus</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1968"
+                         type="inclusive">1967 - 1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_80883e5042fa7b06805802f43cfb2553"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_588c1c0538f0d3bd44e8bfcc5e8c61e2"
+                          parent="aspace_80883e5042fa7b06805802f43cfb2553"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_43c02c6c6490d34ede8c12931ea11c87" level="file">
+            <did>
+               <unittitle>Some Properties of the myosin B ATPase Limulus</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_052365b90c3e40868bda40ff0ced7072"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_fd11536ba417535033507fbdfd93ce64"
+                          parent="aspace_052365b90c3e40868bda40ff0ced7072"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_43fb9f7b5a5e8d995ccd48ba2768c64d" level="file">
+            <did>
+               <unittitle>Study on the Localization of Contractile Proteins in the Muscle of the Horseshoe Crab (Limulus polyphemus)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1959"
+                         type="inclusive">1958 - 1959</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_26f4cc4d6eb6de4bcbb134b7f8ef440d"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_a86d27e1bcf407f8fb84bba210a298fb"
+                          parent="aspace_26f4cc4d6eb6de4bcbb134b7f8ef440d"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8b3ef69e0cf30ce5ec7433270d929224" level="file">
+            <did>
+               <unittitle>A Study on the Nature of the A Band of Cross - Striated Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1956"
+                         type="inclusive">1955 - 1956</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1d9362dadd9339869e568aa4f88611bd"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_51c6173bab22fcc4cddf137908374eff"
+                          parent="aspace_1d9362dadd9339869e568aa4f88611bd"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_475d876fc3231ae3a28abc4fa758d656" level="file">
+            <did>
+               <unittitle>Superprecipitation of A Horseshoe Crab and Rabbit Myosin B</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1970"
+                         type="inclusive">1969 - 1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_8162c0b83b7e00704ed47cc2690a3887"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_27d9332962e3b4ae11bb773885262baa"
+                          parent="aspace_8162c0b83b7e00704ed47cc2690a3887"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b23e8a297a17e675db140151477f97aa" level="file">
+            <did>
+               <unittitle>Ultrastructure of Striated Muscle from Limulus polyphemus</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1961"
+                         type="inclusive">1960 - 1961</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_058689d4396c0adbe97bd57b5e75de68"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_4676962e707fa5fd7f023428a197caee"
+                          parent="aspace_058689d4396c0adbe97bd57b5e75de68"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e58db5d2d2000b91485bcbb77d1e70ee" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0d40ba0e72c624ad3c213bed376dee54"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_50cf4caa24b6c9972e8630f9f25e3533"
+                          parent="aspace_0d40ba0e72c624ad3c213bed376dee54"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8ba8059a522dec208babc1e71f92ce2f" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5bcc3d2e839907267993b029eeb12cbc"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_bb451d5989eceb52d0ebfdc9f60104c0"
+                          parent="aspace_5bcc3d2e839907267993b029eeb12cbc"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8def09c1454995e1fcd96a82aa1f22c2" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_d098cd74dc04417d72cb514c4ea26dd4"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_03cbbe5370e6700b89c94b6d4300d1c8"
+                          parent="aspace_d098cd74dc04417d72cb514c4ea26dd4"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_29af34aa4b626f8fb55870f2d76275ab" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_fd530c5f86ed2f7b70b6c04da4720699"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_a27bf9342067ee3800eda04d045ae549"
+                          parent="aspace_fd530c5f86ed2f7b70b6c04da4720699"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2ff6c69fde6510babccd0f3128a8466e" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5a3c94e4b6fc985b1340853ef4f62d70"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_31cdbd9213042c1d6747cddd679857c5"
+                          parent="aspace_5a3c94e4b6fc985b1340853ef4f62d70"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b87c7d443da21b01129135f9118f7d6c" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_987d70d0626973ee64f73d1b65c86966"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_7a2c3232437861c534c1a78ec105a089"
+                          parent="aspace_987d70d0626973ee64f73d1b65c86966"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_423e1d17abac3f8d2a8da149e7e2ad56" level="file">
+            <did>
+               <unittitle>charts and graphs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0105578edae2d2b35b8a8cee5a8341e1"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_66f9720f1fb9bcb298479bae1ea1b58b"
+                          parent="aspace_0105578edae2d2b35b8a8cee5a8341e1"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_80f003dad401413ffcf6ebe461d1a5c2" level="file">
+            <did>
+               <unittitle>Limulus Paramyosin M and C.D and ORD.</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f3e491150413af5fda2c2c65635dad92"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_d119a767f41250df77b3543c380aa0e4"
+                          parent="aspace_f3e491150413af5fda2c2c65635dad92"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_58d8b84ef4d0dcfbd24ceb447d04adb0" level="file">
+            <did>
+               <unittitle>Parocrystals</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_594e140e9fa0fd409d32c897d098bbf8"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_f64ce393d124eee72e1fcb81e31f6b82"
+                          parent="aspace_594e140e9fa0fd409d32c897d098bbf8"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_aae97334e06e4f36370658b355e7480e" level="file">
+            <did>
+               <unittitle>Limulus Myosin</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1972"
+                         type="inclusive">1971-1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_05b9bb26c0074ef803ec5e9eb5ae350a"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_1e43015a128946895fdaf175c28edad2"
+                          parent="aspace_05b9bb26c0074ef803ec5e9eb5ae350a"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c5e1d18934c7333b0b3dc3ed46dc1f9a" level="file">
+            <did>
+               <unittitle>Model E</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ceb1e977d2a13b966dc26ad45c7d6995"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_388637e45af8646679344c7f14a21fea"
+                          parent="aspace_ceb1e977d2a13b966dc26ad45c7d6995"
+                          type="folder">19</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9e1d1e35f46d10c6c02c8fde039092fb" level="file">
+            <did>
+               <unittitle>Rabbit Psoas - phase and electron photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_80ed44bae16ca5f24748480177ffa417"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_d2f6b1464a5e1adc40a0ac12244b9360"
+                          parent="aspace_80ed44bae16ca5f24748480177ffa417"
+                          type="folder">20</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d4653ee93d34c57a3c327a46582a627f" level="file">
+            <did>
+               <unittitle>Glyc. Psaos electron microscope</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e57f37781bd74de3cf2e885c698258b4"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_aff9268218c0263c925fc9341b3950c0"
+                          parent="aspace_e57f37781bd74de3cf2e885c698258b4"
+                          type="folder">21</container>
+            </did>
+         </c01>
+         <c01 id="aspace_543b955d4786795b865d52d646309ccd" level="file">
+            <did>
+               <unittitle>Limulus electron microscope</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f9a8aef8ebd213f99bff1462c89f22fb"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_000f29659af38c049cc584aaff865fc8"
+                          parent="aspace_f9a8aef8ebd213f99bff1462c89f22fb"
+                          type="folder">22</container>
+            </did>
+         </c01>
+         <c01 id="aspace_fbe0d417b39319b1e9d83cda7b66638a" level="file">
+            <did>
+               <unittitle>Limulus electron microscope photographs, 2712 - 3165</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_8c69b3985528b08d044e9b983e9bc737"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_5a750551c516e4f7b56b39599910c76f"
+                          parent="aspace_8c69b3985528b08d044e9b983e9bc737"
+                          type="folder">23</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5133447fe5a3ea45e06d67e57551653c" level="file">
+            <did>
+               <unittitle>Limulus electron microscope photographs, 3166 - 3577</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5e2d70997ac1d197d4fbfb1f3c4e02a0"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_c2f65fbf391db871d3ad88557e39e75f"
+                          parent="aspace_5e2d70997ac1d197d4fbfb1f3c4e02a0"
+                          type="folder">24</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9997da93742fc3fb03f9868796a8e26b" level="file">
+            <did>
+               <unittitle>Limulus electron microscope photographs, 3608 - 3723</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1df5c2c0ab6e791eb72571a567920620"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_4f686540f99317cecd7ed07d3b0503f4"
+                          parent="aspace_1df5c2c0ab6e791eb72571a567920620"
+                          type="folder">25</container>
+            </did>
+         </c01>
+         <c01 id="aspace_97888b7aeca950c1da4c77666bf1143b" level="file">
+            <did>
+               <unittitle>Limulus electron microscope photographs, 3724 - 3744</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_33290380cf1421834b24d825d7b63f73"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_4c2f725de6fd40ea89ac7c84fc3f5a66"
+                          parent="aspace_33290380cf1421834b24d825d7b63f73"
+                          type="folder">26</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a4b57d256fd1cb57dd2cf4be303b7835" level="file">
+            <did>
+               <unittitle>Limulus electron microscope photographs, 4038 - 4315</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_19bd785a12439b9a6ef9513736bd6ec3"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_27244c10c08e211c927d59a467906c00"
+                          parent="aspace_19bd785a12439b9a6ef9513736bd6ec3"
+                          type="folder">27</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e0b8fc6ce023a0d29b6fa9ea3b4e2178" level="file">
+            <did>
+               <unittitle>Limulus- extract of A Band, phase and electron microscope photographs</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e8f006b4a9fd07c8ee7e4ea54801afdf"
+                          label="Mixed Materials [310183630254927]"
+                          type="box">2</container>
+               <container id="aspace_b213d2f5cbbf566d8f5dd9002388e51f"
+                          parent="aspace_e8f006b4a9fd07c8ee7e4ea54801afdf"
+                          type="folder">28</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3e7fe17f89747ce703a6dcb6748c1509" level="file">
+            <did>
+               <unittitle>Model E Log Book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1962/1963"
+                         type="inclusive">1962 - 1963</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_267d3f35f19421d6600ef6881c5a37da"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_e08b547f832bcef4c39721c0137d8923"
+                          parent="aspace_267d3f35f19421d6600ef6881c5a37da"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_e0d676e64c2e881bec71c92f9665785c" level="file">
+            <did>
+               <unittitle>Model E Log Book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1963/1964"
+                         type="inclusive">1963 - 1964</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_68842739b0eff17da6004202b668e35d"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_26ff8c6225a606bdbfbeb925c57ab411"
+                          parent="aspace_68842739b0eff17da6004202b668e35d"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c21135f7209be42b63a64732d2acec4a" level="file">
+            <did>
+               <unittitle>Model E Log Book</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1964/1964">1964</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_02f55b9f12772cd688bc25910faf230c"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_7da080ee61051a66232a146dd5284ccc"
+                          parent="aspace_02f55b9f12772cd688bc25910faf230c"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7d3261c3f91c35c7f11f3b30d2be7b87" level="file">
+            <did>
+               <unittitle>Model E Log Book</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_a3a2ba67f27be3719feaa846d7d83ec1"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_49773f06a4ddcb41695e151f949603ea"
+                          parent="aspace_a3a2ba67f27be3719feaa846d7d83ec1"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9d5c92d2e4cccfb1a1c0c4d12fff9947" level="file">
+            <did>
+               <unittitle>Model E Log Book</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1966"
+                         type="inclusive">1965 - 1966</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5d499aeda4a9d66252910452701d57b3"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_03f28e38a2d709816e2643feaa14ecd1"
+                          parent="aspace_5d499aeda4a9d66252910452701d57b3"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_451c3a44fa93a4d4c740451ff164d1c1" level="file">
+            <did>
+               <unittitle>Log Book for the Model E Analytical Ultracentrifuge</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/1967"
+                         type="inclusive">1966 - 1967</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5d057383a30a5e931693269cc3aae469"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_4ec530b64261daee9fa1847d4b261757"
+                          parent="aspace_5d057383a30a5e931693269cc3aae469"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7e9fe777183e2eaaecf3a7eebe4aa05d" level="file">
+            <did>
+               <unittitle>Log Book for the Model E Analytical Ultracentrifuge</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1b496074c0f02ffb62573c814e8e1741"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_8552f7bf4cf331732c80c47af8b93037"
+                          parent="aspace_1b496074c0f02ffb62573c814e8e1741"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0586d61243c6e8f0127fccbaba11483c" level="file">
+            <did>
+               <unittitle>Log Book for the Model E Analytical Ultracentrifuge</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2def802b7504f5f3fbb9997c9771a6a4"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_74da76a90f9775004de8b22cf8968f8d"
+                          parent="aspace_2def802b7504f5f3fbb9997c9771a6a4"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9d99f8c8c8cb30d05d6c8f863d9bff5f" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 722 - 900</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1969"
+                         type="inclusive">1967 - 1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3a65387cdc346b842d08bcd64628a54b"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_520b8d98601eab8a3efb0edac56a0109"
+                          parent="aspace_3a65387cdc346b842d08bcd64628a54b"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8e76cb438967047e3fa0ca945ac8fe16" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 901 - 1083</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_bb42c277881e19234ad045c28695cb29"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_87692d99eb6692fd620df4fb0cc2d34e"
+                          parent="aspace_bb42c277881e19234ad045c28695cb29"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_958e9ec2e5350c86cdfda9b369de3379" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 1084 - 2049</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_b5065904045407cd86e395fa38224546"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_034091c2edf94938cfb5fc71a692bada"
+                          parent="aspace_b5065904045407cd86e395fa38224546"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2b1c91c0ca27d34c9375f468011e8afd" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 2050 - 2157</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1971"
+                         type="inclusive">1970 - 1971</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_93115b02abf028bb0d711d73b5ea2705"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_6d3640aa5213c9b67488c62d8bb7c863"
+                          parent="aspace_93115b02abf028bb0d711d73b5ea2705"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_86a38e1a621f62e073cd3961a7dcd75b" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 2158 - 2284</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1971/1972"
+                         type="inclusive">1971 - 1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_dfeeb901de990799ee3852f0397d4412"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_449d14715487948e4242700acede1fec"
+                          parent="aspace_dfeeb901de990799ee3852f0397d4412"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2b08297291190f2b996710693a17e254" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 2285 - 2400</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1972/1973"
+                         type="inclusive">1972 - 1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_06c0105ffc218c0fbcf1073b3d4bd358"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_964e194d7acac46923a55069efebb94f"
+                          parent="aspace_06c0105ffc218c0fbcf1073b3d4bd358"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a12b90e76eb8cd772fb2e66f98f356d1" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 2401 - 2510</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1973/1975"
+                         type="inclusive">1973 - 1975</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_47ab1110d1229a9952d15bc14f88f8b8"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_f45ff80c47389f6a782a8da6eaeb9f29"
+                          parent="aspace_47ab1110d1229a9952d15bc14f88f8b8"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9eebf83070ee5b87221b3b4eaefde564" level="file">
+            <did>
+               <unittitle>Ultracentrifuge Data, 2511 - 2662</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1977"
+                         type="inclusive">1975 - 1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_33069aa645774a4468027d5df79eb953"
+                          label="Mixed Materials [310183630254935]"
+                          type="box">3</container>
+               <container id="aspace_0a0f508d93b86afb7995037c62f656c9"
+                          parent="aspace_33069aa645774a4468027d5df79eb953"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_4763e5b1f21fc723f13a30faec267830" level="file">
+            <did>
+               <unittitle>Chromoscan Tracings - D.G. runs , 452 - 466</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0569678a8664ca6386f6a4e815991999"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_c3035deb992278ba9a61c7d6c0adeb9e"
+                          parent="aspace_0569678a8664ca6386f6a4e815991999"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_248e6bae8c5c53ee985f6cb675cce486" level="file">
+            <did>
+               <unittitle>Para</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1976/1977"
+                         type="inclusive">1976 - 1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_bfbc3372d54477e153afc7afa36ef6cc"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_f78282b78d027093df24d815b67c2390"
+                          parent="aspace_bfbc3372d54477e153afc7afa36ef6cc"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_aa873f660e225f284043e40b5670f676" level="file">
+            <did>
+               <unittitle>Vert. Physiol. - Zool au (1960) G.H. de Villafranca</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ba6e22a644d674fc22a07a3b962c9003"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_f5ee0d0609e86c921d1fc8e490b7f5c8"
+                          parent="aspace_ba6e22a644d674fc22a07a3b962c9003"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1d7034db82652116d2a374694e4dbe99" level="file">
+            <did>
+               <unittitle>Electrophoresis, 196 - 305</unittitle>
+               <unitdate calendar="gregorian" era="ce">10/08/1974 - 07/17/1975</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3cde0e6b4c80172f8c643f482f6e8530"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_b5f1cc8436249ea93c8467d3baf3e70e"
+                          parent="aspace_3cde0e6b4c80172f8c643f482f6e8530"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_91015cddbf56492ab2a51033f2af406f" level="file">
+            <did>
+               <unittitle>Actomyosin Preps, 365 (cont')</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977-07-06/1977-07-06">07/06/1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e2798bdfda7b9f3bfee7637ef839040d"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_ca7feeb603c1335bc50a1d6f9b6c4984"
+                          parent="aspace_e2798bdfda7b9f3bfee7637ef839040d"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_27bbf9c72c1c0b75f0f572e71865f1d7" level="file">
+            <did>
+               <unittitle>Orthoplan &amp; E.M.</unittitle>
+               <unitdate calendar="gregorian" era="ce">08/31/1971 - 08/02/1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_56e7f5a4e2594d5f3f29fee1ade1b42b"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_f476317b31777f17582c73d4d525c233"
+                          parent="aspace_56e7f5a4e2594d5f3f29fee1ade1b42b"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_db0c80ddd73b2fe5249fa2301af31cb3" level="file">
+            <did>
+               <unittitle>Actomyosin Prep, 354 - 365</unittitle>
+               <unitdate calendar="gregorian" era="ce">12/16/1976 - 07/16/1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_9a39815d5a8599390dd6c9292244c364"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_e375a5d0d4b01e9f4ccb21d00a077c1e"
+                          parent="aspace_9a39815d5a8599390dd6c9292244c364"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ec5ee81dd7308e17591cebd6b52c9bf8" level="file">
+            <did>
+               <unittitle>Actomyosin Prep Limulus, 342 - 352</unittitle>
+               <unitdate calendar="gregorian" era="ce">07/26/1976 - 12/15/1976</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_b43f4c0fb5eb8324ce7c261d72f07660"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_4b1eadb441e545f17c5211bb278deb4e"
+                          parent="aspace_b43f4c0fb5eb8324ce7c261d72f07660"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2b5bfc819a0bd699b57e8effccf98f98" level="file">
+            <did>
+               <unittitle>Actomyosin Prep, 326 - 341</unittitle>
+               <unitdate calendar="gregorian" era="ce">01/21/1976 - 07/15/1976</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_59ef43ec895f0723cd0829f89aa7c294"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_e653192b01c487c775b6e8f56db4edbb"
+                          parent="aspace_59ef43ec895f0723cd0829f89aa7c294"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d522d096d58ae243dd60420add2c07d4" level="file">
+            <did>
+               <unittitle>Actomyosin Prep, 316 - 325</unittitle>
+               <unitdate calendar="gregorian" era="ce">10/22/1975 - 01/20/1976</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_17327ac0176ea0c1aee738693116d477"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_f9f5ebb15e5dd499b00eb22a8dc2d673"
+                          parent="aspace_17327ac0176ea0c1aee738693116d477"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2e08454553e4bc9302a36b5e7fb38b51" level="file">
+            <did>
+               <unittitle>Room 338 Limulus - Actin and Myosin - Prep, 274 - 299</unittitle>
+               <unitdate calendar="gregorian" era="ce">09/17/1973 - 12/20/1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2946e6a553d9a50c32462e36131cb556"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_78ab75c5d10174197fbfeed58e02a05f"
+                          parent="aspace_2946e6a553d9a50c32462e36131cb556"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2f401a5013684f7a9a57afb6161f3b39" level="file">
+            <did>
+               <unittitle>Room 338 Limulus - Actin &amp; Myosin Prep, 250 - 273</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1972/1973"
+                         type="inclusive">1972-1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_914c01f3b00a897404c53ab52b325492"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_37efe367fbbee064021d311068560797"
+                          parent="aspace_914c01f3b00a897404c53ab52b325492"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_28b9dce52b1b39bf8dd25c2b42427e9e" level="file">
+            <did>
+               <unittitle>Disc Gel , 468 -710</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977/1977">1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_34a673decb68961db0fdeb35a204f523"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_a0012c598be5184fbc3cbf433d9678c5"
+                          parent="aspace_34a673decb68961db0fdeb35a204f523"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_7321eef40a85f295773be16c4983edb5" level="file">
+            <did>
+               <unittitle>Electrophoresis (slab) &amp; D.G., 423 - 466</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1976/1977"
+                         type="inclusive">1976 - 1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_de0a9e30e8c5fa6a382d395e3072cb35"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_e5f86cf6f5a2e9f064c47c1019979d98"
+                          parent="aspace_de0a9e30e8c5fa6a382d395e3072cb35"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_270a1299b029e83aaff6c44c6183af34" level="file">
+            <did>
+               <unittitle>Disc Gel, 306 - 422</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1975-07-18/1975-07-18">07/18/1975</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2c5edefabc4f8c363e9097b5831dfc85"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_c5c9cb1875dd2c11129b6e95eaf94188"
+                          parent="aspace_2c5edefabc4f8c363e9097b5831dfc85"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_174b48dbc06ffb6a5b62fa978b1de246" level="file">
+            <did>
+               <unittitle>D.G., 17 - 195 - Electrophoresis</unittitle>
+               <unitdate calendar="gregorian" era="ce">03/27/1972 - 10/03/1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_405b28a500e2adcf4469b8d6f41f2542"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_6606342f0fbfe6dd66dfe7f7d7c5da9f"
+                          parent="aspace_405b28a500e2adcf4469b8d6f41f2542"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_40d4b4d3d258520e0fa2f20c09cf3a1b" level="file">
+            <did>
+               <unittitle>Rabbit Myosin - Burton 30</unittitle>
+               <unitdate calendar="gregorian" era="ce">05/01/1963 - 03/12/1975</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e9a4d1926a892f35fec56ccc62357f8e"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_e00f3450966afee5afdb6616477292fd"
+                          parent="aspace_e9a4d1926a892f35fec56ccc62357f8e"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_6628ca85f7d8d578d3f8f1e1033f410e" level="file">
+            <did>
+               <unittitle>Miscellaneous Preps</unittitle>
+               <unitdate calendar="gregorian" era="ce">04/21/1970 - 07/17/1976</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_847f9ed18f725e3883ea498211131eba"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_4763749d93af3cf05b28a78761085cdd"
+                          parent="aspace_847f9ed18f725e3883ea498211131eba"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c311ec8b9ff973a9f9f7e5123ebf684f" level="file">
+            <did>
+               <unittitle>Miscellaneous Preps</unittitle>
+               <unitdate calendar="gregorian" era="ce">07/21/1976 - 07/07/1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_9f4944b5d7c29a8ef9a96d9762785aeb"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_3c169a60f74ae06c6f96b6a7c67526a2"
+                          parent="aspace_9f4944b5d7c29a8ef9a96d9762785aeb"
+                          type="folder">19</container>
+            </did>
+         </c01>
+         <c01 id="aspace_93a8c3298a15fbd304fc095fc6deec48" level="file">
+            <did>
+               <unittitle>T.N. &amp; Tropo</unittitle>
+               <unitdate calendar="gregorian" era="ce">07/17/1972 - 03/07/1973</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1d9c4332578c0dc6aa322c9a90a4a3b1"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_65b91ce4f9cbe4041f25d64df31fac80"
+                          parent="aspace_1d9c4332578c0dc6aa322c9a90a4a3b1"
+                          type="folder">20</container>
+            </did>
+         </c01>
+         <c01 id="aspace_294f924ebca6c6e428cf7a4ad1752774" level="file">
+            <did>
+               <unittitle>Paramyosin Prep, 179</unittitle>
+               <unitdate calendar="gregorian" era="ce">03/29/1976 - 05/10/1977</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_87a2eab7f0669e3feaa4ce8855c76f6c"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_b70a28f7f1460c5ff6e7533508feaa9f"
+                          parent="aspace_87a2eab7f0669e3feaa4ce8855c76f6c"
+                          type="folder">21</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8dd5f08eb5b2fe66c8f492c3a8b4f73c" level="file">
+            <did>
+               <unittitle>Paramyosin, 151 - 178</unittitle>
+               <unitdate calendar="gregorian" era="ce">02/28/1972 - 06/18/1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5db4502815d696ddf0e2e1232b4a5114"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_e9352a4e6ba7ea15111d563e83dbf910"
+                          parent="aspace_5db4502815d696ddf0e2e1232b4a5114"
+                          type="folder">22</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5ae7621fa3eccf9e5c4b525abc466b69" level="file">
+            <did>
+               <unittitle>Paramyosin &amp; Tropo Prep, 110 - 150</unittitle>
+               <unitdate calendar="gregorian" era="ce">02/28/1972 - 06/18/1974</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ca7e67c72a110d39125a7467bc1b3fc3"
+                          label="Mixed Materials [310183630254943]"
+                          type="box">4</container>
+               <container id="aspace_b64fd55e08c811c5ed26e637ea2286ab"
+                          parent="aspace_ca7e67c72a110d39125a7467bc1b3fc3"
+                          type="folder">23</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a66a668a401e2344013cc138166d81aa" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin, 96 - 113</unittitle>
+               <unitdate calendar="gregorian" era="ce">09/01/1962 - 11/01/1965</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_6224b54dde86e21c767e904d835c8bb6"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_ce44106a08648d54a57c3fd80b7d37fc"
+                          parent="aspace_6224b54dde86e21c767e904d835c8bb6"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_49a52ad44f6aa8c4346da5c93a6fc714" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 48 - 83</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1963"
+                         type="inclusive">1961-1963</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e1d0e349f7a69a57c06388f971e86e1c"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_797604fc112f470307f2302ee011920c"
+                          parent="aspace_e1d0e349f7a69a57c06388f971e86e1c"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c8779f0a205e4b1b0ff53f620c8cdbb4" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 134 - 165</unittitle>
+               <unitdate calendar="gregorian" era="ce">11/01/1967 - 12/01/1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_5980c2fb756feba4076e811ca697f5e0"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_8b9223f03804a7c6b988963059f98ccc"
+                          parent="aspace_5980c2fb756feba4076e811ca697f5e0"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_9eb0ab15b46a73e0a62d1f2c5f42de3c" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 166 - 179</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_177070a3f22e95ac18eb4ba0958a6dfd"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_fbce19b1ecb37647106bf25cf2ccd131"
+                          parent="aspace_177070a3f22e95ac18eb4ba0958a6dfd"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_3a93e293f35a4f71a5f60ed47c52ce9d" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 225 - 250</unittitle>
+               <unitdate calendar="gregorian" era="ce">06/30/1971 - 06/19/1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_22482a37dce580938523bac3fb279b0d"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_1fe4f7b0027ec4402a2ed91a2e88a32d"
+                          parent="aspace_22482a37dce580938523bac3fb279b0d"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_ba53c14e472ea22b45078e05d402f0dc" level="file">
+            <did>
+               <unittitle>M. McCarthy Rm. 341 - Sr</unittitle>
+               <unitdate calendar="gregorian" era="ce">09/15/1971 - 01/20/1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f32f78549a4155d95435e4b89c123deb"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_176a00a0e870954097a42e708c132e50"
+                          parent="aspace_f32f78549a4155d95435e4b89c123deb"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d1880ac2fd7a25fa130e175b31c553d6" level="file">
+            <did>
+               <unittitle>Actomyosin Preps, 300 - 351</unittitle>
+               <unitdate calendar="gregorian" era="ce">01/20/1975 - 10/21/1971</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_0ee8a72225bab124994111b0a50bd643"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_c36fa1597f70fe9e22ed3214ea2a1917"
+                          parent="aspace_0ee8a72225bab124994111b0a50bd643"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c057b27280e4830da458e2f9230a0746" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 179 - 196</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1969"
+                         type="inclusive">1968 - 1969</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_df5fc50c61bdd3511853a1e76a292e80"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_e54b614fa42faaa409a52ba6516992f3"
+                          parent="aspace_df5fc50c61bdd3511853a1e76a292e80"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bd6c83ce5f0dc5a83727aaa263be9b34" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 19 - 47</unittitle>
+               <unitdate calendar="gregorian" era="ce">07/01/1958 - 07/01/1961</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_dc5a0c26e85f97fd8046b50059431b81"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_9acc08dead273b9ccb2b5010023027c7"
+                          parent="aspace_dc5a0c26e85f97fd8046b50059431b81"
+                          type="folder">9</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cba4ea779612fc3eff4962cb34411849" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin Preps, 1 - 18</unittitle>
+               <unitdate calendar="gregorian" era="ce">06/01/1957 - 03/01/1958</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f0bfabc5477cc526219bd02c933a7b5b"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_c21769ecacdca3f852c6d5300fee6f33"
+                          parent="aspace_f0bfabc5477cc526219bd02c933a7b5b"
+                          type="folder">10</container>
+            </did>
+         </c01>
+         <c01 id="aspace_61204ae77dd5d3fdcad15f9e06ef6767" level="file">
+            <did>
+               <unittitle>Rabbit Myosin and Actomyosin Preps, 2-17</unittitle>
+               <unitdate calendar="gregorian" era="ce">03/01/1964 - 04/01/1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_873f45c7ac0e036e3d0800ed679bf61e"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_a20ea2469ddd8214714c87c95ec08dfb"
+                          parent="aspace_873f45c7ac0e036e3d0800ed679bf61e"
+                          type="folder">11</container>
+            </did>
+         </c01>
+         <c01 id="aspace_96bd77f2e9f006b4fdad73f5b2783252" level="file">
+            <did>
+               <unittitle>Myofibrils ATPase and Relaxation</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1965-11-22/1965-11-22">11/22/1965</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_62494afbecceaf07e0d20cd4d4e8ffce"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_c240721421a89ecbaf1eac0eefeb2405"
+                          parent="aspace_62494afbecceaf07e0d20cd4d4e8ffce"
+                          type="folder">12</container>
+            </did>
+         </c01>
+         <c01 id="aspace_f4ed8a93d38bc4a98c23dec9424f5eff" level="file">
+            <did>
+               <unittitle>Limulus Myofibril ATPase Preps, 1 - 20</unittitle>
+               <unitdate calendar="gregorian" era="ce">07/01/1964 - 11/01/1964</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_52b5a5a25a6157323913d52ec0f70445"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_23799001a7fea495b3fe2c42aacaf415"
+                          parent="aspace_52b5a5a25a6157323913d52ec0f70445"
+                          type="folder">13</container>
+            </did>
+         </c01>
+         <c01 id="aspace_8df60d2902ea4ab75b5f016e75eb3ddf" level="file">
+            <did>
+               <unittitle>Paramyosin III Preps, 62 - 109</unittitle>
+               <unitdate calendar="gregorian" era="ce">05/18/1970 - 02/25/1972</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_cb089ac87753d9bdb059f2ec6a2a0c37"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_f295bcb80d83e5dd265c6e44f94d37ac"
+                          parent="aspace_cb089ac87753d9bdb059f2ec6a2a0c37"
+                          type="folder">14</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b744110137d6aa33d3e7ae82f1ea43b9" level="file">
+            <did>
+               <unittitle>Limulus Paramyosin Preps, 24 - 61</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1970"
+                         type="inclusive">1968 - 1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_914f716c9c352c5b5713265e2c2de2aa"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_409ecd74e10877d1b450f879d6b7992a"
+                          parent="aspace_914f716c9c352c5b5713265e2c2de2aa"
+                          type="folder">15</container>
+            </did>
+         </c01>
+         <c01 id="aspace_33e2a9fd11899568b337bf58fa2fbfa2" level="file">
+            <did>
+               <unittitle>Limulus Paramyosin Preps, 1 - 24</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1968"
+                         type="inclusive">1967 - 1968</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_516b0260e9ba6fc936a1ffb4eb0c17a5"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_c78de4a81149c29ca234feedbf6d987d"
+                          parent="aspace_516b0260e9ba6fc936a1ffb4eb0c17a5"
+                          type="folder">16</container>
+            </did>
+         </c01>
+         <c01 id="aspace_bd2f22b0eb34567a5fd8134c53b76ffe" level="file">
+            <did>
+               <unittitle>Limulus APK</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3561e236afd1d358ce0e24de4c8f5b39"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_ecfc125f551fdf52aeb44b536900638b"
+                          parent="aspace_3561e236afd1d358ce0e24de4c8f5b39"
+                          type="folder">17</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2bea6c4dce39e122a6de6ed6f7fffb7e" level="file">
+            <did>
+               <unittitle>Pof Limulus Muscle</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1959/1960"
+                         type="inclusive">1959 - 1960</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1e4d94f240aca5c42d010a195342f54b"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_609774e3fd2fab0825ba296886434484"
+                          parent="aspace_1e4d94f240aca5c42d010a195342f54b"
+                          type="folder">18</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0970786ba5e476ea4a3e124f697bd534" level="file">
+            <did>
+               <unittitle>Frog Book VIIb</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_addf8076d689fb6d1dc0b8c5d498ed25"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_9ceb2e578c9d0848e3d11848d934fd5d"
+                          parent="aspace_addf8076d689fb6d1dc0b8c5d498ed25"
+                          type="folder">19</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c9e8a2e14341afdda48c6e10259b98c2" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin IV Preps, 196 - 225</unittitle>
+               <unitdate calendar="gregorian" era="ce">02/17/1969 - 06/29/1971</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_7c783c93831f529c468a5d176554b116"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_0d385a4cee66e0b2641062afdcdb705e"
+                          parent="aspace_7c783c93831f529c468a5d176554b116"
+                          type="folder">20</container>
+            </did>
+         </c01>
+         <c01 id="aspace_a4fb4bb28f480d4eea7e85362e4f6141" level="file">
+            <did>
+               <unittitle>Frog Book VIIa AM &amp; Para</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1970"
+                         type="inclusive">1961 - 1970</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e82ef536f07990dfee63e0c8bc21f5f0"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_c6c4b0a562287e4003a42574ffdf32fd"
+                          parent="aspace_e82ef536f07990dfee63e0c8bc21f5f0"
+                          type="folder">21</container>
+            </did>
+         </c01>
+         <c01 id="aspace_008fa6fdc358289b431f2662ffc9b498" level="file">
+            <did>
+               <unittitle>Frog Myosin ATPase Book III My</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1958"
+                         type="inclusive">1957 - 1958</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_eeec0adb1b4fd98ebdb18105d79766e9"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_65823ea856c0b44e37d85cd194765eb4"
+                          parent="aspace_eeec0adb1b4fd98ebdb18105d79766e9"
+                          type="folder">22</container>
+            </did>
+         </c01>
+         <c01 id="aspace_c7250f3302298a101b61f15e3b3f7fcd" level="file">
+            <did>
+               <unittitle>Frog Myofibrils I</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1963"
+                         type="inclusive">1961 - 1963</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_7f11a7dc8804186ef9df74d03ea3183c"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_71901559b036feedd66d5e04ec1e5666"
+                          parent="aspace_7f11a7dc8804186ef9df74d03ea3183c"
+                          type="folder">23</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0c65fb84561196873db0a3af11abe916" level="file">
+            <did>
+               <unittitle>Frog Book VI</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1962"
+                         type="inclusive">1960 - 1962</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_1ffe25c8593c2d27e6a9b8dd480f9f15"
+                          label="Mixed Materials [310183630254950]"
+                          type="box">5</container>
+               <container id="aspace_db79da91ec1e176dafafc7706da1bade"
+                          parent="aspace_1ffe25c8593c2d27e6a9b8dd480f9f15"
+                          type="folder">24</container>
+            </did>
+         </c01>
+         <c01 id="aspace_71314cf7b087ec463d1b9048be18c45e" level="file">
+            <did>
+               <unittitle>Frog Book V</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1960"
+                         type="inclusive">1958 - 1960</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ea6c219de23014f381fe593986ac40a4"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_cd0d1a2e99ea2a039b1f3587deda5a37"
+                          parent="aspace_ea6c219de23014f381fe593986ac40a4"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1ee1aced89c117d8a51ac98751d29629" level="file">
+            <did>
+               <unittitle>Frog Myosin IV</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_101221ad49a7838d95f9a12f685539f3"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_18294c42b9e0b2a9436484e3348448be"
+                          parent="aspace_101221ad49a7838d95f9a12f685539f3"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5ef8a30b8e44f4885f45695ba76256cb" level="file">
+            <did>
+               <unittitle>Frog Myosin ATPase Book #2: De Villafranca &amp; Hochgiaf My experiments</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1957"
+                         type="inclusive">1956 - 1957</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e73c9f505c9692967d973159ccbf01ff"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_b30026929dcc7b1fb4e6e5179b0ba497"
+                          parent="aspace_e73c9f505c9692967d973159ccbf01ff"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_88ff5b1dede572e30ef5d56c68ddcf45" level="file">
+            <did>
+               <unittitle>Woods Hole - Frog Myosin</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1956/1956">1956</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5430ecd517df8454e7bb99d5411d7656"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_8f5fc330cdd044b998194b627d91d1c7"
+                          parent="aspace_5430ecd517df8454e7bb99d5411d7656"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_70cc4c5db17a2e44c37cd43a1dc819c7" level="file">
+            <did>
+               <unittitle>a band of muscle - fine - structure, etc.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1970"
+                         type="inclusive">1958 - 1970</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8fe5642d6b44158c13f43f9e50f35bb8"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_0c98ba5d0fa00a328eb6e0f8e2894153"
+                          parent="aspace_8fe5642d6b44158c13f43f9e50f35bb8"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_0b80d69468ad80db12ed051c661339bc" level="file">
+            <did>
+               <unittitle>Squid Muscle ATPase, Woods Hole</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1953/1953">1953</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_43fa845f40e893a632f2d9062202a67b"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_c371996838d39de174753dc8befff47e"
+                          parent="aspace_43fa845f40e893a632f2d9062202a67b"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_758a8b19e3cc16dee288434b2ff430b9" level="file">
+            <did>
+               <unittitle>Extraprotein of muscle EP #1</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a2fbf13367bc3d8f63aa926e75c9ddb2"
+                          label="Mixed Materials [310183630254968]"
+                          type="box">6</container>
+               <container id="aspace_22fbc75546bd6c71653c46703580685d"
+                          parent="aspace_a2fbf13367bc3d8f63aa926e75c9ddb2"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b6722aec430ec73c0e3b7cd78d47a6a2" level="file">
+            <did>
+               <unittitle>Instructions for Muscle Research EP #2</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1955/1958"
+                         type="inclusive">1955 - 1958</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_45c015a24a0f04b5892cb8d9fd63b358"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_157f2f21c9d8b33e97b90d782680978b"
+                          parent="aspace_45c015a24a0f04b5892cb8d9fd63b358"
+                          type="folder">1</container>
+            </did>
+         </c01>
+         <c01 id="aspace_1a60c9ba8625722e4e1a36341b03197d" level="file">
+            <did>
+               <unittitle>Limulus Actomyosin ATPase #4</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5abfc0322c463b5c16e68a222d4f16ad"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_fc6b70a94dc18f377ad8e520112d0573"
+                          parent="aspace_5abfc0322c463b5c16e68a222d4f16ad"
+                          type="folder">2</container>
+            </did>
+         </c01>
+         <c01 id="aspace_379311b13f674c51dac998906b5397c7" level="file">
+            <did>
+               <unittitle>Osboric Zool</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1951/1952"
+                         type="inclusive">1951 - 1952</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7a19f08d9af2b6646250032fc45655cb"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_961aeeb36eab3f45109e670fe4f83081"
+                          parent="aspace_7a19f08d9af2b6646250032fc45655cb"
+                          type="folder">3</container>
+            </did>
+         </c01>
+         <c01 id="aspace_cf665b98bba687920b32997325f75094" level="file">
+            <did>
+               <unittitle>Thesis III</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/1952"
+                         type="inclusive">1950 - 1952</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_00f92d4e94c37c266fe02ef2f10f0d56"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_650ebcdef6f03f96c9180dc10b522773"
+                          parent="aspace_00f92d4e94c37c266fe02ef2f10f0d56"
+                          type="folder">4</container>
+            </did>
+         </c01>
+         <c01 id="aspace_b45a9658d92107415bcf98e3237c8319" level="file">
+            <did>
+               <unittitle>Osboric Zool. Book, New Haven Thesis</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1949/1951"
+                         type="inclusive">1949 - 1951</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_789f52e5ca916b18a3c047a935bd2d86"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_9d9e7df7620f3caebdb21b71f1acc7ee"
+                          parent="aspace_789f52e5ca916b18a3c047a935bd2d86"
+                          type="folder">5</container>
+            </did>
+         </c01>
+         <c01 id="aspace_17c528a65ec4317e6ac87ceb233eb2b4" level="file">
+            <did>
+               <unittitle>Lorraine Gudas, Class of 1970: Honors Project</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a32c2e2be65bf4fa37b99e2a88ae5588"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_096046940c78f5585a25f721fac45a70"
+                          parent="aspace_a32c2e2be65bf4fa37b99e2a88ae5588"
+                          type="folder">6</container>
+            </did>
+         </c01>
+         <c01 id="aspace_5b4ed0f1536073cb5395f50ffdfe18cf" level="file">
+            <did>
+               <unittitle>Lorraine Gudas, Class of 1970</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">date of publication not identified</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f9b190265643d0bb7b34180edddca50e"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_d28692787299421855c61833c9d80453"
+                          parent="aspace_f9b190265643d0bb7b34180edddca50e"
+                          type="folder">7</container>
+            </did>
+         </c01>
+         <c01 id="aspace_d6e2e68421409f41db5bc5c21967e187" level="file">
+            <did>
+               <unittitle>Localization of Actint Myosin, Actomyosin, Paramyosin, &amp; "Tropa" - Limulus Experiments 1968-1969</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1969"
+                         type="inclusive">1968 - 1969</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_147220af8a772325703df8e4bd01ff42"
+                          label="Mixed Materials [310183630254976]"
+                          type="box">7</container>
+               <container id="aspace_cb58475d9b0717b87ae51d14fe93629b"
+                          parent="aspace_147220af8a772325703df8e4bd01ff42"
+                          type="folder">8</container>
+            </did>
+         </c01>
+         <c01 id="aspace_2d1d15cda73b5fcf5e3b3ef90f74078b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Associate Professor of Zoology <unitdate>1954 - 1992</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>1951 - 1985</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence - Sherman College of Chiropractic <unitdate>1962 -
-                     1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Photographs <unitdate>undated</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Volume of Remembrances <unitdate>1977 - 1978</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Grants- AM 02647 Proposals <unitdate>1956 - 1957</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Grants- AM 02647 Renewal Application - Aug 1976 <unitdate>1970 -
-                     1978</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Grants- Biochemistry and Localization of Muscle Proteins <unitdate>1958 -
-                     1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Grants- Biochemistry and Localization of Muscle Proteins <unitdate>1971 -
-                     1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Grants- re-Embryonic Alterations in Pre-Dystrophic Muscle <unitdate>1965 -
-                     1978</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Grants- General <unitdate>1952 - 1955</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Grants-India <unitdate>1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Grants-India <unitdate>1968 - 1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Grants-India- Correspondence <unitdate>1967 - 1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Grants-RG 4709 - C <unitdate>1957 - 1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Grants-RG 4709 <unitdate>1956 - 1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Publications- General <unitdate>1959 - 1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Publications- General- Abstracts <unitdate>1960 - 1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>The A and I Band Lengths in Stretched or Contracted Horseshoe Crab
-                  Skeletal Muscle <unitdate>1960 - 1961</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>The Action of ATP on Natural Actomyosin <unitdate>1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Actomyosin Solubility and Skeletal muscle Emptying of Horseshoe Crab
-                     <unitdate>1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Adenosintriphosphatase activity in developing rat muscles
-                     <unitdate>1954</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Adenosintriphosphatase activity of Frog Myosin B.
-                     <unitdate>1962</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Adenosintriphosphatase activity of myofibrils <unitdate>1966 </unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">25</container>
-               <unittitle>Adenosintriphosphatase Activity of Squid Mantle Muscles (Loligo Peatii)
-                     <unitdate>1954</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">26</container>
-               <unittitle>Biology of Muscle Cells <unitdate>1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">27</container>
-               <unittitle>Contractive Proteins from Horseshoe Crab Muscle <unitdate>1967</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">28</container>
-               <unittitle>Contraction of the A Band <unitdate>1962</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">29</container>
-               <unittitle>The Driving Force: Muscle <unitdate>1971</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">30</container>
-               <unittitle>Frog Myofibrillar Adenosintriphosphotase Activity
-                     <unitdate>1964</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">31</container>
-               <unittitle>Immunahistochemical Localization of Contractile Proteins in Limulus
-                  Striated Muscle <unitdate>1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">32</container>
-               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and
-                  Rabbit - I Relation of Tension to Muscle Fiber Dimensions
-                     <unitdate>1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">33</container>
-               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and
-                  Rabbit - II Calcium and Magnesium Requirements for Contraction 1970</unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">34</container>
-               <unittitle>Isometric Contraction in Glycerated Skeletal Muscle of Horseshoe Crab and
-                  Rabbit - III Relaxation <unitdate>1971</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">35</container>
-               <unittitle>Limulus Striated Muscle <unitdate>date of publication not
-                     identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">36</container>
-               <unittitle>Magnesium Activation of Natural Actomyosin ATPase from Horseshoe Crab
-                     <unitdate>1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">37</container>
-               <unittitle>Magnesium Control of the Calcium Myosin and Actomyosin ATPase of Limulus
-                  polyphemus <unitdate>1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">38</container>
-               <unittitle>Myofibrillar ATPase Activity and the Effect of Relaxing Substances
-                     <unitdate>1965</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">39</container>
-               <unittitle>Observations on the Anisotropic Band of Cross-Striated Muscle
-                     <unitdate>1957</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">40</container>
-               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle <unitdate>1967 -
-                     1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">41</container>
-               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle - charts and graphs
-                     <unitdate>1971 - 1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">42</container>
-               <unittitle>Paramyosin from Arthropod Cross - Striated Muscle - Clam (V. mercenaria)
-                  paramyosin- mol. wt. <unitdate>1971 - 1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">43</container>
-               <unittitle>Paramyosin from Arthropod Cross-Striated Muscle - Limulus Paramyosin -
-                  molecular weight data <unitdate>1970 - 1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">44</container>
-               <unittitle>Paramyosin from Arthropod Cross-Striated Muscle - photographs
-                     <unitdate>1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">45</container>
-               <unittitle>Phase Contrast Observations on the Anisotropic Band of Cross - Striated
-                  Muscle <unitdate>1955 - 1957</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>reviews <unitdate>1969 - 1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Sedimentation Behavior of Limulus Actomyosin <unitdate>date of publication
-                     not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Some Physico - Chemical Properties of Myosin B from the Horseshoe Crab,
-                  Limulus polyphemus <unitdate>1967 - 1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Some Properties of the myosin B ATPase Limulus <unitdate>1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Study on the Localization of Contractile Proteins in the Muscle of the
-                  Horseshoe Crab (Limulus polyphemus) <unitdate>1958 - 1959</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>A Study on the Nature of the A Band of Cross - Striated Muscle
-                     <unitdate>1955 - 1956</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Superprecipitation of A Horseshoe Crab and Rabbit Myosin B <unitdate>1969
-                     - 1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Ultrastructure of Striated Muscle from Limulus polyphemus <unitdate>1960 -
-                     1961</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>charts and graphs <unitdate>1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>charts and graphs <unitdate>date of publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>charts and graphs <unitdate>1976</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>charts and graphs <unitdate>1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>charts and graphs <unitdate>date of publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>charts and graphs <unitdate>date of publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>charts and graphs <unitdate>1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Limulus Paramyosin M and C.D and ORD. <unitdate>1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Parocrystals <unitdate>1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Limulus Myosin <unitdate>1971-1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Model E <unitdate>date of publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Rabbit Psoas - phase and electron photographs <unitdate>1955</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Glyc. Psaos electron microscope <unitdate>1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Limulus electron microscope <unitdate>1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Limulus electron microscope photographs, 2712 - 3165 <unitdate>date of
-                     publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Limulus electron microscope photographs, 3166 - 3577 <unitdate>date of
-                     publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">25</container>
-               <unittitle>Limulus electron microscope photographs, 3608 - 3723
-                     <unitdate>1959</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">26</container>
-               <unittitle>Limulus electron microscope photographs, 3724 - 3744 <unitdate>date of
-                     publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">27</container>
-               <unittitle>Limulus electron microscope photographs, 4038 - 4315
-                     <unitdate>1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">28</container>
-               <unittitle>Limulus- extract of A Band, phase and electron microscope photographs
-                     <unitdate>date of publication not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Model E Log Book <unitdate>1962 - 1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Model E Log Book <unitdate>1963 - 1964</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Model E Log Book <unitdate>1964</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Model E Log Book <unitdate>1965</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Model E Log Book <unitdate>1965 - 1966</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Log Book for the Model E Analytical Ultracentrifuge <unitdate>1966 -
-                     1967</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Log Book for the Model E Analytical Ultracentrifuge
-                     <unitdate>1967</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Log Book for the Model E Analytical Ultracentrifuge
-                     <unitdate>1967</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Ultracentrifuge Data, 722 - 900 <unitdate>1967 - 1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Ultracentrifuge Data, 901 - 1083 <unitdate>1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Ultracentrifuge Data, 1084 - 2049 <unitdate>1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Ultracentrifuge Data, 2050 - 2157 <unitdate>1970 - 1971</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Ultracentrifuge Data, 2158 - 2284 <unitdate>1971 - 1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Ultracentrifuge Data, 2285 - 2400 <unitdate>1972 - 1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Ultracentrifuge Data, 2401 - 2510 <unitdate>1973 - 1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Ultracentrifuge Data, 2511 - 2662 <unitdate>1975 - 1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Chromoscan Tracings - D.G. runs , 452 - 466 <unitdate>date of publication
-                     not identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Para <unitdate>1976 - 1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Vert. Physiol. - Zool au (1960) G.H. de Villafranca
-                     <unitdate>1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Electrophoresis, 196 - 305 <unitdate>10/08/1974 - 07/17/1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Actomyosin Preps, 365 (cont') <unitdate>07/06/1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Orthoplan &amp; E.M. <unitdate>08/31/1971 - 08/02/1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Actomyosin Prep, 354 - 365 <unitdate>12/16/1976 - 07/16/1977 </unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Actomyosin Prep Limulus, 342 - 352 <unitdate>07/26/1976 -
-                     12/15/1976</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Actomyosin Prep, 326 - 341 <unitdate>01/21/1976 - 07/15/1976</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Actomyosin Prep, 316 - 325 <unitdate>10/22/1975 - 01/20/1976</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Room 338 Limulus - Actin and Myosin - Prep, 274 - 299 <unitdate>09/17/1973
-                     - 12/20/1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Room 338 Limulus - Actin &amp; Myosin Prep, 250 - 273
-                     <unitdate>1972-1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Disc Gel , 468 -710 <unitdate>1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Electrophoresis (slab) &amp; D.G., 423 - 466 <unitdate>1976 -
-                     1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Disc Gel, 306 - 422 <unitdate>07/18/1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>D.G., 17 - 195 - Electrophoresis <unitdate>03/27/1972 -
-                     10/03/1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Rabbit Myosin - Burton 30 <unitdate>05/01/1963 - 03/12/1975</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Miscellaneous Preps <unitdate>04/21/1970 - 07/17/1976</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Miscellaneous Preps <unitdate>07/21/1976 - 07/07/1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>T.N. &amp; Tropo <unitdate>07/17/1972 - 03/07/1973</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Paramyosin Prep, 179 <unitdate>03/29/1976 - 05/10/1977</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Paramyosin, 151 - 178 <unitdate>02/28/1972 - 06/18/1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">4</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Paramyosin &amp; Tropo Prep, 110 - 150 <unitdate>02/28/1972 -
-                     06/18/1974</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Limulus Actomyosin, 96 - 113 <unitdate>09/01/1962 - 11/01/1965</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Limulus Actomyosin Preps, 48 - 83 <unitdate>1961-1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Limulus Actomyosin Preps, 134 - 165 <unitdate>11/01/1967 -
-                     12/01/1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Limulus Actomyosin Preps, 166 - 179 <unitdate>1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Limulus Actomyosin Preps, 225 - 250 <unitdate>06/30/1971 -
-                     06/19/1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>M. McCarthy Rm. 341 - Sr <unitdate>09/15/1971 - 01/20/1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Actomyosin Preps, 300 - 351 <unitdate>01/20/1975 - 10/21/1971</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Limulus Actomyosin Preps, 179 - 196 <unitdate>1968 - 1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Limulus Actomyosin Preps, 19 - 47 <unitdate>07/01/1958 -
-                     07/01/1961</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Limulus Actomyosin Preps, 1 - 18 <unitdate>06/01/1957 -
-                     03/01/1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Rabbit Myosin and Actomyosin Preps, 2-17 <unitdate>03/01/1964 -
-                     04/01/1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Myofibrils ATPase and Relaxation <unitdate>11/22/1965</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Limulus Myofibril ATPase Preps, 1 - 20 <unitdate>07/01/1964 -
-                     11/01/1964</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Paramyosin III Preps, 62 - 109 <unitdate>05/18/1970 -
-                     02/25/1972</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Limulus Paramyosin Preps, 24 - 61 <unitdate>1968 - 1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Limulus Paramyosin Preps, 1 - 24 <unitdate>1967 - 1968</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Limulus APK <unitdate>1962</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Pof Limulus Muscle <unitdate>1959 - 1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Frog Book VIIb <unitdate>1962</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>Limulus Actomyosin IV Preps, 196 - 225 <unitdate>02/17/1969 -
-                     06/29/1971</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>Frog Book VIIa AM &amp; Para <unitdate>1961 - 1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Frog Myosin ATPase Book III My <unitdate>1957 - 1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>Frog Myofibrils I <unitdate>1961 - 1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">5</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Frog Book VI <unitdate>1960 - 1962</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Frog Book V <unitdate>1958 - 1960</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Frog Myosin IV <unitdate>1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Frog Myosin ATPase Book #2: De Villafranca &amp; Hochgiaf My experiments
-                     <unitdate>1956 - 1957</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Woods Hole - Frog Myosin <unitdate>1956</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>a band of muscle - fine - structure, etc. <unitdate>1958 - 1970</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Squid Muscle ATPase, Woods Hole <unitdate>1953</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">6</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Extraprotein of muscle EP #1 <unitdate>1954</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Instructions for Muscle Research EP #2 <unitdate>1955 - 1958</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Limulus Actomyosin ATPase #4 <unitdate>1963</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Osboric Zool <unitdate>1951 - 1952</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Thesis III <unitdate>1950 - 1952</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Osboric Zool. Book, New Haven Thesis <unitdate>1949 - 1951</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Lorraine Gudas, Class of 1970: Honors Project <unitdate>1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Lorraine Gudas, Class of 1970 <unitdate>date of publication not
-                     identified</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">7</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Localization of Actint Myosin, Actomyosin, Paramyosin, &amp; "Tropa" -
-                  Limulus Experiments 1968-1969 <unitdate>1968 - 1969</unitdate>
-               </unittitle>
-            </did>
-         </c01>
-         <c01 level="file">
-            <did>
-               <container type="box" label="mixed materials">8</container>
                <unittitle>Restricted</unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_64bb38ec9801a828bf78077b81ebdf2c"
+                          label="Mixed Materials [310183630254984]"
+                          type="box">8</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
