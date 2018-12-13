@@ -1,768 +1,1122 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca324.xml//EN">manosca324</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca324</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Richard A. Rice Papers, 1879-1955</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Jenna Novotny, Amanda
-               Lineweber.</author>
-
+            <titleproper>Richard A. Rice papers <num>CA.MS.00324</num>
+            </titleproper>
+            <author>Finding aid prepared by Jenna Novotny, Amanda Lineweber, Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-13">2013-11-13</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-11 08:36:04 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Rice, Richard A.</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Richard A. Rice</unittitle>
-         <unitdate label="Dates:" type="inclusive">1879-1955</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:8aab0530-7889-4c9c-a720-c2bea7a83f12</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">6 boxes</extent>
-            <extent encodinganalog="300$a">(1.9 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Professor of English. Contains
-            biographical material, correspondence, course materials, writings, and
-            photographs.</abstract>
+         <unittitle>Richard A. Rice papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Rice, Richard A.</persname>
+         </origination>
+         <unitid>CA.MS.00324</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.458 linear feet</extent>
+            <extent altrender="carrier">(6 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1879/1955"
+                   type="inclusive">1879-1955</unitdate>
+         <abstract id="aspace_6819e9ddebda87a41d2ed5bc39cf969d">Richard A. Rice was a professor of English at Smith College. His papers contain biographical material, correspondence, course materials, writings and photographs.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p> Richard Ashley Rice, a professor of English at Smith College from 1916-1946, was born
-            in Burlington, Vermont on January 29, 1878, to Richard Austin and Marion Rice. He
-            received his B.A. from Williams College in 1899, his M.A. from Harvard in 1903, and went
-            on to study at the Sorbonne in Paris in 1906. Rice taught at Lawrenceville School, the
-            high school from which he also graduated in 1896, from 1899-1900, the United States
-            Naval Academy from 1903-06, Harvard University from 1907-09, and Indiana University from
-            1909-16 before he came to Smith in 1916. Rice specialized in 18th and 19th century
-            English literature and was considered an authority on Lord Byron. His publications
-            include: A Book of Narratives, Tom Jones (abridged), Studies of Wordsworth and Byron,
-            College and the Future, The Best of Byron, Robert Louis Stevenson, and Rousseau and the
-            Poetry of Nature. He also contributed to a number of magazines, including The Atlantic,
-            Harper's and Independent, and wrote a number of mystery novels, short stories and poems.
-            Rice became Professor Emeritus at his retirement in 1946 and taught at Wesleyan
-            University for a year as visiting professor. Rice married three times, first to Anna
-            Mary Dye in 1916, then to Jean D. Macdonald in 1933, and lastly to Frona M. Brooks Huges
-            in 1951. He died on August 6, 1955 at the Newton-Wellesley Hospital in Newton,
-            Massachusetts. Rice was survived by Frona, class of 1922, a son, Richard Ashley Rice,
-            Jr., a daughter, Marianne Rice Zagorski, and two stepdaughters, Octavia and Anne Hughes.
-         </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Richard Ashley Rice, an authority on Lord Byron and a professor of English at Smith College from 1916-1946, was born in Burlington, Vermont on January 29, 1878, to Richard Austin and Marion Rice. He received his B.A. from Williams College in 1899, his M.A. from Harvard in 1903, and went on to study at the Sorbonne in Paris in 1906. Rice taught at Lawrenceville School, the high school from which he also graduated in 1896, from 1899-1900, the United States Naval Academy from 1903-06, Harvard University from 1907-09, and Indiana University from 1909-16 before he came to Smith in 1916. Rice specialized in 18th and 19th century English literature and was considered an authority on Lord Byron. His publications include: A Book of Narratives, Tom Jones (abridged), Studies of Wordsworth and Byron, College and the Future, The Best of Byron, Robert Louis Stevenson, and Rousseau and the Poetry of Nature. He also contributed to a number of magazines, including The Atlantic, Harper's and Independent, and wrote a number of mystery novels, short stories and poems. Rice became Professor Emeritus at his retirement in 1946 and taught at Wesleyan University for a year as visiting professor. Rice married three times, first to Anna Mary Dye in 1916, then to Jean D. Macdonald in 1933, and lastly to Frona M. Brooks Huges in 1951. He died on August 6, 1955 at the Newton-Wellesley Hospital in Newton, Massachusetts. Rice was survived by Frona, class of 1922, a son, Richard Ashley Rice, Jr., a daughter, Marianne Rice Zagorski, and two stepdaughters, Octavia and Anne Hughes.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection includes biographical material, writings and photographs of Rice and of
-            his family. The correspondence contains letters to Rice's parents, wives, children, and
-            extended family as well as to his many friends including former students. There are
-            fourteen letters written from Rice's first wife Anna Mary Dye to Rice and their children
-            from Germany in 1934-36. His other correspondents include Vachel Lindsay, William Allan
-            Neilson, A. Seelye Bixler and Mina Kirstein Curtiss. The first folder of professional
-            correspondence contains employment letters from the various colleges at which Rice
-            worked, as well as correspondence with doctors. The course materials include lecture
-            notes, exams and reading lists for many of Rice's various literature courses, as well as
-            student papers from various classes in the 1920s and 1930s.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection includes biographical material, writings and photographs of Rice and of his family. The correspondence contains letters to Rice's parents, wives, children, and extended family as well as to his many friends including former students. There are fourteen letters written from Rice's first wife Anna Mary Dye to Rice and their children from Germany in 1934-36. His other correspondents include Vachel Lindsay, William Allan Neilson, A. Seelye Bixler and Mina Kirstein Curtiss. The first folder of professional correspondence contains employment letters from the various colleges at which Rice worked, as well as correspondence with doctors. The course materials include lecture notes, exams and reading lists for many of Rice's various literature courses, as well as student papers from various classes in the 1920s and 1930s.</p>  
       </scopecontent>
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities. Literary
-            rights have been assigned to Smith College.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that they own copyright, Richard A. Rice, Jr. and Marianne R. Zagorski. have assigned the copyright of Professor Rice's works to Smith College; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Professor Rice, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Richard A. Rice Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Richard A. Rice, College Archives, CA-MS-00324, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Richard A. Rice papers were donated to the College Archives by Rice's son, Richard
-            A. Rice, Jr., and his daughter Marianne R. Zagorski.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Richard A. Rice papers were donated to the College Archives by Rice's son, Richard A. Rice, Jr., and his daughter Marianne R. Zagorski.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <subject encodinganalog="650" source="local_inmagic-collection">Smith College--Faculty</subject>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_d64e5e347927408a1720601c8e29440f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Biography <unitdate>1895-1955</unitdate>
-               </unittitle>
+               <unittitle>Biography</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1895/1955"
+                         type="inclusive">1895-1955</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_190f8a141dec3a147aefd94649439905"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c4d29e00712b83e43382792835fbe11d" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Photographs <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_353652bf8e6302c06a2dbe5e339089bb"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c9270ca57fd2569345d741771833d6eb" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
                <unittitle>
                   <title render="bold">Correspondence - Family</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_6a0c18d2b130b6e8b7746fd1466595af"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_570c02674d9c1516f278fe9f3c74a596" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Richard Austin <unitdate>1889-1899</unitdate>
-               </unittitle>
+               <unittitle>Rice, Richard Austin</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1889/1899"
+                         type="inclusive">1889-1899</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a5acda66a9276aa9cf0d75df253e8c3e"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_eea047ad97312a8f92f5a5df2c938520" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Richard Austin <unitdate>1900-24, undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Richard Austin</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1924"
+                         type="inclusive">1900-24</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d2ce80ef0486189a3e2550fc992d9ad2"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_86e44cb914926bf8361884c807d1bddf" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Richard Austin &amp; Marion <unitdate>1891-1916</unitdate>
-               </unittitle>
+               <unittitle>Rice, Richard Austin &amp; Marion</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1891/1916"
+                         type="inclusive">1891-1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_38487ad7677e1df0419e8643969e716b"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c4d06a435a6c9dfdedd78044860ed3e9" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Marion F. <unitdate>1889-93</unitdate>
-               </unittitle>
+               <unittitle>Rice, Marion F.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1889/1893"
+                         type="inclusive">1889-93</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3fb3d40b10a5b6ff4c8801481f39c32d"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5212dc98241df3a0d602a7cf80ffa226" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Marion F. <unitdate>1894-99</unitdate>
-               </unittitle>
+               <unittitle>Rice, Marion F.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1894/1899"
+                         type="inclusive">1894-99</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_157a856cc232daaf8db9e29b665f0d55"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2c81c753379f2c0bebc59c6d942fb51f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Marion F. <unitdate>1900-25</unitdate>
-               </unittitle>
+               <unittitle>Rice, Marion F.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/1925"
+                         type="inclusive">1900-25</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_798a91e7ed293448e9b6b49e953d484a"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9e3221047371d40e37658d5ae14bcb25" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Marion F. <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Marion F.</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_64ac07322b9fc3860a5577f9ab188b7c"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b19d3e28b3ff799f6e027fb4ddc93643" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Anna Mary Dye <unitdate>1919-22</unitdate>
-               </unittitle>
+               <unittitle>Rice, Anna Mary Dye</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1919/1922"
+                         type="inclusive">1919-22</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5e6dc97279c05835772267dd1dc8aeca"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_51d9d0117b1859808a4bb0972f288f72" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Anna Mary Dye <unitdate>1923-29</unitdate>
-               </unittitle>
+               <unittitle>Rice, Anna Mary Dye</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1923/1929"
+                         type="inclusive">1923-29</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3ae75efb28029f5545bf5052ab8aabe6"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c874d0764a4e725cfb08b27ce3ede864" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Anna Mary Dye <unitdate>1934-36</unitdate>
-               </unittitle>
+               <unittitle>Rice, Anna Mary Dye</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1934/1936"
+                         type="inclusive">1934-36</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ad3e4b446a964f343a924c0d56f56684"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_05a48a158237b69afa608ea7030902f6" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Anna Mary Dye <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Anna Mary Dye</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5bd7e8b8b749ca69be2f8856936eb354"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6024184ec964ec1a6450b32359cf93dd" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Anna Mary Dye <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Anna Mary Dye</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b3337f68c425a8d5f22b09ffd199a7a5"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3673bcca04e006eea3587f27ab099d0f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Jean Macdonald <unitdate>1938, undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Jean Macdonald</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_18ee3aec3d68e58769bf6337738d28b0"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2631e9928135fc5920efc3ffec9ef3fb" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Richard A. Jr. <unitdate>1928-29, undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Richard A. Jr.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928/1929"
+                         type="inclusive">1928-29</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_11c2e89969f6ea360bdb2457fe5453e1"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7f38f4ce979615d30a93cde31dd0df9a" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Marianne <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Marianne</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2b9c704711b9203b66e27895df61ff67"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9a45eab7dd9429c51794fe1f6ed40000" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, May <unitdate>1892-1916, undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, May</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1916"
+                         type="inclusive">1892-1916</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8674036d89b7b90e6d2e2bd43018bc6d"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_02b46c02703049a68524635350010730" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Roser <unitdate>1892-1923, undated</unitdate>
-               </unittitle>
+               <unittitle>Rice, Roser</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1923"
+                         type="inclusive">1892-1923</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_44727662239242b7e87f5d519211bfaf"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ebd8e7a271a1b3764b83f989213d3ab9" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Rice, Roger May <unitdate>1894-99</unitdate>
-               </unittitle>
+               <unittitle>Rice, Roger May</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1894/1899"
+                         type="inclusive">1894-99</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_505c969d5e849e06487b98d271026875"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3f3c484d537e3e93273a45a20e47a98f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>"Aunt Lollie" <unitdate>1899-1916, undated</unitdate>
-               </unittitle>
+               <unittitle>"Aunt Lollie"</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1899/1916"
+                         type="inclusive">1899-1916</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5afc274ba1f8127abc3ba9477d5c1289"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0cff1a899aaf9da79bfa65a47fde35ff" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>"Aunt May &amp; Uncle Will" <unitdate>1891-1928, undated</unitdate>
-               </unittitle>
+               <unittitle>"Aunt May &amp; Uncle Will"</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1891/1928"
+                         type="inclusive">1891-1928</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_14775bf42778fdcbeb367cc87d2f0969"
+                          label="Mixed Materials [310183630231388]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_92e5736ecd1e3cc8c53a3e7e614a610f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Miscellaneous <unitdate>1879-1916, undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1879/1916"
+                         type="inclusive">1879-1916</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_839f572b8a891cbb08d0dff60cb79790"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6856e9da682217fb048d75ea11fc95b8" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
                <unittitle>
                   <title render="bold">Correspondence - Friends</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_12c215f40cb206605ac78a8e5eff14b4"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9ef2bf4c54180388494b36befa29e189" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>A-B <unitdate>1907-28</unitdate>
-               </unittitle>
+               <unittitle>A-B</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1907/1928"
+                         type="inclusive">1907-28</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_10e57101692df28c7c4e53284f448384"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_edf4dedfa57fc66502e0ab5c9234f991" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>C <unitdate>1897-1945</unitdate>
-               </unittitle>
+               <unittitle>C</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897/1945"
+                         type="inclusive">1897-1945</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8db33fb1962bc01b3e13f99cce3fedd1"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7138b3ffa55539fc2f87992623e93a4d" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>D-F <unitdate>1906-25</unitdate>
-               </unittitle>
+               <unittitle>D-F</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1906/1925"
+                         type="inclusive">1906-25</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0a0297f312517ad278dde70a987fbfb0"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7f4ba9ba4e5f88a374a9ecd4a322f12e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>G <unitdate>1906-25</unitdate>
-               </unittitle>
+               <unittitle>G</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1906/1925"
+                         type="inclusive">1906-25</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ce8fd6a6da6a294279f941e0fd92d1ff"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cb1ee59254d4157c094b78646c5cae7f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>H <unitdate>1903-31</unitdate>
-               </unittitle>
+               <unittitle>H</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1903/1931"
+                         type="inclusive">1903-31</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5484c7bb83bbe339fb40568bea3f9b6f"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_915db1ed57323b279cc5f08581777bb3" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>K-M <unitdate>1891-1921</unitdate>
-               </unittitle>
+               <unittitle>K-M</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1891/1921"
+                         type="inclusive">1891-1921</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_30a18445e0e505f47c5272296dc11391"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b4718358ffa09ae7ed3144c36b960357" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>N-R <unitdate>1907-45</unitdate>
-               </unittitle>
+               <unittitle>N-R</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1907/1945"
+                         type="inclusive">1907-45</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_602763723881c3adfe06d1a7b3537d03"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_89fbdbed6ee11a4ee807f717056653e1" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>S-W <unitdate>1891-1933</unitdate>
-               </unittitle>
+               <unittitle>S-W</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1891/1933"
+                         type="inclusive">1891-1933</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_322d80b2994773feb1fe5660582b88ed"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7f014748a126e226704198d6683633a9" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Ayres, Ann <unitdate>1926-28</unitdate>
-               </unittitle>
+               <unittitle>Ayres, Ann</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926/1928"
+                         type="inclusive">1926-28</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ff700badc30301502f73297add72c149"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_866aacd6b95fd61a406f8bd058fe3857" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Gassaut, Katherine <unitdate>1903-16</unitdate>
-               </unittitle>
+               <unittitle>Gassaut, Katherine</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1903/1916"
+                         type="inclusive">1903-16</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d1418f6680867123b01f61b1ebeab2ca"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2de10cd22191df3f7b88706cbfb2c85f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hopkins, Charlotte <unitdate>1898-03, undated</unitdate>
-               </unittitle>
+               <unittitle>Hopkins, Charlotte</unittitle>
+               <unitdate calendar="gregorian" era="ce">1898-03</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_934f0263553b9044a5f367efa21ee635"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_017b78d6b93db9e52416245c3841cbbd" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hubbell, Juliette Emily <unitdate>1899-1900</unitdate>
-               </unittitle>
+               <unittitle>Hubbell, Juliette Emily</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1899/1900"
+                         type="inclusive">1899-1900</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4cf513bad5272f49457a62b0affc9e6b"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b0e62d4e6662ae90960acaedb28aeaf9" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hubbell, Juliette Emily <unitdate>1901</unitdate>
-               </unittitle>
+               <unittitle>Hubbell, Juliette Emily</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a94497b0765eb4125bff3ec437693056"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7d22d624199391de72d92d52013ce28e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hubbell, Juliette Emily <unitdate>1902-16</unitdate>
-               </unittitle>
+               <unittitle>Hubbell, Juliette Emily</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1902/1916"
+                         type="inclusive">1902-16</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_37c5eb81a96177c7479d698d3f5b4bed"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_837ef03c849f5df701a28e7877282889" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Hubbell, Juliette Emily <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Hubbell, Juliette Emily</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8fe2965632f6a67c3ed7b52fab9a71ba"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1c75b965d29662de96c218ca33fa4a5d" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Le favour, Henry <unitdate>1892-1916</unitdate>
-               </unittitle>
+               <unittitle>Le favour, Henry</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1916"
+                         type="inclusive">1892-1916</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6f77a803f7f283402ca491b5da213f53"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6bd8205876506b37cb2b4102fdae95b2" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Osborne, Lithgow <unitdate>1908-09</unitdate>
-               </unittitle>
+               <unittitle>Osborne, Lithgow</unittitle>
+               <unitdate calendar="gregorian" era="ce">1908-09</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bf12a4280c369f16109b016a4afd046a"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0d536e63917970f6d6e7e6b56a7b7442" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Perry, Lewis &amp; Margaret <unitdate>1892-1928</unitdate>
-               </unittitle>
+               <unittitle>Perry, Lewis &amp; Margaret</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1928"
+                         type="inclusive">1892-1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d7635f53389e027228387811c9458258"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_81721cbf3df333e07b43d6474ca9aad7" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Rutter, May <unitdate>1902-28</unitdate>
-               </unittitle>
+               <unittitle>Rutter, May</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1902/1928"
+                         type="inclusive">1902-28</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_95426d108a430a01e19c84b3a93aa5fd"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e93af083b6018c95cc7305ba480e5597" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Todd, Charles F. <unitdate>1921-29</unitdate>
-               </unittitle>
+               <unittitle>Todd, Charles F.</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1921/1929"
+                         type="inclusive">1921-29</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_79c1247e30819ec8499617f41ed208eb"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3c5fec80c5609f761cc280d57b29e682" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Young, Karl &amp; Frances <unitdate>1905-29</unitdate>
-               </unittitle>
+               <unittitle>Young, Karl &amp; Frances</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1905/1929"
+                         type="inclusive">1905-29</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_8c5478826e606f8617b73244f1b8ba78"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_269178714743b5d11dcb169251039a4d" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Unidentified <unitdate>1892-1949, undated</unitdate>
-               </unittitle>
+               <unittitle>Unidentified</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1949"
+                         type="inclusive">1892-1949</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c7bcbc18b460fb4064ead373e3397f4a"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e9acf4059bbeaf31de234fa1015e85f0" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
                <unittitle>
                   <title render="bold">Professional</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_c544572dcccb75cce8b202b43d321379"
+                          label="Mixed Materials [310183630231446]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ba6bb878ffa9fe7cd7193955bb4a3862" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>General <unitdate>1905-51</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1905/1951"
+                         type="inclusive">1905-51</unitdate>
+               <container id="aspace_8a10080a8354cb92d1ece72d8e78d9f7"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fbb267f37983f859062b9e808ff49612" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Publishers <unitdate>1904-28</unitdate>
-               </unittitle>
+               <unittitle>Publishers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1904/1928"
+                         type="inclusive">1904-28</unitdate>
+               <container id="aspace_31dabf062819c01b6d7f0a66654c6be2"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2313c713334fbc91c612c0bda25ccb67" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
                <unittitle>
                   <title render="bold">Course Materials</title>
                </unittitle>
+               <container id="aspace_661ed77253ca6b8ef5fa9455ec64f980"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_da00c2f8d5e747aef6c9d13dd351f375" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Backgrounds of Modern Literature <unitdate>1944-46</unitdate>
-               </unittitle>
+               <unittitle>Backgrounds of Modern Literature</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1946"
+                         type="inclusive">1944-46</unitdate>
+               <container id="aspace_e9411efae85f8c059ec3b1cf5fba4e5b"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_84631682aa7af09718d71765c2e93144" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Browning <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Browning</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_04d24388ced51605af9f3545084b0be5"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_92ec77a51a60788b43c1ff474baa677d" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Eighteenth Century Literature - Exams <unitdate>1929-47,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Eighteenth Century Literature - Exams</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929/1947"
+                         type="inclusive">1929-47</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_f98666a87ba820d90ba93e1f07ddb72c"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_40777f7009b51c7fe838cf43141e3dae" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Eighteenth Century Literature - Reading Lists <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Eighteenth Century Literature - Reading Lists</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_7d6eb3514d5dff0e519ba77c18f31755"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_13f2d1b38b9927e979eb3a2eef5348d4" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Eighteenth Century Literature - Topics <unitdate>1942-46</unitdate>
-               </unittitle>
+               <unittitle>Eighteenth Century Literature - Topics</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1942/1946"
+                         type="inclusive">1942-46</unitdate>
+               <container id="aspace_35b8462c8c354ecd41554e701a07f6ce"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e09325101bbefc56b525346146426f1a" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>George Eliot and Matthew Arnold <unitdate>1919-24, undated</unitdate>
-               </unittitle>
+               <unittitle>George Eliot and Matthew Arnold</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1919/1924"
+                         type="inclusive">1919-24</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_76b8a6ea2953bb67c8ec12545faf77a7"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0cb1ba05d1d3456ced1037bbed68f1aa" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>History of English Literature <unitdate>1918-25, undated</unitdate>
-               </unittitle>
+               <unittitle>History of English Literature</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1918/1925"
+                         type="inclusive">1918-25</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_667285d21928da9157deb360aade016d"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_181425a9dfd463ee29249aaa5bfbbf4d" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Modern European History - Exams <unitdate>1919</unitdate>
-               </unittitle>
+               <unittitle>Modern European History - Exams</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919</unitdate>
+               <container id="aspace_d62a28d00dd8c8c274bba272e646a22a"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_894c33c7fb45b2a534907b6f7908b7f9" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Nineteenth Century Prose - Lectures, Exams <unitdate>1917-24</unitdate>
-               </unittitle>
+               <unittitle>Nineteenth Century Prose - Lectures, Exams</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1924"
+                         type="inclusive">1917-24</unitdate>
+               <container id="aspace_6c9e5d7a802829f7cbe5036b701dd816"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ce70b8a64e95ee3ca00191c59be0eba1" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Nineteenth Century Prose and Reformers - Exams <unitdate>1925-44,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Nineteenth Century Prose and Reformers - Exams</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1944"
+                         type="inclusive">1925-44</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_91b2b33b535be3742a81f8527c6b561e"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b8b2a5356c60d439b037a4365ab0889f" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Nineteenth Century Prose and Reformers - Reading Lists
-                     <unitdate>1941-44</unitdate>
-               </unittitle>
+               <unittitle>Nineteenth Century Prose and Reformers - Reading Lists</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1941/1944"
+                         type="inclusive">1941-44</unitdate>
+               <container id="aspace_0113bed428c5a3f35e95fbbf523f35d3"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_87c8b6b35bb4ae9a30343897ab1af67d" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Nineteenth Century Prose and Reformers - Topics, Lectures
-                     <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Nineteenth Century Prose and Reformers - Topics, Lectures</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_010b226aa55b8ab22dcd16bae5e6c4c6"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fee4000490423731136047c038c32fb7" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Survey of English Literature before 1800 - Exams <unitdate>1933-42,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Survey of English Literature before 1800 - Exams</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1933/1942"
+                         type="inclusive">1933-42</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_c5cfab4e7d9d79bac35fd3d619ec0fa9"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0f7c1f0bd1be542a0007feaf6dfee5b8" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Survey of English Literature before 1900 - Reading Lists
-                     <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Survey of English Literature before 1900 - Reading Lists</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_2450b77366399eefefd36d52032ef78e"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_55585984fa2c36dff6d0af2bf70ce82a" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Survey of English Literature before 1800 - Topics
-                     <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Survey of English Literature before 1800 - Topics</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_015ed5b92a96dc0ff6e548d8706d67f0"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_05cd012bcfd91ce8e04ef1efffdacb97" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Types of English Prose Fiction - Exam <unitdate>1934</unitdate>
-               </unittitle>
+               <unittitle>Types of English Prose Fiction - Exam</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+               <container id="aspace_dc17fd0e7564fdae0f6f9d3b1be95c9d"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b439fc5f720192164db948e8fae62547" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>General Honors Exams; Comprehensive Exams <unitdate>1924-34,
-                     1946</unitdate>
-               </unittitle>
+               <unittitle>General Honors Exams; Comprehensive Exams</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924/1934"
+                         type="inclusive">1924-34</unitdate>
+               <unitdate normal="1946/1946">1946</unitdate>
+               <container id="aspace_2a69387489af52e1d454b616b4f82be3"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_bb15833f7ea8ee2a7e16ed9074c1ef73" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Reports on Honors Exams &amp; Theses <unitdate>1926-38</unitdate>
-               </unittitle>
+               <unittitle>Reports on Honors Exams &amp; Theses</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926/1938"
+                         type="inclusive">1926-38</unitdate>
+               <container id="aspace_54b9832876a098fea1f5fd292d2b9e09"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_74785e999f781641b85a2109ac8ae3c3" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Special Honors- 18th Century <unitdate>1926, 1935</unitdate>
-               </unittitle>
+               <unittitle>Special Honors- 18th Century</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+               <unitdate normal="1935/1935">1935</unitdate>
+               <container id="aspace_8c8f292c5f7809d6d1a0d4f694e8b083"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0c0f1774a5ca94d0535e0e07e6788044" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Special Honors- 19th Century <unitdate>1924-38, undated</unitdate>
-               </unittitle>
+               <unittitle>Special Honors- 19th Century</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924/1938"
+                         type="inclusive">1924-38</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_7371b4251e10cb892d595d33ba7d0dec"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6eab62f988627724249509f96fb9449f" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Student Papers: A-H <unitdate>1920-40, undated</unitdate>
-               </unittitle>
+               <unittitle>Student Papers: A-H</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1920/1940"
+                         type="inclusive">1920-40</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_c016a4e03060222a793b44cdcd16e384"
+                          label="Mixed Materials [310183630231503]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1f1e9914db0b5f74d5623e7250613545" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Student Papers: I-W <unitdate>1929-35, undated </unitdate>
-               </unittitle>
+               <unittitle>Student Papers: I-W</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929/1935"
+                         type="inclusive">1929-35</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a5cf0844fb267556fe9b982cf78918b2"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_56d88043e329890904700e328fd994ee" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Tutorial Bibliography <unitdate>1941</unitdate>
-               </unittitle>
+               <unittitle>Tutorial Bibliography</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e47f9f6c69af204534441db0e9c6503d"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dfb3b7607ceb0e92c3142e5ed54acec8" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
                <unittitle>
                   <title render="bold">Writings</title>
                </unittitle>
+               <container altrender="Letter document box"
+                          id="aspace_ae91aab7f2489c513245e9dd1b75cb56"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1fb081b1d88d745e8a95cede1636b450" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Articles, Papers <unitdate>1892-1936</unitdate>
-               </unittitle>
+               <unittitle>Articles, Papers</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1892/1936"
+                         type="inclusive">1892-1936</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_3973bd3102b66884cd6b9f2a995e2efd"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0455a014452e112cbb683e07f4d30feb" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Fiction <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Fiction</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_84ef3f74aa57bdad17dfa2c55cb34bf8"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d9ea97635fd920bae62b910b4929c2cc" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Goethe <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Goethe</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_71da836c818bda594e1ae4ebfeec2f0d"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0451922f5741b0eebfff23db26046f42" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Miscellaneous <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b3b7ad804edb478e22e8f619dc3d7ee3"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_63c90ffddcc408a9765ee7970f13c0a6" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Notes <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Notes</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b6b7c2e49405e88ff4587f1e86a9adc1"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d838f72b61dc02b70f6abfd93ae47ccb" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Poetry <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Poetry</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_44dab6601ec8e592eea2a2c24e23192e"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_64b4fcc5d911087ae471e430c3e4099f" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Reviews by R.A.R.'s <unitdate>1918, 1937, undated</unitdate>
-               </unittitle>
+               <unittitle>Reviews by R.A.R.'s</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1918/1918">1918</unitdate>
+               <unitdate normal="1937/1937">1937</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_02cd14757f2601e3e6b37636750cc858"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_30caa2a630c171fa7c9231c5ae85216c" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Sampling <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Sampling</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_7a7df7fb6d0201112db66da8be14afea"
+                          label="Mixed Materials [310183630231560]"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2e971f68cbc480ed2d54a7b8e7eea7a0" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <unittitle>Themes <unitdate>1902-15, undated</unitdate>
-               </unittitle>
+               <unittitle>Themes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1902/1915"
+                         type="inclusive">1902-15</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_d035b99a390fc2019e840f73c0a96955"
+                          label="Mixed Materials [310183630231628]"
+                          type="box">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_320589bd92f986d8e3240d148a1d29a7" level="file">
             <did>
-               <container type="box" label="mixed materials">5</container>
-               <unittitle>Thesis <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Thesis</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_e9f75149ea2572660b654aa57035cc35"
+                          label="Mixed Materials [310183630231628]"
+                          type="box">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6be832a4bf5b17ea736bcf4c2c2bb9e9" level="file">
             <did>
-               <container type="box" label="mixed materials">6</container>
-               <unittitle>Yearbooks <unitdate>1896, 1899</unitdate>
-               </unittitle>
+               <unittitle>Yearbooks</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1896/1896">1896</unitdate>
+               <unitdate calendar="gregorian" era="ce" normal="1899/1899">1899</unitdate>
+               <container altrender="Flat box (15d x 3h x 12w)"
+                          id="aspace_f9c6b8b3d109ab05d65a069d817c9f0f"
+                          label="Mixed Materials [310183630231685]"
+                          type="box">6</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
