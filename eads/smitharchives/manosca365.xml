@@ -1,1167 +1,1725 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca365.xml//EN">manosca365</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca365</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Richard P. Unsworth Papers, 1927 - </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Carron.</author>
-
+            <titleproper>Finding aid to the Richard P. Unsworth Papers. <num>CA.MS.00365</num>
+            </titleproper>
+            <author>Finding aid prepared by Elizabeth Carron.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-09-16">2014-09-16</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-11 10:39:48 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-10</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Richard P. Unsworth</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Richard P. Unsworth Papers, 1927
-            -</unittitle>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42_unsworth</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(.9 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-
-            <unitdate label="Dates:" type="inclusive">1900 - 2010</unitdate>
-            <unitdate encodinganalog="245$g" type="bulk">1945 - 2000</unitdate>
-
-            <physloc label="Location Number:">RG 42</physloc>
-            <physdesc label="Quantity:">
-               <extent encodinganalog="300$a">20 document boxes, 3 media boxes</extent>
-               <extent encodinganalog="300$a">(9.5 linear ft.)</extent>
-            </physdesc>
-            <langmaterial encodinganalog="546" label="Language of Material:">English
-               French</langmaterial>
-            <repository label="Location:">
-               <corpname>Smith College Archives</corpname>
-               <address>
-                  <addressline>Northampton, MA</addressline>
-                  <addressline/>
-               </address>
-            </repository>
-            <abstract encodinganalog="520$a" label="Abstract:"> Chaplain of the College and
-               Professor of Religion. Contains biographical material, correspondence, photographs,
-               speeches, and writings. </abstract>
+   <archdesc level="collection">
+      <did>
+    
+         <repository>
+            <corpname>Smith College Archives</corpname>
          </repository>
-
-
-         <!-- Enter collection level metadata -->
-         <bioghist id="bioghist">
-            <head>Biographical Note</head>
-            <p>Eminent minister, educator, and race relations activist, Richard Preston Unsworth
-               (1927-present) served Smith College for more than fifty years as a member of the
-               faculty and as Chaplain of the College. Unsworth came to Smith College after serving
-               as the Assistant Chaplain at Yale University. First appointed an Associate Professor
-               of Religion and Chaplain of the College in 1954, he left in 1964 to become the Dean
-               of the William Jewett Tucker Foundation and Professor of Religion at Dartmouth
-               College. During his tumultuous two years at Dartmouth, Unsworth was tasked with
-               addressing several controversial topics including his personal activities with the
-               Southern Christian Leadership Conference, women's reproductive rights, and Vietnam. </p>
-
-            <p>Resuming his position as Chaplain of the College and Professor of Religion under
-               President Tom Mendenhall, he saw his role as liaison between the college
-               administration and students expand. In 1980 he assumed the role of headmaster at
-               Northfield Mount Hermon preparatory school. In addition to strengthening the school's
-               outreach and development program, he is credited with providing Northfield Mount
-               Hermon with its reputation for minority inclusion and developing its resources in
-               support of the curriculum. </p>
-            <p>Professionally, Unsworth was a noted figure in the development of ecumenical services
-               across higher education campuses and the incorporation of ethics into rigorous
-               cross-discipline curricula. He published numerous sermons, monographs, essays, and
-               articles on a variety of contemporary He lectured widely and facilitated several
-               national surveys across various institutions. In 1949, he and Joy Merritt (1927-2014)
-               were married. Joy was a graduate of Wheaton College and later completed her Master of
-               Social Work in 1959 from Smith College. In 1975, after serving various roles in the
-               Northampton Public School system, she was named the first public school psychologist
-               in Massachusetts. In 1980 Mrs. Unsworth was appointed the director of special
-               education for the Greenfield Public Schools where she worked tirelessly towards
-               pathways and policies to achieve student integration until her retirement in 1989. </p>
-
-         </bioghist>
-
-         <scopecontent id="scope">
-            <head>Scope and Contents of the Collection</head>
-            <p>The Richard P. Unsworth papers contain biographical materials, correspondence,
-               photographs, speeches and writings spanning Unsworth's career.</p>
-         </scopecontent>
-         <arrangement encodinganalog="351$a" id="scope-org">
-            <head>Organization of the Collection</head>
-            <p>This collection is organized into five series:</p>
-            <list>
-               <item> General </item>
-               <item> Activities and Interests </item>
-               <item> Professional Life </item>
-               <item> Writings </item>
-               <item> Audiovisual </item>
-            </list>
-         </arrangement>
-
-
-         <!-- End collection level metadata -->
-
-
-         <!-- Enter administrative information -->
-         <accessrestrict encodinganalog="506" id="admin-access">
-            <p>The collection is open for research according to the regulations of the Smith College
-               Archives except where noted in the finding aid. </p>
-         </accessrestrict>
-         <userestrict encodinganalog="540" id="admin-use">
-            <p>Single photocopies may be made for research purposes. Permission to publish or quote
-               for the materials must be obtained from the Smith College Archives. </p>
-         </userestrict>
-         <prefercite id="admin-cite">
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Richard P. Unsworth Papers, Box #, Smith College Archives </p>
-         </prefercite>
-         <acqinfo id="admin-acqinfo">
-            <p>The personal and professional papers of Richard P. Unsworth (1927-present) were
-               acquired from Richard Unsworth in 2014.</p>
-         </acqinfo>
-         <processinfo id="admin-process">
-            <p>Processed by Elizabeth Carron, Archives Specialist</p>
-         </processinfo>
-
-         <!-- End administrative information -->
-
-
-         <!-- Enter controlled access terms -->
-         <controlaccess id="subj">
-            <persname encodinganalog="600" source="lcnaf">Unsworth, Richard P.</persname>
-            <persname encodinganalog="600" source="lcnaf">Trocme, Andre, 1901-1971.</persname>
-            <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Underground
-               movements -- France -- Le Chambon-sur-Lignon.</subject>
-            <subject encodinganalog="650" source="lcsh">Sex -- Religious aspects --
-               Christianity.</subject>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Religious life</corpname>
-            <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
-            <genreform encodinganalog="655" source="aat">Photographs.</genreform>
-            <genreform encodinganalog="655" source="aat">Notebooks.</genreform>
-            <genreform encodinganalog="655" source="aat">Account books.</genreform>
-            <genreform encodinganalog="655" source="aat">Audiocassettes.</genreform>
-            <genreform encodinganalog="655" source="aat">Letters.</genreform>
-            <genreform encodinganalog="655" source="aat">Sermons. </genreform>
-         </controlaccess>
-
-         <!-- end controlled access terms -->
-
-         <!-- Enter Series descriptions -->
-         <dsc type="analyticover">
-
-            <c01 level="series">
-               <did>
-                  <unittitle>Series I: General </unittitle>
-                  <unitdate>1900 - 2014</unitdate>
-               </did>
-            </c01>
-
-            <c01 level="series">
-               <did>
-                  <unittitle>Series II: Activities and Interests </unittitle>
-                  <unitdate>1945 - 2014</unitdate>
-               </did>
-            </c01>
-
-            <c01 level="series">
-               <did>
-                  <unittitle>Series III: Professional Life </unittitle>
-                  <unitdate>1950 - 2014</unitdate>
-               </did>
-            </c01>
-
-            <c01 level="series">
-               <did>
-                  <unittitle>Series IV: Writings </unittitle>
-                  <unitdate>1950 - 2012</unitdate>
-               </did>
-            </c01>
-
-            <c01 level="series">
-               <did>
-                  <unittitle>Series V: Audiovisual Material </unittitle>
-                  <unitdate>1960 - 2010</unitdate>
-               </did>
-            </c01>
-         </dsc>
-         <!-- End Series descriptions -->
-
-         <!-- Insert container list here:-->
-         <dsc id="list-contlist" type="in-depth">
-            <c01 id="list-ser1" level="series">
-               <did>
-                  <unittitle>SERIES I: General</unittitle>
-               </did>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Curriculum Vitae <unitdate>1946 - 1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Education: Harvard <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Education: Mount Hermon <unitdate>1940 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Education: Princeton <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Education: Yale <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Genealogy <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: children/grandchildren <unitdate>1960 -
-                           2013</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: friends <unitdate>1950 - 2013</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: parents/siblings <unitdate>1930 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: Joy Merritt Unsworth <unitdate>1970 -
-                           2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: Richard Preston Unsworth <unitdate>1950 -
-                           2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Correspondence: Joy and Richard Unsworth <unitdate>1950 -
-                           2008</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel: Asia <unitdate>1970</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:Bonhoeffer/Westminster Abbey <unitdate>1990</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:Europe <unitdate>1970 - 2008</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:itineraries <unitdate>1982 - 1986</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:itineraries <unitdate>1986 - 1987</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:itineraries <unitdate>1988 - 1989</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:itineraries <unitdate>1990 - 1991</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Travel:postcards <unitdate>1975 - 2008</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>Photographs <unitdate>1900 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <unittitle>Appointment Books <unitdate>1970 - 1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-            </c01>
-            <c01 id="list-ser2" level="series">
-               <did>
-                  <unittitle>SERIES II: Activities and Interests</unittitle>
-               </did>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Civil Rights <unitdate>1960 - 1990</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Education <unitdate>1950 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>General <unitdate>1950 - 2000 </unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Music <unitdate>1960 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Race <unitdate>1960 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Sex <unitdate>1954 - 1985</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Yad Va Shem <unitdate>1985 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-            </c01>
-            <c01 id="list-ser3" level="series">
-               <did>
-                  <unittitle>SERIES III: Professional Life</unittitle>
-               </did>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>American School of Tangier <unitdate>1988</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Asia Society: general <unitdate>1999 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Asia Society:"Indonesia Study" <unitdate>1999 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Asia Society:"National Commission on Asia in the Schools"
-                           <unitdate>2000 - 2002 </unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Berkshire School: administrative <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Berkshire School: correspondence <unitdate>1994 - 1996</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Brown University - "The American University and the Pluralist Ideal"
-                           <unitdate>1985 - 1987</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>College Cevenol <unitdate>1960 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Connecticut College - "Review of the Chaplaincy at Connecticut
-                        College" <unitdate>1986</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Crossroads Africa <unitdate>1960 - 1966</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Dartmouth College <unitdate>1965 - 1968</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Eaglebrook School: board of trustees <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Eaglebrook School: correspondence <unitdate>1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Five Colleges - alumni <unitdate>1970 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Harvard University - library committee <unitdate>1995 -
-                           2010</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Khan Institute: "Anatomy of an Exile" <unitdate>2000 -
-                           2001</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Khan Institute:"Ecologies of Children" <unitdate>1997 -
-                           1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Khan Institute:general <unitdate>1996 - 2003</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Khan Institute:"How American Children Lead Their Lives"
-                           <unitdate>2001 - 2002</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Khan Institute:"Religion and Value Information in a Diverse Society"
-                           <unitdate>1997 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Landmark Volunteers <unitdate>1993 - 1994</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Mount Holyoke College <unitdate>1993 - 1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Mount Washington School <unitdate>1953 - 1959</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Northfield Mount Hermon: administrative
-                           <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Northfield Mount Hermon:correspondence <unitdate>1980 -
-                           1995</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Northfield Mount Hermon:Ford Cottage <unitdate>1980 -
-                           1995</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <unittitle>Northfield Mount Hermon:newsclippings <unitdate>1980 -
-                           1995</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College: administrative <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:"Afro-American Committee" <unitdate>1985 -
-                           1990</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:committees <unitdate>1954 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:correspondence <unitdate>1970 - 1989</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:courses <unitdate>1953 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:courses <unitdate>1996 - 1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:Otelia Cromwell Day <unitdate>1998 - 2004</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Smith College:retirement and resignation
-                           <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Williams School <unitdate>1998</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>Yale University <unitdate>1949 - 1953 </unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Conway funeral <unitdate>1995</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>services <unitdate>1950 - 1959</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>services <unitdate>1960 - 1969</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>services <unitdate>1970 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>services <unitdate>1980 - 2010</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Mendenhall funeral <unitdate>1988</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>1950 - 1959</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>1960 - 1969</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>1970 - 1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>1980 - 1989</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>1990 - 2010</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <unittitle>baptisms, funerals, and weddings <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-            </c01>
-            <c01 id="list-ser4" level="series">
-               <did>
-                  <unittitle>SERIES IV: Writings</unittitle>
-               </did>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Conscience in the Thought of Dietrich Bonhoeffer"
-                           <unitdate>1950</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Doctrine of Vocation and the Problem of Work in Modern Society"
-                           <unitdate>1962</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Jonathan Edwards" <unitdate>1960</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Rethinking Childhood" <unitdate>2004</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Vanishing Absolutes" <unitdate>1965</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>various monographs and anthologies <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1950 - 1954</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1955 - 1956</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1957</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">12</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1958</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1959</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1960 - 1961</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">13</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1962 - 1964 </unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">14</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1965 - 1966</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1967 - 1968</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1969</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1970 - 1972</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1973</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">15</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1974</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1975</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1976</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1978</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1979</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1980 - 1982</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1983 - 1984</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1985 - 1989</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>1990 - 2010</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">16</container>
-                     <unittitle>sermons, speeches, and addresses <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: bibliography <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (Annick Flaud) <unitdate>2003 -
-                           2005</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (family) <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (family) <unitdate>1993 - 2002</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (family) <unitdate>restricted</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (miscellaneous) <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: correspondence (publishers) <unitdate>2005</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: photographs <unitdate>1880 - 2008</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">17</container>
-                     <unittitle>Trocme: publication <unitdate>2012 - 2014</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">18</container>
-                     <unittitle>Trocme: interviews <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">18</container>
-                     <unittitle>Trocme: research notes <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">18</container>
-                     <unittitle>Trocme: research notes <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">18</container>
-                     <unittitle>Trocme: research trip <unitdate>2001</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">18</container>
-                     <unittitle>Trocme: research trip <unitdate>2002</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">19</container>
-                     <unittitle>Trocme: introduction - chapter 3 <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">19</container>
-                     <unittitle>Trocme: chapter 4 - chapter 6 <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">19</container>
-                     <unittitle>Trocme: chapter 7 - chapter 9 <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">19</container>
-                     <unittitle>Trocme: chapter 10 - chapter 14 <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">19</container>
-                     <unittitle>Trocme: chapter 15 - chapter 18 <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">20</container>
-                     <unittitle>Trocme: draft <unitdate>undated</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-            </c01>
-            <c01 id="list-ser5" level="series">
-               <did>
-                  <unittitle>SERIES V: Audiovisual Materials</unittitle>
-               </did>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">21</container>
-                     <unittitle>Trocme, Music, Family <unitdate>1960 - 2008</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">22</container>
-                     <unittitle>Northfield Mount Hermon <unitdate>1980 - 1995</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-               <c02 level="file">
-                  <did>
-                     <container type="box" label="mixed materials">23</container>
-                     <unittitle>Smith College <unitdate>1960 - 2000</unitdate>
-                     </unittitle>
-                  </did>
-               </c02>
-            </c01>
-         </dsc>
-
-         <!-- End container list -->
-
+         <unittitle>Richard P. Unsworth Papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Unsworth, Richard P.</persname>
+         </origination>
+         <unitid>CA.MS.00365</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">9.708 linear feet</extent>
+            <extent altrender="carrier">(23 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1880/2014"
+                   type="inclusive">1880-2014</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1945/2000" type="bulk">1945-2000</unitdate>
+         <langmaterial id="aspace_71694a5f41dec29d574b2bf691c43002">English French</langmaterial>
+         <abstract id="aspace_856491748723a4f57fa129e6a24c9f3f">Chaplain of the College and Professor of Religion. Contains biographical material, correspondence, photographs, speeches, and writings.</abstract>
       </did>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical Note</head>
+         <p>Eminent minister, educator, and race relations activist, Richard Preston Unsworth (1927-2016) served Smith College for more than fifty years as a member of the faculty and as Chaplain of the College. Unsworth came to Smith College after serving as the Assistant Chaplain at Yale University. First appointed an Associate Professor of Religion and Chaplain of the College in 1954, he left in 1964 to become the Dean of the William Jewett Tucker Foundation and Professor of Religion at Dartmouth College. During his tumultuous two years at Dartmouth, Unsworth was tasked with addressing several controversial topics including his personal activities with the Southern Christian Leadership Conference, women's reproductive rights, and Vietnam. </p>
+         <p> Resuming his position as Chaplain of the College and Professor of Religion under President Tom Mendenhall, he saw his role as liaison between the college administration and students expand. In 1980 he assumed the role of headmaster at Northfield Mount Hermon preparatory school. In addition to strengthening the school's outreach and development program, he is credited with providing Northfield Mount Hermon with its reputation for minority inclusion and developing its resources in support of the curriculum. </p>
+         <p> Professionally, Unsworth was a noted figure in the development of ecumenical services across higher education campuses and the incorporation of ethics into rigorous cross-discipline curricula. He published numerous sermons, monographs, essays, and articles on a variety of contemporary He lectured widely and facilitated several national surveys across various institutions. In 1949, he and Joy Merritt (1927-2014) were married. Joy was a graduate of Wheaton College and later completed her Master of Social Work in 1959 from Smith College. In 1975, after serving various roles in the Northampton Public School system, she was named the first public school psychologist in Massachusetts. In 1980 Mrs. Unsworth was appointed the director of special education for the Greenfield Public Schools where she worked tirelessly towards pathways and policies to achieve student integration until her retirement in 1989.</p>  
+      </bioghist>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents of the Collection</head>
+         <p>The Richard P. Unsworth papers contain biographical materials, correspondence, photographs, speeches and writings spanning Unsworth's career.</p>  
+      </scopecontent>
+      <arrangement id="aspace_scope-org">
+         <head>Organization of the Collection</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>General</item>
+            <item>Activities and Interests</item>
+            <item>Professional Life</item>
+            <item>Writings</item>
+            <item>Audiovisual</item>
+         </list>
+      </arrangement>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The collection is open for use except where noted in the finding aid.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p> Richard P. Unsworth Papers, Smith College Archives, CA-MS-00365, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The personal and professional papers of Richard P. Unsworth (1927-2016) were acquired from Richard Unsworth in 2014.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Elizabeth Carron, Archives Specialist</p>  
+      </processinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">World War, 1939-1945 -- Underground movements -- France -- Le Chambon-sur-Lignon.</subject>
+         <subject encodinganalog="650" source="lcsh">Sex -- Religious aspects -- Christianity.</subject>
+         <genreform encodinganalog="655" source="aat">Photographs.</genreform>
+         <genreform encodinganalog="655" source="aat">Notebooks.</genreform>
+         <genreform encodinganalog="655" source="aat">Account books.</genreform>
+         <genreform encodinganalog="655" source="aat">Audiocassettes</genreform>
+         <genreform encodinganalog="655" source="aat">Letters.</genreform>
+         <genreform encodinganalog="655" source="aat">Sermons.</genreform>
+         <persname encodinganalog="600" source="naf">Unsworth, Richard P.</persname>
+         <persname encodinganalog="600" source="naf">Trocme, Andre, 1901-1971.</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Religious life</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College--Faculty.</corpname>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
+            <did>
+               <unittitle>SERIES I: General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1900/2013"
+                         type="inclusive">1900-2013</unitdate>
+            </did>
+            <c02 id="aspace_ca1503103bafcdf14db3aa2ee3172f90" level="file">
+               <did>
+                  <unittitle>Curriculum Vitae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1946/1998"
+                            type="inclusive">1946 - 1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_41240187e846e56c31a7136a750d3698"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e7f6b44a6f709fd3aae936ab8f6f6db9" level="file">
+               <did>
+                  <unittitle>Education: Harvard</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_db19fdbf877b6b6d1fc5252d81e48bb6"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+               <accessrestrict id="aspace_8833ac7d0eba6b2921046ce7bd991ba5">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_2809d6d756c196d4c84ba13bf889cd52" level="file">
+               <did>
+                  <unittitle>Education: Mount Hermon</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1940/1979"
+                            type="inclusive">1940 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_aefbd3a537553b863190ed0aac8c5f94"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ba944310c6956ff61cceb6d8b63ad139" level="file">
+               <did>
+                  <unittitle>Education: Princeton</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_9e5f583c9f230eecffc4d28cadb3066e"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+               <accessrestrict id="aspace_2828b9db9d1d212b5feda3596e516afe">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_33b6918fc3bb9acdfe9b6da599c00596" level="file">
+               <did>
+                  <unittitle>Education: Yale</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_e533d2bd9626cd6c75e45d93f115dca2"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+               <accessrestrict id="aspace_783fe0977c084cfd26b3d4c805e2a276">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_6b5f6fd9c7cb523b81f481917a1f96ee" level="file">
+               <did>
+                  <unittitle>Genealogy</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_41eca10dc0c81214fcd01b0e67c848ff"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2cb4fe01d0c028ee131967d3b195bbc7" level="file">
+               <did>
+                  <unittitle>Correspondence: children/grandchildren</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2013"
+                            type="inclusive">1960 - 2013</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_529b6ed5ccf957cbfeb8abf1d11b6666"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bc90e6a266ebfc898575839ca22ff7c4" level="file">
+               <did>
+                  <unittitle>Correspondence: friends</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/2013"
+                            type="inclusive">1950 - 2013</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_90d96e2691cbbe33065ac61fda713759"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7976b706076a69afc635d4d7895b305a" level="file">
+               <did>
+                  <unittitle>Correspondence: parents/siblings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/2000"
+                            type="inclusive">1930 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dbf5c425553590b7f797f64ac4d173f7"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_59eaf71d186e89019123763be5cb0c38" level="file">
+               <did>
+                  <unittitle>Correspondence: Joy Merritt Unsworth</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/2000"
+                            type="inclusive">1970 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_84fc814a2b170701b9ba7f55f712f357"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2fff91392b572f3f1b837e5a40616040" level="file">
+               <did>
+                  <unittitle>Correspondence: Richard Preston Unsworth</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/2000"
+                            type="inclusive">1950 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ef5ccc1c8ab72ee9c77643c04c43d8d"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_161e6f590f6ec0f943839ac44c4d7e31" level="file">
+               <did>
+                  <unittitle>Correspondence: Joy and Richard Unsworth</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/2008"
+                            type="inclusive">1950 - 2008</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_be2caa4b6358e2787434e7bc1a8c2033"
+                             label="Mixed Materials [310183630260023]"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ae3e279c8a6b88ba9c0130baf4175e4a" level="file">
+               <did>
+                  <unittitle>Travel: Asia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_484f5c88ae8e5612d6c60c0d5815e04d"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2867deb7294f3f956f4171deb73a2efe" level="file">
+               <did>
+                  <unittitle>Travel:Bonhoeffer/Westminster Abbey</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1990/1990">1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_318d34482695fa900a02caf9ceb0a849"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9fa42a149cb4ad4274b4d1c7d97f1906" level="file">
+               <did>
+                  <unittitle>Travel:Europe</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/2008"
+                            type="inclusive">1970 - 2008</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3920bb53b2eccde6d71e7f6f07533494"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dfbe19342cf3d3eaeb291ae832ad6cd3" level="file">
+               <did>
+                  <unittitle>Travel:itineraries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1982/1986"
+                            type="inclusive">1982 - 1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7c1674b9d73d5f18e4f5102bd1007e94"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_baf2ed351d6b107f9935219b859fcb15" level="file">
+               <did>
+                  <unittitle>Travel:itineraries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1986/1987"
+                            type="inclusive">1986 - 1987</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1d0bec381bfff2b08b8f74357bacfc6b"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_9b4689d8bdf5cd9788edf8a29cee9c27" level="file">
+               <did>
+                  <unittitle>Travel:itineraries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1988/1989"
+                            type="inclusive">1988 - 1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_05d9d02b5d4eff5953835d5e42bb0063"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f928b46932a351b8be235ae097355486" level="file">
+               <did>
+                  <unittitle>Travel:itineraries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/1991"
+                            type="inclusive">1990 - 1991</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_24396638815248c796b4a66825cf115c"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2e79c65e24bb3370e13c916056536d8c" level="file">
+               <did>
+                  <unittitle>Travel:postcards</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1975/2008"
+                            type="inclusive">1975 - 2008</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cc0d3f2fa030f909e4a5e4c69f255640"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_506055eea90a7c23bd0ed82896330aed" level="file">
+               <did>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/2000"
+                            type="inclusive">1900 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b4e62a5b3f86117dd01d15325b574408"
+                             label="Mixed Materials [310183630260031]"
+                             type="box">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_21337db2e6f58f29222568cac1ba707b" level="file">
+               <did>
+                  <unittitle>Appointment Books</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1998"
+                            type="inclusive">1970 - 1998</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_3781796187a2c365c78a8bce8b019729"
+                             label="Mixed Materials [310183630260049]"
+                             type="box">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
+            <did>
+               <unittitle>SERIES II: Activities and Interests</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1950/2000"
+                         type="inclusive">1950-2000</unitdate>
+            </did>
+            <c02 id="aspace_c73816c102036808cf506068b74a14af" level="file">
+               <did>
+                  <unittitle>Civil Rights</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1990"
+                            type="inclusive">1960 - 1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_15edce688c89d0c816168b83668d9342"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dc691bbd9a112a2a524fb33933b755d7" level="file">
+               <did>
+                  <unittitle>Education</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/2000"
+                            type="inclusive">1950 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cd70a37ec968abb2221340f84ccc9acc"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5da7ab44df700e1c7a3f5a88995e1aed" level="file">
+               <did>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/2000"
+                            type="inclusive">1950 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0c9d77a5fae4b9f1065d299cdfdd113c"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a48d7545f517eb33133d473fbe078144" level="file">
+               <did>
+                  <unittitle>Music</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2000"
+                            type="inclusive">1960 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b576b5275d286bec61ce7079582807c7"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_652ac87ac72d851e2d84684e50095a12" level="file">
+               <did>
+                  <unittitle>Race</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2000"
+                            type="inclusive">1960 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eac1b95b05b807c6f426d13dc3dad495"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7f2a4dde00e545f6006cbaed2d24f498" level="file">
+               <did>
+                  <unittitle>Sex</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1954/1985"
+                            type="inclusive">1954 - 1985</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_008f3cc1c1c94cb0138394d3a479e428"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_54045492c67f32f5e7e5dad6d3db5d28" level="file">
+               <did>
+                  <unittitle>Yad Va Shem</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1985/2000"
+                            type="inclusive">1985 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_048e3ca1b8adf5e080e8eff00a08efac"
+                             label="Mixed Materials [310183630260056]"
+                             type="box">4</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
+            <did>
+               <unittitle>SERIES III: Professional Life</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1949/2010"
+                         type="inclusive">1949-2010</unitdate>
+            </did>
+            <c02 id="aspace_42ca7216a123f8d3e132fa3b31002681" level="file">
+               <did>
+                  <unittitle>American School of Tangier</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1988/1988">1988</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3b5dae9c843e8279fd654ea62f466b6d"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1881aea58f5fae2ab263362f77371d5f" level="file">
+               <did>
+                  <unittitle>Asia Society: general</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1999/2000"
+                            type="inclusive">1999 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3d091f6ffbd05f780dedeaa8f36e5272"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5912151d0c2b12c48b167d6b19ca5fdc" level="file">
+               <did>
+                  <unittitle>Asia Society:"Indonesia Study"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1999/2000"
+                            type="inclusive">1999 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d020b35c66c630d8af96e191bba520d4"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d0fd0d7afd0bf86a265daedf8c02cf6d" level="file">
+               <did>
+                  <unittitle>Asia Society:"National Commission on Asia in the Schools"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2000/2002"
+                            type="inclusive">2000 - 2002</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_39f8a642a86a2f12d56f1431fa6744f7"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b0e2d3298baae09bd424641883adfe71" level="file">
+               <did>
+                  <unittitle>Berkshire School: administrative</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_99438afe0dc61fd3c8dd7288e3893039"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+               <accessrestrict id="aspace_e39f609bb615448a1df08b4502aaba92">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_99c0f9300c090eff00a926ec824858b3" level="file">
+               <did>
+                  <unittitle>Berkshire School: correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1994/1996"
+                            type="inclusive">1994 - 1996</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8f7a10facfe3e97225d624713af9afd1"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_d6fba430b5c48b2b943a5aae2cefaf31" level="file">
+               <did>
+                  <unittitle>Brown University - "The American University and the Pluralist Ideal"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1985/1987"
+                            type="inclusive">1985 - 1987</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_abf5bfd696edc0591675564d36c972a2"
+                             label="Mixed Materials [310183630260064]"
+                             type="box">5</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b52847b49cc27451a59ace71cfc74b1f" level="file">
+               <did>
+                  <unittitle>College Cevenol</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2000"
+                            type="inclusive">1960 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e6ff4dabd284e0204905affa5056fee5"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1a2192db96db8b0291fbf72533261f7b" level="file">
+               <did>
+                  <unittitle>Connecticut College - "Review of the Chaplaincy at Connecticut College"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1986/1986">1986</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_910921d234d199f5ece4dfc2311802d8"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ef181da987e83687b9c61897140db6ef" level="file">
+               <did>
+                  <unittitle>Crossroads Africa</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1966"
+                            type="inclusive">1960 - 1966</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ce1361b41e4ac417c64b54fe355c2410"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6db2921cd33d2fc63bed7829132bd4c2" level="file">
+               <did>
+                  <unittitle>Dartmouth College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1968"
+                            type="inclusive">1965 - 1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_afb616645ae07e5274ce2cd3ff8ef273"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ca657932f6a0259a906d4146d877fd2e" level="file">
+               <did>
+                  <unittitle>Eaglebrook School: board of trustees</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_6ff960726d3826952fce4df615660251"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+               <accessrestrict id="aspace_d06cea622846a4158bad3df18ed78540">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_1ecc799a3481ac4cbc314b5dc8ad754a" level="file">
+               <did>
+                  <unittitle>Eaglebrook School: correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e6f6d19f389af8d781da37ca137836fe"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cf9b1647a7d2c7ac5b57db3328b272c1" level="file">
+               <did>
+                  <unittitle>Five Colleges - alumni</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1979"
+                            type="inclusive">1970 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7446ae9cf33c3db5f0736505566937f0"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_fccae5937d6f125211fe61d1ad6c8e58" level="file">
+               <did>
+                  <unittitle>Harvard University - library committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1995/2010"
+                            type="inclusive">1995 - 2010</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2536fa6910bcde873dcbf8b52fe28c02"
+                             label="Mixed Materials [310183630260072]"
+                             type="box">6</container>
+               </did>
+            </c02>
+            <c02 id="aspace_85612e075119f51fc0510857d364d0f1" level="file">
+               <did>
+                  <unittitle>Khan Institute: "Anatomy of an Exile"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2000/2001"
+                            type="inclusive">2000 - 2001</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d4d57b61a74396849c171da71469380e"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6bfd468fb08536eebeb65eac843ab331" level="file">
+               <did>
+                  <unittitle>Khan Institute:"Ecologies of Children"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/1998"
+                            type="inclusive">1997 - 1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f4f2c75e4b85a1a44b7446c164d8c31d"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b00114847adc1b370d7163f55692e921" level="file">
+               <did>
+                  <unittitle>Khan Institute:general</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1996/2003"
+                            type="inclusive">1996 - 2003</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d70bbccfbaae6979ac855ed75447154a"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_754e9f1d5ef4bb8b1dac8474b8c0510e" level="file">
+               <did>
+                  <unittitle>Khan Institute:"How American Children Lead Their Lives"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2001/2002"
+                            type="inclusive">2001 - 2002</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c42451ba9bc3603df7162b3b148eeed9"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_16aae1dcbac4b07ec3b228e651d6aca1" level="file">
+               <did>
+                  <unittitle>Khan Institute:"Religion and Value Information in a Diverse Society"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1997/2000"
+                            type="inclusive">1997 - 2000</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_02f7a901e18538ff4d08d1b02255a620"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_44d10bc8d509cd1d7c174659fd27e838" level="file">
+               <did>
+                  <unittitle>Landmark Volunteers</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1993/1994"
+                            type="inclusive">1993 - 1994</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0dc28e48647fe8cb3adaf71340dc6d8f"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2eedbbeafe774d55c114217d1e5f1678" level="file">
+               <did>
+                  <unittitle>Mount Holyoke College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1993/1998"
+                            type="inclusive">1993 - 1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5efd3e1b8888669aeb8775b022cdadff"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_973d7072cc4777147934828ff698a265" level="file">
+               <did>
+                  <unittitle>Mount Washington School</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1959"
+                            type="inclusive">1953 - 1959</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7e4c38d6c233d325c57a71a32f57422c"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_579e6503f14c40977a7cc7a8a7ecea52" level="file">
+               <did>
+                  <unittitle>Northfield Mount Hermon: administrative</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_de19e2f0878c5f91883448a999921d2c"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+               <accessrestrict id="aspace_793ab43d734dac5b26e465d87bba9e3f">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_fd88a6c9abccb302cbdc13b63ee8a249" level="file">
+               <did>
+                  <unittitle>Northfield Mount Hermon:correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1995"
+                            type="inclusive">1980 - 1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_316a3db32c716dcc6ba3f36f55036009"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_623168a130a24874342bad21b3ac20ca" level="file">
+               <did>
+                  <unittitle>Northfield Mount Hermon:Ford Cottage</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1995"
+                            type="inclusive">1980 - 1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0327f55bbce5341828fe00e8dd5166c0"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b05fda9199c4f4264f4557f79c0f2e9f" level="file">
+               <did>
+                  <unittitle>Northfield Mount Hermon:newsclippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1995"
+                            type="inclusive">1980 - 1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9ce43b3474769c677f374f5234225e36"
+                             label="Mixed Materials [310183630260080]"
+                             type="box">7</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1f196a5fa8c46b607a877d090f4769d5" level="file">
+               <did>
+                  <unittitle>Smith College: administrative</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_3df65fa36486a8d4d6b137e0d0ff866f"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+               <accessrestrict id="aspace_bb4aee6ae0634e5b23763b4bae510719">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_634edaba67ed73a3741285c5adf6dc53" level="file">
+               <did>
+                  <unittitle>Smith College:"Afro-American Committee"</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1985/1990"
+                            type="inclusive">1985 - 1990</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4b7b7e5b820d9f0511f0adffb89c81c6"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_af9378924316430667439af4d90a4060" level="file">
+               <did>
+                  <unittitle>Smith College:committees</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1954/1979"
+                            type="inclusive">1954 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2b375e24caa12f5934577725f38a206f"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e548fdf1d2cf2bdf6c1f32c3fedcfd4f" level="file">
+               <did>
+                  <unittitle>Smith College:correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1989"
+                            type="inclusive">1970 - 1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_795b14f616f76a1a6575811ae10044e5"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5233e41f9f625dc02b4773f41867080b" level="file">
+               <did>
+                  <unittitle>Smith College:courses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1979"
+                            type="inclusive">1953 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dcb1bc279529282cbd52f44547523e8f"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f3530486663ed00009ad0bb5a9ee6b06" level="file">
+               <did>
+                  <unittitle>Smith College:courses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1996/1998"
+                            type="inclusive">1996 - 1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a9d18acffca65af2a46b1381eb56105f"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f88c9b1aa05daeffc83e1e1e12f812cf" level="file">
+               <did>
+                  <unittitle>Smith College:Otelia Cromwell Day</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1998/2004"
+                            type="inclusive">1998 - 2004</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f5b57c4c451f32e2bb134ea23f84bf51"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2a857bb9be3ba9cb5e3f34d524c2a507" level="file">
+               <did>
+                  <unittitle>Smith College:retirement and resignation</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_addd9ac89ba04081c8547c402e35156d"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_747223391a4bba0ca9ba31b749b9aeb1" level="file">
+               <did>
+                  <unittitle>Williams School</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1998/1998">1998</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_256fadee2202d7ba4756e8a3b243ac7b"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cdb28fff392b69ee0721dfffe9e84221" level="file">
+               <did>
+                  <unittitle>Yale University</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1953"
+                            type="inclusive">1949 - 1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0af822ab2b29fd1cffb2342c516ba7bb"
+                             label="Mixed Materials [310183630260098]"
+                             type="box">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_435cd1afa54e6ba1d87dc162da949a6f" level="file">
+               <did>
+                  <unittitle>Conway funeral</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1995/1995">1995</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d9bfac45e80ae40c94343d25b693af3d"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7218bffd9391644c07a21fdd842a3b05" level="file">
+               <did>
+                  <unittitle>services</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1959"
+                            type="inclusive">1950 - 1959</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9963812b2917d9cbf05427ca824a7737"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_234e224c2a62cc9451b0b345f25cf0d2" level="file">
+               <did>
+                  <unittitle>services</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1969"
+                            type="inclusive">1960 - 1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bd6faf3dcd1897bdeaa273f8b167b206"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_45ff0a0a6724b1f0d774ce07a84cbca2" level="file">
+               <did>
+                  <unittitle>services</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1979"
+                            type="inclusive">1970 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_acb63645251a65bf2e63cafcc2e30a5c"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_31063b99a8a75646ecb822d013de5ed1" level="file">
+               <did>
+                  <unittitle>services</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/2010"
+                            type="inclusive">1980 - 2010</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1fb4541d3ca35cf929f72cb7b2e3708f"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2a46dffcc41420a5728d54621a399e37" level="file">
+               <did>
+                  <unittitle>Mendenhall funeral</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1988/1988">1988</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6abc29bd024aac29c608324124edb990"
+                             label="Mixed Materials [310183630260106]"
+                             type="box">9</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3d21e7d43f1741aca69942c9169d2a5e" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1959"
+                            type="inclusive">1950 - 1959</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_30f1fae602808e38660ec7eff147c840"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7aa4ad43ece9c0699b1f89cf96a4ce04" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1969"
+                            type="inclusive">1960 - 1969</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a5f8b2133de162456396c50eabb9428b"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_36f91c45d21c71c62483e3ffd8f8709e" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1979"
+                            type="inclusive">1970 - 1979</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eaaff88f7f217f3ba18920dad8fde2b4"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8a763a533573bc5f448d587d38e631b4" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1989"
+                            type="inclusive">1980 - 1989</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8ae6a043918b8e67b613055de0b5a79b"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4fc7dedc4a3cd49949cbd3e8744535c8" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/2010"
+                            type="inclusive">1990 - 2010</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5d1e82f7e271fbd04931bdcbe11e31af"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3231e2064376f9761517cd1d98b760b0" level="file">
+               <did>
+                  <unittitle>baptisms, funerals, and weddings</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6dcbaae9d42f75df4ec40b42c4a89b8c"
+                             label="Mixed Materials [310183630260114]"
+                             type="box">10</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser4" level="series">
+            <did>
+               <unittitle>SERIES IV: Writings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1880/2014"
+                         type="inclusive">1880-2014</unitdate>
+            </did>
+            <c02 id="aspace_3322421f874f4dc08a35db35d4eff968" level="file">
+               <did>
+                  <unittitle>"Conscience in the Thought of Dietrich Bonhoeffer"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_29a4046e43a5f72f1b2d3844d300a537"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_98d9922b466fe50702f3cb47e0bab35d" level="file">
+               <did>
+                  <unittitle>"Doctrine of Vocation and the Problem of Work in Modern Society"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_296d9d5a9c2bf52c9bdf7c91c611b574"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cd59e2c736a59022c8661b0975eed9be" level="file">
+               <did>
+                  <unittitle>"Jonathan Edwards"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_484474bfa6f4f16e6a21353f1e54173c"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4091afffcbb533b3529bd52db2d8b288" level="file">
+               <did>
+                  <unittitle>"Rethinking Childhood"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2004/2004">2004</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_bb99b3af925d33831bd311a3133983d4"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_992af9f54569eaa8bf15928525e5c4e5" level="file">
+               <did>
+                  <unittitle>"Vanishing Absolutes"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_3a3064d2a0afc0683d2050fa69d36d8a"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_dd2d88ab5117d6fd7c64bd6d27e874df" level="file">
+               <did>
+                  <unittitle>various monographs and anthologies</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_73fd93b507787ec6117715c9dd7bdc22"
+                             label="Mixed Materials [310183630260122]"
+                             type="box">11</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5adb524856c602741fb0cc02830e7534" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1954"
+                            type="inclusive">1950 - 1954</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9a40c34d1706bb3f674e2057157967e5"
+                             label="Mixed Materials [310183630260130]"
+                             type="box">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_84335139927c85a1c284b500b3c9f339" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1955/1956"
+                            type="inclusive">1955 - 1956</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_218b5d3d9955489a7d2db0670c54bfdc"
+                             label="Mixed Materials [310183630260130]"
+                             type="box">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a64d432d5508439ea1cc0fb3ae4d6588" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c4912df11fcb5625a74872ae7165550d"
+                             label="Mixed Materials [310183630260130]"
+                             type="box">12</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e7e5a42c622f9b96c37662f8aecb5a17" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_b66e221fd91cbc29948d06b301bbb841"
+                             label="Mixed Materials [310183630260148]"
+                             type="box">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0dca368ade584208591d33745e1ba4f9" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_57f70f4ec4c3f1d600231b5b63a64ce2"
+                             label="Mixed Materials [310183630260148]"
+                             type="box">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8c900894078fed0623bcfd4ec8f0c358" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960 - 1961</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_2a0a4baca7107eb3b317382658657ff8"
+                             label="Mixed Materials [310183630260148]"
+                             type="box">13</container>
+               </did>
+            </c02>
+            <c02 id="aspace_a77bb4c31cb18ed2bb0efed842a0f5b6" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1962/1964"
+                            type="inclusive">1962 - 1964</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9ced542ba241cede24139e383b76b1ab"
+                             label="Mixed Materials [310183630260155]"
+                             type="box">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_f75c68ee13ea6f6d180fbe9a9ee73a70" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1965/1966"
+                            type="inclusive">1965 - 1966</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_c43da2b036053f247013da0b8b2e2446"
+                             label="Mixed Materials [310183630260155]"
+                             type="box">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_1d5c5a354defa08e46f9e365f77398a2" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1968"
+                            type="inclusive">1967 - 1968</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_5ddbfbba896f8c82e5c2077f290e47ab"
+                             label="Mixed Materials [310183630260155]"
+                             type="box">14</container>
+               </did>
+            </c02>
+            <c02 id="aspace_561e6f3284f70dd8b11b2b55685019d3" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_6f8e607b800ad0f5bf583ca3886aa6cd"
+                             label="Mixed Materials [310183630260163]"
+                             type="box">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_64cf4057bcecc5d65872d2e343da5b09" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1972"
+                            type="inclusive">1970 - 1972</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_352f8b54a869cd196a021347ca8f2d95"
+                             label="Mixed Materials [310183630260163]"
+                             type="box">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e6aa57f2ef2b069001b5717f341e67aa" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_752d92d5582e2bb313c0d895172b4698"
+                             label="Mixed Materials [310183630260163]"
+                             type="box">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_cda70b52601df48498d33599ae2b3cf3" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_30899643783199cc174c6b902d039d35"
+                             label="Mixed Materials [310183630260163]"
+                             type="box">15</container>
+               </did>
+            </c02>
+            <c02 id="aspace_98fe75424d7065203f5b86526511f501" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1975/1975">1975</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_f41d60d33938e3b2f8236b3e61530a3a"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3e79a7ab902ac57c7e3a808736f4944d" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1976/1976">1976</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_e4598ffbee42c7f0b4421ba72686d4eb"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_3291ac27e51c01614b53b60eb679639c" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_8802b2491fef1035c5d3699c2d4a72c2"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ef2e166e8812a3978e53c23ea7397ae5" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1979/1979">1979</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_6c24820c9f153c1c8b1971be46a3c5b7"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_44b4837a2ddd10ff93bebecf4bfbb6cc" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1982"
+                            type="inclusive">1980 - 1982</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_9a8c75afc18171c253bdf5d68e805f78"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_977b652919d2f1cfab3322ead6e0ef45" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1983/1984"
+                            type="inclusive">1983 - 1984</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_95167aa19806aa71aae559bd7ee5ee8d"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_804426d05219a61e61d469e107e0a4fe" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1985/1989"
+                            type="inclusive">1985 - 1989</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d2c792dc7e8055b0a64a182b36a83e50"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_043871499983e46046867a06e9ca6e0d" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1990/2010"
+                            type="inclusive">1990 - 2010</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_eea510b22c0d974c12eafec3d0a570c1"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_836f94d762d7252b205fd9d4cdf66e11" level="file">
+               <did>
+                  <unittitle>sermons, speeches, and addresses</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_7ae95e6b55e26507c284b08735214f09"
+                             label="Mixed Materials [310183630260171]"
+                             type="box">16</container>
+               </did>
+            </c02>
+            <c02 id="aspace_2e5867c04b0a973b660071b257b729fb" level="file">
+               <did>
+                  <unittitle>Trocme: bibliography</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c53b08bcae4bb4b5b71b83c7584f1138"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5ea6d2ad05f4094a1e6d868fd8052191" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (Annick Flaud)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2003/2005"
+                            type="inclusive">2003 - 2005</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f40b2460893acd214851200f072529f1"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_8a1956b304cd7dd2787e803249e86bf7" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (family)</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1c5767fc2525a701b193363758cdfdbc"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_204992e202414850c3e4b2a173f398c6" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (family)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1993/2002"
+                            type="inclusive">1993 - 2002</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b8fd0fd3a36cd45fc85f282586831742"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7b5fe4d3187e031f7f91a136cdeac5a5" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (family)</unittitle>
+                  <container altrender="Letter document box"
+                             id="aspace_172738bd4f00c6eeb718f658031114aa"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+               <accessrestrict id="aspace_b6391aa569abce57d35a285098df23eb">
+                  <head>Conditions Governing Access</head>
+                  <p>Restricted</p>
+               </accessrestrict>
+            </c02>
+            <c02 id="aspace_95307ea78b4e18613dd054f412304322" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (miscellaneous)</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8de0bcfff0c0f1a0223ab45053a1c75f"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c925d90ec7697261c79f3b77b4737b63" level="file">
+               <did>
+                  <unittitle>Trocme: correspondence (publishers)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2005/2005">2005</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4c9c273666b3e3733320ca1f04c4a354"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_5f621869de608a5eddf66db50820843d" level="file">
+               <did>
+                  <unittitle>Trocme: photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1880/2008"
+                            type="inclusive">1880 - 2008</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9e04f5270f9be0bfdaa3105fdd10405a"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_58c9ea3d3ab61faf11d894e56a202cdb" level="file">
+               <did>
+                  <unittitle>Trocme: publication</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="2012/2014"
+                            type="inclusive">2012 - 2014</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4b04f122b896773cb0076fa816ce6e1c"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_6f8872d423c9c423dd47c2a0147637af" level="file">
+               <did>
+                  <unittitle>Trocme: research notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e153b503c29faada7e4ef6d720de7048"
+                             label="Mixed Materials [310183630260189]"
+                             type="box">17</container>
+               </did>
+            </c02>
+            <c02 id="aspace_e7f37edf7ce9c28bd4f2309a2de8c165" level="file">
+               <did>
+                  <unittitle>Trocme: interviews</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_5bbacae4f3f8aa2753bfaeba832ece88"
+                             label="Mixed Materials [310183630260197]"
+                             type="box">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_632a5460457a498b25f4049193b7d9a7" level="file">
+               <did>
+                  <unittitle>Trocme: research notes</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4156f8a8fe5b1eb592cf1089842fffde"
+                             label="Mixed Materials [310183630260197]"
+                             type="box">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7cc8335d6a1ad84d7cc05184e441092a" level="file">
+               <did>
+                  <unittitle>Trocme: research trip</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2001/2001">2001</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0a6792314b426167c6d9cc7fb0f0b5aa"
+                             label="Mixed Materials [310183630260197]"
+                             type="box">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b1b6522078f0de976a4e12835911618a" level="file">
+               <did>
+                  <unittitle>Trocme: research trip</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2002/2002">2002</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ab38c1a15917e57ec9d37ceeeb9e357b"
+                             label="Mixed Materials [310183630260197]"
+                             type="box">18</container>
+               </did>
+            </c02>
+            <c02 id="aspace_59645a99728f956d0670a5ea56158ee0" level="file">
+               <did>
+                  <unittitle>Trocme: introduction - chapter 3</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2c5fdfd54d5479623e617e46f26fe929"
+                             label="Mixed Materials [310183630260205]"
+                             type="box">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_ddb11ee13d812e29157cf719a6a248f5" level="file">
+               <did>
+                  <unittitle>Trocme: chapter 4 - chapter 6</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_eaaa0014dab53d77567f57e60c67a987"
+                             label="Mixed Materials [310183630260205]"
+                             type="box">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_48e0ddd9d5d478c412791b5d7fe02ded" level="file">
+               <did>
+                  <unittitle>Trocme: chapter 7 - chapter 9</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d307fce4729d7c4204af2db69a96ef8c"
+                             label="Mixed Materials [310183630260205]"
+                             type="box">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_24da55b42e2b920404267c2a2b61bdc0" level="file">
+               <did>
+                  <unittitle>Trocme: chapter 10 - chapter 14</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_19e80a3b7778e89c36f83504eaa86a1f"
+                             label="Mixed Materials [310183630260205]"
+                             type="box">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_43f750264e576bdd2351345fa0c2bda6" level="file">
+               <did>
+                  <unittitle>Trocme: chapter 15 - chapter 18</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_064f9df3b14d807da7de1b5b68576bb4"
+                             label="Mixed Materials [310183630260205]"
+                             type="box">19</container>
+               </did>
+            </c02>
+            <c02 id="aspace_c9c6d0fdd78c6198d539544e8869af2a" level="file">
+               <did>
+                  <unittitle>Trocme: draft</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_264cd8dab7f75fbabc46e7a2dad8eba2"
+                             label="Mixed Materials [310183630260213]"
+                             type="box">20</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser5" level="series">
+            <did>
+               <unittitle>SERIES V: Audiovisual Materials</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/2008"
+                         type="inclusive">1960-2008</unitdate>
+            </did>
+            <c02 id="aspace_973c38107846be65d384164deb9f16ef" level="file">
+               <did>
+                  <unittitle>Smith College</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2000"
+                            type="inclusive">1960 - 2000</unitdate>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_600749ffe2ec6b2d7b7f65dd47b41364"
+                             label="Mixed Materials [310183630260262]"
+                             type="box">21</container>
+               </did>
+            </c02>
+            <c02 id="aspace_85c55d71ee8eff80fc21cfd37cab2e7f" level="file">
+               <did>
+                  <unittitle>Northfield Mount Hermon</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1980/1995"
+                            type="inclusive">1980 - 1995</unitdate>
+                  <container altrender="Card File Box (12d x 2.5h x 7w)"
+                             id="aspace_a62e7c51d557946877c1dd689370420a"
+                             label="Mixed Materials [310183630260239]"
+                             type="box">22</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bd5f9854c2a79348f69bab3f580a860b" level="file">
+               <did>
+                  <unittitle>Trocme, Music, Family</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/2008"
+                            type="inclusive">1960 - 2008</unitdate>
+                  <container altrender="Card file box (12d x 4h x 6w)"
+                             id="aspace_02e5937c4e1f511e1f11549db4881657"
+                             label="Mixed Materials [310183630260247]"
+                             type="box">23</container>
+               </did>
+            </c02>
+         </c01>
+      </dsc>
    </archdesc>
 </ead>
