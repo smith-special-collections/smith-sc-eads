@@ -1,480 +1,644 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-
-      <eadid countrycode="us" mainagencycode="manosca"
-         url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca45.html"
-         >manosca45</eadid>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US"
+             mainagencycode="manosca"
+             url="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca45.html">manosca45</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper>Helen Ashurst Choate Papers, 1908-1957</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author>Finding aid prepared by Gayla B. Spaulding, Maris Schwarz, Jeanne
-               Lowrey.</author>
+            <titleproper>Finding aid for Helen Ashurst Choate papers <num>CA.MS.00045</num>
+            </titleproper>
+            <author>Gayla B. Spaulding, Maris Schwarz, Jeanne Lowrey, Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
             <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date>© 2006</date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation>Finding aid encoded in NoteTab Pro. Encoded by Deborah A. Richards.
-               <date>2006-08-11</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-01-04 09:23:27 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2019-01-04</date>
+            <item>Finding aid updated to current standards and published</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <frontmatter id="front">
-      <titlepage>
-         <publisher>Smith College Archives</publisher>
-         <titleproper>Helen Ashurst Choate Papers, 1908-1957</titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>RG 42</num>
-         <author>Gayla B. Spaulding, Maris Schwarz, Jeanne Lowrey</author>
-         <date>2013</date>
-         <p>© 2013 Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Choate, Helen Ashurst</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Helen Ashurst Choate Papers</unittitle>
-         <unitdate label="Dates:">1817-1957</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:15deb979-55cb-4beb-bafc-da65deb59b2c</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(.4 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Professor of Botany. Contains
-            biographical information, correspondence, clippings, notes, and publications.
-         </abstract>
+         <unittitle>Helen Ashurst Choate papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Choate, Helen Ashurst</persname>
+         </origination>
+         <unitid>CA.MS.00045</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1817/1997"
+                   type="inclusive">1817-1997</unitdate>
+         <abstract id="aspace_f83962b4e529f5c1da3caa6e23a62b1e">Helen Ashurst Choate was a professor of botany at Smith College. Her papers contain biographical information, correspondence, clippings, notes, publications and other materials.</abstract>
       </did>
-
-
-
-      <bioghist id="bioghist">
-
-
-         <list>
-            <item>Smith College Teaching Fellow, 1908-1909</item>
-            <item>Associate Professor of Botany, 1909-1947</item>
-            <item>Class Dean for the Class of 1938, 1934-1938</item>
-            <item>Associate Professor Emeritus, 1947-1957</item>
-         </list>
-
-         <p>Helen Ashurst Choate was born on August 29, 1882 in Irvington-on-Hudson, NY to
-            Washington Choate and Grace Whitton Choate. She graduated from Smith College with the
-            Class of 1904, and worked as a teacher at Greenwich Academy in Connecticut before
-            returning to Smith on a trustee fellowship from 1908-1909. In 1909, studying under
-            professor William F. Ganong, Choate received an M.A. from Smith and became an associate
-            professor of botany, a position she held for 38 years until her retirement in 1947. In
-            1920, she received a Ph.D. from the University of Chicago. Between 1934-1938 she served
-            as Class Dean for the Class of 1938, and she also served as department chair for several
-            years. Her field of research was plant physiology.</p>
-
-         <p>Choate was active with the work of the Edwards Congregational Church in Northampton,
-            hospital aid, victory gardens, the Red Cross, and relief work. She was also a member of
-            Phi Beta Kappa, Sigma Xi, and Sigma Delta Epsilon, the American Association for the
-            Advancement of Science, the Botanical Society of America, and the History of Science
-            Society.</p>
-
-         <p>Choate died at the age of 75 on December 12, 1957 at Cooley Dickinson Hospital in
-            Northampton, MA.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Helen Ashurst Choate was born on August 29, 1882 in Irvington-on-Hudson, NY to Washington Choate and Grace Whitton Choate. She graduated from Smith College with the Class of 1904 and worked as a teacher at Greenwich Academy in Connecticut before returning to Smith on a trustee fellowship from 1908-1909. In 1909, studying under professor William F. Ganong, Choate received an M.A. from Smith and became an associate professor of botany, a position she held for 38 years until her retirement in 1947. In 1920, she received a Ph.D. from the University of Chicago. Between 1934-1938 she served as class dean for the Class of 1938, and served as department chair for several years. Her field of research was plant physiology.</p>
+         <p> Choate was active in the work of the Edwards Congregational Church in Northampton, hospital aid, victory gardens, the Red Cross, and relief work. She was also a member of Phi Beta Kappa, Sigma Xi, and Sigma Delta Epsilon, the American Association for the Advancement of Science, the Botanical Society of America, and the History of Science Society.</p>
+         <p> Choate died at the age of 75 on December 12, 1957 at Cooley Dickinson Hospital in Northampton, MA.</p>  
       </bioghist>
-      <scopecontent id="scope">
-
-         <p>The Helen Ashurst Choate collection contains biographical information, including
-            photographs and obituaries, correspondence, news clippings, notes, documents relating to
-            book making, bibliographies, and publications.</p>
-
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Helen Ashurst Choate papers contain biographical information, including photographs and obituaries, correspondence, news clippings, notes, documents relating to making of books, bibliographies, and publications.</p>  
       </scopecontent>
-
-
-
-
-
-      <descgrp id="admin">
-         <head>Information on Use</head>
-         <descgrp>
-            <head>Terms of Access and Use</head>
-            <accessrestrict id="admin-access">
-               <p>The papers are open for research according to the regulations of the Smith College
-                  Archives without any additional restrictions.</p>
-            </accessrestrict>
-            <userestrict id="admin-use">
-               <p>Single photocopies may be made for research purposes. Permission to publish
-                  material from the documents must be requested from the Smith College Archives.
-                  Smith College owns copyright to any published material relating to college events
-                  and activities. Provenance and copyright ownership of other materials is unknown
-                  and researchers are responsible for determining any question of copyright.</p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Helen Ashurst Choate, Box #, Smith College Archives.</p>
-         </prefercite>
-      </descgrp>
-
-      <descgrp id="addinfo">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>
-               <extref
-                  href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca82_main.html"
-                  >52. Department of Botany Records</extref>
-            </p>
-            <p>
-               <extref
-                  href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca196_main.html"
-                  >80. Class of 1904 Records</extref>
-            </p>
-         </relatedmaterial>
-      </descgrp>
-
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Helen Ashurst Choate papers, College Archives, CA-MS-00045, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>
+            <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca82_main.html">52. Department of Botany Records</extref>
+         </p>
+         <p>  
+            <extref href="http://asteria.fivecolleges.edu/findaids/smitharchives/manosca196_main.html">80. Class of 1904 Records</extref>
+         </p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The papers are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_682abb74b1e6ab622caf672943385674">
+         <head>Immediate Source of Acquisition</head>
+         <p>Unknown</p>  
+      </acqinfo>
+      <dsc>
+         <c01 id="aspace_7635eebf5836ce7d71f2fc7dbf1f5068" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical Information <unitdate>1889-1997</unitdate>
-               </unittitle>
+               <unittitle>Biographical Information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1889/1997"
+                         type="inclusive">1889-1997</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f2bf22ec0d7e542cfb8d328472fc1a26"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_29eb649b1239b6eb4149a35d82f4bbb2"
+                          parent="aspace_f2bf22ec0d7e542cfb8d328472fc1a26"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6a3a97cb259336f62dd4b6ccf781bbac" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence: A-Z <unitdate>1903-1950</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: A-Z</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1903/1950"
+                         type="inclusive">1903-1950</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e2de4f02a8f5fb6bf7ca6d6618d0be28"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_5e0678296066e2dec592ff0e08af0dc9"
+                          parent="aspace_e2de4f02a8f5fb6bf7ca6d6618d0be28"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_83534bc3b94ab359de11c8c79049f597" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence: Clarke, Elizabeth Lawrence (1883)
-                     <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Clarke, Elizabeth Lawrence (1883)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_6c67c1ad3b2bce22eb14b9416525516a"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_41db378c10e44e6e33af0551a32d59c3"
+                          parent="aspace_6c67c1ad3b2bce22eb14b9416525516a"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fd5d4091fa71c3ec520f89c78456c56b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence: Cutler, Anna Alice (1885) <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Cutler, Anna Alice (1885)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ac9ae1e7502e0cc6b043fb2841dc4779"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_691baa50230646ea9fd1d8b38c9fede3"
+                          parent="aspace_ac9ae1e7502e0cc6b043fb2841dc4779"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_932d70e74147747d686e492b1b89bfe0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence: Jones, Grace (Smith) (1894) <unitdate>1950</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Jones, Grace (Smith) (1894)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ac0a2889a1d42e0d70e195045d3de1bf"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_59ee2a046d8f4f0b8a25fcf7f4ed7868"
+                          parent="aspace_ac0a2889a1d42e0d70e195045d3de1bf"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_eed824f27b3927f883238e2f94c6e90c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence: Pillsbury, John H. <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Pillsbury, John H.</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f7adbb0d26370a1ff3e12280372419ec"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_f417ac3de52daf9801df4c09cdc03296"
+                          parent="aspace_f7adbb0d26370a1ff3e12280372419ec"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_24f847135ec71320807e75c753973145" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Autographed letters from botanists <unitdate>1908-1918</unitdate>
-               </unittitle>
+               <unittitle>Autographed letters from botanists</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1908/1918"
+                         type="inclusive">1908-1918</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3c717b78ffe695f764edc012dfedc359"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_0ced09d8fb7e06660a2ce2a2912ee99d"
+                          parent="aspace_3c717b78ffe695f764edc012dfedc359"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c9827c4c116c92194189103dc68dfe18" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Bibliography <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Bibliography</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_42b32c218c4ea86788c99449fd02f666"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_407a0edc9513478b42602408e5109116"
+                          parent="aspace_42b32c218c4ea86788c99449fd02f666"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6d84bddb7d08b149f45c81ace964dea4" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Clippings from book dealer's catalogue <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Clippings from book dealer's catalogue</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_391cd4789e25f99359a6cedbd7897282"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_f5b2534c710e11c35ee9e7f70b9e0ead"
+                          parent="aspace_391cd4789e25f99359a6cedbd7897282"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_adcb96cda19ec623895da4bbc0c47146" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Early American botanists <unitdate>1912, undated</unitdate>
-               </unittitle>
+               <unittitle>Early American botanists</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1912/1912">1912</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_a628e6ed76fcf08406b106f9cc5b262e"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_fb5d8c74d527c6ae62f4d8a65e561dd0"
+                          parent="aspace_a628e6ed76fcf08406b106f9cc5b262e"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2a4bd4f35a5d361624b5e7858e9db042" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Familiar Lectures on Botany <unitdate>1829</unitdate>
-               </unittitle>
+               <unittitle>Familiar Lectures on Botany</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1829/1829">1829</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f85842761369a3d203f8b12b00313763"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_9451e8d0b778aac057331688394df0bc"
+                          parent="aspace_f85842761369a3d203f8b12b00313763"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_24997e7cd9691c3323b144c8cc1350d0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Herbals (Botany 11) <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Herbals (Botany 11)</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_25432944424e1488349418398eb69e91"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_8d96d751fd4ee68eda05dc93ced72427"
+                          parent="aspace_25432944424e1488349418398eb69e91"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_85edcd752aff35afc72d394acd68a8b7" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Herbs <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Herbs</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_eb4558232edf657c31876273209db795"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_bcce830eab20c413b9e9b59f8595d594"
+                          parent="aspace_eb4558232edf657c31876273209db795"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_319723df8071261add69be131fd589ab" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>History of botany (Botany 41) <unitdate>1931, undated</unitdate>
-               </unittitle>
+               <unittitle>History of botany (Botany 41)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3beaead1f0bb0e231ecfbc71b4e6bd61"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_ec043d8e189bab96318d62175f962cb5"
+                          parent="aspace_3beaead1f0bb0e231ecfbc71b4e6bd61"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_faee12ce12211d726b12a793d06adf78" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>History of botany: early herbals <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>History of botany: early herbals</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ba73c0fd02e540e6ae6f7aeb3698b48d"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_bf106ca8d66a78b0db39cbfd7f441310"
+                          parent="aspace_ba73c0fd02e540e6ae6f7aeb3698b48d"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_677ae608fd77aa45309695f4c85bfa57" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>History of botany: notes <unitdate>1910, undated</unitdate>
-               </unittitle>
+               <unittitle>History of botany: notes</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_341aabd72be526ac06f44f70ea61a44d"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_aab9c955939236a1e92a21ab85140507"
+                          parent="aspace_341aabd72be526ac06f44f70ea61a44d"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d66bb49d703de28d6378d2f8378ad40d" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>History of botany: timeline <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>History of botany: timeline</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_7cfd6b7f90cc079c7d1066c168a0fda3"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_412af8ce75c2ba04d6bf3009ba48b091"
+                          parent="aspace_7cfd6b7f90cc079c7d1066c168a0fda3"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ebfc5ac2bb08c5504807f30872a7261b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>"History of the Botany Department": Draft <unitdate>c.a. 1950s</unitdate>
-               </unittitle>
+               <unittitle>"History of the Botany Department": Draft</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">a. 1950s</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_8a979679ae1eea7a96c5bf2aa4cbd2f7"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_2994098fae332955d0c9314264d24c50"
+                          parent="aspace_8a979679ae1eea7a96c5bf2aa4cbd2f7"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_36304b55c1e427420dc71f65a60cc766" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>"History of the Botany Department": Final Copy <unitdate>c.a.
-                     1950s</unitdate>
-               </unittitle>
+               <unittitle>"History of the Botany Department": Final Copy</unittitle>
+               <unitdate calendar="gregorian" certainty="approximate" era="ce">a. 1950s</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_009821c30d296dd5557b758dab7e69ee"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_571d6bcafc09222c602100be6d4d49b7"
+                          parent="aspace_009821c30d296dd5557b758dab7e69ee"
+                          type="folder">19</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_20da2f43e244b29c447f1dcb01512d93" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">20</container>
-               <unittitle>"History of the Botany Department": Notes <unitdate>1940-1953,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>"History of the Botany Department": Notes</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1940/1953"
+                         type="inclusive">1940-1953</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e872a90e8451ae8b59c1bb30b01b3e2f"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_032d86b27465030427a1bcce2ab56477"
+                          parent="aspace_e872a90e8451ae8b59c1bb30b01b3e2f"
+                          type="folder">20</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_402e175fe154cb7a599be2ba1a64b1ae" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">21</container>
-               <unittitle>"John Gerard: 1545-1612" <unitdate>1925-1943</unitdate>
-               </unittitle>
+               <unittitle>"John Gerard: 1545-1612"</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925/1943"
+                         type="inclusive">1925-1943</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f34e1d123b213a962ee4733fc284de6f"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_51aed5d437a4e29c79bbe3f7cfe5f392"
+                          parent="aspace_f34e1d123b213a962ee4733fc284de6f"
+                          type="folder">21</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_945b8b3dd8fc1941916c13cf5f8bcaa2" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>"Invention of Printing and Early Printed Books"
-                     <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>"Invention of Printing and Early Printed Books"</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_f370ec9f708699b6a8dfbc1bfa3e5a75"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_65a185080c7eac7103db0d8a0845b4ce"
+                          parent="aspace_f370ec9f708699b6a8dfbc1bfa3e5a75"
+                          type="folder">22</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d99cd2739b6b7d39bcdcfd3c564e6939" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">23</container>
-               <unittitle>"Journal of Hellenic Studies" <unitdate>1927</unitdate>
-               </unittitle>
+               <unittitle>"Journal of Hellenic Studies"</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_d92067554cdf282af7ad3a54ba2e446b"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_07c9430bb2198b359eeacd083341f5fe"
+                          parent="aspace_d92067554cdf282af7ad3a54ba2e446b"
+                          type="folder">23</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c171259bebeff50eaafbf06455e4d4ee" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">24</container>
-               <unittitle>Kurt Sprengel's History of Botany <unitdate>1817</unitdate>
-               </unittitle>
+               <unittitle>Kurt Sprengel's History of Botany</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1817/1817">1817</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_bf67a350f93cc7162472ff4125a872b2"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_652df717e775bd90bb42f3f9a06e4cb0"
+                          parent="aspace_bf67a350f93cc7162472ff4125a872b2"
+                          type="folder">24</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_facd580b8a8be49bfc5eff30e6c6b411" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">25</container>
-               <unittitle>Lecture notes: A-H <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Lecture notes: A-H</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_18c5324643e7eee3d16cc0c94ddbf87d"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_ff5d4626ed0587fc2ab5ace33d6a369d"
+                          parent="aspace_18c5324643e7eee3d16cc0c94ddbf87d"
+                          type="folder">25</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4f4ea137e8429976552ba6547d1b8337" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">26</container>
-               <unittitle>Magazine clippings and publication information <unitdate>1915-1918,
-                     undated</unitdate>
-               </unittitle>
+               <unittitle>Magazine clippings and publication information</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1915/1918"
+                         type="inclusive">1915-1918</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2a104c57fefa0510f024119cc6286b25"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_bda105b72112c92d56680eaed2d72a9c"
+                          parent="aspace_2a104c57fefa0510f024119cc6286b25"
+                          type="folder">26</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5e7077dff9973ac12953f071cc9dded3" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">27</container>
-               <unittitle>Materials on Linnaeus and publications by the Linnean Society of London
-                     <unitdate>1908-1930, undated</unitdate>
-               </unittitle>
+               <unittitle>Materials on Linnaeus and publications by the Linnean Society of London</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1908/1930"
+                         type="inclusive">1908-1930</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_9000c7d03eeb08c5f55def4a43683b77"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_ab3e43bfdf9fad7ef75904d8fe0a93a0"
+                          parent="aspace_9000c7d03eeb08c5f55def4a43683b77"
+                          type="folder">27</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0e5be81ac584edce9d7b02ffd5ab6efa" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">28</container>
-               <unittitle>Plant reproduction clippings <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Plant reproduction clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_42a94c2b31d68ccdaa9c5ffe71e01858"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_538f67aa349f53f9557273fa535fbf03"
+                          parent="aspace_42a94c2b31d68ccdaa9c5ffe71e01858"
+                          type="folder">28</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ab12bc850a1e87a22b066832e9fddc69" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">29</container>
-               <unittitle>Pre-Aristotelian botany <unitdate>1913, undated</unitdate>
-               </unittitle>
+               <unittitle>Pre-Aristotelian botany</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_cc0751d26bc047655da0327a21f3c570"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_e8d5f1c7e3037a5a91157e06ab063e4c"
+                          parent="aspace_cc0751d26bc047655da0327a21f3c570"
+                          type="folder">29</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_baa006ab3e6ec2031729040539660bde" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">30</container>
-               <unittitle>Thornton College notes <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Thornton College notes</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_a20776ca4bdfa4bdf75bde7225fb6a75"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_bf9869ce0714bb8781946c7e2013ca4b"
+                          parent="aspace_a20776ca4bdfa4bdf75bde7225fb6a75"
+                          type="folder">30</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fd3547b66278676f879902b1eef63c75" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">31</container>
-               <unittitle>Theophrastus: Enquiry into Plants <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Theophrastus: Enquiry into Plants</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_ece26cc1ff0e2736a1e1e09d06968c06"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_b9dedb682cb381fa9a210d8a18b0ca61"
+                          parent="aspace_ece26cc1ff0e2736a1e1e09d06968c06"
+                          type="folder">31</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2d2cc7116cb4f52d053207436f4f8178" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">32</container>
-               <unittitle>Science of botany: notes <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Science of botany: notes</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_6869a5acd44c3936f025214697a224f2"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_21febbf238ae3e788a16ada6e6c9fe6e"
+                          parent="aspace_6869a5acd44c3936f025214697a224f2"
+                          type="folder">32</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_36c9d8a6fb188da14a78e39bbf1d0cad" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">33</container>
-               <unittitle>"Scientific Monthly" clippings <unitdate>1928-1934</unitdate>
-               </unittitle>
+               <unittitle>"Scientific Monthly" clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928/1934"
+                         type="inclusive">1928-1934</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_fd032d2960f6939e77938606b362cd05"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_53db550e5e10c9f96a5f4d88a9999f9e"
+                          parent="aspace_fd032d2960f6939e77938606b362cd05"
+                          type="folder">33</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e257f9340146daedc9dac14fef915387" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">34</container>
-               <unittitle>Woodcut book materials and articles <unitdate>1931, undated</unitdate>
-               </unittitle>
+               <unittitle>Woodcut book materials and articles</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_2f1795b24efa041b6f644523817cc236"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_61ceb1e2cc020fccfbd9af1b26f1a107"
+                          parent="aspace_2f1795b24efa041b6f644523817cc236"
+                          type="folder">34</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c9c6bf67ae991c4afc779028daf69455" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">35</container>
-               <unittitle>Miscellaneous and clippings <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous and clippings</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_e896b613c6b9421a270bf1647965d5d0"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_3278f8c9024a3696b954492d988efb6e"
+                          parent="aspace_e896b613c6b9421a270bf1647965d5d0"
+                          type="folder">35</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a264427365a82e763a21a0d7a51bf1a2" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">36-37</container>
-               <unittitle>Miscellaneous 1 &amp; 2 <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous 1 &amp; 2</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_3b7658c10d0aedab41ea152b3ab70a5a"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_8498d73b8eecc566f3784f79ae0a5d20"
+                          parent="aspace_3b7658c10d0aedab41ea152b3ab70a5a"
+                          type="folder">36-37</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a718c0b5b4eda57f03f91ab568a9ac75" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">38</container>
-               <unittitle>Miscellaneous publications and bibliographies
-                     <unitdate>1920-1932</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous publications and bibliographies</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1920/1932"
+                         type="inclusive">1920-1932</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_786cb9308646dc093f29c20af58837fe"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_a92320e67197d5469a5b516916554f0d"
+                          parent="aspace_786cb9308646dc093f29c20af58837fe"
+                          type="folder">38</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8173442821954e97096001392ee91761" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">39</container>
-               <unittitle>Publications by Choate <unitdate>1912-1940</unitdate>
-               </unittitle>
+               <unittitle>Publications by Choate</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1912/1940"
+                         type="inclusive">1912-1940</unitdate>
+               <container altrender="Record carton"
+                          id="aspace_c5feb30ebe4462ebd9e132e9089c551d"
+                          label="Mixed Materials [310183630231511]"
+                          type="box">1</container>
+               <container id="aspace_0315e6d9bc541fa37f96e35bb1bc39b8"
+                          parent="aspace_c5feb30ebe4462ebd9e132e9089c551d"
+                          type="folder">39</container>
             </did>
          </c01>
       </dsc>
-
-
-
-
    </archdesc>
 </ead>
