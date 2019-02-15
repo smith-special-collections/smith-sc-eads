@@ -1,334 +1,445 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca318.xml//EN">manosca318</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca318</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Smith Club of Palm Beaches Records,
-               1960-[ongoing]</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Anna Eisen.</author>
-
+            <titleproper>Finding aid to the Smith Club of Palm Beaches records <num>CA.MS.00318</num>
+            </titleproper>
+            <author>Finding aid prepared by Anna Eisen.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2010</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2010">2010</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Deborah
-            Richards. <date normal="2010-03-29">2010-03-29</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-05 10:29:58 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-04</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Smith Club of Palm Beaches</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Smith Club of Palm Beaches
-            Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1960-[ongoing]</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:2e81f3a6-c779-4d80-8566-edbd4e791427</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">3 boxes</extent>
-            <extent encodinganalog="300$a">(1.25 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> This collection contains minutes,
-            membership directories, event programs, financial records, photographs, newspaper
-            clippings, correspondence, and a scrapbook documenting the Smith Club of Palm Beaches's
-            activities. </abstract>
+         <unittitle>Smith Club of Palm Beaches records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith Club of Palm Beaches</corpname>
+         </origination>
+         <unitid>CA.MS.00318</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.25 linear feet</extent>
+            <extent altrender="carrier">(3 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1960/2005"
+                   type="inclusive">1960-2005</unitdate>
+         <abstract id="aspace_b06ca6dfc319117bbd8a8ff40166268d">The Smith Club of Palm Beaches began in 1959 as an informal sect of the nearby Smith Club of Fort Lauderdale. This collection contains minutes, membership directories, event programs, financial records, photographs, newspaper clippings, correspondence, and a scrapbook documenting the Smith Club of Palm Beaches's activities.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Smith Club of Palm Beaches began in 1959 as an informal sect of the nearby Smith
-            Club of Fort Lauderdale. This new group consisted of Mrs. David Chandler Prince (1911),
-            Mrs. Lee Porter (1912), and Mrs. John Eldredge Smith (1931). These three women resided
-            in the Palm Beaches, Florida, area and met informally with Mrs. Ralph Smith (1931) at
-            local hotels and restaurants. It was not until the Smith Club of Palm Beaches was
-            officially recognized by the Alumnae Association in 1965 that they gathered at regular
-            monthly luncheon meetings at Testa's Restaurant in Palm Beaches. The Club's by-laws were
-            amended in 1973 and 1981. Members include Smith alumnae residing from Boca Raton to Vero
-            Beaches, Florida.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Smith Club of Palm Beaches began in 1959 as an informal sect of the nearby Smith Club of Fort Lauderdale. This new group consisted of Mrs. David Chandler Prince (1911), Mrs. Lee Porter (1912), and Mrs. John Eldredge Smith (1931). These three women resided in the Palm Beaches, Florida, area and met informally with Mrs. Ralph Smith (1931) at local hotels and restaurants. It was not until the Smith Club of Palm Beaches was officially recognized by the Alumnae Association in 1965 that they gathered at regular monthly luncheon meetings at Testa's Restaurant in Palm Beaches. The Club's by-laws were amended in 1973 and 1981. Members include Smith alumnae residing from Boca Raton to Vero Beaches, Florida.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection is comprised of several decades' worth of minutes and meeting agendas,
-            as well as extensive newspaper clippings documenting the club's activities. Official
-            records of Alumnae Councils and donations to the Alumnae Fund for scholarships are also
-            in the files. Additional material ranges from photographs of club events to fundraising
-            efforts, events announcements and invitations, and membership directories from 1966 to
-            2005.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection is comprised of several decades' worth of minutes and meeting agendas, as well as extensive newspaper clippings documenting the club's activities. Official records of Alumnae Councils and donations to the Alumnae Fund for scholarships are also in the files. Additional material ranges from photographs of club events to fundraising efforts, events announcements and invitations, and membership directories from 1966 to 2005.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of Smith College Archives
-            without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Smith Club of Palm Beaches Records, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Smith Club of Palm Beaches records, Smith College Archives, CA-MS-00318, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Smith Club of Palm Beaches Records were donated over a period of time to the Smith
-            College Archives from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Smith Club of Palm Beaches records were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-      <relatedmaterial id="add-related">
-         <p>- 90. Alumnae Association, Smith Clubs, General</p>
-      </relatedmaterial>
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_007b556aef58edfcbdc6fc0ddad54f6c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Alumnae Council, Smith College <unitdate>1963-1989</unitdate>
-               </unittitle>
+               <unittitle>Alumnae Council, Smith College</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1963/1989"
+                         type="inclusive">1963-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b69fa8abb617862de6a2cda660a913ce"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_037bea31315dcd1f18997d3f2d28a08f" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Announcements <unitdate>1962-2000</unitdate>
-               </unittitle>
+               <unittitle>Announcements</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1962/2000"
+                         type="inclusive">1962-2000</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e52d9230d815e21e00059380f9dc609e"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7b50814a0119693a3ccdc8afcacec474" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Annual Reports <unitdate>1966-1989</unitdate>
-               </unittitle>
+               <unittitle>Annual Reports</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/1989"
+                         type="inclusive">1966-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b9c1aa2582470217b7e82a7ac834b410"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e007930498d46acfdd590904282e3f47" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>By-laws <unitdate>1973-1981</unitdate>
-               </unittitle>
+               <unittitle>By-laws</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1973/1981"
+                         type="inclusive">1973-1981</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_123b7c0733ca766ed046d1c34a5f3195"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_28274eaf5c9761bc362f8649c5cec9c0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Club History <unitdate>1960-1991</unitdate>
-               </unittitle>
+               <unittitle>Club History</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1991"
+                         type="inclusive">1960-1991</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9e5b082cb5156405ecf43223d322ef93"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0bb2aa532fb7e1df106024aab42d18ec" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Community Calling Program/Capital Campaign for Smith
-                     <unitdate>1966-1989</unitdate>
-               </unittitle>
+               <unittitle>Community Calling Program/Capital Campaign for Smith</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/1989"
+                         type="inclusive">1966-1989</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_494b6b52881587b12f128bb03c741903"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3b25bbd70a1872eb1c18ea264500d17d" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Correspondence: Alumnae Association of Smith College
-                     <unitdate>1965-1988</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Alumnae Association of Smith College</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1988"
+                         type="inclusive">1965-1988</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_061ce16f4e82e7baa6025bdf8cefc918"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_59ad339d7b1cf6f74d75fbe678dcf6b9" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Correspondence: Career Development Office <unitdate>1986-1987</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Career Development Office</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1986/1987"
+                         type="inclusive">1986-1987</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_80c73720acdf74b4418748e09b84f62f"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_aba586b447b17281d693a7552fe55c65" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Correspondence: Miscellaneous <unitdate>1961-2001</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Miscellaneous</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/2001"
+                         type="inclusive">1961-2001</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c2ae38edaed35844786e4a842a2b0810"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_66f13a6a0c78720c6b15943d3f9124dd" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <unittitle>Correspondence: Other Smith Clubs <unitdate>1967-1971</unitdate>
-               </unittitle>
+               <unittitle>Correspondence: Other Smith Clubs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1971"
+                         type="inclusive">1967-1971</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_649131d94114dce270659c8017a35a87"
+                          label="Mixed Materials [310183630253358]"
+                          type="box">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e14fe59fafe26bf458f594e2264f369a" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Directories <unitdate>1966-2005</unitdate>
-               </unittitle>
+               <unittitle>Directories</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/2005"
+                         type="inclusive">1966-2005</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_d426a87785596ff370f393993738c20d"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3e605a2b390958acea205ade5f1ebd2f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Finances: Tax Exempt Status <unitdate>1974</unitdate>
-               </unittitle>
+               <unittitle>Finances: Tax Exempt Status</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_44613f282550c9807792137c373f9d0c"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ffc3d06846ac9761c5a02216135ebdb5" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Fundraising/Pecan Sales <unitdate>1969-1999</unitdate>
-               </unittitle>
+               <unittitle>Fundraising/Pecan Sales</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1999"
+                         type="inclusive">1969-1999</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_44d15dc8e7f3cec14bc4ccb038f44350"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b7f5f908c1831ec2e9f79add0d7f5d6a" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Guests: Conway, Jill Ker <unitdate>1975-1976</unitdate>
-               </unittitle>
+               <unittitle>Guests: Conway, Jill Ker</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1975/1976"
+                         type="inclusive">1975-1976</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_fa0ace9ff6b63f230ab859d86ac367de"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_268791ec379920a79e93bc94a8d74747" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Guests: Hindmarsh, Ronald <unitdate>1967-1968</unitdate>
-               </unittitle>
+               <unittitle>Guests: Hindmarsh, Ronald</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1967/1968"
+                         type="inclusive">1967-1968</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_f7e70ada947333688f3638e50547c478"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e0757a57714a5c9ebf4213cd08c200bc" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Minutes and Agendas <unitdate>1965-1982</unitdate>
-               </unittitle>
+               <unittitle>Minutes and Agendas</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1965/1982"
+                         type="inclusive">1965-1982</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_9674deb38e64291e22c6fb4c1e48eb23"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_319fa4a8bb4eefba07cc269361f1d9e1" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <unittitle>Minutes and Agendas <unitdate>1983-2003</unitdate>
-               </unittitle>
+               <unittitle>Minutes and Agendas</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1983/2003"
+                         type="inclusive">1983-2003</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_3f4999be31f6c7d8f21b17e4c2f83441"
+                          label="Mixed Materials [310183630253366]"
+                          type="box">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_403da586ed1c6b0e2468e9be74ee93ac" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Miscellaneous <unitdate>1968-1988</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1968/1988"
+                         type="inclusive">1968-1988</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_9376b346339b6b99e49b51f003a5c063"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_9be8f14b1ecdf43d8145064945cf4552" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Networking Questionnaire <unitdate>1993</unitdate>
-               </unittitle>
+               <unittitle>Networking Questionnaire</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1993/1993">1993</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_ffdb201412522ec485dba4736d009073"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_581386d52853ab30702e0b52e0f272a8" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Newsletters <unitdate>1966-2000</unitdate>
-               </unittitle>
+               <unittitle>Newsletters</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/2000"
+                         type="inclusive">1966-2000</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_3b48bd93f876e563b7e80f1ba9c36109"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2b715b2501503eed5a647c2b6879c521" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Newspaper Clippings <unitdate>1960-1998</unitdate>
-               </unittitle>
+               <unittitle>Newspaper Clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1960/1998"
+                         type="inclusive">1960-1998</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_0538b0982bb11492039390aafb260742"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a1bc6b9cbd5ba279d9702d4df713a3f4" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Photographs <unitdate>1986-1992</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1986/1992"
+                         type="inclusive">1986-1992</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_8b76cf0718e0af1f99913fa8b694b975"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f80a4497960204b50a9823e82c917fa2" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>President's Letters <unitdate>1966-2002</unitdate>
-               </unittitle>
+               <unittitle>President's Letters</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/2002"
+                         type="inclusive">1966-2002</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_7213e1a3eb392fbf1452635a46d1593b"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_46bb5b8f6c2e3861f6f42f0272308c6f" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Presidents: Smith, Ethel <unitdate>1966-1968</unitdate>
-               </unittitle>
+               <unittitle>Presidents: Smith, Ethel</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1966/1968"
+                         type="inclusive">1966-1968</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_55171b8da206aa492ac9f3e63669aaea"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_255d5f07cbdda6868a6ac2183f87f06e" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Program Arrangements <unitdate>1986-1988</unitdate>
-               </unittitle>
+               <unittitle>Program Arrangements</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1986/1988"
+                         type="inclusive">1986-1988</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_3b8d39d6cc8e6c97addc693edec84fb7"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_274c1af06ea7a3ea3b219cec3bdc89c5" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Scholarship Candidates/Alumnae Admissions Committee
-                     <unitdate>1963-1990</unitdate>
-               </unittitle>
+               <unittitle>Scholarship Candidates/Alumnae Admissions Committee</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1963/1990"
+                         type="inclusive">1963-1990</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_798f0dfb08a934c15571907ec556f24f"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6f625f2d9568cae6fbdea9e1848d37c0" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <unittitle>Scrapbook Contents <unitdate>1961-1966</unitdate>
-               </unittitle>
+               <unittitle>Scrapbook Contents</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1961/1966"
+                         type="inclusive">1961-1966</unitdate>
+               <container altrender="Legal document box"
+                          id="aspace_c6e5bccc61e52fd3d5e70e77bd3699c7"
+                          label="Mixed Materials [310183630253374]"
+                          type="box">3</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

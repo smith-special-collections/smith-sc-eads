@@ -1,123 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss91.xml//EN">mnsss91</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss91</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Families Collection, 1853-1980 (bulk 1930-1980)
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by mnsss.</author>
+            <titleproper>Finding Aid to the Families collection <num>SSC.MS.00391</num>
+            </titleproper>
+            <author>Madison White</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura Cutter.
-        <date>2003-06-12</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-01-02 12:29:39 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss91 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:24-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2018-12-14</date>
+            <item>Updated to conform to DACS</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            
-         </publisher>
-         <titleproper encodinganalog="245$a">Families Collection, 1853-1980 (bulk 1930-1980)
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 391
-      </num>
-         <date>Finding aid revised by Kate Weigand, 2001
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>© 2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <unittitle encodinganalog="245$a" label="Title:">Families collection</unittitle><unitdate encodinganalog="245$f" type="inclusive">1853-1980 </unitdate>
-            <unitdate encodinganalog="245$g" type="bulk">1930-1980</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 391</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">4 boxes; 19 volumes</extent>
-            <extent encodinganalog="300$a">(3 linear ft.)</extent>
-         </physdesc>
-                  <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-	  </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Collection contains articles, bibliographies, books, greeting cards, leaflets, newspaper clippings, pamphlets, periodicals, reports, and syllabi addressing "the family," including topics such as homemakers, housework, marriage, unwed mothers, and divorce.  Includes feminist critique of marriage and the family by both well-known feminists and more mainstream writers and journalists. Contains documentation of the changes in American family structures and norms that resulted from the cultural and socio-economic changes of the 1960s and 1970s.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Families collection</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Sophia Smith Collection</corpname>
+         </origination>
+         <unitid>SSC.MS.00391</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">5 boxes</extent>
+            <extent altrender="carrier">(3 linear feet)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   certainty="approximate"
+                   era="ce"
+                   normal="1829/1999"
+                   type="inclusive">1829-1999</unitdate>
+         <unitdate calendar="gregorian" era="ce" normal="1930/1980" type="bulk">1930-1980</unitdate>
+         <abstract id="aspace_4381084e605361fb7efcecb13ebf5299">Collection contains articles, bibliographies, books, greeting cards, leaflets, newspaper clippings, pamphlets, periodicals, reports, and syllabi addressing "the family," including topics such as homemakers, housework, marriage, unwed mothers, and divorce. Includes feminist critique of marriage and the family by both well-known feminists and more mainstream writers and journalists. Contains documentation of the changes in American family structures and norms that resulted from the cultural and socio-economic changes of the 1960s and 1970s.</abstract>
       </did>
-      <scopecontent id="scope">
-         
-        <dao actuate="onLoad" altrender="right" href="http://www.smith.edu/libraries/libs/ssc/eadfiles/ssc6349.jpg" linktype="simple" show="embed">
-<daodesc><p>"Report from the White House Conference  on Families," November 1979</p></daodesc></dao>
- <p> The Families collection contains articles, bibliographies, books, greeting cards, leaflets, newspaper clippings, pamphlets, periodicals, reports, and syllabi addressing a range of topics subsumed under "the family" including homemakers, housework, marriage, unwed mothers, and divorce.  The material spans the period from 1853-1980. There are a few documents from the late nineteenth and early twentieth centuries, including Charlotte Perkins Gilman's 1907 article on motherhood and a 1928 article entitled "Yashee: Motherhood and Babyhood in Soviet Russia." These items reflect the prevailing attitudes of those decades by defining marriage and motherhood as the normal and desirable goals for all women, and defining those who did not pursue marriage and motherhood as maladjusted.</p>
-
-         <p> The majority of the items date from the years 1960-80.  Many of these documents--such as Marvin Sussman's study, The Capacity of U.S. Families in the 1970s to Provide an Appropriate Child-rearing Environment (1973) and the booklet, Eleven Million Teenagers: What Can Be Done about the Epidemic of Adolescent Pregnancies (1976) --reflect the middle-class liberal concerns and anxieties that emerged from national social programs like the Great Society and the War on Poverty.  A great deal of this material presents the feminist critique of marriage and the family as it was articulated by both well known feminists and more mainstream writers and journalists. The collection contains documentation of the changes in American family structures and norms that resulted from the cultural and socio-economic changes that took place during the 1960s and 1970s. It also demonstrates the presence of a small but vocal minority of women who joined organizations such as the Martha Movement to protest women's movement away from traditional definitions of housewife and mother.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The collection is open to research according to the regulations of the Sophia Smith Collection without additional restrictions.</p>  
+      </accessrestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Unknown source. Accession numbers: no accession number, 93S-1, 09S-68. Accessions were received on the following dates: ?-1993, 2009-08-10.</p>  
+      </acqinfo>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Please use the following format when citing materials from this collection:</p>
+         <p>Families Collection, Sophia Smith Collection, SSC-MS-00391, Smith College Special Collections, Northampton, Mass.</p>  
+      </prefercite>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Finding aid revised by Kate Weigand, 2001. Recent additions may not be reflected in the finding aid.</p>  
+      </processinfo>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p> The Families collection contains articles, bibliographies, books, greeting cards, leaflets, newspaper clippings, pamphlets, periodicals, reports, and syllabi addressing a range of topics subsumed under "the family" including homemakers, housework, marriage, unwed mothers, and divorce. The material spans the period from 1853-1980. There are a few documents from the late nineteenth and early twentieth centuries, including Charlotte Perkins Gilman's 1907 article on motherhood and a 1928 article entitled "Yashee: Motherhood and Babyhood in Soviet Russia." These items reflect the prevailing attitudes of those decades by defining marriage and motherhood as the normal and desirable goals for all women, and defining those who did not pursue marriage and motherhood as maladjusted.</p>
+         <p>  The majority of the items date from the years 1960-80. Many of these documents--such as Marvin Sussman's study, The Capacity of U.S. Families in the 1970s to Provide an Appropriate Child-rearing Environment (1973) and the booklet, Eleven Million Teenagers: What Can Be Done about the Epidemic of Adolescent Pregnancies (1976) --reflect the middle-class liberal concerns and anxieties that emerged from national social programs like the Great Society and the War on Poverty. A great deal of this material presents the feminist critique of marriage and the family as it was articulated by both well known feminists and more mainstream writers and journalists. The collection contains documentation of the changes in American family structures and norms that resulted from the cultural and socio-economic changes that took place during the 1960s and 1970s. It also demonstrates the presence of a small but vocal minority of women who joined organizations such as the Martha Movement to protest women's movement away from traditional definitions of housewife and mother.</p>  
       </scopecontent>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The collection is open to research according to the regulations of the Sophia Smith Collection without additional restrictions. </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Permission must be obtained to publish reproductions or quotations beyond "fair use." Copyright to materials created by individuals or organizations may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Families Collection, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <accruals encodinganalog="584" id="admin-accruals">
-            <head>Additions to the Collection</head>
-            <p>Periodic additions to collection are expected and may not be reflected in this record. </p>
-         </accruals>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Materials in this collection were either purchased or given to the Sophia Smith Collection by various donors.
-          </p>
-            </acqinfo>
-            <processinfo id="admin-process">
-               <p>Finding aid revised by Kate Weigand, 2001.  Recent additions may not be reflected in the finding aid. </p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-        
-         <corpname encodinganalog="610" source="lcnaf">National Organization for Women--History</corpname>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Permission must be obtained to publish reproductions or quotations beyond "fair use." Copyright to materials created by individuals or organizations may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights.</p>  
+      </userestrict>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Marriage--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Motherhood--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Family--History--Sources</subject>
@@ -136,322 +126,564 @@
          <subject encodinganalog="650" source="lcsh">Weddings--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women--Psychology--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Working mothers--United States--History--Sources</subject>
-         <persname encodinganalog="600" source="lcnaf">Gilman, Charlotte Perkins, 1860-1935</persname>
-	<corpname encodinganalog="710" source="lcnaf">Sophia Smith Collection</corpname> 
+         <subject encodinganalog="650" source="local_inmagic-collection">Gilman, Charlotte Perkins, 1860-1935</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Homemakers</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Wives</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Mothers</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Feminists</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Pamphlets</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">reports</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Newsletters</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">articles</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Books</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Bibliographies</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Leaflets</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">syllabi</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Greeting cards</genreform>
+         <corpname encodinganalog="610" source="naf">National Organization for Women--History</corpname>
+    
       </controlaccess>
-       <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_dd7ad369a21f31f60a341ba1bbc1d19a" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Bibliographies, <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Bibliographies</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_36f567e5799b1fee6a2b12b3bccbd539"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_03c4dffad129aa6916d39edd4e8adb34"
+                          parent="aspace_36f567e5799b1fee6a2b12b3bccbd539"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_3992f8a769380e561de2f7254220bfb2" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Children,<unitdate> 1979, undated</unitdate>
-               </unittitle>
+               <unittitle>Children</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1979/1979">1979</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_4e480e7addf719b62125ce5f188ba212"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_934940f84381889fabdba1cc7dcb6b76"
+                          parent="aspace_4e480e7addf719b62125ce5f188ba212"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_56cd659386cdfcf95f76c481ac54690d" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Economics, <unitdate>circa 1970s</unitdate>
-               </unittitle>
+               <unittitle>Economics</unittitle>
+               <unitdate calendar="gregorian"
+                         certainty="approximate"
+                         era="ce"
+                         normal="1970/1979"
+                         type="inclusive">1970s</unitdate>
+               <container id="aspace_108cff429c737d744058ae02e8f4d23d"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_c4c3248778ea50803bdf43ccb1acefa5"
+                          parent="aspace_108cff429c737d744058ae02e8f4d23d"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_f58774ed48e09d6fa5d5c7210cadc68e" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Feminist perspectives,<unitdate> 1970-79</unitdate>
-               </unittitle>
+               <unittitle>Feminist perspectives</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1970/1979"
+                         type="inclusive">1970-79</unitdate>
+               <container id="aspace_a18115b5fc3888bfd45db0295dea5e90"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_afda56434cca5e2ca2b94ff0e82459ae"
+                          parent="aspace_a18115b5fc3888bfd45db0295dea5e90"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b68b8f4df8d226724ed43b1c8dd47976" level="file">
             <did>
                <unittitle>Homemakers</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3940622bec889dece0b25769cbc5891f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>General,<unitdate> 1967-77, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1977"
+                            type="inclusive">1967-77</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_350c8f6315af66a02f4f4a6e4f9c36d0"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_30a9705bc8856fed049f170ffe802a20"
+                             parent="aspace_350c8f6315af66a02f4f4a6e4f9c36d0"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1605fbf0a7c5f166ce483b99a2c8de40" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Displaced homemakers,<unitdate> 1979-83, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Displaced homemakers</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1979/1983"
+                            type="inclusive">1979-83</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_36f894eb2cf46d9fc46d5fdd51f3e13e"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_04935f723053dbe94402ac57b104af10"
+                             parent="aspace_36f894eb2cf46d9fc46d5fdd51f3e13e"
+                             type="folder">6</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_99e403794b14d3a718811a264156ac01" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Housework,<unitdate> 1972-80, undated</unitdate>
-               </unittitle>
+               <unittitle>Housework</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1972/1980"
+                         type="inclusive">1972-80</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_33a80da01d24413d291d8073a30b7cff"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_f5b8adc086e48cb9d846d10b9fb4485d"
+                          parent="aspace_33a80da01d24413d291d8073a30b7cff"
+                          type="folder">7</container>
             </did>
-            <note>
+            <odd id="aspace_8e685ef9cc356d39c8d0eeaab8b85627">
+               <head>General</head>
                <p>[See also Jarrett Box 4 for housekeeping aids,WPA photographs, 1938]</p>
-            </note>
+            </odd>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c94db46fb98a550e4a9b41e043594774" level="file">
             <did>
                <unittitle>Marriage, divorce, and desertion</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_55c98b26a9c3c8bd8c655dd95b434b9c" level="file">
                <did>
                   <unittitle>Printed material</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_71aeb9d482c0c8c233bba1af352ee6ab" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">8-9</container>
-                     <unittitle>
-                        <unitdate>1853-1960</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1853/1960"
+                               type="inclusive">1853-1960</unitdate>
+                     <container id="aspace_d8671542ab8848deca00a6036d64e77f"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_b56d2939cde1be21caf71949a4d64e58"
+                                parent="aspace_d8671542ab8848deca00a6036d64e77f"
+                                type="folder">8-9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5e9abe087df4b77ff3fd7d0fcb450d1a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>
-                        <unitdate>1899-1990s, undated</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1899/1999"
+                               type="inclusive">1899-1990s</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_bbf316d7698c3486826cc1505916a5de"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_5aa98ea301d76ffde1df50a52c234653"
+                                parent="aspace_bbf316d7698c3486826cc1505916a5de"
+                                type="folder">1</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8d37256494653964c1ddca4ee328e2ec" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Legal matters,<unitdate> 1973-84, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Legal matters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1973/1984"
+                            type="inclusive">1973-84</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_2374aa387b8a8d7e0a1df53bf275ef86"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_ba38ba2b96abe89180f86191fd50faa5"
+                             parent="aspace_2374aa387b8a8d7e0a1df53bf275ef86"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4182c584ef624fc19cb6360ed8f3d67" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Newsletters,<unitdate> 1974-77</unitdate>
-                  </unittitle>
+                  <unittitle>Newsletters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1974/1977"
+                            type="inclusive">1974-77</unitdate>
+                  <container id="aspace_481b433d05ae405c3b806991e0ca5e6a"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_f30e9103c1140fda519fe8085e0e2bcf"
+                             parent="aspace_481b433d05ae405c3b806991e0ca5e6a"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0949e7286eeb84fd506d9294a31f97f5" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Newspaper clippings,<unitdate> 1970s, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Newspaper clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1979"
+                            type="inclusive">1970s</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_4324f7d05dae2235dd820c40bb0cd394"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_ce8a44ae86ed69c8089f39a6f190e349"
+                             parent="aspace_4324f7d05dae2235dd820c40bb0cd394"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d2874a546e0a658b4dcb7c55b31e10ce" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Real Women, Real Lives,<unitdate> 1978</unitdate>
-                  </unittitle>
+                  <unittitle>Real Women, Real Lives</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
+                  <container id="aspace_06c7e2e0639061d67b9092de87054e96"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_59cc2375c2a6528e681625d68176ef7d"
+                             parent="aspace_06c7e2e0639061d67b9092de87054e96"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8b60a1c610a543995c8030c4a5744029" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Women as wives,<unitdate> 1895-1979, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Women as wives</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1895/1979"
+                            type="inclusive">1895-1979</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_cb25014cc061f5ef7ff589cd4e6afa30"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_930773884a95a5548b12b4cb1ec4902d"
+                             parent="aspace_cb25014cc061f5ef7ff589cd4e6afa30"
+                             type="folder">6</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_93abd3e1ae7abca68dd06a777d2afc76" level="file">
             <did>
                <unittitle>Motherhood</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_64a36ec5c4784cf0480ef779328cb0a6" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>General,<unitdate> 1899-1970s, undated</unitdate>
-                  </unittitle>
+                  <unittitle>General</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1899/1979"
+                            type="inclusive">1899-1970s</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_ef336e471b0a5b58fb302d78a54b9583"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_fb93594201c3269c23c1a56ae13f4472"
+                             parent="aspace_ef336e471b0a5b58fb302d78a54b9583"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_79134b8511c8bab2670f46db886e5ba4" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Mother at Home,<unitdate> 1833</unitdate>
-                  </unittitle>
+                  <unittitle>Mother at Home</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1833/1833">1833</unitdate>
+                  <container id="aspace_efc0a4e2fc775c307d519086419e4c4a"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_393325a076a0efff44ce9e1ae4bb82ae"
+                             parent="aspace_efc0a4e2fc775c307d519086419e4c4a"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2780dcb94b3241fc31e6cd01f5d0b87a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Newspaper clippings,<unitdate> 1895-1970s, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Newspaper clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1895/1979"
+                            type="inclusive">1895-1970s</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_64cccb67a0cb1a3b82c66f8fff3eb42e"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_5af61e5fbb2ebf7e1ab8dc389205f906"
+                             parent="aspace_64cccb67a0cb1a3b82c66f8fff3eb42e"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_afd1fc2fc1686b65af3e6aece796a9a4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Unwed mothers,<unitdate> 1970s, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Unwed mothers</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1970/1979"
+                            type="inclusive">1970s</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_a950164fce199bcee2cce90705f9bacb"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_9608e0d5acd154676e689d27dae746fa"
+                             parent="aspace_a950164fce199bcee2cce90705f9bacb"
+                             type="folder">1</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5c4ecaeb52463072c6c2f8162a957b39" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>White House Conference on Families,<unitdate> 1980</unitdate>
-               </unittitle>
+               <unittitle>White House Conference on Families</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1980/1980">1980</unitdate>
+               <container id="aspace_f23a5872356edbfa4a00237cbac1940a"
+                          label="Mixed Materials"
+                          type="box">3</container>
+               <container id="aspace_1468600d7f34d7b9f93b6feffe42be67"
+                          parent="aspace_f23a5872356edbfa4a00237cbac1940a"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_b706caeeaeef7ad5e4485ce16ba09af4" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Women's Conference, audio recordings,<unitdate> 1974</unitdate>
-               </unittitle>
+               <unittitle>Women's Conference, audio recordings</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+               <container id="aspace_33e64b78b03875c035e7a66d131741dd"
+                          label="Mixed Materials"
+                          type="box">3</container>
+               <container id="aspace_65ae5b68d2108dfedcba28417f9efaa2"
+                          parent="aspace_33e64b78b03875c035e7a66d131741dd"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_8d4080bc24669b2ff640d4d067640a72" level="file">
             <did>
-               <container type="box" label="mixed materials">3</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Miscellaneous,<unitdate> 1969-79</unitdate>
-               </unittitle>
+               <unittitle>Miscellaneous</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1969/1979"
+                         type="inclusive">1969-79</unitdate>
+               <container id="aspace_b2129e681d18de4162551fc4abdf4517"
+                          label="Mixed Materials"
+                          type="box">3</container>
+               <container id="aspace_c7165c68518dd3b6ec42cedf2bebf017"
+                          parent="aspace_b2129e681d18de4162551fc4abdf4517"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_339fa146eadd7267c96c47f4bfde259a" level="file">
             <did>
-               <container type="box" label="mixed materials">4</container>
-               <unittitle>Baby book kept by Jeanette Hellman Gerber for her two sons, David Allison and Kenneth Edward Gerber,<unitdate> 1944-1950</unitdate>
-               </unittitle>
+               <unittitle>Baby book kept by Jeanette Hellman Gerber for her two sons, David Allison and Kenneth Edward Gerber</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1944/1950"
+                         type="inclusive">1944-1950</unitdate>
+               <container id="aspace_973fec27ee4b38ef730237f7ae600bb0"
+                          label="Mixed Materials"
+                          type="box">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_cd15e15aa479ebbdb159b119771f6538" level="file">
             <did>
                <unittitle>Books on shelf:</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_87aa327648d41c8e9db74a79c3c35816" level="file">
                <did>
-                  <unittitle>Astell, Mary, <title>Some Reflections upon Marriage</title>,<unitdate> 1970</unitdate>
+                  <unittitle>Astell, Mary, <title>Some Reflections upon Marriage</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_ae7bfa0aa7ca12c33dbe5a9b34953d6e"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c09404f406f7f3ac7044fc40cb60a445" level="file">
                <did>
-                  <unittitle>Carter, Mary Elizabeth, <title>House and Home</title>,<unitdate> 1904</unitdate>
+                  <unittitle>Carter, Mary Elizabeth, <title>House and Home</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_b331abe369ebb37799c69c62c346182b"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6b93164382e65e72c5405f6152850661" level="file">
                <did>
-                  <unittitle>Chavasse, Pye Henry, M.D., Wife and Mother,<unitdate> 1888</unitdate>
-                  </unittitle>
+                  <unittitle>Chavasse, Pye Henry, M.D., Wife and Mother</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_4662b52228ffc4134d61567fb3e49d7a"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_670397d49dba935436e67aa7fb74291c" level="file">
                <did>
-                  <unittitle>Child, Lydia Maria, <title>The Frugal Housewife</title>,<unitdate> 1830</unitdate>
+                  <unittitle>Child, Lydia Maria, <title>The Frugal Housewife</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1830/1830">1830</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_9cee01048bdfaa5f2bd2c24aad6287bb"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cd1085cef3f0c59fb09803c0bf14ebee" level="file">
                <did>
                   <unittitle>Dike, Rev. Samuel W., <title>Special Issues of the National League for the Protection of the Family for 1909</title>
                   </unittitle>
+                  <container altrender="Record carton"
+                             id="aspace_bb217a86592b8ad2fe898fb796e6ad20"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f110e73fcf995fe1ec8b7ff12fe1cad5" level="file">
                <did>
-                  <unittitle>Dike, Rev. Samuel W., <title>Some Fundamentals of the Divorce Question</title>,<unitdate> 1909</unitdate>
+                  <unittitle>Dike, Rev. Samuel W., <title>Some Fundamentals of the Divorce Question</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_7520ccaa762935a67fa06491ca2bb4a6"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cf9cd39d32a01988017d0873a8805792" level="file">
                <did>
-                  <unittitle>Gilman, Charlotte Perkins, <title>Concerning Children</title>,<unitdate> 1900</unitdate>
+                  <unittitle>Gilman, Charlotte Perkins, <title>Concerning Children</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1900/1900">1900</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_aa115b1246b3dfcc4517e4b3cb1f7d35"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4120e6692e12dfe25399ea1be77fcc5d" level="file">
                <did>
-                  <unittitle>Kerber, Judith,  <title>Families</title>,<unitdate> 1978</unitdate>
+                  <unittitle>Kerber, Judith, <title>Families</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1978/1978">1978</unitdate>
                </did>
             </c02>
-            <c02 level="file">	    
+            <c02 id="aspace_4656831c093658da7e6ecabdbd2895fa" level="file">
                <did>
                   <unittitle>
-                     <title>Look</title>, special issue on "The American Family," <unitdate>January 26, 1971</unitdate>
-                  </unittitle>
+                     <title>Look</title>, special issue on "The American Family,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1971-01-26/1971-01-26">January 26, 1971</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_0fc16048610b8ef7f1e9749a63da5a27"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_22a4721aec0b8293cef696a4e2a84350" level="file">
                <did>
-                  <unittitle>Longshore-Potts, Anna M., <title>Love, Courtship, and Marriage</title>,<unitdate> 1891</unitdate>
+                  <unittitle>Longshore-Potts, Anna M., <title>Love, Courtship, and Marriage</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_033ce1a71361eccf8a8dbe14d7b16958"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d442bd5cb5649ff20ec597a0affb5868" level="file">
                <did>
-                  <unittitle>Miles, Alfred H., ed., <title>The Household Oracle</title>, <unitdate>circa 1898</unitdate>
+                  <unittitle>Miles, Alfred H., ed., <title>The Household Oracle</title>
                   </unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1898/1898">1898</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_2b1d1e864e0b90d27cabb3046d050c87"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2681c201ba32dec25fb817978945821b" level="file">
                <did>
-                  <unittitle>Parkes, Mrs. William, <title>Domestic Duties</title>,<unitdate> 1829</unitdate>
+                  <unittitle>Parkes, Mrs. William, <title>Domestic Duties</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1829/1829">1829</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_199709bddafab9c51718d28f1450cad5"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_14e63c66675330ae4e66d968b6a19cd3" level="file">
                <did>
                   <unittitle>Pierson, Emma Belle D., <title>When Things Go Wrong: A Harried Housewife's Helper</title>
-                     <unitdate>1912</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1912/1912">1912</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_b6013d0067a8d66767aa22be6f63eeb9"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2d4de06e5f99e176811484dcc69fbfb5" level="file">
                <did>
-                  <unittitle>Sangster, Margaret, <title>The Queenly Mother</title>,<unitdate> 1907</unitdate>
+                  <unittitle>Sangster, Margaret, <title>The Queenly Mother</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_9a54c773ff29962565e221bd5408ffa1"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_157777f20523d9ba28a8f8df4e6bf170" level="file">
                <did>
-                  <unittitle>Smith, Stevenson, Madge W. Wilkinson, and Louisa C. Wagoner, <title>Summary of the Laws of Several States Governing Marriage and Divorce of the Feebleminded...</title>,<unitdate> 1914</unitdate>
+                  <unittitle>Smith, Stevenson, Madge W. Wilkinson, and Louisa C. Wagoner, <title>Summary of the Laws of Several States Governing Marriage and Divorce of the Feebleminded...</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_262ee029054cf97af47e4b38ecfe12ba"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_57a681f78d4ab2a936453aa1ec0f1200" level="file">
                <did>
-                  <unittitle>Soyer, Alexis, <title>The Modern Housewife or Ménagerè</title>,<unitdate> 1849</unitdate>
-                  </unittitle>
+                  <unittitle>Soyer, Alexis, <title>The Modern Housewife or Ménagerè</title>,</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1849/1849">1849</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_201336dce329b1b44e15a8d748830c62"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c9442efbcdad4e7068f3b754ec249a88" level="file">
                <did>
-                  <unittitle>Van de Velde, T.H., <title>Sex Hostility in Marriage</title>,<unitdate> 1931</unitdate>
+                  <unittitle>Van de Velde, T.H., <title>Sex Hostility in Marriage</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_d418ec69304bde01ca73778442e2277f"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_658e013616cdbebd98c34808f2932440" level="file">
                <did>
-                  <unittitle><title render="italic">White House Conference, 1930: Addresses and Abstracts of Committee Reports of the White House Conference on Child Health and Protection</title>, called by President Herbert Hoover,<unitdate> 1931</unitdate>
-                  </unittitle>
+                  <unittitle>
+                     <title render="italic">White House Conference, 1930: Addresses and Abstracts of Committee Reports of the White House Conference on Child Health and Protection</title>, called by President Herbert Hoover</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <container altrender="Record carton"
+                             id="aspace_ffb1d1c2a3e0b7ca84682da39522f7cf"
+                             label="Mixed Materials"
+                             type="box">5</container>
                </did>
             </c02>
          </c01>

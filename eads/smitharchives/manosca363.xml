@@ -1,673 +1,904 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca363.xml//EN">manosca363</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca363</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Vocational Office, 1879 - 1972</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Dianne J. Wieland, Student
-               Assistant. .</author>
+            <titleproper>Finding aid to the Vocational Office records <num>CA.MS.00363</num>
+            </titleproper>
+            <author>Finding aid prepared by Dianne J. Wieland, Student Assistant.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2014</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-09-09">2014-09-09</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-13 09:39:32 -0500</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-12-06</date>
+            <item>Finding aid updated as part of the College Archives Survey</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Smith College. Vocational
-               Office.</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Vocational Office Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1879 - 1972</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 34.07</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">61 boxes</extent>
-            <extent encodinganalog="300$a">( 25 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> The collection is comprised of general
-            office records, fellowship records, recommendations to/for individual students, World
-            War II service opportunity referrals, and Vocational Committee Board of Counselors
-            surveys, questionnaires, and notes. </abstract>
+         <unittitle>Vocational Office records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Smith College. Vocational Office.</corpname>
+         </origination>
+         <unitid>CA.MS.00363</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">25.625 linear feet</extent>
+            <extent altrender="carrier">(62 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1879/1981"
+                   type="inclusive">1879-1981</unitdate>
+         <abstract id="aspace_880ee143fdfb269d9765c85f8aba2e49">The first career center at Smith began as the Teachers Registration Bureau. It has gone through many iterations since this time and currently holds the title of the Lazarus Center for Career Development. The collection is comprised of general office records, fellowship records, recommendations to/for individual students, World War II service opportunity referrals, and Vocational Committee Board of Counselors surveys, questionnaires, and notes.</abstract>
       </did>
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The first career center at Smith began as the Teachers Registration Bureau "in which
-            alumnae who are teachers or who expect to teach may be registered with full particulars
-            as to their specialties, experience, etc."</p>
-         <p>In 1917, it was renamed the Appointment Bureau and put under the direction of Helen
-            Wright (Class of 1905). To support the Appointment Bureau, the College also established
-            the Office of the Educational Consultant in cooperation with the Alumnae Association.
-            Members of the Office of the Educational Consultant visited Smith alumnae at their
-            places of employment and developed programming to cultivate students' interest in
-            teaching and academic administration. </p>
-         <p>In 1925, the office went through a complete reorganization and expansion, and by 1927 it
-            was known as the Personnel Office. The Personnel Office collected data pertaining to the
-            training, academic standing, and the physical appearance of students. For a dollar,
-            seniors could register with the office so that a dossier of complete information would
-            be given to employers including qualifications, employment history, and faculty
-            recommendations. The office also offered academic assessment and advising for students
-            by addressing needs, charting progress and development, and providing post-graduate
-            mentorship. The expansion of the Personnel Office and greater student enrollment figures
-            allowed for students to take part in programs outside the field of education. </p>
-         <p>In 1933, the Personnel Office was discontinued due to budget cuts. However, with 1,824
-            students registered, the work was continued under the direction of Marjory P. Nield
-            (Class of 1921) and the name was, again, changed to the Vocational Office. The
-            Vocational Office continued to provide guidance but placed greater emphasis on job
-            placement. During World War II (1939-1945), the office responded to the demands of
-            government agencies and facilitated placement of students into the armed services in
-            addition to their usual programs.</p>
-         <p>In the mid 70's the Vocational Office was reorganized into the Career Development
-            Office. Today, the Lazarus Center for Career Development provides preparation in
-            undergraduate and post-graduate opportunities as well as individual advising, access to
-            resources, alumnae networking opportunities, and more.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The first career center at Smith began as the Teachers Registration Bureau "in which alumnae who are teachers or who expect to teach may be registered with full particulars as to their specialties, experience, etc."</p>
+         <p> In 1917, it was renamed the Appointment Bureau and put under the direction of Helen Wright (Class of 1905). To support the Appointment Bureau, the College also established the Office of the Educational Consultant in cooperation with the Alumnae Association. Members of the Office of the Educational Consultant visited Smith alumnae at their places of employment and developed programming to cultivate students' interest in teaching and academic administration. </p>
+         <p> In 1925, the office went through a complete reorganization and expansion, and by 1927 it was known as the Personnel Office. The Personnel Office collected data pertaining to the training, academic standing, and the physical appearance of students. For a dollar, seniors could register with the office so that a dossier of complete information would be given to employers including qualifications, employment history, and faculty recommendations. The office also offered academic assessment and advising for students by addressing needs, charting progress and development, and providing post-graduate mentorship. The expansion of the Personnel Office and greater student enrollment figures allowed for students to take part in programs outside the field of education. </p>
+         <p> In 1933, the Personnel Office was discontinued due to budget cuts. However, with 1,824 students registered, the work was continued under the direction of Marjory P. Nield (Class of 1921) and the name was, again, changed to the Vocational Office. The Vocational Office continued to provide guidance but placed greater emphasis on job placement. During World War II (1939-1945), the office responded to the demands of government agencies and facilitated placement of students into the armed services in addition to their usual programs.</p>
+         <p> In the mid 70's the Vocational Office was reorganized into the Career Development Office. Today, the Lazarus Center for Career Development provides preparation in undergraduate and post-graduate opportunities as well as individual advising, access to resources, alumnae networking opportunities, and more.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The files are organized into 61 boxes. Boxes 1 through 46 are arranged chronologically
-            by class year. Boxes 47 through 61 are arranged alphabetically by subject; folders are
-            arranged chronologically. The collection is divided into three series.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The collection includes information about alumnae post-graduation. It also holds correspondence, fellowship applications, financial aid surveys, teachers' agencies information, World War II employment information, reports on classes, and questionnaires.</p>  
       </scopecontent>
-
-      <arrangement encodinganalog="351$a" id="scope-org">
-
-         <p>This collection is organized into three series:</p>
-         <list>
-            <item> Class Files, 1879 - 1972 </item>
-            <item> General Files, 1922 - 1959 </item>
-            <item> World War II, 1939 - 1945 </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>Boxes 1 through 46 are arranged chronologically by class year. Boxes 47 through 61 are arranged alphabetically by subject; folders are arranged chronologically.</p>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>Class Files, 1879 - 1972</item>
+            <item>General Files, 1922 - 1959</item>
+            <item>World War II, 1939 - 1945</item>
          </list>
       </arrangement>
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>Records are open for research according to the regulations of the Smith College Archives
-            except where noted in the finding aid. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>Materials in the Smith College Archives are open for use, with the following exceptions: "Office Files," files of records created for the use of the administrative unit that created them, are closed to research for a period of 10 years following their creation. Student academic records, student disciplinary records, and all records containing FERPA-covered student information are closed during the lifetime of the student. Student records created 100 years or more ago are assumed to be about deceased students. In all cases, the College Archives will continue to provide public access to materials that were intended to be public at the time of their creation (press releases, publications, etc.)</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Smith College Vocational Office, 1879 - 1972, Box #, Smith College Archives</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Vocational Office records, Smith College Archives, CA-MS-00363, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The records of the Vocational Office, 1879 - 1972 were donated over a period of time to
-            the Smith College Archives from a variety of sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The records of the Vocational Office were donated over a period of time to the Smith College Archives from a variety of sources.</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Processed by: Dianne J. Wieland, AC, Madison White, Class of 2016, and Elizabeth Carron,
-            Archivist - August, 2014 </p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by: Dianne J. Wieland, AC, Madison White, Class of 2016, and Elizabeth Carron, Archivist - August, 2014</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <corpname encodinganalog="610" source="lcsh">Smith College. Career Development
-            Office.</corpname>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Vocational Guidance -- United States -- History</subject>
+         <subject encodinganalog="650" source="lcsh">Women -- Education -- Massachusetts -- Northampton</subject>
+         <subject encodinganalog="650" source="lcsh">World War, 1939 - 1945 -- Participation, Female</subject>
+         <subject encodinganalog="650" source="lcsh">Vocational guidance -- Massachusetts -- Northampton.</subject>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Career Development Office.</corpname>
          <corpname encodinganalog="610" source="lcsh">Smith College. Vocational Office.</corpname>
-         <subject encodinganalog="650" source="lcsh">Vocational Guidance -- United States --
-            History</subject>
-         <subject encodinganalog="650" source="lcsh">Women -- Education -- Massachusetts --
-            Northampton</subject>
-         <subject encodinganalog="650" source="lcsh">World War, 1939 - 1945 -- Participation,
-            Female</subject>
          <corpname encodinganalog="610" source="lcsh">Smith College. Appointment Bureau.</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College. Personnel Office. Placement
-            Division.</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College -- History --
-            Sources.</corpname>
-         <subject encodinganalog="650" source="lcsh">Vocational guidance -- Massachusetts --
-            Northampton.</subject>
-         <corpname encodinganalog="610" source="lcsh">Smith College. Personnel Office. Placement
-            Division.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Personnel Office. Placement Division.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College -- History -- Sources.</corpname>
+    
       </controlaccess>
-      <!-- end controlled access terms -->
-
-      <!-- Enter Series descriptions -->
-      <dsc type="analyticover">
-
-         <c01 level="series">
-            <did>
-               <unittitle>Class Files <unitdate> 1879 - 1972</unitdate></unittitle>
-            </did>
-            <scopecontent>
-               <p>Includes qualifications, employment history, and faculty recommendations for
-                  students from the Class of 1879 though the Class of 1971, as well as deceased
-                  alumnae recommendation files. </p>
-            </scopecontent>
-         </c01>
-
-
-         <c01 level="series">
-            <did>
-               <unittitle>General Files <unitdate>1922 - 1959</unitdate></unittitle>
-            </did>
-
-            <scopecontent>
-               <p>Includes general office files as well as records on fellowship applicants,
-                  financial aid surveys, program assessment, and records from the Board of
-                  Counselors Vocation Committee.</p>
-            </scopecontent>
-         </c01>
-
-
-         <c01 level="series">
-            <did>
-               <unittitle>World War II <unitdate>1939 - 1945</unitdate></unittitle>
-            </did>
-
-            <scopecontent>
-
-               <p>Contains records from the Committee Boards, the War Department, the Women's
-                  Division and information on service opportunities during World War II. </p>
-            </scopecontent>
-         </c01>
-      </dsc>
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>Series I: Class Files</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1879/1972"
+                         type="inclusive">1879-1972</unitdate>
             </did>
-
-            <c02 level="file">
+            <scopecontent id="aspace_98e9bca898736bf4366a81280d09b3e7">
+               <head>Scope and Contents</head>
+               <p>Includes qualifications, employment history, and faculty recommendations for students from the Class of 1879 though the Class of 1971, as well as deceased alumnae recommendation files.</p>
+            </scopecontent>
+            <c02 id="aspace_a67cee017e70219b43fc5b1ce0dd3856" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>1879 - 1896</unittitle>
-                  <unitdate>1879 - 1896</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1879/1896"
+                            type="inclusive">1879 - 1896</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_9073ee95d1f4be7f3a245e6b0d3d0602"
+                             label="Mixed Materials [310183630253440]"
+                             type="box">1</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_80ae8b7e210d57a070ecf5fca0048080" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <unittitle>1897 - 1900</unittitle>
-                  <unitdate>1897 - 1900</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1897/1900"
+                            type="inclusive">1897 - 1900</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b34c40be719428e36b54d42c0a8e87c4"
+                             label="Mixed Materials [310183630253457]"
+                             type="box">2</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_cebed4906fc929b6d33e08ad326095dc" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <unittitle>1901 - 1902[A-P]</unittitle>
-                  <unitdate>1901 - 1902</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1901/1902"
+                            type="inclusive">1901 - 1902 [A-P]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_523a3c0e99188a4f8901e9f3cd7d1c2d"
+                             label="Mixed Materials [310183630253465]"
+                             type="box">3</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_a83ea0d3cc8758a8588deaaea51c4393" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <unittitle>1902[S-Y] - 1903</unittitle>
-                  <unitdate>1902 - 1903</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1902/1903"
+                            type="inclusive">1902 [S-Y] - 1903</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_02816d8bc5c73f6d6ed7f1e78bab8918"
+                             label="Mixed Materials [310183630253473]"
+                             type="box">4</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_1f1f6385982d09d0b34c733a7fdb8eba" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <unittitle>1904 - 1905[A-M]</unittitle>
-                  <unitdate>1904</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1904/1905"
+                            type="inclusive">1904 - 1905 [A-M]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_819e31722436636b2ef7632e7f90d1e3"
+                             label="Mixed Materials [310183630253481]"
+                             type="box">5</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_5729bd54540194521fc75ff185e9809a" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <unittitle>1905[N-Z] - 1906</unittitle>
-                  <unitdate>1905 - 1906</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1905/1906"
+                            type="inclusive">1905 [N-Z] - 1906</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4162153eb593c11f39fc5da6bd9a17ab"
+                             label="Mixed Materials [310183630253499]"
+                             type="box">6</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_fb29dc4ae9435d4f613d26c7821762d9" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <unittitle>1907</unittitle>
-                  <unitdate>1907</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1907/1907">1907</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a3e11c6643a3cf88a36a566545ffc876"
+                             label="Mixed Materials [310183630253507]"
+                             type="box">7</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_5a6bd04dc79d862e422fc58e557ad297" level="file">
                <did>
-                  <container type="box" label="mixed materials">8</container>
-                  <unittitle>1908[A-H]</unittitle>
-                  <unitdate>1908</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908 [A-H]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93645d47f0f0f5d0d83966b846fa6c6e"
+                             label="Mixed Materials [310183630253515]"
+                             type="box">8</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_6630e8b6a9ba0e03696e84566e6648e4" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <unittitle>1908[I-Z]</unittitle>
-                  <unitdate>1908</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1908/1908">1908 [I-Z]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e012fe885b82691d46bb9002767f63a7"
+                             label="Mixed Materials [310183630253523]"
+                             type="box">9</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_ae3b0236bde40eb181f4cdec98f10100" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <unittitle>1909 </unittitle>
-                  <unitdate>1909</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1909/1909">1909</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_23e81ba061e091b9b41bc85ba662c528"
+                             label="Mixed Materials [310183630253531]"
+                             type="box">10</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_d564b87c31a8bc950dc0e3ff63e8a026" level="file">
                <did>
-                  <container type="box" label="mixed materials">11</container>
-                  <unittitle>1910[A-R]</unittitle>
-                  <unitdate>1910</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910 [A-R]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ec36c889ccd2c13e9789f0f0aefc9436"
+                             label="Mixed Materials [310183630253549]"
+                             type="box">11</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_1057655292ddca69bc927618ddd08197" level="file">
                <did>
-                  <container type="box" label="mixed materials">12</container>
-                  <unittitle>1910[S-Z]</unittitle>
-                  <unitdate>1910</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1910/1910">1910 [S-Z]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c7ee6dd6ca3e2a3142a4a30dfdf35b9d"
+                             label="Mixed Materials [310183630253556]"
+                             type="box">12</container>
                </did>
             </c02>
-
-            <c02 level="file">
+            <c02 id="aspace_36479928381bf9c772a0f906080bf7f7" level="file">
                <did>
-                  <container type="box" label="mixed materials">13</container>
-                  <unittitle>1912 - 1913[A-K]</unittitle>
-                  <unitdate>1912 - 1913</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1912/1913"
+                            type="inclusive">1912 - 1913 [A-K]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_14507f02ec87b71031b09962bbd83123"
+                             label="Mixed Materials [310183630253564]"
+                             type="box">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_60099f764daaccb06c1a4b0cb85ea5cc" level="file">
                <did>
-                  <container type="box" label="mixed materials">14</container>
-                  <unittitle>1913[K-Z] </unittitle>
-                  <unitdate>1913</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913 [K-Z]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8e966e2399003d3c727fbfbc18360cd6"
+                             label="Mixed Materials [310183630253572]"
+                             type="box">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c322cac5972f793f2a8dfdf77d3966a4" level="file">
                <did>
-                  <container type="box" label="mixed materials">15</container>
-                  <unittitle>1914[A-N] </unittitle>
-                  <unitdate>1914</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914 [A-N]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_77e1a4a94b240b564378ef890a6fcb24"
+                             label="Mixed Materials [310183630253580]"
+                             type="box">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a9d8a3986660ee47949a1082ae670c74" level="file">
                <did>
-                  <container type="box" label="mixed materials">16</container>
-                  <unittitle>1914[O-W] - 1915[A-L] </unittitle>
-                  <unitdate>1914 - 1915</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1914/1915"
+                            type="inclusive">1914 [O-W] - 1915 [A-L]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_003839a042338da77f5cb310acbbb5a1"
+                             label="Mixed Materials [310183630253598]"
+                             type="box">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ded6f33fd736b4fd7220e394a8499350" level="file">
                <did>
-                  <container type="box" label="mixed materials">17</container>
-                  <unittitle>1915[M-Z]</unittitle>
-                  <unitdate>1915</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915 [M-Z]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4c985d9aad3f7ce92ff8a8de35bd7b02"
+                             label="Mixed Materials [310183630253606]"
+                             type="box">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a86d2cea37158836089f1f689ba3ae67" level="file">
                <did>
-                  <container type="box" label="mixed materials">18</container>
-                  <unittitle>1916 </unittitle>
-                  <unitdate>1916</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1916/1916">1916</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_21c72a33ffdb8e6b628bf1964695b295"
+                             label="Mixed Materials [310183630253630]"
+                             type="box">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4fac7c0357d559d471bedb0a8ff91956" level="file">
                <did>
-                  <container type="box" label="mixed materials">19</container>
-                  <unittitle>1917[A-M] </unittitle>
-                  <unitdate>1917</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917 [A-M]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ae59d8ae4a3e54e0aa32cd6b7df55d72"
+                             label="Mixed Materials [310183630253648]"
+                             type="box">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4c66257e8f50a2c8c2fbfe2debaaa7e6" level="file">
                <did>
-                  <container type="box" label="mixed materials">20</container>
-                  <unittitle> 1917[N-Z] - 1918[A-L] </unittitle>
-                  <unitdate>1917-1918</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1918"
+                            type="inclusive">1917 [N-Z] -1918 [A-L]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_46b68127100062b9ea94deea8a24db37"
+                             label="Mixed Materials [310183630253614]"
+                             type="box">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_33d25a05442eeb7c52e579088986b021" level="file">
                <did>
-                  <container type="box" label="mixed materials">21</container>
-                  <unittitle>1918[M-Z] </unittitle>
-                  <unitdate>1918</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1918/1918">1918 [M-Z]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_428979278196f213160084e932630bff"
+                             label="Mixed Materials [310183630253622]"
+                             type="box">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_893491c63a71e5df3ad38a3555a7359a" level="file">
                <did>
-                  <container type="box" label="mixed materials">22</container>
-                  <unittitle>1919[A-Mc] </unittitle>
-                  <unitdate>1919</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919 [A-Mc]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b1f76d147cd666ed2ebadb1fe7e1ebd7"
+                             label="Mixed Materials [310183630253655]"
+                             type="box">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d8fa2d70c47b965e538579bc72029cab" level="file">
                <did>
-                  <container type="box" label="mixed materials">23</container>
-                  <unittitle>1919[Ma-Wh] </unittitle>
-                  <unitdate>1919</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919 [Ma-Wh]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_06085861b0b79de0baa261ea1035aac4"
+                             label="Mixed Materials [310183630253663]"
+                             type="box">23</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d499cff87b061e4bbcdbc8d3efe34d8a" level="file">
                <did>
-                  <container type="box" label="mixed materials">24</container>
-                  <unittitle>1919[Wo-Z] - 1920[A-L] </unittitle>
-                  <unitdate>1919 -1920</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1919/1920"
+                            type="inclusive">1919 [Wo-Z] -1920 [A-L]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ebdab7fcc4ca3790446fd3863aa84490"
+                             label="Mixed Materials [310183630253671]"
+                             type="box">24</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b527f2cb78c1074aab08f21916c5320f" level="file">
                <did>
-                  <container type="box" label="mixed materials">25</container>
-                  <unittitle>1920[M-S] - 1921[B] </unittitle>
-                  <unitdate>1920 -1921</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1920/1921"
+                            type="inclusive">1920 [M-S] -1921[B]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a4118b1d4eb123847fb6c88a4698b9fe"
+                             label="Mixed Materials [310183630253689]"
+                             type="box">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_051cae2ca3a224d398194a6a5b06bd7e" level="file">
                <did>
-                  <container type="box" label="mixed materials">26</container>
-                  <unittitle>1921[C-K]</unittitle>
-                  <unitdate>1921</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1921/1921">1921 [C-K]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_ac5131e4092d7a54ddb8af79033a4420"
+                             label="Mixed Materials [310183630253697]"
+                             type="box">26</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_610235ae33928e8a15656803067c69c6" level="file">
                <did>
-                  <container type="box" label="mixed materials">27</container>
-                  <unittitle>1921[L-M] </unittitle>
-                  <unitdate>1921</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1921/1921">1921 [L-M]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_139cc98ac56a85c6f1b9a33fab63debf"
+                             label="Mixed Materials [310183630253705]"
+                             type="box">27</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e2c3770bbe3f8817a6122cdd1d17b64e" level="file">
                <did>
-                  <container type="box" label="mixed materials">28</container>
-                  <unittitle>1921[N-P] - 1922 [A-I] </unittitle>
-                  <unitdate>1921 -1922</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1921/1922"
+                            type="inclusive">1921 [N-P] -1922 [A-I]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_62bb54bacb8b59ebad37162d978ac0e8"
+                             label="Mixed Materials [310183630253713]"
+                             type="box">28</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b123c7b92f8546e832a6e9936d9688dc" level="file">
                <did>
-                  <container type="box" label="mixed materials">29</container>
-                  <unittitle>1922[J-Li]</unittitle>
-                  <unitdate>1922</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922 [J-Li]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b27fe752121cb3c73a5546a6b83aabbd"
+                             label="Mixed Materials [310183630253721]"
+                             type="box">29</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_87345b452119be0d19f2ea2237f92d7b" level="file">
                <did>
-                  <container type="box" label="mixed materials">30</container>
-                  <unittitle>1922[Lo-N] </unittitle>
-                  <unitdate>1922</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1922/1922">1922 [Lo-N]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_76b37068cd05d819479ca4d117848729"
+                             label="Mixed Materials [310183630253739]"
+                             type="box">30</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4b00eff7b2b9f11ed326240ce8d2576" level="file">
                <did>
-                  <container type="box" label="mixed materials">31</container>
-                  <unittitle>1922[O-P] - 1923[C-K] </unittitle>
-                  <unitdate>1922-1923</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1923"
+                            type="inclusive">1922 [O-P] -1923 [C-K]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_0df5f7abcba84c012ba6c7180cd32dd5"
+                             label="Mixed Materials [310183630253747]"
+                             type="box">31</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fdabf76433eba64f639ca47c1390b38f" level="file">
                <did>
-                  <container type="box" label="mixed materials">32</container>
-                  <unittitle>1923[L-N] </unittitle>
-                  <unitdate>1923</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1923/1923">1923 [L-N]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_2b2cab036c6bb4874e3bcafff744f113"
+                             label="Mixed Materials [310183630253754]"
+                             type="box">32</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f614bd3359381976a429f19c143c6290" level="file">
                <did>
-                  <container type="box" label="mixed materials">33</container>
-                  <unittitle>1923[O-P] - 1924[A-K] </unittitle>
-                  <unitdate>1923-1924</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1923/1924"
+                            type="inclusive">1923 [O-P] -1924 [A-K]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_065c0f2d2bf2d7bad2bde341bffdcda0"
+                             label="Mixed Materials [310183630253762]"
+                             type="box">33</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7cf851ba38bfe017b81bfc986fdc1585" level="file">
                <did>
-                  <container type="box" label="mixed materials">34</container>
-                  <unittitle>1924 [L-Mi] </unittitle>
-                  <unitdate>1924</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1924/1924">1924 [L-Mi]</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a585fc4a81afb851c2b1ce04544484ad"
+                             label="Mixed Materials [310183630253770]"
+                             type="box">34</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0e18e454af1e528099394c766554ccbd" level="file">
                <did>
-                  <container type="box" label="mixed materials">35</container>
-                  <unittitle>1924[Mo-Y] - 1926 </unittitle>
-                  <unitdate>1924-1926</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1924/1926"
+                            type="inclusive">1924 [M-Y] -1926</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e58f9b0838d039cf48bc25cf603e27df"
+                             label="Mixed Materials [310183630253788]"
+                             type="box">35</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_787ce6754bd7fe5140ed053364023150" level="file">
                <did>
-                  <container type="box" label="mixed materials">36</container>
-                  <unittitle>1927 - 1929 </unittitle>
-                  <unitdate>1927-1929</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1927/1929"
+                            type="inclusive">1927-1929</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_cd4ce1aad3fc2614b2c921fb6ec924ed"
+                             label="Mixed Materials [310183630253796]"
+                             type="box">36</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d7158c1cfad0edd24b0601268b8e80c6" level="file">
                <did>
-                  <container type="box" label="mixed materials">37</container>
-                  <unittitle>1930 - 1931 </unittitle>
-                  <unitdate>1930-1931</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1931"
+                            type="inclusive">1930-1931</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a2d374f4771c0ba07826767b2df2d280"
+                             label="Mixed Materials [310183630253804]"
+                             type="box">37</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_90798886d65637aeacbce1cdf7710577" level="file">
                <did>
-                  <container type="box" label="mixed materials">38</container>
-                  <unittitle>1932 - 1933 </unittitle>
-                  <unitdate>1932-1933</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1932/1933"
+                            type="inclusive">1932-1933</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_22d88efe0272c6809722f746a785a88b"
+                             label="Mixed Materials [310183630253812]"
+                             type="box">38</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b244b8d6c56846cecc58ef750bf8d5d9" level="file">
                <did>
-                  <container type="box" label="mixed materials">39</container>
-                  <unittitle>1935 - 1936 </unittitle>
-                  <unitdate>1935-1936</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1935/1936"
+                            type="inclusive">1935-1936</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_a5ac32f237a51f8aa04fadc47500de98"
+                             label="Mixed Materials [310183630253820]"
+                             type="box">39</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7ea1138a44476fd017a1f505c0b32154" level="file">
                <did>
-                  <container type="box" label="mixed materials">40</container>
-                  <unittitle>1937 - 1938 </unittitle>
-                  <unitdate>1937-1938</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1938"
+                            type="inclusive">1937-1938</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_20f61b0fc9c58eb860d188fadda61820"
+                             label="Mixed Materials [310183630253838]"
+                             type="box">40</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1dcf8565026d533fd8b79f777f44481a" level="file">
                <did>
-                  <container type="box" label="mixed materials">41</container>
-                  <unittitle>1939-1945 </unittitle>
-                  <unitdate>1939-1945</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d3274b933f3423a192dd32eb8399488a"
+                             label="Mixed Materials [310183630253846]"
+                             type="box">41</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b1f5ffe6ab3fcae684880a53f94ff4e3" level="file">
                <did>
-                  <container type="box" label="mixed materials">42</container>
-                  <unittitle>1946 - 1949 </unittitle>
-                  <unitdate>1946-1949</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1946/1949"
+                            type="inclusive">1946-1949</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fdd66dbb03ff678431b6eceed99e64ef"
+                             label="Mixed Materials [310183630253853]"
+                             type="box">42</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2e1b7e2fc8f322a50fc7a3b21727eff6" level="file">
                <did>
-                  <container type="box" label="mixed materials">43</container>
-                  <unittitle>1950 -1953 </unittitle>
-                  <unitdate>1950-1953</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1953"
+                            type="inclusive">1950-1953</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_e74f9f5230e60ac66c0d16b0ae8eb071"
+                             label="Mixed Materials [310183630253861]"
+                             type="box">43</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_163f4a5a693e6c47fc9e5d24d3d05fa1" level="file">
                <did>
-                  <container type="box" label="mixed materials">44</container>
-                  <unittitle>1954 - 1961 </unittitle>
-                  <unitdate>1954-1961</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1954/1961"
+                            type="inclusive">1954-1961</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_6ddc6fe6571b49852ddf74e416f3b0fc"
+                             label="Mixed Materials [310183630253879]"
+                             type="box">44</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1087a5d9663b90e255f20a7f27eb14cd" level="file">
                <did>
-                  <container type="box" label="mixed materials">45</container>
-                  <unittitle>1962 -1968 </unittitle>
-                  <unitdate>1962-1968</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1962/1968"
+                            type="inclusive">1962-1968</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_c0e59ecbf81b7a176627319ca4e5a3e5"
+                             label="Mixed Materials [310183630253887]"
+                             type="box">45</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3d46b13ba4827bbdcdb7676c3a81986a" level="file">
                <did>
-                  <container type="box" label="mixed materials">46</container>
-                  <unittitle>1969- 1972 </unittitle>
-                  <unitdate>1969-1972</unitdate>
+                  <unittitle>Alumnae</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1969/1972"
+                            type="inclusive">1969-1972</unitdate>
+                  <container altrender="Half letter document box"
+                             id="aspace_1fe6f0610e8c120a755062c11b2c55a0"
+                             label="Mixed Materials [310183630253895]"
+                             type="box">46</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>Series II: General Files</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1911/1981"
+                         type="inclusive">1911-1981</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_0ab03596863406d7ebaadbdbf3fb2c4a">
+               <head>Scope and Contents</head>
+               <p>Includes general office files as well as records on fellowship applicants, financial aid surveys, reports on classes, program assessment, and records from the Board of Counselors Vocation Committee.</p>
+            </scopecontent>
+            <c02 id="aspace_55adff2efa6cc8f36233f059f15a2471" level="file">
                <did>
-                  <container type="box" label="mixed materials">47</container>
-                  <unittitle>Counselors-Vocational Committee </unittitle>
-                  <unitdate>1954 - 1963</unitdate>
+                  <unittitle>Counselors-Vocational Committee</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1954/1963"
+                            type="inclusive">1954 - 1963</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_3bd4f656789a45920c5e41b3e31bdc83"
+                             label="Mixed Materials [310183630253903]"
+                             type="box">47</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5454a07ae9e901645fc72d7d0cfef73f" level="file">
                <did>
-                  <container type="box" label="mixed materials">48</container>
-                  <unittitle>Correspondence </unittitle>
-                  <unitdate>1922 - 1925</unitdate>
+                  <unittitle>Correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1922/1925"
+                            type="inclusive">1922 - 1925</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_93512e94f17319a1d7592d871626d5b2"
+                             label="Mixed Materials [310183630253911]"
+                             type="box">48</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c33816e1a9f0cd73562aa1a4cf337f73" level="file">
                <did>
-                  <container type="box" label="mixed materials">49</container>
-                  <unittitle>Fellowship Applications [H-Ka] </unittitle>
-                  <unitdate>1911 - 1950</unitdate>
+                  <unittitle>Fellowship Applications [H-Ka]</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1911/1950"
+                            type="inclusive">1911 - 1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_f9744d37080821703411ec84dd2e26c5"
+                             label="Mixed Materials [310183630253929]"
+                             type="box">49</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_28c71eb6d61496a51250b0506b8648ba" level="file">
                <did>
-                  <container type="box" label="mixed materials">50</container>
-                  <unittitle>Fellowship Applications [Ke-Z] </unittitle>
-                  <unitdate>1916 - 1951</unitdate>
+                  <unittitle>Fellowship Applications [Ke-Z]</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1916/1951"
+                            type="inclusive">1916 - 1951</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_131d4bf9df75adf50a47fa1a540d43aa"
+                             label="Mixed Materials [310183630253937]"
+                             type="box">50</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0fc7ef3a5cfe78a9d790004beadac391" level="file">
                <did>
-                  <container type="box" label="mixed materials">51</container>
                   <unittitle>Financial Aid Survey Education</unittitle>
-                  <unitdate>1935, 1940, 1945</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_d7083db59cf21ebfbd4e0f32e094071c"
+                             label="Mixed Materials [310183630253945]"
+                             type="box">51</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1cbe36c0d1feebe9a5a0c69259972c28" level="file">
                <did>
-                  <container type="box" label="mixed materials">52</container>
-                  <unittitle>Financial Aid Survey Education </unittitle>
-                  <unitdate>1950, 1955</unitdate>
+                  <unittitle>Financial Aid Survey Education</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_a03e3562fe18a10c8862e5f10d6ba693"
+                             label="Mixed Materials [310183630253952]"
+                             type="box">52</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dd68b548c99f7bd339ee61af6a047689" level="file">
                <did>
-                  <container type="box" label="mixed materials">53</container>
-                  <unittitle>Teacher Applications - Agencies </unittitle>
-                  <unitdate>1917 - 1926</unitdate>
+                  <unittitle>Teacher Applications - Agencies</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1917/1926"
+                            type="inclusive">1917 - 1926</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_b70d8da41ef085fe4d6309e83083c4df"
+                             label="Mixed Materials [310183630253960]"
+                             type="box">53</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ab79f30be8fc744b3a6712c5d9cf97a8" level="file">
                <did>
-                  <container type="box" label="mixed materials">59</container>
-                  <unittitle>Questionnaire </unittitle>
-                  <unitdate>1948</unitdate>
+                  <unittitle>Questionnaire</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4c57973bf68f2654d59b29fc76f2d5a0"
+                             label="Mixed Materials [310183630254026]"
+                             type="box">59</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_58e8bc1352b518aba7cb9d9e22dc7018" level="file">
                <did>
-                  <container type="box" label="mixed materials">60</container>
-                  <unittitle>Questionnaire </unittitle>
-                  <unitdate>1950</unitdate>
+                  <unittitle>Questionnaire</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dbc2e48851d9eeb429f5c30e12ee225a"
+                             label="Mixed Materials [310183630254034]"
+                             type="box">60</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_35988b4f248ca478712522e8f08a7024" level="file">
                <did>
-                  <container type="box" label="mixed materials">61</container>
-                  <unittitle>Questionnaire </unittitle>
-                  <unitdate>1950, 1952</unitdate>
+                  <unittitle>Questionnaire</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950, 1952</unitdate>
+                  <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_619bcce04101494c7358ff4fe269bf97"
+                             label="Mixed Materials [310183630254042]"
+                             type="box">61</container>
+               </did>
+            </c02>
+            <c02 id="aspace_959017e567a52dca153907b058c03727" level="file">
+               <did>
+                  <unittitle>Reports on Classes; Activities</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1976/1981"
+                            type="inclusive">1976-1978, 1980, 1981</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_1b534626823fc0adf8f6f0648b2c0a3a"
+                             label="Mixed Materials [310183630254992]"
+                             type="box">62</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>Series III: World War II</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1939/1945"
+                         type="inclusive">1939-1945</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_a8fe6df6da0c0ed3263f2452de06c6d0">
+               <head>Scope and Contents</head>
+               <p>Contains records from the Committee Boards, the War Department, the Women's Division and information on service opportunities during World War II.</p>
+            </scopecontent>
+            <c02 id="aspace_20e38c2785457c5753823a6399bf4943" level="file">
                <did>
-                  <container type="box" label="mixed materials">54</container>
-                  <unittitle>World War II: Committee Boards </unittitle>
-                  <unitdate>1939-1945</unitdate>
+                  <unittitle>World War II: Committee Boards</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_4b18edc235a64c8d24b795f8094edfa2"
+                             label="Mixed Materials [310183630253978]"
+                             type="box">54</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_799c9065330f5b24a4b8b8c4ddcdd7f6" level="file">
                <did>
-                  <container type="box" label="mixed materials">55</container>
-                  <unittitle>World War II: Service Opportunities </unittitle>
-                  <unitdate>1939-1945</unitdate>
+                  <unittitle>World War II: Service Opportunities</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_37852a82cbfc365657fd00faa59b9933"
+                             label="Mixed Materials [310183630253986]"
+                             type="box">55</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0ae79621965537217f53db5a4acef0ab" level="file">
                <did>
-                  <container type="box" label="mixed materials">56</container>
-                  <unittitle>World War II: Service Opportunities-War Department </unittitle>
-                  <unitdate>1939 - 1945</unitdate>
+                  <unittitle>World War II: Service Opportunities-War Department</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939 - 1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_d820a4a3f670ad318f479d9a9415470d"
+                             label="Mixed Materials [310183630253994]"
+                             type="box">56</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ac565dd99fdd574583fe0f71b3914305" level="file">
                <did>
-                  <container type="box" label="mixed materials">57</container>
-                  <unittitle>World War II: War Department </unittitle>
-                  <unitdate>1939-1945</unitdate>
+                  <unittitle>World War II: War Department</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939-1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_8dcaa69657f49312103de89fd9423abf"
+                             label="Mixed Materials [310183630254000]"
+                             type="box">57</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4b682d3652ff78db111faacc6ded8c8a" level="file">
                <did>
-                  <container type="box" label="mixed materials">58</container>
                   <unittitle>World War II: Women's Division</unittitle>
-                  <unitdate>1939 -1945</unitdate>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1945"
+                            type="inclusive">1939 -1945</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_fc0fd940b6bc691b2c841387ca2e3ca7"
+                             label="Mixed Materials [310183630254018]"
+                             type="box">58</container>
                </did>
             </c02>
          </c01>
       </dsc>
-
    </archdesc>
 </ead>
