@@ -1,190 +1,177 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca375.xml//EN">manosca375</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca375</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Gladys Amelia Anslow Papers, </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Madison White, Class of
-               2016.</author>
-
+            <titleproper>Finding aid for Gladys Amelia Anslow papers, <num>CA.MS.00375</num>
+            </titleproper>
+            <author>Madison White, Class of 2016; Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2014">2014</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Elizabeth
-            Carron. <date normal="2014-10-28">2014-10-28</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-01-07 08:11:00 -0500</date>.</creation>
+         <langusage>English</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-01-04</date>
+            <item>Finding aid updated to current standards and published</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Anslow, Gladys Amelia</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Gladys Amelia Anslow Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1914 - 1969</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 42 UUID:89f51dda-247e-47c3-b717-8ace2bd975b8</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 half document box</extent>
-            <extent encodinganalog="300$a">(.25 linear feet)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains photographs, newspaper
-            clippings, and articles related to the professional life of Gladys Amelia Anslow.
-         </abstract>
+         <unittitle>Gladys Amelia Anslow papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Anslow, Gladys Amelia</persname>
+         </origination>
+         <unitid>CA.MS.00375</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1914/1969"
+                   type="inclusive">1914-1969</unitdate>
+         <abstract id="aspace_c6e3fdcabd98dfe1035694910d2d5d3d">Gladys Amelia Anslow, a member of the Smith College Class of 1914 and, later, a Smith professor, was the first woman to work with the cyclotron ("atomic whirligig to smash the atom") at UC Berkeley. She worked with fellow Smith physicist Dorothy Wrinch on a "spectrochemical study of protein molecules for the eventual production of synthetic foods and drugs" under a grant from the Office of Naval Research, the first research grant of its kind at Smith College. Her papers contain photographs, newspaper clippings, articles and miscellaneous materials related to Anslow's professional life.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Gladys Amelia Anslow graduated from Smith College in 1914 during which time she served
-            as the vice-president of the Physics Club and a member of the Mathematical Society. She
-            was appointed the demonstrator in the Department of Physics at Smith that year. In 1924,
-            Anslow received her Ph.D. from Yale in Physics, allowing her to become an associate
-            professor. In 1936, she became a full Professor. </p>
-
-         <p>The first woman to work with the cyclotron ("atomic whirligig to smash the atom") at UC
-            Berkeley, she worked with fellow Smith physicist Dorothy Wrinch on a "spectrochemical
-            study of protein molecules for the eventual production of synthetic foods and drugs"
-            under a grant from the Office of Naval Research. To mark another first, it was the first
-            research grant of its kind at Smith College. During World War II, Anslow was named Chief
-            of Communications and Information Section for Liaison with Civilian Scientists and
-            attached to the armed forces. For this work she won President Truman's Certificate of
-            Merit, one of only three educators to do so.</p>
-
-         <p>From her professorship, Anslow progressed to Director of Graduate Study in 1940,
-            professor on the Gates Foundation in 1946, and Professor Emeritus in 1960. During her
-            time working at Smith, Anslow frequently contributed to scientific journals and was a
-            fellow of the American Academy of Arts and Sciences, the American Academy of for the
-            Advancement of Science, and the American Physical Society, where she was the president
-            of the New England Section. She died in 1969. </p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Gladys Amelia Anslow graduated from Smith College in 1914. As a Smith student she served as the vice-president of the Physics Club and a member of the Mathematical Society. She was appointed the demonstrator in the Department of Physics at Smith. In 1924, Anslow received her Ph.D. from Yale in Physics, allowing her to become an associate professor. In 1936, she became a full Professor. </p>
+         <p> The first woman to work with the cyclotron ("atomic whirligig to smash the atom") at UC Berkeley, she worked with fellow Smith physicist Dorothy Wrinch on a "spectrochemical study of protein molecules for the eventual production of synthetic foods and drugs" under a grant from the Office of Naval Research. To mark another first, it was the first research grant of its kind at Smith College. During World War II, Anslow was named Chief of Communications and Information Section for Liaison with Civilian Scientists and attached to the armed forces. For this work she won President Truman's Certificate of Merit, one of only three educators to do so.</p>
+         <p> From her professorship, Anslow progressed to director of Graduate Study in 1940, professor on the Gates Foundation in 1946, and Professor Emeritus in 1960. During her time working at Smith, Anslow frequently contributed to scientific journals and was a fellow of the American Academy of Arts and Sciences, the American Academy of for the Advancement of Science, and the American Physical Society, where she was the president of the New England Section. She died in 1969.</p>  
       </bioghist>
-
-
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions. </p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright. </p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>The Gladys Amelia Anslow papers were donated to the College Archives. </p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Gladys Amelia Anslow, College Archives,CA-MS-00375, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>Gladys Amelia Anslow Papers, Box #663, Smith College Archives </p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Source unknown</p>  
       </acqinfo>
-      <processinfo id="admin-process">
-         <p>Originally processed by Madison White, Class of 2016. Revised by Elizabeth Carron in
-            October, 2014.</p>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Originally processed by Madison White, Class of 2016. Revised by Elizabeth Carron in October, 2014.</p>  
       </processinfo>
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-      <controlaccess id="subj">
-         <persname encodinganalog="600" source="lcnaf">Anslow, Gladys A. (Gladys Amelia)</persname>
-         <corpname encodinganalog="610" source="lcsh">Smith College. Department of
-            Physics.</corpname>
-         <corpname encodinganalog="610" source="lcsh">Smith College. Department of Graduate
-            Studies.</corpname>
-         <subject encodinganalog="650" source="lcsh"> Physics -- Study and teaching (Higher) --
-            Massachusetts -- Northampton.</subject>
+      <scopecontent id="aspace_70b0e55326c5bed0f860c3d9c12af5a0">
+         <head>Scope and Contents</head>
+         <p>The Gladys Amelia Anslow papers contain photographs, newspaper clippings, articles and miscellaneous materials related to Anslow's professional life.</p>  
+      </scopecontent>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Physics -- Study and teaching (Higher) -- Massachusetts -- Northampton.</subject>
          <subject encodinganalog="650" source="lcsh">Physics Club (Smith College)</subject>
          <genreform encodinganalog="655" source="aat">photographs</genreform>
          <genreform encodinganalog="655" source="aat">newspaper clippings</genreform>
-         <genreform encodinganalog="655" source="aat">reports</genreform>
-
+         <genreform encodinganalog="655" authfilenumber="300027267" source="aat">reports</genreform>
+         <persname encodinganalog="600" source="naf">Anslow, Gladys A. (Gladys Amelia)</persname>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Department of Physics.</corpname>
+         <corpname encodinganalog="610" source="lcsh">Smith College. Department of Graduate Studies.</corpname>
       </controlaccess>
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_3d19c6e13891232fd046a69738cb9f6e" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>General <unitdate>1924-1969</unitdate>
-               </unittitle>
+               <unittitle>General</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924/1969"
+                         type="inclusive">1924-1969</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_5ed5232cc195e661e24540fe0822d4c1"
+                          label="Mixed Materials [310183630234176]"
+                          type="box">664</container>
+               <container id="aspace_3229e01acd3f377a5a7c637a53b9781c"
+                          parent="aspace_5ed5232cc195e661e24540fe0822d4c1"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6e1c2be3433125246954035b346f6c24" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Photographs <unitdate>1914-1957</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1914/1957"
+                         type="inclusive">1914-1957</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_a5831d1996af3b8398ec22391adf1c44"
+                          label="Mixed Materials [310183630234176]"
+                          type="box">664</container>
+               <container id="aspace_01c3f389b773dd1dfd25e9d19a84d281"
+                          parent="aspace_a5831d1996af3b8398ec22391adf1c44"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_41802eb0e1ebfa407548e4a93a33ff63" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Published Work <unitdate>1917-1949</unitdate>
-               </unittitle>
+               <unittitle>Published Work</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1949"
+                         type="inclusive">1917-1949</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_8431995468abfd6824228a4491ffc9ec"
+                          label="Mixed Materials [310183630234176]"
+                          type="box">664</container>
+               <container id="aspace_8bcecfaf9ab48ad3f2dc3148c242d561"
+                          parent="aspace_8431995468abfd6824228a4491ffc9ec"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_013535f6923d7bb2b3bef73172ad7785" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Final Scientific Report on National Science Foundation Grant GB-478
-                     <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Final Scientific Report on National Science Foundation Grant GB-478</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Half letter document box"
+                          id="aspace_29b78281c4db99ceb3c56f33f01c5711"
+                          label="Mixed Materials [310183630234176]"
+                          type="box">664</container>
+               <container id="aspace_19d1528d5f4a93244cfb2d9621d154b2"
+                          parent="aspace_29b78281c4db99ceb3c56f33f01c5711"
+                          type="folder">4</container>
             </did>
          </c01>
       </dsc>
-      <!-- End container list -->
-
    </archdesc>
 </ead>

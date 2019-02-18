@@ -1,423 +1,596 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca355.xml//EN">manosca355</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca355</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Janet Olmsted Papers, 1920-1997</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Audrey Sellers.</author>
-
+            <titleproper>Finding aid to Janet Olmsted papers <num>CA.MS.00355</num>
+            </titleproper>
+            <author>Finding aid prepared by Audrey Sellers, Ellice Amanna</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2018</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-11">2013-12-11</date>
-         </creation>
-         <langusage>Finding aid written in English.</langusage>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2018-12-05 10:38:24 -0500</date>.</creation>
+         <langusage>English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>12/05/18</date>
+            <item>Finding aid updated with barcodes, locations, notes</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Olmsted, Janet, 1904-1997</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Janet Olmsted Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1920-1997</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:9c9f1233-7227-41aa-b150-7f1d434fe7e7</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(0.8 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains primarily correspondence from
-            Janet Olmsted to her family. Also contains correspondence between various other parties,
-            news clippings, photographs, and study notes. </abstract>
+         <unittitle>Janet Olmsted papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Olmsted, Janet, 1904-1997</persname>
+         </origination>
+         <unitid>CA.MS.00355</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.833 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1920/1997"
+                   type="inclusive">1920-1997</unitdate>
+         <abstract id="aspace_9b13a911c379411f7b64c47da7a0476a">This collections contains primarily correspondence between Janet Olmsted and her family, as well as other parties. Also included in these papers are news clippings, photographs, and study notes.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Janet Olmsted was born to Marguerite and John M. Olmsted on September 20, 1904 in
-            Buffalo, New York. She was raised in Sardinia, New York with her two brothers, Prescott
-            and John. Throughout her attendance at Smith College, she was very active in athletics,
-            holding a leadership position in the Athletic Association. She earned her Bachelor's of
-            Arts from Smith in 1927, but returned to earn her Masters of Arts in Teaching from
-            Smith's Graduate School in 1929.</p>
-
-         <p>Janet married Cabray Wortley, who she had steadily dated throughout her time at Smith,
-            in September 1929. She was employed as a teacher from 1929 to 1933 at the Francis W.
-            Parker School in Chicago. In 1934, she and her husband moved to St. Joseph, Missouri,
-            where they raised three sons. She held jobs in a variety of fields in St. Joseph. In
-            1947, Janet divorced Wortley.</p>
-
-         <p>In order to care for her father in his old age, she moved to Pasadena, California in
-            1955. There, she was employed in sales for over two decades. She was very active as a
-            parishioner of All Saints Episcopal Church, where she met Halleck J. Hoyt. He became her
-            second husband in 1973. They remained married until her death in January 1997.</p>
-
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Janet Olmsted was born to Marguerite and John M. Olmsted on September 20, 1904 in Buffalo, New York. She was raised in Sardinia, New York with her two brothers, Prescott and John. Throughout her attendance at Smith College, she was active in athletics, holding a leadership position in the college's Athletic Association. She earned her Bachelor's of Arts from Smith in 1927, and returned to earn her Masters of Arts in Teaching from Smith's Graduate School in 1929.</p>
+         <p> Janet married Cabray Wortley, who she had steadily dated throughout her time at Smith, in September 1929. She was employed as a teacher from 1929 to 1933 at the Francis W. Parker School in Chicago. In 1934, she and her husband moved to St. Joseph, Missouri, where they raised three sons. She held jobs in a variety of fields in St. Joseph. In 1947, Janet divorced Wortley.</p>
+         <p> In order to care for her father in his old age, she moved to Pasadena, California in 1955. There, she was employed in sales for over two decades. She was very active as a parishioner of All Saints Episcopal Church, where she met Halleck J. Hoyt. He became her second husband in 1973. They remained married until her death in January 1997.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection contains primarily letters written by Janet to her family (namely, her
-            father John M. Olmsted, her mother Marguerite, her brothers Prescott and John). The
-            collection includes correspondence from 1920, when she was attending high school, to
-            1997, when her son advised Smith College of her death. Her most regular correspondence
-            spans the years of 1923 through 1930, when she wrote to her family on a daily and weekly
-            basis. The collection also includes correspondence between members of the Olmsted family
-            with various other parties. Additionally, the collection contains some newspaper
-            clippings, photographs, notes from her studies at Smith College, and her obituary.</p>
-
-         <p>An index of letters is available.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection contains primarily letters written by Janet to members of her family (namely, her father John M. Olmsted, her mother Marguerite, her brothers Prescott and John). The collection includes correspondence from 1920, when she was attending high school, to 1997, when her son advised Smith College of her death. Her most regular correspondence spans the years of 1923 through 1930, when she wrote to her family on a daily and weekly basis. The collection also includes correspondence between members of the Olmsted family with various other parties. Additionally, the collection contains some newspaper clippings, photographs, notes from her studies at Smith College, and her obituary.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>The records are open for research according to the regulations of the Smith College Archives without any additional restrictions.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that they own copyright, Priscilla Brewer has assigned the copyright of Janet Olmsted's works to Smith College; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Olmsted, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Janet Olmsted Papers, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Janet Olmsted papers, College Archives, CA-MS-00355, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Janet Olmsted papers were donated to the College Archives by Priscilla Brewer in
-            December 2009.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Janet Olmsted papers were donated to the College Archives by Priscilla Brewer in December 2009.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Smith College - Alumni and alumnae - History - Sources</subject>
+      </controlaccess>
+      <dsc>
+         <c01 id="aspace_231d6021bf047902839545436dce1a48" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Photographs <unitdate>1927</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927/1927">1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5b3935aa7de4820ee7c96f1855a4aab3"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_963cacd26675a12b6bc3d3b7fe717321"
+                          parent="aspace_5b3935aa7de4820ee7c96f1855a4aab3"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d4cbf0e7a411a225aa6886f97e3cc2ab" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>July 1920 - November 1920</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1920-07/1920-11"
+                         type="inclusive">July 1920 - November 1920</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_978086cb1b0ec4930d2976d7257ad76c"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_fd1849c176805f163cb51afc0ba5dae1"
+                          parent="aspace_978086cb1b0ec4930d2976d7257ad76c"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dd8a8351d9b043a62b3b57fd683590ee" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence <unitdate>October 1923</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1923-10/1923-10">October 1923</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_e99ce1ff626dae18945bccc7e271c5bd"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_a189fa453000cdac1c6977e9eb99f76a"
+                          parent="aspace_e99ce1ff626dae18945bccc7e271c5bd"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_471301069120ed2346798aac81fb112b" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence <unitdate>May 1924 - October 1924</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924-05/1924-10"
+                         type="inclusive">May 1924 - October 1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_02c656acb82aa0e9f28652e941a88a5f"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_5da78c9e8c08c93724abb71dfefbee1f"
+                          parent="aspace_02c656acb82aa0e9f28652e941a88a5f"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0d10d308d44c0e1a14f705851c3cbde4" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence <unitdate>November 1924 - December 1924</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1924-11/1924-12"
+                         type="inclusive">November 1924 - December 1924</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_355c58dfab4534c9dd8003043c3d6407"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_af76f6f30f41301088c6091b0e0038c7"
+                          parent="aspace_355c58dfab4534c9dd8003043c3d6407"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_abad29bfce263331950b6b905f58a55c" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence <unitdate>January 1925 - May 1925</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-01/1925-05"
+                         type="inclusive">January 1925 - May 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_14b11cbb5b97bdc1443300b0211c7d6d"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_af660c407f50c6c85b40f538e98f10a2"
+                          parent="aspace_14b11cbb5b97bdc1443300b0211c7d6d"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e2266fedc0f838d1b7217449b8beb2a7" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Correspondence <unitdate>October 1925 - December 1925</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1925-10/1925-12"
+                         type="inclusive">October 1925 - December 1925</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4e3ebb9820d3f928282c71a1e0153882"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_29299f583318168597cb544c8aeddaa1"
+                          parent="aspace_4e3ebb9820d3f928282c71a1e0153882"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7c23957dd32e8ff048b516bed7ecc5c8" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Correspondence <unitdate>January 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-01/1926-01">January 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0c7424a38373de7b7e4d1ea3a44dab80"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_2a54a00013ea8da147dfdc5452b4f650"
+                          parent="aspace_0c7424a38373de7b7e4d1ea3a44dab80"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d20c67c569de452c11a83387b44f10cc" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Correspondence <unitdate>February 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-02/1926-02">February 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ce608a3bd81e466cd6b6e118bce0d914"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_f18f3e5be44e13b9f4b9e33825299b45"
+                          parent="aspace_ce608a3bd81e466cd6b6e118bce0d914"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2ab50153f3b387d953a7f36d2a3568ed" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Correspondence <unitdate>March 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-03/1926-03">March 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a5d29a34470707d6295a27a59e1eed37"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_83298476ecd16320270ec372270f9964"
+                          parent="aspace_a5d29a34470707d6295a27a59e1eed37"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6d3e57688f25ae0dfeb86ef7f1521c88" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Correspondence <unitdate>April 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-04/1926-04">April 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_095217fa6f44b127570a3f03e60abae1"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_9390b2ca76a52da08b9e0316ab09faa4"
+                          parent="aspace_095217fa6f44b127570a3f03e60abae1"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7435e526d95a2aa13bc8b483fbf4702a" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Correspondence <unitdate>May 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-05/1926-05">May 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_907c602de0acca8ea7e90dda3ebd8b4e"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_8e97183bc74035f50cd0067a566559d4"
+                          parent="aspace_907c602de0acca8ea7e90dda3ebd8b4e"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d478066b98892e1e680295d63e9b1678" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Correspondence <unitdate>June 1926 - July 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926-06/1926-07"
+                         type="inclusive">June 1926 - July 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_febb748e8dd7281ac6d99d415a1ea8ec"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_9c03cb22d6c231dc5212dfe718ff04ea"
+                          parent="aspace_febb748e8dd7281ac6d99d415a1ea8ec"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d188dd6025d3dd61de5527e77f2b2a60" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Correspondence <unitdate>September 1926 - October 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1926-09/1926-10"
+                         type="inclusive">September 1926 - October 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_94d5ecf43359b41a0a673b18f6237fe4"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_521f2d1e0d8a6b878fc706c03a736e73"
+                          parent="aspace_94d5ecf43359b41a0a673b18f6237fe4"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1af5f431ebd7f322b54a3bfef478a0b0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Correspondence <unitdate>November 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-11/1926-11">November 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c7802011952bfbe57b3e853086601410"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_2e74ee6a85970b96d6a608bef7a5d71f"
+                          parent="aspace_c7802011952bfbe57b3e853086601410"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_168716434eef97c3efa35b1392142bcd" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Correspondence <unitdate>December 1926</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1926-12/1926-12">December 1926</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_08cbe29d4259dd0907c174cd78590062"
+                          label="Mixed Materials [310183630249786]"
+                          type="box">1</container>
+               <container id="aspace_33bbb8f633ab321322ac34b2c687e861"
+                          parent="aspace_08cbe29d4259dd0907c174cd78590062"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1d22f6d40239ff733a9bdfa01410d830" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Correspondence <unitdate>January 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927-01/1927-01">January 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9672d0ef9cd670b3fd6080d39847c04a"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_14647ea7da8ef3a016e10094f44eaa55"
+                          parent="aspace_9672d0ef9cd670b3fd6080d39847c04a"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_220056c6e958c5cfd7479377097915cf" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>February 1927 - March 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1927-02/1927-03"
+                         type="inclusive">February 1927 - March 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_076844278de61a0aff255db6d26171ec"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_f4a69a687ef5d8569037cec592cfcbbb"
+                          parent="aspace_076844278de61a0aff255db6d26171ec"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a891fdbb1adab6a4dbb92747e1e84c87" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence <unitdate>April 1927 - May 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1927-04/1927-05"
+                         type="inclusive">April 1927 - May 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_879b5ca964d549d5b7a3690f4bff8c57"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_65d1ae93591a52ec9e2e16cf2eb4f8d3"
+                          parent="aspace_879b5ca964d549d5b7a3690f4bff8c57"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_156880ecdd934d5184e226bad0fb1734" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence <unitdate>June 1927 - July 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1927-06/1927-07"
+                         type="inclusive">June 1927 - July 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ec3661fbf64afdce3452244b39ef4fe7"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_407c7871ee52292ec4459e13e70e0877"
+                          parent="aspace_ec3661fbf64afdce3452244b39ef4fe7"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_367a438f20fa4fa252448795477ce1c6" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence <unitdate>October 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927-10/1927-10">October 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_bca1fe54ee6aa0f9086c57c1e29f7cbf"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_76ec5ecb7686b49d808ce107c73c41b9"
+                          parent="aspace_bca1fe54ee6aa0f9086c57c1e29f7cbf"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0d486cbd4f4a94e604fbfea4436caa73" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence <unitdate>November 1927</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1927-11/1927-11">November 1927</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0906fcfbe593e335db6057cd5fe48f67"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_9f259c4d37aceb527ebf8118bed6f183"
+                          parent="aspace_0906fcfbe593e335db6057cd5fe48f67"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5c6709fe7ccfc0c0b01aebc9aec2f45b" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Correspondence <unitdate>January 1928</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1928-01/1928-01">January 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9fc0fe8772dbf64e8d1bbaf00a48e5c7"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_86ba95a3e195f415ce39a54dfc7ca252"
+                          parent="aspace_9fc0fe8772dbf64e8d1bbaf00a48e5c7"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_e2f80835fefc8cd74d4052e22c344a45" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Correspondence <unitdate>February 1928 - March 1928</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-02/1928-03"
+                         type="inclusive">February 1928 - March 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a29291b8dc645d79caff27293b1be6d1"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_dc3f1821458f77f0bcbf2aed124c5c90"
+                          parent="aspace_a29291b8dc645d79caff27293b1be6d1"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ef3409eef9833f01db0f8c846fbf4e48" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Correspondence <unitdate>March 1928 - September 1928</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-03/1928-09"
+                         type="inclusive">March 1928 - September 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_52ee78fd3dd51d2ca60385a60b8ec04e"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_6dd80482ecf03919db5b404ca4d1dc64"
+                          parent="aspace_52ee78fd3dd51d2ca60385a60b8ec04e"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_6d1dc52f7ad58046f9e7dff1ec986a07" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>Correspondence <unitdate>October 1928 - December 1928</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1928-10/1928-12"
+                         type="inclusive">October 1928 - December 1928</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d7f5ef06318a7d69fa1505e5e6e70f32"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_8863015da0740de33ee48a3e517acf70"
+                          parent="aspace_d7f5ef06318a7d69fa1505e5e6e70f32"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_4a1dad0d53b2d94008657dcd5b760be0" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Correspondence <unitdate>January 1929 - April 1929</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929-01/1929-04"
+                         type="inclusive">January 1929 - April 1929</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_ed4071cc35459e07c9c9cc46071f81b9"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_b91a9eb2c422afe0d80991c0b410f746"
+                          parent="aspace_ed4071cc35459e07c9c9cc46071f81b9"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ff805f7dbb3def5f726e3a43f7be881f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Correspondence <unitdate>May 1929 - June 1929</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1929-05/1929-06"
+                         type="inclusive">May 1929 - June 1929</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_69f1fa98d15534c90796fff06e9c4ca4"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_539d9d560e9c87acbb016fe512f04964"
+                          parent="aspace_69f1fa98d15534c90796fff06e9c4ca4"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_659ec8f5d6e31bbd41a810d0a9a58e8f" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Correspondence <unitdate>June 1930 - September 1930</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1930-06/1930-09"
+                         type="inclusive">June 1930 - September 1930</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a29c495d0369828b8fd48865fea77b87"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_e02d8d46baa48fddb4c3f1cefe503f4c"
+                          parent="aspace_a29c495d0369828b8fd48865fea77b87"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_50c1c82888f39861ab9f4f851c9b9edb" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Correspondence <unitdate>April 1933</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1933-04/1933-04">April 1933</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cc84385b45492d42f24bb38c39afa510"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_e087abe06ff4ad5407336aa065354b07"
+                          parent="aspace_cc84385b45492d42f24bb38c39afa510"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7fdc5c2b8fe47b24d37c807f9604b1c2" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Correspondence <unitdate>February 1977</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1977-02/1977-02">February 1977</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_b733fe0734bb1445b9e479bbca1a116d"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_3de99379b51632e96de0c8eda276efc1"
+                          parent="aspace_b733fe0734bb1445b9e479bbca1a116d"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_022a3636022a33ae16f736a1b4c87e0e" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>Correspondence <unitdate>February 1997</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1997-02/1997-02">February 1997</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_cd03614b143c06da85566648ef66fbf1"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_3467be6068232cdaf077bcb1d4b23d11"
+                          parent="aspace_cd03614b143c06da85566648ef66fbf1"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_2d8b2912b9b4e1bdd248c3a6945fb8d1" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Correspondence <unitdate>Undated, October - December</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">Undated</unitdate>
+               <unitdate calendar="gregorian" era="ce">October - December</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_a4c7b426ef000de1be424b08fcc01c9e"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_5aac812d8ef3c76b21bb117689566bea"
+                          parent="aspace_a4c7b426ef000de1be424b08fcc01c9e"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c54d04742933ad177e2f969a1824efa6" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>Correspondence <unitdate>Undated</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce">Undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_130809faf983ef4ef5da39e12e1a0623"
+                          label="Mixed Materials [310183630249844]"
+                          type="box">2</container>
+               <container id="aspace_813abc77ff43e2c5bc08979897b573fd"
+                          parent="aspace_130809faf983ef4ef5da39e12e1a0623"
+                          type="folder">18</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
