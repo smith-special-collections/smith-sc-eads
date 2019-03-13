@@ -1,197 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca350.xml//EN">manosca350</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca350</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Marian Jones Papers, 1894 - 1897</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Audrey Sellers.</author>
-
+            <titleproper>Finding aid to the Marian Jones papers <num>CA.MS.00350</num>
+            </titleproper>
+            <author>Finding aid prepared by Audrey Sellers.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-12-09">2013-12-09</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-13 12:30:44 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2018-11-12</date>
+            <item>Updated to conform to DACS</item>
+         </change>
+         <change>
+            <date>2019-03-13</date>
+            <item>Updated container information and re-published.</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100 1" source="lcnaf">Jones, Marian, 1868-1960</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Marian Jones Papers</unittitle>
-         <unitdate label="Dates:" type="inclusive">1894 - 1897</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:16f9fe45-a6e8-419d-bd1c-3c8728603186</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(0.2 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Contains correspondence between Marian
-            "May" Jones and various parties, as well as her obituary. </abstract>
+         <unittitle>Marian Jones papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Jones, Marian, 1868-1960</persname>
+         </origination>
+         <unitid>CA.MS.00350</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.208 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1894/1960"
+                   type="inclusive">1894-1960</unitdate>
+         <abstract id="aspace_ea7556d8bcd31a321b5b50e98057d6c9">This collection contains correspondence between Marian "May" Jones and various parties, as well as her obituary.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>Marian Hastings Jones was born in Kensington, Connecticut to Horace Kimbal Jones and
-            Ruth Hastings on May 1, 1868. She was raised in Hartford, Connecticut, attending its
-            public schools until she decided to pursue her Bachelor's of Arts at Smith College. She
-            graduated from Smith in 1897, and then went on to receive her Bachelor's of Divinity
-            from Hartford Theological Seminary.</p>
-
-         <p>After graduating from Hartford Theological Seminary, she quickly became pastor of the
-            Staffordville Congregational Church. In doing so she became one of the first women to be
-            ordained into Christian ministry in Connecticut. She transitioned to the First
-            Congregational Church in Canterbury, Connecticut in 1914, serving there for three years.
-            Then Jones became assistant pastor to Dr. Arthur H. Bradfort of the Central
-            Congregational Church in Providence, Rhode Island. She did missionary work with the
-            Portuguese population of Providence for many years. Eventually this culminated in the
-            development of an organized church.</p>
-
-         <p>Jones returned to Canterbury upon retirement. She maintained her involvement in
-            Christian service until her health failed. After years of poor health, Marian Jones died
-            in Canterbury on February 19, 1960.</p>
-
-      </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>This collection contains primarily letters received by Marian Jones from 1894 to 1897.
-            Her correspondents range from family members to long-time friends to new acquaintances.
-            Also included are some letters written by Marian to her mother, Ruth Hastings Jones.
-            Additionally, the collection contains Marian's obituary, which was published in a local
-            Connecticut newspaper.</p>
-
-         <p>An index of letters is available.</p>
-
-      </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
-      </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Marian Jones Papers, Box #, Smith College Archives.</p>
-      </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Marian Jones papers were donated to the College Archives by Priscilla Brewer in
-            December 2009.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Marian Jones papers were donated to the College Archives by Priscilla Brewer in December 2009.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Marian Hastings Jones was born in Kensington, Connecticut to Horace Kimbal Jones and Ruth Hastings on May 1, 1868. She was raised in Hartford, Connecticut, attending its public schools until she decided to pursue her Bachelor's of Arts at Smith College. She graduated from Smith in 1897, and then went on to receive her Bachelor's of Divinity from Hartford Theological Seminary.</p>
+         <p> After graduating from Hartford Theological Seminary, she quickly became pastor of the Staffordville Congregational Church. In doing so she became one of the first women to be ordained into Christian ministry in Connecticut. She transitioned to the First Congregational Church in Canterbury, Connecticut in 1914, serving there for three years. Then Jones became assistant pastor to Dr. Arthur H. Bradfort of the Central Congregational Church in Providence, Rhode Island. She did missionary work with the Portuguese population of Providence for many years. Eventually this culminated in the development of an organized church.</p>
+         <p> Jones returned to Canterbury upon retirement. She maintained her involvement in Christian service until her health failed. After years of poor health, Marian Jones died in Canterbury on February 19, 1960.</p>  
+      </bioghist>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Marian Jones papers, Smith College Archives, CA-MS-00350, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>This collection contains primarily letters received by Marian Jones from 1894 to 1897. Her correspondents range from family members to long-time friends to new acquaintances. Also included are some letters written by Marian to her mother, Ruth Hastings Jones. Additionally, the collection contains Marian's obituary, which was published in a local Connecticut newspaper.</p>  
+      </scopecontent>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <dsc>
+         <c01 id="aspace_ddbf377b2d95d4777c06cac19aee9fd0" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Biographical Materials <unitdate>1960</unitdate>
-               </unittitle>
+               <unittitle>Biographical Materials</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_cf223fc04fd9bc795479137d77769d36"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_c304d132d11b4c59096f9e69e3d4d7a8"
+                          parent="aspace_cf223fc04fd9bc795479137d77769d36"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_25238323e2059864ac002120ad30d503" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>Correspondence <unitdate>September 1894 - January 1895</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1894-09/1895-01"
+                         type="inclusive">September 1894 - January 1895</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_f734fcb9a08e10500f4b0d8b884dc56e"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_e645253440784cd9070b92c297049c87"
+                          parent="aspace_f734fcb9a08e10500f4b0d8b884dc56e"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_610a153e88cdce9009a697295649ff97" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Correspondence <unitdate>March 1895 - September 1895</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1895-03/1895-09"
+                         type="inclusive">March 1895 - September 1895</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_4e1fe21a444214107bdd5b527b1c0110"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_d814f865e8daecf237dabab6ded60ce9"
+                          parent="aspace_4e1fe21a444214107bdd5b527b1c0110"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_1a41a1bea50a1bd1ec5609654748bcd4" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Correspondence <unitdate>September 1896 - December 1896</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1896-09/1896-12"
+                         type="inclusive">September 1896 - December 1896</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_dfbb7f0f77ce266c51847ea159d34bea"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_d5ff8c35a4c6c0c72d2d92c13bcd28f3"
+                          parent="aspace_dfbb7f0f77ce266c51847ea159d34bea"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5eaf70aeedac6e0d6c0a8e00ceb62d27" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Correspondence <unitdate>March 1897 - April 1897</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897-03/1897-04"
+                         type="inclusive">March 1897 - April 1897</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_02a8e149fe876b7133ac730461443c6e"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_34b9cc2959cd6db72befd6e293a2d398"
+                          parent="aspace_02a8e149fe876b7133ac730461443c6e"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0e68202d3f83df17ddb8963ee1ded7b3" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Correspondence <unitdate>May 1897 - June 1897</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897-05/1897-06"
+                         type="inclusive">May 1897 - June 1897</unitdate>
+               <container altrender="Half legal document box"
+                          id="aspace_797af20a3fabb148c2a36f8c03f3cda1"
+                          label="Mixed Materials [310183630231719]"
+                          type="box">1</container>
+               <container id="aspace_20f7d0cd3e8844aa5ae6c4b4c03f7524"
+                          parent="aspace_797af20a3fabb148c2a36f8c03f3cda1"
+                          type="folder">6</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>
