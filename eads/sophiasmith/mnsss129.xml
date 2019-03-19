@@ -1,759 +1,745 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss129.xml//EN">mnsss129</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss129</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Susan Brownell Anthony Papers, 1894-1979
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Burd Schlessinger.</author>
+            <titleproper>Finding aid to the Susan B. Anthony papers <num>SSC.MS.00005</num>
+            </titleproper>
+            <author>Burd Schlessinger</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-07-01</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-19 10:38:07 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss129 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:11-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-18</date>
+            <item>Added information from paper finding aid and updated.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Susan Brownell Anthony Papers, 1894-1979
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 5
-      </num>
-         <author encodinganalog="245$c">Burd Schlessinger
-      </author>
-         <date>2001
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Anthony, Susan B. (Susan Brownell), 1820-1906</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Susan B. Anthony papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1894-1979</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 5 UUID:1bc09687-a5e7-468e-8070-448f8e271945</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(.75 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Suffragist, feminist, temperance leader, and abolitionist. Anthony began her political career with the Women's New York State Temperance Society, and became involved in women's rights, suffrage, and the abolitionist movements. The bulk of the collection consists of material by outside parties about Anthony, including biographical material; published writings by Anthony; memorabilia; correspondence; autograph collection; and photographs.</abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Susan B. Anthony papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Anthony, Susan B. (Susan Brownell), 1820-1906</persname>
+         </origination>
+         <unitid>SSC.MS.00005</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">.75 linear feet</extent>
+            <extent altrender="carrier">(2 containers, 3 OS)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1850/1979"
+                   type="inclusive">1850-1979</unitdate>
+         <abstract id="aspace_a7a259dc0a4fe7fe656f7f7ecad67ea7">Susan B. Anthony was a suffragist, feminist, temperance leader, and abolitionist. Anthony began her political career with the Women's New York State Temperance Society, and became involved in women's rights, suffrage, and the abolitionist movements. The bulk of the collection consists of material by outside parties about Anthony, including biographical material; published writings by Anthony; memorabilia; correspondence; autograph collection; and photographs.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-         <p>Susan B. Anthony was born 15 February 1820 in Adams,
-    Massachusetts. She was the second of seven children of Lucy
-    Reed and Daniel Anthony. Her father was from a Quaker
-    background and believed in the equal education of his
-    daughters and his sons. His successful cotton manufacturing
-    business prompted a family move to Battenville, New York in
-    the summer of 1826. In the summer of 1835, Anthony obtained
-    her first teaching position, and in 1839, she moved to
-    Hardscrabble, New York, and continued to support herself
-    through teaching. In November of 1845, she settled in
-    Rochester, New York, which she considered home until her
-    dying day. From 1846 to 1849 she was the headmistress of the
-    female department at Canajoharie Academy in Rochester, New
-    York.</p>
-         <p>Susan B. Anthony's name is synonymous with women's rights
-    and the suffrage movement, but her activism began with
-    participation in the Temperance and Abolitionist movements of
-    the mid-nineteenth century. In 1848, Anthony joined the
-    Daughters of Temperance, then founded the Woman's New York
-    State Temperance Society in 1852. By 1856, Anthony was
-    William Lloyd Garrison's primary representative in New York
-    for the American Anti-slavery Society.</p>
- 
-         <p>It is without a doubt that Susan B. Anthony was most
-    passionate about the cause of women's rights. Securing the
-    right to vote for women became her life's work. In 1848, Jane
-    Hunt, Mary Ann McClintock, Lucretia Mott, Elizabeth Cady
-    Stanton, and Martha Coffin Wright organized a women's rights
-    convention in Seneca Falls, New York. Although her father was
-    there, Susan B. Anthony did not attend this historic event.
-    She met Stanton in 1850, and they became lifelong friends and
-    partners in the endeavor to guarantee women's rights. Both
-    women maintained a very high-profile as leaders of the
-    suffrage movement. In 1854, Anthony organized the first
-    Women's Rights Society in New York State. In this same year,
-    she collected signatures successfully petitioning the New
-    York State legislature for an extension of the Married
-    Women's Property Act, which was granted in 1860. In 1866, she
-    collected signatures petitioning the U.S. Congress for
-    women's suffrage.</p>
-         <p>Anthony and Stanton both maintained their commitment to
-    the abolitionist cause as they increased their activity in
-    women's rights organizing. In 1863, they formed the Women's
-    National Loyal League, which demanded the abolition of
-    slavery by constitutional amendment. However, at the end of
-    the Civil War, their opposition to the Fourteenth and
-    Fifteenth amendments, which guaranteed black male suffrage
-    but excluded women, caused the loss of some strong
-    abolitionist allies. Opposition to Anthony and Stanton's
-    controversial position, as well as to their methods of
-    achieving the vote, caused a twenty year schism in the
-    women's suffrage movement. The result was two separate
-    suffrage associations, which maintained similar goals but
-    employed very different strategies. Lucy Stone founded the
-    American Woman Suffrage Association (AWSA), which supported
-    the Fifteenth Amendment and continued to allow men's
-    participation in the Association. The AWSA attempted to avoid
-    all "irrelevant issues" that might alienate support for their
-    cause. They focused on the suffrage question and sought the
-    ballot on a state-by-state basis. In 1869, Anthony and
-    Stanton founded the National Women's Suffrage Association
-    (NWSA). It was to be a "women only" organization and Stanton
-    was elected the President while Anthony served as the Vice
-    President.</p>
-         <p>Unlike the AWSA, the NWSA was not afraid to create
-    controversy or draw attention. Its primary goal was to
-    guarantee a woman's right to vote in the form of a national
-    constitutional amendment. They acknowledged women's rights as
-    encompassing other women's issues such as birth control,
-    divorce law reform, and prostitution. They advocated for the
-    organization of working women, criticized the subordinate
-    role of women fostered by the church, took up a critical
-    discussion regarding the societal double-standard, and
-    addressed the issue of discrimination in employment and pay.
-    NWSA publicly supported the notorious Victoria Woodhull,
-    whose disregard for convention and eccentric behavior
-    outraged many people. Association with such an extremist
-    brought a fair amount of criticism to the NWSA.</p>
-         <p>NWSA also used relatively radical methods for achieving
-    its objectives. Public protest and "overt actions" were
-    staged by its members on a regular basis. Anthony was
-    directly involved in many controversial actions taken by
-    NWSA. In 1872, Anthony was arrested, convicted, and fined for
-    illegally voting in the Presidential election. On 4 July
-    1876, she staged a suffrage protest at the Centennial
-    Celebration being held in Liberty Square, Philadelphia.
-    Anthony was constantly at the front lines in the battle for
-    woman suffrage. She toured the country giving speeches and
-    passionately rallying support for her cause. By 1890, the
-    tensions that caused the division within the suffrage
-    movement had eased, and the AWSA and the NWSA reconciled.
-    They merged to form one organization called the National
-    American Women's Suffrage Association (NAWSA). Susan B.
-    Anthony served as president of NAWSA from 1892-1900. She
-    continued to organize and lead the national grassroots
-    movement. She extended her work further by contributing her
-    knowledge and effort to the International Women's Suffrage
-    Movement. She traveled to Berlin, Germany in 1904 to help
-    found the International Woman Suffrage Alliance. Anthony
-    participated in the successful campaign to open the
-    University of Rochester to women (1900). From 1881-1902, she
-    initiated and published the first four volumes of History of
-    Women's Suffrage.</p>
-         <p>Susan B. Anthony died 13 March 1906 in Rochester, New
-    York. She was eighty-six years old and had devoted over half
-    of her lifetime to the women's suffrage movement. On 26
-    August, 1920 the Nineteenth Amendment was ratified. This
-    federal legislation secured women's right to vote in every
-    state in the country, and it was referred to by some as the
-    Susan B. Anthony Amendment. In recognition of her incredible
-    contribution to the woman suffrage movement, various states
-    have declared 26 August or 15 February---her birthday---as
-    Susan B. Anthony Day.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Susan B. Anthony was born 15 February, 1820 in Adams, Massachusetts. She was the second of seven children of Lucy Reed and Daniel Anthony. Her father was from a Quaker background and believed in the equal education of his daughters and his sons. His successful cotton manufacturing business prompted a family move to Battenville, New York in the summer of 1826. In the summer of 1835, Anthony obtained her first teaching position, and in 1839, she moved to Hardscrabble, New York, and continued to support herself through teaching. In November of 1845, she settled in Rochester, New York, which she considered home until her dying day. From 1846 to 1849 she was the headmistress of the female department at Canajoharie Academy in Rochester, New York.</p>
+         <p> Susan B. Anthony's name is synonymous with women's rights and the suffrage movement, but her activism began with participation in the Temperance and Abolitionist movements of the mid-nineteenth century. In 1848, Anthony joined the Daughters of Temperance, then founded the Woman's New York State Temperance Society in 1852. By 1856, Anthony was William Lloyd Garrison's primary representative in New York for the American Anti-slavery Society.</p>
+         <p> It is without a doubt that Susan B. Anthony was most passionate about the cause of women's rights. Securing the right to vote for women became her life's work. In 1848, Jane Hunt, Mary Ann McClintock, Lucretia Mott, Elizabeth Cady Stanton, and Martha Coffin Wright organized a women's rights convention in Seneca Falls, New York. Although her father was there, Susan B. Anthony did not attend this historic event. She met Stanton in 1850, and they became lifelong friends and partners in the endeavor to guarantee women's rights. Both women maintained a very high-profile as leaders of the suffrage movement. In 1854, Anthony organized the first Women's Rights Society in New York State. In this same year, she collected signatures successfully petitioning the New York State legislature for an extension of the Married Women's Property Act, which was granted in 1860. In 1866, she collected signatures petitioning the U.S. Congress for women's suffrage.</p>
+         <p> Anthony and Stanton both maintained their commitment to the abolitionist cause as they increased their activity in women's rights organizing. In 1863, they formed the Women's National Loyal League, which demanded the abolition of slavery by constitutional amendment. However, at the end of the Civil War, their opposition to the Fourteenth and Fifteenth amendments, which guaranteed black male suffrage but excluded women, caused the loss of some strong abolitionist allies. Opposition to Anthony and Stanton's controversial position, as well as to their methods of achieving the vote, caused a twenty year schism in the women's suffrage movement. The result was two separate suffrage associations, which maintained similar goals but employed very different strategies. Lucy Stone founded the American Woman Suffrage Association (AWSA), which supported the Fifteenth Amendment and continued to allow men's participation in the Association. The AWSA attempted to avoid all "irrelevant issues" that might alienate support for their cause. They focused on the suffrage question and sought the ballot on a state-by-state basis. In 1869, Anthony and Stanton founded the National Women's Suffrage Association (NWSA). It was to be a "women only" organization and Stanton was elected the President while Anthony served as the Vice President.</p>
+         <p> Unlike the AWSA, the NWSA was not afraid to create controversy or draw attention. Its primary goal was to guarantee a woman's right to vote in the form of a national constitutional amendment. They acknowledged women's rights as encompassing other women's issues such as birth control, divorce law reform, and prostitution. They advocated for the organization of working women, criticized the subordinate role of women fostered by the church, took up a critical discussion regarding the societal double-standard, and addressed the issue of discrimination in employment and pay. NWSA publicly supported the notorious Victoria Woodhull, whose disregard for convention and eccentric behavior outraged many people. Association with such an extremist brought a fair amount of criticism to the NWSA.</p>
+         <p> NWSA also used relatively radical methods for achieving its objectives. Public protest and "overt actions" were staged by its members on a regular basis. Anthony was directly involved in many controversial actions taken by NWSA. In 1872, Anthony was arrested, convicted, and fined for illegally voting in the Presidential election. On 4 July 1876, she staged a suffrage protest at the Centennial Celebration being held in Liberty Square, Philadelphia. Anthony was constantly at the front lines in the battle for woman suffrage. She toured the country giving speeches and passionately rallying support for her cause. By 1890, the tensions that caused the division within the suffrage movement had eased, and the AWSA and the NWSA reconciled. They merged to form one organization called the National American Women's Suffrage Association (NAWSA). Susan B. Anthony served as president of NAWSA from 1892-1900. She continued to organize and lead the national grassroots movement. She extended her work further by contributing her knowledge and effort to the International Women's Suffrage Movement. She traveled to Berlin, Germany in 1904 to help found the International Woman Suffrage Alliance. Anthony participated in the successful campaign to open the University of Rochester to women (1900). From 1881-1902, she initiated and published the first four volumes of History of Women's Suffrage.</p>
+         <p> Susan B. Anthony died 13 March 1906 in Rochester, New York. She was eighty-six years old and had devoted over half of her lifetime to the women's suffrage movement. On 26 August, 1920 the Nineteenth Amendment was ratified. This federal legislation secured women's right to vote in every state in the country, and it was referred to by some as the Susan B. Anthony Amendment. In recognition of her incredible contribution to the woman suffrage movement, various states have declared 26 August or 15 February---her birthday---as Susan B. Anthony Day.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Susan B. Anthony Papers consist of .75 linear feet of
-    material. They contain primarily miscellaneous information
-    regarding her professional achievements and the efforts by
-    others to memorialize her work (1894-1970). Series I contains
-    Biographical Material and Writings. This is the most
-    extensive series, and it includes a wide range of
-    miscellaneous items.</p>
-         <p>There are various copies of clippings (1876-1979), which
-    provide information about her involvement and contribution to
-    the women's rights movement. Postcards, an original portrait
-    painted by her nephew (1907), and some original photographs
-    (1875-1906) (as well as numerous copies of photographs
-    (1850-1906)) documenting Anthony from youth to old age are
-    also included.</p>
-         <p>Also found in Series I is a good deal of material
-    regarding the efforts by others to memorialize Anthony.
-    Included are: clippings concerning her birthplace at Adams,
-    Massachusetts (1927-70); and clippings, photographs, and
-    printed matter regarding the memorial in her Rochester, New
-    York home (1948). There are also various original
-    commemorative postage stamps, as well as extensive
-    correspondence, clippings, memorabilia, news releases, and
-    photographs of the First Day Women Suffrage Stamp ceremony in
-    Adams, Massachusetts (26 August, 1970). The stamp was issued
-    to commemorate the 50 year anniversary of the ratification of
-    the Nineteenth Amendment. The League of Women Voters
-    initiated this event and organized this celebration, choosing
-    Adams, Massachusetts because it was Anthony's birthplace.
-    This material documents the detailed process undertaken to
-    bring such an event to fruition.</p>
-         <p>There is other material describing assorted Anthony
-    memorials across the United States, including information
-    regarding her entry in to the New York University Hall of
-    Fame (1950), Smithsonian Institution (1920-41), Susan B.
-    Anthony memorial libraries (1941-50), Susan B. Anthony Day
-    (1939-7), the Tree Project (1938), and other miscellaneous
-    memorial efforts (1940-71).</p>
-         <p>Documents of Edwin T. Marsh, inspector of polls, detailing
-    his arrest for permitting Anthony to register to vote (1872),
-    provide insight into the illegal voting scandal for which
-    Anthony was also arrested.</p>
-         <p>Series II consists of a limited amount of assorted
-    personal and professional correspondence. There are some
-    typed copies of letters to family and friends (1872-1905), as
-    well as typed copies of third party correspondence by those
-    who knew Anthony (1894-1944). A collection of original
-    autographs and a few handwritten letters finish this
-    series.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Susan B. Anthony papers contain primarily miscellaneous information regarding her professional achievements and the efforts by others to memorialize her work (1894-1970). Series I contains Biographical Material and Writings. This is the most extensive series, and it includes a wide range of miscellaneous items.</p>
+         <p> There are various copies of clippings (1876-1979), which provide information about her involvement and contribution to the women's rights movement. Postcards, an original portrait painted by her nephew (1907), and some original photographs (1875-1906) (as well as numerous copies of photographs (1850-1906)) documenting Anthony from youth to old age are also included.</p>
+         <p> Also found in Series I is a good deal of material regarding the efforts by others to memorialize Anthony. Included are: clippings concerning her birthplace at Adams, Massachusetts (1927-70); and clippings, photographs, and printed matter regarding the memorial in her Rochester, New York home (1948). There are also various original commemorative postage stamps, as well as extensive correspondence, clippings, memorabilia, news releases, and photographs of the First Day Women Suffrage Stamp ceremony in Adams, Massachusetts (26 August, 1970). The stamp was issued to commemorate the 50 year anniversary of the ratification of the Nineteenth Amendment. The League of Women Voters initiated this event and organized this celebration, choosing Adams, Massachusetts because it was Anthony's birthplace. This material documents the detailed process undertaken to bring such an event to fruition.</p>
+         <p> There is other material describing assorted Anthony memorials across the United States, including information regarding her entry in to the New York University Hall of Fame (1950), Smithsonian Institution (1920-41), Susan B. Anthony memorial libraries (1941-50), Susan B. Anthony Day (1939-7), the Tree Project (1938), and other miscellaneous memorial efforts (1940-71).</p>
+         <p> Documents of Edwin T. Marsh, inspector of polls, detailing his arrest for permitting Anthony to register to vote (1872), provide insight into the illegal voting scandal for which Anthony was also arrested.</p>
+         <p> Series II consists of a limited amount of assorted personal and professional correspondence. There are some typed copies of letters to family and friends (1872-1905), as well as typed copies of third party correspondence by those who knew Anthony (1894-1944). A collection of original autographs and a few handwritten letters finish this series.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into two series:</p>
-         <list>
-            <item>
-               I. Biographical Material and Writings
-            </item>
-            <item>
-               II. Correspondence
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into two series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Material and Writings</item>
+            <item>II. Correspondence</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Susan B. Anthony Papers, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Susan Brownell Anthony Papers came to the Sophia Smith Collection by way of several donors.  The bulk were given by Una R. Winter, Director of the Susan B. Anthony Memorial Committee of California, from 1947 through 1955.  The following people added to the collection: S. Elizabeth Smith in 1962; Robert E. Lamb in 1971; and Dorothy Wilson in 1972 and 1978.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Reprocessed by Burd Schlessinger, 2001.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Anthony, Susan
-                              B. (Susan Brownell), 1820-1906</persname>
-         <persname encodinganalog="600" source="lcnaf">Catt, Carrie
-                              Chapman, 1859-1947</persname>
-         <persname encodinganalog="600" source="lcnaf">Stanton,
-                              Elizabeth Cady, 1815-1902</persname>
-         <corpname encodinganalog="610" source="lcnaf">National Woman
-                              Suffrage Association (U.S.)</corpname>
-         <subject encodinganalog="650" source="lcsh">Women's
-                              rights--United States--History--19th
-                              century--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">
-                              Women--Suffrage--United States--History--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Feminists--United
-                              States--History--19th century--Sources</subject>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Susan B. Anthony Papers, Sophia Smith Collection, SSC-MS-00005, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>The <extref href="mnsss175_main.html">Garrison Family Papers</extref> in the Sophia Smith Collection contain letters by Anthony, and material pertaining to her is also located in numerous other repositories. These include the Huntington Library in San Marino, California; the Library of Congress, in Washington, D.C.; the University of Rochester in Rochester, New York; and the Susan B. Anthony Memorial Library in Los Angeles, California. Researchers may also wish to borrow through interlibrary loan the Susan B. Anthony/Elizabeth Cady Stanton Papers on microfilm.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Susan Brownell Anthony papers came to the Sophia Smith Collection by way of several donors. The bulk were given by Una R. Winter, Director of the Susan B. Anthony Memorial Committee of California, from 1947 through 1955. The following people added to the collection: S. Elizabeth Smith in 1962; Robert E. Lamb in 1971; and Dorothy Wilson in 1972 and 1978.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Reprocessed by Burd Schlessinger, 2001.</p>  
+      </processinfo>
+      <altformavail id="aspace_c04c9ed4048e5323c35054f014226d99">
+         <head>Existence and Location of Copies</head>
+         <p>Selected Papers of Elizabeth Cady Stanton and Susan B. Anthony available on microfilm (Rutgers University, 1997).</p>  
+      </altformavail>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Women's rights--United States--History--19th century--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Women--Suffrage--United States--History--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Feminists--United States--History--19th century--Sources</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Catt, Carrie Chapman, 1859-1947</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">Stanton, Elizabeth Cady, 1815-1902</subject>
+         <subject encodinganalog="650" source="local_inmagic-collection">National Woman Suffrage Association (U.S.)</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">articles</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">memorabilia</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Memorial works</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Writings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Lectures</genreform>
+         <persname encodinganalog="600" source="naf">Anthony, Susan B. (Susan Brownell), 1820-1906</persname>
+    
+    
+    
+         <persname encodinganalog="600"
+                   authfilenumber="people_1053"
+                   source="local_inmagic-people">unknown</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1065"
+                   source="local_inmagic-people">Winter, Una R.</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1632"
+                   source="local_inmagic-people">Lamb, Robert E.</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1873"
+                   source="local_inmagic-people">Wilson, Mrs. Grafton L.</persname>
+    
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>The <extref href="mnsss175_main.html">Garrison Family Papers</extref> in the Sophia Smith Collection contain letters by Anthony, and  material pertaining to her is also located in numerous other repositories.  These include the Huntington Library in San Marino, California; the Library of Congress, in Washington, D.C.; the University of Rochester in Rochester, New York; and the Susan B. Anthony Memorial Library in Los Angeles, California.  Researchers may also wish to borrow through interlibrary loan the Susan B. Anthony/Elizabeth Cady Stanton Papers on microfilm.
-        </p>
-         </relatedmaterial>
-      </descgrp>
-      <!-- Begin series descriptions -->
-<dsc type="analyticover">
-    <c01 level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL AND
-        WRITINGS</unittitle>
+               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL AND WRITINGS</unittitle>
             </did>
-            <scopecontent>
-               <p>Series I contains Biographical Material and Writings.
-        This is the most extensive series, and it includes a wide
-        range of miscellaneous items.</p>
-               <p>There are various copies of clippings (1876-1979), which
-        provide information about her involvement and contribution
-        to the women's rights movement. Postcards, an
-        original portrait painted by her nephew (1907), and some
-        original photographs (1875-1906) (as well as numerous
-        copies of photographs (1850-1906)) documenting Anthony from
-        youth to old age are also included.</p>
-               <p>Also found in Series I is a good deal of material
-        regarding the efforts by others to memorialize Anthony.
-        Included are: clippings concerning her birthplace at Adams,
-        Massachusetts (1927-70); and clippings, photographs, and
-        printed matter regarding the memorial in her Rochester, New
-        York home (1948). There are also various original
-        commemorative postage stamps, as well as extensive
-        correspondence, clippings, memorabilia, news releases, and
-        photographs of the First Day Women Suffrage Stamp ceremony
-        in Adams, Massachusetts (26 August, 1970). There is other
-        material describing assorted Anthony memorials across the
-        United States, including information regarding her entry in
-        to the New York University Hall of Fame (1950), Smithsonian
-        Institution (1920-41), Susan B. Anthony memorial libraries
-        (1941-50), Susan B. Anthony Day (1939-7), the Tree Project
-        (1938), and other miscellaneous memorial efforts
-        (1940-71).</p>
-               <p>Documents of Edwin T. Marsh, inspector of polls,
-        detailing his arrest for permitting Anthony to register to
-        vote (1872), provide insight into the illegal voting
-        scandal for which Anthony was also arrested.</p>
+            <scopecontent id="aspace_c78cbaca02a53c64b1eebe8b587107f1">
+               <head>Scope and Contents</head>
+               <p>Series I contains Biographical Material and Writings. This is the most extensive series, and it includes a wide range of miscellaneous items.</p>
+               <p> There are various copies of clippings (1876-1979), which provide information about her involvement and contribution to the women's rights movement. Postcards, an original portrait painted by her nephew (1907), and some original photographs (1875-1906) (as well as numerous copies of photographs (1850-1906)) documenting Anthony from youth to old age are also included.</p>
+               <p> Also found in Series I is a good deal of material regarding the efforts by others to memorialize Anthony. Included are: clippings concerning her birthplace at Adams, Massachusetts (1927-70); and clippings, photographs, and printed matter regarding the memorial in her Rochester, New York home (1948). There are also various original commemorative postage stamps, as well as extensive correspondence, clippings, memorabilia, news releases, and photographs of the First Day Women Suffrage Stamp ceremony in Adams, Massachusetts (26 August, 1970). There is other material describing assorted Anthony memorials across the United States, including information regarding her entry in to the New York University Hall of Fame (1950), Smithsonian Institution (1920-41), Susan B. Anthony memorial libraries (1941-50), Susan B. Anthony Day (1939-7), the Tree Project (1938), and other miscellaneous memorial efforts (1940-71).</p>
+               <p> Documents of Edwin T. Marsh, inspector of polls, detailing his arrest for permitting Anthony to register to vote (1872), provide insight into the illegal voting scandal for which Anthony was also arrested.</p>
             </scopecontent>
-  </c01>
-   <c01 level="series"> 
-          <did>
-               <unittitle>SERIES II. CORRESPONDENCE</unittitle>
-            </did>
-            <scopecontent>
-               <p>Series II consists of a limited amount of assorted
-        personal and professional correspondence. There are some
-        typed copies of letters to family and friends (1872-1905),
-        as well as typed copies of third party correspondence by
-        those who knew Anthony (1894-1944). A collection of
-        original autographs and a few handwritten letters finish
-        this series.</p>
-            </scopecontent>
-  </c01>
-</dsc>
-<!-- End series descriptions -->
-
-<!-- Begin container list -->
-<dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
-            <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL AND
-        WRITINGS</unittitle>
-            </did>
-            <c02 level="file">
+            <c02 id="aspace_3bfb40f738d48aa16cb79b36e6ea0a8c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Information about material in other
-          repositories</unittitle>
+                  <unittitle>Information about material in other repositories</unittitle>
+                  <container id="aspace_e925dd0fa2eac9d8e2290686ef8d3519"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_83d085c0b83f121b5a7d712a226a5a41"
+                             parent="aspace_e925dd0fa2eac9d8e2290686ef8d3519"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f11f5d83713e5179b9f05b40ebbc66cd" level="file">
                <did>
-                  <unittitle>Typescripts and copies of material in other
-          repositories</unittitle>
+                  <unittitle>Typescripts and copies of material in other repositories</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_2d8e674e1b268246e578e4794679b1ae" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>"Susan B. Anthony and the Woman Suffrage
-            Movement"</unittitle>
+                     <unittitle>"Susan B. Anthony and the Woman Suffrage Movement"</unittitle>
+                     <container id="aspace_cbcce18f06d52e4d53d7468a74dc31de"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_cbef6de73c0c38aa8e11ec1011c4489f"
+                                parent="aspace_cbcce18f06d52e4d53d7468a74dc31de"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b35499472873799d59f0af984bacc3d1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Susan B. Anthony: Lecture,
-            Reminiscences</unittitle>
+                     <unittitle>Susan B. Anthony: Lecture, Reminiscences</unittitle>
+                     <container id="aspace_1565be2e6de170ecc75093e237ae001d"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_4f44e9963b357ff233ccf14aad6804c1"
+                                parent="aspace_1565be2e6de170ecc75093e237ae001d"
+                                type="folder">3</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4e93852dd563e6148cfcb27626786c2" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Genealogy,
-          <unitdate>1941-50, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Genealogy</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1941/1950"
+                            type="inclusive">1941-50</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_2233dd481069aa1504df68626d7779b2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_5d4ea65137e436499d2450b80f3d8c47"
+                             parent="aspace_2233dd481069aa1504df68626d7779b2"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_93138f8d7d11c745de69e447ed2821eb" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Articles and pamphlets,
-          <unitdate>1906-61</unitdate>
-                  </unittitle>
+                  <unittitle>Articles and pamphlets</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1906/1961"
+                            type="inclusive">1906-61</unitdate>
+                  <container id="aspace_a5288d3a595795d894b327acb54171c5"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_c86c5c8fd35ce6cee41f42d423993c83"
+                             parent="aspace_a5288d3a595795d894b327acb54171c5"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_229923d6eb1df568bdbf24bb310da710" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Articles and reviews of biographies,
-          <unitdate>1935, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Articles and reviews of biographies</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_d51a414e3db20b6353ae044c7d74df4c"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_58e50813f1d20c3822a5d60325e9e0a1"
+                             parent="aspace_d51a414e3db20b6353ae044c7d74df4c"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_02bc5a8b721b30423389408d01ea50b0" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Articles by Anthony,
-          <unitdate>1897, 1902</unitdate>
-                  </unittitle>
+                  <unittitle>Articles by Anthony</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1897/1897">1897</unitdate>
+                  <unitdate normal="1902/1902">1902</unitdate>
+                  <container id="aspace_09b48445a3bc6a6fbc0c864d633b190b"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_87e8330fe30197ae11f4e762df4150da"
+                             parent="aspace_09b48445a3bc6a6fbc0c864d633b190b"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a5f75836cc191c2a365cc8ab27b19b6c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8-9</container>
-                  <unittitle>Clippings,
-          <unitdate>1876-1979, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1876/1979"
+                            type="inclusive">1876-1979</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c51fbf6bbc35eaf092c650bee62a0a94"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_69fe9d05050a16041fa0e168bacec2d5"
+                             parent="aspace_c51fbf6bbc35eaf092c650bee62a0a94"
+                             type="folder">8-9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9f3f227a56f2612910a707c912a5fd84" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Postcards and printed matter,
-          <unitdate>1900-19, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Postcards and printed matter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1919"
+                            type="inclusive">1900-19</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_3f046d088764f3d08d385a7a60a19cef"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_a1866eebb123feda32e28b3bd12a8708"
+                             parent="aspace_3f046d088764f3d08d385a7a60a19cef"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5c7f43ea8507e9ba59e3872383b81cd2" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>National American Women Suffrage Association:
-          medal,
-          <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>National American Women Suffrage Association: medal</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_7f5c949b2dcd0097218778f8221ca669"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_49da8b29cb0ab344ff6da8922cf6655f"
+                             parent="aspace_7f5c949b2dcd0097218778f8221ca669"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_499462508ea641508f25d957a2de30c3" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Photographs and oil painting,
-          <unitdate>1875-1907</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs and oil painting</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1875/1907"
+                            type="inclusive">1875-1907</unitdate>
+                  <container id="aspace_c73bff9fd49c639a7a3c34c009be0e2f"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_94895eef2eb77ca49db81b7cfbd601e0"
+                             parent="aspace_c73bff9fd49c639a7a3c34c009be0e2f"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ef56ae66b4be45d1532f33bf4f9bf276" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Copies of photographs,
-          <unitdate>1850-1906</unitdate>
-                  </unittitle>
+                  <unittitle>Copies of photographs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1850/1906"
+                            type="inclusive">1850-1906</unitdate>
+                  <container id="aspace_8d22beddf1b4702519fabe0478a8bc2f"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_52659065ffb0d5dacf05137b83c0ab58"
+                             parent="aspace_8d22beddf1b4702519fabe0478a8bc2f"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_97ffc7c52e52817020377e59c8e1fdd7" level="file">
                <did>
                   <unittitle>Memorials</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_a966839f4ff5e9a2d798202844009399" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Birthplace (Adams, Massachusetts ):
-            clippings,
-            <unitdate>1927-70</unitdate>
-                     </unittitle>
+                     <unittitle>Birthplace (Adams, Massachusetts ): clippings</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1927/1970"
+                               type="inclusive">1927-70</unitdate>
+                     <container id="aspace_8737206db211f280f343b75121aeecba"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_ad12e3a15f6e78364a0a56b8d27f9fde"
+                                parent="aspace_8737206db211f280f343b75121aeecba"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_58d2aea20b9813fa4b0054d5e35c8845" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Home (Rochester, New York): photographs,
-            clippings, and printed matter,
-            <unitdate>1948</unitdate>
-                     </unittitle>
+                     <unittitle>Home (Rochester, New York): photographs, clippings, and printed matter</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                     <container id="aspace_c71e4e47e1714d5e53f0a5c614fb253d"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_ddf9e911906b01d48ec15385a65b7de6"
+                                parent="aspace_c71e4e47e1714d5e53f0a5c614fb253d"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f8f111697f87bce469eaf563d62a0f06" level="file">
                   <did>
                      <unittitle>Commemorative postage stamps</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_cad0e6910550bd8422f0cd0d42dd9f08" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>Susan B. Anthony: clippings,
-              <unitdate>1936-70</unitdate>
-                        </unittitle>
+                        <unittitle>Susan B. Anthony: clippings</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1936/1970"
+                                  type="inclusive">1936-70</unitdate>
+                        <container id="aspace_782b7e2e063a6e41851c84afea006658"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_e50f09a2af03225462317fc4f974298f"
+                                   parent="aspace_782b7e2e063a6e41851c84afea006658"
+                                   type="folder">16</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_9b2e1fe4af5d9c69f57420c7bb275204" level="file">
                      <did>
                         <unittitle>League of Women Voters</unittitle>
                      </did>
-                     <c05 level="file">
+                     <c05 id="aspace_2ac37990948c56259f142330fc1552a4" level="file">
                         <did>
-                           <container type="box" label="mixed materials">1</container>
-                           <container type="folder" label="mixed materials">17</container>
-                           <unittitle>Correspondence,
-                <unitdate>1969-71</unitdate>
-                           </unittitle>
+                           <unittitle>Correspondence</unittitle>
+                           <unitdate calendar="gregorian"
+                                     era="ce"
+                                     normal="1969/1971"
+                                     type="inclusive">1969-71</unitdate>
+                           <container id="aspace_de1b0934243817e04f89277059d36ea2"
+                                      label="Mixed Materials"
+                                      type="box">1</container>
+                           <container id="aspace_16e9d8aabb10d2df133a7ecb2c8839e0"
+                                      parent="aspace_de1b0934243817e04f89277059d36ea2"
+                                      type="folder">17</container>
                         </did>
                      </c05>
-                     <c05 level="file">
+                     <c05 id="aspace_5970801c89b1b58d0e418fef17941eb0" level="file">
                         <did>
-                           <container type="box" label="mixed materials">1</container>
-                           <container type="folder" label="mixed materials">18</container>
-                           <unittitle>Clippings,
-                <unitdate>1970</unitdate>
-                           </unittitle>
+                           <unittitle>Clippings</unittitle>
+                           <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                           <container id="aspace_b22a90e85dc4e9e9a4806bef05538c45"
+                                      label="Mixed Materials"
+                                      type="box">1</container>
+                           <container id="aspace_3f55c9fad3b78a810b0fd62a48c5ed7b"
+                                      parent="aspace_b22a90e85dc4e9e9a4806bef05538c45"
+                                      type="folder">18</container>
                         </did>
                      </c05>
-                     <c05 level="file">
+                     <c05 id="aspace_8836df31d2cdb1369e5ebc773bb1bcef" level="file">
                         <did>
-                           <container type="box" label="mixed materials">2</container>
-                           <container type="folder" label="mixed materials">1</container>
-                           <unittitle>News releases,
-                <unitdate>1970</unitdate>
-                           </unittitle>
+                           <unittitle>News releases</unittitle>
+                           <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                           <container id="aspace_d720693fec08da64382c0894232a5805"
+                                      label="Mixed Materials"
+                                      type="box">2</container>
+                           <container id="aspace_e35a128e9372d39670ac7bc7116216b0"
+                                      parent="aspace_d720693fec08da64382c0894232a5805"
+                                      type="folder">1</container>
                         </did>
                      </c05>
-                     <c05 level="file">
+                     <c05 id="aspace_c1fe8782233c51ce1932574e00b3f104" level="file">
                         <did>
-                           <container type="box" label="mixed materials">2</container>
-                           <container type="folder" label="mixed materials">2</container>
-                           <unittitle>Printed matter and pins,
-                <unitdate>1970</unitdate>
-                           </unittitle>
+                           <unittitle>Printed matter and pins</unittitle>
+                           <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                           <container id="aspace_ec1d2c862783f968de0cb381554777ce"
+                                      label="Mixed Materials"
+                                      type="box">2</container>
+                           <container id="aspace_9e1486df4933d07c2059fe32f6168c0b"
+                                      parent="aspace_ec1d2c862783f968de0cb381554777ce"
+                                      type="folder">2</container>
                         </did>
                      </c05>
-                     <c05 level="file">
+                     <c05 id="aspace_05697ef24b0b23923956bc9c7fec6157" level="file">
                         <did>
-                           <container type="box" label="mixed materials">2</container>
-                           <container type="folder" label="mixed materials">3</container>
-                           <unittitle>Photographs,
-                <unitdate>1970</unitdate>
-                           </unittitle>
+                           <unittitle>Photographs</unittitle>
+                           <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                           <container id="aspace_92339d2c604e539b26c04dd94205a050"
+                                      label="Mixed Materials"
+                                      type="box">2</container>
+                           <container id="aspace_24fe95ed62dbf84af4002f6780e956ea"
+                                      parent="aspace_92339d2c604e539b26c04dd94205a050"
+                                      type="folder">3</container>
                         </did>
                      </c05>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c5deb2b7d39eafde09f5306f1d200be9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Hall of Fame (New York University):
-            correspondence and printed matter,
-            <unitdate>1950</unitdate>
-                     </unittitle>
+                     <unittitle>Hall of Fame (New York University): correspondence and printed matter</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                     <container id="aspace_2ff7712c0a7e4172d9038424d32dde63"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_af4dd31340a224d30d1569d23970ce40"
+                                parent="aspace_2ff7712c0a7e4172d9038424d32dde63"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_78bca4377f923014fe7d4d213dc69900" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Libraries: clippings,
-            <unitdate>1941-50, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Libraries: clippings</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1941/1950"
+                               type="inclusive">1941-50</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_fd8d9bc40e223861b938c4c01a0cc120"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_130e39b13bddd92a7e7ffc82c010aaf7"
+                                parent="aspace_fd8d9bc40e223861b938c4c01a0cc120"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_09a2e135aff9980beaad57785f708dba" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Smithsonian Institution: correspondence and
-            typed copies of articles,
-            <unitdate>1920-41</unitdate>
-                     </unittitle>
+                     <unittitle>Smithsonian Institution: correspondence and typed copies of articles</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1920/1941"
+                               type="inclusive">1920-41</unitdate>
+                     <container id="aspace_a600d642f51559fdd8db4a82de20c141"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2d8d0f5ad564f9c8d658ff1d1a037956"
+                                parent="aspace_a600d642f51559fdd8db4a82de20c141"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1855a0f79d3de908c2f0f3034f076dd8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Susan B. Anthony Day: clippings and printed
-            matter,
-            <unitdate>1939-71</unitdate>
-                     </unittitle>
+                     <unittitle>Susan B. Anthony Day: clippings and printed matter</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1939/1971"
+                               type="inclusive">1939-71</unitdate>
+                     <container id="aspace_6ddcba93aeab12c91da462d5b86d2fed"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_d707096c94b72b7660fbdce3ac3a7536"
+                                parent="aspace_6ddcba93aeab12c91da462d5b86d2fed"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7a91bb80ca8da11b160c3f2347a3016c" level="file">
                   <did>
-                     <unittitle>Susan B. Anthony Memorial
-            Committees</unittitle>
+                     <unittitle>Susan B. Anthony Memorial Committees</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_5a417f838c195879a9599dd300be8e21" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Essays about Anthony and her niece, Maude
-              Anthony Koehler,
-              <unitdate>1950, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Essays about Anthony and her niece, Maude Anthony Koehler</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_aadfa59a3b433786170ab8408ab565ed"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_532331cb8b7a233f654f8e397d5393ff"
+                                   parent="aspace_aadfa59a3b433786170ab8408ab565ed"
+                                   type="folder">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_26903f3ac18d14f01c5d796e1d25339f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Tree Project: photographs and printed
-              matter,
-              <unitdate>1938</unitdate>
-                        </unittitle>
+                        <unittitle>Tree Project: photographs and printed matter</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                        <container id="aspace_d6530ae73378fe41021a8e3953fd74eb"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_115268767d1e4b0933854ed0524ccf18"
+                                   parent="aspace_d6530ae73378fe41021a8e3953fd74eb"
+                                   type="folder">9</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_bfa5884676e94805658b0caf1e0b55ac" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Miscellaneous memorials: coin and printed
-            matter,
-            <unitdate>1940-71</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous memorials: coin and printed matter</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1940/1971"
+                               type="inclusive">1940-71</unitdate>
+                     <container id="aspace_cd13a83581eb1d5cc7c4070fec09f2c1"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_cfc7db43b8fb18a065cb1386e763ca15"
+                                parent="aspace_cd13a83581eb1d5cc7c4070fec09f2c1"
+                                type="folder">10</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f212919aa78d92fbcf4e21542d1561ac" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Marsh, Edwin T.: documents pertaining to his
-          arrest for permitting Anthony to register to vote where
-          he was inspector of polls,
-          <unitdate>1872</unitdate>
-                  </unittitle>
+                  <unittitle>Marsh, Edwin T.: documents pertaining to his arrest for permitting Anthony to register to vote where he was inspector of polls</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1872/1872">1872</unitdate>
+                  <container id="aspace_fd3cfa75b3f053aae0224e289809da3b"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_4ebc4c976fdbb237cd407465936b413a"
+                             parent="aspace_fd3cfa75b3f053aae0224e289809da3b"
+                             type="folder">11</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. CORRESPONDENCE</unittitle>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_0c4cbb0824af84ee026bf03b0823e7c1">
+               <head>Scope and Contents</head>
+               <p>Series II consists of a limited amount of assorted personal and professional correspondence. There are some typed copies of letters to family and friends (1872-1905), as well as typed copies of third party correspondence by those who knew Anthony (1894-1944). A collection of original autographs and a few handwritten letters finish this series.</p>
+            </scopecontent>
+            <c02 id="aspace_26087015a55a0eae6282db240935cc2d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Autographs,
-          <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Autographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_15abbebd4aee1cb9b1ac1c8246fc47a1"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_96b5171a526d8449b76d6bf3a6e6c28c"
+                             parent="aspace_15abbebd4aee1cb9b1ac1c8246fc47a1"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0bc2e279cf80857117429a12a5323d9c" level="file">
                <did>
                   <unittitle>Outgoing</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_851d85557435e6e645fc074e7aa4f534" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>Family and friends (typed copies),
-            <unitdate>1872-1905</unitdate>
-                     </unittitle>
+                     <unittitle>Family and friends (typed copies)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1872/1905"
+                               type="inclusive">1872-1905</unitdate>
+                     <container id="aspace_4f89be246b7c95b9786b2113fea552ef"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_d0f7da11b0c5675eff19906c3bd4f17b"
+                                parent="aspace_4f89be246b7c95b9786b2113fea552ef"
+                                type="folder">13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d6fadbc0aa1ca237ffe0d0a47b6ff165" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Isher, [?],
-            <unitdate>18 Aug 1901</unitdate>
-                     </unittitle>
+                     <unittitle>Isher, [?]</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1901-08-18/1901-08-18">18 Aug 1901</unitdate>
+                     <container id="aspace_698d49abdfc95bf3cc98b7897f47356f"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_d765868c0ffa47e9e31c3a35d04a9c6b"
+                                parent="aspace_698d49abdfc95bf3cc98b7897f47356f"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f9f2006be9d43c504f7cc11ad571c2d0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Unidentified librarian,
-            <unitdate>5 Oct 1903</unitdate>
-                     </unittitle>
+                     <unittitle>Unidentified librarian</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1903-10-05/1903-10-05">5 Oct 1903</unitdate>
+                     <container id="aspace_05a9c0a05722b43420c1ba81e6a82be2"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_7b8a7a2fdfcdb67ecc4ee2994926924c"
+                                parent="aspace_05a9c0a05722b43420c1ba81e6a82be2"
+                                type="folder">15</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e565a244019d42c18a3ab9a702b1a99e" level="file">
                <did>
                   <unittitle>Incoming</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_b0a18b3d59756d9b020d78e38a1e546c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>Unidentified,
-            <unitdate>7 Jun 1894</unitdate>
-                     </unittitle>
+                     <unittitle>Unidentified</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1894-06-07/1894-06-07">7 Jun 1894</unitdate>
+                     <container id="aspace_83fd191186f6e0b4def336b542f8d607"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_9a8ec72ec23dad1eab64d24b69be8719"
+                                parent="aspace_83fd191186f6e0b4def336b542f8d607"
+                                type="folder">16</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_db321c2867fc2cf7258f8346744208bf" level="file">
                <did>
                   <unittitle>Third party</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_864866930ec023e8dc2de234de81cd3d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>Avery, Rachel Foster,
-            <unitdate>27 Oct 1894</unitdate>
-                     </unittitle>
+                     <unittitle>Avery, Rachel Foster</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1894-10-27/1894-10-27">27 Oct 1894</unitdate>
+                     <container id="aspace_c2ccf9fe1f062ea680c0d0d49d6ec306"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_1002af7672398f82608a1ae760a0cb20"
+                                parent="aspace_c2ccf9fe1f062ea680c0d0d49d6ec306"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a25648d6cd6dc06398c13053c8c67789" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>Shaw, Anna Howard,
-            <unitdate>15 Feb 1917</unitdate>
-                     </unittitle>
+                     <unittitle>Shaw, Anna Howard</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1917-02-15/1917-02-15">15 Feb 1917</unitdate>
+                     <container id="aspace_375365aa58bcc933bf5c614c07613e85"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_626467114820ae6ecb6566b44d03fe6c"
+                                parent="aspace_375365aa58bcc933bf5c614c07613e85"
+                                type="folder">18</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_92875d74363ec15a92486971171ceeaf" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>Family and friends,
-            <unitdate>1894-1944</unitdate>
-                     </unittitle>
+                     <unittitle>Family and friends</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1894/1944"
+                               type="inclusive">1894-1944</unitdate>
+                     <container id="aspace_ffbbd8325c4e79930796298bd52652b2"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_6a8b7b4ababb7c8224534823d85bfd09"
+                                parent="aspace_ffbbd8325c4e79930796298bd52652b2"
+                                type="folder">19</container>
                   </did>
                </c03>
+            </c02>
+         </c01>
+         <c01 id="aspace_dacefca122a5078e81f119116f943e22" level="series">
+            <did>
+               <unittitle>Oversize</unittitle>
+            </did>
+            <c02 id="aspace_c145a9613b67e1539d253de0e88ec0a6" level="file">
+               <did>
+                  <unittitle>Medallions of Susan Brownell Anthony by Leila Usher</unittitle>
+                  <container id="aspace_66fb3e9bf972675a8b87554c37384f8c"
+                             label="Mixed Materials"
+                             type="box">3</container>
+               </did>
+            </c02>
+            <c02 id="aspace_94d5bcb802215b1bf49ebad82df06f2b" level="file">
+               <did>
+                  <unittitle>Birthday poster, "The Passing of SBA", Collier 31</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1906-03/1906-03">1906-03</unitdate>
+                  <container id="aspace_b69df480a243f84f3ece8eb3a0dfc69e"
+                             label="Mixed Materials"
+                             type="folder">Flat file</container>
+               </did>
+            </c02>
+            <c02 id="aspace_4b40a6c27f117d9d47aeb1b7d7d248f0" level="file">
+               <did>
+                  <unittitle>Article from <title render="italic">Ladies Home Journal</title>
+
+                  </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                  <container id="aspace_3cef6b35550246467f850843f00dd9f0"
+                             label="Mixed Materials"
+                             type="folder">Flat file</container>
+               </did>
             </c02>
          </c01>
       </dsc>
