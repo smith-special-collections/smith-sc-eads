@@ -1,333 +1,441 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss166.xml//EN">mnsss166</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss166</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Wead Family Papers, 1862-1936</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by mnsss.</author>
+            <titleproper>Finding aid to the Wead family papers <num>SSC.MS.00171</num>
+            </titleproper>
+            <author>Finding aid prepared by mnsss.</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura Cutter.
-        <date>2003-06-13</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-19 11:30:09 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss166 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:12-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-19</date>
+            <item>Added information from paper finding aid and updated.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Wead Family Papers, 1862-1936
-
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 171
-      </num>
-         <date>Revised 2002
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main-overview">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <famname encodinganalog="100 3" source="lcnaf">Wead family</famname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Wead family papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1862-1936</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 171</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">(.25 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Librarian and U.S. Sanitary Commission volunteer. The Wead Family papers consist primarily of correspondence to and from Mary Wead in the course of her work with the U.S. Sanitary Commission during the Civil War.  Correspondents with both Mary and Eunice Wead include Louisa Lee Schuyler, leader in 19th century welfare work; author Amy Lowell; and Letitia Campbell of the Freedman's Union Commission.  There is a small amount of correspondence to other Wead family members.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Wead family papers</unittitle>
+         <origination label="creator">
+            <famname source="naf">Wead family</famname>
+         </origination>
+         <unitid>SSC.MS.00171</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">.25 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1860/1936"
+                   type="inclusive">1860-1936</unitdate>
+         <abstract id="aspace_4ad87c6bd31e2d258d5e0d1e4402f2d1">Mary Wead was a U.S. Sanitary Commission volunteer during the Civil War and Eunice Wead was a Smith College librarian in the early 20th century. The Wead Family papers consist primarily of correspondence to and from Mary Wead in the course of her work with the U.S. Sanitary Commission during the Civil War. Correspondents with both Mary and Eunice Wead include Louisa Lee Schuyler, leader in 19th century welfare work; author Amy Lowell; and Letitia Campbell of the Freedman's Union Commission. There is a small amount of correspondence to other Wead family members.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-<p>Mary K. Wead (1812-1896) worked for the United States Sanitary Commission (Woman's Central Association of Relief) during the Civil War, and during the 1880s was an inspector for the New York State Charities Association for Franklin County. She married Samuel Wead. For additional biographical information, see pages 12-14 in "The Wead Family &amp; Its Relations to Malone" in Box 1 Folder 1a.</p>
-<p>Eunice Wead (1881-1969), (Mary's granddaughter?), graduated from Smith College in 1902, and received her Masters degree from the University of Michigan in 1927. She was a librarian at Smith College from 1906 to 1911; Curator of Rare Books from 1917 to 1924; and was Associate Professor of Library Science at the University of Michigan from 1926-1944.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Mary K. Wead (1812-1896) worked for the United States Sanitary Commission (Woman's Central Association of Relief) during the Civil War, and during the 1880s was an inspector for the New York State Charities Association for Franklin County. She married Samuel Wead. For additional biographical information, see pages 12-14 in "The Wead Family &amp; Its Relations to Malone" in Box 1 Folder 1a.</p>
+         <p> Eunice Wead (1881-1969), (Mary's granddaughter?), graduated from Smith College in 1902, and received her Masters degree from the University of Michigan in 1927. She was a librarian at Smith College from 1906 to 1911; Curator of Rare Books from 1917 to 1924; and was Associate Professor of Library Science at the University of Michigan from 1926-1944.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p> The Wead Family papers consist primarily of correspondence to and from Mary Wead in the course of her work with the U.S. Sanitary Commission during the Civil War.  There are also bills received for materials she purchased for the Union Army.   Correspondents with both Mary and Eunice Wead include Louisa Lee Schuyler, leader in 19th century welfare work; author Amy Lowell; and Letitia Campbell of the Freedman's Union Commission.  There is a small amount of correspondence to other Wead family members (circa 1911-36).</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Wead Family papers consist primarily of correspondence to and from Mary Wead in the course of her work with the U.S. Sanitary Commission during the Civil War. There are also bills received for materials she purchased for the Union Army. Correspondents with both Mary and Eunice Wead include Louisa Lee Schuyler, leader in 19th century welfare work; author Amy Lowell; and Letitia Campbell of the Freedman's Union Commission. There is a small amount of correspondence to other Wead family members (circa 1911-36).</p>  
       </scopecontent>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Wead Family Papers, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Eunice Wead donated her family papers to the Sophia Smith Collection circa 1944.  </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Collection is unprocessed. Finding aid revised in 2002 by Gayla Spaulding, intern. </p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj-subheads">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Lowell, Amy, 1874-1925--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Schuyler, Louisa Lee, 1837-1926--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Wead, Mary, 1812-1896</persname>
-         <persname encodinganalog="600" source="lcnaf">Wead, Mary Eunice</persname>
-         <corpname encodinganalog="610" source="lcnaf">American Freedman's Union Commission--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">National Freedmen's Relief Association--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">Woman's Central Association of Relief--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">State Charities Aid Association (New York)--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">United States Sanitary Commission--History--Sources</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Wead Family Papers, Sophia Smith Collection, SSC-MS-00171, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Additional material related to Eunice Wead is located in the Smith College Archives.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Eunice Wead donated her family papers to the Sophia Smith Collection circa 1944.</p>  
+      </acqinfo>
+      <controlaccess>
          <geogname encodinganalog="651" source="lcsh">United States--History--Civil War, 1861-1865--Women</geogname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="aat">Financial records</genreform>
+         <persname encodinganalog="600" source="naf">Lowell, Amy, 1874-1925--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Schuyler, Louisa Lee, 1837-1926--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Wead, Mary, 1812-1896</persname>
+         <persname encodinganalog="600" source="naf">Wead, Mary Eunice</persname>
+         <corpname encodinganalog="610" source="naf">American Freedman's Union Commission--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">National Freedmen's Relief Association--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Woman's Central Association of Relief--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">State Charities Aid Association (New York)--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">United States Sanitary Commission--History--Sources</corpname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1057"
+                   source="local_inmagic-people">unknown</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1212"
+                   source="local_inmagic-people">Wead, Eunice</persname>
+    
+         <persname encodinganalog="600" source="local_inmagic-collection">Wead family</persname>
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>Additional material related to Eunice Wead is located in the Smith College Archives.
-        </p>
-         </relatedmaterial>
-      </descgrp>
-      <dsc id="contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_2adb880896c7c67e9298dbf7ff8a6b56" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1</container>
                <unittitle>Contents: list and index</unittitle>
-			   
+               <container id="aspace_4add6807628060e40275f5ffa08896f4"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_edfacdc22120917caf92f93eb5653c50"
+                          parent="aspace_4add6807628060e40275f5ffa08896f4"
+                          type="folder">1</container>
             </did>
          </c01>
-		 <c01 level="file">
+         <c01 id="aspace_471b4e545092ab69635b5563e2c9c228" level="file">
             <did>
-               <container type="box" label="mixed materials">1</container>
-               <container type="folder" label="mixed materials">1a</container>
                <unittitle>Biographical: Leslie C. Wead, "The Wead Family and its Relation to Malone [N.Y.]", 1905</unittitle>
-			   
+               <container id="aspace_4972f5baa73ca2e15ee9f5ec69ee1954"
+                          label="Mixed Materials"
+                          type="box">1</container>
+               <container id="aspace_d6bcc59e8275ebe665505c53553e3d6d"
+                          parent="aspace_4972f5baa73ca2e15ee9f5ec69ee1954"
+                          type="folder">1a</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_09366a62c49f6c986020fc5c37eeaaad" level="file">
             <did>
                <unittitle>Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_109f22d762ef7eb18b853b25f5351516" level="file">
                <did>
                   <unittitle>Mary Wead</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_56beed5634e17d9fe57bde1279ebb6f1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Campbell, Laetitia, <unitdate>1865</unitdate>
-                     </unittitle>
+                     <unittitle>Campbell, Laetitia</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1865/1865">1865</unitdate>
+                     <container id="aspace_f1c1a6109eb96608571def2bbe053c3c"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_746dca23eca80a4981052650be34216d"
+                                parent="aspace_f1c1a6109eb96608571def2bbe053c3c"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6e2c9f99376019d9e0a9538799eeb389" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Collins, Ellen, <unitdate>1862-78</unitdate>
-                     </unittitle>
+                     <unittitle>Collins, Ellen</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1862/1878"
+                               type="inclusive">1862-78</unitdate>
+                     <container id="aspace_acb2e499783a53331b343112b367a11e"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_62128f7ac6c5cee28bd81e5b8afc7a30"
+                                parent="aspace_acb2e499783a53331b343112b367a11e"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3659c6e30fa13757228f8d0a912f375a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Curtis, Mary, <unitdate>1865</unitdate>
-                     </unittitle>
+                     <unittitle>Curtis, Mary</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1865/1865">1865</unitdate>
+                     <container id="aspace_9c0fff8f2e2312a81a62cd0214824a55"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_1d82ebe5f0c14b42a3beb5811e3beaa9"
+                                parent="aspace_9c0fff8f2e2312a81a62cd0214824a55"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_160bffad225087617245af4af1571c52" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>D'Orenienlx, Laura, <unitdate>1863-64</unitdate>
-                     </unittitle>
+                     <unittitle>D'Orenienlx, Laura</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1863/1864"
+                               type="inclusive">1863-64</unitdate>
+                     <container id="aspace_5c053250653f21833b316ebc215da9e6"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_43c65b633e8a6ef2ba876f87f32fdd71"
+                                parent="aspace_5c053250653f21833b316ebc215da9e6"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_586a925cb6a8084c62db4c5a58ec7779" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Freedman's Union Commission, <unitdate>1865-66</unitdate>
-                     </unittitle>
+                     <unittitle>Freedman's Union Commission</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1865/1866"
+                               type="inclusive">1865-66</unitdate>
+                     <container id="aspace_7f21ebd901e8f731f4d806144ee7fd69"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_bc0a1da165698bb4c905f18b6b13e928"
+                                parent="aspace_7f21ebd901e8f731f4d806144ee7fd69"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ab149a477d134fefc034be7a2f526851" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Griffin, Christine Kean, <unitdate>1865</unitdate>
-                     </unittitle>
+                     <unittitle>Griffin, Christine Kean</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1865/1865">1865</unitdate>
+                     <container id="aspace_c42119a58a0517e79e3eab61f8d784f0"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_38743c4e4ff86f4493093e4f5974b640"
+                                parent="aspace_c42119a58a0517e79e3eab61f8d784f0"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_af63d8d07ddddf4ceed50edc45ab1a6b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Parsons, Lizzie, <unitdate>circa 1860s</unitdate>
-                     </unittitle>
+                     <unittitle>Parsons, Lizzie</unittitle>
+                     <unitdate calendar="gregorian"
+                               certainty="approximate"
+                               era="ce"
+                               normal="1860/1869"
+                               type="inclusive">1860s</unitdate>
+                     <container id="aspace_ca92af69f5e33bb2b447c4bb160fe774"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_2ac929a8fc4fd2414c8548054a85ae68"
+                                parent="aspace_ca92af69f5e33bb2b447c4bb160fe774"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7383c1b1aae64875dc0e6fdb07578aa1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Piere, R., <unitdate>1867</unitdate>
-                     </unittitle>
+                     <unittitle>Piere, R.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1867/1867">1867</unitdate>
+                     <container id="aspace_5909c95efb6d1c166bc33ac8807874eb"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_67b415ea6ae9b5169df99a3d92476c9f"
+                                parent="aspace_5909c95efb6d1c166bc33ac8807874eb"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e50d19f5464b83d6c38ba8fe9dd1ff0b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Sampson, E. A., <unitdate>1866-67</unitdate>
-                     </unittitle>
+                     <unittitle>Sampson, E. A.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1866/1867"
+                               type="inclusive">1866-67</unitdate>
+                     <container id="aspace_69a8c3cbc673c54b549f8ce1f770f685"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_3b708a787095834fa7cc8c6bf1c76ccd"
+                                parent="aspace_69a8c3cbc673c54b549f8ce1f770f685"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7546ad86923f938da857b3f786a34cbb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">11</container>
-                     <unittitle>Post, Angelina, <unitdate>1864-65</unitdate>
-                     </unittitle>
+                     <unittitle>Post, Angelina</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1864/1865"
+                               type="inclusive">1864-65</unitdate>
+                     <container id="aspace_686c6ce819a3519b1caf47ae5e3da298"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_09270a3f91d17b7d8142164056fce8f3"
+                                parent="aspace_686c6ce819a3519b1caf47ae5e3da298"
+                                type="folder">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_469878065629fb0d0745044b7e3cbf03" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">12</container>
-                     <unittitle>Schuyler, Louisa Lee, <unitdate>1864, 1865, 1881</unitdate>
-                     </unittitle>
+                     <unittitle>Schuyler, Louisa Lee</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1864/1864">1864</unitdate>
+                     <unitdate normal="1865/1865">1865</unitdate>
+                     <unitdate normal="1881/1881">1881</unitdate>
+                     <container id="aspace_eac57fd618f60c00c1386b217c6acdb0"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_0c6a1df24016d51814fa1ff8eec0fc2c"
+                                parent="aspace_eac57fd618f60c00c1386b217c6acdb0"
+                                type="folder">12</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_683eee591aecbfc50729e06319d5d401" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>Stuart, George H., <unitdate>1864</unitdate>
-                     </unittitle>
+                     <unittitle>Stuart, George H.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1864/1864">1864</unitdate>
+                     <container id="aspace_f1bb4345447365764bf3687476fd459a"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_303eb9169e2bd7cd9dc1508be4a33be9"
+                                parent="aspace_f1bb4345447365764bf3687476fd459a"
+                                type="folder">13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_239a1f68568c2631b57d27eb60d16970" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Van Amringe, Susan M., <unitdate>1882</unitdate>
-                     </unittitle>
+                     <unittitle>Van Amringe, Susan M.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1882/1882">1882</unitdate>
+                     <container id="aspace_ec092090744ed95ce36c3fd698c0d04f"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_0074cbbf12b9ebe28372887ba0e60b7e"
+                                parent="aspace_ec092090744ed95ce36c3fd698c0d04f"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e18b99c10179c13fd501a46a92348632" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Whitney, Maria, <unitdate>1876</unitdate>
-                     </unittitle>
+                     <unittitle>Whitney, Maria</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1876/1876">1876</unitdate>
+                     <container id="aspace_4766dc85b0f82b51037b1a870da0752e"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_3066976a8af62f2a10a3b68db1cdd9d2"
+                                parent="aspace_4766dc85b0f82b51037b1a870da0752e"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_55cd8306ba8ebdb2c1b8900eb566faf0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>Sinclaire, Myra, <unitdate>1863</unitdate>
-                     </unittitle>
+                     <unittitle>Sinclaire, Myra</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863</unitdate>
+                     <container id="aspace_b1bb211c316097d944a6ea45da25b9e2"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_433fa0f9f513fd287048d313fa8b9250"
+                                parent="aspace_b1bb211c316097d944a6ea45da25b9e2"
+                                type="folder">16</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc9f503630c59f43ae066ce7a25ea391" level="file">
                <did>
                   <unittitle>Eunice Wead</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_083c9e02eb70eefaae7f1bbd550e9a5b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>Woolson, G.H., <unitdate>1906</unitdate>
-                     </unittitle>
+                     <unittitle>Woolson, G.H.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1906/1906">1906</unitdate>
+                     <container id="aspace_57658130147701a9939ed2be7f1c2421"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_77e7f8aaf24022ad4609f621164eaf63"
+                                parent="aspace_57658130147701a9939ed2be7f1c2421"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5ffc4254316ef80d63d03f1719f387b0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>Lowell, Amy, <unitdate>1919</unitdate>
-                     </unittitle>
+                     <unittitle>Lowell, Amy</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919</unitdate>
+                     <container id="aspace_b0bf9eee9e3c17b65464a1cfdb403290"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_dc4579b599843be1e01443b8a5016b99"
+                                parent="aspace_b0bf9eee9e3c17b65464a1cfdb403290"
+                                type="folder">18</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6ec5b336e3d38a07759730405765d1cc" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>Pilcher, Sophia, <unitdate>1911, 1913, 1936</unitdate>
-                     </unittitle>
+                     <unittitle>Pilcher, Sophia (Suffrage, Mrs. Simpson, abdication of Edward VIII - 1936)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                     <unitdate calendar="gregorian" era="ce" normal="1913/1913">1913</unitdate>
+                     <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                     <container id="aspace_e134959f99cb46b8604ca7362cfdc7b4"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_7ef515ecaad07066f971adf3682270c0"
+                                parent="aspace_e134959f99cb46b8604ca7362cfdc7b4"
+                                type="folder">19</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5c2ce8ee40c51ebdf92a14984ea5b29e" level="file">
             <did>
                <unittitle>Mary Wead--Miscellaneous</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_8e423780254e8d5ce3ab329a2bccab92" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Bills for items purchased for Union Army, <unitdate>1863</unitdate>
-                  </unittitle>
+                  <unittitle>Bills for items purchased for Union Army</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1863/1863">1863</unitdate>
+                  <container id="aspace_074c0f6be001381d564d33eb19e6dee2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_c8da598851b5eb760dd6c6648bb12cbf"
+                             parent="aspace_074c0f6be001381d564d33eb19e6dee2"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3033c0860b9843d83b6becb68178277f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>State Charities Aid Association Forms, <unitdate>1881-82</unitdate>
-                  </unittitle>
+                  <unittitle>State Charities Aid Association Forms</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1881/1882"
+                            type="inclusive">1881-82</unitdate>
+                  <container id="aspace_f3ed7261dfe253ae322604bea4cc0021"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_186a847b8d2c0f1d7d7c374f882cd3ec"
+                             parent="aspace_f3ed7261dfe253ae322604bea4cc0021"
+                             type="folder">21</container>
                </did>
             </c02>
          </c01>

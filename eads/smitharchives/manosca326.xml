@@ -1,285 +1,395 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" id="head"
-      langencoding="iso639-2b" relatedencoding="MARC21" repositoryencoding="iso15511"
-      scriptencoding="iso15924">
-      <eadid countrycode="us" mainagencycode="manosca"
-         publicid="-//us::manosca//TEXT us::manosca::manosca326.xml//EN">manosca326</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="manosca">manosca326</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Celebration Records, 1991-2010</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Maris Schwarz.</author>
-
+            <titleproper>Finding aid to the Celebration records <num>CA.MS.00326</num>
+            </titleproper>
+            <author>Finding aid prepared by Maris Schwarz.</author>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Smith College Archives</publisher>
+            <publisher>Smith College Archives</publisher>
+            <p>
+               <date>2013</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/college-archives"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/college-archives"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c" normal="2013">2013</date>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Jeanne
-            Lowrey. <date normal="2013-11-13">2013-11-13</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-11 13:38:44 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
+      <revisiondesc>
+         <change>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2019-03-11</date>
+            <item>Updated container information and re-published.</item>
+         </change>
+      </revisiondesc>
    </eadheader>
-
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">Celebration</corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Celebration Records</unittitle>
-         <unitdate label="Dates:" type="inclusive">1991-2010</unitdate>
-
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:"
-            repositorycode="manosca">RG 80 UUID:c12a5831-631c-4a1d-8c01-01c8b28af5ea</unitid>
-
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">1 box</extent>
-            <extent encodinganalog="300$a">( .5 linear ft.)</extent>
-         </physdesc>
-         <langmaterial encodinganalog="546" label="Language of Material:">
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
             <language langcode="eng">English</language>
          </langmaterial>
-         <repository label="Location:">
+         <repository>
             <corpname>Smith College Archives</corpname>
-            <address>
-               <addressline>Northampton, MA</addressline>
-               <addressline/>
-            </address>
          </repository>
-         <abstract encodinganalog="520$a" label="Abstract:"> Celebration started in 1991 as an
-            annual Celebration of Sisterhood, focusing on celebrating lesbian and bisexual culture.
-            Contains correspondence, agendas, programs, news articles, and photos. </abstract>
+         <unittitle>Celebration records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">Celebration</corpname>
+         </origination>
+         <unitid>CA.MS.00326</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.417 linear feet</extent>
+            <extent altrender="carrier">(1 container)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1991/2010"
+                   type="inclusive">1991-2010</unitdate>
+         <abstract id="aspace_2408a30d787862565f16bb4611d8e702">Celebration started in 1991 as an annual Celebration of Sisterhood, focusing on celebrating lesbian and bisexual culture. Contains correspondence, agendas, programs, news articles, and photos.</abstract>
       </did>
-
-
-      <!-- Enter collection level metadata -->
-      <bioghist id="bioghist">
-
-         <p>The Celebration of Sisterhood began in 1991 as a Quad Vigil in order for the Smith
-            campus and Pioneer Valley community to celebrate lesbian and bisexual connections and
-            culture. The Celebration of Sisterhood was eventually shortened to Celebration, in order
-            for the event to be more inclusive of trans-identified persons. Celebration was prompted
-            to begin after a serious of homophobic incidents on campus, and turned into an annual
-            event. Held on the Wilson House Steps, Celebration generally begins with a candlelight
-            vigil, followed by various performances by Smith sports teams, quad houses, and a
-            cappella groups.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The Celebration of Sisterhood began in 1991 as a Quad Vigil in order for the Smith campus and Pioneer Valley community to celebrate lesbian and bisexual connections and culture. The Celebration of Sisterhood was eventually shortened to Celebration, in order for the event to be more inclusive of trans-identified persons. Celebration was prompted to begin after a serious of homophobic incidents on campus, and turned into an annual event. Held on the Wilson House Steps, Celebration generally begins with a candlelight vigil, followed by various performances by Smith sports teams, quad houses, and a cappella groups.</p>  
       </bioghist>
-
-      <scopecontent id="scope">
-
-         <p>The Celebration records contain a charter, correspondence, news articles, budget
-            information, flyers, posters, programs, notes, calendar, and photos.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Celebration records contain a charter, correspondence, news articles, budget information, flyers, posters, programs, notes, calendar, and photos.</p>  
       </scopecontent>
-
-      <!-- End collection level metadata -->
-
-
-      <!-- Enter administrative information -->
-      <accessrestrict encodinganalog="506" id="admin-access">
-         <p>The records are open for research according to the regulations of the Smith College
-            Archives without any additional restrictions.</p>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
       </accessrestrict>
-      <userestrict encodinganalog="540" id="admin-use">
-         <p>Single photocopies may be made for research purposes. Permission to publish material
-            from the documents must be requested from the Smith College Archives. Smith College owns
-            copyright to any published material relating to college events and activities.
-            Provenance and copyright ownership of other materials is unknown and researchers are
-            responsible for determining any question of copyright.</p>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Smith College retains copyright of materials created as part of its business operations; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Smith College, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
       </userestrict>
-      <prefercite id="admin-cite">
-         <p>Please use the following format when citing materials from this collection:</p>
-         <p>Celebration Records, Box #, Smith College Archives.</p>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Celebration Records, Smith College Archives, CA-MS-00326, Smith College Special Collections, Northampton, Massachusetts.</p>  
       </prefercite>
-      <acqinfo id="admin-acqinfo">
-         <p>The Celebration papers were donated to the Smith College Archives from a number of
-            sources.</p>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Celebration papers were donated to the Smith College Archives from a number of sources.</p>  
       </acqinfo>
-
-
-      <!-- End administrative information -->
-
-
-      <!-- Enter controlled access terms -->
-
-      <!-- end controlled access terms -->
-
-
-      <!-- Enter additional information -->
-
-      <!-- End additional information -->
-
-
-      <!-- Enter Series descriptions -->
-
-      <!-- End Series descriptions -->
-
-      <!-- Insert container list here:-->
-
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_722aeb6284d038ec39d8aaa21c05cdfe" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">1</container>
-               <unittitle>Charter <unitdate>undated</unitdate>
-               </unittitle>
+               <unittitle>Charter</unittitle>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_5e711d74ffa303725d130e7d16d4ee97"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_660a81e632e5a5958148ab4663be3600"
+                          parent="aspace_5e711d74ffa303725d130e7d16d4ee97"
+                          type="folder">1</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_44b7719afdafd025221e633f2f3517fa" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">2</container>
-               <unittitle>History <unitdate>1991-2006</unitdate>
-               </unittitle>
+               <unittitle>History</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/2006"
+                         type="inclusive">1991-2006</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_33d6e4fb498d8c767f51d7ab7e07073f"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_cb102abe03313a2d3c0568914d8d3b81"
+                          parent="aspace_33d6e4fb498d8c767f51d7ab7e07073f"
+                          type="folder">2</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_205dd9d7c61277274d0deaed6bc20598" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">3</container>
-               <unittitle>Advertising <unitdate>1995-2007</unitdate>
-               </unittitle>
+               <unittitle>Advertising</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1995/2007"
+                         type="inclusive">1995-2007</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d0942b0887e0c04f696bbc03f0496004"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_25894271ce26ee1faf688c533cbbb2a1"
+                          parent="aspace_d0942b0887e0c04f696bbc03f0496004"
+                          type="folder">3</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_35647c9d2ee3c7238458915668e17519" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">4</container>
-               <unittitle>Agendas <unitdate>2004-2008</unitdate>
-               </unittitle>
+               <unittitle>Agendas</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2004/2008"
+                         type="inclusive">2004-2008</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_aab803fb8f4fd422ef62af8019699640"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_f248ab0e699a690274216b05910a07e7"
+                          parent="aspace_aab803fb8f4fd422ef62af8019699640"
+                          type="folder">4</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_0deae55e838aaaa11b900e84f29d425c" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">5</container>
-               <unittitle>Audio and lighting <unitdate>2000-2002</unitdate>
-               </unittitle>
+               <unittitle>Audio and lighting</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2000/2002"
+                         type="inclusive">2000-2002</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_07d8436e746c5981b085ef297903b9c4"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_cc3b98cf5bc04627965faf7144d5356c"
+                          parent="aspace_07d8436e746c5981b085ef297903b9c4"
+                          type="folder">5</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c2a5b9f05adc4c6f8ab935d36ea46cee" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">6</container>
-               <unittitle>Budget and finances <unitdate>2002-2007, undated</unitdate>
-               </unittitle>
+               <unittitle>Budget and finances</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2002/2007"
+                         type="inclusive">2002-2007</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_942f450a9805f23afac466295090bed1"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_b33142c60d67ed2650e3df0ddf304fae"
+                          parent="aspace_942f450a9805f23afac466295090bed1"
+                          type="folder">6</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a44e0d3e5f466e9043a3d01c4f640149" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">7</container>
-               <unittitle>Campus Center organization and event information <unitdate>2006</unitdate>
-               </unittitle>
+               <unittitle>Campus Center organization and event information</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2006/2006">2006</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_c8128090b0fc8765540718781993609a"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_d05c407ef6148ba8635bf926a48a780d"
+                          parent="aspace_c8128090b0fc8765540718781993609a"
+                          type="folder">7</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ab4248ab25f983b20ea2b010980ca03a" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">8</container>
-               <unittitle>Clippings <unitdate>1991-1997, undated</unitdate>
-               </unittitle>
+               <unittitle>Clippings</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1991/1997"
+                         type="inclusive">1991-1997</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d26d44797bab5ea3df61b9e50f528c4c"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_5b0d885b403e4faa426e0630dd7ff0d0"
+                          parent="aspace_d26d44797bab5ea3df61b9e50f528c4c"
+                          type="folder">8</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_5706d56c6515cead990708859fb0009c" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">9</container>
-               <unittitle>Correspondence <unitdate>1991, undated</unitdate>
-               </unittitle>
+               <unittitle>Correspondence</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1991/1991">1991</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_2303c9f311311e0cad2c8fb51a052727"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_93b59ff10f913ccb6fe0d8572a328906"
+                          parent="aspace_2303c9f311311e0cad2c8fb51a052727"
+                          type="folder">9</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_00040450f15bbd681ab400365408f959" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">10</container>
-               <unittitle>House skits and tables <unitdate>1994-1995, undated</unitdate>
-               </unittitle>
+               <unittitle>House skits and tables</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1994/1995"
+                         type="inclusive">1994-1995</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_9496d9b84cdcac6e08b12a997d804f1e"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_8a3d4d00190ba0d7d33dcd00dc94d6c1"
+                          parent="aspace_9496d9b84cdcac6e08b12a997d804f1e"
+                          type="folder">10</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_532b6936e32e36c11ada79b49688d95a" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">11</container>
-               <unittitle>Interview forms for Celebration committee <unitdate>2006-2007</unitdate>
-               </unittitle>
+               <unittitle>Interview forms for Celebration committee</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="2006/2007"
+                         type="inclusive">2006-2007</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_376ff60e7f828f5809b9efb3a7fe239e"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_25b4e7a6e3d0528360de763639019fb9"
+                          parent="aspace_376ff60e7f828f5809b9efb3a7fe239e"
+                          type="folder">11</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_fad78f63abad861ba7de4e87c1768a42" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">12</container>
-               <unittitle>Opening remarks for event (notes) <unitdate>2006, undated</unitdate>
-               </unittitle>
+               <unittitle>Opening remarks for event (notes)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2006/2006">2006</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_4583931217905bc6ee2bf1e3cd769d55"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_9573c6edc1c8890e8b45a95815d25d13"
+                          parent="aspace_4583931217905bc6ee2bf1e3cd769d55"
+                          type="folder">12</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dee9084738d9b70b3c8133506e7c1230" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">13</container>
-               <unittitle>Posters <unitdate>1996-2010, undated</unitdate>
-               </unittitle>
+               <unittitle>Posters</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1996/2010"
+                         type="inclusive">1996-2010</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_6033dcf9ec67ac8a998aea3991a44cf9"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_58cbd97a6853e10990473c59964929be"
+                          parent="aspace_6033dcf9ec67ac8a998aea3991a44cf9"
+                          type="folder">13</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a480a1677629f8082ad6892637edbaa8" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">14</container>
-               <unittitle>Programs <unitdate>1993-2010</unitdate>
-               </unittitle>
+               <unittitle>Programs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/2010"
+                         type="inclusive">1993-2010</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_d76779181de564606de739f7d1458017"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_4cc2653123e76a46d953f12f9719849a"
+                          parent="aspace_d76779181de564606de739f7d1458017"
+                          type="folder">14</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_dbea58d869db3adaec537b047e1f09f1" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">15</container>
-               <unittitle>Protests (anti-Celebration propaganda) <unitdate>2001</unitdate>
-               </unittitle>
+               <unittitle>Protests (anti-Celebration propaganda)</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2001/2001">2001</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_faeddb869f66225e1ca53026acd9fd66"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_1ecdd7b6d81329557b76a7001c66a2ca"
+                          parent="aspace_faeddb869f66225e1ca53026acd9fd66"
+                          type="folder">15</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_486b85b4e5fd5e8e8a9a679e7c7c55ca" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">16</container>
-               <unittitle>To-do lists and planning <unitdate>1999-2006, undated</unitdate>
-               </unittitle>
+               <unittitle>To-do lists and planning</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1999/2006"
+                         type="inclusive">1999-2006</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_dcab266eef66c2faf545fce97a010b17"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_ec8adb99edc14adf7ac7c31cae83111d"
+                          parent="aspace_dcab266eef66c2faf545fce97a010b17"
+                          type="folder">16</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_c28e0d2b3e72e24672028849c7939772" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">17</container>
-               <unittitle>Transgender issues <unitdate>2002, undated</unitdate>
-               </unittitle>
+               <unittitle>Transgender issues</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="2002/2002">2002</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_17b4985d7b794ab279a5fe7b92cab2e1"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_d5d41e3bd5eeae47d132f0c66c20b287"
+                          parent="aspace_17b4985d7b794ab279a5fe7b92cab2e1"
+                          type="folder">17</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_ce38ef269672d0dbbf471880ad27d0ab" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">18</container>
-               <unittitle>T-shirts <unitdate>1992-2007, undated</unitdate>
-               </unittitle>
+               <unittitle>T-shirts</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1992/2007"
+                         type="inclusive">1992-2007</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_0120812087ab93c847c180bccbd56a0a"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_5c63e3b30a57cfe921e00855d3be7a9e"
+                          parent="aspace_0120812087ab93c847c180bccbd56a0a"
+                          type="folder">18</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_89f036a8c86195a5352850987f4bf19d" level="file">
             <did>
-               <container type="box" label="mixed materials">3003.1</container>
-               <container type="folder" label="mixed materials">19</container>
-               <unittitle>Photographs <unitdate>1993-1995</unitdate>
-               </unittitle>
+               <unittitle>Photographs</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1993/1995"
+                         type="inclusive">1993-1995</unitdate>
+               <container altrender="Letter document box"
+                          id="aspace_f2c44f567edcbbbc734264c22c00497b"
+                          label="Mixed Materials [310183630238292]"
+                          type="box">3003.1</container>
+               <container id="aspace_1cb38ef27f306a60fcd87a7259261470"
+                          parent="aspace_f2c44f567edcbbbc734264c22c00497b"
+                          type="folder">19</container>
             </did>
          </c01>
       </dsc>
-
-      <!-- End container list -->
-
    </archdesc>
 </ead>

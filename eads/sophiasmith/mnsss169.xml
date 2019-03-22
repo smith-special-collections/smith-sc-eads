@@ -1,1189 +1,1705 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss169.xml//EN">mnsss169</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss169</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Vivion Lenon Brewer Papers, 1947-1991</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Kate Weigand.</author>
+            <titleproper>Finding aid to the Vivion Lenon Brewer papers <num>SSC.MS.00020</num>
+            </titleproper>
+            <author>Kate Weigand</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura Cutter.
-        <date>2003-07-11</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-20 15:42:17 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss169 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:12-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-20</date>
+            <item>Added pencil edits from paper FA and updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Vivion Lenon Brewer Papers, 1947-1991
-
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 20
-      </num>
-         <author encodinganalog="245$c">Kate Weigand
-      </author>
-         <date>2002
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main-overview">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Brewer, Vivion Lenon</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Vivion Lenon Brewer papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1947-1991</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 20</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">10 boxes</extent>
-            <extent encodinganalog="300$a">(3.5 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Co-founder, Women's Emergency Committee to Open Our Schools; volunteer; banker; and lawyer. A native of Arkansas, Vivion Brewer was an advocate of civil rights and integration and also participated in several women's organizations. This collection sheds some light on her personal and professional life, as well as offering insight into larger questions about the motives and experiences of white Southerners who opposed racism and segregation. Materials include writings, diaries, correspondence, photographs, and various records. Also included are her typescript memoir entitled "The Embattled Ladies of Little Rock;" and organizational material from the Women's Emergency Committee to Open Our Schools such as minutes.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Vivion Lenon Brewer papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Brewer, Vivion Lenon</persname>
+         </origination>
+         <unitid>SSC.MS.00020</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3.5 linear feet</extent>
+            <extent altrender="carrier">(10 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1947/2004"
+                   type="inclusive">1947-2004</unitdate>
+         <abstract id="aspace_63a49044d4cea2ddd6de13912ed8ecee">Vivion Lenon Brewer was a co-founder of Women's Emergency Committee to Open Our Schools, a volunteer, banker, and lawyer. A native of Arkansas, Vivion Brewer was an advocate of civil rights and integration and also participated in several women's organizations. This collection sheds some light on her personal and professional life, as well as offering insight into larger questions about the motives and experiences of white Southerners who opposed racism and segregation. Materials include writings, diaries, correspondence, photographs, and various records. Also included are her typescript memoir entitled <title render="italic">The Embattled Ladies of Little Rock</title>, and organizational material from the Women's Emergency Committee to Open Our Schools such as minutes.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-         <p> Vivion Lenon Brewer was born on October 6, 1900 in Little Rock, Arkansas to Clara Mercer and Warren E. Lenon, a prominent local Democrat who served as Little Rock's mayor from 1903-1908.  After graduating from Little Rock High School, Brewer left the South to attend Smith College, where she majored in sociology.  She returned to Little Rock after her graduation from Smith in 1921 and, until 1923, worked as her father's secretary.   During the period 1924-26 Brewer worked briefly as a bookkeeper and a gift shop owner before she left to spend a year traveling through Europe.  In 1926 Brewer returned to Little Rock once again, resumed working in her father's bank by day, and began working toward her law degree at night.  She graduated from Arkansas Law School in 1928, the same year she was elected Vice President of the bank.  Despite passing the Arkansas bar exam in 1929, Brewer chose to continue at the bank rather than working as an attorney.</p>
- 
-         <p> In 1930 Vivion Lenon married Joseph Brewer, the nephew of Senator Joseph T. Robinson who had run for Vice President alongside Democratic Presidential candidate Al Smith in 1928.  The couple lived in Washington, D.C. for sixteen years as Joe Brewer held a succession of Federal government positions including secretary to his uncle, then the Senate Majority leader, and executive positions in the Department of Justice and Department of the Interior.  During her time in Washington, D.C., Vivion Brewer endured both a serious four-year-long illness and the birth and death of her only child in 1933.  She also became close to an African-American woman she employed and, through that friendship, gained new insights about the destructive impact of racism and segregation in the U.S.  In 1946, following Joe's return from military service during World War II, the Brewers decided to return to Arkansas.  Joe accepted a job as the personnel officer at the North Little Rock Veterans Administration Hospital and the couple settled on a piece of old Brewer family property in Scott, Arkansas.</p>
-         <p> Over the next decade Vivion spent her time renovating the Brewer property and participating in organizations such as the American Association of University Women and the League of Women Voters.  It was not until 1958, when the crisis erupted over the issue of integrating Little Rock's high schools, that Brewer finally acted on the anti-racist impulses she had discovered in herself twenty years earlier.  When Governor Orval Faubus chose to close Little Rock public schools rather than integrate them, Brewer, along with several other prominent local women, organized the Women's Emergency Committee to Open Our Schools and became some of the most visible white advocates of integration.   After the Little Rock schools re-opened and the Women's Emergency Committee disbanded Brewer continued her activism by organizing educational programs for African-American children.   Smith College recognized her work by awarding her an honorary doctorate in 1961.  After Joe Brewer died in 1988 Vivion went to Pasadena, California to live with her niece.   She died there in June, 1991, at age 90.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Vivion Lenon Brewer was born on October 6, 1900 in Little Rock, Arkansas to Clara Mercer and Warren E. Lenon, a prominent local Democrat who served as Little Rock's mayor from 1903-1908. After graduating from Little Rock High School, Brewer left the South to attend Smith College, where she majored in sociology. She returned to Little Rock after her graduation from Smith in 1921 and, until 1923, worked as her father's secretary. During the period 1924-26 Brewer worked briefly as a bookkeeper and a gift shop owner before she left to spend a year traveling through Europe. In 1926 Brewer returned to Little Rock once again, resumed working in her father's bank by day, and began working toward her law degree at night. She graduated from Arkansas Law School in 1928, the same year she was elected Vice President of the bank. Despite passing the Arkansas bar exam in 1929, Brewer chose to continue at the bank rather than working as an attorney.</p>
+         <p>  In 1930 Vivion Lenon married Joseph Brewer, the nephew of Senator Joseph T. Robinson who had run for Vice President alongside Democratic Presidential candidate Al Smith in 1928. The couple lived in Washington, D.C. for sixteen years as Joe Brewer held a succession of Federal government positions including secretary to his uncle, then the Senate Majority leader, and executive positions in the Department of Justice and Department of the Interior. During her time in Washington, D.C., Vivion Brewer endured both a serious four-year-long illness and the birth and death of her only child in 1933. She also became close to an African-American woman she employed and, through that friendship, gained new insights about the destructive impact of racism and segregation in the U.S. In 1946, following Joe's return from military service during World War II, the Brewers decided to return to Arkansas. Joe accepted a job as the personnel officer at the North Little Rock Veterans Administration Hospital and the couple settled on a piece of old Brewer family property in Scott, Arkansas.</p>
+         <p>  Over the next decade Vivion spent her time renovating the Brewer property and participating in organizations such as the American Association of University Women and the League of Women Voters. It was not until 1958, when the crisis erupted over the issue of integrating Little Rock's high schools, that Brewer finally acted on the anti-racist impulses she had discovered in herself twenty years earlier. When Governor Orval Faubus chose to close Little Rock public schools rather than integrate them, Brewer, along with several other prominent local women, organized the Women's Emergency Committee to Open Our Schools and became some of the most visible white advocates of integration. After the Little Rock schools re-opened and the Women's Emergency Committee disbanded Brewer continued her activism by organizing educational programs for African-American children. Smith College recognized her work by awarding her an honorary doctorate in 1961. After Joe Brewer died in 1988 Vivion went to Pasadena, California to live with her niece. She died there in June, 1991, at age 90.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p> The Vivion Lenon Brewer Papers include material from 1947 to 1991, with most items dating from 1956 to 1965.  The collection contains biographical material, including her 1973 typescript account of the fight for integration, "The Embattled Ladies of Little Rock" (published in 1998), and other writings, clippings, and photographs; correspondence; organizational material from the Women's Emergency Committee to Open Our Schools; subject files; and printed material related to segregation.</p>
-         <p> Major subjects reflected in the collection include the school desegregation crisis in Arkansas and other Southern states, the Civil Rights movement in the U.S., the activities of white racists in the U.S., and the history of Little Rock, Arkansas.  Organizations represented include the American Association of University Women, the League of Women Voters, and the Women's Emergency Committee to Open Our Schools, as well as numerous local political and charitable organizations through which Vivion Brewer worked to aid the African-American population of Little Rock.  The papers shed some light on Vivion Brewer's life; they also offer insight into larger questions about the motives and experiences of white Southerners who defied their culture by opposing racism and segregation.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Vivion Lenon Brewer papers include material from 1947 to 2004, with most items dating from 1956 to 1965. The collection contains biographical material, including her 1973 typescript account of the fight for integration, <title render="italic">The Embattled Ladies of Little Rock</title> (published in 1998), and other writings, clippings, and photographs; correspondence; organizational material from the Women's Emergency Committee to Open Our Schools; subject files; and printed material related to segregation.</p>
+         <p>  Major subjects reflected in the collection include the school desegregation crisis in Arkansas and other Southern states, the Civil Rights movement in the U.S., the activities of white racists in the U.S., and the history of Little Rock, Arkansas. Organizations represented include the American Association of University Women, the League of Women Voters, and the Women's Emergency Committee to Open Our Schools, as well as numerous local political and charitable organizations through which Vivion Brewer worked to aid the African-American population of Little Rock. The papers shed some light on Vivion Brewer's life; they also offer insight into larger questions about the motives and experiences of white Southerners who defied their culture by opposing racism and segregation.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into four series:</p>
-         <list>
-            <item>
-               I.  Biographical Materials
-            </item>
-            <item>
-               II.  Correspondence
-            </item>
-            <item>
-               III.  Organizations and Activities 
-            </item>
-            <item>
-               IV.  Subject Files
-            </item>
-            <item>
-               Oversize Materials
-            </item>
-            <item>
-               Books on Shelf
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into four series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Materials</item>
+            <item>II. Correspondence</item>
+            <item>III. Organizations and Activities</item>
+            <item>IV. Subject Files</item>
+            <item>Oversize Materials</item>
+            <item>Books on Shelf</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open for research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Vivion Lenon Brewer's niece, Patricia M. Rostker owns copyright to her papers. Permission must be obtained to publish reproductions or quotations beyond "fair use."  Copyright to materials created by others may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Vivion Lenon Brewer Papers, Sophia Smith Collection, Smith College, Northampton, Mass</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Vivion Lenon Brewer donated her papers to the Sophia Smith Collection in 1968.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Processed by Kate Weigand.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj-subheads">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Brewer, Vivion Lenon</persname>
-         <corpname encodinganalog="610" source="lcnaf">Women's Emergency Committee to Open Our Schools (Little Rock, Ark.)--History--Sources</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Vivion Lenon Brewer papers, Sophia Smith Collection, SSC-MS-00020, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that she owns copyright, Vivion Lenon Brewer's niece, Patricia M. Rostker, owns copyright to the papers she donated to Smith College. Copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For those few instances beyond fair use, or which may regard materials in the collection not created by Vivion Lenon Brewer, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Vivion Lenon Brewer donated her papers to the Sophia Smith Collection in 1968.</p>  
+      </acqinfo>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">African Americans--Civil rights--Arkansas--Little Rock--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Businesswomen--United States--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Civil rights movements--Arkansas--Little Rock--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Segregation in education--United States--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">School integration--Arkansas--History--Sources</subject>
          <geogname encodinganalog="651" source="lcsh">Little Rock (Ark.)--History--20th century--Sources</geogname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Sound recordings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Interviews</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">diaries</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Organization files</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Pamphlets</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Legislative documents</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Publicity</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Minutes</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Agendas</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Notes</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Speeches</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Writings</genreform>
+         <persname encodinganalog="600" source="naf">Brewer, Vivion Lenon</persname>
+         <corpname encodinganalog="610" source="naf">Women's Emergency Committee to Open Our Schools (Little Rock, Ark.)--History--Sources</corpname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_715"
+                   source="local_inmagic-people">Rostker, Patricia M.</persname>
+    
+    
       </controlaccess>
-      <!-- Begin series descriptions -->
-<dsc type="analyticover">
-    <c01 level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. BIOGRAPHICAL MATERIALS</unittitle>
-               <unitdate>1958-91</unitdate>
-               <physdesc>
-                  <extent>.4 linear ft.</extent>
-               </physdesc>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1991"
+                         type="inclusive">1958-91</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1958/1991"
+                         type="inclusive">1958-91</unitdate>
             </did>
-            <scopecontent>
-               <p>This series contains a variety of material by and about Vivion Lenon Brewer that documents her life, especially her participation in the Women's Emergency Committee to Open Our Schools and other organized volunteer efforts to promote racial integration in Little Rock, AR. It includes the following subseries: Desk diaries from 1959 and 1960; correspondence, newspaper clippings, and photographs that document her receipt of an honorary degree from Smith College in 1961; and Writings about VLB including articles, correspondence, newspaper clippings, and notes by VLB and others that provide basic information about her life and achievements.  This series also contains information about Brewer's Family, including correspondence, newspaper clippings, notes and testimony documenting the Arkansas Veterans Administration's harassment of Joseph Brewer between 1958-61; and letters of support and rebuke that Brewer and her husband received from members of her extended family.  The bulk of this series consists of Brewer's 1973 typescript of her Memoir: <title>The Embattled Ladies of Little Rock</title> [See also published book on shelf], which documents both the Women's Emergency Committee to Open Our Schools and her other contributions to the fight against segregation.  Photographs contains images dating from 1959-63 of Brewer alone, with her husband, and with Lew Irwin of ABC-TV news; Brewer's home; and Brewer with her fellow Women's Emergency Committee organizers Adolphine Terry, Pat House, Velma Powell, and Jo Jackson.
-</p>
+            <scopecontent id="aspace_e67dc67759e558a9fb3697250a711ff8">
+               <head>Scope and Contents</head>
+               <p>This series contains a variety of material by and about Vivion Lenon Brewer that documents her life, especially her participation in the Women's Emergency Committee to Open Our Schools and other organized volunteer efforts to promote racial integration in Little Rock, AR. It includes the following subseries: Desk diaries from 1959 and 1960; correspondence, newspaper clippings, and photographs that document her receipt of an honorary degree from Smith College in 1961; and Writings about VLB including articles, correspondence, newspaper clippings, and notes by VLB and others that provide basic information about her life and achievements. This series also contains information about Brewer's Family, including correspondence, newspaper clippings, notes and testimony documenting the Arkansas Veterans Administration's harassment of Joseph Brewer between 1958-61; and letters of support and rebuke that Brewer and her husband received from members of her extended family. The bulk of this series consists of Brewer's 1973 typescript of her Memoir: <title>The Embattled Ladies of Little Rock</title> [See also published book on shelf], which documents both the Women's Emergency Committee to Open Our Schools and her other contributions to the fight against segregation. Photographs contains images dating from 1959-63 of Brewer alone, with her husband, and with Lew Irwin of ABC-TV news; Brewer's home; and Brewer with her fellow Women's Emergency Committee organizers Adolphine Terry, Pat House, Velma Powell, and Jo Jackson.</p>
             </scopecontent>
-  </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES II. CORRESPONDENCE</unittitle>
-               <unitdate>1956-72</unitdate>
-               <physdesc>
-                  <extent>.3 linear ft.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>This series is arranged in three subseries: General, Fan mail, and Individual.  General correspondence is arranged chronologically and consists of incoming and outgoing correspondence between Vivion Brewer  and various people, some private individuals and others representing organizations.  Some of this correspondence includes hate mail from segregationists. Fan mail dates from 1958-60 and includes letters to Brewer from individuals who lauded her work for integration.  Individual correspondence is arranged alphabetically and consists of letters to Vivion Brewer  from prominent individuals including Arkansas Senator J.W. Fulbright, former First Lady Eleanor Roosevelt, and Senator and former presidential candidate Adlai Stevenson.
-</p>
-            </scopecontent>
-  </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES III. ORGANIZATIONS AND ACTIVITIES</unittitle>
-               <unitdate>1957-69</unitdate>
-               <physdesc>
-                  <extent>l linear ft.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>This series, the largest in the collection, documents Brewer's personal and volunteer activities from 1957-69.  It is arranged alphabetically by the name of the event or organization.  Except for the American Association of University Women and the League of Women Voters all of the events and organizations represented in this series relate to Brewer's Civil Rights work.  There is a large amount of material from the Women's Emergency Committee to Open Our Schools and from other organizations that Brewer helped to organize, such as Project Happy Time and Project Worthwhile.  There is a smaller amount of material from groups such as the Arkansas Committee for Public Schools, the Arkansas Council on Human Relations, and the Louisiana Save Our Schools movement.  Types of material include organizing statements, correspondence, memoranda, newspaper clippings, publicity, reports, agendas, minutes, speeches, and photographs.
-</p>
-            </scopecontent>
-  </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES IV. SUBJECT FILES</unittitle>
-               <unitdate>1947-72</unitdate>
-               <physdesc>
-                  <extent>1.7 linear ft.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>This series is arranged alphabetically by subject and includes topics in which Brewer had a particular interest including Arkansas elections, school integration, Little Rock's history and demographics, and segregationism. Though the series contains a few newspaper clippings and magazine articles from the late 1940s and the early 1970s, the vast majority of the material dates from the late 1950s and early 1960s.  The series contains numerous types of material including advertisements, articles, campaign buttons and literature, leaflets, maps, newspaper clippings, polls, posters, reports, typescripts, and miscellaneous printed material.
-</p>
-            </scopecontent>
-  </c01>
-</dsc>
-<!-- End series descriptions -->
-
-<!-- Begin container list -->
-<dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
-            <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIALS</unittitle>
-               <unitdate>1958-91</unitdate>
-            </did>
-            <c02 level="file">
+            <c02 id="aspace_4f904c52d560fb3dad53a97cf50239eb" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Desk diaries,<unitdate> 1959-60</unitdate>
-                  </unittitle>
+                  <unittitle>Desk diaries</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1960"
+                            type="inclusive">1959-60</unitdate>
+                  <container id="aspace_216d31f856dc5888fd4ebbed2f44e41c"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_f485f09001a005fdfd560ea350848790"
+                             parent="aspace_216d31f856dc5888fd4ebbed2f44e41c"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_491894c916c8f9cbd9704d49874d72d5" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Smith College: correspondence, honorary degree, newspaper clippings, and photograph,<unitdate> 1960-61</unitdate>
-                  </unittitle>
+                  <unittitle>Smith College: correspondence, honorary degree, newspaper clippings, and photograph</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-61</unitdate>
+                  <container id="aspace_ebd57fc326367bd795f7e2c20ea2f5ef"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_e49c8c25510368930d824500b07f6b38"
+                             parent="aspace_ebd57fc326367bd795f7e2c20ea2f5ef"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fffb21b8263d7d6b8429ff6ab3c0fc08" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Writings about VLB: article, correspondence, newspaper clippings, notes, obituary, and profile,<unitdate> 1961-91, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Writings about VLB: article, correspondence, newspaper clippings, notes, obituary, and profile</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/1991"
+                            type="inclusive">1961-91</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c21b44589997c225403bb3754389f822"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_7869eac813e5769d398d86e133ea04af"
+                             parent="aspace_c21b44589997c225403bb3754389f822"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9c49dc40c291c948e650d7ed489e9613" level="file">
                <did>
                   <unittitle>Family</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_773bef79e0039857b6c7a70f3d1d7e38" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Harassment of JB by Veterans Administration: correspondence [including Senator J.W. Fulbright], exhibits, newspaper clippings, notes, and testimony,<unitdate> 1958-61</unitdate>
-                     </unittitle>
+                     <unittitle>Harassment of JB by Veterans Administration: correspondence [including Senator J.W. Fulbright], exhibits, newspaper clippings, notes, and testimony</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1961"
+                               type="inclusive">1958-61</unitdate>
+                     <container id="aspace_4e6ffd7456cb6a9ca4cd8263e0e06618"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_e51f098ffb383fb1b255c89176bbb355"
+                                parent="aspace_4e6ffd7456cb6a9ca4cd8263e0e06618"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_236f342153e4176400d2eecfc0ff2126" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Letters of rebuke and support from VLB's family ,<unitdate> 1958-59</unitdate>
-                     </unittitle>
+                     <unittitle>Letters of rebuke and support from VLB's family </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1959"
+                               type="inclusive">1958-59</unitdate>
+                     <container id="aspace_61b67c43610676e1cd1d6f09cd6d50e7"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_72287a22fe14826dd688e4c2b4b47632"
+                                parent="aspace_61b67c43610676e1cd1d6f09cd6d50e7"
+                                type="folder">5</container>
                   </did>
                </c03>
             </c02>
-            <c02 id="list-embattled" level="file">
+            <c02 id="aspace_list-embattled" level="file">
                <did>
-                  <unittitle>Memoir:  <title>The Embattled Ladies of Little Rock</title>,                 <unitdate>1973 </unitdate>
+                  <unittitle>Memoir: <title>The Embattled Ladies of Little Rock</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1973/1973">1973</unitdate>
                </did>
-               <note>
-                  <p>
-                     [See also Books on Shelf, The Embattled Ladies of Little Rock, 1958-63: The Struggle to Save Public Education at Central High, 1999]
-                  </p>
-               </note>
-               <c03 level="file">
+               <odd id="aspace_ab44d98ce6e92389a1e1bf624aa32038">
+                  <head>General</head>
+                  <p>[See also Books on Shelf, The Embattled Ladies of Little Rock, 1958-63: The Struggle to Save Public Education at Central High, 1999]</p>
+               </odd>
+               <c03 id="aspace_9678db1fc9212e212bdcd608c47ac926" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">6</container>
                      <unittitle>Chapters 1-5</unittitle>
+                     <container id="aspace_930cddec1ad71127527027b57ad37eb0"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_8c4b337eb72bcfca0f881a5fec89ff50"
+                                parent="aspace_930cddec1ad71127527027b57ad37eb0"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4ac1bb2c3379e3b2a0da1b8f3b668345" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">7</container>
                      <unittitle>Chapters 6-8</unittitle>
+                     <container id="aspace_af12b2bc9aeb75c758fa0f1e9cb02590"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_f74409263cd8f8e1c4342bbf77fd6a62"
+                                parent="aspace_af12b2bc9aeb75c758fa0f1e9cb02590"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_35a23aeaf2d47f59889f9e1b9c806542" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">8</container>
                      <unittitle>Chapters 9-13</unittitle>
+                     <container id="aspace_0962bf5acaebd9631607edec9fc88704"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_f138392bbb3eba7b3c0fa6a9593eec40"
+                                parent="aspace_0962bf5acaebd9631607edec9fc88704"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9a5c7153f3490a8c7c6485849e3f5c82" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Appendices: biographies of founders, correspondence, crank leaflets, lists, newsletters, notes, publicity, speeches, and surveys,<unitdate> 1958-60, 1973</unitdate>
-                     </unittitle>
+                     <unittitle>Appendices: biographies of founders, correspondence, crank leaflets, lists, newsletters, notes, publicity, speeches, and surveys</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1960"
+                               type="inclusive">1958-60</unitdate>
+                     <unitdate normal="1973/1973">1973</unitdate>
+                     <container id="aspace_0f60cd0c6a794a76ebb39e42e9957623"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_8a2a9d4f18785ffdae1ebf2469f50a81"
+                                parent="aspace_0f60cd0c6a794a76ebb39e42e9957623"
+                                type="folder">9</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_129e874912e6801fbbd7bc5c2e0ab1a9" level="file">
                <did>
                   <unittitle>Photographs</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_0164ded4ba2b28cdba3e71a5563a4e7a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Vivion and Joe Brewer, <unitdate>Aug 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Vivion and Joe Brewer</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959-08/1959-08">Aug 1959</unitdate>
+                     <container id="aspace_6193155a490479ba651fdf05b1572236"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_ab065bb62748e0708e8627747a8fbfdb"
+                                parent="aspace_6193155a490479ba651fdf05b1572236"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1192dfefa3ce00b44e92619fa452ab57" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Lew Irwin of ABC-TV News and Vivion Brewer, Pasadena, CA, <unitdate>21 Aug 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Lew Irwin of ABC-TV News and Vivion Brewer, Pasadena, CA</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959-08-21/1959-08-21">21 Aug 1959</unitdate>
+                     <container id="aspace_948ecb2bf0fa558388088824d7098aec"
+                                label="Mixed Materials"
+                                type="box">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2c5b2b77c21b8e256fefd4bd7dec647c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Brewer home, Scott, Arkansas, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Brewer home, Scott, Arkansas</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_311b341077f2773d3ee4b005f620622f"
+                                label="Mixed Materials"
+                                type="box">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5e65a18b07a101851c520f99a1e1e979" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Vivion Brewer, Adolphine Terry, and Pat House,<unitdate> 1963</unitdate>
-                     </unittitle>
+                     <unittitle>Vivion Brewer, Adolphine Terry, and Pat House</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                     <container id="aspace_bc61757a43c4ce55ed3f45650340e15e"
+                                label="Mixed Materials"
+                                type="box">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a6e55d1aa9afa0475f290a7724ab6f5b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <unittitle>Vivion Brewer, Velma Powell, Jo Jackson, and Adolphine Terry,<unitdate> 1963</unitdate>
-                     </unittitle>
+                     <unittitle>Vivion Brewer, Velma Powell, Jo Jackson, and Adolphine Terry</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                     <container id="aspace_a24b3e3aa20f1a9da486c0d43d24831a"
+                                label="Mixed Materials"
+                                type="box">1</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. CORRESPONDENCE</unittitle>
-               <unitdate>1956-72</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1972"
+                         type="inclusive">1956-72</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1956/1972"
+                         type="inclusive">1956-72</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_e7f69840c8d565111baef22baedfd91a">
+               <head>Scope and Contents</head>
+               <p>This series is arranged in three subseries: General, Fan mail, and Individual. General correspondence is arranged chronologically and consists of incoming and outgoing correspondence between Vivion Brewer and various people, some private individuals and others representing organizations. Some of this correspondence includes hate mail from segregationists. Fan mail dates from 1958-60 and includes letters to Brewer from individuals who lauded her work for integration. Individual correspondence is arranged alphabetically and consists of letters to Vivion Brewer from prominent individuals including Arkansas Senator J.W. Fulbright, former First Lady Eleanor Roosevelt, and Senator and former presidential candidate Adlai Stevenson.</p>
+            </scopecontent>
+            <c02 id="aspace_98c36934ff18c139ef56c1ec47bd7107" level="file">
                <did>
                   <unittitle>General</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_3ba53672844887bf30e1de650d8ce739" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>
-                        <unitdate>1958</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container id="aspace_e2171e9752a91bebedc78df206229cdb"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2bdb82bd459d1ecc6d71667622e381cd"
+                                parent="aspace_e2171e9752a91bebedc78df206229cdb"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_92b8582815a47f3dc2f9d7fb5cfd5ad8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>1959</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_a4becb512868e5dce996ace8e47d616e"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_a45d9afaafb0714643f1eaec1edfdb83"
+                                parent="aspace_a4becb512868e5dce996ace8e47d616e"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e2280dada1154da6fa094fb45c501cc4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>
-                        <unitdate>1960</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <container id="aspace_1028e528998eeb3a3ba9047ae6e89eb7"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_f8bdea15627ecdc222a138b3ba11a66a"
+                                parent="aspace_1028e528998eeb3a3ba9047ae6e89eb7"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_bd527595d3921b57349c9e377ed37c3e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>
-                        <unitdate>1961</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                     <container id="aspace_b3e2e4bdafd9cc2dffd7d85419862448"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_357ceee38591097586e2d3843516593b"
+                                parent="aspace_b3e2e4bdafd9cc2dffd7d85419862448"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0aaae7609d2089e8b61b533d66e27f3e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>
-                        <unitdate>1962-72</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1962/1972"
+                               type="inclusive">1962-72</unitdate>
+                     <container id="aspace_aaa39cd40886ebf8d3a77538cd788b58"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_589c5ec09b9c09c8c152f4b22b26c9ed"
+                                parent="aspace_aaa39cd40886ebf8d3a77538cd788b58"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1bd1dc50a85859d90cbb484c810b472a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>
-                        <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_0753c7eb0c70510436ece29b52e64b96"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_673e7d3c3b896fbb10ca9f2b1fceb50c"
+                                parent="aspace_0753c7eb0c70510436ece29b52e64b96"
+                                type="folder">6</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_71866c53d12b8338d87356d1bd525ba0" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Fan mail,<unitdate> 1958-60, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Fan mail</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1960"
+                            type="inclusive">1958-60</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_02332e18ad0f57c8181e77b387d057f0"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_a969fc5edb0d167a5e0b42068ff452a4"
+                             parent="aspace_02332e18ad0f57c8181e77b387d057f0"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8ab34b50ae224975f0489fc167b86026" level="file">
                <did>
                   <unittitle>Individual (alphabetical)</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_ba2e775a430a6ffd0fb68944c1033ecf" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Fulbright, J.W.,<unitdate> 1956</unitdate>
-                     </unittitle>
+                     <unittitle>Fulbright, J.W.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1956/1956">1956</unitdate>
+                     <container id="aspace_b912f8cd2d8a15144397b773ee49c52f"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_b09429760cc0d029348fd3fad27a9e05"
+                                parent="aspace_b912f8cd2d8a15144397b773ee49c52f"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_39c26d98097ff6cbd9d22e5f08f6f68e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Roosevelt, Eleanor,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Roosevelt, Eleanor</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_213ecd2a0265dc0d1bb938d6ca845fee"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_84e405975f3ecb111fa943bdcdc3a4b3"
+                                parent="aspace_213ecd2a0265dc0d1bb938d6ca845fee"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c25a6ddbb715d006419d20a24e169d3f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Stevenson, Adlai,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Stevenson, Adlai</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_40c2741d943ccc27f0982fe3fb3827e0"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_e8fa04c3f9c76b7f7ef7d4d6bbf7c01c"
+                                parent="aspace_40c2741d943ccc27f0982fe3fb3827e0"
+                                type="folder">10</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. ORGANIZATIONS AND ACTIVITIES</unittitle>
-               <unitdate>1957-69</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1969"
+                         type="inclusive">1957-69</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1957/1969"
+                         type="inclusive">1957-69</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_6b469e71c0c6e27be4ba42689d77b169">
+               <head>Scope and Contents</head>
+               <p>This series, the largest in the collection, documents Brewer's personal and volunteer activities from 1957-69. It is arranged alphabetically by the name of the event or organization. Except for the American Association of University Women and the League of Women Voters all of the events and organizations represented in this series relate to Brewer's Civil Rights work. There is a large amount of material from the Women's Emergency Committee to Open Our Schools and from other organizations that Brewer helped to organize, such as Project Happy Time and Project Worthwhile. There is a smaller amount of material from groups such as the Arkansas Committee for Public Schools, the Arkansas Council on Human Relations, and the Louisiana Save Our Schools movement. Types of material include organizing statements, correspondence, memoranda, newspaper clippings, publicity, reports, agendas, minutes, speeches, and photographs.</p>
+            </scopecontent>
+            <c02 id="aspace_04d05054b824556f7aab9441d6d78ea8" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>American Association of University Women: agendas, newspaper clippings, policies, and statements,<unitdate> 1959-60, undated</unitdate>
-                  </unittitle>
+                  <unittitle>American Association of University Women: agendas, newspaper clippings, policies, and statements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1960"
+                            type="inclusive">1959-60</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_8f1e71df9776962c6020de53c3318eb3"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_34964fa73e87296299db54d5cb5bfdb8"
+                             parent="aspace_8f1e71df9776962c6020de53c3318eb3"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2685224b88e189d0171f04270c1b3e06" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Arkansas Committee for Public Schools: correspondence, lists, memoranda, minutes, publicity, and statements,<unitdate> 1959-61</unitdate>
-                  </unittitle>
+                  <unittitle>Arkansas Committee for Public Schools: correspondence, lists, memoranda, minutes, publicity, and statements</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1961"
+                            type="inclusive">1959-61</unitdate>
+                  <container id="aspace_6a053bde20183906631d046ca2f47b2e"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_a349d4caf9a0ec44748400ecdebea1c7"
+                             parent="aspace_6a053bde20183906631d046ca2f47b2e"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fe8ad2e384bd4fc230cc135d6e1b0a2d" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Arkansas Council on Human Relations: correspondence, newspaper clippings, notes, publicity, statement of purpose, and segregationist response,<unitdate> 1958-64</unitdate>
-                  </unittitle>
+                  <unittitle>Arkansas Council on Human Relations: correspondence, newspaper clippings, notes, publicity, statement of purpose, and segregationist response</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1964"
+                            type="inclusive">1958-64</unitdate>
+                  <container id="aspace_3d5fdb7accef29d693d1b31936932d5b"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_8f69f31db6755d9832b9ed46ae9d3f74"
+                             parent="aspace_3d5fdb7accef29d693d1b31936932d5b"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d35d6c3dedff3ceefaefde309118a673" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
                   <unittitle>
-                     <title>Arkansas Gazette</title> Pulitzer Prize Recognition Dinner: correspondence, invitation, lists, programs, seating plans, and telephone messages,<unitdate> 1958</unitdate>
-                  </unittitle>
+                     <title>Arkansas Gazette</title> Pulitzer Prize Recognition Dinner: correspondence, invitation, lists, programs, seating plans, and telephone messages</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                  <container id="aspace_17f47ed8d5d39687ac2df30a31225981"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_af334e47e78c56a1bb2eadbe11d9d014"
+                             parent="aspace_17f47ed8d5d39687ac2df30a31225981"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8392bd3414a3e4394de21965ca828720" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Community Unity conferences: correspondence, publicity, and reports,<unitdate> 1960</unitdate>
-                  </unittitle>
+                  <unittitle>Community Unity conferences: correspondence, publicity, and reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_c247857c824856469f096c108518fe51"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_1246bd0cca0ff80b3628e380317a97ea"
+                             parent="aspace_c247857c824856469f096c108518fe51"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d30f125c2709ae0a923d3d6df2519a64" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>League of Women Voters: campaign literature, questionnaires, and proposed national program,<unitdate> 1960-62, undated</unitdate>
-                  </unittitle>
+                  <unittitle>League of Women Voters: campaign literature, questionnaires, and proposed national program</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1962"
+                            type="inclusive">1960-62</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_518192dca2e68451b9c181d18d3d7fe0"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_2686ed1d70ca8a1810e828e7d2db51fc"
+                             parent="aspace_518192dca2e68451b9c181d18d3d7fe0"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_87ae716c7061f44497bb5556533ce1c4" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>"Loretta Young Show": correspondence, newspaper clippings, profiles of W.E.C. leaders, publicity, speech, and typescripts,<unitdate> 1959-61</unitdate>
-                  </unittitle>
+                  <unittitle>"Loretta Young Show": correspondence, newspaper clippings, profiles of W.E.C. leaders, publicity, speech, and typescripts</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1961"
+                            type="inclusive">1959-61</unitdate>
+                  <container id="aspace_2f4b7fe6867a21f7545e63332d148b9d"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_5e4b961a1b5c4903f993e7994224df3f"
+                             parent="aspace_2f4b7fe6867a21f7545e63332d148b9d"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_07c1253acad751620447fde258973f60" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Louisiana Save Our Schools movement: publicity and reports,<unitdate> 1961</unitdate>
-                  </unittitle>
+                  <unittitle>Louisiana Save Our Schools movement: publicity and reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                  <container id="aspace_88034079474982d5c51d2079a718128f"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_beba70ea5e0f26f7cf75a36d8bfc476c"
+                             parent="aspace_88034079474982d5c51d2079a718128f"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f06f55917fef68155108c3f895472242" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Project Happy Time: lists, publicity, typescript, and photographs,<unitdate> 1968</unitdate>
-                  </unittitle>
+                  <unittitle>Project Happy Time: lists, publicity, typescript, and photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                  <container id="aspace_8908ecc2be9af3308fca4cec29ab3c84"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_1a8c9f92b2e7beeac81acf7eb5708cce"
+                             parent="aspace_8908ecc2be9af3308fca4cec29ab3c84"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_86254f543eae04cb1167cc0ff48e1b67" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">10-11</container>
-                  <unittitle>Project Worthwhile: correspondence, newspaper clippings, notes, photographs, publicity, reports, and student work,<unitdate> 1967-68</unitdate>
-                  </unittitle>
+                  <unittitle>Project Worthwhile: correspondence, newspaper clippings, notes, photographs, publicity, reports, and student work</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1967/1968"
+                            type="inclusive">1967-68</unitdate>
+                  <container id="aspace_d24144e71c2a8155d2241cba3b5573db"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_0c0abfcf6a2e01aee016d80021be51c3"
+                             parent="aspace_d24144e71c2a8155d2241cba3b5573db"
+                             type="folder">10-11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_796861ed28b041c59e5064b3d5dffc8e" level="file">
                <did>
                   <unittitle>Women's Emergency Committee To Open Our Schools</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_572aff084eb51904e9875ed3159a67bf" level="file">
                   <did>
                      <unittitle>History</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_a878ff5e1259c7c0197cc32ebe25489b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Organizing statements: drafts, notes, and typescript,<unitdate> 1959-61</unitdate>
-                        </unittitle>
+                        <unittitle>Organizing statements: drafts, notes, and typescript</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1961"
+                                  type="inclusive">1959-61</unitdate>
+                        <container id="aspace_cd0e23bcf3c879d88ab14f8eb4ccaecd"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_28caf6c1bc588f4ff81a1c412b8559a5"
+                                   parent="aspace_cd0e23bcf3c879d88ab14f8eb4ccaecd"
+                                   type="folder">1</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_8ad6b0b0d5c9a7bc1db8869318500256" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>Newspaper clippings,<unitdate> 1958-70</unitdate>
-                        </unittitle>
+                        <unittitle>Newspaper clippings</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1970"
+                                  type="inclusive">1958-70</unitdate>
+                        <container id="aspace_64d55a6d0efe2d9ff6d342a895545474"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_f76b6e5f306f499a930bd614dc36b313"
+                                   parent="aspace_64d55a6d0efe2d9ff6d342a895545474"
+                                   type="folder">2</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_cf0b8ed0cac2c5e5759cf0f9acb68230" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Organizational histories: lists, notes, speech, and typescripts,<unitdate> 1959-69, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Organizational histories: lists, notes, speech, and typescripts</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1969"
+                                  type="inclusive">1959-69</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_e7a771aabad77704b1023facae1528cf"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_64034b8e69f9f252e5fbd99e03163edb"
+                                   parent="aspace_e7a771aabad77704b1023facae1528cf"
+                                   type="folder">3</container>
                      </did>
-                     <note>
-                        <p>
-                           [See also SERIES I. BIOGRAPHICAL MATERIALS-Memoir The Embattled Ladies of Little Rock]
-                        </p>
-                     </note>
+                     <odd id="aspace_295fe4ab1f0b9f9946d9050f9cac8a41">
+                        <head>General</head>
+                        <p>[See also SERIES I. BIOGRAPHICAL MATERIALS-Memoir The Embattled Ladies of Little Rock]</p>
+                     </odd>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_57d20258e7dca4c91b770c845074fa52" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>Interview with Vivion Brewer: cassette and reel-to-reel tape, <unitdate>11 Oct 1959</unitdate>
-                        </unittitle>
+                        <unittitle>Interview with Vivion Brewer: cassette and reel-to-reel tape</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1959-10-11/1959-10-11">11 Oct 1959</unitdate>
+                        <container id="aspace_579552c870df01cddd2b027709b17ea0"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_685158a95675d1764f4ad8c4062fb3e7"
+                                   parent="aspace_579552c870df01cddd2b027709b17ea0"
+                                   type="folder">4</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4669598781c4aa2e9ba00f50f18508c2" level="file">
                   <did>
                      <unittitle>Administration</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_1d7a4bcd64d24dcde43b499fc404491b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Agendas,<unitdate> 1958-59, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Agendas</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1959"
+                                  type="inclusive">1958-59</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_887803deb7d7592138d0d6a145488a80"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_b1e08f313a6e480bd74ed6022e30a042"
+                                   parent="aspace_887803deb7d7592138d0d6a145488a80"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d5bae212a72ed22a75897b16e9115ca3" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <unittitle>Committees: lists, <unitdate>circa 1958, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Committees: lists</unittitle>
+                        <unitdate calendar="gregorian"
+                                  certainty="approximate"
+                                  era="ce"
+                                  normal="1958/1958">1958</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_aa8cb5f16f9d0ff11df0e4ae8df4d56e"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_a6ad9ef1661dc0822f3e806dc0647071"
+                                   parent="aspace_aa8cb5f16f9d0ff11df0e4ae8df4d56e"
+                                   type="folder">5a</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_8c2e73394e63426afcdcb367f1f38664" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Minutes,<unitdate> 1958-60</unitdate>
-                        </unittitle>
+                        <unittitle>Minutes</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1960"
+                                  type="inclusive">1958-60</unitdate>
+                        <container id="aspace_6f30eeb7e9d50f2fdc0871f1c756ffb7"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_b99a45a6b7bfb5c9c9d709432cfb7ff4"
+                                   parent="aspace_6f30eeb7e9d50f2fdc0871f1c756ffb7"
+                                   type="folder">6</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_21f8009cc07041d1803715dcb37e62c8" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Notes,<unitdate> 1958-60, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Notes</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1960"
+                                  type="inclusive">1958-60</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_99dd14374d6b037c20ea4ecb55de25fc"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_d2acfdddc87a63dd44eee532bd1e4a35"
+                                   parent="aspace_99dd14374d6b037c20ea4ecb55de25fc"
+                                   type="folder">7</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a16426ce14578fa10b7a5d3060f8d238" level="file">
                   <did>
                      <unittitle>Activities</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_269a54b0cc4d60348b86dd765e04b479" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Campaign for support among ministers: lists, notes, and statements,<unitdate> 1958-59</unitdate>
-                        </unittitle>
+                        <unittitle>Campaign for support among ministers: lists, notes, and statements</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1959"
+                                  type="inclusive">1958-59</unitdate>
+                        <container id="aspace_0f02f5cf028a27f97f190d5d8b9e8d1f"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_15e7b51210b0c37cf266ec996184c53d"
+                                   parent="aspace_0f02f5cf028a27f97f190d5d8b9e8d1f"
+                                   type="folder">8</container>
                      </did>
-                     <note>
-                        <p>
-                           [See also SERIES II. CORRESPONDENCE]
-                        </p>
-                     </note>
+                     <odd id="aspace_96d90d03e9ccd68ce9e7e2490be415d6">
+                        <head>General</head>
+                        <p>[See also SERIES II. CORRESPONDENCE]</p>
+                     </odd>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_5fac588cd14f7a1226fec17aa90232be" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>Workshop on Public Education: memoranda, notes, program, and publicity,<unitdate> 1963</unitdate>
-                        </unittitle>
+                        <unittitle>Workshop on Public Education: memoranda, notes, program, and publicity</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                        <container id="aspace_741faadcd02cd2e148eb2174c22891ea"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_753673a9a47a305dd7bf0efe605aabdb"
+                                   parent="aspace_741faadcd02cd2e148eb2174c22891ea"
+                                   type="folder">9</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f6d4af8b612d6ac8b89cadeff4136cb8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Correspondence,<unitdate> 1958-61, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Correspondence</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1961"
+                               type="inclusive">1958-61</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_fe3dd3132bc87265c32373d0678a0bf3"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_2e3f9fcd7c0f2bbd861ddf124450d199"
+                                parent="aspace_fe3dd3132bc87265c32373d0678a0bf3"
+                                type="folder">10</container>
                   </did>
-                  <note>
-                     <p>
-                        [See also SERIES II. CORRESPONDENCE]
-                     </p>
-                  </note>
+                  <odd id="aspace_05beb7363ad0358b935e473d9eb73bb0">
+                     <head>General</head>
+                     <p>[See also SERIES II. CORRESPONDENCE]</p>
+                  </odd>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d8a54e976bd785f4de53d59b0b65e692" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">11</container>
-                     <unittitle>Financial documents: blank check, budgets, correspondence, invoices, lists, and notes,<unitdate> 1958, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Financial documents: blank check, budgets, correspondence, invoices, lists, and notes</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_a07f5e0a345cdf17291b94d26062033c"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_c73340f7c651de2b56cf21ee4fba7028"
+                                parent="aspace_a07f5e0a345cdf17291b94d26062033c"
+                                type="folder">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_258fe0a91ab8791561e90ae4f713f833" level="file">
                   <did>
                      <unittitle>Publicity</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_014daa1496626020aa804e367c31f945" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>Leaflets, <unitdate>circa 1958</unitdate>
-                        </unittitle>
+                        <unittitle>Leaflets</unittitle>
+                        <unitdate calendar="gregorian"
+                                  certainty="approximate"
+                                  era="ce"
+                                  normal="1958/1958">1958</unitdate>
+                        <container id="aspace_31f2ea23b355a11db193d03c7c108182"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_bd9f2849f0d6129018bba759129c3d28"
+                                   parent="aspace_31f2ea23b355a11db193d03c7c108182"
+                                   type="folder">12</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_9a02770971beeaf31f1e7b41b3a33154" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>Mass mailings,<unitdate> 1959-62</unitdate>
-                        </unittitle>
+                        <unittitle>Mass mailings</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1962"
+                                  type="inclusive">1959-62</unitdate>
+                        <container id="aspace_c6c24850edb2c4d092b10bb1b8aada99"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_2ea8d3e77eb3857bd255b2c7824d1e86"
+                                   parent="aspace_c6c24850edb2c4d092b10bb1b8aada99"
+                                   type="folder">13</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_bb02669263ba374081b1114929bdd8ae" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>Newspaper advertisements,<unitdate> 1958-59, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Newspaper advertisements</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1959"
+                                  type="inclusive">1958-59</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_3e13757f0536ab26f712063b8e08754b"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_2df375025befc7b14a36bd6c2144ca71"
+                                   parent="aspace_3e13757f0536ab26f712063b8e08754b"
+                                   type="folder">14</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b99b4067f2f2127b5203240e4803eb10" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>Newsletters,<unitdate> 1959-63</unitdate>
-                        </unittitle>
+                        <unittitle>Newsletters</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1963"
+                                  type="inclusive">1959-63</unitdate>
+                        <container id="aspace_9f3fdf9bed457707534f67a05e4b81b7"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_1c2402bfd54f5bf355eb974b3eae672a"
+                                   parent="aspace_9f3fdf9bed457707534f67a05e4b81b7"
+                                   type="folder">15</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_740bcfa0c9265c2663a7e9b33eaa2486" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>Speeches: manuscripts, notes, transcripts, and typescripts,<unitdate> 1959-60, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Speeches: manuscripts, notes, transcripts, and typescripts</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1959/1960"
+                               type="inclusive">1959-60</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_ac50e8a3aabe687fcfb6a9105edee196"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_b33045e9800918abfe43e31756004b4d"
+                                parent="aspace_ac50e8a3aabe687fcfb6a9105edee196"
+                                type="folder">16</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1377ea80a7f5e0a3d089bf8ee7616f7c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>Surveys: drafts, newspaper clippings, reports, and summaries,<unitdate> 1960, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Surveys: drafts, newspaper clippings, reports, and summaries</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_a4876e8b70020b4943f2f1f8bea61371"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_94ba895968c79839604e7bad4b827a0d"
+                                parent="aspace_a4876e8b70020b4943f2f1f8bea61371"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8ba82403a7d559366a43704dc49f2c05" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Report: "Little Rock Report: The City, Its People, Its Business, 1957-59," compiled by the Women's Emergency Committee to Open Our Schools, <unitdate>Aug 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Report: "Little Rock Report: The City, Its People, Its Business, 1957-59," compiled by the Women's Emergency Committee to Open Our Schools</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959-08/1959-08">Aug 1959</unitdate>
+                     <container id="aspace_a372716a19498f964005f0b00ca6b4ab"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_20e799669131788394a41ab54d48ad13"
+                                parent="aspace_a372716a19498f964005f0b00ca6b4ab"
+                                type="folder">1</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>SERIES IV. SUBJECT FILES</unittitle>
-               <unitdate>1947-72</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/1972"
+                         type="inclusive">1947-72</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1947/1972"
+                         type="inclusive">1947-72</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_9cd033d408e72cfdf90042b619e9365b">
+               <head>Scope and Contents</head>
+               <p>This series is arranged alphabetically by subject and includes topics in which Brewer had a particular interest including Arkansas elections, school integration, Little Rock's history and demographics, and segregationism. Though the series contains a few newspaper clippings and magazine articles from the late 1940s and the early 1970s, the vast majority of the material dates from the late 1950s and early 1960s. The series contains numerous types of material including advertisements, articles, campaign buttons and literature, leaflets, maps, newspaper clippings, polls, posters, reports, typescripts, and miscellaneous printed material.</p>
+            </scopecontent>
+            <c02 id="aspace_0eb8def90784e2bd23ef63de917b8d8a" level="file">
                <did>
                   <unittitle>Arkansas elections</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_7bf58b758033b23b6f7ace6f55d9babc" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Special school election: campaign literature, instructions, lists, polls, poster, publicity, transcripts, and typescript<unitdate> 1958</unitdate>
-                     </unittitle>
+                     <unittitle>Special school election: campaign literature, instructions, lists, polls, poster, publicity, transcripts, and typescript</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container id="aspace_c96afd365a393ad54a517ad21dc24601"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_e8d57f28aaf716909f8afe214712ff36"
+                                parent="aspace_c96afd365a393ad54a517ad21dc24601"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ae6ff3cde9fda1b59560818f7770fe98" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Little Rock School Board elections: advertisements, lists, newspaper clippings, and notes,<unitdate> 1958</unitdate>
-                     </unittitle>
+                     <unittitle>Little Rock School Board elections: advertisements, lists, newspaper clippings, and notes</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container id="aspace_3c9f7349af9e1bac4f3f9c59aa961ebe"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_f51337276c738e278808971ecb020620"
+                                parent="aspace_3c9f7349af9e1bac4f3f9c59aa961ebe"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6667403db35127bf431041d8288a37c9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Little Rock recall election: advertisements, button, leaflets, maps, newspaper clippings, notes, printed material, and typescripts,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Little Rock recall election: advertisements, button, leaflets, maps, newspaper clippings, notes, printed material, and typescripts</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_c9ac080819c7554c71c94c89d59b0f11"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_320c4617f46b2b8cd100996703cf7433"
+                                parent="aspace_c9ac080819c7554c71c94c89d59b0f11"
+                                type="folder">3</container>
                   </did>
-                  <note>
-                     <p>
-                        [See also Flat File]
-                     </p>
-                  </note>
+                  <odd id="aspace_1f547b8c84adcef20e5888cc75579d7e">
+                     <head>General</head>
+                     <p>[See also Flat File]</p>
+                  </odd>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_28e096828559c5175b64a9938b0315ed" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Arkansas Democratic primary: advertisements, campaign literature, lists, notes, sample ballots, and newspaper clippings,<unitdate> 1960</unitdate>
-                     </unittitle>
+                     <unittitle>Arkansas Democratic primary: advertisements, campaign literature, lists, notes, sample ballots, and newspaper clippings</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <container id="aspace_fea13f03a78a8ac24e4c9577a1116918"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_16140f11718cbbc2f55fb707f22d5f39"
+                                parent="aspace_fea13f03a78a8ac24e4c9577a1116918"
+                                type="folder">4</container>
                   </did>
-                  <note>
-                     <p>
-                        [See also Flat File]
-                     </p>
-                  </note>
+                  <odd id="aspace_15389779f97ceb2cb525fa24ab5546dd">
+                     <head>General</head>
+                     <p>[See also Flat File]</p>
+                  </odd>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3e668ea7babc46c1bd9dbbd1597c0251" level="file">
                   <did>
                      <unittitle>Constitutional Amendment 52 Election</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_3ed312dd73bf64e34cf67970ab68d3c8" level="file">
                      <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>Newspaper clippings,<unitdate> 1959-61</unitdate>
-                        </unittitle>
+                        <unittitle>Newspaper clippings</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1961"
+                                  type="inclusive">1959-61</unitdate>
+                        <container id="aspace_d2a6f7bedd5d25a6113561f29922d52c"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_eab0ad7a2d8b1da16da23f3068d5995f"
+                                   parent="aspace_d2a6f7bedd5d25a6113561f29922d52c"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3ef2b491ac456fbe3ba523d2d043de2e" level="file">
                      <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>Publicity: campaign literature, lists, notes, printed material, reports, and typescripts,<unitdate> 1960</unitdate>
-                        </unittitle>
+                        <unittitle>Publicity: campaign literature, lists, notes, printed material, reports, and typescripts</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                        <container id="aspace_dbdde9647baddab837d86786aaa7a7a3"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_2e81419dd9122472501019cb45c7a7a1"
+                                   parent="aspace_dbdde9647baddab837d86786aaa7a7a3"
+                                   type="folder">6</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_97ae84c8a4b8dc691c937c1f6acfe52f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>Speeches: notes and transcripts,<unitdate> 1960</unitdate>
-                        </unittitle>
+                        <unittitle>Speeches: notes and transcripts</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                        <container id="aspace_3a5eb6875c10bb2d3018a219946334a2"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_44a7dcb0e29453bafe5b2964a2ec98c6"
+                                   parent="aspace_3a5eb6875c10bb2d3018a219946334a2"
+                                   type="folder">7</container>
+                     </did>
+                  </c04>
+                  <c04 id="aspace_ae87efd5e17e490398bbc8d4be222d24" level="file">
+                     <did>
+                        <unittitle>"Workfolio" for County Committee Against Amendment 52: lists and printed material</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                        <container id="aspace_5c928d052609f32d4e780b313b3a4642"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_c0b28474536546545d85de947f44e83b"
+                                   parent="aspace_5c928d052609f32d4e780b313b3a4642"
+                                   type="folder">8</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b9a533c99f4c48aa66e3529a4f9e2a2c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <unittitle>"Workfolio" for County Committee Against Amendment 52: lists and printed material,<unitdate> 1960</unitdate>
-                     </unittitle>
+                     <unittitle>Bond issue: correspondence, memoranda, newspaper clippings, printed material,. publicity, and statements of opposition</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_dbdd88b8f9d0f153ac583ce2526fe54f"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_3195648b94e3f1e770b7395b6a4f8215"
+                                parent="aspace_dbdd88b8f9d0f153ac583ce2526fe54f"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_83e86d42e2a174d57925fe3663bbeb46" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Bond issue: correspondence, memoranda, newspaper clippings, printed material,. publicity, and statements of opposition,<unitdate> 1961, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Arkansas Council on Human Relations</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1962/1964"
+                               type="inclusive">1962-1964</unitdate>
+                     <container id="aspace_329b6fbf8f56615c7a6ad020056321a0"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_a88a576d30b0da0bb8638fbea7d9d0d6"
+                                parent="aspace_329b6fbf8f56615c7a6ad020056321a0"
+                                type="folder">9a</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_31724e76360139697ff22858a9e4722a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Miscellaneous: lists, newspaper clippings, and printed material,<unitdate> 1960, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous: lists, newspaper clippings, and printed material</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_4fc42a69e5d92e4e28a92fed990c3b72"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_17ad83ed12b45da269ba66b1bf5589a0"
+                                parent="aspace_4fc42a69e5d92e4e28a92fed990c3b72"
+                                type="folder">10</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_4fd8a81f1c18d60d67516b94d384ede0" level="file">
                <did>
                   <unittitle>Integration</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_a5cb2edf54c4b57fa24148cfd1c75bf4" level="file">
                   <did>
                      <unittitle>School integration controversies</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_be6d3bd4c78b64b263de43f21e53c7e4" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>Alabama: newspaper clippings,<unitdate> 1959-61</unitdate>
-                        </unittitle>
+                        <unittitle>Alabama: newspaper clippings</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1961"
+                                  type="inclusive">1959-61</unitdate>
+                        <container id="aspace_4a385d8b7b246f301ef5f3b27613a838"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_67a6e6aef7607358672964d41ffa4e56"
+                                   parent="aspace_4a385d8b7b246f301ef5f3b27613a838"
+                                   type="folder">1</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_1478b6d0b69a85d99f64b044c428f7a0" level="file">
                      <did>
                         <unittitle>Arkansas</unittitle>
                      </did>
-                     <c05 level="file">
+                     <c05 id="aspace_0be038e08da8c3eda3b62c6cc6a90c8f" level="file">
                         <did>
                            <unittitle>Newspaper clippings</unittitle>
                         </did>
-                        <c06 level="file">
+                        <c06 id="aspace_c8f55aa2266b2c9682150282a21e3fe2" level="file">
                            <did>
-                              <container type="box" label="mixed materials">7</container>
-                              <container type="folder" label="mixed materials">2-5</container>
-                              <unittitle>Local,<unitdate> 1956-63</unitdate>
-                              </unittitle>
+                              <unittitle>Local</unittitle>
+                              <unitdate calendar="gregorian"
+                                        era="ce"
+                                        normal="1956/1963"
+                                        type="inclusive">1956-63</unitdate>
+                              <container id="aspace_03fa8131970638b7773fe2335f5784d1"
+                                         label="Mixed Materials"
+                                         type="box">7</container>
+                              <container id="aspace_02acf4fa8dcbb3e80dfaa05c8f56d02d"
+                                         parent="aspace_03fa8131970638b7773fe2335f5784d1"
+                                         type="folder">2-5</container>
                            </did>
                         </c06>
-                        <c06 level="file">
+                        <c06 id="aspace_98db597dab70e00f2d16502db5001ebb" level="file">
                            <did>
-                              <container type="box" label="mixed materials">7</container>
-                              <container type="folder" label="mixed materials">6</container>
-                              <unittitle>National,<unitdate> 1948-66</unitdate>
-                              </unittitle>
+                              <unittitle>National</unittitle>
+                              <unitdate calendar="gregorian"
+                                        era="ce"
+                                        normal="1948/1966"
+                                        type="inclusive">1948-66</unitdate>
+                              <container id="aspace_74f73ea016b36d5f9317c924449ef1ed"
+                                         label="Mixed Materials"
+                                         type="box">7</container>
+                              <container id="aspace_efb86d12355f3bdc4dc862213eaa6bea"
+                                         parent="aspace_74f73ea016b36d5f9317c924449ef1ed"
+                                         type="folder">6</container>
                            </did>
-                           <note>
-                              <p>
-                                 [See also Flat File]
-                              </p>
-                           </note>
+                           <odd id="aspace_e2a721d1ec540d3972f05ac1256dd441">
+                              <head>General</head>
+                              <p>[See also Flat File]</p>
+                           </odd>
                         </c06>
-                        <c06 level="file">
+                        <c06 id="aspace_9aeff9a50bcb9e4ba64cef622c7c2a0a" level="file">
                            <did>
-                              <container type="box" label="mixed materials">7</container>
-                              <container type="folder" label="mixed materials">7</container>
                               <unittitle>
-                                 <title>States' Rights Digest</title>,<unitdate> 1959-60</unitdate>
+                                 <title>States' Rights Digest</title>
                               </unittitle>
+                              <unitdate calendar="gregorian"
+                                        era="ce"
+                                        normal="1959/1960"
+                                        type="inclusive">1959-60</unitdate>
+                              <container id="aspace_5eb98d944905c79f30dc963e8e9c0a78"
+                                         label="Mixed Materials"
+                                         type="box">7</container>
+                              <container id="aspace_e32d9e998c301604c87d8dc0d1b1e694"
+                                         parent="aspace_5eb98d944905c79f30dc963e8e9c0a78"
+                                         type="folder">7</container>
                            </did>
                         </c06>
                      </c05>
-                     <c05 level="file">
+                     <c05 id="aspace_ebd695ed7909071d4c2bb9b550003590" level="file">
                         <did>
-                           <container type="box" label="mixed materials">7</container>
-                           <container type="folder" label="mixed materials">8</container>
-                           <unittitle>Study material,<unitdate> 1957-72, undated</unitdate>
-                           </unittitle>
+                           <unittitle>Study material</unittitle>
+                           <unitdate calendar="gregorian"
+                                     era="ce"
+                                     normal="1957/1972"
+                                     type="inclusive">1957-72</unitdate>
+                           <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                           <container id="aspace_632bce838ee117e8ae5c05bd11ec1c90"
+                                      label="Mixed Materials"
+                                      type="box">7</container>
+                           <container id="aspace_312e1e8820732db96b685d8630225034"
+                                      parent="aspace_632bce838ee117e8ae5c05bd11ec1c90"
+                                      type="folder">8</container>
                         </did>
                      </c05>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_4a3ee5a9f873e32cff40d70100a8ec8f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">9</container>
                         <unittitle>Florida: newspaper clippings, n.d</unittitle>
+                        <container id="aspace_e5d23acc132d9e7a5d46905686816623"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_99474caef27ed0975ba85a28115ba589"
+                                   parent="aspace_e5d23acc132d9e7a5d46905686816623"
+                                   type="folder">9</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_090bb3157089c2a4b04fcbfb33ee7812" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>Georgia: newspaper clippings, reports, and typescripts,<unitdate> 1959-61</unitdate>
-                        </unittitle>
+                        <unittitle>Georgia: newspaper clippings, reports, and typescripts</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1959/1961"
+                                  type="inclusive">1959-61</unitdate>
+                        <container id="aspace_15f6cc0593c30b2c8bd076298eeb03a4"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_24c2f2a28e1fe4c1837588536993a061"
+                                   parent="aspace_15f6cc0593c30b2c8bd076298eeb03a4"
+                                   type="folder">10</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_eefe2d86b81e161a10d5ced63d7d0f7d" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>Tennessee: newspaper clippings,<unitdate> 1962</unitdate>
-                        </unittitle>
+                        <unittitle>Tennessee: newspaper clippings</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+                        <container id="aspace_c23457529a882b349cfe3e9d19875a17"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_46ad4bd8002acdb6ed0fcdc65ddde9dc"
+                                   parent="aspace_c23457529a882b349cfe3e9d19875a17"
+                                   type="folder">11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d6dc0afa14e138d8cca328612c68406f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>Virginia: newspaper clippings, notes, and press releases,<unitdate> 1958-61, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Virginia: newspaper clippings, notes, and press releases</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1961"
+                                  type="inclusive">1958-61</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_7397549c498f56544a2ece3609f04e22"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_d6b3aebf47e51b5d5e2dd2d7d50c9508"
+                                   parent="aspace_7397549c498f56544a2ece3609f04e22"
+                                   type="folder">12</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d55af33f12dbdddc7b876842e17268fa" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>Washington, D.C.: newspaper clippings, pamphlets, and reports,<unitdate> 1957-59</unitdate>
-                        </unittitle>
+                        <unittitle>Washington, D.C.: newspaper clippings, pamphlets, and reports</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1957/1959"
+                                  type="inclusive">1957-59</unitdate>
+                        <container id="aspace_ffd7f275c1398f958ede1fd51f9bb240"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_bc278493b44a8d59864ea84359bc3f41"
+                                   parent="aspace_ffd7f275c1398f958ede1fd51f9bb240"
+                                   type="folder">13</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_54162eb3efd1863650f47f5b03200565" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Civil Rights movement and integration: newspaper clippings,<unitdate> 1958-63</unitdate>
-                     </unittitle>
+                     <unittitle>Civil Rights movement and integration: newspaper clippings</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1963"
+                               type="inclusive">1958-63</unitdate>
+                     <container id="aspace_82a3030ed098d7f38476ff4204fe025a"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_c49f9b1d80447be681ac562ba32a28f1"
+                                parent="aspace_82a3030ed098d7f38476ff4204fe025a"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_320b9ad55e6fc3be27d8708bf408b5f9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">2-4</container>
-                     <unittitle>Pamphlets,<unitdate> 1947-62, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Pamphlets</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1947/1962"
+                               type="inclusive">1947-62</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_51427a07898a7ec7ba0b157ab6d714fc"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_c24dc8507d15b00339f0f26648198fad"
+                                parent="aspace_51427a07898a7ec7ba0b157ab6d714fc"
+                                type="folder">2-4</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ecea874a4eafd4ccc04b984ef6d1de7f" level="file">
                <did>
                   <unittitle>Little Rock, AR</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_faa5cca789980cc0d7b8d0f6a2ffa2a3" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>History: newspaper clippings, notes, reports, and typescripts,<unitdate> 1957-67</unitdate>
-                     </unittitle>
+                     <unittitle>History: newspaper clippings, notes, reports, and typescripts</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1957/1967"
+                               type="inclusive">1957-67</unitdate>
+                     <container id="aspace_1602342eaab13430c14e8b18e63904cb"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_92dac9901d9639bf911cd1c552288111"
+                                parent="aspace_1602342eaab13430c14e8b18e63904cb"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0ffbff3634e68e5d96fb8fc9378b75e9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Businesses and segregation: report, resolution, and statement,<unitdate> 1959, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Businesses and segregation: report, resolution, and statement</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_592ca23582823dbe098ba33f00380570"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_afccb8f949ab61f03403fcdca97b2b30"
+                                parent="aspace_592ca23582823dbe098ba33f00380570"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f8632389f3bbb7ff7d8ac583fe07339c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Court decisions and legislation affecting Little Rock: briefs, lists, memoranda, newspaper clippings, notes, printed material, transcripts, and typescripts,<unitdate> 1957-65</unitdate>
-                     </unittitle>
+                     <unittitle>Court decisions and legislation affecting Little Rock: briefs, lists, memoranda, newspaper clippings, notes, printed material, transcripts, and typescripts</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1957/1965"
+                               type="inclusive">1957-65</unitdate>
+                     <container id="aspace_528deebc44b623c964460a0833bd7213"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_6d7da6d99e9a2dc44ee374aea446b9da"
+                                parent="aspace_528deebc44b623c964460a0833bd7213"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fef4b4f51b423a7cd91701352e79e3f1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Desegregation proposals: lists and typescripts,<unitdate> 1959-61, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Desegregation proposals: lists and typescripts</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1959/1961"
+                               type="inclusive">1959-61</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_034a6b74b8bc75d4027e382a226fcb3e"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_2289c909e00dc62e379b33c80c07268d"
+                                parent="aspace_034a6b74b8bc75d4027e382a226fcb3e"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_393a99fdf1063292df597b5c9f5b5a6b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Carl T. Rowan: biographies, correspondence, and clippings,<unitdate> 1962, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Carl T. Rowan: biographies, correspondence, and clippings</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_51c28573b9e1d09dff98b2c97efb5d65"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_88bd8f61880115441491921896cb4c2f"
+                                parent="aspace_51c28573b9e1d09dff98b2c97efb5d65"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_631e498b323e9ff99114776d2f2f907d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Conference on Community Unity: report,<unitdate> 1960</unitdate>
-                     </unittitle>
+                     <unittitle>Conference on Community Unity: report</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <container id="aspace_b8f9dd891b831f98f25dc43efa363da5"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_e55221ee8bc3d897ae0196fa55396ab3"
+                                parent="aspace_b8f9dd891b831f98f25dc43efa363da5"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c65286e5e5a1918274f4643aef3ff133" level="file">
                   <did>
                      <unittitle>Newspaper clippings</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_e69434d058b9a90711ea949d035d9082" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>
-                           <unitdate>1958-59</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1958/1959"
+                                  type="inclusive">1958-59</unitdate>
+                        <container id="aspace_efa499b7ed7c48d0dc4dcd000412e4a1"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_5e4e04dd38734014c98dd71bb6bb55b7"
+                                   parent="aspace_efa499b7ed7c48d0dc4dcd000412e4a1"
+                                   type="folder">1</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_ef27a98da355ab98d39a125a0b8ba361" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>
-                           <unitdate>Jan-Mar, 1960</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce">Jan-Mar</unitdate>
+                        <unitdate normal="1960/1960">1960</unitdate>
+                        <container id="aspace_a44ebc8ced35f684a750630a1ce23a3d"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_75cebeab5d194acbd4b5e797656e562f"
+                                   parent="aspace_a44ebc8ced35f684a750630a1ce23a3d"
+                                   type="folder">2</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_4c26fd776182f6550b8e2390d984259a" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>
-                           <unitdate>Apr-Jun, 1960</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce">Apr-Jun</unitdate>
+                        <unitdate normal="1960/1960">1960</unitdate>
+                        <container id="aspace_a363b1946b691da6d9e42cbe5b8468d3"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_a4a77b9383fad11ffd2b5ffb61caf410"
+                                   parent="aspace_a363b1946b691da6d9e42cbe5b8468d3"
+                                   type="folder">3</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_faf86d4cadb8b804520e691b107a13be" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>
-                           <unitdate>Jul-Sep, 1960</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce">Jul-Sep</unitdate>
+                        <unitdate normal="1960/1960">1960</unitdate>
+                        <container id="aspace_1a8e6e2476998af769a859b52d192664"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_58a46a524db7b9a1269336b99c5d53b8"
+                                   parent="aspace_1a8e6e2476998af769a859b52d192664"
+                                   type="folder">4</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d53b278f7c5d8f7ee4ab50eeb3bcd29d" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>
-                           <unitdate>Oct-Dec, 1960</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce">Oct-Dec</unitdate>
+                        <unitdate normal="1960/1960">1960</unitdate>
+                        <container id="aspace_939f93ce847861af805fc9cc30571898"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_b913260aa18694d6e8e2e39f71ae6601"
+                                   parent="aspace_939f93ce847861af805fc9cc30571898"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_30f064a5fa7ec6e4d3c4eeadaf31565d" level="file">
                      <did>
-                        <container type="box" label="mixed materials">9</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>
-                           <unitdate>1961-68</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1961/1968"
+                                  type="inclusive">1961-68</unitdate>
+                        <container id="aspace_50e1d4edc3a7eaf37f25ca189549f4c6"
+                                   label="Mixed Materials"
+                                   type="box">9</container>
+                        <container id="aspace_f505ce8bd41b1e42ebc97433dea41954"
+                                   parent="aspace_50e1d4edc3a7eaf37f25ca189549f4c6"
+                                   type="folder">6</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_021c45c2457fe65c842628f850d2cd99" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Case studies: correspondence, printed material, and typescripts,<unitdate> 1957-61</unitdate>
-                     </unittitle>
+                     <unittitle>Case studies: correspondence, printed material, and typescripts</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1957/1961"
+                               type="inclusive">1957-61</unitdate>
+                     <container id="aspace_3ff69ba76be9633b9ad167975de2fb3c"
+                                label="Mixed Materials"
+                                type="box">9</container>
+                     <container id="aspace_2b057041563a8e6ce615974c9c1a501c"
+                                parent="aspace_3ff69ba76be9633b9ad167975de2fb3c"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_65be2428b26d2c692b89c4679eeaa89d" level="file">
                <did>
-                  <container type="box" label="mixed materials">9</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Miscellaneous: lists, notes, and printed material,<unitdate> 1958-68, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous: lists, notes, and printed material</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1958/1968"
+                            type="inclusive">1958-68</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c0d20ab01036b8eb07619732509a1209"
+                             label="Mixed Materials"
+                             type="box">9</container>
+                  <container id="aspace_e0059df9e5763cd36ce5cf9218c54ba7"
+                             parent="aspace_c0d20ab01036b8eb07619732509a1209"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5df8ebd1ec337a5ae9dd8f295673cd8d" level="file">
                <did>
                   <unittitle>Segregationism</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_4553c85d638805cf5fc775c18e744747" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Crank mail,<unitdate> 1958-60, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Crank mail</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1960"
+                               type="inclusive">1958-60</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_ab38e008714c41be3586b70c20315a6e"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_5f015acb92177a640f655287f1562f21"
+                                parent="aspace_ab38e008714c41be3586b70c20315a6e"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_575ad6fab5c11d877667c2ac69b64454" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Articles,<unitdate> 1958-60, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Articles</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1960"
+                               type="inclusive">1958-60</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_4c6606727691414e102750ae787bbb75"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_a28e51fd2f79d6509a6394c704efb587"
+                                parent="aspace_4c6606727691414e102750ae787bbb75"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ed7f06efa901e13c85cef6ddf86cbfcb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Advertisements,<unitdate> 1958-59, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Advertisements</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1959"
+                               type="inclusive">1958-59</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_c38c57625b6a207e65fd825093b7fb17"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_fab04feb3224928c47206d09dd137218"
+                                parent="aspace_c38c57625b6a207e65fd825093b7fb17"
+                                type="folder">3</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-serOV" level="series">
+         <c01 id="aspace_list-serOV" level="series">
             <did>
                <unittitle>OVERSIZE MATERIALS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_39640aa50133a759f02f3eb18363616c" level="file">
                <did>
                   <unittitle>Arkansas elections</unittitle>
                </did>
-               <c03 id="list-recall" level="file">
+               <c03 id="aspace_list-recall" level="file">
                   <did>
-                     <container type="map-case" label="mixed materials">Flat File</container>
-                     <unittitle>Little Rock recall election: advertisement,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Little Rock recall election: advertisement</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_33c05ed6c361e14fc4becf11f32129e5"
+                                label="Mixed Materials"
+                                type="mapcase">Flat File</container>
                   </did>
                </c03>
-               <c03 id="list-demo" level="file">
+               <c03 id="aspace_list-demo" level="file">
                   <did>
-                     <container type="map-case" label="mixed materials">Flat File</container>
-                     <unittitle>Arkansas Democratic primary: list,<unitdate> 1960</unitdate>
-                     </unittitle>
+                     <unittitle>Arkansas Democratic primary: list</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                     <container id="aspace_b49c5f69403a0171787c0a3acf95a596"
+                                label="Mixed Materials"
+                                type="mapcase">Flat File</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_138c181c6f804e345c082fc7d5904eae" level="file">
                <did>
                   <unittitle>School desegregation controversies</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_f437257a375c0087bcfc474b49ed8e40" level="file">
                   <did>
                      <unittitle>Arkansas</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_01e582cfa157846000a9a10338bf1b8e" level="file">
                      <did>
                         <unittitle>Newspaper clippings</unittitle>
                      </did>
-                     <c05 id="list-ark" level="file">
+                     <c05 id="aspace_list-ark" level="file">
                         <did>
-                           <container type="map-case" label="mixed materials">Flat File</container>
-                           <unittitle>National: Editorial cartoon by Clifford H. "Baldy" Baldowski, from Atlanta Constitution, Atlanta, GA, <unitdate>November 21, 1958.</unitdate>
-                           </unittitle>
+                           <unittitle>National: Editorial cartoon by Clifford H. "Baldy" Baldowski, from Atlanta Constitution, Atlanta, GA</unittitle>
+                           <unitdate calendar="gregorian" era="ce" normal="1958-11-21/1958-11-21">November 21, 1958.</unitdate>
+                           <container id="aspace_a05d7271cd1eedb9184a062edfd9d474"
+                                      label="Mixed Materials"
+                                      type="mapcase">Flat File</container>
                         </did>
                      </c05>
                   </c04>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-serBKS" level="series">
+         <c01 id="aspace_list-serBKS" level="series">
             <did>
                <unittitle>BOOKS ON SHELF</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_191973e28c64fa8f5da708411dd3424f" level="file">
                <did>
-                  <unittitle>Bates, Daisy. <title>The Long Shadow of Little Rock: A Memoir</title>. David McKay Company, Inc., New York<unitdate> 1962</unitdate>.</unittitle>
+                  <unittitle>Bates, Daisy. <title>The Long Shadow of Little Rock: A Memoir</title>. David McKay Company, Inc., New York 1962.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1962/1962">1962</unitdate>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d25b632dce48f4d40e7b00971a890239" level="file">
                <did>
-                  <unittitle>Blossom, Virgil T. <title>It HAS Happened Here</title>. Harper &amp; Brothers, New York,<unitdate> 1959</unitdate>.</unittitle>
+                  <unittitle>Blossom, Virgil T. <title>It HAS Happened Here</title>. Harper &amp; Brothers, New York, 1959.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
                </did>
             </c02>
-            <c02 id="list-ladies" level="file">
+            <c02 id="aspace_list-ladies" level="file">
                <did>
-                  <unittitle>Brewer, Vivion Lenon. <title>The Embattled Ladies of Little Rock</title>, 1958-1963: The Struggle to Save Public Education at Central High, <unitdate>1999</unitdate>. [Browsing Collection]</unittitle>
+                  <unittitle>Brewer, Vivion Lenon. <title>The Embattled Ladies of Little Rock</title>, 1958-1963: The Struggle to Save Public Education at Central High, 1999. [Browsing Collection]</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1999/1999">1999</unitdate>
                </did>
             </c02>
          </c01>
- <c01 level="series">
-<did>
-<unittitle>DVDs ON SHELF</unittitle>
-</did>
-<c02 level="file">
-<did>
-<unittitle><title render="italic">The Giants Wore White Gloves: The Women's Emergency Committee to Open Our Schools</title> (written, produced, and directed by Saundra Hubbard, 2004)<unitdate>2004</unitdate></unittitle>
-</did>
-</c02>
-</c01>
+         <c01 id="aspace_358dc2c80b04198665ef8e26d79d3abc" level="series">
+            <did>
+               <unittitle>DVDs ON SHELF</unittitle>
+            </did>
+            <c02 id="aspace_d8490af3d46de5aa1d484049e594f179" level="file">
+               <did>
+                  <unittitle>
+                     <title render="italic">The Giants Wore White Gloves: The Women's Emergency Committee to Open Our Schools</title> (written, produced, and directed by Saundra Hubbard, 2004)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="2004/2004">2004</unitdate>
+               </did>
+            </c02>
+         </c01>
       </dsc>
    </archdesc>
 </ead>
