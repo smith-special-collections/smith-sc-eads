@@ -1,409 +1,448 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss143.xml//EN">mnsss143</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss143</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Florence Cross Kitchelt Papers, 1900-1959
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Amanda Izzo.</author>
+            <titleproper>Finding aid to the Florence Cross Kitchelt papers <num>SSC.MS.00086</num>
+            </titleproper>
+            <author>Amanda Izzo</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-07-01</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-28 09:42:43 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss143 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:11-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-28</date>
+            <item>Made paper FA pencil edit changes and updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Florence Cross Kitchelt Papers, 1900-1959
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 86
-      </num>
-         <author encodinganalog="245$c">Amanda Izzo
-      </author>
-         <date>2003
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Kitchelt, Florence Ledyard Cross, 1874-1961</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Florence Cross Kitchelt papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1900-1959</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 86</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(.75 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Settlement house worker and social worker. Kitchelt's journals describe settlement work in New York and New Haven, CT. Correspondence includes descriptive letters to her parents; letters from settlement friends; letters from Sadie Rubin, an inmate at the New York State Reformatory for Women; and from members of the Laureate Literary Society, which Kitchelt founded and directed. Other materials include autobiographical pieces, articles, verses, and notes.  </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Florence Cross Kitchelt papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Kitchelt, Florence Ledyard Cross, 1874-1961</persname>
+         </origination>
+         <unitid>SSC.MS.00086</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">.75 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1900/1959"
+                   type="inclusive">1900-1959</unitdate>
+         <abstract id="aspace_cd19eb46390b44b8d99fe67d4f7115e3">Florence Cross Kitchelt was a settlement house worker and social worker. Kitchelt's journals describe settlement work in New York and New Haven, CT. Correspondence includes descriptive letters to her parents; letters from settlement friends; letters from Sadie Rubin, an inmate at the New York State Reformatory for Women; and from members of the Laureate Literary Society, which Kitchelt founded and directed. Other materials include autobiographical pieces, articles, verses, and notes.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
- 
-         <p>Florence Ledyard Cross Kitchelt was born in Rochester, New
-    York, on 17 December 1874. She graduated from Wells College
-    in 1897. For two years after college, she worked at the
-    George Junior Republic, a self-governing community for
-    troubled youth. From 1900-04, she worked at the New York
-    College Settlement at 95 Rivington Street in Manhattan's
-    Lower East Side and its summer location in Mt. Ivy, New York.
-    In 1904, she returned to reform work as a volunteer probation
-    officer for women with New York City's Essex Market Court.
-    From 1904 to 1905, she worked at the Lowell House settlement
-    in New Haven, Connecticut. She was the head worker in the
-    Little Italy House in Brooklyn (1903) and another Italian
-    American settlement, the "Housekeeping Center," in Rochester
-    (1907-10). She married Richard Kitchelt in 1911. After her
-    marriage, she was active in several civic and political
-    causes. She volunteered and wrote articles for suffrage,
-    trade union, socialist, and pacifist organizations in New
-    York and Connecticut. She died in Wilberforce, Ohio on 4
-    April 1961.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Florence Ledyard Cross Kitchelt was born in Rochester, New York, on 17 December 1874. She graduated from Wells College in 1897. For two years after college, she worked at the George Junior Republic, a self-governing community for troubled youth. From 1900-04, she worked at the New York College Settlement at 95 Rivington Street in Manhattan's Lower East Side and its summer location in Mt. Ivy, New York. In 1904, she returned to reform work as a volunteer probation officer for women with New York City's Essex Market Court. From 1904 to 1905, she worked at the Lowell House settlement in New Haven, Connecticut. She was the head worker in the Little Italy House in Brooklyn (1903) and another Italian American settlement, the "Housekeeping Center," in Rochester (1907-10). She married Richard Kitchelt in 1911. After her marriage, she was active in several civic and political causes. She volunteered and wrote articles for suffrage, trade union, socialist, and pacifist organizations in New York and Connecticut. She died in Wilberforce, Ohio on 4 April 1961.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Florence Cross Kitchelt Papers consist of .75 linear
-    feet of diaries, writings, printed material, correspondence,
-    memorabilia, and photographs. Most material is from 1900 to
-    1904 and covers Kitchelt's years at the College Settlement
-    and Lowell House.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Florence Cross Kitchelt papers consist of diaries, writings, printed material, correspondence, memorabilia, and photographs. Most material is from 1900 to 1904 and covers Kitchelt's years at the College Settlement and Lowell House.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into three series:</p>
-         <list>
-            <item>
-               I. Writings
-            </item>
-            <item>
-               II. Correspondence
-            </item>
-            <item>
-               III. Subjects
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>I. Writings</item>
+            <item>II. Correspondence</item>
+            <item>III. Subjects</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Florence Cross Kitchelt Papers, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Florence Kitchelt donated her papers concerning settlement house work to the Sophia Smith Collection in 1959. After her death in 1961, her sister, Dorothy Cross Zeiger, donated some biographical items and articles.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Reprocessed by Amanda Izzo, 2002.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Kitchelt,
-                        Florence Ledyard Cross, 1874-1961</persname>
-         <subject encodinganalog="650" source="lcsh">
-                        Literature--Societies, etc.--New York (State)--New
-                        York--History--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Social
-                        settlements--New York (State)--New
-                        York--History--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Social
-                        settlements--Connecticut--New
-                        Haven--History--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Social work with
-                        immigrants--United States--History--Sources</subject>
-         <subject encodinganalog="650" source="lcsh">Women social
-                        reformers--United States--History--Sources</subject>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Florence Cross Kitchelt papers, Sophia Smith Collection, SSC-MS-00086, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Additional papers of Florence Kitchelt are at Yale University; the Schlesinger Library, Harvard University; and the Kroch Library, Cornell University. There are also journals (1905-1947) available on microfilm in Neilson Library, Smith College.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Florence Kitchelt donated her papers concerning settlement house work to the Sophia Smith Collection in 1959. After her death in 1961, her sister, Dorothy Cross Zeiger, donated some biographical items and articles.</p>  
+      </acqinfo>
+      <controlaccess>
+         <subject encodinganalog="650" source="lcsh">Literature--Societies, etc.--New York (State)--New York--History--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Social settlements--New York (State)--New York--History--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Social settlements--Connecticut--New Haven--History--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Social work with immigrants--United States--History--Sources</subject>
+         <subject encodinganalog="650" source="lcsh">Women social reformers--United States--History--Sources</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">diaries</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">memorabilia</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <persname encodinganalog="600" source="naf">Kitchelt, Florence Ledyard Cross, 1874-1961</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_748"
+                   source="local_inmagic-people">unknown</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1138"
+                   source="local_inmagic-people">Kitchelt, Florence</persname>
+         <persname encodinganalog="600" source="local_inmagic-collection">Kitchelt, Florence Cross</persname>
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>Additional papers of Florence Kitchelt are at Yale
-        University; the Schlesinger Library, Harvard University; and the Kroch Library, Cornell University.
-        </p>
-         </relatedmaterial>
-      </descgrp>
-      <dsc id="contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. WRITINGS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_08fe5d701a914e91a5982d2fe98b708f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Autobiographical typescripts,
-            <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Autobiographical typescripts</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_16ffe8e13081e7204118b1d0a45d12a2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_50ba4f136011387741dc0a888dac9853"
+                             parent="aspace_16ffe8e13081e7204118b1d0a45d12a2"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5ddf126004a848d8f7bda046e9cdbae6" level="file">
                <did>
                   <unittitle>College settlement journals</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_8cfa8e859dc4e208544d3e73342b82eb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>95 Rivington St., New York,
-              <unitdate>Jun-Jul 1900</unitdate>
-                     </unittitle>
+                     <unittitle>95 Rivington St., New York</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1900-06/1900-07"
+                               type="inclusive">Jun-Jul 1900</unitdate>
+                     <container id="aspace_f0be182716912393fa2b98e225cd0293"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_4e96c2d175acb6cdc3fdfaaea1f55668"
+                                parent="aspace_f0be182716912393fa2b98e225cd0293"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9f34213074769ad7e32a0e2e690679fb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Summer House, Mount Ivy, NY,
-              <unitdate>Aug-Sep 1900</unitdate>
-                     </unittitle>
+                     <unittitle>Summer House, Mount Ivy, NY</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1900-08/1900-09"
+                               type="inclusive">Aug-Sep 1900</unitdate>
+                     <container id="aspace_b4dba755dc2c7e81eaa84cd04fb5d9a6"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_48969e68f935f977fb508e92e5fd3eb3"
+                                parent="aspace_b4dba755dc2c7e81eaa84cd04fb5d9a6"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_07f0c2b70a6a33da8fbd7eba45cebbde" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">4-6</container>
-                     <unittitle>95 Rivington St.,
-              <unitdate>Sep 1900-Aug 1904</unitdate>
-                     </unittitle>
+                     <unittitle>95 Rivington St.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1900-09/1904-08"
+                               type="inclusive">Sep 1900-Aug 1904</unitdate>
+                     <container id="aspace_9af5bf25d3a153b28377ec48d0869bba"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_7629e7a49b28651a8469f46d359c036c"
+                                parent="aspace_9af5bf25d3a153b28377ec48d0869bba"
+                                type="folder">4-6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_90355d7ffa6d0673e0a339e6fb429fe8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Lowell House, New Haven CT,
-              <unitdate>Oct 1904-Feb 1905</unitdate>
-                     </unittitle>
+                     <unittitle>Lowell House, New Haven CT</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1904-10/1905-02"
+                               type="inclusive">Oct 1904-Feb 1905</unitdate>
+                     <container id="aspace_03ebcf065b98517cc82b30ecc58806fd"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_2647aeedea1f90cad9c2934c810cbaa3"
+                                parent="aspace_03ebcf065b98517cc82b30ecc58806fd"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_145e16afc84d2db97283ed249460e317" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Notes on the journals,
-              <unitdate>1959</unitdate>
-                     </unittitle>
+                     <unittitle>Notes on the journals</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_fbe753f2c7e6b2b7359ac83c862361cd"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_d5301ae641c7115bbd87743feeb8f8a0"
+                                parent="aspace_fbe753f2c7e6b2b7359ac83c862361cd"
+                                type="folder">8</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_daad1b1154a48e2bd67a0d3fe1bdb061" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Address to the "King's Daughters,"
-            <unitdate>1902 [1904?]</unitdate>
-                  </unittitle>
+                  <unittitle>Address to the "King's Daughters,"</unittitle>
+                  <unitdate calendar="gregorian" certainty="questionable" era="ce">1902 [1904?]</unitdate>
+                  <container id="aspace_74561bc6b9ee5d0dc0e7484a38eb0770"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_7fff38fd4de3886a5d705b97d78e5a5a"
+                             parent="aspace_74561bc6b9ee5d0dc0e7484a38eb0770"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f46a03b5ca19c7c36ce1c5b2e08bbe48" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>"A Chapter in the History of Human Rights,"
-            Journal of Human Relations, [re: Susan B. Anthony],
-            <unitdate>Winter 1956</unitdate>
-                  </unittitle>
+                  <unittitle>"A Chapter in the History of Human Rights," Journal of Human Relations, [re: Susan B. Anthony]</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1956-01-01/1956-03-20"
+                            type="inclusive">Winter 1956</unitdate>
+                  <container id="aspace_1d4661d169f0620a56eca2d0b065dd3f"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_a85b3fd9ab913486e85cdd5bbca47fb2"
+                             parent="aspace_1d4661d169f0620a56eca2d0b065dd3f"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2be4745c9d298d3ad91714e11afd5186" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Verses,
-            <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Verses</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_1a34be489449de36005fb60ac2971658"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_26bbea3a2c453fe86d599190a6ba0df7"
+                             parent="aspace_1a34be489449de36005fb60ac2971658"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cd2ea0d8610d758cafb2b9111d1309ac" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>"Who" and "They Have Contributed":
-            typescripts re: "Negroes" and segregation,
-            <unitdate>1959</unitdate>
-                  </unittitle>
+                  <unittitle>"Who" and "They Have Contributed": typescripts re: "Negroes" and segregation</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <container id="aspace_95d30c71bbb260fefc3511bf10cfce7e"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_5f7b51f9a233bd8bb041006715e96fa6"
+                             parent="aspace_95d30c71bbb260fefc3511bf10cfce7e"
+                             type="folder">12</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. CORRESPONDENCE</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_9db0bae4cbcf20f34ff18df2f28f59c7" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Outgoing to mother and sister,
-            <unitdate>1901, 1904</unitdate>
-                  </unittitle>
+                  <unittitle>Outgoing to mother and sister</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <unitdate normal="1904/1904">1904</unitdate>
+                  <container id="aspace_463b13e44caac2da5e09e8219b6d444a"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_353032c0fd7f405e597e2b968f5fb7e8"
+                             parent="aspace_463b13e44caac2da5e09e8219b6d444a"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d1241525af9c14a3ccaf2beeb93d486e" level="file">
                <did>
                   <unittitle>Incoming</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_b452cc486090e1cf8d425a1a16e8c151" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Bonime, Ellis,
-              <unitdate>1902-03</unitdate>
-                     </unittitle>
+                     <unittitle>Bonime, Ellis</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1902-03</unitdate>
+                     <container id="aspace_bfb5830fffae94599d24e28da8e69c89"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_46c46b416ba1ac229a72b6724c1f372e"
+                                parent="aspace_bfb5830fffae94599d24e28da8e69c89"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_746b6c2226394bb701b081f2022351a1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Braun, Jacob,
-              <unitdate>1902-03</unitdate>
-                     </unittitle>
+                     <unittitle>Braun, Jacob</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1902-03</unitdate>
+                     <container id="aspace_1233c5d36365328f16b0e534da6bf77a"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_fd6d05052bd83f9083cd4041ea07fffa"
+                                parent="aspace_1233c5d36365328f16b0e534da6bf77a"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_07a6e94418f14653c6eeb5dfd1db13fd" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Bromberg, Abraham,
-              <unitdate>1901, 1903</unitdate>
-                     </unittitle>
+                     <unittitle>Bromberg, Abraham</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                     <unitdate normal="1903/1903">1903</unitdate>
+                     <container id="aspace_62505c7032368804080e397b318f3391"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_35b84076fa75b226d0c5244af9aa265a"
+                                parent="aspace_62505c7032368804080e397b318f3391"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7618185944cf213c1e66db8f9bb05c6d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Burstein, Sam,
-              <unitdate>1903</unitdate>
-                     </unittitle>
+                     <unittitle>Burstein, Sam</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903</unitdate>
+                     <container id="aspace_2cf84a222ba846022c22c4fabbf31637"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2c8dc2403727d683ef3b8be09604c706"
+                                parent="aspace_2cf84a222ba846022c22c4fabbf31637"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_aef1eb823a7c8a3e70a087814204fe9e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Cohen, Nathan
-              <unitdate>1902-05</unitdate>
-                     </unittitle>
+                     <unittitle>Cohen, Nathan</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1902-05</unitdate>
+                     <container id="aspace_f60bb40d1312d4413e58753fa7af9f67"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_38d333d204fc1cfebbd20afb4bbd9327"
+                                parent="aspace_f60bb40d1312d4413e58753fa7af9f67"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_36cc5e23b3143872b64db893e720b130" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Halperin, Jacob,
-              <unitdate>1902, 1904</unitdate>
-                     </unittitle>
+                     <unittitle>Halperin, Jacob</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1902/1902">1902</unitdate>
+                     <unitdate normal="1904/1904">1904</unitdate>
+                     <container id="aspace_c3fe62e5c3dd108e814c8ceb9ea9d0a2"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_3349a221a3885aec67af8e95b5e11406"
+                                parent="aspace_c3fe62e5c3dd108e814c8ceb9ea9d0a2"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9197d9a4fabcf545ab7b7591f61fb156" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Markham, Edwin,
-              <unitdate>1903</unitdate>
-                     </unittitle>
+                     <unittitle>Markham, Edwin</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1903/1903">1903</unitdate>
+                     <container id="aspace_6eb0bd954e0f661e8ffab68e5bee08b3"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_e1184c96e3ed6c10e671217dbddedd99"
+                                parent="aspace_6eb0bd954e0f661e8ffab68e5bee08b3"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_290709e99a51f3e8331b69516a735deb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Rubin, Sadie,
-              <unitdate>1902-03</unitdate>
-                     </unittitle>
+                     <unittitle>Rubin, Sadie</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1902-03</unitdate>
+                     <container id="aspace_ae6e0aa3964cdee1d84f333342a48dea"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ea541b4de4a98637f28dd96878756065"
+                                parent="aspace_ae6e0aa3964cdee1d84f333342a48dea"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_06cbf7951e5dbfad8ebca9cc6845388d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Wolf, Irving,
-              <unitdate>1902-03</unitdate>
-                     </unittitle>
+                     <unittitle>Wolf, Irving</unittitle>
+                     <unitdate calendar="gregorian" era="ce">1902-03</unitdate>
+                     <container id="aspace_ec87d6d4b9c0ab20afd07515bd1c8032"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_46d48f25e842932bec0160b3b981a06c"
+                                parent="aspace_ec87d6d4b9c0ab20afd07515bd1c8032"
+                                type="folder">9</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. SUBJECTS</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3e355b05218699b279bfc8d34419176a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>College settlements: photographs of
-            settlement houses (including 95 Rivington Street) and
-            residents, clippings, and memorabilia,
-            <unitdate>1902-06, undated</unitdate>
-                  </unittitle>
+                  <unittitle>College settlements: photographs of settlement houses (including 95 Rivington Street) and residents, clippings, and memorabilia</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1902-06</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_f3fba520ede6ffad8a5d126815e11fe9"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_62bcfea3f1abcf9eeebffb31361449a3"
+                             parent="aspace_f3fba520ede6ffad8a5d126815e11fe9"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_846b81433c39c1c89512dbb3eb897cb2" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Laureate Literary Society: memorabilia,
-            <unitdate>1901, 1903</unitdate>
-                  </unittitle>
+                  <unittitle>Laureate Literary Society: memorabilia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1901/1901">1901</unitdate>
+                  <unitdate normal="1903/1903">1903</unitdate>
+                  <container id="aspace_7eb911fdd0910968816dd3fb3c47562c"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_7ac47522df9dbc5cc508290d6404b1d7"
+                             parent="aspace_7eb911fdd0910968816dd3fb3c47562c"
+                             type="folder">11</container>
                </did>
             </c02>
          </c01>
