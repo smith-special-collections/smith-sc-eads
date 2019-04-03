@@ -1,151 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss37.xml//EN">mnsss37</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss37</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Anna Moscowitz Kross Papers, 1905-1974
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Susan Boone.</author>
+            <titleproper>Finding aid to the Anna Moscowitz Kross papers <num>SSC.MS.00087</num>
+            </titleproper>
+            <author>Susan Boone</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-06-05</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-04-01 10:51:09 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss37 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:17-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-29</date>
+            <item>Updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            
-         </publisher>
-         <titleproper encodinganalog="245$a">Anna Moscowitz Kross Papers, 1905-1974
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 87
-      </num>
-         <author encodinganalog="245$c">Susan Boone
-      </author>
-         <date>2000
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>© 2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Kross, Anna Moscowitz, 1891-1979</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Anna Moskowitz Kross papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1905-1974</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 87</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">8 boxes</extent>
-            <extent encodinganalog="300$a">(3 linear ft.)</extent>
-         </physdesc>
-                  <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-	  </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Lawyer, judge, Commissioner, New York City Department of Corrections, and social reformer.  The bulk of the collection covers Kross's career as the Commissioner of Correction. Writings, speeches, and taped interviews reflect Kross's efforts to institute major reforms focusing on education and social rehabilitation for women prisoners. Correspondents include Constance Baker Motley and Eleanor Roosevelt.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Anna Moscowitz Kross papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Kross, Anna Moscowitz, 1891-1979</persname>
+         </origination>
+         <unitid>SSC.MS.00087</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">3 linear feet</extent>
+            <extent altrender="carrier">(8 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1905/1976"
+                   type="inclusive">1905-1976</unitdate>
+         <abstract id="aspace_836cb2f2c762fb2769028f4f7ec7daba">Anna Moscowitz Kross was a lawyer, judge, New York City Department of Corrections Commissioner, and social reformer. The bulk of the collection covers Kross's career as the Commissioner of Correction. Writings, speeches, and taped interviews reflect Kross's efforts to institute major reforms focusing on education and social rehabilitation for women prisoners. Correspondents include Constance Baker Motley and Eleanor Roosevelt.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
- 
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
          <p>Anna Moscowitz was born in Nesheves Russia, July 17, 1891, daughter of Mayer and Esther (Drazen) Moscowitz. When Anna was two years old, the family immigrated to the United States to avoid religious persecution. They were desperately poor. Anna studied at Columbia University in 1907, worked in a factory, taught English to foreigners, and at night studied law on a scholarship. She received an L.L.B in 1910 and an L.L.M. from New York University in 1911 and was admitted to the New York Bar in 1912. While still in law school she became interested in the fate of prisoners in the court system. In 1917 she married Dr. Isodor Kross, a prominent New York surgeon. They had three children.</p>
-         <p>In 1918, after several years of private practice, Kross accepted an appointment in the office of the Corporation Council for New York City with an assignment to the Family Court. She remained there until 1923 when she returned to private practice specializing in labor relations. In 1933, Mayor John P. O'Brien appointed Kross to the bench as a Magistrate. She was the first woman judge in the city magistrates court. She was reappointed in 1940 and again in 1950.</p>
-         <p>In 1946 Kross organized and became the presiding Magistrate of the Home Term Court of the Borough of Manhattan, an experimental social court dealing with the problems of disturbed families. In 1951 the Home Term Court became citywide.  In 1954 Kross was appointed Commissioner of Correction of New York City. During her tenure she received a great deal of publicity for her outspoken criticism of government policies that discriminated against the poor. She served with the Correction Department until her retirement in 1966 at the age of 75.</p>
-         <p>Kross advocated for the implementation of psychological and psychiatric social work in the administration of criminal justice and was instrumental in getting trained psychiatrists, vocational guidance workers, religious agencies, and trained medical personnel involved. She successfully fought against the public spectacle of trials of young girls on morals and vice charges, particularly through the establishment of the Wayward Minors Court (now Girls' Term Court) designed exclusively to deal with the problems of adolescent female delinquency. She insisted that not only prostitutes, but also their clients be booked. Kross gained wide recognition for her work on behalf of youth, advocating a more judicious attitude toward social problems. This was reflected in her insistence that prison was inappropriate for the indigent, mentally ill, prostitutes, or those addicted to drugs or alcohol. She also advocated against the inequities of the bail system</p>
-         <p>Kross received numerous citations, awards, and honorary degrees and belonged to numerous organizations, including American and international law associations, groups concerned with law enforcement and correction, and Jewish organizations. She died August 27, 1979 at the age of 88.</p>
+         <p> In 1918, after several years of private practice, Kross accepted an appointment in the office of the Corporation Council for New York City with an assignment to the Family Court. She remained there until 1923 when she returned to private practice specializing in labor relations. In 1933, Mayor John P. O'Brien appointed Kross to the bench as a Magistrate. She was the first woman judge in the city magistrates court. She was reappointed in 1940 and again in 1950.</p>
+         <p> In 1946 Kross organized and became the presiding Magistrate of the Home Term Court of the Borough of Manhattan, an experimental social court dealing with the problems of disturbed families. In 1951 the Home Term Court became citywide. In 1954 Kross was appointed Commissioner of Correction of New York City. During her tenure she received a great deal of publicity for her outspoken criticism of government policies that discriminated against the poor. She served with the Correction Department until her retirement in 1966 at the age of 75.</p>
+         <p> Kross advocated for the implementation of psychological and psychiatric social work in the administration of criminal justice and was instrumental in getting trained psychiatrists, vocational guidance workers, religious agencies, and trained medical personnel involved. She successfully fought against the public spectacle of trials of young girls on morals and vice charges, particularly through the establishment of the Wayward Minors Court (now Girls' Term Court) designed exclusively to deal with the problems of adolescent female delinquency. She insisted that not only prostitutes, but also their clients be booked. Kross gained wide recognition for her work on behalf of youth, advocating a more judicious attitude toward social problems. This was reflected in her insistence that prison was inappropriate for the indigent, mentally ill, prostitutes, or those addicted to drugs or alcohol. She also advocated against the inequities of the bail system</p>
+         <p> Kross received numerous citations, awards, and honorary degrees and belonged to numerous organizations, including American and international law associations, groups concerned with law enforcement and correction, and Jewish organizations. She died August 27, 1979 at the age of 88.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Anna Moscowitz Kross Papers consist of three linear feet of correspondence, speeches, memorabilia, reports, journal and newspaper articles, photographs, and audiotapes. They relate exclusively to her professional and public life dating from 1905-1974. The bulk of the collection dates from 1954 to the 1960s and covers primarily Kross's career as New York City Commissioner of Correction. It includes writings, speeches, and taped interviews on prison reform, criminal justice, and rehabilitation. There is a substantial amount of material on the New York House of Detention for Women and Kross's efforts to institute major reforms focusing on education and social rehabilitation for women prisoners.  There is some material on juvenile offenders as well.  Correspondents include Constance Baker Motley and Eleanor Roosevelt.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Anna Moscowitz Kross papers consist of correspondence, speeches, memorabilia, reports, journal and newspaper articles, photographs, and audiotapes. They relate exclusively to her professional and public life dating from 1905-1974. The bulk of the collection dates from 1954 to the 1960s and covers primarily Kross's career as New York City Commissioner of Correction. It includes writings, speeches, and taped interviews on prison reform, criminal justice, and rehabilitation. There is a substantial amount of material on the New York House of Detention for Women and Kross's efforts to institute major reforms focusing on education and social rehabilitation for women prisoners. There is some material on juvenile offenders as well. Correspondents include Constance Baker Motley and Eleanor Roosevelt.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into five series:</p>
-         <list>
-            <item>
-               I. Biographical Material
-            </item>
-            <item>
-               II. Writings and Speeches
-            </item>
-            <item>
-               III. Correspondence
-            </item>
-            <item>
-               IV. Professional Activities
-            </item>
-            <item>
-               V. Photographs and Audiovisual Materials
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Material</item>
+            <item>II. Writings and Speeches</item>
+            <item>III. Correspondence</item>
+            <item>IV. Professional Activities</item>
+            <item>V. Photographs and Audiovisual Materials</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The collection is open to research according to the regulations of the Sophia Smith Collection without any additional restrictions.
-            </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of unpublished works in this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Anna Moscowitz Kross Papers, Sophia Smith Collection, Smith College, Northampton, MA</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Anna Moscowitz Kross donated her papers between 1975 and 1977. </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Processed by Susan Boone, 2000.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Anna Moscowitz Kross papers, Sophia Smith Collection, SSC-MS-00087, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Additional papers of Anna Kross are in the Jacob Marcus Center of the American Jewish Archives, Hebrew Union College, Cincinnati, Ohio.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Anna Moscowitz Kross donated her papers between 1975 and 1977.</p>  
+      </acqinfo>
+      <phystech id="aspace_93b8032e32f00ff387bae0c3e5d481ad">
+         <head>Physical Characteristics and Technical Requirements</head>
+         <p>As a preservation measure, researchers must use digital copies of audiovisual materials in this collection. Please consult with Special Collections staff to request the creation of and access to digital copies.</p>  
+      </phystech>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Courts--New York (State)--New York-History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Criminals-Rehabilitation--United States-History--20th century--Sources</subject>
-         <corpname encodinganalog="610" source="lcnaf">House of Detention for Women--New York (State)--New York--History--Sources</corpname>
          <subject encodinganalog="650" source="lcsh">Juvenile delinquency--New York (State)--New York--History--Sources</subject>
          <geogname encodinganalog="651" source="lcsh">New York (N.Y.)--Social conditions--20th century--Sources</geogname>
          <geogname encodinganalog="651" source="lcsh">New York (N.Y.)--Department of Correction--History--Sources</geogname>
@@ -154,764 +137,1153 @@
          <subject encodinganalog="650" source="lcsh">Women judges--United States--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women lawyers--United States--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women prisoners--New York (State)--New York--History--20th century--Sources</subject>
-         <persname encodinganalog="600" source="lcnaf">Hurst, Fannie, 1889-1968</persname>
-         <persname encodinganalog="600" source="lcnaf">Johnson, Lady Bird, 1912--</persname>
-         <persname encodinganalog="600" source="lcnaf">Johnson, Lyndon B. (Lyndon Baines), 1908-1973</persname>
-         <persname encodinganalog="600" source="lcnaf">Kross, Anna Moscowitz, 1891-1979</persname>
-         <persname encodinganalog="600" source="lcnaf">Lee, Gypsy Rose, 1914-70</persname>
-         <persname encodinganalog="600" source="lcnaf">Motley, Constance Baker, 1921- --Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Roosevelt, Eleanor, 1884-1962--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Wagner, Robert F. (Robert Ferdinand), 1910-</persname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Speeches</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">memorabilia</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">reports</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">articles</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Audiotapes</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Interviews</genreform>
+         <corpname encodinganalog="610" source="naf">House of Detention for Women--New York (State)--New York--History--Sources</corpname>
+         <persname encodinganalog="600" source="naf">Hurst, Fannie, 1889-1968</persname>
+         <persname encodinganalog="600" source="naf">Johnson, Lady Bird, 1912--</persname>
+         <persname encodinganalog="600" source="naf">Johnson, Lyndon B. (Lyndon Baines), 1908-1973</persname>
+         <persname encodinganalog="600" source="naf">Kross, Anna Moscowitz, 1891-1979</persname>
+         <persname encodinganalog="600" source="naf">Lee, Gypsy Rose, 1914-70</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_802"
+                   source="local_inmagic-people">Motley, Constance Baker</persname>
+         <persname encodinganalog="600" source="naf">Roosevelt, Eleanor, 1884-1962--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Wagner, Robert F. (Robert Ferdinand), 1910-</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_780"
+                   source="local_inmagic-people">Frankel, Alice Kross</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1139"
+                   source="local_inmagic-people">Kross, Anna M.</persname>
+         <persname encodinganalog="600" source="local_inmagic-collection">Kross, Anna Moskowitz</persname>
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>Additional papers of Anna Kross are in the Jacob Marcus Center of the American Jewish Archives, Hebrew Union College, Cincinnati, Ohio.
-        </p>
-         </relatedmaterial>
-      </descgrp>
-      <!-- Begin series descriptions -->
-
-<dsc type="analyticover">
-  <c01 level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. BIOGRAPHICAL MATERIAL</unittitle>
-               <unitdate>1905-76</unitdate>
-               <physdesc>
-                  <extent>3 linear inches.</extent>
-               </physdesc>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1905/1976"
+                         type="inclusive">1905-76</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1905/1976"
+                         type="inclusive">1905-76</unitdate>
             </did>
-            <scopecontent>
+            <scopecontent id="aspace_9354503357fd4c18cc5b352c873e2588">
+               <head>Scope and Contents</head>
                <p>This series contains miscellaneous biographical material and publicity about Kross. It also includes information about citations and honors awarded to her. Miscellaneous biographical material and memorabilia contains biographical sketches, two notes from a classmate and teacher at Public School #7 (1905) which seem to be from a childhood autograph book, and a thank you letter from her grandson (1976).</p>
             </scopecontent>
-
- </c01>
-  <c01 level="series">
+            <c02 id="aspace_449615dbd7444ab949e1c36585b52b64" level="file">
+               <did>
+                  <unittitle>Miscellaneous biographical material and memorabilia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1905/1976"
+                            type="inclusive">1905-76</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_5de48eb89a2fbeeabf14fd375b3ad5e7"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_db203d69cb30b8a4276d211035949cf6"
+                             parent="aspace_5de48eb89a2fbeeabf14fd375b3ad5e7"
+                             type="folder">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_7d00c5d4be546bb31e35b11fdae88d61" level="file">
+               <did>
+                  <unittitle>Articles, newspaper clippings, and publicity</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1975"
+                            type="inclusive">1937-75</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_45993d55fbf1eae5f6959df286e6b6d6"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_fb2765663094262e80723a169f51637d"
+                             parent="aspace_45993d55fbf1eae5f6959df286e6b6d6"
+                             type="folder">2</container>
+               </did>
+            </c02>
+            <c02 id="aspace_b6cbbb7c1cbff2f93e54edbe7e007007" level="file">
+               <did>
+                  <unittitle>Citations and honors</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1973"
+                            type="inclusive">1950-73</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_0bab4e6f0078e5c12f72c98a482db869"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_ed72d2a2d7303610494ce9d95709df15"
+                             parent="aspace_0bab4e6f0078e5c12f72c98a482db869"
+                             type="folder">3</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. WRITINGS AND SPEECHES</unittitle>
-               <unitdate>1945-1964</unitdate>
-               <physdesc>
-                  <extent>2 linear inches.</extent>
-               </physdesc>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1945/1964"
+                         type="inclusive">1945-1964</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1945/1964"
+                         type="inclusive">1945-1964</unitdate>
             </did>
-            <scopecontent>
-               <p>This series contains articles and speeches by Kross. Articles include a series she wrote for the Brooklyn Law Review (1937-38) on the Magistrates Courts of the City of New York. Columns she wrote for the Department of Correction newsletters can be found in SERIES III. The speeches in this series are supplemented by those on audiotapes in SERIES V.</p>
-            <note>
-               <p>[see also SERIES III. PROFESSIONAL ACTIVITIES. Department of Correction and SERIES V. PHOTOGRAPHS AND AUDIOVISUAL MATERIALS]</p>
-            </note>
-            </scopecontent>
+            <scopecontent id="aspace_152a00686172a514c982219c748730c8">
+               <head>Scope and Contents</head>
+               <p>This series contains articles and speeches by Kross. Articles include a series she wrote for the Brooklyn Law Review (1937-38) on the Magistrates Courts of the City of New York. Columns she wrote for the Department of Correction newsletters can be found in SERIES III. The speeches in this series are supplemented by those on audiotapes in SERIES V.
 
- </c01>
-  <c01 level="series">
+ </p>
+               <note> [see also SERIES III. PROFESSIONAL ACTIVITIES. Department of Correction and SERIES V. PHOTOGRAPHS AND AUDIOVISUAL MATERIALS]
+
+ </note>
+            </scopecontent>
+            <odd id="aspace_3e77557387c5b4be2e21fbb7191a51fa">
+               <head>General</head>
+               <p>[see also SERIES III. PROFESSIONAL ACTIVITIES. Department of Correction and SERIES V. PHOTOGRAPHS AND AUDIOVISUAL MATERIALS]</p>
+            </odd>
+            <c02 id="aspace_2cf637b40a108e6ffb991687bc1d66e0" level="file">
+               <did>
+                  <unittitle>Articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1966"
+                            type="inclusive">1945-66</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_f93190060decc38aa97f6a498c65a3ab"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_d08fbefe4deeeea76a1a33de4e2ba8a2"
+                             parent="aspace_f93190060decc38aa97f6a498c65a3ab"
+                             type="folder">4</container>
+               </did>
+            </c02>
+            <c02 id="aspace_aa85a0e6af94edf8ddb096d3037cc0d4" level="file">
+               <did>
+                  <unittitle>
+                     <title>Brooklyn Law Review</title>
+                  </unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1938"
+                            type="inclusive">1937-38</unitdate>
+                  <container id="aspace_d9b5b28b1c9f4e75dad5ff96e5fa9399"
+                             label="Mixed Materials"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_85e28361386f60fe116c9625af493dcc" level="file">
+               <did>
+                  <unittitle>Speeches</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <unitdate normal="1960/1965" type="inclusive">1960-65</unitdate>
+                  <container id="aspace_4b6dfd4ab82b0dd51fa051b02c9b73f3"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_aacbe39e25a0eaa087cd092da2b99ac3"
+                             parent="aspace_4b6dfd4ab82b0dd51fa051b02c9b73f3"
+                             type="folder">5</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. CORRESPONDENCE</unittitle>
-               <unitdate>1917-1968</unitdate>
-               <physdesc>
-                  <extent>7.5 linear inches.</extent>
-               </physdesc>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1968"
+                         type="inclusive">1917-1968</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1917/1968"
+                         type="inclusive">1917-1968</unitdate>
             </did>
-            <scopecontent>
+            <scopecontent id="aspace_3eaf91009d7ac9d2b9d650cd769c5406">
+               <head>Scope and Contents</head>
                <p>Correspondence is divided into two sections: the first arranged by person the second by subject. Except for the one letter from her grandson in SERIES I, these papers contain no family correspondence. Although some letters are personal in nature, this series consists solely of office correspondence. The correspondents are arranged alphabetically and replies are attached. Also included are attachments and occasional letters between others that were sent to Kross. Of particular interest in the first section is a letter from Anna Moscowitz written in 1917 to the Mayor of New York, John Mitchell, about prostitution, and a copy of a letter from Pope John XXIII. Also of interest are letters from Eleanor Roosevelt (1945-64), which reflect a personal relationship between the two women. These include letters relating to her visit and donations to the Women's House of Detention, her support for Kross's work, and letters from the Eleanor Roosevelt Memorial Foundation and Eleanor Roosevelt Institute for Cancer Research. There are several letters from Constance Baker Motley (1964-65). Although unsubstantial in content, they indicate a personal, cordial relationship. The second section consists of groups of correspondence related to specific subjects: a trip to Brazil (1959), receptions in honor of Grace Cox (1968) and Adrian Burke (1954-55), and political campaigns of Leonard N. Cohen for Civil Court Judge (1967) and Eleanor Clark French for U.S. Congress (1964-65).</p>
             </scopecontent>
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES IV. PROFESSIONAL ACTIVITIES</unittitle>
-               <unitdate>1915-1974</unitdate>
-               <physdesc>
-                  <extent>10 linear inches.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>The bulk of this series consists of material related to Kross's tenure as Commissioner of Correction for the City of New York. It also includes information about other miscellaneous professional activities and several subject files. Department of Correction material consists of a small amount of correspondence (1960-61); articles and reports on projects and conferences initiated and undertaken by Kross while she was Commissioner (1965); publications of the Department including the newsletter, Correction Highlights and Correction Sidelights (1957-60); reports on department activities (1954, 1956); and miscellaneous material including early correspondence related to the department (1915), unrelated reports submitted to Kross, and a speech by Department of Correction Warden Henry J. Noble in Puerto Rico (1956). Also included in the section is material on the Women's House of Detention. It consists of  "The Saga of the House of Detention for Women" (1956), a history of the efforts to replace the existing facility (including forty-five photographs); and miscellaneous correspondence (1965, n.d.). There are related photographs in SERIES V. In addition there are files on a number of organizations in which Kross was involved, including The Fund for Education Concerning World Peace Through World Law (1961-62) and National Council on Crime and Delinquency (1962-74). Miscellaneous subject headings are included in this series because they reflect Kross's interests. These include two speeches delivered to the annual meeting of The American Law Institute (1972); a speech and an article by Kross's son-in-law Marvin E. Frankel (1964, n.d); articles and reports on juvenile delinquency (1951-67); and miscellaneous articles on criminal justice, penology, racism, and addictions.</p>
-            </scopecontent>
-
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES V. PHOTOGRAPHS AND AUDIOVISUAL MATERIAL</unittitle>
-               <unitdate>1911-1969</unitdate>
-               <physdesc>
-                  <extent>15 linear inches.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>This series is divided into 2 subseries: Photographs and Audiotapes.</p>
-               <p>There are 121 photographs in this series. With the exception of two unidentified, undated snapshots, which may be family members, and her law school graduation picture (1911) they are all official photographs. They are arranged into three subject areas (personal photographs, Women's House of Correction, and Rikers Island) and then by date. There are ten personal photographs (1911-58, n.d.) which consist of portraits, Kross in her robes, or at her desk. There are forty-nine photographs taken at the New York City Women's House of Correction (1956-65), many of which seem to have been taken for "The Saga of the Women's House of Correction" in SERIES IV. Anna Kross is in many of these and they include photographs of cellblocks, inmates, inmate activities and programs, and staff training. Three include Gypsy Rose Lee with sewing classes and five include Eleanor Roosevelt (1957-58) speaking at the prison.  There are nineteen photographs of Rikers Island Prison (1956-66), among them interior shots of the prison kitchen the signing of papers for a bridge to Rikers Island, an Independence Day Field Day (1965), and one including Eleanor Roosevelt.</p>
-               <p>Miscellaneous photographs are arranged by date. These are primarily official photographs of activities of the Department of Correction and include New York Mayor Robert F. Wagner, Eleanor Roosevelt (4/28/58, 5/6/60, n.d), John Lindsay (2/18/60), Lyndon Baines Johnson (1964), Fannie Hurst (n.d.), Lady Bird Johnson (n.d.), and Dorothy Kenyon (n.d.)</p>
-               <p>There are twenty five cassette tapes copied from poor quality reel-to-reel tapes (1953-69, n.d.) Included are speeches, broadcasts, and interviews. They are not all of Anna Kross.  Many of the tapes are undated and unidentified and some identification is incomplete or unclear. Also the sound quality varies. In addition there are seven reel-to-reel tapes, which because of the speed at which they were taped, could not be copied.</p>
-            </scopecontent>
- </c01>
-</dsc>
-
-<!-- End series descriptions -->
-
-<!-- Begin container list -->
-
-<dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
-            <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL</unittitle>
-               <unitdate>1905-76</unitdate>
-            </did>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Miscellaneous biographical material and memorabilia,<unitdate> 1905-76, undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Articles, newspaper clippings, and publicity,<unitdate> 1937-75, undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Citations and honors,<unitdate> 1950-73, undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-         </c01>
-         <c01 id="list-ser2" level="series">
-            <did>
-               <unittitle>SERIES II. WRITINGS AND SPEECHES</unittitle>
-               <unitdate>1945-1964</unitdate>
-            </did>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Articles,<unitdate> 1945-66, undated</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <unittitle>
-                     <title>Brooklyn Law Review</title>,<unitdate> 1937-38</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-            <c02 level="file">
-               <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Speeches,<unitdate> 1946, 1960-65</unitdate>
-                  </unittitle>
-               </did>
-            </c02>
-         </c01>
-         <c01 id="list-ser3" level="series">
-            <did>
-               <unittitle>SERIES III. CORRESPONDENCE</unittitle>
-               <unitdate>1917-1968</unitdate>
-            </did>
-            <c02 level="file">
+            <c02 id="aspace_8964efb9e9835453f8fca06a7f7097fe" level="file">
                <did>
                   <unittitle>Individuals</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_ba9d54f8e5cda2b2a0eb12252b61ea70" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1-4</container>
-                     <unittitle>A-Z,<unitdate> 1917-75</unitdate>
-                     </unittitle>
+                     <unittitle>A-Z</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1917/1975"
+                               type="inclusive">1917-75</unitdate>
+                     <container id="aspace_d62f33b192a6d233086014f39316114f"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_6449a82750fce6f0a8a5c08f8e935e09"
+                                parent="aspace_d62f33b192a6d233086014f39316114f"
+                                type="folder">1-4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b91daa1c84fb6a11e7437fbc188882d0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Bets, Betty,<unitdate> 1947-48</unitdate>
-                     </unittitle>
+                     <unittitle>Bets, Betty</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1947/1948"
+                               type="inclusive">1947-48</unitdate>
+                     <container id="aspace_53cb44aac77306616c5091bfa36ea8d9"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_b2d88f5e67e16ffd266f509f06b71b84"
+                                parent="aspace_53cb44aac77306616c5091bfa36ea8d9"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8b870c835e2f2bb92d77284fb4244dc9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Brand, Sybil,<unitdate> 1964</unitdate>
-                     </unittitle>
+                     <unittitle>Brand, Sybil</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1964/1964">1964</unitdate>
+                     <container id="aspace_7d7929b06ad46a609b34ffa2db1cd476"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_11a9861c594ae1decabba0b5f2c8d1ef"
+                                parent="aspace_7d7929b06ad46a609b34ffa2db1cd476"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3cda97af0b9640c5e136efbf53b8a779" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Dickinson, LaFell and Lucy,<unitdate> 1952-58, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Dickinson, LaFell and Lucy</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1952/1958"
+                               type="inclusive">1952-58</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_7e2d32c86f18dce5288df98440206d87"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_7832a8310073f685b98dc39711fc02d1"
+                                parent="aspace_7e2d32c86f18dce5288df98440206d87"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_09028dac198d70d1452da6acf298a94e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Ford, Rev. George B.,<unitdate> 1964-65</unitdate>
-                     </unittitle>
+                     <unittitle>Ford, Rev. George B.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1964/1965"
+                               type="inclusive">1964-65</unitdate>
+                     <container id="aspace_b2f3164ab12676c4243514f35a47ba3e"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_4ebbcdc520c920542aa2e2b560a56da6"
+                                parent="aspace_b2f3164ab12676c4243514f35a47ba3e"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_082f79f8178d32a2fa07ded2222da236" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Fowler, Gordon,<unitdate> 1961-63</unitdate>
-                     </unittitle>
+                     <unittitle>Fowler, Gordon</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1961/1963"
+                               type="inclusive">1961-63</unitdate>
+                     <container id="aspace_f9933619d13958328fbb26aad4b396ef"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_612533b7dc76c481b2932ab5f7afff21"
+                                parent="aspace_f9933619d13958328fbb26aad4b396ef"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c26e8dc856ff02567df6474b5e7a83f4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Fox, Lionel,<unitdate> 1958-60</unitdate>
-                     </unittitle>
+                     <unittitle>Fox, Lionel</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1958/1960"
+                               type="inclusive">1958-60</unitdate>
+                     <container id="aspace_762fe575a36c415e186f12715e0dcfab"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_9957f240760701ddfd537f80f704d280"
+                                parent="aspace_762fe575a36c415e186f12715e0dcfab"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_cb431f1528943d57b9904411a64cf221" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">11</container>
-                     <unittitle>Hays, Arthur Garfield,<unitdate> 1945-50</unitdate>
-                     </unittitle>
+                     <unittitle>Hays, Arthur Garfield</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1945/1950"
+                               type="inclusive">1945-50</unitdate>
+                     <container id="aspace_b5eadf6cf580efddb3536548f69f2414"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_d6620aacfa000a3f8093dc0d26f5a650"
+                                parent="aspace_b5eadf6cf580efddb3536548f69f2414"
+                                type="folder">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_68e3aea8c5af9e5f5bedd4c98130126c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">12</container>
-                     <unittitle>John XXIII, Pope,<unitdate> 1958</unitdate>
-                     </unittitle>
+                     <unittitle>John XXIII, Pope</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container id="aspace_ea436cf5f2527277058a7d9ef2c55e93"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_aba597f4750e3f3530ab2a76020b14e1"
+                                parent="aspace_ea436cf5f2527277058a7d9ef2c55e93"
+                                type="folder">12</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ec00f9d59a5c0017ca278c7efaf877bf" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>McCracken, Rev. Robert J. ,<unitdate> 1957</unitdate>
-                     </unittitle>
+                     <unittitle>McCracken, Rev. Robert J. </unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1957/1957">1957</unitdate>
+                     <container id="aspace_f55fd65e33a89d2b6c085d67e8721dc0"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_fee360bc20c52881db0668ad3a1ea47d"
+                                parent="aspace_f55fd65e33a89d2b6c085d67e8721dc0"
+                                type="folder">13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_605b1803518c6fcfbc24033599fa9c8b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Motley, Constance Baker,<unitdate> 1964-65</unitdate>
-                     </unittitle>
+                     <unittitle>Motley, Constance Baker</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1964/1965"
+                               type="inclusive">1964-65</unitdate>
+                     <container id="aspace_b6689f6f5bfbc0c61fd9ccd0ca735a44"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_9c6342ba69a05f115f55016bb1422105"
+                                parent="aspace_b6689f6f5bfbc0c61fd9ccd0ca735a44"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0d7ced108116e40fcb68cc8fdf85c699" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Robinson, James H.,<unitdate> 1963-65</unitdate>
-                     </unittitle>
+                     <unittitle>Robinson, James H.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1963/1965"
+                               type="inclusive">1963-65</unitdate>
+                     <container id="aspace_e95068f688955272f8508b778c97d1ce"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_7882f2a3e0e29de4f2af9ee4d77d647e"
+                                parent="aspace_e95068f688955272f8508b778c97d1ce"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2488b7778ccf4b79ba9e2cdbb11c6353" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>Roosevelt, Eleanor,<unitdate> 1945-64</unitdate>
-                     </unittitle>
+                     <unittitle>Roosevelt, Eleanor</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1945/1964"
+                               type="inclusive">1945-64</unitdate>
+                     <container id="aspace_030817542e0df833e9386618a5aa77b0"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_1341264f72e7599a8f0038a57bd51e23"
+                                parent="aspace_030817542e0df833e9386618a5aa77b0"
+                                type="folder">16</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c89e0251d3bf9ba14843e5778c437a30" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>Smadbeck, Ruth,<unitdate> 1957-64</unitdate>
-                     </unittitle>
+                     <unittitle>Smadbeck, Ruth</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1957/1964"
+                               type="inclusive">1957-64</unitdate>
+                     <container id="aspace_7588569fd0975a8a3a1d11a41a2ea3d4"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_4b1599dd7059d289bf94a7218295ec1f"
+                                parent="aspace_7588569fd0975a8a3a1d11a41a2ea3d4"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_bbe5515f27f9db93d69ea7a32ee1b26b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>Taggart, Madge,<unitdate> 1953, 1962</unitdate>
-                     </unittitle>
+                     <unittitle>Taggart, Madge</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1953/1953">1953</unitdate>
+                     <unitdate normal="1962/1962">1962</unitdate>
+                     <container id="aspace_6373356d7cbb8d0e04cd50d739903c23"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_a086af4aad1fef6ea39f7f9fce11adfc"
+                                parent="aspace_6373356d7cbb8d0e04cd50d739903c23"
+                                type="folder">18</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_adf8378fb8e6ed6854d1b56762267ced" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>Wise, Ethel,<unitdate> 1957-62</unitdate>
-                     </unittitle>
+                     <unittitle>Wise, Ethel</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1957/1962"
+                               type="inclusive">1957-62</unitdate>
+                     <container id="aspace_2229b74be21eb7333cec7ea87aefc980"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_688ab4a8b958a967149933015b75a022"
+                                parent="aspace_2229b74be21eb7333cec7ea87aefc980"
+                                type="folder">19</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8fa97890dd124f2ade30f58e125f4be4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">20</container>
-                     <unittitle>Yeghenian, Ave,<unitdate> 1952</unitdate>
-                     </unittitle>
+                     <unittitle>Yeghenian, Ave</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                     <container id="aspace_512be6746d82ec56259b9db7c119678a"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_88a94c128c07e86bf324b03024790764"
+                                parent="aspace_512be6746d82ec56259b9db7c119678a"
+                                type="folder">20</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_defff41b6247afe1904ae2ea2ada9d09" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">21</container>
-                     <unittitle>Zerwick, Chloe and M.B.,<unitdate> 1963-68</unitdate>
-                     </unittitle>
+                     <unittitle>Zerwick, Chloe and M.B.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1963/1968"
+                               type="inclusive">1963-68</unitdate>
+                     <container id="aspace_5001e1b76f2f3c1967520f018e4dc7d9"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_3ed57c0c9bd857c2bdb1b20492998b45"
+                                parent="aspace_5001e1b76f2f3c1967520f018e4dc7d9"
+                                type="folder">21</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8b47e19bafdaea0767023223d7fd5612" level="file">
                <did>
                   <unittitle>Subjects</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_8c6e816c3bd8154273db5d5b2b7dbe83" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Brazil,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Brazil</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_76de25e4377657e97ce961987fc69377"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_2cee8f6d8bb4fa20045e46509bb3cdb1"
+                                parent="aspace_76de25e4377657e97ce961987fc69377"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ff97ba6bef71b2a3907ffec75280cf1d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Bunke, Adrian: reception in her honor,<unitdate> 1954-55</unitdate>
-                     </unittitle>
+                     <unittitle>Bunke, Adrian: reception in her honor</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1954/1955"
+                               type="inclusive">1954-55</unitdate>
+                     <container id="aspace_8562861efae12fb40745fed981cc4b52"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_718eda301f82c73aa925b615d462e563"
+                                parent="aspace_8562861efae12fb40745fed981cc4b52"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7fc2904c1d2b001e274f14dcf4d7c82a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Grace Cox: reception in her honor,<unitdate> 1968</unitdate>
-                     </unittitle>
+                     <unittitle>Grace Cox: reception in her honor</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                     <container id="aspace_59f92d5f214ce22e9ad3ac278e4acbd3"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_3e27ab03e8846d2b065282b66b6a98ce"
+                                parent="aspace_59f92d5f214ce22e9ad3ac278e4acbd3"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_78e2377caef3bdc69f5c3711311d4cff" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Eleanor Clark French: campaign for U.S. Congress,<unitdate> 1964-65</unitdate>
-                     </unittitle>
+                     <unittitle>Eleanor Clark French: campaign for U.S. Congress</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1964/1965"
+                               type="inclusive">1964-65</unitdate>
+                     <container id="aspace_90c29c5429ba9c9988867f2b47afec87"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_9a4b266bdac8ee2439462dbf21e410c0"
+                                parent="aspace_90c29c5429ba9c9988867f2b47afec87"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_83a8f9a41dbe0e5a887882a5df1a03f2" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Leonard N. Cohen: campaign for Civil Court Judge,<unitdate> 1967</unitdate>
-                     </unittitle>
+                     <unittitle>Leonard N. Cohen: campaign for Civil Court Judge</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                     <container id="aspace_a292cf2d98069e95695e91b16cf5bb76"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_3cdea8c874649a5021c72e03d1aee2e7"
+                                parent="aspace_a292cf2d98069e95695e91b16cf5bb76"
+                                type="folder">5</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>SERIES IV. PROFESSIONAL ACTIVITIES</unittitle>
-               <unitdate>1915-1974</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1915/1974"
+                         type="inclusive">1915-1974</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1915/1974"
+                         type="inclusive">1915-1974</unitdate>
             </did>
-            <c02 id="list-deptcor" level="file">
+            <scopecontent id="aspace_0d43c9c841a6cfa8045314c35a9aa549">
+               <head>Scope and Contents</head>
+               <p>The bulk of this series consists of material related to Kross's tenure as Commissioner of Correction for the City of New York. It also includes information about other miscellaneous professional activities and several subject files. Department of Correction material consists of a small amount of correspondence (1960-61); articles and reports on projects and conferences initiated and undertaken by Kross while she was Commissioner (1965); publications of the Department including the newsletter, Correction Highlights and Correction Sidelights (1957-60); reports on department activities (1954, 1956); and miscellaneous material including early correspondence related to the department (1915), unrelated reports submitted to Kross, and a speech by Department of Correction Warden Henry J. Noble in Puerto Rico (1956). Also included in the section is material on the Women's House of Detention. It consists of "The Saga of the House of Detention for Women" (1956), a history of the efforts to replace the existing facility (including forty-five photographs); and miscellaneous correspondence (1965, n.d.). There are related photographs in SERIES V. In addition there are files on a number of organizations in which Kross was involved, including The Fund for Education Concerning World Peace Through World Law (1961-62) and National Council on Crime and Delinquency (1962-74). Miscellaneous subject headings are included in this series because they reflect Kross's interests. These include two speeches delivered to the annual meeting of The American Law Institute (1972); a speech and an article by Kross's son-in-law Marvin E. Frankel (1964, n.d); articles and reports on juvenile delinquency (1951-67); and miscellaneous articles on criminal justice, penology, racism, and addictions.</p>
+            </scopecontent>
+            <c02 id="aspace_list-deptcor" level="file">
                <did>
                   <unittitle>Department of Correction</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_6fb6545e39506cbb2b94c7bea820c32a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Correspondence,<unitdate> 1960-61</unitdate>
-                     </unittitle>
+                     <unittitle>Correspondence</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1960/1961"
+                               type="inclusive">1960-61</unitdate>
+                     <container id="aspace_9c12b2532bbb572e0e22a9ebf284cda5"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_c75b0c80ad7e46cd7ca7bea1cb8e28ce"
+                                parent="aspace_9c12b2532bbb572e0e22a9ebf284cda5"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_131e906e20b1a77f9bce9c11e4294436" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Projects,<unitdate> 1965</unitdate>
-                     </unittitle>
+                     <unittitle>Projects</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                     <container id="aspace_99532bbc8f7d1dbb3083ecbf1c72f5d7"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_19c5b2a355351eb6154f9cc996afdeb5"
+                                parent="aspace_99532bbc8f7d1dbb3083ecbf1c72f5d7"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_aa8b578ddc5fe0ddc5840c2f96f894cf" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Publications,<unitdate> 1956-66</unitdate>
-                     </unittitle>
+                     <unittitle>Publications</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1956/1966"
+                               type="inclusive">1956-66</unitdate>
+                     <container id="aspace_0979ea08e93a2e79d7f64d64ab1b4e2c"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_d51b1c92a5486e9d51dfd4694cd0c1ae"
+                                parent="aspace_0979ea08e93a2e79d7f64d64ab1b4e2c"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_bfdfefdbb48688e878b5bc1cbb57018a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Reports,<unitdate> 1954, 1956</unitdate>
-                     </unittitle>
+                     <unittitle>Reports</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                     <unitdate normal="1956/1956">1956</unitdate>
+                     <container id="aspace_ff5ab5d3e534f8f47eade7c512ca2a62"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_5a598eb7b0c6479c6f60b414736dc6d2"
+                                parent="aspace_ff5ab5d3e534f8f47eade7c512ca2a62"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_04a79b0084068635f0e2d97f3435d8a2" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Miscellaneous,<unitdate> 1915, 1941, 1962-65</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                     <unitdate normal="1941/1941">1941</unitdate>
+                     <unitdate normal="1962/1965" type="inclusive">1962-65</unitdate>
+                     <container id="aspace_9bad8c1feb9aa05c2121de3b8179af7c"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_9f00f577c2d79a79b70b327eedcdb528"
+                                parent="aspace_9bad8c1feb9aa05c2121de3b8179af7c"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1966b67ef68f1d892a3268043fdc79ef" level="file">
                   <did>
                      <unittitle>House of Detention for Women</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_5481d44c89176b8543dec83883b13600" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">6-7</container>
-                        <unittitle>"Saga of the House of Detention for Women,"<unitdate> 1956</unitdate>
-                        </unittitle>
+                        <unittitle>"Saga of the House of Detention for Women,"</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1956/1956">1956</unitdate>
+                        <container id="aspace_8d2427866429805f1799320367f98bcc"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_1de1c3187995bceac4ba6e261bd7160a"
+                                   parent="aspace_8d2427866429805f1799320367f98bcc"
+                                   type="folder">6-7</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_509f86e11a6fc0b78f73a26b3e1c74a4" level="file">
                      <did>
-                        <container type="box" label="mixed materials">4</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>Miscellaneous reports and correspondence,<unitdate> 1965, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Miscellaneous reports and correspondence</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1965/1965">1965</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_65233982c51a9837740b245a5ac3aec6"
+                                   label="Mixed Materials"
+                                   type="box">4</container>
+                        <container id="aspace_96e77bfef0daf934d2e37292e36f2cf0"
+                                   parent="aspace_65233982c51a9837740b245a5ac3aec6"
+                                   type="folder">8</container>
                      </did>
                   </c04>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_253bbd1de0c4c3398fdfd1538ae17596" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Fund for Education Concerning World Peace Through World Law,<unitdate> 1961-62</unitdate>
-                  </unittitle>
+                  <unittitle>Fund for Education Concerning World Peace Through World Law</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1961/1962"
+                            type="inclusive">1961-62</unitdate>
+                  <container id="aspace_5c5910675abd4a4b5ec8239143d7a8e5"
+                             label="Mixed Materials"
+                             type="box">5</container>
+                  <container id="aspace_9536c2f7ef9f41c1f6dcf851d721bb2e"
+                             parent="aspace_5c5910675abd4a4b5ec8239143d7a8e5"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c67250e973cbe10ea28d21e6e864c89b" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>National Council on Crime and Delinquency,<unitdate> 1962-74</unitdate>
-                  </unittitle>
+                  <unittitle>National Council on Crime and Delinquency</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1962/1974"
+                            type="inclusive">1962-74</unitdate>
+                  <container id="aspace_e2140cf6765c8d53256e064bb1f51fbe"
+                             label="Mixed Materials"
+                             type="box">5</container>
+                  <container id="aspace_27896010485360f4cc0ceeb74bec4e5c"
+                             parent="aspace_e2140cf6765c8d53256e064bb1f51fbe"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_73c95de31e3468cbb3892bed5803bbe7" level="file">
                <did>
-                  <container type="box" label="mixed materials">5</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Miscellaneous<unitdate> 1944-74, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1944/1974"
+                            type="inclusive">1944-74</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_300df6758d748b522716b6051f358364"
+                             label="Mixed Materials"
+                             type="box">5</container>
+                  <container id="aspace_f52e8afbe5e75350b617325962818831"
+                             parent="aspace_300df6758d748b522716b6051f358364"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8abfff18451865bc004f9da731f9be22" level="file">
                <did>
                   <unittitle>Subjects</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_5952136f81593bbe476345108d4bf412" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>American Law Institute,<unitdate> 1972</unitdate>
-                     </unittitle>
+                     <unittitle>American Law Institute</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1972/1972">1972</unitdate>
+                     <container id="aspace_c0cd66fe73b503c5a124ab8aa5c446c7"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_66db6fa2afbbe78ae6ea0226071c2286"
+                                parent="aspace_c0cd66fe73b503c5a124ab8aa5c446c7"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8566635414d31d44ea88f7e2bc8ca44d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Frankel, Marvin E.,<unitdate> 1964, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Frankel, Marvin E.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1964/1964">1964</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_0727d4915ad720ddecdc10f5c2602581"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_b3f84dccbfc995b75252912150af8603"
+                                parent="aspace_0727d4915ad720ddecdc10f5c2602581"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d27f44dcdd61b012487e9d407b4b8f71" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Juvenile delinquency,<unitdate> 1940-67, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Juvenile delinquency</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1940/1967"
+                               type="inclusive">1940-67</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_fb9caacaa037f4c74a4467b1dde724d6"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_ed247f1a929c98f4166e8e940595c6f4"
+                                parent="aspace_fb9caacaa037f4c74a4467b1dde724d6"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a61f534a9c4688d658b06f6ff64b205b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Miscellaneous,<unitdate> 1953-65, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1953/1965"
+                               type="inclusive">1953-65</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_7eee100de17f7a7ae558ba185caa9ab7"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_9f3307732a92bbda8742ab5fa8ad57ed"
+                                parent="aspace_7eee100de17f7a7ae558ba185caa9ab7"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>SERIES V. PHOTOGRAPHS AND AUDIOVISUAL MATERIAL</unittitle>
-               <unitdate>1911-1969</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1911/1969"
+                         type="inclusive">1911-1969</unitdate>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1911/1969"
+                         type="inclusive">1911-1969</unitdate>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_380b458b60602c0122d285b8933cde33">
+               <head>Scope and Contents</head>
+               <p>This series is divided into 2 subseries: Photographs and Audiotapes.</p>
+               <p> There are 121 photographs in this series. With the exception of two unidentified, undated snapshots, which may be family members, and her law school graduation picture (1911) they are all official photographs. They are arranged into three subject areas (personal photographs, Women's House of Correction, and Rikers Island) and then by date. There are ten personal photographs (1911-58, n.d.) which consist of portraits, Kross in her robes, or at her desk. There are forty-nine photographs taken at the New York City Women's House of Correction (1956-65), many of which seem to have been taken for "The Saga of the Women's House of Correction" in SERIES IV. Anna Kross is in many of these and they include photographs of cellblocks, inmates, inmate activities and programs, and staff training. Three include Gypsy Rose Lee with sewing classes and five include Eleanor Roosevelt (1957-58) speaking at the prison. There are nineteen photographs of Rikers Island Prison (1956-66), among them interior shots of the prison kitchen the signing of papers for a bridge to Rikers Island, an Independence Day Field Day (1965), and one including Eleanor Roosevelt.</p>
+               <p> Miscellaneous photographs are arranged by date. These are primarily official photographs of activities of the Department of Correction and include New York Mayor Robert F. Wagner, Eleanor Roosevelt (4/28/58, 5/6/60, n.d), John Lindsay (2/18/60), Lyndon Baines Johnson (1964), Fannie Hurst (n.d.), Lady Bird Johnson (n.d.), and Dorothy Kenyon (n.d.)</p>
+               <p> There are twenty five cassette tapes copied from poor quality reel-to-reel tapes (1953-69, n.d.) Included are speeches, broadcasts, and interviews. They are not all of Anna Kross. Many of the tapes are undated and unidentified and some identification is incomplete or unclear. Also the sound quality varies. In addition there are seven reel-to-reel tapes, which because of the speed at which they were taped, could not be copied.</p>
+            </scopecontent>
+            <c02 id="aspace_4dfd0036ba900eff961661d21745868c" level="file">
                <did>
                   <unittitle>Photographs</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_1bad2917987a5dd329638901759c4edb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Personal (8),<unitdate> 1911, 1958, undated </unitdate>
-                     </unittitle>
+                     <unittitle>Personal (8)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1911/1911">1911</unitdate>
+                     <unitdate normal="1958/1958">1958</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_d707dfdbc53c149a45adf34af95fb669"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_742d1aeef507db0a70ffe01516e8af37"
+                                parent="aspace_d707dfdbc53c149a45adf34af95fb669"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0ae356f1bb9e77372f45edadbfa1a0b1" level="file">
                   <did>
                      <unittitle>Women's House of Detention</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_f8a19a988bfd6901116a242963f23852" level="file">
                      <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>General (44),<unitdate> 1940, 1954-65 </unitdate>
-                        </unittitle>
+                        <unittitle>General (44)</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                        <unitdate normal="1954/1965" type="inclusive">1954-65</unitdate>
+                        <container id="aspace_382b1c617752fa45172152c078eb3790"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_7e3de7507e6af6fbc220beffb347f7d3"
+                                   parent="aspace_382b1c617752fa45172152c078eb3790"
+                                   type="folder">2</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_bd9220d470475c1876abfb3168803e47" level="file">
                      <did>
-                        <container type="box" label="mixed materials">6</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>Eleanor Roosevelt (5),<unitdate> 1958 </unitdate>
-                        </unittitle>
+                        <unittitle>Eleanor Roosevelt (5)</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                        <container id="aspace_3d6e521957441703caa934fc60284c34"
+                                   label="Mixed Materials"
+                                   type="box">6</container>
+                        <container id="aspace_1dbadbc71b686d6f85acf73a082f159b"
+                                   parent="aspace_3d6e521957441703caa934fc60284c34"
+                                   type="folder">3</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d1ee281812281cf414df7641d09f14b4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Rikers Island (18),<unitdate> 1956-66 </unitdate>
-                     </unittitle>
+                     <unittitle>Rikers Island (18)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1956/1966"
+                               type="inclusive">1956-66</unitdate>
+                     <container id="aspace_a46e502da0169ad89402bbb273af7391"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_405a3995494cbb48795f60984e3378db"
+                                parent="aspace_a46e502da0169ad89402bbb273af7391"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_11df8ec9bba9075b22df5ecda2504a71" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>
-                        <unitdate>1956-59 (8)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1956-59 (8)</unitdate>
+                     <container id="aspace_50c921960524f3e0bdaf38b991f661e6"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_26f52f01768f512328ca81be3465fb5d"
+                                parent="aspace_50c921960524f3e0bdaf38b991f661e6"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2fa12aa38e6293523588289fac01d5be" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>
-                        <unitdate>1960-66 (19)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1960-66 (19)</unitdate>
+                     <container id="aspace_38e2b94869447510535f96c841557586"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_179a0d12d3f5f9f47724fd9989911343"
+                                parent="aspace_38e2b94869447510535f96c841557586"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9d69c4f1fcd985aff5f612305141b198" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>
-                        <unitdate>undated (19)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated (19)</unitdate>
+                     <container id="aspace_4aa2db949fc148ca5dfd65c7b37ca503"
+                                label="Mixed Materials"
+                                type="box">6</container>
+                     <container id="aspace_54718400aa9063eba39acc5ba5bc7f16"
+                                parent="aspace_4aa2db949fc148ca5dfd65c7b37ca503"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dc6fef4b6022f4ef7bb24ada482e7ce1" level="file">
                <did>
                   <unittitle>Audiotapes (cassette tapes)</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_fa90ff9b800f50cf70213ae11d0ff345" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">1-2</container>
-                     <unittitle>Symposium on Arts and Morals, 23-24 <unitdate>Apr 1953. </unitdate>Ben Shahn, Philip Johnson, Edgar Wind, Introductions by George Boas</unittitle>
+                     <unittitle>Symposium on Arts and Morals, 23-24 Apr 1953. Ben Shahn, Philip Johnson, Edgar Wind, Introductions by George Boas</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1953-04/1953-04">Apr 1953.</unitdate>
+                     <container id="aspace_50aafeb732ef618e253296658ec9850e"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_517149d591287e14833f4de014fb222b"
+                                parent="aspace_50aafeb732ef618e253296658ec9850e"
+                                type="folder">1-2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1b46b27f3a4a8e551db8f8145501ab2f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Anna Kross, interview by W. White, KSTM 98, <unitdate>4 Apr 1954</unitdate>
-                     </unittitle>
+                     <unittitle>Anna Kross, interview by W. White, KSTM 98</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1954-04-04/1954-04-04">4 Apr 1954</unitdate>
+                     <container id="aspace_26e49cfb2779781b959b819f82e0ca70"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_1b29050b906aede6ace44ad1574b2ef4"
+                                parent="aspace_26e49cfb2779781b959b819f82e0ca70"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8370a40c6569b4100a6b3eb836413ab3" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">4-6</container>
-                     <unittitle>Anna Kross, interview, <unitdate>15 Jul 1957</unitdate>
-                     </unittitle>
+                     <unittitle>Anna Kross, interview</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1957-07-15/1957-07-15">15 Jul 1957</unitdate>
+                     <container id="aspace_fb44c8d53b55ec463394dd44c8fa8c92"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_248bc6232378a4641722efdcd4f48ae5"
+                                parent="aspace_fb44c8d53b55ec463394dd44c8fa8c92"
+                                type="folder">4-6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4b620f6aa97695a5039da043abb99ea8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>"This is New York," <unitdate>5 Nov 1958</unitdate>
-                     </unittitle>
+                     <unittitle>"This is New York,"</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958-11-05/1958-11-05">5 Nov 1958</unitdate>
+                     <container id="aspace_78beaffb854aa37734f089e5b872c931"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_781a548d2e3943a5451e694086050802"
+                                parent="aspace_78beaffb854aa37734f089e5b872c931"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_015bd609dec1ff0a719f87023b81404c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>"Home Term Court," Church of the Incarnation, <unitdate>25 Sep 1963</unitdate>
-                     </unittitle>
+                     <unittitle>"Home Term Court," Church of the Incarnation</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1963-09-25/1963-09-25">25 Sep 1963</unitdate>
+                     <container id="aspace_1479c06a37acc92a47d0c141ff8f3563"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_ffc01d36005b746354506319a5b9757f"
+                                parent="aspace_1479c06a37acc92a47d0c141ff8f3563"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e6ce748ba95c9a09a69b07722bb5f68a" level="file">
                   <did>
                      <unittitle>Columbia lectures</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_23ab937b596fc2d416422816f5141712" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>"The Changing Of The Guard," Herbert Passin, Daniel Bell, <unitdate>7 Feb 1964,</unitdate>
-                        </unittitle>
+                        <unittitle>"The Changing Of The Guard," Herbert Passin, Daniel Bell</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1964-02-07/1964-02-07">7 Feb 1964</unitdate>
+                        <container id="aspace_3751f0b50ba580c924875c834fe85e0d"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_6feb9e85b9816973189e3100b44cdf24"
+                                   parent="aspace_3751f0b50ba580c924875c834fe85e0d"
+                                   type="folder">9</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_aec75f5673eb6811dd25d072d8ec022b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>"The Captivity Of The Church In Totalitarian Societies," Michael Wyschograd and Jacob Taubes <unitdate>12 Feb 1964</unitdate>
-                        </unittitle>
+                        <unittitle>"The Captivity Of The Church In Totalitarian Societies," Michael Wyschograd and Jacob Taubes</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1964-02-12/1964-02-12">12 Feb 1964</unitdate>
+                        <container id="aspace_b5d122ddf8d411b476fcef38bc5d10f0"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_41d08c5ac65ed7fd0678e1345ded47a0"
+                                   parent="aspace_b5d122ddf8d411b476fcef38bc5d10f0"
+                                   type="folder">10</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_06480e1f78b561fb43bfdc989f22a799" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>"Ladies of the Press," Anna Kross, guest, <unitdate>21 Jun 1964</unitdate>
-                        </unittitle>
+                        <unittitle>"Ladies of the Press," Anna Kross, guest</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1964-06-21/1964-06-21">21 Jun 1964</unitdate>
+                        <container id="aspace_1161eedf397194490bc18387cea93368"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_f58a05b81ebb8aa2e0caa777b665eb32"
+                                   parent="aspace_1161eedf397194490bc18387cea93368"
+                                   type="folder">11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_1045b6a0364748962e7bc1ad5f8277f4" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>"W.H.D." (Women's House of Detention?), <unitdate>18 Mar 1965</unitdate>
-                        </unittitle>
+                        <unittitle>"W.H.D." (Women's House of Detention?)</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1965-03-18/1965-03-18">18 Mar 1965</unitdate>
+                        <container id="aspace_2946e67d440ba34c5d831c1b2a70dc34"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_cf3bdf19df7ace4590c11cf026101664"
+                                   parent="aspace_2946e67d440ba34c5d831c1b2a70dc34"
+                                   type="folder">12</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_3e1ec3e9c652ac14b3461e9abec3a247" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>Anna Kross speech at the 8th Annual Conference of the Welfare Council of Monmouth County, Asbury Park, N.J., <unitdate>16 Apr 1965</unitdate>
-                        </unittitle>
+                        <unittitle>Anna Kross speech at the 8th Annual Conference of the Welfare Council of Monmouth County, Asbury Park, N.J.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1965-04-16/1965-04-16">16 Apr 1965</unitdate>
+                        <container id="aspace_cf0fe5169e6c8c4e87c9bc25d7b4294a"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_cddc8837b665c00cde4c5487b6ea64d9"
+                                   parent="aspace_cf0fe5169e6c8c4e87c9bc25d7b4294a"
+                                   type="folder">13</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_68268d915d70110eb5bbe491b6d1590f" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>Portnow article in <title>American Correctional Association Journal</title>, Dec 1966; Botein article, <title>American Bar Association Journal</title>, <unitdate>undated</unitdate> [Tape #1]</unittitle>
+                        <unittitle>Portnow article in <title>American Correctional Association Journal</title>, Dec 1966; Botein article, <title>American Bar Association Journal</title>, undated [Tape #1]</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_79c594b4268d9930c0073e9da00831af"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_c45527be8b8157989357df8bf9c5b231"
+                                   parent="aspace_79c594b4268d9930c0073e9da00831af"
+                                   type="folder">14</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_92630ec7553656b5af22e28a157f5fd8" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">15</container>
-                        <unittitle>"Griffin letter; Keyserling, Economic Resources to Eliminate Poverty,"<unitdate> 1967 </unitdate>[Tape #2]</unittitle>
+                        <unittitle>"Griffin letter; Keyserling, Economic Resources to Eliminate Poverty," 1967 [Tape #2]</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1967/1967">1967</unitdate>
+                        <container id="aspace_0c843777505c393f03c7b5740c71097e"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_0f4a4a5faa73adfe2d6e42e47352af5a"
+                                   parent="aspace_0c843777505c393f03c7b5740c71097e"
+                                   type="folder">15</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_035205bccf573b7a72c91760e72fbf1c" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">16</container>
-                        <unittitle>"Battered Child, Psychologically Speaking" [WEVD broadcast], <unitdate>6 May 1969</unitdate>
-                        </unittitle>
+                        <unittitle>"Battered Child, Psychologically Speaking" [WEVD broadcast]</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1969-05-06/1969-05-06">6 May 1969</unitdate>
+                        <container id="aspace_d39fdb41f6d5abbb2d73d5729bd87b0e"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_a35c9c9c97b9e8e01ea97e2d5ec213fa"
+                                   parent="aspace_d39fdb41f6d5abbb2d73d5729bd87b0e"
+                                   type="folder">16</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_667c44feed10d4589c5a3714aabd1bf2" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">17</container>
-                        <unittitle>Broadcast on drugs, <unitdate>15 Mar</unitdate>
-                        </unittitle>
+                        <unittitle>Broadcast on drugs</unittitle>
+                        <unitdate calendar="gregorian" era="ce">15 Mar</unitdate>
+                        <container id="aspace_f0bea335f0d3f12e6b8e5e9cca33dbe0"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_1b0e2064f5c6f85912a61d8f3b72cc62"
+                                   parent="aspace_f0bea335f0d3f12e6b8e5e9cca33dbe0"
+                                   type="folder">17</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_d7469fd74420dad837472b2a70ce2855" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">18</container>
-                        <unittitle>"Prison Story: Powder Keg Behind Bars, News of the World,"NBC, <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>"Prison Story: Powder Keg Behind Bars, News of the World,"NBC</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_e66aa2cc1a12b54de3e8cf3ce48d94d0"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_592360f255df9caf23d8bc03af9d967b"
+                                   parent="aspace_e66aa2cc1a12b54de3e8cf3ce48d94d0"
+                                   type="folder">18</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_2eae5d646eff691b8b9f08af627de7e2" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">19</container>
-                        <unittitle>Anna Kross, unidentified, <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>Anna Kross, unidentified</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_6ea1aa8a78e1ff565ebef938cb8d88aa"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_553637aff31b3fdeb9a0db9fd56f8089"
+                                   parent="aspace_6ea1aa8a78e1ff565ebef938cb8d88aa"
+                                   type="folder">19</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_b3e23ee24ead4472428dbac68e57c4cb" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">20</container>
-                        <unittitle>"Ladies of the Press," Anna Kross, guest, <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>"Ladies of the Press," Anna Kross, guest</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_403b00b118793438429391da0797f175"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_c8e2a6fa8258e3fc4e89558cd0cc71c0"
+                                   parent="aspace_403b00b118793438429391da0797f175"
+                                   type="folder">20</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_76a778df984f3bd13decc5ff23ab283a" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">21-23</container>
                         <unittitle>"Miscarriage of Justice"</unittitle>
+                        <container id="aspace_92eea51f65ea67edaa83e9fe7422775d"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_1b8b9f60e73b89d84283925b845e1184"
+                                   parent="aspace_92eea51f65ea67edaa83e9fe7422775d"
+                                   type="folder">21-23</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_202aefc368e2520c82b92ed8d9e2f9a3" level="file">
                      <did>
-                        <container type="box" label="mixed materials">7</container>
-                        <container type="folder" label="mixed materials">24-25</container>
-                        <unittitle>"Rikers," <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>"Rikers,"</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_523fdcbfab632e7e7d00304f75ff255b"
+                                   label="Mixed Materials"
+                                   type="box">7</container>
+                        <container id="aspace_a12136d776c3acbd5d5090a3d3311a11"
+                                   parent="aspace_523fdcbfab632e7e7d00304f75ff255b"
+                                   type="folder">24-25</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8209528400ad87a1c6683d0e4c12f390" level="file">
                   <did>
-                     <note>
-                        <p>The speed of the following tapes is not compatible with our machines</p>
-                     </note>
+                     <unittitle>Anna Moscowitz Kross papers</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1905/1974"
+                               type="inclusive">1905-1974</unitdate>
                   </did>
-                  <c04 level="file">
+                  <odd id="aspace_720b056531367fc515f378bceb145dc6">
+                     <head>General</head>
+                     <p>The speed of the following tapes is not compatible with our machines</p>
+                  </odd>
+                  <c04 id="aspace_c2df75f143a028038097dc697118f044" level="file">
                      <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>New York School of Psychology [Psychiatry?] (2 ) <unitdate>26 Nov</unitdate>
-                        </unittitle>
+                        <unittitle>New York School of Psychology [Psychiatry?] (2 )</unittitle>
+                        <unitdate calendar="gregorian" era="ce">26 Nov</unitdate>
+                        <container id="aspace_03d1e5bc0ecec15e76ada4b8cb7c65e9"
+                                   label="Mixed Materials"
+                                   type="box">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_c7dffeeb63111949857a30dae19f30df" level="file">
                      <did>
-                        <container type="box" label="mixed materials">8</container>
                         <unittitle>Unidentified (3)</unittitle>
+                        <container id="aspace_6d70ec2c7ba268b9b227df56476ae02f"
+                                   label="Mixed Materials"
+                                   type="box">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_fa28957ca1fb0f99b52bd1675dc9516e" level="file">
                      <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>American Correctional Association Seminar, <unitdate>21 Jun</unitdate>
-                        </unittitle>
+                        <unittitle>American Correctional Association Seminar</unittitle>
+                        <unitdate calendar="gregorian" era="ce">21 Jun</unitdate>
+                        <container id="aspace_f3924111ed35044afaba62b8aa6af03b"
+                                   label="Mixed Materials"
+                                   type="box">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_698d19160098820b7529670fc7613820" level="file">
                      <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>American Correctional Association, <unitdate>undated</unitdate>
-                        </unittitle>
+                        <unittitle>American Correctional Association</unittitle>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container id="aspace_2146d1d5e29cf6ed789d077aaac4a9e4"
+                                   label="Mixed Materials"
+                                   type="box">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_65fcd40de93da837bcf7241b3b4f39c8" level="file">
                      <did>
-                        <container type="box" label="mixed materials">8</container>
-                        <unittitle>Medical Society, Americana Hotel, <unitdate>25 Sep 1963</unitdate>
-                        </unittitle>
+                        <unittitle>Medical Society, Americana Hotel</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1963-09-25/1963-09-25">25 Sep 1963</unitdate>
+                        <container id="aspace_1d39d55062338e9323b58bae7acdbf08"
+                                   label="Mixed Materials"
+                                   type="box">8</container>
                      </did>
                   </c04>
                </c03>
