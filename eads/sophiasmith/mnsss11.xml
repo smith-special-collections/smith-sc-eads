@@ -1,150 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss11.xml//EN">mnsss11</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss11</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Agnes de Mille Papers, 1980-1993
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Susan Boone.</author>
+            <titleproper>Finding aid to the Agnes De Mille papers <num>SSC.MS.00046</num>
+            </titleproper>
+            <author>Susan Boone</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-06-05</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-04-01 10:55:43 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss11 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:10-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-25</date>
+            <item>Added pencil edits on paper FA and updated finding aid</item>
+         </change>
+         <change>
+            <date>2019-03-29</date>
+            <item>Revised accession 10s-37 entry and re-published.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-         </publisher>
-         <titleproper encodinganalog="245$a">Agnes de Mille Papers, 1980-1993
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 46
-      </num>
-         <author encodinganalog="245$c">Susan Boone
-      </author>
-         <date encodinganalog="260$c">2000
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>© Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">De Mille, Agnes</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Agnes De Mille papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1908-1993</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 46</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">11 boxes</extent>
-            <extent encodinganalog="300$a">(4 linear ft.)</extent>
-         </physdesc>
-                  <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-	  </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Dancer and choreographer.  The first woman to choreograph on Broadway, Agnes de Mille was an innovator who combined American folk dances with American music and transformed the world of musical comedy forever. Papers include writings, extensive family correspondence, photographs, research notes for two autobiographies, and memorabilia. Correspondence describes her life and activities in great detail and discusses many notable people including Cecil B. de Mille, Rebecca West, Fannie Hurst, Cole Porter, Martha Graham, Oscar Hammerstein, and Richard Rogers.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Agnes De Mille papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">De Mille, Agnes</persname>
+         </origination>
+         <unitid>SSC.MS.00046</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">4.5 linear feet</extent>
+            <extent altrender="carrier">(12 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1897/1993"
+                   type="inclusive">1897-1993</unitdate>
+         <abstract id="aspace_9776838556ea8f1e85d9dd33ea40195e">Agnes De Mille was a dancer and choreographer. The first woman to choreograph on Broadway, Agnes de Mille was an innovator who combined American folk dances with American music and transformed the world of musical comedy forever. Papers include writings, extensive family correspondence, photographs, research notes for two autobiographies, and memorabilia. Correspondence describes her life and activities in great detail and discusses many notable people including Cecil B. de Mille, Rebecca West, Fannie Hurst, Cole Porter, Martha Graham, Oscar Hammerstein, and Richard Rogers.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-         <p>Agnes George de Mille was born in New York City, September 18, 1905, daughter of film producer, William de Mille and Anna (George) de Mille, daughter of economist Henry George. When Agnes was nine years old the family moved to Hollywood where her uncle, Cecil B. de Mille, was a motion picture director. Agnes entered university at age sixteen graduating from the University of California, Los Angeles, with a degree in English. Although she began dancing in her early teens, it was not until after her graduation from college that she seriously considered dancing as a career. She studied with Theodore Koslov, Marie Rambert, Antony Tudor, and Tamara Karasvina, becoming a proficient ballet dancer.  In 1925 her parents divorced and she and her sister, Margaret, moved back to New York with their mother. De Mille's first New York performance was in MacKlin Marow's production of Mozart's La Finta Giardiniera in 1927. She choreographed productions through the early 1930s, returning to Hollywood in 1934 to participate in Cecil B. de Mille's Cleopatra, from which she withdrew after differences arose over the dances. De Mille spent the 1937-38 season in England helping to form a ballet troupe in Oxford and choreographing Cole Porter's The Nymph Errant starring Gertrude Lawrence. She staged dances for Leslie Howard's Hamlet (1936), Ed Wynn's Hooray for What?(1937), Swingin' the Dream (1939), and a jazz version of A Midsummer's Night Dream. In 1939 she joined the New York Ballet Theatre as choreographer and performer. During her first season she choreographed Black Ritual, the first ballet of a classical American ballet company to be danced by all black dancers. She then established a company of her own and began a national tour. In 1941, de Mille devised a scenario for Rodeo for the Ballet Russe de Monte Carlo which was presented in 1942. In 1943 she did the choreography for Richard Rodgers/Oscar Hammerstein's hit musical Oklahoma!. She was one of the first women choreographers to work on Broadway doing the choreography for One Touch of Venus (1943), Bloomer Girl (1944), Carousel (1945), Brigadoon (1947), Gentlemen Prefer Blondes (1949), and Paint Your Wagon (1951). De Mille also published articles on dance and several books. These include two autobiographical works: Dance to the Piper (1952), and Promenade Home (1958), To A Young Dancer (1960), The Book of Dance (1963), Lizzie Borden: A Dance of Death (1968), The Dance in America (1971), and Speak to Me, Dance With Me (1973).   Despite a stroke and heart attack in the mid 1970s, de Mille continued her writing, publishing two memoirs, Where the Wings Grow (1978) and Reprieve (1981). She also choreographed the ballets The Informer (1988) and The Other (1992).</p>
-         <p>Agnes de Mille combined American folk dances and American music into classic art and was an innovator in dance who transformed the world of musical comedy forever. She received many awards including twelve honorary degrees, the Antoinette Perry (Tony) Award for best choreography (1947 and 1962), Theatre Hall of Fame (1973), Handel Medallion (1976), John F. Kennedy Center Career Achievement Award (1980), and the National Medal of the Arts (1986).</p>
-         <p>On June 14, 1943 Agnes de Mille married Walter Foy Prude. They had one son, Jonathan.</p>
-         <p>She died October 7, 1993 in Manhattan at the age of 88.</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Agnes George de Mille was born in New York City, September 18, 1905, daughter of film producer, William de Mille and Anna (George) de Mille, daughter of economist Henry George. When Agnes was nine years old the family moved to Hollywood where her uncle, Cecil B. de Mille, was a motion picture director. Agnes entered university at age sixteen graduating from the University of California, Los Angeles, with a degree in English. Although she began dancing in her early teens, it was not until after her graduation from college that she seriously considered dancing as a career. She studied with Theodore Koslov, Marie Rambert, Antony Tudor, and Tamara Karasvina, becoming a proficient ballet dancer. In 1925 her parents divorced and she and her sister, Margaret, moved back to New York with their mother. De Mille's first New York performance was in MacKlin Marow's production of Mozart's La Finta Giardiniera in 1927. She choreographed productions through the early 1930s, returning to Hollywood in 1934 to participate in Cecil B. de Mille's Cleopatra, from which she withdrew after differences arose over the dances. De Mille spent the 1937-38 season in England helping to form a ballet troupe in Oxford and choreographing Cole Porter's The Nymph Errant starring Gertrude Lawrence. She staged dances for Leslie Howard's Hamlet (1936), Ed Wynn's Hooray for What?(1937), Swingin' the Dream (1939), and a jazz version of A Midsummer's Night Dream. In 1939 she joined the New York Ballet Theatre as choreographer and performer. During her first season she choreographed Black Ritual, the first ballet of a classical American ballet company to be danced by all black dancers. She then established a company of her own and began a national tour. In 1941, de Mille devised a scenario for Rodeo for the Ballet Russe de Monte Carlo which was presented in 1942. In 1943 she did the choreography for Richard Rodgers/Oscar Hammerstein's hit musical Oklahoma!. She was one of the first women choreographers to work on Broadway doing the choreography for One Touch of Venus (1943), Bloomer Girl (1944), Carousel (1945), Brigadoon (1947), Gentlemen Prefer Blondes (1949), and Paint Your Wagon (1951). De Mille also published articles on dance and several books. These include two autobiographical works: Dance to the Piper (1952), and Promenade Home (1958), To A Young Dancer (1960), The Book of Dance (1963), Lizzie Borden: A Dance of Death (1968), The Dance in America (1971), and Speak to Me, Dance With Me (1973). Despite a stroke and heart attack in the mid 1970s, de Mille continued her writing, publishing two memoirs, Where the Wings Grow (1978) and Reprieve (1981). She also choreographed the ballets The Informer (1988) and The Other (1992).</p>
+         <p> Agnes de Mille combined American folk dances and American music into classic art and was an innovator in dance who transformed the world of musical comedy forever. She received many awards including twelve honorary degrees, the Antoinette Perry (Tony) Award for best choreography (1947 and 1962), Theatre Hall of Fame (1973), Handel Medallion (1976), John F. Kennedy Center Career Achievement Award (1980), and the National Medal of the Arts (1986).</p>
+         <p> On June 14, 1943 Agnes de Mille married Walter Foy Prude. They had one son, Jonathan.</p>
+         <p> She died October 7, 1993 in Manhattan at the age of 88.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Agnes de Mille Papers consist of four linear feet of correspondence, biographical and autobiographical material, research notes, manuscripts and typescripts, printed material, photographs, published writings, and memorabilia. The bulk of the papers date from 1914 to 1960 and focus on both personal and professional aspects of de Mille's life. Personal material can be found in the correspondence, especially to her mother, Anna George de Mille, and in the manuscript and research material for her two autobiographical books, Dance to the Piper and Promenade Home. Her professional life is reflected in the clippings and material related to her other writings about dance.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Agnes de Mille papers consist of correspondence, biographical and autobiographical material, research notes, manuscripts and typescripts, printed material, photographs, published writings, and memorabilia. The bulk of the papers date from 1914 to 1960 and focus on both personal and professional aspects of de Mille's life. Personal material can be found in the correspondence, especially to her mother, Anna George de Mille, and in the manuscript and research material for her two autobiographical books, Dance to the Piper and Promenade Home. Her professional life is reflected in the clippings and material related to her other writings about dance.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into three series:</p>
-         <list>
-            <item>
-               I. Biographical Material
-            </item>
-            <item>
-               II. Correspondence
-            </item>
-            <item>
-               III. Works and Writings
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into three series:</p>    
+         <list type="ordered">
+            <item>I. Biographical Material</item>
+            <item>II. Correspondence</item>
+            <item>III. Works and Writings</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The papers are open to research according to the regulations of the Sophia Smith Collection.
-              </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>Literary rights are owned by Agnes de Mille's son, Jonathan Prude. Copyright to materials created by others may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission must be obtained from the Sophia Smith Collection to publish reproductions or quotations beyond "fair use."
-              </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Agnes de Mille Papers, Sophia Smith Collection, Smith College, Northampton, MA</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>Agnes de Mille donated her papers to the Sophia Smith Collection between 1959 and 1968, and her <title render="italic">Dance To The Piper</title> was purchased in 1994.
-              </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Reprocessed by Susan Boone, 2000.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">Coward, Noel, 1899-1973</persname>
-         <persname encodinganalog="600" source="lcnaf">De Mille, Agnes</persname>
-         <persname encodinganalog="600" source="lcnaf">De Mille, Cecil B., (Cecil Blount), 1881-1959</persname>
-         <persname encodinganalog="600" source="lcnaf">George, Henry, 1839-1897</persname>
-         <persname encodinganalog="600" source="lcnaf">Graham, Martha</persname>
-         <persname encodinganalog="600" source="lcnaf">Hurst, Fannie, 1889-1968</persname>
-         <persname encodinganalog="600" source="lcnaf">Lawrence, Gertrude</persname>
-         <persname encodinganalog="600" source="lcnaf">Millay, Edna St. Vincent, 1892-1950</persname>
-         <persname encodinganalog="600" source="lcnaf">St. Denis, Ruth, 1880-1968</persname>
-         <persname encodinganalog="600" source="lcnaf">West, Rebecca, Dame, 1892-</persname>
-         <famname encodinganalog="600" source="lcnaf">De Mille family</famname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Agnes de Mille papers, Sophia Smith Collection, SSC-MS-00046, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <relatedmaterial id="aspace_add-related">
+         <head>Related Material</head>
+         <p>Additional papers are located at the New York Public Library at Lincoln Center, Performing Arts Research Center Dance Collection. There is also material related to de Mille's Smith College honorary degree (1954) located in the Smith College Archives.</p>  
+      </relatedmaterial>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that she owned copyright, Agnes de Mille transferred literary rights to her son, Jonathan Prude, upon her death in 1993, in her works donated to Smith College. Copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For those few instances beyond fair use, or which may regard materials in the collection not created by Agnes de Mille, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>Agnes de Mille donated her papers to the Sophia Smith Collection between 1959 and 1968, and her <title render="italic">Dance To The Piper</title> was purchased in 1994.</p>  
+      </acqinfo>
+      <phystech id="aspace_66608d9d040ad4bc04f0c661e5e620b0">
+         <head>Physical Characteristics and Technical Requirements</head>
+         <p>As a preservation measure, researchers must use digital copies of audiovisual materials in this collection. Please consult with Special Collections staff to request the creation of and access to digital copies.</p>  
+      </phystech>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Dancers--United States--History--20th century--Sources</subject>
          <geogname encodinganalog="651" source="lcsh">Europe--Description and travel--Sources</geogname>
          <subject encodinganalog="650" source="lcsh">Performing Arts--History--20th century--Sources</subject>
@@ -152,704 +135,1045 @@
          <subject encodinganalog="650" source="lcsh">Ballet--United States--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Choreographers--United States--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Dance--History--20th century--Sources</subject>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Research</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Manuscripts</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Ephemera</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Writings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">memorabilia</genreform>
+         <persname encodinganalog="600"
+                   authfilenumber="people_2436"
+                   source="local_inmagic-people">Coward, Noel, 1899-1973</persname>
+         <persname encodinganalog="600" source="naf">De Mille, Agnes</persname>
+         <persname encodinganalog="600" source="naf">De Mille, Cecil B., (Cecil Blount), 1881-1959</persname>
+         <persname encodinganalog="600" source="naf">George, Henry, 1839-1897</persname>
+         <persname encodinganalog="600" source="naf">Graham, Martha</persname>
+         <persname encodinganalog="600" source="naf">Hurst, Fannie, 1889-1968</persname>
+         <persname encodinganalog="600" source="naf">Lawrence, Gertrude</persname>
+         <persname encodinganalog="600" source="naf">Millay, Edna St. Vincent, 1892-1950</persname>
+         <persname encodinganalog="600" source="naf">St. Denis, Ruth, 1880-1968</persname>
+         <persname encodinganalog="600" source="naf">West, Rebecca, Dame, 1892-</persname>
+         <famname encodinganalog="600" source="naf">De Mille family</famname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_741"
+                   source="local_inmagic-people">Prude, Jonathan</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1102"
+                   source="local_inmagic-people">de Mille, Agnes</persname>
+    
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <relatedmaterial id="add-related">
-            <head>Related Material</head>
-            <p>Additional papers are located at the New York Public Library at Lincoln Center, Performing Arts Research Center Dance Collection. There is also material related to de Mille's Smith College honorary degree (1954) located in the Smith College Archives.
-        </p>
-         </relatedmaterial>
-      </descgrp>
-
-
-<!-- Begin series descriptions type="analyticover" -->
-<dsc type="analyticover">
-  <c01 level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL
- 		<unitdate>1908-93</unitdate></unittitle>
-               <physdesc>
-                  <extent>2.5 linear in.</extent>
-               </physdesc>
+               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL‡SERIES I. BIOGRAPHICAL MATERIAL</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1908/1993"
+                         type="inclusive">1908-93</unitdate>
             </did>
-            <scopecontent>
-               <p>This series contains clippings and articles, photographs, theater programs, and miscellaneous memorabilia. The clippings and articles cover de Mille's career from 1933 to her death in 1993 and include several short pieces authored by her. A group of clippings copied from photostats of her press books located at the New York Public Library and those specifically related to <title>And Promenade Home</title>, <title>Fall River Legend</title>, and <title>Nymph Errant</title> are located in SERIES III. WORKS AND WRITINGS. There are two portraits of de Mille, a photograph of Leicester Square Theater in London with de Mille's name  on the marquee, and a Christmas card with a young Agnes de Mille on the front. All are undated. Theater programs include five from various theaters in England in the 1930s and one from the Majestic Theatre in  New York (1941). Miscellaneous memorabilia includes an unidentified verse and a sketch; and locks of hair (1908-34) from Anna, Agnes, and Margaret de Mille and Margaret's daughter Judy.</p>
+            <scopecontent id="aspace_17a165c1bb37e8149957a5403a04e036">
+               <head>Scope and Contents</head>
+               <p>This series contains clippings and articles, photographs, theater programs, and miscellaneous memorabilia. The clippings and articles cover de Mille's career from 1933 to her death in 1993 and include several short pieces authored by her. A group of clippings copied from photostats of her press books located at the New York Public Library and those specifically related to <title>And Promenade Home</title>, <title>Fall River Legend</title>, and <title>Nymph Errant</title> are located in SERIES III. WORKS AND WRITINGS. There are two portraits of de Mille, a photograph of Leicester Square Theater in London with de Mille's name on the marquee, and a Christmas card with a young Agnes de Mille on the front. All are undated. Theater programs include five from various theaters in England in the 1930s and one from the Majestic Theatre in New York (1941). Miscellaneous memorabilia includes an unidentified verse and a sketch; and locks of hair (1908-34) from Anna, Agnes, and Margaret de Mille and Margaret's daughter Judy.</p>
             </scopecontent>
-
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES II. CORRESPONDENCE <unitdate>1897-1945</unitdate></unittitle>
-               <physdesc>
-                  <extent>10 linear in.</extent>
-               </physdesc>
-            </did>
-            <scopecontent>
-               <p>The correspondence comprises the most significant portion of the Agnes de Mille papers. This series consists of  letters from and to Agnes de Mille and Anna George de Mille. Letters Agnes de Mille wrote to Margaret Storrs Grierson in 1963 are also included. They describe the circumstances under which the correspondence was written and provide identification and personal information about the correspondents and people mentioned in the letters. The letters to Grierson in conjunction with the rest of the correspondence provide a fascinating look into de Mille's relationships with family, friends, and acquaintances and an aggregate picture of the theater in New York and London in the 1930s and 40s. Her lengthy letters to her mother (1914-46) and her husband (1944-45), are of particular interest. They describe her life and activities in great detail and provide insights and gossip about many notable people including Cecil B. de Mille, Rebecca West, Gertrude Lawrence, Noel Coward, Fannie Hurst, Cole Porter, Elizabeth Bowen, Martha Graham, Ruth St. Denis, Oscar Hammerstein, and Richard Rogers. This series also contains several letters from William de Mille to Anna George de Mille (1897-1903).</p>
-            </scopecontent>
-
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES III. WORKS AND WRITINGS
- 		<unitdate>1920-1970</unitdate></unittitle>
-               <physdesc>
-                  <extent>2.5 linear ft.</extent>
-               </physdesc>
-            </did>
-            <note>
-               <p>
-                  [See also SERIES I. BIOGRAPHICAL MATERIALS]
-               </p>
-            </note>
-            <scopecontent>
-               <p>This series contains notes, manuscripts, typescripts, printed material, and clippings relating to both the choreography works and published and unpublished writings of Agnes de Mille. Choreography works include original scripts for Act II of <title>Carousel</title> (1945); sketches, notes, scenes and drawings from the dream ballet from <title>Oklahoma!</title> (1943); <title>Fall River Legend</title> (1946) with an article written in 1968 about the play; and clippings and the program from <title>Nymph Errant</title> (1933). Published writings include <title>Dance to the Piper</title> (1951), "Edwardian Lady" (<title>McCalls</title>,1961), "Goodnight C. B." (<title>Esquire</title>, n.d.), <title>The Book of the Dance</title> (1963), "Russian Journals" (<title>Dance Perspectives</title> #44, 1970), "One Hundred and Fifty Dollars Away From Anything" written for <title>The Royal Winnipeg Ballet</title>, Souvenir Program, "Methods of Choreography" (Vogue, n.d.), <title>And Promenade Home</title>, (1958), and To A Young Dancer (1960). Unpublished manuscripts include an article on Alicia Markova (n.d.);  a lecture on Marquis de Cuevas (n.d.); and "Handbook for Dancers"  which may have been an early draft of <title>To A Young Dancer</title>. This series also includes copies of clippings (1924-48) from de Mille's press book located at the New York Public Library.</p>
-            </scopecontent>
-
- </c01>
-</dsc>
-<!-- End series descriptions -->
-<!-- Insert container list here -->
-<dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
-            <did>
-               <unittitle>SERIES I. BIOGRAPHICAL MATERIAL</unittitle>
- 	</did>
-            <c02 level="file">
+            <c02 id="aspace_ea4eb421472527b13f60f1df303de686" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
                   <unittitle>Contents</unittitle>
+                  <container id="aspace_73b2e46d5b4eae0115ff6618bbbd4a27"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_eb725f197ab38a5520573d078e035c91"
+                             parent="aspace_73b2e46d5b4eae0115ff6618bbbd4a27"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_50577c1fac2e9d8cfa5ce70c860caa23" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Clippings and articles,<unitdate> 1933-93</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings and articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1993"
+                            type="inclusive">1933-93</unitdate>
+                  <container id="aspace_04049244018179dfa95dc56bb2298ca1"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_c996a96c53348c6b6bde3192386855fa"
+                             parent="aspace_04049244018179dfa95dc56bb2298ca1"
+                             type="folder">2</container>
                </did>
-               <note>
-                  <p>
-                     [See also SERIES III. WORKS AND WRITINGS]
-                  </p>
-               </note>
+               <odd id="aspace_f0579fd38f33e1691bf144755f975d43">
+                  <head>General</head>
+                  <p>[See also SERIES III. WORKS AND WRITINGS]</p>
+               </odd>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_544b90033b5e3228df8e6b1e3321849d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Photographs, <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_13d720c09cd8ec92dfaeb98ce02ffa79"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_ac643b76bebf1f9322baf20f354825bd"
+                             parent="aspace_13d720c09cd8ec92dfaeb98ce02ffa79"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5b07ac825cbc95d77d7523384d9b6672" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Theater programs,<unitdate> 1933-41</unitdate>
-                  </unittitle>
+                  <unittitle>Theater programs</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1941"
+                            type="inclusive">1933-41</unitdate>
+                  <container id="aspace_ec26ec32d92e81e5d3dd9d235b980697"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_c9e630cbbd0ace7c0530727474663c80"
+                             parent="aspace_ec26ec32d92e81e5d3dd9d235b980697"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5069361b041f6f9671a6b6580447c342" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Miscellaneous memorabilia,<unitdate> 1908-34, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous memorabilia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1908/1934"
+                            type="inclusive">1908-34</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_72963f5e47a8c199bacddc5b28ff19b6"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_e533a84fc8ced9f92a97a2e505aeb0d9"
+                             parent="aspace_72963f5e47a8c199bacddc5b28ff19b6"
+                             type="folder">5</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
-               <unittitle>SERIES II. CORRESPONDENCE</unittitle>
- 	</did>
-            <c02 level="file">
+               <unittitle>SERIES II. CORRESPONDENCE‡SERIES II. CORRESPONDENCE</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1897/1945"
+                         type="inclusive">1897-1945</unitdate>
+            </did>
+            <scopecontent id="aspace_b1c11840e6810af2a5283a1a502525f9">
+               <head>Scope and Contents</head>
+               <p>The correspondence comprises the most significant portion of the Agnes de Mille papers. This series consists of letters from and to Agnes de Mille and Anna George de Mille. Letters Agnes de Mille wrote to Margaret Storrs Grierson in 1963 are also included. They describe the circumstances under which the correspondence was written and provide identification and personal information about the correspondents and people mentioned in the letters. The letters to Grierson in conjunction with the rest of the correspondence provide a fascinating look into de Mille's relationships with family, friends, and acquaintances and an aggregate picture of the theater in New York and London in the 1930s and 40s. Her lengthy letters to her mother (1914-46) and her husband (1944-45), are of particular interest. They describe her life and activities in great detail and provide insights and gossip about many notable people including Cecil B. de Mille, Rebecca West, Gertrude Lawrence, Noel Coward, Fannie Hurst, Cole Porter, Elizabeth Bowen, Martha Graham, Ruth St. Denis, Oscar Hammerstein, and Richard Rogers. This series also contains several letters from William de Mille to Anna George de Mille (1897-1903).</p>
+            </scopecontent>
+            <c02 id="aspace_9f84a55392191b4f9e21884bf5bab0c4" level="file">
                <did>
                   <unittitle>From Agnes de Mille</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_66901789c8e608d4c1d39fac003497ae" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Bently, Madison,<unitdate> 1937</unitdate>
-                     </unittitle>
+                     <unittitle>Bently, Madison</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1937/1937">1937</unitdate>
+                     <container id="aspace_a354bc8316ec6b90ad708180af105749"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2647ae8a492d5348930940fb6835b0e6"
+                                parent="aspace_a354bc8316ec6b90ad708180af105749"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0cf6dea2b04e98febf6f7f5a810c0b03" level="file">
                   <did>
                      <unittitle>de Mille, Anna George</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_3a8f825a681f0921fa028e01a19a3880" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">2-11</container>
-                        <unittitle>
-                           <unitdate>1914-34</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1914/1934"
+                                  type="inclusive">1914-34</unitdate>
+                        <container id="aspace_13c267aac6dcc15ad8b5beb0e3386b6e"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_4f0c63bc6c76b8077dc114fd42d6397a"
+                                   parent="aspace_13c267aac6dcc15ad8b5beb0e3386b6e"
+                                   type="folder">2-11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_5c6630c7ae1e350b073e6e9a405bf6fb" level="file">
                      <did>
-                        <container type="box" label="mixed materials">3</container>
-                        <container type="folder" label="mixed materials">1-7</container>
-                        <unittitle>
-                           <unitdate>1935-46</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1935/1946"
+                                  type="inclusive">1935-46</unitdate>
+                        <container id="aspace_1ad7abeebd991f29e16d97ccee10b6d7"
+                                   label="Mixed Materials"
+                                   type="box">3</container>
+                        <container id="aspace_7aae314167ec34dd52eac6a172a7a5ac"
+                                   parent="aspace_1ad7abeebd991f29e16d97ccee10b6d7"
+                                   type="folder">1-7</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5c4e15b50fa9122431c4150f9e241cdb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Grierson, Margaret Storrs,<unitdate> 1963</unitdate>
-                     </unittitle>
+                     <unittitle>Grierson, Margaret Storrs</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                     <container id="aspace_a50c4b4269f23646aceb75285dfc14c0"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_0134e843b9561b9bb6bbc97955ef5d1f"
+                                parent="aspace_a50c4b4269f23646aceb75285dfc14c0"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_772bac3074e24a00fb8764330aa357d0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Hammerstein, Dorothy (Mrs. Oscar),<unitdate> 1963</unitdate>
-                     </unittitle>
+                     <unittitle>Hammerstein, Dorothy (Mrs. Oscar)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                     <container id="aspace_d32ab591670d85b34055f3054ed2a999"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_3fd568805abad2efa8cd0f17f3346a86"
+                                parent="aspace_d32ab591670d85b34055f3054ed2a999"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_9774240b37a4e7d2d79a406f89497145" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Prude, Walter,<unitdate> 1944-45</unitdate>
-                     </unittitle>
+                     <unittitle>Prude, Walter</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1944/1945"
+                               type="inclusive">1944-45</unitdate>
+                     <container id="aspace_c07a151a7fc73896b7c9b67026f2bd6c"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_6b70f955cf8fa662923acb34ec5167e4"
+                                parent="aspace_c07a151a7fc73896b7c9b67026f2bd6c"
+                                type="folder">10</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1b872c479038d00b80f01ef89855e7e9" level="file">
                <did>
                   <unittitle>To Agnes de Mille</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_44c672185e2bb9020675237a006b828b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">11</container>
-                     <unittitle>Anthony, Joseph,<unitdate> 1939-43</unitdate>
-                     </unittitle>
+                     <unittitle>Anthony, Joseph</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1939/1943"
+                               type="inclusive">1939-43</unitdate>
+                     <container id="aspace_5cf3ca3dd4936bc9264f2bde5002dfa8"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_6d3f3b9c819ea383dc052b0380b95021"
+                                parent="aspace_5cf3ca3dd4936bc9264f2bde5002dfa8"
+                                type="folder">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2aaf1208bab4278daf93af35902792fd" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">12</container>
-                     <unittitle>Barton, Craig,<unitdate> 1943, 1945</unitdate>
-                     </unittitle>
+                     <unittitle>Barton, Craig</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                     <unitdate normal="1945/1945">1945</unitdate>
+                     <container id="aspace_990b31e6c353ba80362ea224ac82e740"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_c05145cb95922072944ef47bd15ab64d"
+                                parent="aspace_990b31e6c353ba80362ea224ac82e740"
+                                type="folder">12</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ba67109c018830f6e113ab0dd661ecf2" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>Bliss, Arthur, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Bliss, Arthur</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_a78f8f37e6816c888e45addb972cd484"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_ce0e38f4ef7695b4973ff52e12a3b025"
+                                parent="aspace_a78f8f37e6816c888e45addb972cd484"
+                                type="folder">13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ee4e361c5fc0d403acc5402f64c3022b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Cochran, Charles B.,<unitdate> 1932</unitdate>
-                     </unittitle>
+                     <unittitle>Cochran, Charles B.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                     <container id="aspace_c4c069ea5fb115616d98519b721c0ff2"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_959a5c59a479ac8a414eedc709dddfdc"
+                                parent="aspace_c4c069ea5fb115616d98519b721c0ff2"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e1b596345c2a5593fa789860c5fe232a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Ferdinand (Twitch) Davis,<unitdate> 1933</unitdate>
-                     </unittitle>
+                     <unittitle>Ferdinand (Twitch) Davis</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                     <container id="aspace_fcbab7697f89a5f97623a8f98d5d1611"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_c5f66e8165ee923e13926d629fa612f2"
+                                parent="aspace_fcbab7697f89a5f97623a8f98d5d1611"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7116e96284e621559547a9fa3c2c1503" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>de Mille, Anna George,<unitdate> 1937-45</unitdate>
-                     </unittitle>
+                     <unittitle>de Mille, Anna George</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1937/1945"
+                               type="inclusive">1937-45</unitdate>
+                     <container id="aspace_0bc20de5fac5d1b18c7ab3e68f9e92f8"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_3df2b7c73224b3d3fcee7fdb21370865"
+                                parent="aspace_0bc20de5fac5d1b18c7ab3e68f9e92f8"
+                                type="folder">16</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_acd5ec56b573b59930b035c0c10df987" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>de Mille, Clara,<unitdate> 1946</unitdate>
-                     </unittitle>
+                     <unittitle>de Mille, Clara</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                     <container id="aspace_972b991bbf20d0fb7e6fbed0920e089e"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_5ac517d37d3d8693223eeb8207dfe7ec"
+                                parent="aspace_972b991bbf20d0fb7e6fbed0920e089e"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ceefeb67ce1fcd33d24d738a24992710" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>de Mille, Margaret,<unitdate> 1945</unitdate>
-                     </unittitle>
+                     <unittitle>de Mille, Margaret</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                     <container id="aspace_7a7fef2081141f0faa6d5289d0525691"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_180f0ea76c2b61ae691c91f70f3d3f6f"
+                                parent="aspace_7a7fef2081141f0faa6d5289d0525691"
+                                type="folder">18</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_90c3bf3b3b07ccb4226592e22e26c96b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>Dix, Beulah Marie,<unitdate> 1935</unitdate>
-                     </unittitle>
+                     <unittitle>Dix, Beulah Marie</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1935/1935">1935</unitdate>
+                     <container id="aspace_07fba899d6c23aceb973fbe4beb78ba0"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_52ee70cb57b52f0f44f97f6da0b347ba"
+                                parent="aspace_07fba899d6c23aceb973fbe4beb78ba0"
+                                type="folder">19</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a3ec4c0ee871f2aa56eb1f1bc0f6eb8c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">20</container>
-                     <unittitle>Fiske, Gladys,<unitdate> 1944</unitdate>
-                     </unittitle>
+                     <unittitle>Fiske, Gladys</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1944/1944">1944</unitdate>
+                     <container id="aspace_604866b880b84a50b11a3f666ea99189"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_812736d722bbfc35523735ce45efe3a9"
+                                parent="aspace_604866b880b84a50b11a3f666ea99189"
+                                type="folder">20</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_879c16c06a63653e2dccf569176ce189" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">21</container>
-                     <unittitle>Haskell, Arnold,<unitdate> 1933</unitdate>
-                     </unittitle>
+                     <unittitle>Haskell, Arnold</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                     <container id="aspace_07dfd7cdc8c19d2f5fea188c35559b3d"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_f189bf5fe585eb6b6839e1b9852329ca"
+                                parent="aspace_07dfd7cdc8c19d2f5fea188c35559b3d"
+                                type="folder">21</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fc7961cf0377ae8fe6f912612bf1f0bf" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">22</container>
-                     <unittitle>Keeler, Leonarde,<unitdate> 1943</unitdate>
-                     </unittitle>
+                     <unittitle>Keeler, Leonarde</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                     <container id="aspace_8d90ec5ab63473ddccd321864e45c9cf"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_fec1b9dd791a5efaa6a465c95ff23880"
+                                parent="aspace_8d90ec5ab63473ddccd321864e45c9cf"
+                                type="folder">22</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6bfeeaac0f0fa6070cbafc9a42947362" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">23</container>
-                     <unittitle>Laing, Hugh, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Laing, Hugh</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_76b95a84e7bc53e9c1a2034e1d466bcd"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_19fd93c3bdca5db7785691ef87ab5657"
+                                parent="aspace_76b95a84e7bc53e9c1a2034e1d466bcd"
+                                type="folder">23</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_84cc51c5c41f0b4b2d7dd9d9c9794121" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">24</container>
-                     <unittitle>Ludlum, Mabel Stuart,<unitdate> 1930</unitdate>
-                     </unittitle>
+                     <unittitle>Ludlum, Mabel Stuart</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                     <container id="aspace_d4cabce287dd01678f5f585f823614d2"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_eb49efcbb1311043791333ca945092b2"
+                                parent="aspace_d4cabce287dd01678f5f585f823614d2"
+                                type="folder">24</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4c66127856d6d01acf8eb87eed36dda4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">25</container>
-                     <unittitle>Madsen, Arthur W.,<unitdate> 1934</unitdate>
-                     </unittitle>
+                     <unittitle>Madsen, Arthur W.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                     <container id="aspace_11e4ee7a375f45d14ce9a0e346b0a41f"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_06578433ac85c3a5132ab824ee3b55c4"
+                                parent="aspace_11e4ee7a375f45d14ce9a0e346b0a41f"
+                                type="folder">25</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_660a9c8284a69e537434c07fca1df3a4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">26</container>
-                     <unittitle>Martin, John,<unitdate> 1929-35</unitdate>
-                     </unittitle>
+                     <unittitle>Martin, John</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1929/1935"
+                               type="inclusive">1929-35</unitdate>
+                     <container id="aspace_e3f677b2760de98d776889339e5c2eda"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_ecd32a9f03c972c44f56ac2356ee19ef"
+                                parent="aspace_e3f677b2760de98d776889339e5c2eda"
+                                type="folder">26</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0a5a8393c2f8a3bca7f419b4d394ad8d" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">27</container>
-                     <unittitle>Menuhin, Diana (Mrs. Yehudi), <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Menuhin, Diana (Mrs. Yehudi)</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_1506d29fb032b490cfe724b5e08724c4"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_db28edb96c5afa041cbbb362365cfd64"
+                                parent="aspace_1506d29fb032b490cfe724b5e08724c4"
+                                type="folder">27</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_eeda8f49f06ce8b1da2ccf7fe276d042" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">28</container>
-                     <unittitle>Prude, Walter,<unitdate> 1952</unitdate>
-                     </unittitle>
+                     <unittitle>Prude, Walter</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                     <container id="aspace_83a61a15fdf09af023674ef2a73740dd"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_33eb604743dd3ac3a32ee3a9f806656a"
+                                parent="aspace_83a61a15fdf09af023674ef2a73740dd"
+                                type="folder">28</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d2317573f737294997d0df52063b44f4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">29</container>
-                     <unittitle>Read, Ramon, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Read, Ramon</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_501479d64d50a2b5904fe05e0a84079d"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_7a6053df5d2d90b4d9a91f6ed2aff9a0"
+                                parent="aspace_501479d64d50a2b5904fe05e0a84079d"
+                                type="folder">29</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_985012eca286572e31ec20ad452f1502" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">30</container>
-                     <unittitle>Smith, Oliver,<unitdate> 1945</unitdate>
-                     </unittitle>
+                     <unittitle>Smith, Oliver</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                     <container id="aspace_0a1493923eb0dc791b1a9a1a1b200dd2"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_c3b31e670c578ee50d526b5aca675483"
+                                parent="aspace_0a1493923eb0dc791b1a9a1a1b200dd2"
+                                type="folder">30</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3d95381b62c03b93ba789f6cc5ce8bec" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">31</container>
-                     <unittitle>West, Rebecca,<unitdate> 1934?</unitdate>
-                     </unittitle>
+                     <unittitle>West, Rebecca</unittitle>
+                     <unitdate calendar="gregorian"
+                               certainty="questionable"
+                               era="ce"
+                               normal="1934/1934">1934?</unitdate>
+                     <container id="aspace_7a1cbb3899411ca46799ff406d72641d"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_51102dc8af7137f96fda3cd38b669ec0"
+                                parent="aspace_7a1cbb3899411ca46799ff406d72641d"
+                                type="folder">31</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_39787e96061f77d904c1b4245466ecd1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">32</container>
-                     <unittitle>Miscellaneous,<unitdate> 1922-33, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1922/1933"
+                               type="inclusive">1922-33</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_765b99ff4f4ac81d6da681f8c4dfab8f"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_c901707d9a5878bf772f4cc5c694d9c1"
+                                parent="aspace_765b99ff4f4ac81d6da681f8c4dfab8f"
+                                type="folder">32</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_09e6ff9ae6218c3ca178ca1f804f1226" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">33</container>
-                  <unittitle>Anna George de Mille to Judy Fineman,<unitdate> 1946</unitdate>
-                  </unittitle>
+                  <unittitle>Anna George de Mille to Judy Fineman</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <container id="aspace_96ee1edca6809f01255107fc76ab0d4f"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_0c39b0d26c63fd4c4788ed8f3dd93bd8"
+                             parent="aspace_96ee1edca6809f01255107fc76ab0d4f"
+                             type="folder">33</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b0ca3aa689bfcf39d35dcd5d302db1ab" level="file">
                <did>
                   <unittitle>To Anna George de Mille</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_0f32931157fe28f11fde8f9fd2a271bd" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">34</container>
-                     <unittitle>de Mille, Margaret<unitdate> 1925-37</unitdate>
-                     </unittitle>
+                     <unittitle>de Mille, Margaret</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1925/1937"
+                               type="inclusive">1925-37</unitdate>
+                     <container id="aspace_723f1440cb227ef4e5aab3a295719243"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_2326a6e7df9256d0c1161af63476fddb"
+                                parent="aspace_723f1440cb227ef4e5aab3a295719243"
+                                type="folder">34</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fac5dd5b9f921afff87645d805daf9f7" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">35</container>
-                     <unittitle>de Mille, William C.,<unitdate> 1897-1903</unitdate>
-                     </unittitle>
+                     <unittitle>de Mille, William C.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1897/1903"
+                               type="inclusive">1897-1903</unitdate>
+                     <container id="aspace_ff3f82ce99e0716e9d4c3fce5b7f1cdb"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_94814cf35255e2d20640826bf5fda545"
+                                parent="aspace_ff3f82ce99e0716e9d4c3fce5b7f1cdb"
+                                type="folder">35</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0e39f75e0aeb8caedc9d1c7b3683f68c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">36</container>
-                     <unittitle>Prude, Walter,<unitdate> 1943-46</unitdate>
-                     </unittitle>
+                     <unittitle>Prude, Walter</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1943/1946"
+                               type="inclusive">1943-46</unitdate>
+                     <container id="aspace_047d0ec16a72b15b65796e4eb00279eb"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_3c48eaa6062439ccd12e69166abe574f"
+                                parent="aspace_047d0ec16a72b15b65796e4eb00279eb"
+                                type="folder">36</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_82c232f7975cc6f41eff50ebd3c9eb57" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">37</container>
-                     <unittitle>Read, Ramon,<unitdate> 1934</unitdate>
-                     </unittitle>
+                     <unittitle>Read, Ramon</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                     <container id="aspace_fe4c2926666179f3b4f6c0a35c95cb23"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_7ea87e0c5bc9c7151b66931cc0213412"
+                                parent="aspace_fe4c2926666179f3b4f6c0a35c95cb23"
+                                type="folder">37</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
-               <unittitle>SERIES III. WORKS AND WRITINGS </unittitle>
- 	</did>
-            <c02 level="file">
+               <unittitle>SERIES III. WORKS AND WRITINGS ‡SERIES III. WORKS AND WRITINGS</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1920/1970"
+                         type="inclusive">1920-1970</unitdate>
+            </did>
+            <scopecontent id="aspace_982687decc707c6c1c16a63c90228dc5">
+               <head>Scope and Contents</head>
+               <p>This series contains notes, manuscripts, typescripts, printed material, and clippings relating to both the choreography works and published and unpublished writings of Agnes de Mille. Choreography works include original scripts for Act II of <title>Carousel</title> (1945); sketches, notes, scenes and drawings from the dream ballet from <title>Oklahoma!</title> (1943); <title>Fall River Legend</title> (1946) with an article written in 1968 about the play; and clippings and the program from <title>Nymph Errant</title> (1933). Published writings include <title>Dance to the Piper</title> (1951), "Edwardian Lady" (<title>McCalls</title>,1961), "Goodnight C. B." (<title>Esquire</title>, n.d.), <title>The Book of the Dance</title> (1963), "Russian Journals" (<title>Dance Perspectives</title> #44, 1970), "One Hundred and Fifty Dollars Away From Anything" written for <title>The Royal Winnipeg Ballet</title>, Souvenir Program, "Methods of Choreography" (Vogue, n.d.), <title>And Promenade Home</title>, (1958), and To A Young Dancer (1960). Unpublished manuscripts include an article on Alicia Markova (n.d.); a lecture on Marquis de Cuevas (n.d.); and "Handbook for Dancers" which may have been an early draft of <title>To A Young Dancer</title>. This series also includes copies of clippings (1924-48) from de Mille's press book located at the New York Public Library.</p>
+            </scopecontent>
+            <c02 id="aspace_0e6dd31283aa1a1e4a188bc8afe46a7c" level="file">
                <did>
                   <unittitle>
-                     <title>Dance To The Piper</title>,                 <unitdate>1951</unitdate>
+                     <title>Dance To The Piper</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_876325928f850212379827df338660d8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Notes and early drafts, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Notes and early drafts</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_4051ce8932668682c1d3c3842bd7a94c"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_40fe7a9552fd6d8858e0b9be1100e078"
+                                parent="aspace_4051ce8932668682c1d3c3842bd7a94c"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_cc1c719c622230ba501fec1c56a59f8e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Original manuscript, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Original manuscript</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_55a2cc5be75911ab07fbfaf306a5e204"
+                                label="Mixed Materials"
+                                type="box">4</container>
+                     <container id="aspace_fdcc287e0ea905a1ef74d70e731dfa63"
+                                parent="aspace_55a2cc5be75911ab07fbfaf306a5e204"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d789c0c086eaae18ead96e9b136def87" level="file">
                   <did>
-                     <container type="box" label="mixed materials">4</container>
-                     <unittitle>Notebooks (12), <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Notebooks (12)</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_8a664e9bbb4c9235982f2d18068132b5"
+                                label="Mixed Materials"
+                                type="box">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_933189b4b27bf2ea19cabc6be55cfcbb" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <unittitle>Various versions with editorial comments, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Various versions with editorial comments</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_a7a1ab37dc30dae4876f7049df3d2fbd"
+                                label="Mixed Materials"
+                                type="box">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_8be78061c7e2243b8543071c30e103c9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Final manuscript, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Final manuscript</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_f6c5879daac16b92426cf962170f0f45"
+                                label="Mixed Materials"
+                                type="box">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_cbc1e27da829341cdca6dc0b74838f14" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Published work (Boston, Little Brown and Co.),<unitdate> 1951</unitdate>
-                     </unittitle>
+                     <unittitle>Published work (Boston, Little Brown and Co.)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                     <container id="aspace_ca5b34754110e0424d855dc89990c46f"
+                                label="Mixed Materials"
+                                type="box">6</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e8b967264a2516660d1af6dc7dc09a2e" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>"Edwardian Lady,"<unitdate> 1961</unitdate>
-                  </unittitle>
+                  <unittitle>"Edwardian Lady,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                  <container id="aspace_7931d19ff1ad660950126a0cf0640997"
+                             label="Mixed Materials"
+                             type="box">6</container>
+                  <container id="aspace_375d17f55b56f2fa8fc3cb794881b7d5"
+                             parent="aspace_7931d19ff1ad660950126a0cf0640997"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7b2bd5ef2dd8b3a042f3f06784eed6a4" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>"Goodnight C.B.," <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Goodnight C.B.,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_d270ecd02ee124efb363b5d384a3af25"
+                             label="Mixed Materials"
+                             type="box">6</container>
+                  <container id="aspace_cc685f70d7362c0aa3bbe7d79589d3fc"
+                             parent="aspace_d270ecd02ee124efb363b5d384a3af25"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2f129565f7ba25834352e6e9f74254c9" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>"Alicia Markova," <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Alicia Markova,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_3e8ae1e3b0432bdd00267c034b9feff5"
+                             label="Mixed Materials"
+                             type="box">6</container>
+                  <container id="aspace_4bf9a2121be991aa97e2a3023fc7edd8"
+                             parent="aspace_3e8ae1e3b0432bdd00267c034b9feff5"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a73bdd4b1acbf96f834228172c7dc89e" level="file">
                <did>
-                  <container type="box" label="mixed materials">6</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>"Methods of Choreography," <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Methods of Choreography,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_ab41e82efe4327bf69fcd2ef430c8918"
+                             label="Mixed Materials"
+                             type="box">6</container>
+                  <container id="aspace_3d94da6221b1ee8bd68fd31caf4f87ab"
+                             parent="aspace_ab41e82efe4327bf69fcd2ef430c8918"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_374917e6f08eca09c7895820036c0507" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>"Marquis de Cuevas," <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Marquis de Cuevas,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c25aa1e45abedf8e4f048d652d08928c"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_9acac8482d062bd9ceeac17b9ed48741"
+                             parent="aspace_c25aa1e45abedf8e4f048d652d08928c"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0a8fff5e9ec080f17e564017ba498ca2" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">2</container>
                   <unittitle>
-                     <title>Carousel</title>: original script for Act II, <unitdate>undated</unitdate>
-                  </unittitle>
+                     <title>Carousel</title>: original script for Act II</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_bf283148285ba20c738f0e426391012d"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_d2caafc7e7a2f022b7bcdbc8a6ca758d"
+                             parent="aspace_bf283148285ba20c738f0e426391012d"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0d470d51fff7a26ed113084a4ff88ebe" level="file">
                <did>
                   <unittitle>
                      <title>Fall River Legend</title>
                   </unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_630a7bc4647c1d10c7c77b4fb397ba56" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Original script,<unitdate> 1946</unitdate>
-                     </unittitle>
+                     <unittitle>Original script</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                     <container id="aspace_1b5f2277e834c25bcc4f70b49315e04c"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_62b97a176b2d57ef6977829bf85e92bf"
+                                parent="aspace_1b5f2277e834c25bcc4f70b49315e04c"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ef0d85a51a260f0461874b271fb4f69e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">7</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>"Lady With An Ax: The Dramatic Story of Fall River Legend," McCalls,<unitdate> 1968</unitdate>
-                     </unittitle>
+                     <unittitle>"Lady With An Ax: The Dramatic Story of Fall River Legend," McCalls</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1968/1968">1968</unitdate>
+                     <container id="aspace_6d0ef356fc58c2c8dead23aa59f005b9"
+                                label="Mixed Materials"
+                                type="box">7</container>
+                     <container id="aspace_ed6b1a99fb439619bda6ab8b58e744fd"
+                                parent="aspace_6d0ef356fc58c2c8dead23aa59f005b9"
+                                type="folder">4</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8a8d0655756fc2626ba9a72c393fdc26" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">5</container>
                   <unittitle>
-                     <title>Oklahoma</title>: sketches, notes and scenes for Dream Ballet,<unitdate> 1954</unitdate>
-                  </unittitle>
+                     <title>Oklahoma</title>: sketches, notes and scenes for Dream Ballet</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <container id="aspace_abc4b9ed0e2be38a464e125c24383386"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_5f67e3c7be298c1ce3d30eba04310dd6"
+                             parent="aspace_abc4b9ed0e2be38a464e125c24383386"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e96e0ec34113ebcfe6df794b20ca30a1" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">6</container>
                   <unittitle>
-                     <title>Nymph Errant</title>: clippings, program and telegrams,<unitdate> 1933</unitdate>
-                  </unittitle>
+                     <title>Nymph Errant</title>: clippings, program and telegrams</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                  <container id="aspace_6046edad0cf4dacbb095a016f31ed21d"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_4b9c81f97da0e6c17b9c0f8522cc4e55"
+                             parent="aspace_6046edad0cf4dacbb095a016f31ed21d"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bd5637e3830eccf16f85b8ded30900c0" level="file">
                <did>
                   <unittitle>
-                     <title>And Promenade Home</title>,                 <unitdate>1958</unitdate>
+                     <title>And Promenade Home</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_688057f2cab674e2eeff907ae7d70ebc" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">1</container>
                      <unittitle>Original manuscript (chapters not in book)</unittitle>
+                     <container id="aspace_0591a673fe3a13e37def8812c560331d"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_72599bf171d77cb6fc232ee49091fb84"
+                                parent="aspace_0591a673fe3a13e37def8812c560331d"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5f4e36f268dfaf45f1e9dc937139dab5" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">2</container>
                      <unittitle>Incomplete and revised chapters</unittitle>
+                     <container id="aspace_dedbcf075326d03d0b239ab57ccb28bc"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_b00af4b40bfbc4c69fbb1c8fd60361e0"
+                                parent="aspace_dedbcf075326d03d0b239ab57ccb28bc"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_df2081ec0d1eab5e9fd8b2a52e70e791" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">3</container>
                      <unittitle>Manuscript with Catherine Bowen's comments</unittitle>
+                     <container id="aspace_92f4acf37da3bf1ab799e13a517a7e9b"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_b89b4fb3b2e520382b9f1b21c5c85aaa"
+                                parent="aspace_92f4acf37da3bf1ab799e13a517a7e9b"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b4ce329d091cafae3ead6cb1eaf763b8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Clippings,<unitdate> 1958</unitdate>
-                     </unittitle>
+                     <unittitle>Clippings</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1958/1958">1958</unitdate>
+                     <container id="aspace_57ce80134f16173061e98600f95c6aea"
+                                label="Mixed Materials"
+                                type="box">8</container>
+                     <container id="aspace_27bea42344c6a0a6882cedebc24f2609"
+                                parent="aspace_57ce80134f16173061e98600f95c6aea"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_31864f84915f387d5fd24f4c38afd43c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">8</container>
                      <unittitle>Notebooks (11)</unittitle>
+                     <container id="aspace_253fc10a1eac86d08e4dbb968d3b6ef7"
+                                label="Mixed Materials"
+                                type="box">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_74a70ddadc788721e023795687dcc028" level="file">
                   <did>
-                     <container type="box" label="mixed materials">9</container>
-                     <unittitle>Typescripts and carbon copy, <unitdate>undated</unitdate>
-                     </unittitle>
+                     <unittitle>Typescripts and carbon copy</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_c58f65b72a06c98c612709f7cce2f1c3"
+                                label="Mixed Materials"
+                                type="box">9</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cc9cfacbe8555f87244b21bfb056ae51" level="file">
                <did>
                   <unittitle>
-                     <title>To A Young Dancer</title>,                 <unitdate>1960</unitdate>
+                     <title>To A Young Dancer</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_5b4e6792852a93d96a688cf0844723fe" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Chapters for <title>Atlantic</title> with letters from the editor,<unitdate> 1959</unitdate>
-                     </unittitle>
+                     <unittitle>Chapters for <title>Atlantic</title> with letters from the editor</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                     <container id="aspace_74749c2ba6384e7886ea597abd59772e"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_2f1070624d3617a2f069ed04b42d2e3a"
+                                parent="aspace_74749c2ba6384e7886ea597abd59772e"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e81d2be3c215b40049b96aa0144569b1" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">2-3</container>
                      <unittitle>Notes</unittitle>
+                     <container id="aspace_04e3200d0224a59713520510caf32b4f"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_1c48e7308ce4cb73872b40bb502f126d"
+                                parent="aspace_04e3200d0224a59713520510caf32b4f"
+                                type="folder">2-3</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0d788f02dc8b5e6cba667cad34972c41" level="file">
                <did>
-                  <container type="box" label="mixed materials">10</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>"Handbook For Dancers," <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>"Handbook For Dancers,"</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c145eb13e6bbc47c016d199d32bf6b8e"
+                             label="Mixed Materials"
+                             type="box">10</container>
+                  <container id="aspace_770a7fe84b7112e6a33297854dd4c808"
+                             parent="aspace_c145eb13e6bbc47c016d199d32bf6b8e"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_99e16ab4d6a8df11d7a6c5dfb53ad5a1" level="file">
                <did>
                   <unittitle>
-                     <title>Book of the Dance</title>,                 <unitdate>1963</unitdate>
+                     <title>Book of the Dance</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_d3856b7420b03f69684929d6f0145d64" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">5</container>
                      <unittitle>Notes</unittitle>
+                     <container id="aspace_100bf9f41cff75171c5b9a577d20df95"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_c69ea0783465fac789ea4b6dc7280a23"
+                                parent="aspace_100bf9f41cff75171c5b9a577d20df95"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0ba0096b964f800a139322bd9b14fa72" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">6</container>
                      <unittitle>Manuscript</unittitle>
+                     <container id="aspace_f188832aa73351348788f93cd315982c"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_b3b3438ed2a355ec16bff27eca34a228"
+                                parent="aspace_f188832aa73351348788f93cd315982c"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3d21c938567248fab39b60c52d8b2776" level="file">
                   <did>
-                     <container type="box" label="mixed materials">10</container>
-                     <container type="folder" label="mixed materials">7</container>
                      <unittitle>Draft of Chapter VIII</unittitle>
+                     <container id="aspace_c89c7cee4a25944008346afe567addf0"
+                                label="Mixed Materials"
+                                type="box">10</container>
+                     <container id="aspace_cc00b750291f10e1563a42fdf2ea572c"
+                                parent="aspace_c89c7cee4a25944008346afe567addf0"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bb45716e2711029f43f83f585eccba58" level="file">
                <did>
-                  <unittitle>Miscellaneous		</unittitle>
+                  <unittitle>Miscellaneous</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_d98db6c8193fbdac7efb8c3576e86113" level="file">
                   <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>Clippings,<unitdate> 1928-48</unitdate>
-                     </unittitle>
+                     <unittitle>Clippings</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1928/1948"
+                               type="inclusive">1928-48</unitdate>
+                     <container id="aspace_cb43009c33fbe69893a7a86da734ab24"
+                                label="Mixed Materials"
+                                type="box">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f887493d2720a69180159d5bf182f5c7" level="file">
                   <did>
-                     <container type="box" label="mixed materials">11</container>
                      <unittitle>
-                        <title>The Dance In America</title>, United States Information Agency, <unitdate>undated</unitdate>
-                     </unittitle>
+                        <title>The Dance In America</title>, United States Information Agency</unittitle>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_20db08f009312e152b8fc4714fe6ef55"
+                                label="Mixed Materials"
+                                type="box">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1ae1bd629097c50f3a075fcee6f01d18" level="file">
                   <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"Russian Journals," <title>Dance Perspectives</title> vol. 44, <unitdate>1970</unitdate>
-                     </unittitle>
+                     <unittitle>"Russian Journals," <title>Dance Perspectives</title> vol. 44</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                     <container id="aspace_8fa040ed09791d57d9acebc0763da5b4"
+                                label="Mixed Materials"
+                                type="box">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3aa8ca7b072facbfb9cb7baacfc7dfd8" level="file">
                   <did>
-                     <container type="box" label="mixed materials">11</container>
-                     <unittitle>"One Hundred and Fifty Dollars Away From Anything," <title>The Royal Winnipeg Ballet</title>, Souvenir Program,<unitdate> 1969</unitdate>
-                     </unittitle>
+                     <unittitle>"One Hundred and Fifty Dollars Away From Anything," <title>The Royal Winnipeg Ballet</title>, Souvenir Program</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1969/1969">1969</unitdate>
+                     <container id="aspace_05df5ac98b6a42d9b2a82404bd5794f8"
+                                label="Mixed Materials"
+                                type="box">11</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0fce5127b16fde0d8838bc060fb9a31d" level="file">
                <did>
-                  <container type="map-case" label="mixed materials">Flat File:</container>
-                  <unittitle>Poster for a Paris dance recital,<unitdate> 1938</unitdate>
-                  </unittitle>
+                  <unittitle>Poster for a Paris dance recital</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                  <container id="aspace_f5520164fa212a7805fc0114a027b3f4"
+                             label="Mixed Materials"
+                             type="mapcase">Flat File:</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_02cac85363264213f0265ce7ee2bfc33" level="file">
                <did>
-                  <container type="map-case" label="mixed materials">Flat File:</container>
-                  <unittitle>Photostats of clippings,<unitdate> 1942</unitdate>
-                  </unittitle>
+                  <unittitle>Photostats of clippings</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1942/1942">1942</unitdate>
+                  <container id="aspace_a0095c696c0795e9eceffbe900c170a2"
+                             label="Mixed Materials"
+                             type="mapcase">Flat File:</container>
+               </did>
+            </c02>
+         </c01>
+         <c01 id="aspace_f6637db1712b6b61a66fb8357685a24b" level="series">
+            <did>
+               <unittitle>Two 16 mm films</unittitle>
+               <unitid>Accession 2010-S-0037</unitid>
+            </did>
+            <processinfo id="aspace_2ca4b2864e3f036c1276b70a6662d3d0">
+               <head>Processing Information</head>
+               <p>This inventory was created at time of accessioning and may be incomplete.</p>
+            </processinfo>
+            <c02 id="aspace_1760ea1b768c25ae60b5825462be6eaf" level="file">
+               <did>
+                  <unittitle>Agnes De Mille in a dance rehearsal, and being interviewed</unittitle>
+                  <physdesc altrender="whole">
+                     <extent altrender="materialtype spaceoccupied">2 Reels</extent>
+                  </physdesc>
+                  <unitdate calendar="gregorian" era="ce" normal="1974/1974">1974</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_7664eeb224b5ddadb3c026ab8ed76869"
+                             label="Mixed Materials"
+                             type="box">1</container>
+               </did>
+            </c02>
+            <c02 id="aspace_0ba0d2a0909e22906e88e04e62c738e1" level="file">
+               <did>
+                  <unittitle>Unidentified film (probably of Agnes De Mille)
+</unittitle>
+                  <physdesc altrender="whole">
+                     <extent altrender="materialtype spaceoccupied">1 Reels</extent>
+                  </physdesc>
+                  <unitdate calendar="gregorian" era="ce" normal="1971/1971">1971</unitdate>
+                  <container altrender="Letter document box"
+                             id="aspace_dd05ed751b99f2e8fed39ad147cdcc24"
+                             label="Mixed Materials"
+                             type="box">1</container>
                </did>
             </c02>
          </c01>

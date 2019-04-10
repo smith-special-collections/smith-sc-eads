@@ -1,160 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss127.xml//EN">mnsss127</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss127</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Ethel Eyre Valentine Dreier Papers, 1902-1957
-</titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Elizabeth Duvall, Leslie Fields and Amy Hague.</author>
+            <titleproper>Finding aid to the Ethel Eyre Valentine Dreier papers <num>SSC.MS.00050</num>
+            </titleproper>
+            <author>Elizabeth Duvall, Leslie Fields and Amy Hague.</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-07-01</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-03-25 16:08:05 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss127 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:11-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-03-25</date>
+            <item>Made FA pencil edit changes and updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            </publisher>
-         <titleproper encodinganalog="245$a">Ethel Eyre Valentine Dreier Papers, 1902-1957</titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 50
-
-
-
-      </num>
-         <author encodinganalog="245$c">Elizabeth Duvall, Leslie Fields and Amy Hague.
-
-
-
-      </author>
-         <date>1967
-
-
-
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>©  2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main-overview">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">Dreier, Ethel Eyre Valentine</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Ethel Eyre Valentine Dreier papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1902-1957</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 50</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">7 boxes		  </extent>
-            <extent encodinganalog="300$a">(2.75 linear ft.)</extent>
-         </physdesc>
-         <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-            </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">Settlement house president; suffragist; woman's club leader; and civic leader. The bulk of professional papers relate to Dreier's suffrage work and civic activities.  Also documented is Dreier's advocacy of public housing; her work in politics; and her settlement house work. Materials include correspondence, speeches, writings, photographs, notebooks, and travel diaries. The personal correspondence consists primarily of letters to her husband. Other correspondents include Jane Addams, Carrie Chapman Catt, Eleanor Roosevelt, Theodore Roosevelt, and Alfred E. Smith.  </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Ethel Eyre Valentine Dreier papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">Dreier, Ethel Eyre Valentine</persname>
+         </origination>
+         <unitid>SSC.MS.00050</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2.75 linear feet</extent>
+            <extent altrender="carrier">(7 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1875/1966"
+                   type="inclusive">1875-1966</unitdate>
+         <abstract id="aspace_fae1b812e40dbc892083f697430da3c5">Ethel Eyre Valentine Dreier was a settlement house president, suffragist, woman's club leader, and civic leader. The bulk of professional papers relate to Dreier's suffrage work and civic activities. Also documented is Dreier's advocacy of public housing; her work in politics; and her settlement house work. Materials include correspondence, speeches, writings, photographs, notebooks, and travel diaries. The personal correspondence consists primarily of letters to her husband. Other correspondents include Jane Addams, Carrie Chapman Catt, Eleanor Roosevelt, Theodore Roosevelt, and Alfred E. Smith.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-         <p>Ethel Eyre Valentine was born in Brooklyn, New York in 1874.  She graduated from Packer Collegiate Institute in 1895.  After graduation Ethel organized and became president of Brooklyn's first social settlement, All Sorts and Conditions of Girls.  She was also president of the United Neighborhood Guild (consisting of five settlements) and the People's Institute of Brooklyn.  She married H. Edward Dreier (brother of Mary Dreier and Margaret Dreier Robins, labor reformers; and Katherine Dreier, artist) on April 18, 1901.  The next ten years were primarily dedicated to family life.  Her daughters Antoinette Storrs and Dorothea; and sons Theodore and John were born between 1902 and 1909.
-
-    </p>
- 
-
-         <p>In 1912 Dreier was named chairman of the Woman Suffrage Party of Brooklyn.  Under her leadership its 23 Assembly Districts were organized.  When the women of New York state won suffrage in 1917, Brooklyn cast the largest vote for suffrage of any county in the state.  For several years after this victory, she continued in a leadership role group as chairman of the Brooklyn League of Women Voters.  From 1924 to 1930, and again from 1932 to 1936, Dreier was president of the Women's City Club of New York.  She remained honorary president until her death.
-
-    </p>
-         <p>Dreier was also active in housing projects for low-income groups as a member of the Brooklyn Committee for Better Housing.  In 1928 she was one of the incorporators of the Brooklyn Garden Apartments, the first limited dividend corporation founded under the state housing law.  She was also a founder of the Dreier-Offerman Playground, opened in Brooklyn in 1934.  In the New York mayoralty campaign of 1937 Dreier was joint chairman of the Fusion Campaign Committee to re-elect Fiorello H. LaGuardia, and chairman of the campaign's Women's Division.  She was invited to serve from 1938-40 on the Executive Committee on Women's Participation in the World's Fair, and on the Women's Committee for Brooklyn for Women's Day at the F air.  Throughout her career, Dreier was active in the Brooklyn community as a member of the Civitas Club of Brooklyn, the Board of Trustees of the Brooklyn Institute of Arts and Sciences, and vice-president of the Friends of the Brooklyn Public Library.  Dreier also spent several years on the advisory council of Black Mountain College in Black Mountain, North Carolina.  Her son Theodore was a founder of the school.
-
-
-    </p>
-         <p>In 1941 the Dreiers celebrated their 40th wedding anniversary with their first trip to the West Coast.  Later that year Ethel set off on a solo car trip through 17 states to catalogue birds and flowers.  Also in 1941, the Dreiers moved permanently into their summer home, "Sunken Meadow," in Fort Salonga, Long Island.  Ethel became active in the community as a member of the Garden Club, the Board of the Fort Salonga Association, and the Board of Education.  Ethel and Edward celebrated their golden wedding anniversary in 1951 with their children and eight grandchildren.  Edward Dreier died in 1955.  Ethel Dreier died in December of 1958.
-    </p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>Ethel Eyre Valentine was born in Brooklyn, New York in 1874. She graduated from Packer Collegiate Institute in 1895. After graduation Ethel organized and became president of Brooklyn's first social settlement, All Sorts and Conditions of Girls. She was also president of the United Neighborhood Guild (consisting of five settlements) and the People's Institute of Brooklyn. She married H. Edward Dreier (brother of Mary Dreier and Margaret Dreier Robins, labor reformers; and Katherine Dreier, artist) on April 18, 1901. The next ten years were primarily dedicated to family life. Her daughters Antoinette Storrs and Dorothea; and sons Theodore and John were born between 1902 and 1909. </p>
+         <p> In 1912 Dreier was named chairman of the Woman Suffrage Party of Brooklyn. Under her leadership its 23 Assembly Districts were organized. When the women of New York state won suffrage in 1917, Brooklyn cast the largest vote for suffrage of any county in the state. For several years after this victory, she continued in a leadership role group as chairman of the Brooklyn League of Women Voters. From 1924 to 1930, and again from 1932 to 1936, Dreier was president of the Women's City Club of New York. She remained honorary president until her death. </p>
+         <p> Dreier was also active in housing projects for low-income groups as a member of the Brooklyn Committee for Better Housing. In 1928 she was one of the incorporators of the Brooklyn Garden Apartments, the first limited dividend corporation founded under the state housing law. She was also a founder of the Dreier-Offerman Playground, opened in Brooklyn in 1934. In the New York mayoralty campaign of 1937 Dreier was joint chairman of the Fusion Campaign Committee to re-elect Fiorello H. LaGuardia, and chairman of the campaign's Women's Division. She was invited to serve from 1938-40 on the Executive Committee on Women's Participation in the World's Fair, and on the Women's Committee for Brooklyn for Women's Day at the F air. Throughout her career, Dreier was active in the Brooklyn community as a member of the Civitas Club of Brooklyn, the Board of Trustees of the Brooklyn Institute of Arts and Sciences, and vice-president of the Friends of the Brooklyn Public Library. Dreier also spent several years on the advisory council of Black Mountain College in Black Mountain, North Carolina. Her son Theodore was a founder of the school. </p>
+         <p> In 1941 the Dreiers celebrated their 40th wedding anniversary with their first trip to the West Coast. Later that year Ethel set off on a solo car trip through 17 states to catalogue birds and flowers. Also in 1941, the Dreiers moved permanently into their summer home, "Sunken Meadow," in Fort Salonga, Long Island. Ethel became active in the community as a member of the Garden Club, the Board of the Fort Salonga Association, and the Board of Education. Ethel and Edward celebrated their golden wedding anniversary in 1951 with their children and eight grandchildren. Edward Dreier died in 1955. Ethel Dreier died in December of 1958.</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p>The Ethel Eyre Valentine Dreier Papers include correspondence, writings, miscellaneous clippings, pamphlets, and publications.  The material documents Ethel Dreier's life from the time of her marriage to H.Edward Dreier in 1901.</p>
-         <p>
-
-    The personal correspondence consists primarily of letters to her husband, H. Edward Dreier, from 1902-38.  The early letters describe the daily household activities and concerns of an upper class homemaker, while the later letters describe in limited detail Ethel's work for various social causes.  Other correspondence includes letters (1924-55) to Ethel Dreier from Jane Addams, Carrie Chapman Catt, Eleanor Roosevelt, Theodore Roosevelt, and Alfred E. Smith among others.
-
-    </p>
-         <p>Personal papers and writings include manuscript drafts of speeches, reports and meeting agendas, notes, and a description of her solo car trip through 17 states in the summer of 1941.  There are also notebooks listing wedding gifts received, and describing gardens at her Long Island home, "Sunken Meadow."  Appointment books from 1939-57 briefly note daily activities, as does the travel diary from a European tour with her husband in 1901.</p>
-         <p>
-
-    The bulk of professional papers relate to records of the New York state campaign for woman suffrage (1912-17), and records of activities of the Women's City Club of New York (1919-65).  Included in the suffrage papers are newspaper clippings, pamphlets, and committee reports on the progress of the woman suffrage movement through the work of the National and New York State Woman Suffrage Associations.  Women's City Club of New York records include club calendars, programs, and lists of members.  The remainder of the professional papers document Ethel Dreier's work with the Brooklyn Garden Apartments (low cost housing development); the 1937 Fusion Mayoral Campaign to re-elect Fiorello H. LaGuardia; the Garden Club of America; King's Park Central School of Long Island; and Black Mountain College of North Carolina.  Included is a scrapbook of newspaper clippings relating to her various social and civic activities.
-
-    </p>
-         <p>Remaining records document biographical information such as Ethel Dreier's work for her alma mater, Packer Collegiate Institute; and an 80th birthday celebration folder contains congratulatory correspondence and a biographical sketch written by her children.
-    </p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Ethel Eyre Valentine Dreier papers include correspondence, writings, miscellaneous clippings, pamphlets, and publications. The material documents Ethel Dreier's life from the time of her marriage to H. Edward Dreier in 1901.</p>
+         <p>  The personal correspondence consists primarily of letters to her husband, H. Edward Dreier, from 1902-38. The early letters describe the daily household activities and concerns of an upper class homemaker, while the later letters describe in limited detail Ethel's work for various social causes. Other correspondence includes letters (1924-55) to Ethel Dreier from Jane Addams, Carrie Chapman Catt, Eleanor Roosevelt, Theodore Roosevelt, and Alfred E. Smith among others. </p>
+         <p> Personal papers and writings include manuscript drafts of speeches, reports and meeting agendas, notes, and a description of her solo car trip through 17 states in the summer of 1941. There are also notebooks listing wedding gifts received, and describing gardens at her Long Island home, "Sunken Meadow." Appointment books from 1939-57 briefly note daily activities, as does the travel diary from a European tour with her husband in 1901.</p>
+         <p>  The bulk of professional papers relate to records of the New York state campaign for woman suffrage (1912-17), and records of activities of the Women's City Club of New York (1919-65). Included in the suffrage papers are newspaper clippings, pamphlets, and committee reports on the progress of the woman suffrage movement through the work of the National and New York State Woman Suffrage Associations. Women's City Club of New York records include club calendars, programs, and lists of members. The remainder of the professional papers document Ethel Dreier's work with the Brooklyn Garden Apartments (low cost housing development); the 1937 Fusion Mayoral Campaign to re-elect Fiorello H. LaGuardia; the Garden Club of America; King's Park Central School of Long Island; and Black Mountain College of North Carolina. Included is a scrapbook of newspaper clippings relating to her various social and civic activities. </p>
+         <p> Remaining records document biographical information such as Ethel Dreier's work for her alma mater, Packer Collegiate Institute; and an 80th birthday celebration folder contains congratulatory correspondence and a biographical sketch written by her children.</p>  
       </scopecontent>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>They are open for research according to the regulations of the Sophia Smith Collection without any additional restrictions.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Ethel Dreier Papers, Sophia Smith Collection, Smith College, Northampton, Mass.  </p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Dreier Papers were donated to the Sophia Smith Collection by Ethel Dreier and her children between 1951 and 1959.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Processed by Elizabeth Duvall in 1967.  Revised in 1994 by Leslie Fields and Amy Hague. Finding aid revised in 2002 by Brook Hopkins, intern.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj-subheads">
-         <head>Search Terms</head>
-         
-         <persname encodinganalog="600" source="lcnaf">La Guardia, Fiorello H. (Fiorello Henry), 1882-1947</persname>
-         <persname encodinganalog="600" source="lcnaf">Dreier, Ethel Eyre Valentine.</persname>
-         <corpname encodinganalog="610" source="lcsh">All Sorts and Conditions of Girls (Organization : Brooklyn)</corpname>
-         <corpname encodinganalog="610" source="lcsh">Packer Collegiate Institute, Brooklyn--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcsh">Women's City Club of New York--History--Sources</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Ethel Dreier papers, Sophia Smith Collection, SSC-MS-00050, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Dreier papers were donated to the Sophia Smith Collection by Ethel Dreier and her children between 1951 and 1959.</p>  
+      </acqinfo>
+      <processinfo id="aspace_admin-process">
+         <head>Processing Information</head>
+         <p>Processed by Elizabeth Duvall in 1967. Revised in 1994 by Leslie Fields and Amy Hague. Finding aid revised in 2002 by Brook Hopkins, intern.</p>  
+      </processinfo>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Civic improvement--New York (State)--New York--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Political campaigns--New York (State)--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Municipal government--New York (State)--New York--History--Sources</subject>
@@ -163,515 +123,891 @@
          <subject encodinganalog="650" source="lcsh">Housing--New York (State)--New York--History--20th century--History--Sources</subject>
          <geogname encodinganalog="651" source="lcsh">New York (N.Y.)--Politics and government--1898-1951</geogname>
          <geogname encodinganalog="651" source="lcsh">New York (N.Y.)--Civic improvement--History--Sources</geogname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Writings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Speeches</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Organization files</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">diaries</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">scrapbooks</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">memorabilia</genreform>
+         <persname encodinganalog="600" source="naf">La Guardia, Fiorello H. (Fiorello Henry), 1882-1947</persname>
+         <persname encodinganalog="600" source="naf">Dreier, Ethel Eyre Valentine.</persname>
+         <corpname encodinganalog="610" source="lcsh">All Sorts and Conditions of Girls (Organization : Brooklyn)</corpname>
+         <corpname encodinganalog="610" source="lcsh">Packer Collegiate Institute, Brooklyn--History--Sources</corpname>
+         <corpname encodinganalog="610" source="lcsh">Women's City Club of New York--History--Sources</corpname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_743"
+                   source="local_inmagic-people">Voorhees, Dorothea D.</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1104"
+                   source="local_inmagic-people">Dreier, Ethel</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1510"
+                   source="local_inmagic-people">Dreier, Alexander</persname>
+         <persname encodinganalog="600" source="local_inmagic-collection">Dreier, Ethel Eyre Valentine</persname>
       </controlaccess>
-      <dsc id="list-contlist" type="in-depth">
-         <c01 level="file">
+      <dsc>
+         <c01 id="aspace_d6539f6bf426a47f37b1e031d9fb8dda" level="file">
             <did>
                <unittitle>Correspondence</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_4d197899f3638ca4cfa3f52ae57e7945" level="file">
                <did>
                   <unittitle>Ethel Dreier to</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_10f6176453f3fd46d1903bae61db1a59" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">1-11</container>
-                     <unittitle>Dreier, H. Edward,<unitdate> 1902-38</unitdate>
-                     </unittitle>
+                     <unittitle>Dreier, H. Edward</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1902/1938"
+                               type="inclusive">1902-38</unitdate>
+                     <container id="aspace_a2e5613444ebbdc8e3182505db8d08b2"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_e76199ecb88aafe90a244ed623d10220"
+                                parent="aspace_a2e5613444ebbdc8e3182505db8d08b2"
+                                type="folder">1-11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c6d884fefc73c029314e0afe97cde0a0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">12</container>
-                     <unittitle>Garrison, Eleanor,<unitdate> 1947</unitdate>
-                     </unittitle>
+                     <unittitle>Garrison, Eleanor</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                     <container id="aspace_b6337b80a05fa43400dd8bd502d6ba27"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_06d4f95b33b1118fc77f78f28620fb1d"
+                                parent="aspace_b6337b80a05fa43400dd8bd502d6ba27"
+                                type="folder">12</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3efa4eb99d59f802854086562e0a805e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>Miscellaneous,<unitdate> 1915, 1920</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                     <unitdate normal="1920/1920">1920</unitdate>
+                     <container id="aspace_6bd95646ebde4b9d898fe99ca9ff256f"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_b27f377dd7d8905323c9dd8f45dd5d17"
+                                parent="aspace_6bd95646ebde4b9d898fe99ca9ff256f"
+                                type="folder">13</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8b6377f5915719d41be02896015d5253" level="file">
                <did>
                   <unittitle>Others to Ethel Dreier, A-Z</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_c89f6689bb0a2a46de10a14a012b8a60" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Adams, Sherman (also to Edward Dreier),<unitdate> 1955</unitdate>
-                     </unittitle>
+                     <unittitle>Adams, Sherman (also to Edward Dreier)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1955/1955">1955</unitdate>
+                     <container id="aspace_4da25919a8c1433b990214993f5f4587"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_e668c55ed3ffd35174dab95337422ccb"
+                                parent="aspace_4da25919a8c1433b990214993f5f4587"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_28d7b44ab65fbb16f61f2a7585b88ba7" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Addams, Jane,<unitdate> 1905-24</unitdate>
-                     </unittitle>
+                     <unittitle>Addams, Jane</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1905/1924"
+                               type="inclusive">1905-24</unitdate>
+                     <container id="aspace_e12486c383421a887880eb93330eb33d"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_21ba5e33ad9ed9b3340ed4252ed0d1d2"
+                                parent="aspace_e12486c383421a887880eb93330eb33d"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d4207341ee8fa98a1d2c21469b807a2b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Catt, Carrie Chapman,<unitdate> 1932-38, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Catt, Carrie Chapman</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1932/1938"
+                               type="inclusive">1932-38</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_d90a427e8a2e84b1f427628c41cfa0bb"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_7b54d2aa785529f1be9d33252797cebf"
+                                parent="aspace_d90a427e8a2e84b1f427628c41cfa0bb"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6f980841f4075c43aaead7bf16e965ef" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">3a</container>
-                     <unittitle>Dewson, Molly,<unitdate> 1930</unitdate>
-                     </unittitle>
+                     <unittitle>Dewson, Molly</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                     <container id="aspace_49c2043570c7e56d10a71b0941248aba"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_b615c06d4b7b25db5a97499e3f8d526f"
+                                parent="aspace_49c2043570c7e56d10a71b0941248aba"
+                                type="folder">3a</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_4cec8b07fb86ac523df810a8e70dc693" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Dreier, Antoinette S. and Dorothea (also to Edward Dreier; includes 25th wedding anniversary poem),<unitdate> 1926</unitdate>
-                     </unittitle>
+                     <unittitle>Dreier, Antoinette S. and Dorothea (also to Edward; includes 25th wedding anniversary poem); Leonora O' Reilly</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1913/1926"
+                               type="inclusive">1913-1926</unitdate>
+                     <container id="aspace_5cd33bb5692654b04a37702b0e28cc0a"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_3172b2994b98278245e871e36b172b2b"
+                                parent="aspace_5cd33bb5692654b04a37702b0e28cc0a"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_c4c4a684a534ac2a0f30352824088890" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Dreier, Mary E. (includes poems and clippings),<unitdate> 1950-63</unitdate>
-                     </unittitle>
+                     <unittitle>Dreier, Mary E. (includes poems and clippings)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1950/1963"
+                               type="inclusive">1950-63</unitdate>
+                     <container id="aspace_d333ac6c0157f27626c4d27d892cc9ca"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ad615e41ccd5dc3b27770a0d20533f3f"
+                                parent="aspace_d333ac6c0157f27626c4d27d892cc9ca"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fc8eb0f3498dd303a50313d17663f41f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Ickes, Harold,<unitdate> 1933</unitdate>
-                     </unittitle>
+                     <unittitle>Ickes, Harold</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                     <container id="aspace_498a0d988618d91d0dd33c42b04aba99"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_bf1604061e4b2fdf857009d3b2b65f80"
+                                parent="aspace_498a0d988618d91d0dd33c42b04aba99"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b08e4aa3200d20e3010a3152c11c7f6b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Morrow, Elizabeth C.,<unitdate> 1926</unitdate>
-                     </unittitle>
+                     <unittitle>Morrow, Elizabeth C.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1926/1926">1926</unitdate>
+                     <container id="aspace_6725798a332bdf228fd2e90f3e70e005"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2028baa40cb4145ca8d6d9a2abc171b4"
+                                parent="aspace_6725798a332bdf228fd2e90f3e70e005"
+                                type="folder">7</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_7f2ea4668ac6cf3c949f2e9a0be309e5" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">8</container>
-                     <unittitle>Moses, Robert,<unitdate> 1934</unitdate>
-                     </unittitle>
+                     <unittitle>Moses, Robert</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                     <container id="aspace_e18a701265386ca4ceead6803ec4b09a"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_59a1d69dd0bf0c150003e072d48ef7d2"
+                                parent="aspace_e18a701265386ca4ceead6803ec4b09a"
+                                type="folder">8</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_058840ca9312ff7ce0d93a5934ac3d03" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">9</container>
-                     <unittitle>Perkins, Frances,<unitdate> 1936, 1951</unitdate>
-                     </unittitle>
+                     <unittitle>Perkins, Frances</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                     <unitdate normal="1951/1951">1951</unitdate>
+                     <container id="aspace_f325ccb103a82613fb79030bf4d21175"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_59f77134e806eea06299a2194c4d8c75"
+                                parent="aspace_f325ccb103a82613fb79030bf4d21175"
+                                type="folder">9</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_84b678800fa2354cdb8aeb56a36dbe63" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">10</container>
-                     <unittitle>Pratt, Ruth,<unitdate> 1929</unitdate>
-                     </unittitle>
+                     <unittitle>Pratt, Ruth</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1929/1929">1929</unitdate>
+                     <container id="aspace_f1fc91513b0fdef5aa7cbb95f1770db5"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_fe2d707aaf5d46d37944e8c470a1801c"
+                                parent="aspace_f1fc91513b0fdef5aa7cbb95f1770db5"
+                                type="folder">10</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b5a2d972d14ad81d4ac06ec54441b930" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">11</container>
-                     <unittitle>Roosevelt, Eleanor,<unitdate> 1928-58</unitdate>
-                     </unittitle>
+                     <unittitle>Robins, Margaret Dreier (Gretchen) to Dad</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+                     <container id="aspace_3e0c4a2fba51095b3ea95daff0c7c904"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_66bbac42d7c0720675658b76dba79f00"
+                                parent="aspace_3e0c4a2fba51095b3ea95daff0c7c904"
+                                type="folder">10a</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f3963b98ae9c0bff94c6a8c181d916ae" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">12</container>
-                     <unittitle>Roosevelt, Theodore,<unitdate> 1915</unitdate>
-                     </unittitle>
+                     <unittitle>Roosevelt, Eleanor</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1928/1958"
+                               type="inclusive">1928-58</unitdate>
+                     <container id="aspace_da62559eb04bc29a5bf06f9ef5324841"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ce0bc8b9639cb9facd372225ede06ac1"
+                                parent="aspace_da62559eb04bc29a5bf06f9ef5324841"
+                                type="folder">11</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_abf3079b78c52416802d3d7ffd54c233" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">13</container>
-                     <unittitle>Smith, Alfred E.,<unitdate> 1925-33</unitdate>
-                     </unittitle>
+                     <unittitle>Roosevelt, Theodore</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                     <container id="aspace_46c3aad53e5a39ff814be07c82440b6d"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2a35331782546fc84322ff75e327f8d7"
+                                parent="aspace_46c3aad53e5a39ff814be07c82440b6d"
+                                type="folder">12</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_870c4945b3db0b9b91ec70516696156f" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">14</container>
-                     <unittitle>Stearly, Antoinette Dreier,<unitdate> 1930</unitdate>
-                     </unittitle>
+                     <unittitle>Smith, Alfred E.</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1925/1933"
+                               type="inclusive">1925-33</unitdate>
+                     <container id="aspace_58718e7a4fb2910a7fc8e6576a4a0c5a"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_8284f91e69ee2803f11b20fb1fef2f86"
+                                parent="aspace_58718e7a4fb2910a7fc8e6576a4a0c5a"
+                                type="folder">13</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d055bdf40567076f3a4a44338083c1ad" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">15</container>
-                     <unittitle>Valentine, Antoinette (also to Ethel Dreier's grandmother),<unitdate> 1875, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Stearly, Antoinette Dreier</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                     <container id="aspace_d144528e0a6a3298b6381ce955fa9cef"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ed35b1df87f2ab847000812b2a08aaec"
+                                parent="aspace_d144528e0a6a3298b6381ce955fa9cef"
+                                type="folder">14</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d651fc1aadad8c12f827cb97c9167f03" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>van Kleeck, Mary,<unitdate> 1930</unitdate>
-                     </unittitle>
+                     <unittitle>Valentine, Antoinette (also to Ethel Dreier's grandmother)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1875/1875">1875</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_944cf8e216002cc479bd799ca0d01d7f"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_a8be3c365f465befcd2b2a81a0fe33db"
+                                parent="aspace_944cf8e216002cc479bd799ca0d01d7f"
+                                type="folder">15</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_301a4b7f0335059b4941a3ef1a4fa887" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>Wald, Lillian,<unitdate> 1932</unitdate>
-                     </unittitle>
+                     <unittitle>van Kleeck, Mary</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                     <container id="aspace_89487c58b822f820358c8808300d7b02"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_5a34043906e43b5400e8f6824ca6daa1"
+                                parent="aspace_89487c58b822f820358c8808300d7b02"
+                                type="folder">16</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_64617a48d7df28d9c5b1c1d643d89246" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>Wheelock, Ward (includes invitation to "This I Believe" radio program),<unitdate> 1952</unitdate>
-                     </unittitle>
+                     <unittitle>Wald, Lillian</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1932/1932">1932</unitdate>
+                     <container id="aspace_8c302fa845c31905f0a2b78f79c4c35c"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_3edeeba6bf7d507937f1858997cae518"
+                                parent="aspace_8c302fa845c31905f0a2b78f79c4c35c"
+                                type="folder">17</container>
+                  </did>
+               </c03>
+               <c03 id="aspace_d5894391d91feb0779ade9bfad235c78" level="file">
+                  <did>
+                     <unittitle>Wheelock, Ward (includes invitation to "This I Believe" radio program)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1952/1952">1952</unitdate>
+                     <container id="aspace_c117ad877323b8c1530266f136d5b1d2"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_c665e6458e0a5296435a7e9e9eda731f"
+                                parent="aspace_c117ad877323b8c1530266f136d5b1d2"
+                                type="folder">18</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_487c8eb371cb43998bd55a8383c268da" level="file">
                <did>
                   <unittitle>Miscellaneous</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_1eb5ef689ed49da6cf317eee7bb4b80a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>Condolences re: respective deaths of Ethel and Edward Dreier,<unitdate> 1955-58, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Condolences re: respective deaths of Ethel and Edward Dreier</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1955/1958"
+                               type="inclusive">1955-58</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_cb73939c043b0945eb7052f22f39f56c"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_1e54a2a1f32895dce58163433a1eae3f"
+                                parent="aspace_cb73939c043b0945eb7052f22f39f56c"
+                                type="folder">19</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_5a7c9f6af433f6250786e5bce4637115" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">20</container>
-                     <unittitle>Letters to Ethel Dreier concerning women's rights (including Eleanor Roosevelt),<unitdate> 1929-39</unitdate>
-                     </unittitle>
+                     <unittitle>Letters to Ethel Dreier concerning women's rights (including Eleanor Roosevelt)</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1929/1939"
+                               type="inclusive">1929-39</unitdate>
+                     <container id="aspace_258e2f243d72ad6188240fb4c413e723"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_eeec642a482eeb1da060df2bae13f3fe"
+                                parent="aspace_258e2f243d72ad6188240fb4c413e723"
+                                type="folder">20</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c79b948299cf9c7a336f3864b71d94cf" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Unidentified letters to Ethel Dreier,<unitdate> 1901-44, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Unidentified letters to Ethel Dreier</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1901/1944"
+                            type="inclusive">1901-44</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_904d15a2e36dbca9273535089921a9c8"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_19cf3ae76cc8682ec9d63c3101fe1afb"
+                             parent="aspace_904d15a2e36dbca9273535089921a9c8"
+                             type="folder">21</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_569571cecc5647a5e70446921e5ff248" level="file">
             <did>
-               <container type="box" label="mixed materials">2</container>
-               <container type="folder" label="mixed materials">22</container>
-               <unittitle>Writings and speeches (also includes appointment books, diaries, and travel journal),<unitdate> 1898-1957, undated</unitdate>
-               </unittitle>
+               <unittitle>Writings and speeches (also includes appointment books, diaries, and travel journal)</unittitle>
+               <unitdate calendar="gregorian"
+                         era="ce"
+                         normal="1898/1957"
+                         type="inclusive">1898-1957</unitdate>
+               <unitdate calendar="gregorian" era="ce">undated</unitdate>
+               <container id="aspace_0f7097723f5f848ab3339b4514c6ab65"
+                          label="Mixed Materials"
+                          type="box">2</container>
+               <container id="aspace_132cf07825696cff205c7323a283d01e"
+                          parent="aspace_0f7097723f5f848ab3339b4514c6ab65"
+                          type="folder">22</container>
             </did>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_560569d6e8f6a1f13aeea07a1b4b4aac" level="file">
             <did>
                <unittitle>Biographical Material and Photographs (includes speeches)</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_ad8e609e790a23d2f20ce453771adc75" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>80th birthday celebration: Correspondence and biographical sketch,<unitdate> 1954</unitdate>
-                  </unittitle>
+                  <unittitle>80th birthday celebration: Correspondence and biographical sketch</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <container id="aspace_5265f868322587e128f3ebf79c5ee30c"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_d8b49bd491f1183f7cadb6289f81d0fa"
+                             parent="aspace_5265f868322587e128f3ebf79c5ee30c"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0dbc14922ac788ade6f492a8144c0e13" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Black Mountain College: College catalog and speeches,<unitdate> 1939-40, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Black Mountain College: College catalog and speeches</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1939/1940"
+                            type="inclusive">1939-40</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_1b19b1a930ce2fb6e8f1017e23e4fa07"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_39895542c4e0c04e2165dcc4e669ff3b"
+                             parent="aspace_1b19b1a930ce2fb6e8f1017e23e4fa07"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1b81ead15699a6d7f152d410ed6ce174" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Dreier-Offerman Playground: Speech and program from opening ceremonies,<unitdate> 1934</unitdate>
-                  </unittitle>
+                  <unittitle>Dreier-Offerman Playground: Speech and program from opening ceremonies</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1934/1934">1934</unitdate>
+                  <container id="aspace_b84cbca088ea0a0f2ae1c5449093d1d1"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_3511d14f3b30b31575f9284dd0c66901"
+                             parent="aspace_b84cbca088ea0a0f2ae1c5449093d1d1"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c61a88ffe569e22629310421148c5a29" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Golden wedding anniversary: Photograph, poem, and skit script,<unitdate> 1951</unitdate>
-                  </unittitle>
+                  <unittitle>Golden wedding anniversary: Photograph, poem, and skit script</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container id="aspace_42b771701387d50c338823d6fece594b"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_1e7fe0fac62c758aaf73ea7de590d0ea"
+                             parent="aspace_42b771701387d50c338823d6fece594b"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f6357c0bfe0e41411027c174681cbb2c" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Kings Park Central School: Reports, letter, and speeches, <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Kings Park Central School: Reports, letter, and speeches</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_1cd42b6d342abe3af64b1563c6fd2feb"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_73cb9abbe01df447d52afcf4ffd17ded"
+                             parent="aspace_1cd42b6d342abe3af64b1563c6fd2feb"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_95a920829e5886c602f283d11628f293" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Packer Collegiate Institute: Speeches, clippings, brochures, reports, letters, and yearbooks,<unitdate> 1895-1945, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Packer Collegiate Institute: Speeches, clippings, brochures, reports, letters, and yearbooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1895/1945"
+                            type="inclusive">1895-1945</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_1541ff13e03e9aa98ddabb832a6a9869"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_338a2279cd383f977d789d34becb7419"
+                             parent="aspace_1541ff13e03e9aa98ddabb832a6a9869"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c9fd3c7686bc30cf66d93834aca59b65" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Storrs Family: Storrs Agricultural College at University of Connecticut (includes pamphlets, photographs, postcards, speech, and telegram),<unitdate> 1948, 1956, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Storrs Family: Storrs Agricultural College at University of Connecticut (includes pamphlets, photographs, postcards, speech, and telegram)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <unitdate normal="1956/1956">1956</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_5f030327f5ba8137a5af6b5952866d32"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_3918d8d4ba0960dc97df0aebea0492d2"
+                             parent="aspace_5f030327f5ba8137a5af6b5952866d32"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ce52b320a121bab941b35323026b7db6" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Miscellaneous (includes biographical sketch and notes), <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous (includes biographical sketch and notes)</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_622f2c9818db34c053fc0fe0a7cc11c9"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_0351218ec949277b41ca1595385992df"
+                             parent="aspace_622f2c9818db34c053fc0fe0a7cc11c9"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0de9a66313454ed4c5eaf664488f7a26" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Photographs (includes photo of painting; photo mounted on wood of Ethel and Edward Dreier),<unitdate> 1900-34, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Photographs (includes photo of painting; photo mounted on wood of Ethel and Edward Dreier)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1900/1934"
+                            type="inclusive">1900-34</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_b8bfc03745f3301e5731b73fdda94e0a"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_f49fada5afc2b2780db598b621074a49"
+                             parent="aspace_b8bfc03745f3301e5731b73fdda94e0a"
+                             type="folder">9</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_10b243a947e511e49c52eb5d3ed59bd7" level="file">
             <did>
                <unittitle>Organizations and Events</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_2a21c4e4a5fd5f418e60b58db7243330" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>All Sorts and Conditions of Girls: Brochures, clippings, and correspondence,<unitdate> 1905-11</unitdate>
-                  </unittitle>
+                  <unittitle>All Sorts and Conditions of Girls: Brochures, clippings, and correspondence</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1905-11</unitdate>
+                  <container id="aspace_411c83f3e7ecb36e838e9dd99a93a43a"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_f47a55161582002c27dc25cb54c2e009"
+                             parent="aspace_411c83f3e7ecb36e838e9dd99a93a43a"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a68579f91205285a9a9a04d394a684da" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Brooklyn Garden Apartments [low cost housing developments]: Correspondence, minutes, and notes,<unitdate> 1933-38</unitdate>
-                  </unittitle>
+                  <unittitle>Brooklyn Garden Apartments [low cost housing developments]: Correspondence, minutes, and notes</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1933/1938"
+                            type="inclusive">1933-38</unitdate>
+                  <container id="aspace_60279b1aed041c93cfc5d0345ee3eef5"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_b9e6a0df319da5429eb25313cedea37c"
+                             parent="aspace_60279b1aed041c93cfc5d0345ee3eef5"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c89118ad311004203d31bc1db79575d8" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">3-7</container>
-                  <unittitle>Fusion Mayoral Campaign: Ballots, clippings, correspondence, and pamphlets,<unitdate> 1937-41, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Fusion Mayoral Campaign: Ballots, clippings, correspondence, and pamphlets</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1937/1941"
+                            type="inclusive">1937-41</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_8986c2ca01b100bd0b2afd37ec076a4c"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_c3f234051dc0eb844a578f90d7bb9842"
+                             parent="aspace_8986c2ca01b100bd0b2afd37ec076a4c"
+                             type="folder">3-7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_65bcc395693fe4c19bbc8b6b84cdbbed" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Garden Club of America annual meetings: notebooks,<unitdate> 1931-47</unitdate>
-                  </unittitle>
+                  <unittitle>Garden Club of America annual meetings: notebooks</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1931/1947"
+                            type="inclusive">1931-47</unitdate>
+                  <container id="aspace_1fc6a4fe1712f13e5ced0ac78d8ec483"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_0d2f33e4dcdcb2fcbeff0736c4ae6369"
+                             parent="aspace_1fc6a4fe1712f13e5ced0ac78d8ec483"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1407beebca8122a2f577fc130d676dd4" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>League of Women Voters: Correspondence, clippings, newsletter, notes, pamphlets,<unitdate> 1945-59</unitdate>
-                  </unittitle>
+                  <unittitle>League of Women Voters: Correspondence, clippings, newsletter, notes, pamphlets</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1945/1959"
+                            type="inclusive">1945-59</unitdate>
+                  <container id="aspace_b9a90ba70f1bb1031533981454cfcf36"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_fb897c9782b0f4f1830f2f77a1b5863b"
+                             parent="aspace_b9a90ba70f1bb1031533981454cfcf36"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_71be02db46381ab0dddf9953b2e58987" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>North Suffolk Garden Club: Reports and articles,<unitdate> 1946, 1948, undated</unitdate>
-                  </unittitle>
+                  <unittitle>North Suffolk Garden Club: Reports and articles</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1946/1946">1946</unitdate>
+                  <unitdate normal="1948/1948">1948</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_0bb7d9ebc710a4c170edcacbf9400577"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_13e1a04d57d14ac85c43c261c11a342c"
+                             parent="aspace_0bb7d9ebc710a4c170edcacbf9400577"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8eb78feaa6aa30658853563600d40391" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Women's Centennial Congress: Reports,<unitdate> 1940</unitdate>
-                  </unittitle>
+                  <unittitle>Women's Centennial Congress: Reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1854-early 1900s</unitdate>
+                  <container id="aspace_250f9a99285081a31dde1be58d1d7c08"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_f7653b612cbd2cb52d74d3a0d631dc04"
+                             parent="aspace_250f9a99285081a31dde1be58d1d7c08"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2fbeed8fd5abb09c24ff7dad7195f572" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Miscellaneous: Correspondence, clippings, notes, pamphlets, press releases, and draft of <title>Cloisters in American Politics</title> by Frances Kellor,<unitdate> 1919, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous: Correspondence, clippings, notes, pamphlets, press releases, and draft of <title>Cloisters in American Politics</title> by Frances Kellor</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_89535cc1607995b485e627921c0fc69d"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_6b551a511423d75a0d3a28f47e4602c4"
+                             parent="aspace_89535cc1607995b485e627921c0fc69d"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2beab8bcdc74d90bfec5671f57889421" level="file">
                <did>
                   <unittitle>Women's City Club of New York</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_3c52001ef938fc2a7f33a369540170ad" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>50th anniversary: Clippings and pamphlets,<unitdate> 1966</unitdate>
-                     </unittitle>
+                     <unittitle>50th anniversary: Clippings and pamphlets</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                     <container id="aspace_031ad3cdc9990c895a3a8d018ef3cf6d"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_40d9082fdd6fbcb6d777bd36fec4938a"
+                                parent="aspace_031ad3cdc9990c895a3a8d018ef3cf6d"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_018db2d00aed85c0dfc1ee39f0661b4e" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Clippings,<unitdate> 1926-36</unitdate>
-                     </unittitle>
+                     <unittitle>Clippings</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1926/1936"
+                               type="inclusive">1926-36</unitdate>
+                     <container id="aspace_1559f198b48a4b313ae8b8f599fb08f0"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_01b0aa2f61f9bc80cb772872b9ad3876"
+                                parent="aspace_1559f198b48a4b313ae8b8f599fb08f0"
+                                type="folder">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_cdb170cdbc40d4b554ae8626c422f478" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">3</container>
-                     <unittitle>Letters received upon 20th anniversary of Women's City Club, including Sara Roosevelt),<unitdate> 1936</unitdate>
-                     </unittitle>
+                     <unittitle>Letters received upon 20th anniversary of Women's City Club, including Sara Roosevelt)</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                     <container id="aspace_857940c21481512a07f1d82dff80354d"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_666b04b153e5260645a4c0aa90a5688e"
+                                parent="aspace_857940c21481512a07f1d82dff80354d"
+                                type="folder">3</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_30d23257ced714aa190c05f8c1c78aca" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">4</container>
-                     <unittitle>Miscellaneous: Correspondence, minutes, notes, reports, speeches, programs, and postcards,<unitdate> 1932-59</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous: Correspondence, minutes, notes, reports, speeches, programs, and postcards</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1932/1959"
+                               type="inclusive">1932-59</unitdate>
+                     <container id="aspace_d85a51d6d877959a7298c1d8e19b03b3"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_edf140eb0fa4e0a53d3f09311c5a3e7e"
+                                parent="aspace_d85a51d6d877959a7298c1d8e19b03b3"
+                                type="folder">4</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_2f8ff8e676cd92d42107a3753c75e38c" level="file">
                   <did>
-                     <container type="box" label="mixed materials">5</container>
-                     <container type="folder" label="mixed materials">5</container>
-                     <unittitle>Speeches,<unitdate> 1926-40, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Speeches</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1926/1940"
+                               type="inclusive">1926-40</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_b5c0d8ecbcc56152987bf5e68371a20b"
+                                label="Mixed Materials"
+                                type="box">5</container>
+                     <container id="aspace_fd9db8425477f47457dd894a993ffaee"
+                                parent="aspace_b5c0d8ecbcc56152987bf5e68371a20b"
+                                type="folder">5</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_1245c700ec920efb3cdabc78d9db75fc" level="file">
                   <did>
-                     <container type="box" label="mixed materials">6</container>
-                     <unittitle>Women's City Club calendars, brochures, invitations,<unitdate> 1924-51</unitdate>
-                     </unittitle>
+                     <unittitle>Women's City Club calendars, brochures, invitations</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1924/1951"
+                               type="inclusive">1924-51</unitdate>
+                     <container id="aspace_aafd8c29d79afd77744459191202021a"
+                                label="Mixed Materials"
+                                type="box">6</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_a94fd29047ce71f628449a9aec4e7409" level="file">
             <did>
                <unittitle>Suffrage</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_72e14f744bae543225cebc29225019f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Letters of appreciation for Dreier's leadership in New York State suffrage campaign (includes "votes for women" playing card),<unitdate> 1917 </unitdate>
-                  </unittitle>
+                  <unittitle>Letters of appreciation for Dreier's leadership in New York State suffrage campaign (includes "votes for women" playing card)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container id="aspace_91d3b9bb1554c7d09d22cb4b282baf0b"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_ae36cb8bad5080ac9ffe734bfdae45da"
+                             parent="aspace_91d3b9bb1554c7d09d22cb4b282baf0b"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b32da326a31fa0e5bccd87ef43dd5ce6" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>New York State Woman Suffrage Party: Clipping, Industrial Section Letter Series Nos. <unitdate>1-16, </unitdate>postcards, and miscellaneous, ca. 1917</unittitle>
+                  <unittitle>New York State Woman Suffrage Party: Clipping, Industrial Section Letter Series Nos. 1-16, postcards, and miscellaneous, ca. 1917</unittitle>
+                  <unitdate calendar="gregorian" era="ce">1-16</unitdate>
+                  <container id="aspace_752e7d941d8e9f8c0412b2dd13ad36f4"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_fde8722e7784995a34fcbde8e57c2e4a"
+                             parent="aspace_752e7d941d8e9f8c0412b2dd13ad36f4"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_bf9d8741d123349b29bb6f59e1d8dbd4" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Woman Suffrage parties of Brooklyn and New York City: Pamphlets and pins, <unitdate>ca. 1917</unitdate>
-                  </unittitle>
+                  <unittitle>Woman Suffrage parties of Brooklyn and New York City: Pamphlets, pins, correspondence, and reports</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="approximate"
+                            era="ce"
+                            normal="1917/1917">1917</unitdate>
+                  <container id="aspace_dee54f7d30c2f7f65bc71d68ed28af17"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_11f2790dad046c576478e7e37d6a8643"
+                             parent="aspace_dee54f7d30c2f7f65bc71d68ed28af17"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a35b9bf3c58b4ba85b73ae6d5a450706" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>National Woman Suffrage Publishing Co.,<unitdate> 1915, 1917</unitdate>
-                  </unittitle>
+                  <unittitle>Woman Suffrage parties of Brooklyn, New York City: clippings - includes suffrage articles by Dreier</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1913/1915"
+                            type="inclusive">1913-1915, n.d.</unitdate>
+                  <container id="aspace_311978f171681cc14de8485372ac0a48"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_ab3cf5060af5626b71e8b273273695a1"
+                             parent="aspace_311978f171681cc14de8485372ac0a48"
+                             type="folder">3a</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8bd77c408b8fcc8ae2f66e2af2e4faf6" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Miscellaneous clippings and publications,<unitdate> 1919, undated</unitdate>
-                  </unittitle>
+                  <unittitle>National Woman Suffrage Publishing Co.</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                  <unitdate normal="1917/1917">1917</unitdate>
+                  <container id="aspace_52c1b0fbfcf18ba0def673047c2fb361"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_0284efa8943ad50002fdb53239657c06"
+                             parent="aspace_52c1b0fbfcf18ba0def673047c2fb361"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3e7ebaf6cd5af786f79fee044853559a" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>NAWSA certificate and photograph of League of Women Voters' national honor roll plaque recognizing women who worked for suffrage in New York state,<unitdate> 1920, 1931</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous clippings and publications</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919/1919">1919</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_ff3560d3155eee16981acc6e4e8103ad"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_02f673a55ace5dee9376fc4113258ff2"
+                             parent="aspace_ff3560d3155eee16981acc6e4e8103ad"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5a4309bf94db4e9c981fb13216fbc1f2" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Brooklyn suffrage campaign: Correspondence, notes, speeches, and reports,<unitdate> 1917</unitdate>
-                  </unittitle>
+                  <unittitle>NAWSA certificate and photograph of League of Women Voters' national honor roll plaque recognizing women who worked for suffrage in New York state</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1920/1920">1920</unitdate>
+                  <unitdate normal="1931/1931">1931</unitdate>
+                  <container id="aspace_fb694a85254238fda83183096568922f"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_9261c0b675301188347747d6daf55342"
+                             parent="aspace_fb694a85254238fda83183096568922f"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_053e9d2bbf6f803162f962938f0192c3" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Miscellaneous: Speeches, article, and letter,<unitdate> 1915, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Brooklyn suffrage campaign: Correspondence, notes, speeches, and reports</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1917/1917">1917</unitdate>
+                  <container id="aspace_6e1a18105e16d35f98402e3b1846bbcd"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_26e9d04358945deb70b4bbc000908e12"
+                             parent="aspace_6e1a18105e16d35f98402e3b1846bbcd"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_b7e0669089762d2220869c9dc5cc5f63" level="file">
                <did>
-                  <container type="box" label="mixed materials">7</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Correspondence (includes certificate for five shares of stock in the National Woman Suffrage Publishing Co, 1917),<unitdate> 1912-19</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous: Speeches, article, and letter</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1915/1915">1915</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_9906df18ece7f18b8f69360bff86875c"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_8aeb076b2fdd6790f65acbd725df0c8d"
+                             parent="aspace_9906df18ece7f18b8f69360bff86875c"
+                             type="folder">8</container>
+               </did>
+            </c02>
+            <c02 id="aspace_bda2dd622a82457c9927b71ba6088ed6" level="file">
+               <did>
+                  <unittitle>Correspondence (includes certificate for five shares of stock in the National Woman Suffrage Publishing Co, 1917)</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1912/1919"
+                            type="inclusive">1912-19</unitdate>
+                  <container id="aspace_17f8cd2ead1ed28ffdf7544f21760a85"
+                             label="Mixed Materials"
+                             type="box">7</container>
+                  <container id="aspace_1d535457310555d6e25533a369c4e641"
+                             parent="aspace_17f8cd2ead1ed28ffdf7544f21760a85"
+                             type="folder">9</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_d53b5ee1ad0f90895178a5ab93ec6fd8" level="file">
             <did>
-               <container type="map-case" label="mixed materials">Flat File</container>
-               <unittitle>Packer Collegiate Institute diploma,<unitdate> 1895</unitdate>
-               </unittitle>
+               <unittitle>Packer Collegiate Institute diploma</unittitle>
+               <unitdate calendar="gregorian" era="ce" normal="1895/1895">1895</unitdate>
+               <container id="aspace_348f99e0dc377c6fb0d1fb2d610c8218"
+                          label="Mixed Materials"
+                          type="mapcase">Flat File</container>
             </did>
          </c01>
       </dsc>
