@@ -1,492 +1,618 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss17.xml//EN">mnsss17</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss17</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">Virginia Heim George Papers, 1925-1981
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Susan Boone.</author>
+            <titleproper>Finding aid to the Virginia Heim George papers <num>SSC.MS.00221</num>
+            </titleproper>
+            <author>Susan Boone</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Brook Hopkins.
-        <date>2003-06-05</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-04-16 15:09:47 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss17 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:12-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-04-15</date>
+            <item>Made paper FA pencil edit changes and updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            
-         </publisher>
-         <titleproper encodinganalog="245$a">Virginia Heim George Papers, 1925-1981
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>221
-      </num>
-         <author encodinganalog="245$c">Susan Boone
-      </author>
-         <date>1990
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>© 2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <persname encodinganalog="100" source="lcnaf">George, Virginia Heim, 1908-</persname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">Virginia Heim George papers</unittitle><unitdate encodinganalog="245$f" type="inclusive">1925-1981</unitdate>
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">221</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">2 boxes</extent>
-            <extent encodinganalog="300$a">(1 linear ft.)</extent>
-         </physdesc>
-                  <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-	  </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">YWCA executive, YWCA overseas secretary, and USO official.  Most material in the George papers pertains to her foreign secretary work in South America and Czechoslovakia and her USO work in the Caribbean. Personal letters and travel diaries include descriptions of life in Brazil and the Caribbean and in post-war Czechoslovakia and West Germany.  Material also includes speeches, clippings and photographs.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>Virginia Heim George papers</unittitle>
+         <origination label="creator">
+            <persname source="naf">George, Virginia Heim, 1908-</persname>
+         </origination>
+         <unitid>SSC.MS.00221</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">0.625 linear feet</extent>
+            <extent altrender="carrier">(2 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1925/1981"
+                   type="inclusive">1925-1981</unitdate>
+         <abstract id="aspace_4c359e0f174041922505f9bb8a761ff7">Virginia Heim George was a YWCA executive, YWCA overseas secretary, and USO official. Most material in the George papers pertains to her foreign secretary work in South America and Czechoslovakia and her USO work in the Caribbean. Personal letters and travel diaries include descriptions of life in Brazil and the Caribbean and in post-war Czechoslovakia and West Germany. Material also includes speeches, clippings and photographs.</abstract>
       </did>
-      <bioghist id="bioghist-chron">
-         
-         <chronlist>
-            <chronitem>
-               <date>1908</date>
-               <event>Born in St. Joseph, Missouri</event>
-            </chronitem>
-            <chronitem>
-               <date>1929</date>
-               <event>University of Wisconsin, major in economics</event>
-            </chronitem>
-            <chronitem>
-               <date>1929-40</date>
-               <eventgrp>
-                  <event>Program Director, YWCA, working with industrial workers, Kansas City, Utica, Pittsburgh</event>
-                  <event>Camp Director, YWCA </event>
-               </eventgrp>
-            </chronitem>
-            <chronitem>
-               <date>1937</date>
-               <event>Carnegie Institute of Technology, graduate study in group work</event>
-            </chronitem>
-            <chronitem>
-               <date>1940-43</date>
-               <event>Executive Director, YWCA, Rio de Janiero, Brazil</event>
-            </chronitem>
-            <chronitem>
-               <date>1943-45</date>
-               <event>Regional Assistant Director of USO, Brazil, Caribbean Area</event>
-            </chronitem>
-            <chronitem>
-               <date>1946-48</date>
-               <event>Program Consultant, YWCA, Czechoslovakia, with two-week special</event>
-            </chronitem>
-            <chronitem>
-               <date>1948-51</date>
-               <event>National staff, YWCA, Community Division, working with business</event>
-            </chronitem>
-            <chronitem>
-               <date>1951-53</date>
-               <event>Group work and recreational director, YWCA, Oakland, California</event>
-            </chronitem>
-            <chronitem>
-               <date>1953-56</date>
-               <event>Executive Director, YWCA, Yakima, Washington</event>
-            </chronitem>
-            <chronitem>
-               <date>1956-66</date>
-               <event>Executive Director, YWCA, Utica, New York</event>
-            </chronitem>
-            <chronitem>
-               <date>1962-64</date>
-               <event>Advisor, YWCA, Taipei, Taiwan</event>
-            </chronitem>
-            <chronitem>
-               <date>1966-71</date>
-               <event>Advisor, YWCA, Colombia, with three short periods in Lima, Peru</event>
-            </chronitem>
-            <chronitem>
-               <date>1971</date>
-               <event>Executive Director, YWCA, Omaha, Nebraska</event>
-            </chronitem>
-	 <chronitem>
-               <date>2003?</date>
-               <event>Virginia Heim George died circa 2003</event>
-            </chronitem>
-         </chronlist>
+      <bioghist id="aspace_bioghist-chron">
+         <head>Biographical / Historical</head>
+         <p>
+            <chronlist> 
+               <chronitem> 
+                  <date>1908</date> 
+                  <event>Born in St. Joseph, Missouri</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1929</date> 
+                  <event>University of Wisconsin, major in economics</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1929-40</date> 
+                  <eventgrp> 
+                     <event>Program Director, YWCA, working with industrial workers, Kansas City, Utica, Pittsburgh</event> 
+                     <event>Camp Director, YWCA </event> 
+                  </eventgrp> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1937</date> 
+                  <event>Carnegie Institute of Technology, graduate study in group work</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1940-43</date> 
+                  <event>Executive Director, YWCA, Rio de Janiero, Brazil</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1943-45</date> 
+                  <event>Regional Assistant Director of USO, Brazil, Caribbean Area</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1946-48</date> 
+                  <event>Program Consultant, YWCA, Czechoslovakia, with two-week special</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1948-51</date> 
+                  <event>National staff, YWCA, Community Division, working with business</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1951-53</date> 
+                  <event>Group work and recreational director, YWCA, Oakland, California</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1953-56</date> 
+                  <event>Executive Director, YWCA, Yakima, Washington</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1956-66</date> 
+                  <event>Executive Director, YWCA, Utica, New York</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1962-64</date> 
+                  <event>Advisor, YWCA, Taipei, Taiwan</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1966-71</date> 
+                  <event>Advisor, YWCA, Colombia, with three short periods in Lima, Peru</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>1971</date> 
+                  <event>Executive Director, YWCA, Omaha, Nebraska</event> 
+               </chronitem> 
+               <chronitem> 
+                  <date>2003?</date> 
+                  <event>Virginia Heim George died circa 2003</event> 
+               </chronitem> 
+            </chronlist>
+         </p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-<dao actuate="onLoad" altrender="right" href="http://www.smith.edu/libraries/libs/ssc/eadfiles/ssc2673.jpg" linktype="simple" show="embed">
-<daodesc><p>Virginia Heim (right) and others in 
-            Bogota, Columbia, circa 1966-71</p></daodesc></dao>
-         <p>The Virginia Heim George Papers consist of one linear foot of correspondence, diaries, clippings, and photographs. The inclusive dates are 1925 to 1981, but the major portion of the material dates from 1940 to 1948, related to her foreign secretary work for the YWCA in South America and Czechoslovakia and her USO work in the Caribbean.</p>
-         <p>The papers are divided into two series, PERSONAL and  PROFESSIONAL. The PERSONAL material contains correspondence and diaries, both ranging from 1940 to 1981. The correspondence consists of letters to her family, mostly to her mother, with a small amount of incoming correspondence from family and friends, 1945-50. The nine diaries consist of six written between 1940 and 1948, plus three travel accounts from 1953, 1965, and 1981.  Both the letters and diaries provide a detailed description of George's life while working for the YWCA and the USO. She was an eager and enthusiastic participant in her work and also took advantage of the opportunities it provided to travel extensively. She was a keen observer of the countries she visited and the people she met. Her wartime letters as well and those from postwar Czechoslovakia reflect the mail censorship of the times. As a result the diaries and the occasional letters that she was able to write freely are more candid. The diaries written from her two trips to Czechoslovakia in 1965 and 1981 contain particularly interesting accounts of life there, and the 1965 account reports earlier arrests and trials, particularly an incident involving the YWCA in 1948.</p>
-         <p>The PROFESSIONAL material consist of clippings and articles about George and her work, 1925-1975, three reports from her Czechoslovakia and Germany experiences, 1948, and a nine-page speech on the USO, ca. 1945. In this series are also fifteen photographs, five of the USO, six related to the YWCA, and four of women in Puerto Rico.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The Virginia Heim George papers consist of correspondence, diaries, clippings, and photographs. A major portion of the material dates from 1940 to 1948 and is related to her foreign secretary work for the YWCA in South America and Czechoslovakia and her USO work in the Caribbean.</p>
+         <p> The papers are divided into two series, PERSONAL and PROFESSIONAL. The PERSONAL material contains correspondence and diaries, both ranging from 1940 to 1981. The correspondence consists of letters to her family, mostly to her mother, with a small amount of incoming correspondence from family and friends, 1945-50. The nine diaries consist of six written between 1940 and 1948, plus three travel accounts from 1953, 1965, and 1981. Both the letters and diaries provide a detailed description of George's life while working for the YWCA and the USO. She was an eager and enthusiastic participant in her work and also took advantage of the opportunities it provided to travel extensively. She was a keen observer of the countries she visited and the people she met. Her wartime letters as well and those from postwar Czechoslovakia reflect the mail censorship of the times. As a result the diaries and the occasional letters that she was able to write freely are more candid. The diaries written from her two trips to Czechoslovakia in 1965 and 1981 contain particularly interesting accounts of life there, and the 1965 account reports earlier arrests and trials, particularly an incident involving the YWCA in 1948.</p>
+         <p> The PROFESSIONAL material consists of clippings and articles about George and her work, 1925-1975, three reports from her Czechoslovakia and Germany experiences, 1948, and a nine-page speech on the USO, ca. 1945. In this series are also fifteen photographs, five of the USO, six related to the YWCA, and four of women in Puerto Rico.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into two series:</p>
-         <list>
-            <item>
-               I. Personal
-            </item>
-            <item>
-               II. Professional
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into two series:</p>    
+         <list type="ordered">
+            <item>I. Personal</item>
+            <item>II. Professional</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The collection is open to research according to the regulations of the Sophia Smith Collection.
-          </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The Sophia Smith Collection owns copyright to unpublished works of Virginia Heim George. Copyright to materials created by others may be owned by those individuals or their heirs or assigns. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission must be obtained from the Sophia Smith Collection to publish reproductions or quotations beyond "fair use."
-           </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>Virginia Heim George Papers, Sophia Smith Collection, Smith College, Northampton, MA</p>
-         </prefercite>
-	<altformavail id="admin-altform">
-		<head>Additional Formats</head>
-		<p>Selections from the Virginia Heim George Papers can be viewed in the Web exhibit	<extref href="http://www.smith.edu/libraries/libs/ssc/ywca-os/ywca-home.html">"An Ever-Widening Circle of Friendship":  YWCA Overseas Secretaries from China to Liberia</extref>.</p>
-	</altformavail>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The Virginia Heim George Papers were a gift of Mrs. George in 1989.
-          </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Processed by Susan Boone, 1990.</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>Virginia Heim George papers, Sophia Smith Collection, SSC-MS-00221, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <altformavail id="aspace_admin-altform">
+         <head>Additional Formats</head>
+         <p>Selections from the Virginia Heim George papers can be viewed in the Web exhibit	<extref href="http://www.smith.edu/libraries/libs/ssc/ywca-os/ywca-home.html">"An Ever-Widening Circle of Friendship": YWCA Overseas Secretaries from China to Liberia</extref>.</p>  
+      </altformavail>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>To the extent that she owns copyright, Virginia Heim George has assigned the copyright in her works to Smith College; however, copyright in other items in this collection may be held by their respective creators. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. For instances which may regard materials in the collection not created by Virginia Heim George, researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The Virginia Heim George Papers were a gift of Mrs. George in 1989.</p>  
+      </acqinfo>
+      <controlaccess>
          <geogname encodinganalog="651" source="lcsh">Czechoslovakia--History--1945-1992--Sources</geogname>
-         <persname encodinganalog="600" source="lcnaf">George, Virginia Heim, 1908-</persname>
          <geogname encodinganalog="651" source="lcsh">Brazil--History--20th century--Sources</geogname>
          <geogname encodinganalog="651" source="lcsh">Caribbean area--History--20th century--Sources</geogname>
-         <corpname encodinganalog="610" source="lcnaf">United Service Organizations (U.S.)--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">Young Women's Christian Association of the U.S.A.--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">Young Women's Christian Association--South America--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">Young Women's Christian Association--World War, 1939-1945--War Work</corpname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">diaries</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">photographs</genreform>
+         <persname encodinganalog="600" source="naf">George, Virginia Heim, 1908-</persname>
+         <corpname encodinganalog="610" source="naf">United Service Organizations (U.S.)--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Young Women's Christian Association of the U.S.A.--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Young Women's Christian Association--South America--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">Young Women's Christian Association--World War, 1939-1945--War Work</corpname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1246"
+                   source="local_inmagic-people">George, Virginia Heim</persname>
+    
       </controlaccess>
-      <dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. PERSONAL</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_e859be5ea76d0df0504846754454868e" level="file">
                <did>
                   <unittitle>Correspondence</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_db150f9f7452d3bc0b1ce45351955867" level="file">
                   <did>
                      <unittitle>Outgoing to family</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_f9c2653837b192f16329ca989eb681eb" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">1</container>
-                        <unittitle>
-                           <unitdate>1940</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1940/1940">1940</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_3faa854a4d6b4b1b7d7b7c46a8ac37a1"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_49f41ffc1dabaec5a2ca305bea0dd0bf"
+                                   parent="aspace_3faa854a4d6b4b1b7d7b7c46a8ac37a1"
+                                   type="folder">1</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_5d9be03453d1008e1f81d3a0343d9961" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">2</container>
-                        <unittitle>
-                           <unitdate>1941</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1941/1941">1941</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_b2aeb5cb7c7bb6f8f4ccf9b3b326638f"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_7e28bb52a0b367c5e9bbb363000bc5e8"
+                                   parent="aspace_b2aeb5cb7c7bb6f8f4ccf9b3b326638f"
+                                   type="folder">2</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_83eca6ab0b85250fa72562b325d97a52" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">3</container>
-                        <unittitle>
-                           <unitdate>1943</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1943/1943">1943</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_b52abad42c722854f340a85e6c2e7bb3"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_4c4a69f651903f622c80a8c489d1587f"
+                                   parent="aspace_b52abad42c722854f340a85e6c2e7bb3"
+                                   type="folder">3</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_4c61dfbac2555c27bcdf3069a326265b" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">4</container>
-                        <unittitle>
-                           <unitdate>1944 Feb-Jun</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1944-02/1944-06"
+                                  type="inclusive">1944 Feb-Jun</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_ac8d5fb6394cd269d305865a1fdf4b13"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_e6a88f4aaeedd5c3e51af1bb434a2469"
+                                   parent="aspace_ac8d5fb6394cd269d305865a1fdf4b13"
+                                   type="folder">4</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_981d1a8eeabcdcebde38b08d3e0932db" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">5</container>
-                        <unittitle>
-                           <unitdate>1944 Jul-Dec</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1944-07/1944-12"
+                                  type="inclusive">1944 Jul-Dec</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_5481aa9e27aecc6ccbcac9925f75471e"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_e6ce426034a271e460580b02ebb3ee5d"
+                                   parent="aspace_5481aa9e27aecc6ccbcac9925f75471e"
+                                   type="folder">5</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_52418307b83337e59d011e33d4038604" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">6</container>
-                        <unittitle>
-                           <unitdate>1945 Jan-Jun</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1945-01/1945-06"
+                                  type="inclusive">1945 Jan-Jun</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_80f1ddc60f693ea25e5009e0f513d29a"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_2bd34855f8aff162d0355def73945a24"
+                                   parent="aspace_80f1ddc60f693ea25e5009e0f513d29a"
+                                   type="folder">6</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_92992c1857ed51cf85d6367782546810" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">7</container>
-                        <unittitle>
-                           <unitdate>1945 Jul-Dec</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1945-07/1945-12"
+                                  type="inclusive">1945 Jul-Dec</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_e239d43c91744b13a831f656ea60f485"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_e932ab75432e0a827752622b5185bebf"
+                                   parent="aspace_e239d43c91744b13a831f656ea60f485"
+                                   type="folder">7</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_7a2989cb0afab8473df8ca7874bb0edb" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">8</container>
-                        <unittitle>
-                           <unitdate>1946 Jan-Jun</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1946-01/1946-06"
+                                  type="inclusive">1946 Jan-Jun</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_4575bf3b3939073d2344643611f9c1cf"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_147f5eae0721d2007135b3afacf3bf6a"
+                                   parent="aspace_4575bf3b3939073d2344643611f9c1cf"
+                                   type="folder">8</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_03a56bee1c07d8fad11a8f4fb41d5a56" level="file">
                      <did>
-                        <container type="box" label="mixed materials">1</container>
-                        <container type="folder" label="mixed materials">9</container>
-                        <unittitle>
-                           <unitdate>1946 Jul-Dec</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1946-07/1946-12"
+                                  type="inclusive">1946 Jul-Dec</unitdate>
+                        <container altrender="Half legal document box"
+                                   id="aspace_a960b6febb7c86a14196e50eabf5e350"
+                                   label="Mixed Materials"
+                                   type="box">1</container>
+                        <container id="aspace_d638149cc9ed376e3e5baa6a37d50440"
+                                   parent="aspace_a960b6febb7c86a14196e50eabf5e350"
+                                   type="folder">9</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_2a6777801e9a01bde8cdea56cf0f4517" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">10</container>
-                        <unittitle>
-                           <unitdate>1947</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_f4cbeef78d9f944210b129196227c2e0"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_f1d95155052367d9f58905464cfe83f9"
+                                   parent="aspace_f4cbeef78d9f944210b129196227c2e0"
+                                   type="folder">10</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_871e532777d6ba4776bd081676809aab" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">11</container>
-                        <unittitle>
-                           <unitdate>1948</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_e6fd23822113d8718c6463e5e371b74e"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_f65df874fb771b30a1b052733d2c94d4"
+                                   parent="aspace_e6fd23822113d8718c6463e5e371b74e"
+                                   type="folder">11</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_a3a8965371ac6d6d3b2c98fb8d265e68" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">12</container>
-                        <unittitle>
-                           <unitdate>1951-81</unitdate>
-                        </unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1951/1981"
+                                  type="inclusive">1951-81</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_efe6725aea5c9d02d20c8fbe573c6a08"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_f7bc3b478d3f9e38dae0a8c898e1dc70"
+                                   parent="aspace_efe6725aea5c9d02d20c8fbe573c6a08"
+                                   type="folder">12</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fbb5c4ab5a8ee0d1c21413b868416606" level="file">
                   <did>
                      <unittitle>Incoming</unittitle>
                   </did>
-                  <c04 level="file">
+                  <c04 id="aspace_93cf0ff9021c037e92e0906213d621be" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">13</container>
-                        <unittitle>Mildred Heim Gumm (sister),<unitdate> 1945-50</unitdate>
-                        </unittitle>
+                        <unittitle>Mildred Heim Gumm (sister)</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1945/1950"
+                                  type="inclusive">1945-50</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_cd88e27df678a50632d6834c5dbe1082"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_eceac8367acfae76acc8c5a69857771b"
+                                   parent="aspace_cd88e27df678a50632d6834c5dbe1082"
+                                   type="folder">13</container>
                      </did>
                   </c04>
-                  <c04 level="file">
+                  <c04 id="aspace_501939c7eaea2842bb73212cd2bdecfc" level="file">
                      <did>
-                        <container type="box" label="mixed materials">2</container>
-                        <container type="folder" label="mixed materials">14</container>
-                        <unittitle>Friends,<unitdate> 1945-46, undated</unitdate>
-                        </unittitle>
+                        <unittitle>Friends</unittitle>
+                        <unitdate calendar="gregorian"
+                                  era="ce"
+                                  normal="1945/1946"
+                                  type="inclusive">1945-46</unitdate>
+                        <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                        <container altrender="Legal document box"
+                                   id="aspace_4e5a5ca28f6091162132d75aade4f5f0"
+                                   label="Mixed Materials"
+                                   type="box">2</container>
+                        <container id="aspace_36f186cd18fa7e4a53114f9d79013e6e"
+                                   parent="aspace_4e5a5ca28f6091162132d75aade4f5f0"
+                                   type="folder">14</container>
                      </did>
                   </c04>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_0cfb15668000560ad1ce9f9aefb20cb4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">15</container>
                      <unittitle>Miscellaneous</unittitle>
+                     <container altrender="Legal document box"
+                                id="aspace_c6dfb109331a87f0917763c220e2fa7b"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_56fce107fc03750b4d4e55b9e4a17b2b"
+                                parent="aspace_c6dfb109331a87f0917763c220e2fa7b"
+                                type="folder">15</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cdd0cf6926fc570b0b25949a691bd1b5" level="file">
                <did>
                   <unittitle>Diaries</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_356dd4e34fefc387956d82f94878e7d9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">16</container>
-                     <unittitle>
-                        <unitdate>Jul-Nov 1940 (Brazil)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">Jul-Nov 1940 (Brazil)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_cbbe6a8225026e446e0b94a5c9430f97"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_87a8293e8abe4e99bfc35a855594a273"
+                                parent="aspace_cbbe6a8225026e446e0b94a5c9430f97"
+                                type="folder">16</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b728a96b6140c5762811a9eb949e0955" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>Jan-Feb 1941 (Brazil)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">Jan-Feb 1941 (Brazil)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_66eb69ee444421eb51cd3507c03fe401"
+                                label="Mixed Materials"
+                                type="box">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b825b1ed33f67e2bd071f895edd0249a" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">17</container>
-                     <unittitle>
-                        <unitdate>Jan-Feb 1943 (Brazil-San Francisco River trip)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">Jan-Feb 1943 (Brazil-San Francisco River trip)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_e1d32a32d5dab4a0d35591bc46ae9787"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_180519874a4a11afa960d3832082783d"
+                                parent="aspace_e1d32a32d5dab4a0d35591bc46ae9787"
+                                type="folder">17</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_a2bae46d2a3793fd2d5c292d423dfd20" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>1945-46 (Puerto Rico, Czechoslovakia)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1945-46 (Puerto Rico</unitdate>
+                     <unitdate calendar="gregorian" era="ce">Czechoslovakia)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_b83736e9e6dfed86f5ff3c9dca9c0bde"
+                                label="Mixed Materials"
+                                type="box">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_751d2b448f3511bdf7a2c6dc45cedc25" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">18</container>
-                     <unittitle>
-                        <unitdate>1946-47 (Czechoslovakia)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1946-47 (Czechoslovakia)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_60331e42aa80408902555f813183be55"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_cb01eab018ab4c70332e5aa087f61dd8"
+                                parent="aspace_60331e42aa80408902555f813183be55"
+                                type="folder">18</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_e49f15bbae276e49a91b1f0207c60e98" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>1947-48 (Scandinavia, Czechoslovakia, Switzerland)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" certainty="approximate" era="ce">1947-48 (Scandinavia</unitdate>
+                     <unitdate calendar="gregorian" era="ce">Czechoslovakia</unitdate>
+                     <unitdate calendar="gregorian" era="ce">Switzerland)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_ae46d9f84886706f68eb8619fa4c2317"
+                                label="Mixed Materials"
+                                type="box">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_52c860bce8ef7d7d71353189531f0849" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">19</container>
-                     <unittitle>
-                        <unitdate>1959? (U.S. trip itinerary)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" certainty="questionable" era="ce">1959? (U.S. trip itinerary)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_1cfa5cec160eb673ceea3fab9e78502d"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ed1b87f4c34dbdc5229efc049c63651b"
+                                parent="aspace_1cfa5cec160eb673ceea3fab9e78502d"
+                                type="folder">19</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_b93dc8257497506f0dab7d60268b6f0b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>1965 (Czechoslovakia)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1965 (Czechoslovakia)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_8442428ecca3ea7b8b62a69898249dc9"
+                                label="Mixed Materials"
+                                type="box">2</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_fe3ccc26377350e00a96c37743379875" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <unittitle>
-                        <unitdate>1981 (Czechoslovakia)</unitdate>
-                     </unittitle>
+                     <unitdate calendar="gregorian" era="ce">1981 (Czechoslovakia)</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_95e9a4969b0c5a23dddf9d63d0695642"
+                                label="Mixed Materials"
+                                type="box">2</container>
                   </did>
                </c03>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. PROFESSIONAL</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_1633c9497f3e5939c9d815129271456d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Clippings, articles,<unitdate> 1925-75</unitdate>
-                  </unittitle>
+                  <unittitle>Clippings, articles</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925/1975"
+                            type="inclusive">1925-75</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_f9fa16cae7e240332bac7f171f218f91"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_5b5cbb220621597e20c20915d881c946"
+                             parent="aspace_f9fa16cae7e240332bac7f171f218f91"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a84631e8202b3a99d9fad4d46fd41356" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Reports, speech,<unitdate> 1945, 1948</unitdate>
-                  </unittitle>
+                  <unittitle>Reports, speech</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1945/1945">1945</unitdate>
+                  <unitdate normal="1948/1948">1948</unitdate>
+                  <container altrender="Legal document box"
+                             id="aspace_125b4f69f97e6dba3b1c2815dced77f8"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_97cf4afdd28dcad09ebbe42fa3c00f07"
+                             parent="aspace_125b4f69f97e6dba3b1c2815dced77f8"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_23be9fdc0291b1f80a46865bae9e8fe9" level="file">
                <did>
                   <unittitle>Photographs</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_04f9aedb2d95abde0e456ca1c4aa08a9" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">22</container>
                      <unittitle>YWCA</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1940/1943"
+                               type="inclusive">1940-1943, 1960's</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_e1a48a6e17ff14b558bb31eea73dc61c"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_17eeea9c1d0a58eeb60c2c13a0c16af5"
+                                parent="aspace_e1a48a6e17ff14b558bb31eea73dc61c"
+                                type="folder">22</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_d71d5e9e06ca6930754366f363de505b" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">23</container>
                      <unittitle>USO</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1943/1945"
+                               type="inclusive">1943-1945</unitdate>
+                     <container altrender="Legal document box"
+                                id="aspace_62b3f9f0ba53377a8c5847f6ac7611da"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_2c8bb2c352bc4eee3ea861fd211a0390"
+                                parent="aspace_62b3f9f0ba53377a8c5847f6ac7611da"
+                                type="folder">23</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_3905ace74f4cce416ac23a939217c455" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">24</container>
-                     <unittitle>Puerto Rico</unittitle>
+                     <unittitle>Brazil, n.d.</unittitle>
+                     <container altrender="Legal document box"
+                                id="aspace_d6b4bac438ea39ecb3432049c48ce699"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_e233d22b8e6f95bf49cea4fd9e01f78d"
+                                parent="aspace_d6b4bac438ea39ecb3432049c48ce699"
+                                type="folder">24</container>
                   </did>
                </c03>
             </c02>
