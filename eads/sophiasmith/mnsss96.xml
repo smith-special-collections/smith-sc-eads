@@ -1,883 +1,1257 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ead xmlns:xlink="http://www.w3.org/TR/xlink/">
-   <eadheader audience="internal" findaidstatus="unverified-full-draft" id="head" langencoding="iso639-2b">
-      <eadid countrycode="us" mainagencycode="mnsss" publicid="-//us::mnsss//TEXT us::mnsss::mnsss96.xml//EN">mnsss96</eadid>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead
+  PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "../../dtds/ead.dtd">
+<ead>
+   <eadheader countryencoding="iso3166-1"
+              dateencoding="iso8601"
+              findaidstatus="Legacy Finding Aid (updated)"
+              langencoding="iso639-2b"
+              repositoryencoding="iso15511">
+      <eadid countrycode="US" mainagencycode="mnsss">mnsss96</eadid>
       <filedesc>
          <titlestmt>
-            <titleproper encodinganalog="245$a">International Council of Women Records, 1888-1959
-        </titleproper>
-            <subtitle>Finding Aid</subtitle>
-            <author encodinganalog="245$c">Finding aid prepared by Amy Hague</author>
+            <titleproper>Finding aid to the International Council of Women records <num>SSC.MS.00352</num>
+            </titleproper>
+            <author>Finding aid prepared by Amy Hague</author>
             <sponsor>Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
          </titlestmt>
          <publicationstmt>
-            <publisher encodinganalog="260$b">Sophia Smith Collection, Smith College</publisher>
+            <publisher>Sophia Smith Collection</publisher>
+            <p>
+               <date>2003</date>
+            </p>
             <address>
-               <addressline>Northampton, MA</addressline>
+               <addressline>Young Library</addressline>
+               <addressline>4 Tyler Drive</addressline>
+               <addressline>Northampton, MA 01063</addressline>
+               <addressline>specialcollections@smith.edu</addressline>
+               <addressline>URL: <extptr href="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"
+                          show="new"
+                          title="http://next.smith.edu/libraries/special-collections/about/sophia-smith-collection-womens-history"/>
+               </addressline>
             </address>
-            <date encodinganalog="260$c">2003 </date>
-            <p>Smith College. All rights reserved.</p>
          </publicationstmt>
       </filedesc>
       <profiledesc>
-         <creation encodinganalog="500">Finding aid encoded using Perl scripts and edited in XMetal 2.0. Encoded by Laura Cutter.
-        <date>2003-06-12</date>
-         </creation>
+         <creation>This finding aid was produced using ArchivesSpace on <date>2019-04-22 14:50:55 -0400</date>.</creation>
          <langusage>Finding aid written in English.</langusage>
+         <descrules>Describing Archives: A Content Standard</descrules>
       </profiledesc>
       <revisiondesc>
          <change>
-            <date normal="2005-09-23">2005-09-23</date>
+            <date>07/26/2017</date>
+            <item>This resource was modified by the ArchivesSpace Preprocessor developed by the Harvard Library (https://github.com/harvard-library/archivesspace-preprocessor)</item>
+         </change>
+         <change>
+            <date>2005-09-23</date>
             <item>mnsss96 converted from EAD 1.0 to 2002 by v1to02-5c.xsl (sy2003-10-15).</item>
+         </change>
+         <change>
+            <date>2017-07-26T17:48:24-04:00</date>
+            <item>This record was migrated from InMagic DB Textworks to ArchivesSpace. </item>
+         </change>
+         <change>
+            <date>2019-04-22</date>
+            <item>Made paper FA pencil edit change and updated finding aid.</item>
          </change>
       </revisiondesc>
    </eadheader>
-   <frontmatter id="front">
-      <titlepage>
-         <publisher encodinganalog="260$b">Sophia Smith Collection Smith College
-         
-            
-         </publisher>
-         <titleproper encodinganalog="245$a">International Council of Women Records, 1888-1959
-      </titleproper>
-         <subtitle>Finding Aid</subtitle>
-         <num>MS 352
-      </num>
-         <author encodinganalog="245$c">Finding aid prepared by Amy Hague</author>
-         <date>Revised 2002
-      </date>
-         
-         <sponsor id="encoding_sponsor">Encoding funded by the Andrew W. Mellon Foundation.</sponsor>
-         <p>© 2003  Smith College. All rights reserved.</p>
-      </titlepage>
-   </frontmatter>
-   <archdesc level="collection" relatedencoding="MARC21">
-      <did id="main">
-         <head>Collection Overview</head>
-         <origination label="Creator:">
-            <corpname encodinganalog="110" source="lcnaf">International Council of Women </corpname>
-         </origination>
-         <unittitle encodinganalog="245$a" label="Title:">International Council of Women records</unittitle><unitdate encodinganalog="245$f" type="inclusive">1888-1959</unitdate>
-         
-         <unitid countrycode="us" encodinganalog="099" label="Collection Number:" repositorycode="mnsss">MS 352</unitid>
-         <physdesc label="Quantity:">
-            <extent encodinganalog="300$a">4 boxes</extent>
-            <extent encodinganalog="300$a">(1.5 linear ft.)</extent>
-         </physdesc>
-                  <repository label="Location:">
-            <corpname>Sophia Smith Collection</corpname>
-            <address>
-               <addressline>Smith College</addressline>
-               <addressline>Northampton, MA</addressline>
-            </address>
-	  </repository>
-         <abstract encodinganalog="520$a" label="Abstract:">A small collection, including correspondence, minutes and committee reports; records of international  conferences; constitutions; membership lists; and publications, including biographical information on ICW leaders.  Topics include fine arts, health, education, housing, suffrage, laws, social welfare, trades and professions, The United Nations, and peace.
-      </abstract>
-         <langmaterial encodinganalog="546" label="Language of Material:">
-            <language langcode="eng">English.</language>
+   <archdesc level="collection">
+      <did>
+         <langmaterial>
+            <language langcode="eng">English</language>
          </langmaterial>
+         <repository>
+            <corpname>Sophia Smith Collection</corpname>
+         </repository>
+         <unittitle>International Council of Women records</unittitle>
+         <origination label="creator">
+            <corpname source="naf">International Council of Women</corpname>
+         </origination>
+         <unitid>SSC.MS.00352</unitid>
+         <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">1.5 linear feet</extent>
+            <extent altrender="carrier">(4 containers)</extent>
+         </physdesc>
+         <unitdate calendar="gregorian"
+                   era="ce"
+                   normal="1888/1981"
+                   type="inclusive">1888-1981</unitdate>
+         <abstract id="aspace_62ee0410a70556061591b2ac3535e614">The International Council of Women, founded in 1888, was one of the first international women's organizations. The second international conference of the National Woman Suffrage Association, called by Susan B. Anthony, May Wright Sewall, and other suffragists, created the ICW. This is a small collection, including correspondence, minutes and committee reports, records of international conferences, constitutions, membership lists, and publications, including biographical information on ICW leaders. Topics include fine arts, health, education, housing, suffrage, laws, social welfare, trades and professions, The United Nations, and peace.</abstract>
       </did>
-      <bioghist id="bioghist">
-         
-         <p> The International Council of Women (ICW), founded in 1888, was one of the first international women's organizations.  The second international conference of the National Woman Suffrage Association, called by Susan B. Anthony,  May Wright Sewall, and other suffragists, created the ICW.  The aim of the conference was to form a National Council of Women in each self-governing country of the world.  The councils would bring women from many countries together to work for women, not only in the cause of suffrage, but on many fronts.  The United States National Council formed immediately, but progress elsewhere was slow.  By 1893, Canada had formed a national body.  In Great Britain the National Union of Women Workers federated with the National Council of Women in 1898 and later changed its name to the  International Council of Women.  By 1938 the number of councils affiliated with the ICW, which had developed into one of the best known and most consulted of women's international organizations, had risen to thirty-six.</p>
- 
-         <p> In the early years of its existence, the ICW  promoted National Councils and gained acceptance in the international community, but it's primary activity was planning the regular congresses.  The ICW, regarded by members of other women's groups as the most  conservative of women's international organizations, took pride in it's reputation, viewing it as a consequence of maintaining a broad program.  It's early refusal to take a position on suffrage contributed to the formation of more radical organizations, such as  the International Alliance of Women.  In 1899, the Council began to take on more substantive issues, forming an International Standing Committee on Peace and International Arbitration.  Other standing committees were soon established, and through them, the ICW became involved in issues from suffrage to health.</p>
-         <p> World War II caused great disorganization in the Council's work.  Some national councils discontinued their work altogether; in others the leadership and organization were disrupted.  In 1946, the ICW met in Philadelphia to re-focus its efforts and recover its former unity.  The Conference issued a statement condemning war and all crimes against humanity, as well as demanding a more active role for women in the national and international arena.</p>
-         <p> Since its inception in 1888, the ICW's aims have been consistent-the unification of women's organizations for action to promote human rights, sexual equality, peace, and women's involvement in the international sphere.  As of 2002, there are National Councils in seventy-five countries, and Regional Councils in America and Europe.  The ICW continues to organize women globally, focusing on local education and health programs.</p>
-         <p> For further information about the ICW see:  Worlds of Women: The Making of an International Women's Movement by Leila J. Rupp (Princeton University Press: Princeton, NJ, 1997).</p>
+      <bioghist id="aspace_bioghist">
+         <head>Biographical / Historical</head>
+         <p>The International Council of Women (ICW), founded in 1888, was one of the first international women's organizations. The second international conference of the National Woman Suffrage Association, called by Susan B. Anthony, May Wright Sewall, and other suffragists, created the ICW. The aim of the conference was to form a National Council of Women in each self-governing country of the world. The councils would bring women from many countries together to work for women, not only in the cause of suffrage, but on many fronts. The United States National Council formed immediately, but progress elsewhere was slow. By 1893, Canada had formed a national body. In Great Britain the National Union of Women Workers federated with the National Council of Women in 1898 and later changed its name to the International Council of Women. By 1938 the number of councils affiliated with the ICW, which had developed into one of the best known and most consulted of women's international organizations, had risen to thirty-six.</p>
+         <p>  In the early years of its existence, the ICW promoted National Councils and gained acceptance in the international community, but it's primary activity was planning the regular congresses. The ICW, regarded by members of other women's groups as the most conservative of women's international organizations, took pride in it's reputation, viewing it as a consequence of maintaining a broad program. It's early refusal to take a position on suffrage contributed to the formation of more radical organizations, such as the International Alliance of Women. In 1899, the Council began to take on more substantive issues, forming an International Standing Committee on Peace and International Arbitration. Other standing committees were soon established, and through them, the ICW became involved in issues from suffrage to health.</p>
+         <p>  World War II caused great disorganization in the Council's work. Some national councils discontinued their work altogether; in others the leadership and organization were disrupted. In 1946, the ICW met in Philadelphia to re-focus its efforts and recover its former unity. The Conference issued a statement condemning war and all crimes against humanity, as well as demanding a more active role for women in the national and international arena.</p>
+         <p>  Since its inception in 1888, the ICW's aims have been consistent-the unification of women's organizations for action to promote human rights, sexual equality, peace, and women's involvement in the international sphere. As of 2002, there are National Councils in seventy-five countries, and Regional Councils in America and Europe. The ICW continues to organize women globally, focusing on local education and health programs.</p>
+         <p>  For further information about the ICW see: <title render="italic">Worlds of Women: The Making of an International Women's Movement</title> by Leila J. Rupp (Princeton University Press: Princeton, NJ, 1997).</p>  
       </bioghist>
-      <scopecontent id="scope">
-         
-         <p> The International Council of Women Records are by no means the complete body of records for this organization.  They appear to be a more idiosyncratic collection, possibly donated by a member active in the 1950s and 1960s.  They include  correspondence, minutes and committee reports; records of international  conferences; constitutions; membership lists; and publications, including biographical information on  Lady Ishbel Aberdeen, Rachel Foster Avery, May Wright Sewall, Frances Willard, and other ICW leaders.  The committee files include material regarding the ICW's activities in specific subject areas, such as fine arts, health, education, housing, suffrage, laws, social welfare, trades and professions, The United Nations, and peace.  Correspondents include Vera Beggs and Alice M.Stetten.</p>
+      <scopecontent id="aspace_scope">
+         <head>Scope and Contents</head>
+         <p>The International Council of Women records are by no means the complete body of records for this organization. They appear to be a more idiosyncratic collection, possibly donated by a member active in the 1950s and 1960s. They include correspondence, minutes and committee reports; records of international conferences; constitutions; membership lists; and publications, including biographical information on Lady Ishbel Aberdeen, Rachel Foster Avery, May Wright Sewall, Frances Willard, and other ICW leaders. The committee files include material regarding the ICW's activities in specific subject areas, such as fine arts, health, education, housing, suffrage, laws, social welfare, trades and professions, The United Nations, and peace. Correspondents include Vera Beggs and Alice M.Stetten.</p>  
       </scopecontent>
-      <arrangement encodinganalog="351$a" id="scope-org">
-         
-         <p>This collection is organized into five series:</p>
-         <list>
-            <item>
-               I. Organization and Administration
-            </item>
-            <item>
-               II. Committees
-            </item>
-            <item>
-               III. Conferences and Meetings
-            </item>
-            <item>
-               IV. Publications
-            </item>
-            <item>
-               V. National Councils
-            </item>
+      <arrangement id="aspace_scope-org">
+         <head>Arrangement</head>
+         <p>This collection is organized into five series:</p>    
+         <list type="ordered">
+            <item>I. Organization and Administration</item>
+            <item>II. Committees</item>
+            <item>III. Conferences and Meetings</item>
+            <item>IV. Publications</item>
+            <item>V. National Councils</item>
          </list>
       </arrangement>
-      <descgrp id="admin" type="admininfo">
-         <head>Information on Use</head>
-         <descgrp type="admininfo">
-            <head>Terms of Access and Use</head>
-            <accessrestrict encodinganalog="506" id="admin-access">
-               <p>The Records are open to research according to the regulations of the Sophia Smith Collection.  </p>
-            </accessrestrict>
-            <userestrict encodinganalog="540" id="admin-use">
-               <p>The copyright owner of this collection is unknown. It is the responsibility of the researcher to identify and satisfy the holders of all copyrights. Permission to publish reproductions or quotations beyond "fair use" must also be obtained from the Sophia Smith Collection as owners of the physical property.
-          </p>
-            </userestrict>
-         </descgrp>
-         <prefercite id="admin-cite">
-            <head>Preferred Citation</head>
-            <p>Please use the following format when citing materials from this collection:</p>
-            <p>International Council of Women Records, Sophia Smith Collection, Smith College, Northampton, Mass.</p>
-         </prefercite>
-         <descgrp type="admininfo">
-            <head>History of the Collection</head>
-            <acqinfo id="admin-acqinfo">
-               <p>The provenance of the ICW Records is unknown.  It appears that a member of the Council, possibly Grace Gallatin Seton, whose papers are also in the SSC, may have donated her own files. </p>
-            </acqinfo>
-             <processinfo id="admin-process">
-               <p>Reprocessed by Amy Hague, 2002 .</p>
-            </processinfo>
-         </descgrp>
-      </descgrp>
-      <controlaccess id="subj">
-         <head>Search Terms</head>
-         
-         <corpname encodinganalog="610" source="lcnaf">International Council of Women--History--Sources</corpname>
-         <corpname encodinganalog="610" source="lcnaf">National Council of Women of the United States--History--Sources</corpname>
+      <prefercite id="aspace_admin-cite">
+         <head>Preferred Citation</head>
+         <p>International Council of Women records, Sophia Smith Collection, SSC-MS-00352, Smith College Special Collections, Northampton, Massachusetts.</p>  
+      </prefercite>
+      <accessrestrict id="aspace_admin-access">
+         <head>Conditions Governing Access</head>
+         <p>This collection is open for use without restriction beyond the standard terms and conditions of Smith College Special Collections.</p>  
+      </accessrestrict>
+      <userestrict id="aspace_admin-use">
+         <head>Conditions Governing Use</head>
+         <p>Materials in this collection may be governed by copyright. For reproductions of materials that are governed by fair use as defined under U. S. Copyright Law, no permission to cite or publish is required. Researchers are responsible for determining who may hold materials' copyrights and obtaining approval from them. Researchers do not need anything further from Smith College Special Collections to move forward with their use.</p>  
+      </userestrict>
+      <acqinfo id="aspace_admin-acqinfo">
+         <head>Immediate Source of Acquisition</head>
+         <p>The provenance of the ICW Records is unknown. It appears that a member of the Council, possibly Grace Gallatin Seton, whose papers are also in the SSC, may have donated her own files.</p>  
+      </acqinfo>
+      <bibliography id="aspace_2593b824da229c07cb0384893be42124">
+         <head>Bibliography</head>
+         <p>Rupp, Leila J. Worlds of Women: The Making of an International Women's Movement. (Princeton University Press: Princeton, NJ, 1997).</p>  
+      </bibliography>
+      <controlaccess>
          <subject encodinganalog="650" source="lcsh">Women--International cooperation--History--20th century--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women--Societies and clubs--United States--History--Sources</subject>
          <subject encodinganalog="650" source="lcsh">Women's rights--Congresses--History--Sources</subject>
-         <persname encodinganalog="600" source="lcnaf">Aberdeen, Ishbel, 1857-1939</persname>
-         <persname encodinganalog="600" source="lcnaf">Avery, Rachel Foster, 1858-</persname>
-         <persname encodinganalog="600" source="lcnaf">Eder, Jeanne--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Beggs, Vera W. (Vera Wadsworth), d. 1968--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Gilman, Charlotte Perkins, 1860-1935</persname>
-         <persname encodinganalog="600" source="lcnaf">Salomon, Alice, 1872-1948</persname>
-         <persname encodinganalog="600" source="lcnaf">Sewall, May Wright, 1844-1920</persname>
-         <persname encodinganalog="600" source="lcnaf">Stetten, Alice Mayer, 1887-1972.--Correspondence</persname>
-         <persname encodinganalog="600" source="lcnaf">Willard, Frances Elizabeth, 1839-1898</persname>
+         <genreform encodinganalog="655" source="local_inmagic-collection">correspondence</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Publications</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Biographical sketches</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">clippings</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">reports</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Membership lists</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Constitutions</genreform>
+         <genreform encodinganalog="655" source="local_inmagic-collection">Minutes</genreform>
+         <corpname encodinganalog="610" source="naf">International Council of Women--History--Sources</corpname>
+         <corpname encodinganalog="610" source="naf">National Council of Women of the United States--History--Sources</corpname>
+         <persname encodinganalog="600" source="naf">Aberdeen, Ishbel, 1857-1939</persname>
+         <persname encodinganalog="600" source="naf">Avery, Rachel Foster, 1858-</persname>
+         <persname encodinganalog="600" source="naf">Eder, Jeanne--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Beggs, Vera W. (Vera Wadsworth), d. 1968--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Gilman, Charlotte Perkins, 1860-1935</persname>
+         <persname encodinganalog="600" source="naf">Salomon, Alice, 1872-1948</persname>
+         <persname encodinganalog="600" source="naf">Sewall, May Wright, 1844-1920</persname>
+         <persname encodinganalog="600" source="naf">Stetten, Alice Mayer, 1887-1972.--Correspondence</persname>
+         <persname encodinganalog="600" source="naf">Willard, Frances Elizabeth, 1839-1898</persname>
+         <persname encodinganalog="600"
+                   authfilenumber="people_1348"
+                   source="local_inmagic-people">unknown</persname>
+         <corpname encodinganalog="610" source="local_inmagic-collection">International Council of Women</corpname>
       </controlaccess>
-      <descgrp id="addinfo" type="add">
-         <head>Additional Information</head>
-         <bibliography>
-            <head>Bibliography</head>
-            <p>Rupp, Leila J.  Worlds of Women: The Making of an International Women's Movement. (Princeton University Press: Princeton, NJ, 1997).</p>
-         </bibliography>
-      </descgrp>
-      <!-- Begin series descriptions -->
-
-<dsc type="analyticover">
-  <c01 level="series">
+      <dsc>
+         <c01 id="aspace_list-ser1" level="series">
             <did>
                <unittitle>SERIES I. ORGANIZATION AND ADMINISTRATION</unittitle>
             </did>
-            <scopecontent>
-               <p>There is a small amount of material in this series, including constitutions and by-laws, histories and memorabilia, biographical material on Alice Salomon,  correspondence, and miscellaneous material.</p>
+            <scopecontent id="aspace_f93482307f7fefc8faa005b9a52210b3">
+               <head>Scope and Contents</head>
+               <p>There is a small amount of material in this series, including constitutions and by-laws, histories and memorabilia, biographical material on Alice Salomon, correspondence, and miscellaneous material.</p>
             </scopecontent>
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES II. COMMITTEES</unittitle>
-            </did>
-            <scopecontent>
-               <p>This series consists of general material relating to standing committees, as well as documents produced by individual committees covering subject areas such as arts and letters, cinema, education, housing, international relations and peace, social welfare, and trades and professions (arranged alphabetically by committee name).  The bulk of the items were created in the 1950s and 60s.</p>
-            </scopecontent>
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES III. CONFERENCES AND MEETINGS</unittitle>
-            </did>
-            <scopecontent>
-               <p>This largest series contains records of ICW Conferences and meetings, arranged chronologically.  There is one folder of material related to board meetings in the 1950s and 1960s.</p>
-            </scopecontent>
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES IV. PUBLICATIONS</unittitle>
-            </did>
-            <scopecontent>
-               <p>This series is a miscellaneous collection of various ICW published reports, newsletters and other periodicals, pamphlets, press releases, and newspaper clippings.  As is the case in the other series, the bulk of the material was published in the 1950s and 1960s.</p>
-            </scopecontent>
- </c01>
-  <c01 level="series">
-            <did>
-               <unittitle>SERIES V. NATIONAL COUNCILS</unittitle>
-            </did>
-            <scopecontent>
-               <p>This series is arranged alphabetically by country, contains small files on many of the National Councils, again primarily from the 1950s-60s, consisting primarily of  constitutions, correspondence, reports, and lists.</p>
-            </scopecontent>
- </c01>
-
-</dsc>
-
-<!-- End series descriptions -->
-
-<!-- Begin container list -->
-
-<dsc id="list-contlist" type="in-depth">
-         <c01 id="list-ser1" level="series">
-            <did>
-               <unittitle>SERIES I. ORGANIZATION AND ADMINISTRATION</unittitle>
-            </did>
-            <c02 level="file">
+            <c02 id="aspace_e7ad7570cc06115d3029bd9d9920cd24" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">1</container>
                   <unittitle>Contents</unittitle>
+                  <container id="aspace_3813340ab6f302d52a9207144571ccfd"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_156c09a5b2518c948bf8d9e2d533e4e3"
+                             parent="aspace_3813340ab6f302d52a9207144571ccfd"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_e7bf7846862a1e0acb06ed9ab8e86bae" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Constitution and by-laws, <unitdate>1936, 1953-54, 1962, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Constitution and by-laws</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <unitdate normal="1953/1954" type="inclusive">1953-54</unitdate>
+                  <unitdate normal="1962/1962">1962</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_0c1b0e5484e6eff9eb5e874d0f0b1913"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_16aeec956c639cabb3ed9b95b2b75c5d"
+                             parent="aspace_0c1b0e5484e6eff9eb5e874d0f0b1913"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5bdd4f2547e0ee1c8cd36d20bc14121f" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Histories and memorabilia, <unitdate>1888-1963, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Histories and memorabilia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1888/1963"
+                            type="inclusive">1888-1963</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_4549b5c2bf6fb3a2ec517bdd43c14d91"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_a2c034ec956a5dcb94b44dfae4693cf4"
+                             parent="aspace_4549b5c2bf6fb3a2ec517bdd43c14d91"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f024e0d491b14619635256901ba72e86" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Archives, <unitdate>1953-55</unitdate>
-                  </unittitle>
+                  <unittitle>Archives</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1955"
+                            type="inclusive">1953-55</unitdate>
+                  <container id="aspace_237639891494d184f3032bdeea26caf2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_762cf2f719835aaa30c1e52c7f4bf6c7"
+                             parent="aspace_237639891494d184f3032bdeea26caf2"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_48c3c37b944ac68c12ee6a672866dc4b" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Alice Salomon: biographical materials, <unitdate>1981, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Alice Salomon: biographical materials</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1981/1981">1981</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_253f8137ee787bae229d10039c9b9d67"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_6574193a78349a38a0a5191fe8791564"
+                             parent="aspace_253f8137ee787bae229d10039c9b9d67"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_64571ca6bdb87a5880facf02422de599" level="file">
                <did>
                   <unittitle>Correspondence</unittitle>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_9e81e1ebea491623109a343d2f735fac" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">6</container>
-                     <unittitle>Dr. Jeanne Eder, <unitdate>1950-53</unitdate>
-                     </unittitle>
+                     <unittitle>Dr. Jeanne Eder</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1950/1953"
+                               type="inclusive">1950-53</unitdate>
+                     <container id="aspace_dfca7625b90c5e15a31785863fed70c1"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_f5c9b062cb5e62862c07b7d5fe24e0a4"
+                                parent="aspace_dfca7625b90c5e15a31785863fed70c1"
+                                type="folder">6</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_f5d996a675a1943aba5d7533d6f4e675" level="file">
                   <did>
-                     <container type="box" label="mixed materials">1</container>
-                     <container type="folder" label="mixed materials">7</container>
-                     <unittitle>Miscellaneous, <unitdate>1950-59, undated</unitdate>
-                     </unittitle>
+                     <unittitle>Miscellaneous</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1950/1959"
+                               type="inclusive">1950-59</unitdate>
+                     <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                     <container id="aspace_e75c056f3ee6db9a5e9d02bec292a796"
+                                label="Mixed Materials"
+                                type="box">1</container>
+                     <container id="aspace_11cf54ca1c74f2627264e78be4c103ce"
+                                parent="aspace_e75c056f3ee6db9a5e9d02bec292a796"
+                                type="folder">7</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1bdbcc77c8a59e6bb54bad09e15d00ff" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Miscellaneous lists, reports, and mailings, <unitdate>1957-72, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous lists, reports, and mailings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1957/1972"
+                            type="inclusive">1957-72</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_7f34fb678cc65097d038d13fc5352cc2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_4ae6753873be9468b257e44dc3e117bc"
+                             parent="aspace_7f34fb678cc65097d038d13fc5352cc2"
+                             type="folder">8</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser2" level="series">
+         <c01 id="aspace_list-ser2" level="series">
             <did>
                <unittitle>SERIES II. COMMITTEES</unittitle>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_efa14ff8c65bc678e7a63ad87a47a631">
+               <head>Scope and Contents</head>
+               <p>This series consists of general material relating to standing committees, as well as documents produced by individual committees covering subject areas such as arts and letters, cinema, education, housing, international relations and peace, social welfare, and trades and professions (arranged alphabetically by committee name). The bulk of the items were created in the 1950s and 60s.</p>
+            </scopecontent>
+            <c02 id="aspace_c7e7d1894a1d9d6157e1b4d077b79120" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Standing committees, <unitdate>1957-60</unitdate>
-                  </unittitle>
+                  <unittitle>Standing committees</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1957/1960"
+                            type="inclusive">1957-60</unitdate>
+                  <container id="aspace_78b9ffcb8dfdfefb6cc164e29dab2c6f"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_d49e028c0e5c4e7566b787554be097a5"
+                             parent="aspace_78b9ffcb8dfdfefb6cc164e29dab2c6f"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_20184a058da5653c5b4ceb4985c8a238" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Arts and Letters, <unitdate>1950-61</unitdate>
-                  </unittitle>
+                  <unittitle>Arts and Letters</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1961"
+                            type="inclusive">1950-61</unitdate>
+                  <container id="aspace_f2e17c5e5885633d7f7a717e8d2fe777"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_a6797d5f71a13fe9130239b982f47b54"
+                             parent="aspace_f2e17c5e5885633d7f7a717e8d2fe777"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_36db57843089b9aaff20b80d205b2f7e" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Cinema, <unitdate>1931, 1951, 1960, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Cinema</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1931/1931">1931</unitdate>
+                  <unitdate normal="1951/1951">1951</unitdate>
+                  <unitdate normal="1960/1960">1960</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_a3c7e7b3ba0f51dce3ce575b158e3852"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_9334b197ab007ae5a8a946f7782c1800"
+                             parent="aspace_a3c7e7b3ba0f51dce3ce575b158e3852"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c620dc88e0aad5a3a5844878b6f156fa" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>Education, <unitdate>1950-51, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Education</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-51</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_1a5a74d0e4ee9037845a1db6b94fdc49"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_e6f47225ba94b0288f105f4777ec97ef"
+                             parent="aspace_1a5a74d0e4ee9037845a1db6b94fdc49"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7aad7aacdbc6e3914677c9b5b56513d9" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Executive, <unitdate>1951, 1963-64</unitdate>
-                  </unittitle>
+                  <unittitle>Executive</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <unitdate normal="1963/1964" type="inclusive">1963-64</unitdate>
+                  <container id="aspace_11eb550a4e812d754824d8e4107e25c5"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_bd230a36df1a8a047d87b6efb308c2d9"
+                             parent="aspace_11eb550a4e812d754824d8e4107e25c5"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_59bc5977f76cebd44c50661acdd47b95" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>F.A.O. [Food and Agriculture Organization of the U.N. ?], <unitdate>1960?</unitdate>
-                  </unittitle>
+                  <unittitle>F.A.O. [Food and Agriculture Organization of the U.N. ?]</unittitle>
+                  <unitdate calendar="gregorian"
+                            certainty="questionable"
+                            era="ce"
+                            normal="1960/1960">1960?</unitdate>
+                  <container id="aspace_798c2cb0dea66b999301a9bf86c34626"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_179a9faf0d1d5256b218c7ea4112cd39"
+                             parent="aspace_798c2cb0dea66b999301a9bf86c34626"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3812e49b2eae083fd55b35b3a8120f45" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Finance, <unitdate>1950, 1960</unitdate>
-                  </unittitle>
+                  <unittitle>Finance</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate normal="1960/1960">1960</unitdate>
+                  <container id="aspace_26760abdea655f2bb67e3a362224abb1"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_318ae396d2138ea0cf51a195184b0d4a"
+                             parent="aspace_26760abdea655f2bb67e3a362224abb1"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_82cacf1113b63e5d960c1d2e453786e7" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Health, <unitdate>1950</unitdate>
-                  </unittitle>
+                  <unittitle>Health</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <container id="aspace_829f84fcc589eaee6794232eed797e2d"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_1b4f49667be3aaec151bd76679f4c2db"
+                             parent="aspace_829f84fcc589eaee6794232eed797e2d"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5f4f8d8cebef1fbec92619b3d0b60d56" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>Home Economics, <unitdate>1950, 1961-62</unitdate>
-                  </unittitle>
+                  <unittitle>Home Economics</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate normal="1961/1962" type="inclusive">1961-62</unitdate>
+                  <container id="aspace_5fc7c18f42036f59fdda46be55562ea5"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_bfc915db36e88dd8df912e349f2e2043"
+                             parent="aspace_5fc7c18f42036f59fdda46be55562ea5"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_793762370041f8902b5030daa6a09f16" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>Housing, <unitdate>1950, 1963, 1967</unitdate>
-                  </unittitle>
+                  <unittitle>Housing</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1950/1950">1950</unitdate>
+                  <unitdate normal="1963/1963">1963</unitdate>
+                  <unitdate normal="1967/1967">1967</unitdate>
+                  <container id="aspace_3c47e5510740e800fde9fcbcc42c5817"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_fbef6500050c8cddde9c1c5489b4b9a6"
+                             parent="aspace_3c47e5510740e800fde9fcbcc42c5817"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5d31db77bd6c1cfecf972c38740d01fc" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>International Committee for the World Refugee Year, <unitdate>1963</unitdate>
-                  </unittitle>
+                  <unittitle>International Committee for the World Refugee Year</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container id="aspace_40668f93e4af1685f7969ebaeb63d48a"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_bed5de2a25f20be0b3c797d71a3acfaa"
+                             parent="aspace_40668f93e4af1685f7969ebaeb63d48a"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3120eec7dc8c009a1dd49e487ac6229d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>International Relations and Peace, <unitdate>1947, 1960, 1952, undated</unitdate>
-                  </unittitle>
+                  <unittitle>International Relations and Peace</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <unitdate normal="1960/1960">1960</unitdate>
+                  <unitdate normal="1952/1952">1952</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_6c2fe7c063f34a64a7de80b6aa9083c4"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_b6c18aacf95f87efdbb6a0afb461ad33"
+                             parent="aspace_6c2fe7c063f34a64a7de80b6aa9083c4"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6c3b859a10ca7a26e8a687f79c3db82c" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Laws and Suffrage, <unitdate>1950-51, 1967</unitdate>
-                  </unittitle>
+                  <unittitle>Laws and Suffrage</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-51</unitdate>
+                  <unitdate normal="1967/1967">1967</unitdate>
+                  <container id="aspace_b12df9a1824cb309f97d4c47a7aa4a61"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_eb40695fec01dfd5cabdf4af5738eec0"
+                             parent="aspace_b12df9a1824cb309f97d4c47a7aa4a61"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_dad3657cd028ca8a7e24e628cc8be3a6" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">22</container>
-                  <unittitle>Migration, <unitdate>1951, 1963</unitdate>
-                  </unittitle>
+                  <unittitle>Migration</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <unitdate normal="1963/1963">1963</unitdate>
+                  <container id="aspace_434b1350470376a78b1f0d10b49e2fdd"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_b8c688a4c17a4c4920c00cdea1b55648"
+                             parent="aspace_434b1350470376a78b1f0d10b49e2fdd"
+                             type="folder">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_2d8185fc080405938825a0bba56bb394" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>Moral Welfare, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Moral Welfare</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_a623d04497987d2bd772082567d26bf7"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_d8655efc6a334394c86ef0a70fb487dc"
+                             parent="aspace_a623d04497987d2bd772082567d26bf7"
+                             type="folder">23</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_05def127d9fa5c2a939a70cab4959f59" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">24</container>
-                  <unittitle>Radio and Television, <unitdate>1950-51, 1965</unitdate>
-                  </unittitle>
+                  <unittitle>Radio and Television</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-51</unitdate>
+                  <unitdate normal="1965/1965">1965</unitdate>
+                  <container id="aspace_81976884d36b76f0649dfee069ab9e2b"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_a1dea58358f4f43a42d46cdf88f7af67"
+                             parent="aspace_81976884d36b76f0649dfee069ab9e2b"
+                             type="folder">24</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_c512f9ed1277fc849e473900b90db3cc" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>Social Welfare, <unitdate>1950-51, 1960, 1963-64</unitdate>
-                  </unittitle>
+                  <unittitle>Social Welfare</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1951"
+                            type="inclusive">1950-51</unitdate>
+                  <unitdate normal="1960/1960">1960</unitdate>
+                  <unitdate normal="1963/1964" type="inclusive">1963-64</unitdate>
+                  <container id="aspace_ce29d674b0778762c74fba18ed35d8ce"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_f4f2f4e5e16b89197789b3f9e54026c9"
+                             parent="aspace_ce29d674b0778762c74fba18ed35d8ce"
+                             type="folder">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ffe5b740576930e4e7138d8009e7420d" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>Trades and Professions, <unitdate>1963</unitdate>
-                  </unittitle>
+                  <unittitle>Trades and Professions</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container id="aspace_aadab64739f3740aab285dfb7d89b4d2"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_7ad71ada1668e7f8e2ebe69261bc1213"
+                             parent="aspace_aadab64739f3740aab285dfb7d89b4d2"
+                             type="folder">26</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_a4e27c1ff3488048cf1d4f3bb9b57127" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">27</container>
-                  <unittitle>United Nations, <unitdate>1951, 1960-63</unitdate>
-                  </unittitle>
+                  <unittitle>United Nations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <unitdate normal="1960/1963" type="inclusive">1960-63</unitdate>
+                  <container id="aspace_ec6ae59925139e716c07d4bccfd343a3"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_34f26b1a2fab4cd12f06862648ba2d31"
+                             parent="aspace_ec6ae59925139e716c07d4bccfd343a3"
+                             type="folder">27</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1aa8be968960fb252a9947f2f6e12ee5" level="file">
                <did>
-                  <container type="box" label="mixed materials">1</container>
-                  <container type="folder" label="mixed materials">28</container>
-                  <unittitle>Women in Community Development (ad hoc), <unitdate>1966</unitdate>
-                  </unittitle>
+                  <unittitle>Women in Community Development (ad hoc)</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container id="aspace_fbce6f08c7c3d59b8b8b43f5ed13d93d"
+                             label="Mixed Materials"
+                             type="box">1</container>
+                  <container id="aspace_052aaf910a6428cfc18859d0c6e08fdb"
+                             parent="aspace_fbce6f08c7c3d59b8b8b43f5ed13d93d"
+                             type="folder">28</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser3" level="series">
+         <c01 id="aspace_list-ser3" level="series">
             <did>
                <unittitle>SERIES III. CONFERENCES AND MEETINGS</unittitle>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_6e7082697b08ac152dcae5a2e1d09936">
+               <head>Scope and Contents</head>
+               <p>This largest series contains records of ICW Conferences and meetings, arranged chronologically. There is one folder of material related to board meetings in the 1950s and 1960s.</p>
+            </scopecontent>
+            <c02 id="aspace_4646ac0cdf958b77fb01b9e2ddf80d70" level="file">
                <did>
-                  <unittitle>First International Women's Conference, Washington, DC,                 <unitdate>1888</unitdate>
-                  </unittitle>
+                  <unittitle>First International Women's Conference, Washington, DC</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_842115252231484e1924cce52a9c87a3" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>General: speech by Isabella Beecher Hooker and The Birth of the I.C.W. <unitdate>1938</unitdate>
-                     </unittitle>
+                     <unittitle>General: speech by Isabella Beecher Hooker and The Birth of the I.C.W.</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1938/1938">1938</unitdate>
+                     <container id="aspace_09f5d1ec13bb8791309d25ce324daac1"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_1fd20db5493059b11dfd7022e6c46d46"
+                                parent="aspace_09f5d1ec13bb8791309d25ce324daac1"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_ebd5ac230df7261b9b93a3bd66d95618" level="file">
                   <did>
-                     <container type="box" label="mixed materials">2</container>
-                     <container type="folder" label="mixed materials">2</container>
-                     <unittitle>Report of the International Council of Women, <unitdate>1888</unitdate>
-                     </unittitle>
+                     <unittitle>Report of the International Council of Women</unittitle>
+                     <unitdate calendar="gregorian" era="ce" normal="1888/1888">1888</unitdate>
+                     <container id="aspace_87aebc7b4ef6fa6c7cf26a8f03b8f94b"
+                                label="Mixed Materials"
+                                type="box">2</container>
+                     <container id="aspace_ed66b8dbcabf8414545aa2fc5a5aee74"
+                                parent="aspace_87aebc7b4ef6fa6c7cf26a8f03b8f94b"
+                                type="folder">2</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_3eefeda756eb6ab4031db224715db1bc" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>International Council of Women, Berlin, <unitdate>1904</unitdate>
-                  </unittitle>
+                  <unittitle>International Council of Women, Berlin</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1904/1904">1904</unitdate>
+                  <container id="aspace_d22e5e35f29927638372e1772f3483da"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_9c92b103a0ecebddfe7d6a9eab1db9f8"
+                             parent="aspace_d22e5e35f29927638372e1772f3483da"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_657b345ee47e41ac6bca39cbca3e9f6d" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Quinquennial Meeting, Rome, <unitdate>1914</unitdate>
-                  </unittitle>
+                  <unittitle>Quinquennial Meeting, Rome</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1914/1914">1914</unitdate>
+                  <container id="aspace_1e03ad59073643bf6b5a190f98cfa399"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_5955ef32e9dd62f91848904a700bf052"
+                             parent="aspace_1e03ad59073643bf6b5a190f98cfa399"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f092ffcc4c50d184d64643dfaa904bea" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Meeting with the League of Nations, <unitdate>10 Apr 1919</unitdate>
-                  </unittitle>
+                  <unittitle>Meeting with the League of Nations</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1919-04-10/1919-04-10">10 Apr 1919</unitdate>
+                  <container id="aspace_77740c6db5c366bcccae09d3c5ce73da"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_cab6e7a7333055e834bd2de5d909d92a"
+                             parent="aspace_77740c6db5c366bcccae09d3c5ce73da"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_f53dd5264c52459ae6850ab27f10b4f4" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Eighth Quinquennial Meeting, Vienna, <unitdate>1930</unitdate>
-                  </unittitle>
+                  <unittitle>Eighth Quinquennial Meeting, Vienna</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1930/1930">1930</unitdate>
+                  <container id="aspace_aedcfca332e12b9970fa741140d19414"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_45eed0ba62d5758c352fcb5d00513f05"
+                             parent="aspace_aedcfca332e12b9970fa741140d19414"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_61bf0cb75fc5c25e495f5c2f9d1d1562" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>International Congress of Women, Chicago, <unitdate>1933</unitdate>
-                  </unittitle>
+                  <unittitle>International Congress of Women, Chicago</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
+                  <container id="aspace_66b717055ded4804e430f7bd56a644b1"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_8fb5a14d96b65a5ff72d0ba319916cf4"
+                             parent="aspace_66b717055ded4804e430f7bd56a644b1"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5eaa72b7505033f49cd8956a61c2f73b" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Joint Conference of the International Council of Women and the International Council of Women in India, Calcutta, <unitdate>1936</unitdate>
-                  </unittitle>
+                  <unittitle>Joint Conference of the International Council of Women and the International Council of Women in India, Calcutta</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1936/1936">1936</unitdate>
+                  <container id="aspace_652169ea9a15ddc4ac37093b38d2dc7b"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_de028b4784a1bd20dd9a497b77990797"
+                             parent="aspace_652169ea9a15ddc4ac37093b38d2dc7b"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1d4d4b322206e6273f24c7a62511577c" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>First Post-war Conference, Philadelphia, <unitdate>1947</unitdate>
-                  </unittitle>
+                  <unittitle>First Post-war Conference, Philadelphia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1947/1947">1947</unitdate>
+                  <container id="aspace_829cf8ac2e0a94ee46873d26187f8617"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_3b1f964f07b4a356c3d7a7fc03016dc8"
+                             parent="aspace_829cf8ac2e0a94ee46873d26187f8617"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_29dd9faf15cc6dbff3c9858f1ca0d99a" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Triennial meeting, Athens, <unitdate>1951</unitdate>
-                  </unittitle>
+                  <unittitle>Triennial meeting, Athens</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1951/1951">1951</unitdate>
+                  <container id="aspace_d960b2b7bdb42044e715f24dbcace99e"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_6395470f31002a0d6bb72097ed9d2d91"
+                             parent="aspace_d960b2b7bdb42044e715f24dbcace99e"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_786f2a47ac8912e7549be9ee11026a82" level="file">
                <did>
-                  <container type="box" label="mixed materials">2</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Triennial meeting, Helsinki, <unitdate>1954</unitdate>
-                  </unittitle>
+                  <unittitle>Triennial meeting, Helsinki</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1954/1954">1954</unitdate>
+                  <container id="aspace_96a2548da30ceec27c66994e9e1bf16f"
+                             label="Mixed Materials"
+                             type="box">2</container>
+                  <container id="aspace_0e59c4e88dc1ff866c75d45df56945c9"
+                             parent="aspace_96a2548da30ceec27c66994e9e1bf16f"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_81b2d33ba7ab0c418c2858e0cee68968" level="file">
                <did>
-                  <unittitle>Sixteenth Triennial meeting, Istanbul,                 <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Sixteenth Triennial meeting, Istanbul</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
                </did>
-               <c03 level="file">
+               <c03 id="aspace_98e5ecfed8d3ee615c780c28880a9ce4" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">1</container>
-                     <unittitle>Programs, correspondence, reports, and resolutions, <unitdate>1959-60</unitdate>
-                     </unittitle>
+                     <unittitle>Programs, correspondence, reports, and resolutions</unittitle>
+                     <unitdate calendar="gregorian"
+                               era="ce"
+                               normal="1959/1960"
+                               type="inclusive">1959-60</unitdate>
+                     <container id="aspace_e8b57c8f0e502b436ab7df20d2e6ba01"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_75865d323e03f82e00676e3e26f3a51b"
+                                parent="aspace_e8b57c8f0e502b436ab7df20d2e6ba01"
+                                type="folder">1</container>
                   </did>
                </c03>
-               <c03 level="file">
+               <c03 id="aspace_6606c5f490f16235a410478571f536a0" level="file">
                   <did>
-                     <container type="box" label="mixed materials">3</container>
-                     <container type="folder" label="mixed materials">2</container>
                      <unittitle>Nominations</unittitle>
+                     <container id="aspace_8385bb22365aca013a6d366c7f35e47f"
+                                label="Mixed Materials"
+                                type="box">3</container>
+                     <container id="aspace_e8f5221a8ea0545c02d6cea710b5276a"
+                                parent="aspace_8385bb22365aca013a6d366c7f35e47f"
+                                type="folder">2</container>
                   </did>
                </c03>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_9017a5ba9fc2f88823f6ae3faef489d6" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Seventeenth Triennial meeting, Washington, DC, <unitdate>1963</unitdate>
-                  </unittitle>
+                  <unittitle>Seventeenth Triennial meeting, Washington, DC</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1963/1963">1963</unitdate>
+                  <container id="aspace_ee6fe61ca1250f8f4b80d7e8c3c3a5f8"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_d164049afb294cbfa1d9ff1bbb721e5a"
+                             parent="aspace_ee6fe61ca1250f8f4b80d7e8c3c3a5f8"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_0c1c5f4bc5b8c5b79e22c7dd8d009494" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Eighteenth Triennial meeting, Tehran, <unitdate>1966</unitdate>
-                  </unittitle>
+                  <unittitle>Eighteenth Triennial meeting, Tehran</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1966/1966">1966</unitdate>
+                  <container id="aspace_7a816cd53a98b2a9fd8313f1af161def"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_0bab0669f911c480befd1b1cfa4295dd"
+                             parent="aspace_7a816cd53a98b2a9fd8313f1af161def"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_21deb4c9f7c7991626ea924fd13ad215" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Nineteenth Plenary Conference, Bangkok, <unitdate>1970</unitdate>
-                  </unittitle>
+                  <unittitle>Nineteenth Plenary Conference, Bangkok</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1970/1970">1970</unitdate>
+                  <container id="aspace_c0a315281db7a0dc1bd2d27ec63fdebe"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_c2c9db4b46f50e299a500cd8001d6222"
+                             parent="aspace_c0a315281db7a0dc1bd2d27ec63fdebe"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_57a030dd454de3ce1eb1157b279ab28b" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Board meetings, <unitdate>1950-62</unitdate>
-                  </unittitle>
+                  <unittitle>Board meetings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1950/1962"
+                            type="inclusive">1950-62</unitdate>
+                  <container id="aspace_60a171286d50cb84897ca4b74223ac92"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_6667e139c7064e9ff1728f5e6b106723"
+                             parent="aspace_60a171286d50cb84897ca4b74223ac92"
+                             type="folder">6</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser4" level="series">
+         <c01 id="aspace_list-ser4" level="series">
             <did>
                <unittitle>SERIES IV. PUBLICATIONS</unittitle>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_9929802cac00b2527cb0d728666217a7">
+               <head>Scope and Contents</head>
+               <p>This series is a miscellaneous collection of various ICW published reports, newsletters and other periodicals, pamphlets, press releases, and newspaper clippings. As is the case in the other series, the bulk of the material was published in the 1950s and 1960s.</p>
+            </scopecontent>
+            <c02 id="aspace_f9a65604f4cfe217e3ee3e86485cf5b5" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>Biennial Report, <unitdate>1925-27</unitdate>
-                  </unittitle>
+                  <unittitle>Biennial Report</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1925/1927"
+                            type="inclusive">1925-27</unitdate>
+                  <container id="aspace_8102e9629a47a519c166f74e168fb20a"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_882f77cd7acfaeaed1f0c510c4c7db85"
+                             parent="aspace_8102e9629a47a519c166f74e168fb20a"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_120468dc1426e0c6de50e4227dbe1c11" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Bulletin: 1947 issues and notes for <unitdate>1952-53 </unitdate>issues</unittitle>
+                  <unittitle>Bulletin: 1947 issues and notes for 1952-53 issues</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1952/1953"
+                            type="inclusive">1952-53</unitdate>
+                  <container id="aspace_a291dd1153d1262d758105cb05758626"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_7179be35998274944fbb58e0c8eb1369"
+                             parent="aspace_a291dd1153d1262d758105cb05758626"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d02050a12ad27f8100bda66dbd38778d" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Quarterly: First Quarter 1960 issue and correspondence, <unitdate>1959-60</unitdate>
-                  </unittitle>
+                  <unittitle>Quarterly: First Quarter 1960 issue and correspondence</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1959/1960"
+                            type="inclusive">1959-60</unitdate>
+                  <container id="aspace_3b536d9810f985513d37d8bfc9ab0ba9"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_9c6b7bffc17aad8777f9fef50f8352d6"
+                             parent="aspace_3b536d9810f985513d37d8bfc9ab0ba9"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_608fdbe5b40af3fb8f9da4a3ef077f2f" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Monthly News Sheet/Newsletter, <unitdate>1956-70</unitdate>
-                  </unittitle>
+                  <unittitle>Monthly News Sheet/Newsletter</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1956/1970"
+                            type="inclusive">1956-70</unitdate>
+                  <container id="aspace_295132e3d39f98aaa52affd75b52fe7b"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_1f079e39d634658aa8e79652cee2bee8"
+                             parent="aspace_295132e3d39f98aaa52affd75b52fe7b"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ccc48c5bac1c675af42f0e84ee033ea6" level="file">
                <did>
-                  <container type="box" label="mixed materials">3</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Miscellaneous: pamphlets by and about, brochures, press releases, and clippings, <unitdate>1930-67, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous: pamphlets by and about, brochures, press releases, and clippings</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1930/1967"
+                            type="inclusive">1930-67</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_c71ea1fe45ed1357697a0fa9c7d738d6"
+                             label="Mixed Materials"
+                             type="box">3</container>
+                  <container id="aspace_8b5d732968cdc234aff9b0aa76d012b6"
+                             parent="aspace_c71ea1fe45ed1357697a0fa9c7d738d6"
+                             type="folder">11</container>
                </did>
             </c02>
          </c01>
-         <c01 id="list-ser5" level="series">
+         <c01 id="aspace_list-ser5" level="series">
             <did>
                <unittitle>SERIES V. NATIONAL COUNCILS</unittitle>
             </did>
-            <c02 level="file">
+            <scopecontent id="aspace_66542aaf2b00b752830098391f0f26a5">
+               <head>Scope and Contents</head>
+               <p>This series is arranged alphabetically by country, contains small files on many of the National Councils, again primarily from the 1950s-60s, consisting primarily of constitutions, correspondence, reports, and lists.</p>
+            </scopecontent>
+            <c02 id="aspace_826e0e2f7665cd4f3e36bc55ad79486f" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">1</container>
-                  <unittitle>Miscellaneous reports and lists, <unitdate>1947-61, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Miscellaneous reports and lists</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1947/1961"
+                            type="inclusive">1947-61</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_d71f7f6f6ca627a125117957b17c4e8f"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_d961cb233f3727d06a79d4367e6ef45c"
+                             parent="aspace_d71f7f6f6ca627a125117957b17c4e8f"
+                             type="folder">1</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fbf49cc2fedf56e6b41dc7fa15d02cc4" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">2</container>
-                  <unittitle>Australia, <unitdate>1953-66, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Australia</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1953/1966"
+                            type="inclusive">1953-66</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_82f8933f247cb24610cd79370961f5ac"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_98fb9da477d0dca95f0ba56c4d3a53ef"
+                             parent="aspace_82f8933f247cb24610cd79370961f5ac"
+                             type="folder">2</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ff180371b278ad92dd892e0d9c3fc631" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">3</container>
-                  <unittitle>Bolivia, <unitdate>1959</unitdate>
-                  </unittitle>
+                  <unittitle>Bolivia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1959/1959">1959</unitdate>
+                  <container id="aspace_9e13d80897906a5a359bb2fa88c864bc"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_addcb1f0cf75f382c63df8ce91cdd20d"
+                             parent="aspace_9e13d80897906a5a359bb2fa88c864bc"
+                             type="folder">3</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_384b20830aaf221ae754caea9b094225" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">4</container>
-                  <unittitle>Cameroon, <unitdate>1961</unitdate>
-                  </unittitle>
+                  <unittitle>Cameroon</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                  <container id="aspace_c7d8a7cda7eb5b8225401636939ac012"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_e339086daf0073463da5fe1d2b9e8e21"
+                             parent="aspace_c7d8a7cda7eb5b8225401636939ac012"
+                             type="folder">4</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_7ecd70481204a31e3a3013888aff05f1" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">5</container>
-                  <unittitle>Canada, <unitdate>1949-60</unitdate>
-                  </unittitle>
+                  <unittitle>Canada</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1949/1960"
+                            type="inclusive">1949-60</unitdate>
+                  <container id="aspace_69e6f46c2d24b061b53e53bc81c57f12"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_3f24150a82dca2671ec0aa696e832011"
+                             parent="aspace_69e6f46c2d24b061b53e53bc81c57f12"
+                             type="folder">5</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_265d527d84936baacef8f9a1398a0504" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">6</container>
-                  <unittitle>Denmark, <unitdate>1948</unitdate>
-                  </unittitle>
+                  <unittitle>Denmark</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <container id="aspace_aff899ed4954a71ee6b97bffd948c36f"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_a8b9a528dc7f8623daeb39d509a0535e"
+                             parent="aspace_aff899ed4954a71ee6b97bffd948c36f"
+                             type="folder">6</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1a16f5f29e15cf8765f89ebab4d925a3" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">7</container>
-                  <unittitle>France, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>France</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_58c1d70ca00915d2d48722f2fa1d710d"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_05de726fb77acbab6bcb2fecfaf7ff41"
+                             parent="aspace_58c1d70ca00915d2d48722f2fa1d710d"
+                             type="folder">7</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1db592130d294a20e60bd634bbee1d6e" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">8</container>
-                  <unittitle>Ghana, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Ghana</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_a3d6aee5ec6f1d525f549cdd580ec630"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_9e45fd7f845d2aa45bd565c3560f2a15"
+                             parent="aspace_a3d6aee5ec6f1d525f549cdd580ec630"
+                             type="folder">8</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1873a0b7d56961c1ecb45353e4be067a" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">9</container>
-                  <unittitle>Great Britain, <unitdate>1960-61</unitdate>
-                  </unittitle>
+                  <unittitle>Great Britain</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-61</unitdate>
+                  <container id="aspace_6e77c5ed94e6065e52569478c7d14519"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_b70ffb0c4288863e6c3e62ce65b78768"
+                             parent="aspace_6e77c5ed94e6065e52569478c7d14519"
+                             type="folder">9</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_6b58cb2d7aece086d5e501bfc7078e63" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">10</container>
-                  <unittitle>Greece, <unitdate>1960-61</unitdate>
-                  </unittitle>
+                  <unittitle>Greece</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-61</unitdate>
+                  <container id="aspace_d2a56dd81cbde80816eb02c17bd8b169"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_88d601f63c32b408140db96cd9dc4d0e"
+                             parent="aspace_d2a56dd81cbde80816eb02c17bd8b169"
+                             type="folder">10</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5dac0f9cd7e8d4387caae9791de15082" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">11</container>
-                  <unittitle>Haiti, <unitdate>1961</unitdate>
-                  </unittitle>
+                  <unittitle>Haiti</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1961/1961">1961</unitdate>
+                  <container id="aspace_4ea76020d0433c24140988c4a5185568"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_7cb1d3fc85826ef711284a4dd6017089"
+                             parent="aspace_4ea76020d0433c24140988c4a5185568"
+                             type="folder">11</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_42a7aed2c39d5fe00058c2ff49425c9d" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">12</container>
-                  <unittitle>India, <unitdate>1948, 1950, 1960</unitdate>
-                  </unittitle>
+                  <unittitle>India</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1948/1948">1948</unitdate>
+                  <unitdate normal="1950/1950">1950</unitdate>
+                  <unitdate normal="1960/1960">1960</unitdate>
+                  <container id="aspace_940e471396731d220e4d7d770424ec5a"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_76902be5c635e6a1dfb47377364da87a"
+                             parent="aspace_940e471396731d220e4d7d770424ec5a"
+                             type="folder">12</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_d1ba027c536d770c0b58a35ea34464a9" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">13</container>
-                  <unittitle>Iran, <unitdate>1966-67</unitdate>
-                  </unittitle>
+                  <unittitle>Iran</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1966/1967"
+                            type="inclusive">1966-67</unitdate>
+                  <container id="aspace_8c222378367f43e61578c43649712542"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_dc2d80c93c182d76ed8c82f669cdf1a6"
+                             parent="aspace_8c222378367f43e61578c43649712542"
+                             type="folder">13</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_36b3f7025cf560e720d51ab65a38fed3" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">14</container>
-                  <unittitle>Italy, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Italy</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_8575ba2dab89695bce94373bf22091b7"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_61923972813d65da5e125d67322b0cfa"
+                             parent="aspace_8575ba2dab89695bce94373bf22091b7"
+                             type="folder">14</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_93f361ceb5ba0040f30598e7893a6f2a" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">15</container>
-                  <unittitle>Kenya, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Kenya</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_01fc70147680cc2793c5f7ee0e887745"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_9b0614a6c1d3bc8e631aab8b1d51fc3d"
+                             parent="aspace_01fc70147680cc2793c5f7ee0e887745"
+                             type="folder">15</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_16fdb90445c4dea98c785132b28d0d9b" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">16</container>
-                  <unittitle>Netherlands, <unitdate>undated</unitdate>
-                  </unittitle>
+                  <unittitle>Netherlands</unittitle>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_9e33a1908d12b30ca420fd5285d7a200"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_7b776974291039fc9d68576d3d818ae3"
+                             parent="aspace_9e33a1908d12b30ca420fd5285d7a200"
+                             type="folder">16</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_33d0478d68a94b28d4a0f1343fa7fd92" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">17</container>
-                  <unittitle>New Zealand, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>New Zealand</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_d6dc54195cd58ed0a7e22be41b9d2e26"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_dc0a916795c6748d80a8abacf453e45e"
+                             parent="aspace_d6dc54195cd58ed0a7e22be41b9d2e26"
+                             type="folder">17</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cd8b9c6ba216058266db290eb46731f9" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">18</container>
-                  <unittitle>Nigeria, <unitdate>1960-61, undated</unitdate>
-                  </unittitle>
+                  <unittitle>Nigeria</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-61</unitdate>
+                  <unitdate calendar="gregorian" era="ce">undated</unitdate>
+                  <container id="aspace_0b65cbdaf02064e7ca3580d7cb72be22"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_6d9336509829342e9695eff83380787e"
+                             parent="aspace_0b65cbdaf02064e7ca3580d7cb72be22"
+                             type="folder">18</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_733d3b0feaf3cd5c427f0edef2dce478" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">19</container>
-                  <unittitle>Norway, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Norway</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_6ff48aff4445484b0375fecbcd8ff0f2"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_f391a571279d7581a535c9af08cb35be"
+                             parent="aspace_6ff48aff4445484b0375fecbcd8ff0f2"
+                             type="folder">19</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5dda6898f1b5d77d597897cee553fcfc" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">20</container>
-                  <unittitle>Peru, <unitdate>1949</unitdate>
-                  </unittitle>
+                  <unittitle>Peru</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1949/1949">1949</unitdate>
+                  <container id="aspace_6801fc30bedd59de0ca578f22c660e2a"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_6f999164182b78bcd9f1e7f99266a0bd"
+                             parent="aspace_6801fc30bedd59de0ca578f22c660e2a"
+                             type="folder">20</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_ccdf3f94181da1f69d1a58f6bd70ed8e" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">21</container>
-                  <unittitle>Rhodesia, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Rhodesia</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_cf7f8117c90a9c1d4e61c6fdc08c6777"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_b80c8a5832a53dbd73247995a47792b3"
+                             parent="aspace_cf7f8117c90a9c1d4e61c6fdc08c6777"
+                             type="folder">21</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_94f2aeccc025ffa7c9a642f1bdb071e3" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">22</container>
-                  <unittitle>South Africa, <unitdate>1960, 1963</unitdate>
-                  </unittitle>
+                  <unittitle>South Africa</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <unitdate normal="1963/1963">1963</unitdate>
+                  <container id="aspace_5ea52161a7fe85461cea55e2d176992e"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_03a38f54c458c515c493d14f98b443fd"
+                             parent="aspace_5ea52161a7fe85461cea55e2d176992e"
+                             type="folder">22</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_5bef66c259ed6fef3f1d22169fa9bbb9" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">23</container>
-                  <unittitle>Sweden, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Sweden</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_f6b59bd6bc451b8a9e1d21b66e396629"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_6c5911e9db167a0bba68d5257b429e42"
+                             parent="aspace_f6b59bd6bc451b8a9e1d21b66e396629"
+                             type="folder">23</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_cf799dd938ce842c46249dd685f064d4" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">24</container>
-                  <unittitle>Turkey, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>Turkey</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_2b9e4af2aab286a004623591bef0c5c6"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_848bb3fd967a6decc78a3f98a61477f4"
+                             parent="aspace_2b9e4af2aab286a004623591bef0c5c6"
+                             type="folder">24</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_fb3e26aa305bfaa79b02d6a9bca409ff" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">25</container>
-                  <unittitle>Uganda, <unitdate>1960-61</unitdate>
-                  </unittitle>
+                  <unittitle>Uganda</unittitle>
+                  <unitdate calendar="gregorian"
+                            era="ce"
+                            normal="1960/1961"
+                            type="inclusive">1960-61</unitdate>
+                  <container id="aspace_f77f897291523f3ec37e63da8b63064b"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_fe46abe2bb554fd6bf6df2c67eb69c56"
+                             parent="aspace_f77f897291523f3ec37e63da8b63064b"
+                             type="folder">25</container>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_1140801ef0f3ea56599ca89c1b2681a8" level="file">
                <did>
-                  <container type="box" label="mixed materials">4</container>
-                  <container type="folder" label="mixed materials">26</container>
-                  <unittitle>United States, <unitdate>1960</unitdate>
-                  </unittitle>
+                  <unittitle>United States</unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1960/1960">1960</unitdate>
+                  <container id="aspace_fdcfc564dfc7424b9761fa2b717c0d3f"
+                             label="Mixed Materials"
+                             type="box">4</container>
+                  <container id="aspace_4ec00d6ccfb80011613e36abf8021b9d"
+                             parent="aspace_fdcfc564dfc7424b9761fa2b717c0d3f"
+                             type="folder">26</container>
                </did>
             </c02>
          </c01>
-         <c01 level="file">
+         <c01 id="aspace_7ff1ef7b0b2f0e99c989049d900609e6" level="file">
             <did>
-               <unittitle>Books on Shelf
-		</unittitle>
+               <unittitle>Books on Shelf</unittitle>
             </did>
-            <c02 level="file">
+            <c02 id="aspace_3fe72983ee7703046c96897f9362e04a" level="file">
                <did>
                   <unittitle>National Council of the United States, <title render="italic">Our Common Cause Civilization</title>
-                     <unitdate>1933</unitdate>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1933/1933">1933</unitdate>
                </did>
             </c02>
-            <c02 level="file">
+            <c02 id="aspace_8c7e81e7e2c451d2b7d799ec6ec34a39" level="file">
                <did>
-                  <unittitle>--------------------, <title render="italic">Transactions of the National Council of Women of the United States, Assembled in Washington, D.C., February 22 to 25, 1891</title>
-                     <unitdate>1891</unitdate>
+                  <unittitle>ICW Quinquennial Record 1909, <title render="italic">Transactions of the National Council of Women of the United States, Assembled in Washington, D.C., February 22 to 25, 1891</title>
                   </unittitle>
+                  <unitdate calendar="gregorian" era="ce" normal="1891/1891">1891</unitdate>
                </did>
             </c02>
          </c01>
